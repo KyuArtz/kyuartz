@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="images/favicon/elishia_BHX_icon.ico"><title>Kyushiartz | Contact</title>
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/popuperror.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+<header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">KSA
+  <img src="images/myavatarlogo/e.png" class="my-avatar">
+  </a>
+  <input type="search" placeholder="Search here...">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link"><i class="fa fw fa-home"></i> HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="portfolio.html" class="nav-link"><i class="fa fw fa-folder"></i> PORTFOLIO</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a href="#" class="nav-link-2" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="comic.html">My Comic</a>
+          <a href="mycharacters.html">Original Character's</a>
+		      <a href="#" onclick="openPopup()">Commission Sheet</a>
+          <div class="popup" id="popup">
+            <img src="images/popup/popupimg.png">
+            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
+            <p>Sorry the content you're trying to access is not yet available at this time.</p>
+            <button type="button" onclick="closePopup()">CLOSE</button>
+          </div>
+          <a href="term-services.html">Term & Services</a>
+      </div>
+      </div>
+  </div>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link"><i class="fa fw fa-user"></i> ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+</header>
+
+<script src="js/hamburger.js"></script>
+<script src="js/dropdownmenu.js"></script>
+<script src="js/popup.js"></script>
+
+<!-- Contact inquiry form -->
+<div class="body-container">
+  
+<div class="contact-container">
+  <form action="">
+    <div class="title"><h2>INQUIRY FORM</h2></div>
+
+    <label id="username-label">Name:</label><span id="username-error"></span><span id="username-valid"></span>
+    <input type="username" spellcheck="false" id="username-field" name="username" placeholder="Enter your name.." onkeyup="validateUsername()" required>
+
+    <label id="email-label">Email:</label><span id="email-error"></span><span id="email-valid"></span>
+    <input type="email" spellcheck="false" id="email-field" name="email" placeholder="Enter your email.." onkeyup="validateEmail()" required>
+    
+    <label id="message-label">Message:</label><span id="message-error"></span><span id="message-valid"></span>
+    <textarea type="message" spellcheck="false" id="message-field" name="message" placeholder="Write something you want to say.." onkeyup="validateMessage()" required></textarea>
+
+    <input type="Submit" value="Send">
+
+  </form>
+</div>
+
+<script>
+
+  var usernamelabel = document.getElementById("username-label");
+  var usernamefield = document.getElementById("username-field");
+  var usernameerror = document.getElementById("username-error");
+  var usernamevalid = document.getElementById("username-valid");
+
+  // sends a message info to the user if the contact form is valid or not
+  function validateUsername(){
+    if(!usernamefield.value.match(/^[A-Za-z\._\-0-9]*[A-Za-z]*[\ \][a-z]{4,25}$/)){
+      usernameerror.innerHTML ="Please enter a valid username!";
+      usernamefield.style.borderColor ="red";
+      usernamevalid.innerHTML ="";
+      usernamelabel.style.color ="red";
+      return false;
+    }
+    usernameerror.innerHTML ="";
+    usernamefield.style.borderColor ="#1d8f56";
+    usernamevalid.innerHTML ="You're good to go!";
+    usernamelabel.style.color ="#1d8f56";
+    return true;
+  }
+
+  var emaillabel = document.getElementById("email-label");
+  var emailfield = document.getElementById("email-field");
+  var emailerror = document.getElementById("email-error");
+  var emailvalid = document.getElementById("email-valid");
+
+  function validateEmail(){
+    if(!emailfield.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{3,3}$/)){
+      emailerror.innerHTML = "Please enter a valid email address!";
+      emailfield.style.borderColor ="red";
+      emailvalid.innerHTML ="";
+      emaillabel.style.color ="red";
+      return false;
+    }
+    emailerror.innerHTML = "";
+    emailfield.style.borderColor ="#1d8f56";
+    emailvalid.innerHTML ="You're good to go!";
+    emaillabel.style.color ="#1d8f56";
+    return true;
+}
+
+  var messagelabel = document.getElementById("message-label");
+  var messagefield = document.getElementById("message-field");
+  var messageerror = document.getElementById("message-error");
+  var messagevalid = document.getElementById("message-valid");
+
+  function validateMessage(){
+    if(!messagefield.value.match(/^[A-Za-z\,_\.\]*[\ \][a-z]{10,500}$/)){
+      messageerror.innerHTML ="Please don't leave this blank!";
+      messagefield.style.borderColor ="red";
+      messagevalid.innerHTML ="";
+      messagelabel.style.color ="red";
+      return false;
+    }
+    messageerror.innerHTML ="";
+    messagefield.style.borderColor ="#1d8f56";
+    messagevalid.innerHTML ="You're good to go!";
+    messagelabel.style.color ="#1d8f56"
+    return true;
+  }
+</script>
+
+<!-- My contact informations -->
+<div class="my-contact">
+  <div class="mysocial" style="text-align:center">
+    <h4>IM ALSO AT <i class="fa fw fa-globe"></i></h4>
+    <p><i class="fa fw fa-envelope"></i> kyuushi992@gmail.com</p>
+	<div class="applogo">
+	  <a class="logo-view" href="https://www.facebook.com/profile.php?id=100074874504464" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png" alt="applogo1"></a>
+	  <a class="logo-view" href="https://www.youtube.com/channel/UCxNt_zZqkKY1eysNtMk3pEA" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png" alt="applogo2"></a>
+	  <a class="logo-view" href="https://www.artstation.com/kyushiartz" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/ast.png" alt="applogo3"></a>
+  </div>
+  </div>
+</div>
+
+<div class="donate">
+	<a class="gbm" href="https://paypal.me/shichiartz992?country.x=PH&locale.x=en_US" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/gbm.png" alt=""></a>
+</div>
+
+<div class="cpr-container">
+  <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+    <div class="detail-container">
+    <a class="detail" href="Term_Services.html"> Term & Services</a>
+    <a class="detail" href="About.html"> About Me</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  var date = new Date();
+  var year = date.getFullYear();
+  document.getElementById('currentyear').innerHTML = year;
+</script>
+
+</div>
+</body>
+</html>

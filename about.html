@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="images/favicon/elishia_BHX_icon.ico"><title>Kyushiartz | About Me</title>
+  <link rel="stylesheet" href="style/about.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/popuperror.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+<header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">KSA
+  <img src="images/myavatarlogo/e.png" class="my-avatar">
+  </a>
+  <input type="search" placeholder="Search here...">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link"><i class="fa fw fa-home"></i> HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="portfolio.html" class="nav-link"><i class="fa fw fa-folder"></i> PORTFOLIO</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a href="#" class="nav-link-2" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="comic.html">My Comic</a>
+          <a href="mycharacters.html">Original Character's</a>
+		      <a href="#" onclick="openPopup()">Commission Sheet</a>
+          <div class="popup" id="popup">
+            <img src="images/popup/popupimg.png">
+            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
+            <p>Sorry the content you're trying to access is not yet available at this time.</p>
+            <button type="button" onclick="closePopup()">CLOSE</button>
+          </div>
+          <a href="term-services.html">Term & Services</a>
+      </div>
+      </div>
+  </div>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link"><i class="fa fw fa-user"></i> ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+</header>
+
+<script src="js/hamburger.js"></script>
+<script src="js/dropdownmenu.js"></script>
+<script src="js/popup.js"></script>
+
+<div class="me">
+  <div class="card">
+    <img src="images/myprofile/me.png" alt="photo">
+    <div class="my-info">
+      <h2>Kyushi Artz</h2>
+      <p class="title"><i class="fa fw fa-pencil"></i> Digital Artist</p>
+      <p class="email"><i class="fa fw fa-envelope"></i> kyuushi992@gmail.com</p>
+      <br>
+      <p class="fb"><i class="fa fw fa-facebook"></i > @Kyushiartz</p>
+      <p class="yt"><i class="fa fw fa-youtube"></i> @Kyushiartz</p>
+    </div>
+  </div>
+</div>
+
+<div class="summary">
+  <h2>SUMMARY</h2>
+  <div class="summarycontent">
+	  <p>Hello i'm Kyushi a self taught and a freelance artist, i've been drawing since i was just a kid i
+	  taught myself how to draw and tried to improve myself little by little, during my free time i always draw to
+	  further more enhance my drawing skills and experience in art even though im just learning by myself i never lose hope and after
+	  4 years drawing traditionally i noticed improvements, until i moved to digital because it caught my
+	  attention and it is trending among the social media platforms so i tried it and i enjoyed my first digital art using a drawing application microsoft paint and adobe illustrator, at first
+	  it was a bit tricky because of the digital art tools used but i managed to get used to it.</p>
+  </div>
+</div>
+
+<div class="experience">
+  <div class="xpcontent" style="text-align:center">
+    <h2>EXPERIENCE</h2>
+  	<P>Self taught</P>
+	  <p>Freelance</p>
+  </div>
+</div>
+
+<div class="appexp">
+  <div class="appxpcontent" style="text-align:center">
+    <h2>APPLICATION EXPERTISE</h2>
+   	<div class="applogo">
+	    <img src="images/applogo/ibp.png">
+	    <img src="images/applogo/clip.jpg">
+	    <img src="images/applogo/adob.png">
+	    <img src="images/applogo/krit.png">
+	  </div>
+  </div>
+</div>
+
+<div class="cpr-container">
+  <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+    <div class="detail-container">
+    <a class="detail" href="Term_Services.html"> Term & Services</a>
+    <a class="detail" href="Contact.html"> Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  var date = new Date();
+  var year = date.getFullYear();
+  document.getElementById('currentyear').innerHTML = year;
+</script>
+
+</body>
+</html>

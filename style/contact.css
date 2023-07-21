@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  background-image: url('../images/bg/BG_E.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: myFont;
+  src:url(../fonts/hermes-font/hermes-font.otf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
+}
+
+@font-face {
+  font-family: myFont3;
+  src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
+}
+
+.body-container {
+  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(49, 49, 49); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(11, 91, 138);
+  border-radius: 9px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(26, 128, 187);
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  float: left;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: myFont2, sans-serif;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  width: 45%;
+}
+
+.title h2 {
+  text-align: center;
+  cursor: default;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=username], input[type=email], input[type=message], select, textarea {
+  width: 100%;
+  font-family: myFont3, sans-serif;
+  padding: 12px; 
+  border: 1px solid #006eff; 
+  border-right-width: 9px; 
+  border-left-width: 9px; 
+  outline: none; 
+  box-sizing: border-box; /* padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  border-radius: 4px 30px 4px 4px;
+  background: none;
+  color: #ffffff;
+}
+
+input[type=email], select, textarea {
+  border-radius: 4px;
+}
+
+input[type=message], select, textarea {
+  max-height: 250px;
+  height: 250px;
+  border-radius: 4px 4px 4px 30px;
+}
+
+#username-error, #email-error, #message-error {
+  position: relative;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgb(255, 0, 0);
+  padding-top: 2px;
+  padding-left: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+#username-valid, #email-valid, #message-valid {
+  position: relative;
+  font-weight: 400;
+  font-size: 13px;
+  color: #1d8f56;
+  padding-top: 2px;
+  padding-left: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=Submit] {
+  background-color: #154360;
+  font-family: myFont3, sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 2px 10px 2px 10px;
+}
+
+/* When moving the mouse over the submit button, adds an effect */
+input[type=Submit]:hover {
+  background-color: #1d8f56;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+/* style the experience container */
+.my-contact {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  cursor: default;
+}
+
+/* style the content of the expapp container */
+.mysocial {
+  font-family: myFont2, monospace;
+  color: rgb(255, 255, 255);
+  font-size: small;
+  cursor: default;
+}
+
+.mysocial h4{
+  background-color: rgba(0, 0, 0, 0.200);
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.logo-view img {
+  position: relative;
+  height: 30px;
+}
+
+.applogo img{
+  padding: 4px;
+  margin: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: transform .7s ease-in-out;
+  border-radius: 50%;
+}
+
+.applogo img:hover{
+  opacity: 0.7;
+  transform: rotate(360deg);
+  transition: transform 0.6s;
+}
+
+.donate {
+  display: flex;
+  justify-content: center;
+}
+
+.gbm img {
+  width: 423px;
+  transform: scale(0.9);
+  transition: transform 0.4s;
+}
+
+.gbm img:hover {
+  transform: scale(1);
+}
+
+.cpr-container {
+  position: relative;
+  padding: 8px 0px;
+  margin-top: 95px;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+  font-family: myFont2, sans-serif;
+  font-size: x-small;
+}
+
+.copyright p {
+  text-align: center;
+  color: white;
+} 
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+.detail:hover {
+  color: rgb(33, 110, 197);
+  transition: 0.5s ease;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 690px) {
+.contact-container {
+   width: 100%;
+   display: block;
+  }
+  @media(max-width: 450px) {
+    .donate img {
+      width: 323px;
+    }
+  }
+}

@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+  background-image: linear-gradient(to right,  rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: myFont;
+  src:url(../fonts/hermes-font/hermes-font.otf);
+}
+
+@font-face {
+  font-family: myFont2;
+  src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(49, 49, 49); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(11, 91, 138);
+  border-radius: 9px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(26, 128, 187);
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Hide the images by default */
+.mySlides {display: none;}
+
+.mySlides img, video {
+  width: 100%;
+  max-height: 566px;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -62px;
+  padding: 50px 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  opacity: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  background-image: linear-gradient(to right, rgba(0, 119, 255, 0.281), rgba(24, 24, 41, 0.753));
+}
+
+/* Position the "next button" to the left */
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+  background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #154360a9;
+  opacity: 1;
+}
+
+/* Caption text */
+.intro {
+  color: #f2f2f2;
+  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.653), rgba(19, 77, 145, 0.5));
+  font-size: 8px;
+  font-family: myFont2, sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  cursor: default;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.img-size image {
+  width: 100%;
+}
+
+.dots {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  bottom: 70px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 5px 0px 5px 0px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0.5;
+  box-shadow: 0px 3px 4px 0px #000000;
+}
+
+.active-dot, .dot:hover {
+  background-color: #244d83;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* style the video container */
+.video-container {
+  background-image: url();
+	background-repeat: no-repeat;
+  text-align: center;
+}
+
+iframe {
+  margin: 5px;
+  max-width: 350px;
+  height: 250px;
+  border-radius: 5px;
+}
+
+/* styles the text container section font header*/
+.video-container h1 {
+  cursor: default;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	padding-top: 15px;
+	padding-bottom: 15px;
+  font-family: myFont2, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+	font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: medium;
+}
+
+.cpr-container {
+  position: relative;
+  padding: 8px 0px;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+  font-family: myFont2, sans-serif;
+  font-size: x-small;
+}
+
+.copyright p {
+  text-align: center;
+  color: white;
+  cursor: default;
+} 
+
+.detail-container {
+  display: flex;
+  justify-content: center;
+}
+
+.detail {
+  margin-top: 5px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 0px 5px 0px 5px;
+  text-decoration: none;
+}
+
+.detail:hover {
+  color: rgb(33, 110, 197);
+  transition: 0.5s ease;
+  text-decoration: underline;
+}

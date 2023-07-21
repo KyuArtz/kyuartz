@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/png" href="images/favicon/elishia_BHX_icon.ico"><title>Kyushiartz | Portfolio - Grayscale</title>
+  <link rel="stylesheet" href="style/portfolio.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/lightbox.css">
+  <link rel="stylesheet" href="style/popuperror.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  
+<body>
+	
+<header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">KSA
+  <img src="images/myavatarlogo/e.png" class="my-avatar">
+  </a>
+  <input type="search" placeholder="Search here...">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link"><i class="fa fw fa-home"></i> HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="portfolio.html" class="nav-link"><i class="fa fw fa-folder"></i> PORTFOLIO</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a href="#" class="nav-link-2" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="comic.html">My Comic</a>
+          <a href="mycharacters.html">Original Character's</a>
+		      <a href="#" onclick="openPopup()">Commission Sheet</a>
+          <div class="popup" id="popup">
+            <img src="images/popup/popupimg.png">
+            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
+            <p>Sorry the content you're trying to access is not yet available at this time.</p>
+            <button type="button" onclick="closePopup()">CLOSE</button>
+          </div>
+          <a href="term-services.html">Term & Services</a>
+      </div>
+      </div>
+  </div>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link"><i class="fa fw fa-user"></i> ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+</header>
+
+<div a class="mininav">
+  <div class="category">CATEGORY:</div>
+  <a href="Portfolio.html">All</a>
+  <a href="Portfolio-portrait.html">Portrait / bust up</a>
+  <a href="Portfolio-anime.html">Anime</a>
+  <a href="Portfolio-fullbody.html">Full body</a>
+  <a href="Portfolio-grayscale.html">Grayscale</a>
+</div>
+
+<script src="js/hamburger.js"></script>
+<script src="js/dropdownmenu.js"></script>
+<script src="js/popup.js"></script>
+
+<div class="image-container">
+  <div class="gallary">
+    <a href="images/artgallary/img2.png" data-lightbox="Arts" data-title="" oncontextmenu="return false">
+      <img src="images/artgallary/img2.png">
+    </a>
+    <a href="images/artgallary/img5.png" data-lightbox="Arts" data-title="" oncontextmenu="return false">
+      <img src="images/artgallary/img5.png">
+    </a>
+    <a href="images/artgallary/img14.png" data-lightbox="Arts" data-title="" oncontextmenu="return false">
+      <img src="images/artgallary/img14.png">
+    </a>
+    <a href="images/artgallary/img18.png" data-lightbox="Arts" data-title="" oncontextmenu="return false">
+      <img src="images/artgallary/img18.png">
+    </a>
+    <a href="images/artgallary/img31.png" data-lightbox="Arts" data-title="" oncontextmenu="return false">
+      <img src="images/artgallary/img31.png">
+    </a>
+    <a href="images/artgallary/img43.png" data-lightbox="Arts" data-title="" oncontextmenu="return false">
+      <img src="images/artgallary/img43.png">
+    </a>
+  </div>
+</div>
+
+<script src="js/lightbox-plus-jquery.js"></script>
+
+<div class="cpr-container">
+  <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+    <div class="detail-container">
+    <a class="detail" href="Term_Services.html"> Term & Services</a>
+    <a class="detail" href="About.html"> About Me</a>
+    <a class="detail" href="Contact.html"> Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  var date = new Date();
+  var year = date.getFullYear();
+  document.getElementById('currentyear').innerHTML = year;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+body { 
+    background-color: #121212;
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* style and positions the avatar */
+.my-avatar {
+  position: absolute;
+  top: 6px;
+  left: 9px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* adds a brand name on the top left of the navigation bar */
+.brand-name {
+  cursor: default;
+  background: -webkit-linear-gradient(white, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  float: left;
+	position: relative;
+	margin: 14px 60px;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+/* Adds a background color to the top navigation */
+.topnavbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-image: url("");
+	background-color: #1a1a1a;
+	background-size: cover;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+  overflow: visible;
+}
+
+/* Style the links inside the navigation bar and texts */
+.topnavbar a {
+  float: right;
+  color: white;
+  padding: 20px 16px;
+  font-family: sans-serif;
+  text-decoration: none;
+  width: 109px;
+  text-align: center;
+	font-size: 11px;
+}
+
+/* Change the color of links on hover */
+.topnavbar a:hover {
+  transition: 0.7s ease;
+  color: #3498DB;
+  text-decoration: underline;
+}
+
+/* Style the search box inside the navigation bar */
+.topnavbar input[type=search] {
+  float: right;
+  padding: 8px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  margin-right: 2px;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+  
+  /* style the content of the experience container */
+  .skillcontainer {
+    background-color: #121212;
+  }
+  
+  .skillcontent p {
+    padding: 7px;
+    display: inline-block;
+    background-color: #222222;
+    cursor: default;
+    width: 155px;
+    margin: 3px;
+  }
+  
+  /* style the name and title and botton inside the my info */
+  .ocinfo {
+    font-family: sans-serif;
+    color: white;
+    padding: 0 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: default;
+    background-color: #121212;
+    text-align: center;
+    margin-top: 54px;
+  }
+  
+  .ocinfo p {
+    transform: skew(350deg);
+  }
+  
+  .lorecontainer {
+    background-color: #121212;
+    padding-top: 6px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    width: 50%;
+  }
+  
+  .lorecontainer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  
+  .lorecontainer h1 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    cursor: default;
+  }
+  
+  /* style the content of the summary  */
+  .lore {
+    background-color: #222222;
+    border-radius: 10px;
+    text-align: justify;
+    font-family: sans-serif;
+    color: white;
+    padding: 25px;
+    cursor: default;
+  }
+  
+  /* Make sure that padding behaves as expected */
+  * {box-sizing:border-box}
+  
+  /* Container for skill bars */
+  .container {
+    width: 100%; 
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+  
+  .skills {
+    padding: 2px 0px;
+    color: white; 
+    border-radius: 10px;
+    text-align: right;
+  }
+  
+  .html {width: 100%; background-color: #04AA6D;}
+  .css {width: 100%; background-color: #2196F3;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+  .js {width: 65%; background-color: #f44336;}
+  .php {width: 60%; background-color: #808080;}
+  
+  .attributes {
+    background-color: #121212;
+    float: right;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  .attributes h2 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+  }
+  
+  .attributes p {
+    font-family: sans-serif;
+    color: white;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .lorecontainer {
+    width: 100%;
+    display: block;
+    }
+  }

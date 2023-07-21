@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="images/webtabimage/elishia_main.png"><title>Kyushiartz | Term & Service</title>
+  <link rel="stylesheet" href="style/term_services.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/popuperror.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+<!-- Top navigation -->  
+<header>
+<nav class="navbar">
+  <a href="Index.html" class="nav-brand">KSA
+  <img src="images/myavatarlogo/e.png" class="my-avatar">
+  </a>
+  <input type="search" placeholder="Search here...">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="Index.html" class="nav-link"><i class="fa fw fa-home"></i> HOME</a>
+    </li>
+    <li class="nav-item">
+      <a href="Portfolio.html" class="nav-link"><i class="fa fw fa-folder"></i> PORTFOLIO</a>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a href="#" class="nav-link-2" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="Comic.html">Character's Lore</a>
+          <a href="Mycharacters.html">Original Character's</a>
+		      <a href="#" onclick="openPopup()">Commission Sheet</a>
+          <div class="popup" id="popup">
+            <img src="images/popup/popupimg.png">
+            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
+            <p>Sorry the content you're trying to access is not yet available at this time.</p>
+            <button type="button" onclick="closePopup()">CLOSE</button>
+          </div>
+          <a href="Term_Services.html">Term & Services</a>
+        </div>
+      </div>
+  </div>
+    </li>
+    <li class="nav-item">
+      <a href="About.html" class="nav-link"><i class="fa fw fa-user"></i> ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a href="Contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+</header>
+
+<script src="js/hamburger.js"></script>
+<script src="js/dropdownmenu.js"></script>
+<script src="js/popup.js"></script>
+
+<div class="ts-content">
+   <div class="background">
+      <ul>
+         <li>Pay first before i gave you the artwork, i do not accept refunds so be sure you're really interested in commisioning me.</li>
+         <li>Half payment first after sketch approval, the other half will be done before i show the final product.</li>
+         <li>I have the rights to decline a commission that I'm not comfortable with.</li>
+         <li>Please provide detailed reference or description for your request (or you can sketch it in your own visualization and i'll try to interpret it! If you want too of course, i'm not gonna force you).</li>
+         <li>Expect some late responses and might take long too because I'm a student and probably depends on the complexity.</li>
+         <li>I'll send you my progress (sketch, base coloring, rendering from time to time).</li>
+         <li>If there's multiple characters, the overall price will be doubled from the original price.</li>
+         <li>Please credit me when sharing the commissioned works i made it would be much appreciated.</li>
+         <li>No deadlines so that the artwork is not rushed and has a good quality depends if it's just for personal use but if it's from a company i will agree.</li>
+         <li>You must follow these and WILL NOT say that you made this work, WILL NOT trace it around and WILL NOT sell it. If I caught you disobeyed these terms and conditions, STOP! You've violated the law! Pay the court a fine or serve your sentence! Your stolen/traced goods are now forfeit.</li>
+         <li>Please do not sell commissioned works as NFTs.</li>
+         <li>And lastly, the finished commision art work will be sent either through gmail or google drive.</li>
+         <li>If you have some questions, feel free to contact me in my socials, or my gmail kyuushi992@gmail.com</li>
+      <ul>
+        <div class="cpr-container">
+          <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+          </div>
+        </div>
+   </div>
+</div>
+
+<script>
+  var date = new Date();
+  var year = date.getFullYear();
+  document.getElementById('currentyear').innerHTML = year;
+</script>
+
+</body>
+</html>
