@@ -22,11 +22,6 @@ body {
   src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
 }
 
-@font-face {
-  font-family: myFont3;
-  src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
-}
-
 .body-container {
   background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
   margin: 0;
@@ -75,7 +70,7 @@ body {
 /* Style inputs with type="text", select elements and textareas */
 input[type=username], input[type=email], input[type=message], select, textarea {
   width: 100%;
-  font-family: myFont3, sans-serif;
+  font-family: myFont2, sans-serif;
   padding: 12px; 
   border: 1px solid #006eff; 
   border-right-width: 9px; 
@@ -125,7 +120,7 @@ input[type=message], select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=Submit] {
   background-color: #154360;
-  font-family: myFont3, sans-serif;
+  font-family: myFont2, sans-serif;
   color: rgb(255, 255, 255);
   padding: 12px 20px;
   border: none;
@@ -237,7 +232,7 @@ input[type=Submit]:hover {
    width: 100%;
    display: block;
   }
-  @media(max-width: 450px) {
+  @media screen and (max-width: 450px) {
     .donate img {
       width: 323px;
     }
