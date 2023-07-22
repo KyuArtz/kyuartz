@@ -1,270 +1,273 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #222222;
-  background-image: url('../images/bg/BG_E.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
+    background-color: #222222;
+    background-image: url("../images/bg/BG_E.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
-  font-family: myFont;
-  src:url(../fonts/hermes-font/hermes-font.otf);
+    font-family: myFont;
+    src: url("../fonts/hermes-font/hermes-font.otf");
 }
 
 @font-face {
-  font-family: myFont2;
-  src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
+    font-family: myFont2;
+    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
 
 @font-face {
-  font-family: myFont3;
-  src:url(../fonts/ethnocentric/ethnocentric\ rg.otf);
+    font-family: myFont3;
+    src: url("../fonts/ethnocentric/ethnocentric\ rg.otf");
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(49, 49, 49); 
+    background: rgb(49, 49, 49);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(11, 91, 138);
-  border-radius: 9px;
+    background: rgb(11, 91, 138);
+    border-radius: 9px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(26, 128, 187);
+    background: rgb(26, 128, 187);
 }
 
 /* style the summary section container */
 .summary {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
-  text-align: center;
-  color: white;
-  padding: 20px;
-  margin-top: 51px;
-  font-family: myFont2, sans-serif;
-  cursor: default;
-  font-size: small;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-top: 51px;
+    font-family: myFont2, sans-serif;
+    cursor: default;
+    font-size: small;
 }
 
 .summary p {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 /* style the content of the summary  */
 .summarycontent {
-  display: flex;
-  background-color: rgba(40, 42, 54, 0.200);
-  background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
-  border-radius: 10px;
-  text-align: justify;
-  font-family: myFont3, sans-serif;
-  color: white;
-  padding: 25px;
-  cursor: default;
+    display: flex;
+    background-color: rgba(40, 42, 54, 0.200);
+    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+    border-radius: 10px;
+    text-align: justify;
+    font-family: myFont3, sans-serif;
+    color: white;
+    padding: 25px;
+    cursor: default;
 }
 
 /* style the experience container */
 .experience {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
-  text-align: center;
-  color: white;
-  padding: 5px;
-  margin: 1px 0px 1px 0px;
-  font-family: sans-serif;
-  cursor: default;
-  font-size: small;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 1px 0;
+    font-family: sans-serif;
+    cursor: default;
+    font-size: small;
 }
 
 .xpcontent h2 {
-  font-family: myFont2, sans-serif;
-  font-size: small;
+    font-family: myFont2, sans-serif;
+    font-size: small;
 }
 
 /* style the content of the experience container */
 .xpcontent {
-  font-family: myFont3, sans-serif;
-  color: white;
-  padding: 10px;
-  margin: 20px;
-  cursor: default;
+    font-family: myFont3, sans-serif;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    cursor: default;
 }
 
 .xpcontent p {
-  padding: 10px;
-  display: inline-block;
-  background-color: rgba(40, 42, 54, 0.200);
-  background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
-  border-radius: 0px 10px 0px 10px;
-  cursor: default;
-  width: 175px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(40, 42, 54, 0.200);
+    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+    border-radius: 0 10px 0 10px;
+    cursor: default;
+    width: 175px;
 }
 
 /* style the experience container */
 .expapp {
-  text-align: center;
-  color: white;
-  padding: 5px;
-  font-family: sans-serif;
-  cursor: default;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-family: sans-serif;
+    cursor: default;
 }
 
 .appxpcontent h2 {
-  font-family: myFont2, sans-serif;
-  font-size: small;
+    font-family: myFont2, sans-serif;
+    font-size: small;
 }
 
 /* style the content of the expapp container */
 .appxpcontent {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
-  font-family: sans-serif;
-  color: white;
-  padding: 49px;
-  cursor: default;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    font-family: sans-serif;
+    color: white;
+    padding: 49px;
+    cursor: default;
 }
 
-.applogo img{
-  width: 50px;
-  height: 50px;
-  padding: 2px;
-  border-radius: 6px;
-  opacity: 0.6;
+.applogo img {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 6px;
+    opacity: 0.6;
 }
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
 }
 
 /*  */
 .me {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  background-image: linear-gradient(to bottom, rgba(18, 18, 26, 0.753), rgba(0, 119, 255, 0.103));
-  background-color: rgba(20, 20, 20, 0.5);
-  margin: 8px;
-  padding: 10px;
-  border-radius: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgba(18, 18, 26, 0.753), rgba(0, 119, 255, 0.103));
+    background-color: rgba(20, 20, 20, 0.5);
+    margin: 8px;
+    padding: 10px;
+    border-radius: 9px;
 }
 
 .card img {
-  max-width: 100%;
-  border-radius: 9px;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
-  border-color: #fff;
-  margin-bottom: -70px;
+    max-width: 100%;
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #fff;
+    margin-bottom: -70px;
 }
 
 /* style the name and title and botton inside the my info */
 .my-info {
-  font-family: myFont2, sans-serif;
-  font-size: small;
-  color: white;
-  padding: 0 16px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  cursor: default;
-  background-color: rgba(20, 20, 20, 0.600);
-  border-radius: 50px 50px 5px 5px;
+    font-family: myFont2, sans-serif;
+    font-size: small;
+    color: white;
+    padding: 10px 16px;
+    cursor: default;
+    background-color: rgba(20, 20, 20, 0.600);
+    border-radius: 50px 50px 5px 5px;
 }
 
 .my-info h2 {
-  border-style: solid;
-  border-width: 0px 0px 2px 0px;
-  margin-top: 70px;
-  text-align: center;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    margin-top: 70px;
+    text-align: center;
 }
 
 /*  */
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* style the title inside the my info */
 .title {
-  color: #2c687e;
-  cursor: default;
+    color: #2c687e;
+    cursor: default;
 }
 
 .email {
-  color: #2c687e;
-  cursor: default;
+    color: #2c687e;
+    cursor: default;
 }
 
-.fb, .yt {
-  color: #586a70;
+.fb,
+.yt {
+    color: #586a70;
 }
 
 .cpr-container {
-  position: absolute;
-  width: 100%;
-  padding: 8px 0px;
-  background-color: #1a1a1a;
-  background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
-  font-family: myFont2, sans-serif;
-  font-size: x-small;
+    position: absolute;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    font-family: myFont2, sans-serif;
+    font-size: x-small;
 }
 
 .copyright p {
-  text-align: center;
-  color: white;
-} 
+    text-align: center;
+    color: white;
+}
 
 .detail-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .detail {
-  margin-top: 5px;
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
-  text-decoration: none;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
 }
 
 .detail:hover {
-  color: rgb(33, 110, 197);
-  transition: 0.5s ease;
-  text-decoration: underline;
+    color: rgb(33, 110, 197);
+    transition: 0.5s ease;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 650px) {
-.me {
-   width: 100%;
-   display: block;
-  }
-  .my-info h2, p {
-    text-align: center;
-  }
-  .summary .summarycontent p {
-    text-align: justify;
-  }
+    .me {
+        width: 100%;
+        display: block;
+    }
+    .my-info h2,
+    p {
+        text-align: center;
+    }
+    .summary .summarycontent p {
+        text-align: justify;
+    }
 }

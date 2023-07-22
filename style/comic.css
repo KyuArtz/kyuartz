@@ -1,207 +1,210 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body { 
-  background-color: #222222;
-  background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
-	margin: 0;
-	padding: 0;
-}
-
-@font-face {
-  font-family: myFont;
-  src:url(../fonts/hermes-font/hermes-font.otf);
+body {
+    background-color: #222222;
+    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    margin: 0;
+    padding: 0;
 }
 
 @font-face {
-  font-family: myFont2;
-  src:url(../fonts/ethnocentric/ethnocentric\ rg\ it.otf);
+    font-family: myFont;
+    src: url("../fonts/hermes-font/hermes-font.otf");
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: rgb(49, 49, 49); 
+    background: rgb(49, 49, 49);
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(11, 91, 138);
-  border-radius: 9px;
+    background: rgb(11, 91, 138);
+    border-radius: 9px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(26, 128, 187);
+    background: rgb(26, 128, 187);
 }
 
 .top-spacing {
-  margin-top: 95px;
+    margin-top: 95px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .mySlides img {
-  width: 100%;
-  height: 520px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 9px;
-  border-style: solid;
-  border-width: 5px 2px 9px 2px;
-  border-color: rgb(0 0 0);
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 5px 2px 9px 2px;
+    border-color: rgb(0 0 0);
 }
 
 .btnlink:hover {
-  opacity: 0.6;
-  transition: 0.5s ease;
+    opacity: 0.6;
+    transition: 0.5s ease;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -82px;
-  padding: 50px 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
-  transition: 0.6s ease;
-  user-select: none;
+.next,
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -82px;
+    padding: 50px 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 7px 0px 0px 7px;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
+    right: 0;
+    border-radius: 7px 0 0 7px;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
 }
 
 /* Position the "next button" to the left */
 .prev {
-  left: 0;
-  border-radius: 0px 7px 7px 0px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
+    left: 0;
+    border-radius: 0 7px 7px 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
+.next:hover,
+.prev:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
 }
 
 .mySlides {
-  display:none;
+    display: none;
 }
 
 .active-slide {
-  display:block;
+    display: block;
 }
 
 /* Title of the slideshow */
 .title {
-  color: #f2f2f2;
-  font-size: large;
-  padding: 8px 12px;
-  position: absolute;
-  top: 10px;
-  left: 0;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
-  font-family: myFont2, sans-serif;
-  cursor: default;
-  z-index: 1;
+    color: #f2f2f2;
+    font-size: large;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
+    font-family: myFont2, sans-serif;
+    cursor: default;
+    z-index: 1;
 }
 
 /* Chapter text */
 .chapter {
-  color: #fff;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
-  font-family: myFont2, sans-serif;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 32px;
-  left: 0;
-  width: 100%;
-  text-align: left;
-  cursor: default;
-  border-radius: 0px 0px 9px 6px;
+    color: #fff;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
+    font-family: myFont2, sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    cursor: default;
+    border-radius: 0 0 9px 6px;
 }
 
 .btn-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  padding: 5px 11px;
-  background-color: rgb(24, 23, 23);
-  transition: background-color 0.6s ease 0s;
-  position: relative;
-  bottom: 52px;
-  border-style: none;
-  left: 132px;
-  text-align: center;
+    cursor: pointer;
+    padding: 5px 11px;
+    background-color: rgb(24, 23, 23);
+    transition: background-color 0.6s ease 0s;
+    position: relative;
+    bottom: 52px;
+    border-style: none;
+    left: 132px;
+    text-align: center;
 }
 
 .dot a {
-  color: white;
-  text-decoration: none;
-  font-family: myFont2, sans-serif;
-  font-size: small;
+    color: white;
+    text-decoration: none;
+    font-family: myFont2, sans-serif;
+    font-size: small;
 }
 
-.active, .dot:hover {
-  background-color: rgb(20, 103, 158);
+.active,
+.dot:hover {
+    background-color: rgb(20, 103, 158);
 }
 
 .cpr-container {
-  position: relative;
-  padding: 8px 0px;
-  background-color: #1a1a1a;
-  background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
-  font-family: myFont2, sans-serif;
-  font-size: x-small;
+    position: relative;
+    padding: 8px 0;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    font-family: myFont2, sans-serif;
+    font-size: x-small;
 }
 
 .copyright p {
-  text-align: center;
-  color: white;
-  cursor: default;
-} 
+    text-align: center;
+    color: white;
+    cursor: default;
+}
 
 .detail-container {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .detail {
-  margin-top: 5px;
-  color: rgb(255, 255, 255);
-  display: inline-block;
-  padding: 0px 5px 0px 5px;
-  text-decoration: none;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
 }
 
 .detail:hover {
-  color: rgb(33, 110, 197);
-  transition: 0.5s ease;
-  text-decoration: underline;
+    color: rgb(33, 110, 197);
+    transition: 0.5s ease;
+    text-decoration: underline;
 }
 
 /* Fading animation 
