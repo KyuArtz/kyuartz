@@ -62,8 +62,8 @@ a {
 .nav-link,
 .nav-link-dropdown {
     padding: 15px 25px 12px;
-    border-radius: 3px 3px 3px 15px;
-    box-shadow: 0 0 2px #ffffff;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 1px #ffffff;
 }
 
 .nav-link-dropdown:hover,
@@ -140,16 +140,10 @@ a {
         border-radius: none;
         box-shadow: none;
     }
-    @media screen and (max-width: 768px) {
-        .intro h2,
-        p {
-            font-size: small;
-        }
-    }
 }
 
 /* On smaller screens, decrease text size */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 470px) {
     .next,
     .prev {
         font-size: 11px;
@@ -237,14 +231,13 @@ a {
 .mininav a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     background-color: #2a2a2a;
-    border-radius: 2px 2px 2px 10px;
+    border-radius: 2px 2px 2px 2px;
     color: grey;
     padding: 5px 20px;
     font-family: sans-serif;
     text-decoration: none;
     font-size: 11px;
     opacity: 0.5;
-    transform: skew(350deg);
 }
 
 /* Change the color of links on hover */
