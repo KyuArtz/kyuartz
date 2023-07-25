@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -146,6 +147,10 @@ input[type=Submit]:hover {
     color: rgb(255, 255, 255);
     opacity: 1;
     transition: 0.3s ease-in-out;
+}
+
+label  {
+    font-size: small;
 }
 
 /* style the experience container */
