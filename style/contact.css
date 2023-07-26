@@ -73,10 +73,11 @@ select,
 textarea {
     width: 100%;
     font-family: myFont2, sans-serif;
+    font-size: x-small;
     padding: 12px;
     border: 1px solid #006eff;
-    border-right-width: 9px;
-    border-left-width: 9px;
+    border-right-width: 6px;
+    border-left-width: 6px;
     outline: none;
     box-sizing: border-box;
     /* padding and width stays in place */
@@ -85,7 +86,7 @@ textarea {
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
     border-radius: 4px 30px 4px 4px;
-    background: none;
+    background: rgba(11, 11, 14, 0.753);
     color: #ffffff;
 }
 
@@ -96,10 +97,9 @@ textarea {
 }
 
 input[type=message],
-select,
 textarea {
-    max-height: 250px;
-    height: 250px;
+    max-height: 150px;
+    height: 150px;
     border-radius: 4px 4px 4px 30px;
 }
 
@@ -108,7 +108,7 @@ textarea {
 #username-error {
     position: relative;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 10px;
     color: rgb(255, 0, 0);
     padding-top: 2px;
     padding-left: 5px;
@@ -121,7 +121,7 @@ textarea {
 #username-valid {
     position: relative;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 10px;
     color: #1d8f56;
     padding-top: 2px;
     padding-left: 5px;
@@ -133,6 +133,7 @@ textarea {
 input[type=Submit] {
     background-color: #154360;
     font-family: myFont2, sans-serif;
+    font-size: x-small;
     color: rgb(255, 255, 255);
     padding: 12px 20px;
     border: none;
