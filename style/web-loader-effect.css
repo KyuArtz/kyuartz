@@ -1,0 +1,45 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(14, 11, 11), rgb(24, 42, 63));
+  transition: opacity 0.75s, visibility 0.75s;
+  z-index: 1;
+}
+
+.loader h2 {
+  font-family: myFont2, sans-serif;
+  font-size: small;
+  color: #dddddd;
+  position: absolute;
+  bottom: 30%;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #9eb5e0;
+  border-top-color: rgb(20, 111, 202);
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transition: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}

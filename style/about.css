@@ -148,16 +148,6 @@ body {
     pointer-events: none;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:after,
-*:before {
-    box-sizing: inherit;
-}
-
 /*  */
 .me {
     float: left;
