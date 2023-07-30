@@ -18,6 +18,7 @@
   color: #dddddd;
   position: absolute;
   bottom: 30%;
+  transition: inherit;
 }
 
 .loader-hidden {
