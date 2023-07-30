@@ -47,7 +47,9 @@
       <a href="about.html" class="nav-link"><i class="fa fw fa-user"></i> ABOUT</a>
     </li>
     <li class="nav-item">
-      <a href="contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+      <div class="active-nav">
+        <a href="contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+      </div>
     </li>
   </ul>
   <div class="hamburger">
@@ -69,10 +71,10 @@
     <div class="title"><h2>INQUIRY FORM</h2></div>
 
     <label id="username-label">Name:</label><span id="username-error"></span><span id="username-valid"></span>
-    <input type="username" spellcheck="false" id="username-field" name="Username" placeholder="Enter your name.." required>
+    <input type="username" spellcheck="false" id="username-field" name="Username" placeholder="Enter your name.." onkeyup="validateUsername()" required >
 
     <label id="email-label">Email:</label><span id="email-error"></span><span id="email-valid"></span>
-    <input type="email" spellcheck="false" id="email-field" name="Email" placeholder="Enter your email.." required>
+    <input type="email" spellcheck="false" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateEmail()" required>
 
     <label id="Country-label">Select your country:</label>
     <select name="Country">
@@ -80,7 +82,7 @@
     </select>
     
     <label id="message-label">Message:</label><span id="message-error"></span><span id="message-valid"></span>
-    <textarea type="message" spellcheck="false" id="message-field" name="Message" placeholder="Type something you want to say.." required></textarea>
+    <textarea type="message" spellcheck="false" id="message-field" name="Message" placeholder="Type something you want to say.." onkeyup="validateMessage()" required></textarea>
 
     <input type="Submit" value="Send">
 

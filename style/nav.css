@@ -14,7 +14,7 @@ header {
     list-style: none;
 }
 
-.nav-menu.active-nav {
+.nav-menu {
     padding: 0;
 }
 
@@ -62,13 +62,16 @@ a {
 .nav-link,
 .nav-link-dropdown {
     padding: 15px 25px 12px;
-    border-radius: 3px 3px 3px 3px;
-    box-shadow: 0 0 1px #ffffff;
+}
+
+.active-nav a {
+    border-radius: 5px;
+    box-shadow: 0 0 2px #33ffff;
 }
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
-    transition: 0.5s ease;
+    transition: 0.4s ease;
     color: #3498DB;
     border-radius: 5px;
     box-shadow: 0 0 4px #33ffff;
@@ -135,8 +138,7 @@ a {
     .navbar input[type=search] {
         width: 100%;
     }
-    .nav-link,
-    .nav-link-dropdown {
+    .active-nav a {
         border-radius: none;
         box-shadow: none;
     }

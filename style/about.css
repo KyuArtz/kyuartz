@@ -85,7 +85,7 @@ body {
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     text-align: center;
     color: white;
-    padding: 5px;
+    padding: 15px;
     margin: 1px 0;
     font-family: sans-serif;
     cursor: default;
@@ -202,6 +202,10 @@ html {
     text-align: center;
 }
 
+.my-info p {
+    font-size: 12px;
+}
+
 /*  */
 .container::after,
 .row::after {
@@ -211,12 +215,9 @@ html {
 }
 
 /* style the title inside the my info */
-.title {
-    color: #2c687e;
-    cursor: default;
-}
-
-.email {
+.title,
+.email,
+.contact {
     color: #2c687e;
     cursor: default;
 }
