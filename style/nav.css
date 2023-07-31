@@ -109,7 +109,7 @@ a {
     }
     .nav-menu {
         position: fixed;
-        left: -200%;
+        left: -100%;
         top: 34px;
         gap: 0;
         flex-direction: column;
