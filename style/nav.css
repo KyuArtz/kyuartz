@@ -7,7 +7,7 @@ header {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #343434;
-    z-index: 10;
+    z-index: 100;
 }
 
 .nav-menu li {
@@ -166,7 +166,7 @@ a {
     background-color: rgba(22, 22, 22, 0.80);
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(14, 98, 194, 0.103));
     transition: all 0.3s ease 0s;
-    z-index: 2;
+    z-index: 5;
 }
 
 .dropdown-content a {
@@ -221,7 +221,7 @@ a {
     top: 50px;
     left: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 99;
     overflow: visible;
     border-style: solid;
     border-width: 0 0 1px 0;
