@@ -225,6 +225,7 @@ label  {
 .copyright p {
     text-align: center;
     color: white;
+    cursor: default;
 }
 
 .detail-container {

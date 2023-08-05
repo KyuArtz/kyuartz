@@ -169,9 +169,11 @@ body.lb-disable-scrolling {
 }
 
 .lb-data .lb-caption {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 1em;
+    color: #3498DB;
+    cursor: default;
 }
 
 .lb-data .lb-caption a {
