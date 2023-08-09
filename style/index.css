@@ -118,12 +118,12 @@ video {
     width: 100%;
 }
 
-.dots {
+.btn-container {
     text-align: center;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.btn {
     position: relative;
     bottom: 60px;
     cursor: pointer;
@@ -138,8 +138,8 @@ video {
     box-shadow: 0 3px 4px 0 #000000;
 }
 
-.active-dot,
-.dot:hover {
+.active-btn,
+.btn:hover {
     background-color: #244d83;
 }
 

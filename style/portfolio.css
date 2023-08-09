@@ -42,6 +42,11 @@ body {
     background: rgb(26, 128, 187);
 }
 
+.dots-container, ul, li {
+    list-style: none;
+    padding-left: 0;
+}
+
 .image-container {
     width: 100%;
     min-height: 100vh;
@@ -52,7 +57,7 @@ body {
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-auto-rows: 300px 300px;
     grid-gap: 5px;
-    margin-top: 55px;
+    margin-top: 100px;
 }
 
 .gallary img {
@@ -64,6 +69,47 @@ body {
     transition: transform 0.3s;
 }
 
+.title {
+    position: fixed;
+    width: 100%;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #343434;
+    top: 50px;
+    z-index: 99;
+}
+
+.title h1 {
+    text-align: center;
+    font-family: myFont2, sans-serif;
+    font-size: large;
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.up-container a img {
+    background-color: #1a1a1a;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 9px;
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 0.4s;
+}
+
+.up-container a img:hover {
+    transform: scale(1.2);
+}
+
 .gallary img:hover {
     transform: scale(0.98);
 }
@@ -73,6 +119,9 @@ body {
     .gallary img {
         grid-auto-rows: auto auto;
         border-radius: 0;
+    }
+    .gallary img:hover {
+        transform: none;
     }
 }
 

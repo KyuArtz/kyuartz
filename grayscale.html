@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon/elishia_BHX_icon.ico"><title>Kyushiartz | Portfolio - Grayscale</title>
+  <link rel="stylesheet" href="style/portfolio.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/lightbox.css">
+  <link rel="stylesheet" href="style/web-loader-effect.css">
+  <link rel="stylesheet" href="style/popuperror.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  
+<body>
+	
+<header>
+<nav class="navbar">
+  <a href="index.html" class="nav-brand">KSA
+  <img src="images/myavatarlogo/e.png" class="my-avatar">
+  </a>
+  <input type="search" placeholder="Quick Search...">
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link"><i class="fa fw fa-home"></i> HOME</a>
+    </li>
+    <li class="nav-item">
+      <div class="active-nav">
+        <a href="portfolio.html" class="nav-link"><i class="fa fw fa-folder"></i> PORTFOLIO</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div class="dropdown">
+        <a href="#" class="nav-link-dropdown" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="comic.html">My Comic</a>
+          <a href="mycharacters.html">Original Character's</a>
+		      <a href="#" onclick="openPopup()">Commission Sheet</a>
+          <div class="popup" id="popup">
+            <img src="images/popup/popupimg.png">
+            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
+            <p>Sorry the content you're trying to access is not yet available at this time.</p>
+            <button type="button" onclick="closePopup()">CLOSE</button>
+          </div>
+          <a href="term-services.html">Terms of Service</a>
+      </div>
+      </div>
+  </div>
+    </li>
+    <li class="nav-item">
+      <a href="about.html" class="nav-link"><i class="fa fw fa-user"></i> ABOUT</a>
+    </li>
+    <li class="nav-item">
+      <a href="contact.html" class="nav-link"><i class="fa fw fa-phone"></i> CONTACT</a>
+    </li>
+  </ul>
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+</header>
+
+<script src="js/hamburger.js"></script>
+<script src="js/dropdownmenu.js"></script>
+<script src="js/popup.js"></script>
+
+<div class="loader" oncontextmenu="return false">
+  <h2>Loading Webpage...</h2>
+  <div class="loader2"></div>
+</div>
+<script src="js/loader.js"></script>
+
+<div class="title"><h1>MY WORK</h1>
+<div class="three-dots">
+  <span class="dot-btn"></span>
+  <span class="dot-btn"></span>
+  <span class="dot-btn"></span>
+</div>
+
+<div class="dots-container">
+  <ul class="dots-menu">
+    <h3>Category</h3>
+    <li class="dot-item">
+      <a href="portfolio.html" class="dot-link">All</a>
+    </li>
+    <li class="dot-item">
+      <a href="portrait-bustup.html" class="dot-link">Portrait / Bust up</a>
+    </li>
+    <li class="dot-item">
+      <a href="full-body.html" class="dot-link">Full body</a>
+    </li>
+    <li class="dot-item">
+      <a href="grayscale.html" class="dot-link">Grayscale</a>
+    </li>
+    <li class="dot-item">
+      <a href="anime-style.html" class="dot-link">Anime style</a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="up-container">
+  <a href="#">
+    <img src="images/imgbtn/up-icon.png">
+  </a>
+</div>
+
+<script src="js/dots-functionality.js"></script>
+
+<div class="image-container">
+  <div class="gallary">
+     <a href="images/artgallary/A-place-that-was-one's-called-home.png" data-lightbox="Art" data-title="A place that was one's called home" oncontextmenu="return false">
+      <img src="images/artgallary/A-place-that-was-one's-called-home.png">
+    </a>
+    <a href="images/artgallary/Two-rivals.png" data-lightbox="Art" data-title="Two rivals" oncontextmenu="return false">
+      <img src="images/artgallary/Two-rivals.png">
+    </a>
+    <a href="images/artgallary/Fallen-angel.png" data-lightbox="Art" data-title="Fallen angel" oncontextmenu="return false">
+      <img src="images/artgallary/Fallen-angel.png">
+    </a>
+    <a href="images/artgallary/A-mothers-love.png" data-lightbox="Art" data-title="A mothers love" oncontextmenu="return false">
+      <img src="images/artgallary/A-mothers-love.png">
+    </a>
+    <a href="images/artgallary/Hexxana-grayscale.png" data-lightbox="Art" data-title="Hexxana grayscale" oncontextmenu="return false">
+      <img src="images/artgallary/Hexxana-grayscale.png">
+    </a>
+  </div>
+</div>
+
+<script src="js/lightbox-plus-jquery.js"></script>
+
+<div class="cpr-container">
+  <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+    <div class="detail-container">
+    <a class="detail" href="term-services.html"> Terms of Service</a>
+    <a class="detail" href="about.html"> About Me</a>
+    <a class="detail" href="contact.html"> Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/current-year.js"></script>
+
+</body>
+</html>

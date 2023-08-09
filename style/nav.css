@@ -109,7 +109,7 @@ a {
     }
     .nav-menu {
         position: fixed;
-        left: -100%;
+        right: -100%;
         top: 34px;
         gap: 0;
         flex-direction: column;
@@ -133,7 +133,7 @@ a {
         transition: 0.7s;
     }
     .nav-menu.active-nav {
-        left: 0;
+        right: 0;
     }
     .navbar input[type=search] {
         width: 100%;
@@ -191,6 +191,83 @@ a {
     background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
     transition: 0.7s;
+}
+
+.three-dots {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dot-btn {
+    position: relative;
+    cursor: pointer;
+    height: 7px;
+    width: 7px;
+    margin: 0;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.three-dots:hover {
+    background-color: #0b5b91;
+    transition: 0.5s ease;
+}
+
+.dots-menu {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(0, 3, 12, 0.95);
+    min-width: 100px;
+    height: 100vh;
+    text-align: left;
+    justify-content: left;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.dots-menu h3 {
+    color: dodgerblue;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-family: myFont2, sans-serif;
+    text-align: center;
+    font-size: small;
+    cursor: default;
+    border-bottom: dodgerblue;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-width: thin;
+    padding: 5px;
+}
+
+.dot-item {
+    display: flex;
+}
+.dot-item a {
+    font-size: x-small;
+    width: 100%;
+}
+
+.dot-link {
+    padding: 15px;
+}
+.dot-item a:hover {
+    color: #000000;
+    background-image: linear-gradient(to right, rgb(126, 178, 255), rgba(255, 255, 255, 0));
+    transition: 0.7s ease;
+}
+.dots-menu.active-dot {
+    left: 0;
 }
 
 .navbar input[type=search] {
