@@ -5,48 +5,16 @@
 
 body {
     background-color: #222222;
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/hermes-font/hermes-font.otf");
-}
-
-@font-face {
-    font-family: myFont2;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
-
-/* style the content in ts */
 .ts-content {
     cursor: default;
 }
 
-/* style the paragraph in ts content */
 .ts-content li {
     color: white;
     font-family: myFont2, sans-serif;
@@ -58,16 +26,13 @@ body {
 }
 
 .ts-content ul {
-    padding-bottom: 10px;
     padding-right: 40px;
     overflow-x: scroll;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+/* Hides the scrollbar for Chrome, Safari and Opera */
 .ts-content ul::-webkit-scrollbar {
     display: none;
 }
@@ -76,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: url("../images/bg/BG_E.png");
+    background-image: url("../images/bg/landscape-mode.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -85,6 +50,12 @@ body {
     height: 100%;
     padding-top: 39px;
     font-size: small;
+}
+
+@media screen and (max-width: 500px) {
+    .background {
+        background-image: url("../images/bg/portrait-mode.png");
+    }
 }
 
 .copyright p {

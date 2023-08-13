@@ -16,7 +16,7 @@
     text-align: center;
     font-family: myFont2, sans-serif;
     padding: 0 30px 30px;
-    background-image: url("../images/bg/BG_EL.png");
+    background-image: url("../images/popup/popup-bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,13 +55,13 @@
 }
 
 .popup p {
-    color: #ffffff;
+    color: #000000;
     cursor: default;
     font-size: 14px;
 }
 
 .popup button {
-    width: 100%;
+    width: 50%;
     margin-top: 30px;
     padding: 10px 0;
     background: #c41111;
@@ -72,7 +72,7 @@
     border-style: solid;
     border-color: #333;
     outline: none;
-    font-size: 18px;
+    font-size: 15px;
     font-family: inherit;
     border-radius: 0 20px 0 20px;
     cursor: pointer;
@@ -86,7 +86,13 @@
 
 @media(max-width: 450px) {
     .popup {
-        width: 400px;
+        width: 300px;
+    }
+    .popup p {
+        font-size: x-small;
+    }
+    .popup h2 {
+        font-size: x-large;
     }
     .popup img {
         display: none;

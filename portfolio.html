@@ -8,11 +8,17 @@
   <link rel="stylesheet" href="style/nav.css">
   <link rel="stylesheet" href="style/lightbox.css">
   <link rel="stylesheet" href="style/web-loader-effect.css">
-  <link rel="stylesheet" href="style/popuperror.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
   
 <body>
+
+<div class="loader" oncontextmenu="return false">
+  <div class="bg-loader"></div>
+  <h2>Loading Webpage...</h2>
+  <div class="loader2"></div>
+</div>
+<script src="js/loader.js"></script>
 	
 <header>
 <nav class="navbar">
@@ -35,13 +41,7 @@
         <div id="myDropdown" class="dropdown-content">
           <a href="comic.html">My Comic</a>
           <a href="mycharacters.html">Original Character's</a>
-		      <a href="#" onclick="openPopup()">Commission Sheet</a>
-          <div class="popup" id="popup">
-            <img src="images/popup/popupimg.png">
-            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
-            <p>Sorry the content you're trying to access is not yet available at this time.</p>
-            <button type="button" onclick="closePopup()">CLOSE</button>
-          </div>
+		      <a href="commission-sheet.html">Commission Sheet</a>
           <a href="term-services.html">Terms of Service</a>
       </div>
       </div>
@@ -64,13 +64,6 @@
 
 <script src="js/hamburger.js"></script>
 <script src="js/dropdownmenu.js"></script>
-<script src="js/popup.js"></script>
-
-<div class="loader" oncontextmenu="return false">
-  <h2>Loading Webpage...</h2>
-  <div class="loader2"></div>
-</div>
-<script src="js/loader.js"></script>
 
 <div class="title"><h1>MY WORK</h1>
 <div class="three-dots">
@@ -221,6 +214,12 @@
     </a>
     <a href="images/artgallary/Training-grounds.png" data-lightbox="Art" data-title="Training grounds" oncontextmenu="return false">
       <img src="images/artgallary/Training-grounds.png">
+    </a>
+    <a href="images/artgallary/Teku-padoru.png" data-lightbox="Art" data-title="Teku padoru" oncontextmenu="return false">
+      <img src="images/artgallary/Teku-padoru.png">
+    </a>
+    <a href="images/artgallary/Elishia-padoru.png" data-lightbox="Art" data-title="Elishia padoru" oncontextmenu="return false">
+      <img src="images/artgallary/Elishia-padoru.png">
     </a>
     <a href="images/artgallary/Ren&rayza.png" data-lightbox="Art" data-title="Ren & rayza" oncontextmenu="return false">
       <img src="images/artgallary/Ren&rayza.png">

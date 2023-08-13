@@ -1,286 +1,179 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
     background-color: #222222;
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
     margin: 0;
     padding: 0;
+    transition: 0.5s;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
+.dots-container,
+li,
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
-
-/* style and positions the avatar */
-.my-avatar {
-    position: absolute;
-    top: 6px;
-    left: 9px;
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-/* adds a brand name on the top left of the navigation bar */
-.brand-name {
-    cursor: default;
-    background: -webkit-linear-gradient(white, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    float: left;
-    position: relative;
-    margin: 14px 60px;
-    font-family: monospace;
-    font-size: 20px;
-}
-
-/* Adds a background color to the top navigation */
-.topnavbar {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    background-image: url("");
-    background-color: #1a1a1a;
-    background-size: cover;
+.title {
     position: fixed;
-    top: 0;
-    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    z-index: 1;
-    overflow: visible;
-}
-
-/* Style the links inside the navigation bar and texts */
-.topnavbar a {
-    float: right;
-    color: white;
-    padding: 20px 16px;
-    font-family: sans-serif;
-    text-decoration: none;
-    text-align: center;
-    font-size: 11px;
-}
-
-/* Change the color of links on hover */
-.topnavbar a:hover {
-    transition: 0.7s ease;
-    color: #3498DB;
-    text-decoration: underline;
-}
-
-.dropbtn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    float: right;
-    color: white;
-    padding: 20px 16px;
-    font-family: sans-serif;
-    color: #3498DB;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    font-size: 11px;
-}
-
-.dropbtn:focus,
-.dropbtn:hover {
-    transition: 0.7s ease;
-    color: #3498DB;
-    text-decoration: underline;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 148px;
-    top: 55px;
-    border-radius: 7px;
-    background-color: #252525;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 4px 0;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: rgb(255, 255, 255);
-    padding: 19px 16px;
-    text-decoration: none;
-    text-align: left;
-    font-family: sans-serif;
-    display: block;
-}
-
-.dropdown a:hover {
-    background-color: #ddd;
-    text-decoration: none;
-}
-
-.show {
-    display: inline-grid;
-}
-
-/* Style the search box inside the navigation bar */
-.topnavbar input[type=search] {
-    float: left;
-    padding: 8px;
-    border: none;
-    margin: 10px 2px 2px 5px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
-    position: relative;
-}
-
-.active {
+    background-color: #1a1a1a;
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     border-style: solid;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: thick;
-    border-bottom-width: 0;
-    border-color: #3498DB;
+    border-width: 0 0 1px 0;
+    border-color: #343434;
+    top: 50px;
+    z-index: 99;
 }
 
-.active a {
-    color: #3498DB;
-    width: -webkit-fill-available;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-@media screen and (max-width: 600px) {
-    .topnavbar a,
-    .topnavbar input[type=search] {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-    .topnavbar input[type=search] {
-        border: 2px solid #ccc;
-    }
+.title h1 {
+    text-align: center;
+    font-family: myFont2, sans-serif;
+    font-size: large;
+    color: #ffff;
+    display: flex;
+    cursor: default;
 }
 
 .cs-container {
-    background-color: #121212;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 95px;
 }
 
-/* style and resizes the text header */
 .cs-container h3 {
     padding: 9px;
     margin: auto;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.50);
     border-radius: 9px;
     opacity: 0.7;
     letter-spacing: 3px;
     cursor: default;
-    transform: skew(351deg);
+    font-family: myFont2, sans-serif;
+    font-size: small;
+    color: dodgerblue;
 }
 
-/* style and resizes the paragraph text */
 .cs-container p {
     text-align: center;
     padding: 9px;
-    background-color: #000000e6;
+    background-color: rgba(0, 0, 0, 0.50);
     display: inline-block;
     border-radius: 5px;
     opacity: 0.9;
     cursor: default;
-    transform: skew(350deg);
+    font-family: sans-serif;
+    font-size: small;
+    color: white;
 }
 
-.cs-content1 {
+.price h5 {
+    font-weight: bolder;
+    color: dodgerblue;
+    font-family: myFont2;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.50);
+    opacity: 0.9;
+    cursor: default;
+}
+
+.inquire-button {
+    text-align: right;
+    margin: 20px 0 10px;
+    width: 100%;
+    background-color: #3498DB;
+    border-radius: 1px 1px 10px 10px;
+}
+
+.inquire-button a {
+    padding: 10px;
+    background-color: #3498DB;
+    border-radius: 4px;
+    border-radius: 10px 1px 10px 1px;
+    font-size: small;
+    border-style: solid;
+    border-color: #000000;
+    border-width: thin;
+}
+
+.inquire-button a:hover {
+    transition: 0.5s ease;
+    color: #000000;
+}
+
+@media screen and (max-width: 500px) {
+    .inquire-button {
+        text-align: center;
+    }
+    .cs-container p {
+        text-align: left;
+    }
+}
+
+.cs-content {
     color: white;
-    font-family: sans-serif;
     text-align: center;
     padding: 5px 11px 10px;
-    margin-bottom: 7px;
-    background-image: url("images/cs.png");
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
+    margin-bottom: 9px;
+    background-image: url("../images/bg/");
+    background-color: rgba(26, 26, 26, 0.5);
+    box-shadow: 0 0 5px #0a0a0a;
     border-radius: 10px;
 }
 
-.cs-content2 {
-    color: white;
-    font-family: sans-serif;
+.img-container {
     text-align: center;
-    padding: 5px 11px 10px;
-    margin-bottom: 7px;
-    background-image: url("images/cs.png");
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
-    border-radius: 10px;
-}
-
-.cs-content3 {
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 5px 11px 10px;
-    margin-bottom: 7px;
-    background-image: url("images/cs.png");
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
-    border-radius: 10px;
-}
-
-.cs-content4 {
-    color: white;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 5px 11px 10px;
-    margin-bottom: 7px;
-    background-image: url("images/cs.png");
-    background-size: cover;
-    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%);
-    border-radius: 10px;
-}
-
-.row {
-    justify-content: center;
-    display: flex;
 }
 
 .cs-container img {
-    display: flex;
     margin: 5px 2px;
-    height: 350px;
-    width: 220px;
+    width: 270px;
     object-fit: cover;
-    border-radius: 10px;
+    object-position: center;
+    border-radius: 5px;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    border-width: thin;
+    pointer-events: none;
 }
 
-.cr-container {
-    width: 100%;
+.cpr-container {
+    position: relative;
+    padding: 8px 0;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    font-family: myFont2, sans-serif;
+    font-size: x-small;
 }
 
 .copyright p {
-    font-family: monospace;
-    color: #fff;
     text-align: center;
-    font-size: smaller;
-    background-color: #0000006e;
-    padding: 20px;
-    margin: 0;
+    color: white;
+    cursor: default;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: center;
+}
+
+.detail {
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.detail:hover {
+    color: rgb(33, 110, 197);
+    transition: 0.5s ease;
+    text-decoration: underline;
 }

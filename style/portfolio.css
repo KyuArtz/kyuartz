@@ -11,42 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/hermes-font/hermes-font.otf");
-}
-
-@font-face {
-    font-family: myFont2;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
-
-.dots-container, ul, li {
-    list-style: none;
-    padding-left: 0;
-}
-
 .image-container {
     width: 100%;
     min-height: 100vh;
@@ -69,8 +33,18 @@ body {
     transition: transform 0.3s;
 }
 
+.dots-container,
+li,
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 .title {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
@@ -87,8 +61,6 @@ body {
     font-size: large;
     color: #ffff;
     display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: default;
 }
 

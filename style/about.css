@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: url("../images/bg/BG_E.png");
+    background-image: url("../images/bg/landscape-mode.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,43 +13,6 @@ body {
     padding: 0;
 }
 
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/hermes-font/hermes-font.otf");
-}
-
-@font-face {
-    font-family: myFont2;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-
-@font-face {
-    font-family: myFont3;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg.otf");
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
-
-/* style the summary section container */
 .summary {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
@@ -66,20 +29,18 @@ body {
     font-size: 12px;
 }
 
-/* style the content of the summary  */
 .summarycontent {
     display: flex;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
     border-radius: 10px;
     text-align: justify;
-    font-family: myFont3, sans-serif;
+    font-family: myFont2, sans-serif;
     color: white;
     padding: 25px;
     cursor: default;
 }
 
-/* style the experience container */
 .experience {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
@@ -96,9 +57,8 @@ body {
     font-family: myFont2, sans-serif;
 }
 
-/* style the content of the experience container */
 .xpcontent {
-    font-family: myFont3, sans-serif;
+    font-family: myFont2, sans-serif;
     color: white;
     padding: 40px;
     cursor: default;
@@ -114,7 +74,6 @@ body {
     width: 175px;
 }
 
-/* style the experience container */
 .expapp {
     text-align: center;
     color: white;
@@ -125,10 +84,9 @@ body {
 
 .appxpcontent h2 {
     font-family: myFont2, sans-serif;
-    font-size: small;
+    font-size: medium;
 }
 
-/* style the content of the expapp container */
 .appxpcontent {
     background-color: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
@@ -174,7 +132,6 @@ body {
     pointer-events: none;
 }
 
-/* style the name and title and botton inside the my info */
 .my-info {
     font-family: myFont2, sans-serif;
     font-size: small;
@@ -204,17 +161,16 @@ body {
     display: table;
 }
 
-/* style the title inside the my info */
-.title,
+.contact,
 .email,
-.contact {
+.title {
     color: #2c687e;
     cursor: default;
 }
 
 .fb,
-.yt,
-.ig {
+.ig,
+.yt {
     color: #586a70;
 }
 
@@ -264,5 +220,8 @@ body {
     }
     .summary .summarycontent p {
         text-align: justify;
+    }
+    body {
+        background-image: url("../images/bg/portrait-mode.png");
     }
 }

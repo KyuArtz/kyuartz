@@ -58,7 +58,7 @@ body {
     border-right-width: 0;
     border-bottom-width: thick;
     z-index: 1;
-    background-image: url("../images/popup/Maintenance_notice.png");
+    background-image: url("../images/popup/maintenance-notice-landscape.png");
 }
 
 .bg {
@@ -123,4 +123,24 @@ body {
     border-color: #117cc4;
     color: #1368a1;
     background: -webkit-linear-gradient(#282831, #1c1c22);
+}
+
+@media screen and (max-width: 500px) {
+    .popup h1 {
+        font-size: large;
+        text-align: center;
+    }
+    .popup p {
+        font-size: small;
+        top: 60%;
+        position: relative;
+        text-align: center;
+    }
+    .popup {
+        background-image: url("../images/popup/maintenance-notice-portrait.png");
+    }
+    .popup a {
+        font-size: xx-small;
+        left: 32%;
+    }
 }

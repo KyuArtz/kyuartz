@@ -1,60 +1,91 @@
 .loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(to right, rgb(14, 11, 11), rgb(24, 42, 63));
-  transition: opacity 0.75s, visibility 0.75s;
-  z-index: 80;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(14, 11, 11), rgb(24, 42, 63));
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 80;
+}
+
+.bg-loader {
+    background-image: url("../images/bg/loader-bg-landscape.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 500px) {
+    .bg-loader {
+        background-image: url("../images/bg/loader-bg-portrait.png");
+    }
+}
+
+@media screen  and (max-height: 470px) {
+    .loader h2 {
+        display: none;
+        opacity: 0;
+    }
 }
 
 .loader h2 {
-  font-family: myFont2, sans-serif;
-  font-size: small;
-  color: #dddddd;
-  position: absolute;
-  bottom: 30%;
-  transition: inherit;
-  opacity: 0.5;
+    font-family: myFont2, sans-serif;
+    font-size: small;
+    color: #dddddd;
+    position: absolute;
+    bottom: 35%;
+    transition: inherit;
+    cursor: default;
 }
 
 .loader-hidden {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px dashed #9eb5e0;
-  border-color: rgb(20, 111, 202);
-  border-radius: 50%;
-  animation: loading 0.75s ease infinite;
-  opacity: 0.5;
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #9eb5e0;
+    border-bottom-color: rgb(20, 111, 202);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+    border-width: thin;
 }
 
 .loader2 {
-  content: "";
-  width: 50px;
-  height: 50px;
-  border: 15px solid #9eb5e0;
-  border-top-color: rgb(20, 111, 202);
-  border-radius: 50%;
-  animation: loading 0.75s ease infinite;
-  position: absolute;
-  opacity: 0.5;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 15px double #9eb5e0;
+    border-top-color: rgb(20, 111, 202);
+    border-radius: 50%;
+    animation: loading2 0.75s ease infinite;
+    position: absolute;
 }
 
 @keyframes loading {
-  from {
-    transition: rotate(0turn);
-  }
-  to {
-    transform: rotate(1turn);
-  }
+    from {
+        transition: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
+}
+@keyframes loading2 {
+    from {
+        transition: rotate(0turn);
+    }
+    to {
+        transform: rotate(-1turn);
+    }
 }

@@ -10,37 +10,6 @@ body {
     padding: 0;
 }
 
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/hermes-font/hermes-font.otf");
-}
-
-@font-face {
-    font-family: myFont2;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
-
 .row {
     display: inline-block;
 }
@@ -81,7 +50,6 @@ body {
     pointer-events: none;
 }
 
-/* style the name and title and botton inside the my info */
 .oc-info {
     font-family: sans-serif;
     color: white;
@@ -127,7 +95,6 @@ body {
     display: table;
 }
 
-/* style the title inside the my info */
 .element {
     color: #2c687e;
     cursor: default;
@@ -136,7 +103,6 @@ body {
     font-size: smaller;
 }
 
-/* style the botton */
 .button {
     text-decoration: none;
     border-radius: 0 20px;
@@ -149,7 +115,7 @@ body {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size: 12px;
+    font-size: xx-small;
     border-style: solid;
     border-left-width: 6px;
     border-right-width: 6px;
@@ -157,7 +123,6 @@ body {
     border-bottom-width: 1px;
 }
 
-/* style the botton on hover */
 .button:hover {
     background-color: #141414;
     color: white;

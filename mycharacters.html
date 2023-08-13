@@ -10,7 +10,15 @@
    <link rel="stylesheet" href="style/popuperror.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+
+<div class="loader" oncontextmenu="return false">
+  <div class="bg-loader"></div>
+  <h2>Loading Webpage...</h2>
+  <div class="loader2"></div>
+</div>
+<script src="js/loader.js"></script>  
 
 <header>
 <nav class="navbar">
@@ -33,13 +41,7 @@
         <div id="myDropdown" class="dropdown-content">
           <a href="comic.html">My Comic</a>
           <a href="mycharacters.html">Original Character's</a>
-		      <a href="#" onclick="openPopup()">Commission Sheet</a>
-          <div class="popup" id="popup">
-            <img src="images/popup/popupimg.png">
-            <h2>OOPS <i class="fa fw fa-warning"></i></h2>
-            <p>Sorry the content you're trying to access is not yet available at this time.</p>
-            <button type="button" onclick="closePopup()">CLOSE</button>
-          </div>
+		      <a href="commission-sheet.html">Commission Sheet</a>
           <a href="term-services.html">Terms of Service</a>
       </div>
       </div>
@@ -62,25 +64,19 @@
 
 <script src="js/hamburger.js"></script>
 <script src="js/dropdownmenu.js"></script>
-
-<div class="loader" oncontextmenu="return false">
-  <h2>Loading Webpage...</h2>
-  <div class="loader2"></div>
-</div>
-<script src="js/loader.js"></script>
   
 <div class="character-container">
   <div class="row">
     <div class="column">
       <div class="oc-profile">
-        <img src="images/ocprofile/Workinprogress.png" alt="photo">
+        <img src="images/ocprofile/workinprogress.png" alt="photo">
         <div class="oc-info">
           <h3>Arzhel</h3>
           <p class="element">Elemental Mastery:</p>
           <img src="images/elements/wip.jpg" alt="">
           <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
           <div class="popup" id="popup">
-            <img src="images/popup/popupimg.png">
+            <img src="images/popup/popup-icon.png">
             <h2>OOPS <i class="fa fw fa-warning"></i></h2>
             <p>Sorry the content you're trying to access is not yet available at this time.</p>
             <button type="button" onclick="closePopup()">CLOSE</button>
@@ -90,7 +86,7 @@
     </div>
     <div class="column">
       <div class="oc-profile">
-        <img src="images/ocprofile/Blessica.png" alt="photo">
+        <img src="images/ocprofile/blessica.png" alt="photo">
         <div class="oc-info">         
           <h3>Blessica</h3>
            <p class="element">Elemental Mastery:</p>
@@ -98,7 +94,7 @@
            <img src="images/elements/wip.jpg" alt="">
            <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
            <div class="popup" id="popup">
-            <img src="images/popup/popupimg.png">
+            <img src="images/popup/popup-icon.png">
             <h2></h2>
             <p></p>
             <button type="button" onclick="closePopup()">CLOSE</button>
@@ -108,15 +104,15 @@
     </div>
     <div class="column">
       <div class="oc-profile">
-        <img src="images/ocprofile/Workinprogress.png" alt="photo">
+        <img src="images/ocprofile/workinprogress.png" alt="photo">
         <div class="oc-info">
-        <h3>Drakion</h3>
+        <h3>Drakeon</h3>
          <p class="element">Elemental Mastery:</p>
          <img src="images/elements/wip.jpg" alt="">
          <img src="images/elements/wip.jpg" alt="">
          <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
          <div class="popup" id="popup">
-          <img src="images/popup/popupimg.png">
+          <img src="images/popup/popup-icon.png">
           <h2></h2>
           <p></p>
           <button type="button" onclick="closePopup()">CLOSE</button>
@@ -126,14 +122,14 @@
     </div>
     <div class="column">
       <div class="oc-profile">
-        <img src="images/ocprofile/Workinprogress.png" alt="photo">
+        <img src="images/ocprofile/workinprogress.png" alt="photo">
         <div class="oc-info">
           <h3>Evany</h3>
           <p class="element">Elemental Mastery:</p>
           <img src="images/elements/wip.jpg" alt="">
           <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
            <div class="popup" id="popup">
-            <img src="images/popup/popupimg.png">
+            <img src="images/popup/popup-icon.png">
             <h2></h2>
             <p></p>
             <button type="button" onclick="closePopup()">CLOSE</button>
@@ -143,7 +139,7 @@
     </div>
     <div class="column">
        <div class="oc-profile">
-        <img src="images/ocprofile/Feya.png" alt="photo">
+        <img src="images/ocprofile/feya.png" alt="photo">
          <div class="oc-info">
           <h3>Feya</h3>
           <p class="element">Elemental Mastery:</p>
@@ -151,7 +147,7 @@
           <img src="images/elements/wip.jpg" alt="">
           <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
           <div class="popup" id="popup">
-            <img src="images/popup/popupimg.png">
+            <img src="images/popup/popup-icon.png">
             <h2></h2>          
             <p></p>
             <button type="button" onclick="closePopup()">CLOSE</button>
@@ -162,14 +158,14 @@
       <div class="row">
         <div class="column">
           <div class="oc-profile">
-            <img src="images/ocprofile/Floribeth.png" alt="photo">
+            <img src="images/ocprofile/floribeth.png" alt="photo">
             <div class="oc-info">
               <h3>Floribeth</h3>
               <p class="element">Elemental Mastery:</p>
               <img src="images/elements/wip.jpg" alt="">
               <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
               <div class="popup" id="popup">
-                <img src="images/popup/popupimg.png">
+                <img src="images/popup/popup-icon.png">
                 <h2></h2>
                 <p></p>
                 <button type="button" onclick="closePopup()">CLOSE</button>
@@ -179,7 +175,7 @@
         </div>
         <div class="column">
           <div class="oc-profile">
-            <img src="images/ocprofile/Hexxana.png" alt="photo">
+            <img src="images/ocprofile/hexxana.png" alt="photo">
             <div class="oc-info">
               <h3>Hexxana</h3>
               <p class="element">Elemental Mastery:</p>
@@ -187,7 +183,7 @@
               <img src="images/elements/wip.jpg" alt="">
               <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
               <div class="popup" id="popup">
-                <img src="images/popup/popupimg.png">
+                <img src="images/popup/popup-icon.png">
                 <h2></h2>
                 <p></p>
                 <button type="button" onclick="closePopup()">CLOSE</button>
@@ -197,7 +193,7 @@
         </div>
         <div class="column">
           <div class="oc-profile">
-            <img src="images/ocprofile/Liliana.png" alt="photo">
+            <img src="images/ocprofile/liliana.png" alt="photo">
             <div class="oc-info">
               <h3>Liliana</h3>
               <p class="element">Elemental Mastery:</p>
@@ -205,7 +201,7 @@
               <img src="images/elements/wip.jpg" alt="">
               <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
               <div class="popup" id="popup">
-                <img src="images/popup/popupimg.png">
+                <img src="images/popup/popup-icon.png">
                 <h2></h2>
                 <p></p>
                 <button type="button" onclick="closePopup()">CLOSE</button>
@@ -215,7 +211,7 @@
         </div>
         <div class="column">
           <div class="oc-profile">
-            <img src="images/ocprofile/the twin dragon blade.png" alt="photo">
+            <img src="images/ocprofile/ren.png" alt="photo">
             <div class="oc-info">
               <h3>Ren</h3>
               <p class="element">Elemental Mastery:</p>
@@ -223,7 +219,7 @@
               <img src="images/elements/wip.jpg" alt="">
               <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
               <div class="popup" id="popup">
-                <img src="images/popup/popupimg.png">
+                <img src="images/popup/popup-icon.png">
                 <h2></h2>
                 <p></p>
                 <button type="button" onclick="closePopup()">CLOSE</button>
@@ -233,14 +229,14 @@
         </div>
         <div class="column">
           <div class="oc-profile">
-            <img src="images/ocprofile/the twin dragon blade1.png" alt="photo">
+            <img src="images/ocprofile/rayza.png" alt="photo">
             <div class="oc-info">
               <h3>Rayza</h3>
               <p class="element">Elemental Mastery:</p>
               <img src="images/elements/wip.jpg" alt="">
               <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
               <div class="popup" id="popup">
-                <img src="images/popup/popupimg.png">
+                <img src="images/popup/popup-icon.png">
                 <h2></h2>
                 <p></p>
                 <button type="button" onclick="closePopup()">CLOSE</button>
@@ -251,7 +247,7 @@
         <div class="row">
           <div class="column">
             <div class="oc-profile">
-              <img src="images/ocprofile/Workinprogress.png" alt="photo">
+              <img src="images/ocprofile/workinprogress.png" alt="photo">
               <div class="oc-info">
                 <h3>Skultain</h3>
                 <p class="element">Elemental Mastery:</p>
@@ -259,7 +255,7 @@
                 <img src="images/elements/wip.jpg" alt="">
                 <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
                 <div class="popup" id="popup">
-                  <img src="images/popup/popupimg.png">
+                  <img src="images/popup/popup-icon.png">
                   <h2></h2>
                   <p></p>
                   <button type="button" onclick="closePopup()">CLOSE</button>
@@ -269,7 +265,7 @@
           </div>
           <div class="column">
             <div class="oc-profile">
-              <img src="images/ocprofile/Workinprogress.png" alt="photo">
+              <img src="images/ocprofile/workinprogress.png" alt="photo">
               <div class="oc-info">
                 <h3>Shelain</h3>
                 <p class="element">Elemental Mastery:</p>
@@ -277,7 +273,7 @@
                 <img src="images/elements/wip.jpg" alt="">
                 <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
                 <div class="popup" id="popup">
-                  <img src="images/popup/popupimg.png">
+                  <img src="images/popup/popup-icon.png">
                   <h2></h2>
                   <p></p>
                   <button type="button" onclick="closePopup()">CLOSE</button>
@@ -287,7 +283,7 @@
           </div>
           <div class="column">
             <div class="oc-profile">
-              <img src="images/ocprofile/Stelia.png" alt="photo">
+              <img src="images/ocprofile/stelia.png" alt="photo">
               <div class="oc-info">
                 <h3>Stelia</h3>
                 <p class="element">Elemental Mastery:</p>
@@ -295,7 +291,7 @@
                 <img src="images/elements/wip.jpg" alt="">
                 <a class="button" href="#" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
                 <div class="popup" id="popup">
-                  <img src="images/popup/popupimg.png">
+                  <img src="images/popup/popup-icon.png">
                   <h2></h2>
                   <p></p>
                   <button type="button" onclick="closePopup()">CLOSE</button>

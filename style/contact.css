@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: url("../images/bg/BG_E.png");
+    background-image: url("../images/bg/landscape-mode.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,56 +13,25 @@ body {
     padding: 0;
 }
 
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/hermes-font/hermes-font.otf");
-}
-
-@font-face {
-    font-family: myFont2;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-
-.body-container {
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
-    margin: 0;
-    padding: 0;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
-
-/* Add a background color and some padding around the form */
 .contact-container {
     float: left;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: dodgerblue;
     font-family: myFont2, sans-serif;
     padding: 30px 40px 20px;
     width: 45%;
 }
 
+@media screen and (max-width: 500px) {
+    .contact-container {
+        color: rgb(255, 255, 255);
+    }
+}
+
 .title h2 {
     text-align: center;
     cursor: default;
+    color: #ffffff;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -72,19 +41,18 @@ input[type=username],
 select,
 textarea {
     width: 100%;
-    font-family: myFont2, sans-serif;
-    font-size: x-small;
+    font-family: monospace;
+    font-size: small;
+    font-weight: bolder;
     padding: 12px;
     border: 1px solid #006eff;
     border-right-width: 6px;
     border-left-width: 6px;
     outline: none;
-    box-sizing: border-box;
-    /* padding and width stays in place */
+    box-sizing: border-box; /* padding and width stays in place */
     margin-top: 6px;
     margin-bottom: 20px;
-    resize: vertical;
-    /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
     border-radius: 4px 30px 4px 4px;
     background: rgba(11, 11, 14, 0.753);
     color: #ffffff;
@@ -129,9 +97,8 @@ textarea {
     cursor: default;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type=Submit] {
-    background-color: #154360;
+    background-color: #105a88;
     font-family: myFont2, sans-serif;
     font-size: x-small;
     color: rgb(255, 255, 255);
@@ -143,7 +110,6 @@ input[type=Submit] {
     transform: scale(1);
 }
 
-/* When moving the mouse over the submit button, adds an effect */
 input[type=Submit]:hover {
     background-color: #1d8f56;
     color: rgb(255, 255, 255);
@@ -152,11 +118,10 @@ input[type=Submit]:hover {
     transform: scale(1.1);
 }
 
-label  {
+label {
     font-size: small;
 }
 
-/* style the experience container */
 .my-contact {
     text-align: center;
     color: rgb(255, 255, 255);
@@ -164,7 +129,6 @@ label  {
     cursor: default;
 }
 
-/* style the content of the expapp container */
 .mysocial {
     font-family: myFont2, monospace;
     color: rgb(255, 255, 255);
@@ -254,7 +218,10 @@ label  {
     }
     @media screen and (max-width: 450px) {
         .donate img {
-            width: 323px;
+            width: 320px;
         }
+    }
+    body {
+        background-image: url("../images/bg/portrait-mode.png");
     }
 }
