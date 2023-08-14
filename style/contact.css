@@ -13,10 +13,16 @@ body {
     padding: 0;
 }
 
+.contact-bg {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+}
+
 .contact-container {
     float: left;
     box-sizing: border-box;
-    color: dodgerblue;
+    color: rgb(255, 255, 255);
     font-family: myFont2, sans-serif;
     padding: 30px 40px 20px;
     width: 45%;
@@ -41,7 +47,7 @@ input[type=username],
 select,
 textarea {
     width: 100%;
-    font-family: monospace;
+    font-family: sans-serif;
     font-size: small;
     font-weight: bolder;
     padding: 12px;
@@ -71,6 +77,59 @@ textarea {
     border-radius: 4px 4px 4px 30px;
 }
 
+input[type=Submit] {
+    background-color: #105a88;
+    font-family: myFont2, sans-serif;
+    font-size: x-small;
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 2px 10px 2px 10px;
+    transform: scale(1);
+    margin-top: 35px;
+}
+
+input[type=Submit]:hover {
+    background-color: #1d8f56;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+label {
+    font-size: small;
+}
+
+.tos-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+label.tos {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.tos-info img {
+    width: 12px;
+    height: 12px;
+    background-color: #105a88;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+}
+
 #email-error,
 #message-error,
 #username-error {
@@ -95,31 +154,6 @@ textarea {
     padding-left: 5px;
     transition: all 0.3s ease-in-out;
     cursor: default;
-}
-
-input[type=Submit] {
-    background-color: #105a88;
-    font-family: myFont2, sans-serif;
-    font-size: x-small;
-    color: rgb(255, 255, 255);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    border-radius: 2px 10px 2px 10px;
-    transform: scale(1);
-}
-
-input[type=Submit]:hover {
-    background-color: #1d8f56;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    transition: 0.3s ease;
-    transform: scale(1.1);
-}
-
-label {
-    font-size: small;
 }
 
 .my-contact {
@@ -176,10 +210,10 @@ label {
     transform: scale(0.96);
 }
 
-.cpr-container {
+.footer {
     position: relative;
     padding: 8px 0;
-    margin-top: 95px;
+    margin-top: 50px;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: myFont2, sans-serif;

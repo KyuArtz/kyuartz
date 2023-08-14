@@ -66,7 +66,7 @@
 <script src="js/dropdownmenu.js"></script>
 
 <div class="title"><h1>MY WORK</h1>
-<div class="three-dots">
+<div class="three-dots" title="Category">
   <span class="dot-btn"></span>
   <span class="dot-btn"></span>
   <span class="dot-btn"></span>
@@ -95,11 +95,12 @@
 </div>
 
 <div class="up-container">
-  <a href="#">
+  <a href="#" onclick="topFunction()" id="upBtn" title="Go to top">
     <img src="images/imgbtn/up-icon.png">
   </a>
 </div>
 
+<script src="js/button-auto-scroll.js"></script>
 <script src="js/dots-functionality.js"></script>
 
 <div class="image-container">
@@ -196,7 +197,7 @@
 
 <script src="js/lightbox-plus-jquery.js"></script>
 
-<div class="cpr-container">
+<div class="footer">
   <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
     <div class="detail-container">
     <a class="detail" href="term-services.html"> Terms of Service</a>

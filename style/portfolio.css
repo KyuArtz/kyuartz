@@ -68,18 +68,12 @@ ul {
     background-color: #1a1a1a;
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     border-radius: 50%;
     width: 40px;
     height: 40px;
     margin: 9px;
     z-index: 1;
-    transform: scale(1);
-    transition: transform 0.4s;
-}
-
-.up-container a img:hover {
-    transform: scale(1.2);
 }
 
 .gallary img:hover {
@@ -95,9 +89,12 @@ ul {
     .gallary img:hover {
         transform: none;
     }
+    .up-container img {
+        left: 0;
+    }
 }
 
-.cpr-container {
+.footer {
     position: relative;
     padding: 8px 0;
     background-color: #1a1a1a;
