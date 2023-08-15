@@ -80,6 +80,12 @@
     <label id="message-label">Commssion Details:</label><span id="message-error"></span><span id="message-valid"></span>
     <textarea type="message" title="Details about your commissioned art request" spellcheck="false" id="message-field" name="Message" placeholder="Details about your commissioned art request.." required></textarea>
 
+    <div class="uploadimg-container">
+      <div class="uploadimg">
+        <input type="file" title="Upload image" id="myFile" name="filename">
+      </div>
+    </div>
+
     <div class="tos-container" title="Agreed to terms of service">
       <label class="tos">
         <input type="checkbox" required>Terms of service
@@ -88,20 +94,20 @@
         </div>
       </label>
     </div>
+
+    <input type="Submit" value="Send">
     
     <div class="popup" id="popup">
       <h2>NOTICE</h2>
       <p>By reading the terms of service you agreed to follow the rules provided.</p>
       <button type="button" onclick="closePopup()">Understood</button>
     </div>
-    <script src="js/popup.js"></script>
-    
-    <input type="Submit" value="Send">
 
   </form>
 </div>
 
 <script src="js/contact-style-function.js"></script>
+<script src="js/popup.js"></script>
 
 <div class="my-contact">
   <div class="mysocial" style="text-align:center">

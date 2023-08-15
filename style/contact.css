@@ -90,6 +90,18 @@ input[type=Submit] {
     transform: scale(1);
 }
 
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+input[type=file] {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #006eff;
+    background: rgba(11, 11, 14, 0.753);
+}
+
 input[type=Submit]:hover {
     background-color: #1d8f56;
     color: rgb(255, 255, 255);
@@ -105,6 +117,8 @@ label {
 .tos-container {
     display: flex;
     justify-content: right;
+    margin-top: 5px;
+    cursor: default;
 }
 
 label.tos {
@@ -114,8 +128,14 @@ label.tos {
     cursor: pointer;
 }
 
-input[type=checkbox] {
-    cursor: pointer;
+.uploadimg-container {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.uploadimg {
+    display: flex;
 }
 
 @media screen and (max-width: 500px) {
@@ -219,7 +239,7 @@ input[type=checkbox] {
 .footer {
     position: relative;
     padding: 8px 0;
-    margin-top: 50px;
+    margin-top: 60px;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: myFont2, sans-serif;
