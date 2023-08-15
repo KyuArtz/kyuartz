@@ -88,7 +88,6 @@ input[type=Submit] {
     cursor: pointer;
     border-radius: 2px 10px 2px 10px;
     transform: scale(1);
-    margin-top: 35px;
 }
 
 input[type=Submit]:hover {
@@ -104,21 +103,28 @@ label {
 }
 
 .tos-container {
-    position: absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
 }
 
 label.tos {
     font-family: sans-serif;
     display: flex;
     align-items: center;
-    justify-content: left;
     cursor: pointer;
 }
 
 input[type=checkbox] {
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .tos-container {
+        justify-content: left;
+    }
+    input[type=Submit] {
+        margin-top: 20px;
+    }
 }
 
 .tos-info img {
