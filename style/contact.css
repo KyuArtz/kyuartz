@@ -138,12 +138,20 @@ label.tos {
     display: flex;
 }
 
+.send-container {
+    display: flex;
+    justify-content: left;
+}
+
 @media screen and (max-width: 500px) {
     .tos-container {
         justify-content: left;
     }
     input[type=Submit] {
         margin-top: 20px;
+    }
+    .send-container {
+        justify-content: center;
     }
 }
 
