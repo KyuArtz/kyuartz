@@ -95,11 +95,12 @@ input[type=checkbox] {
 }
 
 input[type=file] {
-    border: none;
-    border-radius: 4px;
     cursor: pointer;
     border: 1px solid #006eff;
+    border-radius: 10px 2px  20px 10px;
     background: rgba(11, 11, 14, 0.753);
+    width: 100%;
+    margin-top: 3px;
 }
 
 input[type=Submit]:hover {
@@ -117,24 +118,25 @@ label {
 .tos-container {
     display: flex;
     justify-content: right;
+    align-items: center;
     margin-top: 15px;
     cursor: default;
+    font-size: small;
+    font-family: sans-serif;
 }
 
-label.tos {
+.tos, .tos-info {
     font-family: sans-serif;
     display: flex;
-    align-items: center;
     cursor: pointer;
 }
 
-.uploadimg-container {
-    display: flex;
-    align-items: center;
-    cursor: default;
-}
-
-.uploadimg {
+.tos-info img {
+    width: 12px;
+    height: 12px;
+    background-color: #105a88;
+    border-radius: 50%;
+    margin-left: 5px;
     display: flex;
 }
 
@@ -153,15 +155,9 @@ label.tos {
     .send-container {
         justify-content: center;
     }
-}
-
-.tos-info img {
-    width: 12px;
-    height: 12px;
-    background-color: #105a88;
-    border-radius: 50%;
-    margin-left: 5px;
-    display: flex;
+    label {
+        font-size: x-small;
+    }
 }
 
 #email-error,
@@ -247,7 +243,7 @@ label.tos {
 .footer {
     position: relative;
     padding: 8px 0;
-    margin-top: 60px;
+    margin-top: 69px;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: myFont2, sans-serif;

@@ -57,6 +57,7 @@ a {
     font-family: myFont, sans-serif;
     font-size: xx-large;
     margin-top: -6px;
+    opacity: 0.9;
 }
 
 .my-avatar {

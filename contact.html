@@ -81,18 +81,16 @@
     <textarea type="message" title="Details about your commissioned art request" spellcheck="false" id="message-field" name="Message" placeholder="Details about your commissioned art request.." required></textarea>
 
     <div class="uploadimg-container">
-      <div class="uploadimg">
-        <input type="file" title="Upload image" id="myFile" name="filename" required>
-      </div>
+      <label class="upload" for="myFile">Upload sample</label>
+      <input type="file" accept="image/jpeg, image/png, image/jpg" title="Upload image" id="myFile" name="filename" required>
     </div>
 
     <div class="tos-container" title="Agreed to terms of service">
-      <label class="tos">
+      <label class="tos"></label>
         <input type="checkbox" required>Terms of service
         <div class="tos-info">
         <a href="#" title="Info" onclick="openPopup()"><img src="images/imgbtn/question-mark.png"></a>
         </div>
-      </label>
     </div>
 
     <div class="send-container">
