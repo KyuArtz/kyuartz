@@ -55,10 +55,12 @@ textarea {
     border-right-width: 6px;
     border-left-width: 6px;
     outline: none;
-    box-sizing: border-box; /* padding and width stays in place */
+    box-sizing: border-box;
+    /* padding and width stays in place */
     margin-top: 6px;
     margin-bottom: 20px;
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
     border-radius: 4px 30px 4px 4px;
     background: rgba(11, 11, 14, 0.753);
     color: #ffffff;
@@ -97,7 +99,7 @@ input[type=checkbox] {
 input[type=file] {
     cursor: pointer;
     border: 1px solid #006eff;
-    border-radius: 10px 2px  20px 10px;
+    border-radius: 10px 2px 20px 10px;
     background: rgba(11, 11, 14, 0.753);
     width: 100%;
     margin-top: 3px;
@@ -125,7 +127,8 @@ label {
     font-family: sans-serif;
 }
 
-.tos, .tos-info {
+.tos,
+.tos-info {
     font-family: sans-serif;
     display: flex;
     cursor: pointer;

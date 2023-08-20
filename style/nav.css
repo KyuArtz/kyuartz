@@ -136,7 +136,7 @@ a {
         margin: 20px 0;
     }
     .nav-item a {
-        font-size: small;
+        font-size: medium;
         font-weight: 800;
     }
     .nav-item a:hover {
@@ -239,7 +239,7 @@ a {
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(14, 98, 194, 0.103));
     min-width: 100px;
-    height: 100vh;
+    height: 100%;
     text-align: left;
     justify-content: left;
     transition: 0.3s;
@@ -294,7 +294,7 @@ a {
     border: none;
     outline: none;
     font-size: 15px;
-    border-radius: 0px 50px 0px 30px;
+    border-radius: 0 50px 0 30px;
     position: relative;
     margin: 0 10px;
     background-color: #ffffff;

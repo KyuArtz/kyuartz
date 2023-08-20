@@ -29,7 +29,7 @@
     }
 }
 
-@media screen  and (max-height: 470px) {
+@media screen and (max-height: 470px) {
     .loader h2 {
         display: none;
         opacity: 0;
