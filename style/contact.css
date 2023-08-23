@@ -44,6 +44,7 @@ body {
 input[type=email],
 input[type=message],
 input[type=username],
+input[type=text],
 select,
 textarea {
     width: 100%;
@@ -67,6 +68,7 @@ textarea {
 }
 
 input[type=email],
+input[type=text],
 select,
 textarea {
     border-radius: 4px;
@@ -161,6 +163,9 @@ label {
     label {
         font-size: x-small;
     }
+    .footer {
+        margin-top: 0;
+    }
 }
 
 #email-error,
@@ -246,7 +251,7 @@ label {
 .footer {
     position: relative;
     padding: 8px 0;
-    margin-top: 69px;
+    margin-top: 160px;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: myFont2, sans-serif;
@@ -282,6 +287,11 @@ label {
     .contact-container {
         width: 100%;
         display: block;
+    }
+    @media screen and (max-width: 500px) {
+        .footer {
+            margin-top: 0;
+        }
     }
     @media screen and (max-width: 450px) {
         .donate img {

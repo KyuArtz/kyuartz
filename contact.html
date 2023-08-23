@@ -72,10 +72,30 @@
     <div class="title"><h2>INQUIRY FORM</h2></div>
 
     <label id="username-label">Name:</label><span id="username-error"></span><span id="username-valid"></span>
-    <input type="username" title="Enter your Name" spellcheck="false" id="username-field" name="Username" placeholder="Enter your name.." onkeyup="validateUsername()" required >
+    <input type="username" title="Enter your Name" id="username-field" name="Username" placeholder="Enter your name.." onkeyup="validateUsername()" required >
 
     <label id="email-label">Email:</label><span id="email-error"></span><span id="email-valid"></span>
     <input type="email" title="Enter your email" spellcheck="false" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateEmail()" required>
+
+    <label for="subject">Commission Type</label>
+    <select required>
+      <option value="" disabled selected hidden></option>
+      <option value="0">Portrait (Semi-realistic)</option>
+      <option value="1">Portrait (Anime-Style)</option>
+      <option value="1">Portrait (Grayscale)</option>
+      <option value="2">Bustup (Semi-realistic)</option>
+      <option value="3">Bustup (Anime-Style)</option>
+      <option value="4">Bustup (Grayscale)</option>
+      <option value="5">Full Body (Semi-realistic)</option>
+      <option value="6">Full Body (Anime-Style)</option>
+      <option value="7">Full Body (Grayscale)</option>
+      <option value="8">Chibi (Colored)</option>
+      <option value="9">Chibi (Grayscale)</option>
+      <option value="10">Emotes (Colored)</option>
+      <option value="11">Emotes (Grayscale)</option>
+      <option value="12">Landscape (Colored)</option>
+      <option value="13">Landscape (Grayscale)</option>
+    </select>
     
     <label id="message-label">Commssion Details:</label><span id="message-error"></span><span id="message-valid"></span>
     <textarea type="message" title="Enter Commission details" spellcheck="false" id="message-field" name="Message" placeholder="Details about your commissioned art request.." required></textarea>
