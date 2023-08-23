@@ -67,7 +67,7 @@
 <div class="contact-bg">
   
 <div class="contact-container">
-  <form action="https://formsubmit.co/" method="POST">
+  <form action="https://formsubmit.co/kyuushi992@gmail.com" method="POST">
 
     <div class="title"><h2>INQUIRY FORM</h2></div>
 
@@ -78,23 +78,23 @@
     <input type="email" title="Enter your email" spellcheck="false" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateEmail()" required>
 
     <label for="subject">Commission Type:</label>
-    <select required>
+    <select name="Subject" required>
       <option value="" disabled selected hidden></option>
-      <option value="0">Portrait (Semi-realistic)</option>
-      <option value="1">Portrait (Anime-Style)</option>
-      <option value="1">Portrait (Grayscale)</option>
-      <option value="2">Bustup (Semi-realistic)</option>
-      <option value="3">Bustup (Anime-Style)</option>
-      <option value="4">Bustup (Grayscale)</option>
-      <option value="5">Full Body (Semi-realistic)</option>
-      <option value="6">Full Body (Anime-Style)</option>
-      <option value="7">Full Body (Grayscale)</option>
-      <option value="8">Chibi (Colored)</option>
-      <option value="9">Chibi (Grayscale)</option>
-      <option value="10">Emotes (Colored)</option>
-      <option value="11">Emotes (Grayscale)</option>
-      <option value="12">Landscape (Colored)</option>
-      <option value="13">Landscape (Grayscale)</option>
+      <option value="Portrait (Semi-realistic)">Portrait (Semi-realistic)</option>
+      <option value="Portrait (Anime-Style)">Portrait (Anime-Style)</option>
+      <option value="Portrait (Grayscale)">Portrait (Grayscale)</option>
+      <option value="Bustup (Semi-realistic)">Bustup (Semi-realistic)</option>
+      <option value="Bustup (Anime-Style)">Bustup (Anime-Style)</option>
+      <option value="Bustup (Grayscale)">Bustup (Grayscale)</option>
+      <option value="Full Body (Semi-realistic)">Full Body (Semi-realistic)</option>
+      <option value="Full Body (Anime-Style)">Full Body (Anime-Style)</option>
+      <option value="Full Body (Grayscale)">Full Body (Grayscale)</option>
+      <option value="Chibi (Colored)">Chibi (Colored)</option>
+      <option value="Chibi (Grayscale)">Chibi (Grayscale)</option>
+      <option value="Emotes (Colored)">Emotes (Colored)</option>
+      <option value="Emotes (Grayscale)">Emotes (Grayscale)</option>
+      <option value="Landscape (Colored)">Landscape (Colored)</option>
+      <option value="Landscape (Grayscale)">Landscape (Grayscale)</option>
     </select>
     
     <label id="message-label">Commssion Details:</label><span id="message-error"></span><span id="message-valid"></span>
@@ -102,12 +102,12 @@
 
     <div class="uploadimg-container">
       <label class="upload" for="myFile">Upload sample: (Optional)</label>
-      <input type="file" accept="image/jpeg, image/png, image/jpg" title="Upload image" id="myFile" name="filename">
+      <input type="file" accept="image/jpeg, image/png, image/jpg" title="Upload image" id="myFile" name="Image">
     </div>
 
     <div class="tos-container" title="Terms of service">
       <label class="tos"></label>
-        <input type="checkbox" required> Agree to terms of service
+        <input value="Agreed" type="checkbox" name="Terms of Service" required> Agree to terms of service
         <div class="tos-info">
         <a title="Info" onclick="openPopup()"><img src="images/imgbtn/question-mark.png"></a>
         </div>
