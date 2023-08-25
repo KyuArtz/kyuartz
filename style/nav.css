@@ -158,7 +158,8 @@ a {
     .navbar input[type=search] {
         width: 100%;
     }
-    .active-nav a {
+    .active-nav a,
+    .active-dropdown {
         border-radius: 0;
         box-shadow: none;
     }
