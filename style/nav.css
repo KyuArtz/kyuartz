@@ -31,8 +31,6 @@ header {
 a {
     color: white;
     text-decoration: none;
-    font-size: 9px;
-    font-family: myFont2, sans-serif;
 }
 
 .navbar {
@@ -50,6 +48,7 @@ a {
     align-items: center;
     padding: 0 5px;
     gap: 4px;
+    margin: 0;
 }
 
 .nav-brand {
@@ -73,6 +72,13 @@ a {
 .nav-link,
 .nav-link-dropdown {
     padding: 15px 25px 12px;
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'myFont2', sans-serif;
+    font-size: 9px;
+    cursor: pointer;
+    border-style: none;
 }
 
 .active-nav a {
@@ -119,8 +125,9 @@ a {
     }
     .nav-menu {
         position: fixed;
+        padding: 0;
         right: -100%;
-        top: 35px;
+        top: 51px;
         gap: 0;
         flex-direction: column;
         background-color: #1a1a1a;
@@ -135,7 +142,8 @@ a {
     .nav-item {
         margin: 20px 0;
     }
-    .nav-item a {
+    .nav-item a,
+    .nav-link-dropdown {
         font-size: medium;
         font-weight: 800;
     }

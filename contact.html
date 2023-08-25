@@ -35,7 +35,7 @@
     </li>
     <li class="nav-item">
       <div class="dropdown">
-        <a href="#" class="nav-link-dropdown" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</a>
+        <button type="button" class="nav-link-dropdown" onclick="myFunction()"><i class="fa fw fa-file"></i> CONTENT &#10095;</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="comic.html">My Comic</a>
           <a href="mycharacters.html">Original Character's</a>
@@ -75,20 +75,23 @@
     <input type="username" title="Enter your Name" id="username-field" name="Username" placeholder="Enter your name.." onkeyup="validateUsername()" required >
 
     <label id="email-label">Email:</label><span id="email-error"></span><span id="email-valid"></span>
-    <input type="email" title="Enter your email" spellcheck="false" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateEmail()" required>
+    <input type="email" title="Enter your Email" spellcheck="false" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateEmail()" required>
 
     <label for="subject">Commission Type:</label>
     <select name="Commission Type" title="Select Type of Commission" required>
       <option value="" disabled selected hidden></option>
       <option value="Portrait (Semi-realistic)">Portrait (Semi-realistic)</option>
       <option value="Portrait (Anime-Style)">Portrait (Anime-Style)</option>
-      <option value="Portrait (Grayscale)">Portrait (Grayscale)</option>
+      <option value="Portrait (Semi-realistic-grayscale)">Portrait (Semi-realistic-grayscale)</option>
+      <option value="Portrait (Anime-Style-grayscale)">Portrait (Anime-Style-grayscale)</option>
       <option value="Bustup (Semi-realistic)">Bustup (Semi-realistic)</option>
       <option value="Bustup (Anime-Style)">Bustup (Anime-Style)</option>
-      <option value="Bustup (Grayscale)">Bustup (Grayscale)</option>
+      <option value="Bustup (Semi-realistic-grayscale)">Bustup (Semi-realistic-grayscale)</option>
+      <option value="Bustup (Anime-Style-grayscale)">Bustup (Anime-Style-grayscale)</option>
       <option value="Full Body (Semi-realistic)">Full Body (Semi-realistic)</option>
       <option value="Full Body (Anime-Style)">Full Body (Anime-Style)</option>
-      <option value="Full Body (Grayscale)">Full Body (Grayscale)</option>
+      <option value="Full Body (Semi-realistic-grayscale)">Full Body (Semi-realistic-grayscale)</option>
+      <option value="Full Body (Anime-Style-grayscale)">Full Body (Anime-Style-grayscale)</option>
       <option value="Chibi (Colored)">Chibi (Colored)</option>
       <option value="Chibi (Grayscale)">Chibi (Grayscale)</option>
       <option value="Emotes (Colored)">Emotes (Colored)</option>
@@ -98,14 +101,14 @@
     </select>
     
     <label id="message-label">Commssion Details:</label><span id="message-error"></span><span id="message-valid"></span>
-    <textarea type="message" title="Enter Commission details" spellcheck="false" id="message-field" name="Commssion Details" placeholder="Details about your commissioned art request.." required></textarea>
+    <textarea type="message" title="Enter Commission Details" spellcheck="false" id="message-field" name="Commssion Details" placeholder="Details about your commissioned art request.." required></textarea>
 
     <div class="uploadimg-container">
       <label class="upload" for="myFile">Upload sample: (Optional)</label>
-      <input type="file" accept="image/jpeg, image/png, image/jpg" title="Upload image" id="myFile" name="Image">
+      <input type="file" accept="image/jpeg, image/png, image/jpg" title="Upload Image" id="myFile" name="Image">
     </div>
 
-    <div class="tos-container" title="Terms of service">
+    <div class="tos-container" title="Terms of Service">
       <label class="tos"></label>
         <input value="Agreed" type="checkbox" name="Terms of Service" required> Agree to terms of service
         <div class="tos-info">
