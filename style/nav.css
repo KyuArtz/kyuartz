@@ -81,7 +81,8 @@ a {
     border-style: none;
 }
 
-.active-nav a {
+.active-nav a,
+.nav-link-dropdown {
     border-radius: 5px;
     box-shadow: 0 0 2px #33ffff;
 }
