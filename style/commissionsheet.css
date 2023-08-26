@@ -101,6 +101,7 @@ ul {
     border-style: solid;
     border-color: #000000;
     border-width: thin;
+    font-family: myFont2, sans-serif;
 }
 
 .inquire-button a:hover {

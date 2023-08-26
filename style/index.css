@@ -80,6 +80,7 @@ video {
     .mySlides img,
     video {
         height: 100vh;
+        max-height: none;
     }
 }
 
