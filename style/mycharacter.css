@@ -26,9 +26,6 @@ body {
 
 .class {
     position: absolute;
-}
-
-.class, img {
     width: 60px;
     border-radius: 50%;
 }
