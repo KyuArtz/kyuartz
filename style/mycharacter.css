@@ -24,10 +24,14 @@ body {
     width: 25%;
 }
 
-.oc-profile {
+.oc-profile-red,
+.oc-profile-blue,
+.oc-profile-purple,
+.oc-profile-green,
+.oc-profile-orange,
+.oc-profile-yellow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     background-color: #1c1c1c;
-    background-image: url("../images/bg/bgr.jpg");
     background-size: cover;
     background-blend-mode: color-dodge;
     background-position: center;
@@ -40,7 +44,36 @@ body {
     border-right-width: thin;
 }
 
-.oc-profile img {
+.oc-profile-red {
+    background-image: url("../images/bg/red-tier.jpg");
+}
+
+.oc-profile-blue {
+    background-image: url("../images/bg/blue-tier.jpg");
+}
+
+.oc-profile-orange {
+    background-image: url("../images/bg/orange-tier.jpg");
+}
+
+.oc-profile-purple {
+    background-image: url("../images/bg/purple-tier.jpg");
+}
+
+.oc-profile-green {
+    background-image: url("../images/bg/green-tier.jpg");
+}
+
+.oc-profile-yellow {
+    background-image: url("../images/bg/yellow-tier.jpg");
+}
+
+.oc-profile-red img,
+.oc-profile-blue img,
+.oc-profile-orange img,
+.oc-profile-yellow img,
+.oc-profile-green img,
+.oc-profile-purple img {
     border-radius: 50%;
     width: 100%;
     margin-bottom: -78px;
