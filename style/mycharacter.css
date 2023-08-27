@@ -24,6 +24,15 @@ body {
     width: 25%;
 }
 
+.class {
+    position: absolute;
+}
+
+.class, img {
+    width: 60px;
+    border-radius: 50%;
+}
+
 .oc-profile-red,
 .oc-profile-blue,
 .oc-profile-purple,
@@ -223,5 +232,8 @@ body {
     .column {
         width: 100%;
         display: block;
+    }
+    .class {
+        width: 90px;
     }
 }
