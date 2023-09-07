@@ -1,76 +1,173 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
 body {
-    background-color: #121212;
+    background-color: #222222;
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
     margin: 0;
     padding: 0;
+    transition: 0.5s;
 }
 
-/* style and positions the avatar */
-.my-avatar {
-    position: absolute;
-    top: 6px;
-    left: 9px;
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-/* adds a brand name on the top left of the navigation bar */
-.brand-name {
-    cursor: default;
-    background: -webkit-linear-gradient(white, white);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    float: left;
+.slideshow-container {
     position: relative;
-    margin: 14px 60px;
-    font-family: monospace;
-    font-size: 20px;
+    margin: 50px auto auto;
 }
 
-/* Adds a background color to the top navigation */
-.topnavbar {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    background-image: url("");
-    background-color: #1a1a1a;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img,
+video {
     width: 100%;
-    z-index: 1;
-    overflow: visible;
+    max-height: 566px;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
 }
 
-/* Style the links inside the navigation bar and texts */
-.topnavbar a {
-    float: right;
+/* Next & previous buttons */
+.next,
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -62px;
+    padding: 50px 16px;
     color: white;
-    padding: 20px 16px;
-    font-family: sans-serif;
-    text-decoration: none;
-    width: 109px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-image: linear-gradient(to right, rgba(0, 119, 255, 0.281), rgba(24, 24, 41, 0.753));
+}
+
+/* Position the "next button" to the left */
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover,
+.prev:hover {
+    background-color: #154360a9;
+    opacity: 1;
+}
+
+/* On smaller screens, decrease text size */
+@media screen and (max-width: 500px) {
+    .next,
+    .prev {
+        font-size: 20px;
+        padding: 20px 10px;
+        margin-top: -32px;
+    }
+    .mySlides img,
+    video {
+        height: 100vh;
+        max-height: none;
+    }
+}
+
+/* Caption text */
+.intro {
+    color: #f2f2f2;
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.653), rgba(19, 77, 145, 0.5));
+    font-size: 8px;
+    font-family: myFont2, sans-serif;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    text-align: left;
+    cursor: default;
+    border-radius: 0 0 10px 0;
+}
+
+.img-size image {
+    width: 100%;
+}
+
+.btn-container {
     text-align: center;
-    font-size: 11px;
 }
 
-/* Change the color of links on hover */
-.topnavbar a:hover {
-    transition: 0.7s ease;
-    color: #3498DB;
-    text-decoration: underline;
-}
-
-/* Style the search box inside the navigation bar */
-.topnavbar input[type=search] {
-    float: right;
-    padding: 8px;
-    border: none;
-    margin: 10px 2px 2px 5px;
-    outline: none;
-    font-size: 15px;
-    border-radius: 10px;
+/* The dots/bullets/indicators */
+.btn {
     position: relative;
+    bottom: 50px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 5px 0 5px 0;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    opacity: 0.2;
+    box-shadow: 0 0 5px #0a0a0a;
+}
+
+.active-btn,
+.btn:hover {
+    background-color: #244d83;
+    opacity: 0.5;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.video-container {
+    text-align: center;
+}
+
+iframe {
+    margin: 5px;
+    max-width: 350px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+/* styles the text container section font header*/
+.video-container h1 {
+    cursor: default;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: myFont2, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: medium;
 }
 
 /* style the content of the experience container */
