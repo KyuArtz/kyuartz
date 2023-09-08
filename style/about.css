@@ -26,7 +26,7 @@ body {
 }
 
 .summary p {
-    font-size: 12px;
+    font-size: medium;
 }
 
 .summarycontent {
@@ -35,7 +35,7 @@ body {
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
     border-radius: 10px;
     text-align: justify;
-    font-family: myFont2, sans-serif;
+    font-family: sans-serif;
     color: white;
     padding: 25px;
     cursor: default;
@@ -58,7 +58,7 @@ body {
 }
 
 .xpcontent {
-    font-family: myFont2, sans-serif;
+    font-family: sans-serif;
     color: white;
     padding: 40px;
     cursor: default;
@@ -72,6 +72,7 @@ body {
     border-radius: 0 10px 0 10px;
     cursor: default;
     width: 175px;
+    font-size: medium;
 }
 
 .expapp {
