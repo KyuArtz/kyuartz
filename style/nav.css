@@ -16,7 +16,7 @@ header {
     top: 0;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: #343434;
+    border-color: dodgerblue;
     z-index: 100000;
 }
 
@@ -56,6 +56,7 @@ a {
     font-family: myFont, sans-serif;
     font-size: xx-large;
     margin-top: -6px;
+    color: dodgerblue;
     opacity: 0.9;
 }
 
@@ -84,7 +85,7 @@ a {
 .active-nav a,
 .active-dropdown {
     border-radius: 5px;
-    box-shadow: 0 0 2px #33ffff;
+    box-shadow: 0 0 2px dodgerblue;
 }
 
 .nav-link-dropdown:hover,
@@ -107,7 +108,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: dodgerblue;
 }
 
 @media screen and (max-width: 978px) {
@@ -218,7 +219,7 @@ a {
     left: 7px;
     border-style: solid;
     border-width: thin;
-    border-color: #fff;
+    border-color: dodgerblue;
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
@@ -302,14 +303,16 @@ a {
 
 .navbar input[type=search] {
     padding: 10px;
-    border: none;
+    border-style: solid;
+    border-width: thin;
+    border-color: dodgerblue;
     outline: none;
     font-size: 15px;
     border-radius: 0 50px 0 30px;
     position: relative;
     margin: 0 10px;
-    background-color: #ffffff;
-    color: black;
+    background-color: #273a46;
+    color: rgb(125, 203, 255);
     font-family: 'myFont2';
     font-size: x-small;
 }
@@ -332,7 +335,7 @@ a {
     overflow: visible;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: #343434;
+    border-color: dodgerblue;
     gap: 3px;
 }
 
@@ -340,7 +343,7 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     background-color: #2a2a2a;
     border-radius: 2px 2px 2px 2px;
-    color: grey;
+    color: dodgerblue;
     padding: 5px 20px;
     font-family: sans-serif;
     text-decoration: none;

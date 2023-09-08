@@ -196,6 +196,7 @@ iframe {
     display: inline-block;
     padding: 0 5px;
     text-decoration: none;
+    font-size: xx-small;
 }
 
 .detail:hover {
