@@ -57,6 +57,9 @@ a {
     font-size: xx-large;
     margin-top: -6px;
     color: dodgerblue;
+    background: -webkit-linear-gradient(left, dodgerblue, lightblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     opacity: 0.9;
 }
 
