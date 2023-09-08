@@ -163,15 +163,9 @@ body {
 
 .contact,
 .email,
-.title {
+.exp {
     color: #2c687e;
     cursor: default;
-}
-
-.fb,
-.ig,
-.yt {
-    color: #586a70;
 }
 
 .footer {
