@@ -152,6 +152,7 @@ iframe {
     max-width: 350px;
     height: 250px;
     border-radius: 5px;
+    border: solid thin dodgerblue;
 }
 
 /* styles the text container section font header*/
