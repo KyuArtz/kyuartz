@@ -6,9 +6,7 @@
     width: 450px;
     background: #fff;
     border-radius: 6px;
-    border-width: thin;
-    border-style: solid;
-    border-color: #818181;
+    border: solid thin red;
     position: fixed;
     top: 50%;
     left: 50%;

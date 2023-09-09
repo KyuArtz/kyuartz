@@ -97,10 +97,12 @@ ul {
 .footer {
     position: relative;
     padding: 8px 0;
+    margin-top: 5px;
     background-color: #1a1a1a;
     background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
     font-family: myFont2, sans-serif;
     font-size: x-small;
+    border-top: solid thin dodgerblue;
 }
 
 .copyright p {
