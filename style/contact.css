@@ -62,7 +62,7 @@ textarea {
     margin-bottom: 20px;
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
-    border-radius: 4px 30px 4px 4px;
+    border-radius: 4px 90px 4px 4px;
     background: rgba(11, 11, 14, 0.753);
     color: #ffffff;
 }
@@ -78,7 +78,7 @@ input[type=message],
 textarea {
     max-height: 150px;
     height: 150px;
-    border-radius: 4px 4px 4px 30px;
+    border-radius: 4px 4px 4px 50px;
 }
 
 input[type=Submit] {
