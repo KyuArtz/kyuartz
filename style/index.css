@@ -155,6 +155,11 @@ iframe {
     border: solid thin dodgerblue;
 }
 
+iframe:hover {
+    transform: scale(1.02);
+    transition: all 0.5s ease;
+}
+
 /* styles the text container section font header*/
 .video-container h1 {
     cursor: default;
