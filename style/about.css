@@ -60,7 +60,7 @@ body {
 .xpcontent {
     font-family: sans-serif;
     color: white;
-    padding: 40px;
+    padding: 30px;
     cursor: default;
 }
 
@@ -93,7 +93,7 @@ body {
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: sans-serif;
     color: white;
-    padding: 60px;
+    padding: 50px;
     cursor: default;
 }
 
