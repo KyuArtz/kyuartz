@@ -153,6 +153,7 @@ iframe {
     height: 250px;
     border-radius: 5px;
     border: solid thin dodgerblue;
+    background-color: rgba(36, 65, 97, 50%);
 }
 
 iframe:hover {
