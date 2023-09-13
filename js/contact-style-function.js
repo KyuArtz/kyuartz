@@ -5,7 +5,7 @@ var usernamevalid = document.getElementById("username-valid");
 
 // sends a message info to the user if the contact form is valid or not
 function validateUsername(){
-  if(!usernamefield.value.match(/^[A-Za-z\._\-0-9]*[A-Za-z]*[\ \][a-z]{4,25}$/)){
+  if(!usernamefield.value.match(/^[A-Za-z\._\-0-9]*[A-Za-z]*[\ \][a-z]{3,25}$/)){
     usernameerror.innerHTML ="Please enter a valid username!";
     usernamefield.style.borderColor ="red";
     usernamevalid.innerHTML ="";
