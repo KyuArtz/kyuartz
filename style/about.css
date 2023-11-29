@@ -33,6 +33,7 @@ body {
     display: flex;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+    box-shadow: dodgerblue 0px 0px 2px 0.5px;
     border-radius: 10px;
     text-align: justify;
     font-family: sans-serif;
@@ -66,9 +67,11 @@ body {
 
 .xpcontent p {
     padding: 10px;
+    margin: 2px;
     display: inline-block;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+    box-shadow: dodgerblue 0px 0px 2px 0.5px;
     border-radius: 0 10px 0 10px;
     cursor: default;
     width: 175px;
@@ -103,6 +106,7 @@ body {
     padding: 2px;
     border-radius: 6px;
     opacity: 0.6;
+    box-shadow: dodgerblue 0px 0px 2px 0.5px;
     pointer-events: none;
 }
 
@@ -151,6 +155,9 @@ body {
 
 .my-info p {
     font-size: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    border: solid dodgerblue thin;
+    border-radius: 0px 50px 50px 0px;
 }
 
 /*  */
