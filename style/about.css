@@ -216,8 +216,10 @@ body {
         width: 100%;
         display: block;
     }
-    .my-info h2,
-    p {
+    .my-info h2 {
+        text-align: center;
+    }
+    .my-info p {
         text-align: center;
         border-radius: 50px;
     }
