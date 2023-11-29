@@ -219,6 +219,7 @@ body {
     .my-info h2,
     p {
         text-align: center;
+        border-radius: 50px;
     }
     .summary .summarycontent p {
         text-align: justify;
