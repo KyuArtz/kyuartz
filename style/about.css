@@ -154,6 +154,7 @@ body {
 
 .my-info p {
     font-size: 12px;
+    padding: 5px;
     background: rgba(0, 0, 0, 0.5);
     border: solid dodgerblue thin;
     border-radius: 0px 50px 50px 0px;
