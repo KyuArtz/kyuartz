@@ -107,6 +107,7 @@ ul {
 .inquire-button a:hover {
     transition: 0.5s ease;
     color: #000000;
+    box-shadow: dodgerblue 0 0 50px 0.5px;
 }
 
 @media screen and (max-width: 500px) {
