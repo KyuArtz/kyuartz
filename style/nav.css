@@ -315,11 +315,9 @@ a {
     border-color: dodgerblue;
     outline: none;
     font-size: 15px;
-    border-radius: 0 50px 0 30px;
+    border-radius: 50px;
     position: relative;
     margin: 0 10px;
-    background-color: #273a46;
-    color: rgb(125, 203, 255);
     font-family: 'myFont2';
     font-size: x-small;
 }
