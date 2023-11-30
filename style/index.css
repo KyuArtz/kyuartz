@@ -25,7 +25,7 @@ video {
     width: 100%;
     max-height: 596px;
     height: 596px;
-    object-fit: cover;
+    background: #000000;
     object-position: center;
     pointer-events: none;
 }
