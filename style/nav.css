@@ -186,6 +186,7 @@ a {
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(14, 98, 194, 0.103));
     transition: all 0.3s ease 0s;
+    overflow: auto;
     z-index: 5;
 }
 
