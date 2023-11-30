@@ -168,7 +168,7 @@ iframe:hover {
 /* styles the text container section font header*/
 .video-container h1 {
     cursor: default;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
     padding-top: 15px;
     padding-bottom: 15px;
     font-family: myFont2, sans-serif;
