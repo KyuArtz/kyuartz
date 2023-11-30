@@ -39,6 +39,7 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 0 0 56px;
+    margin-right: 3px;
 }
 
 /* default nav display on landscape mode */
@@ -46,9 +47,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5px;
-    gap: 4px;
     margin: 0;
+    border: dodgerblue solid thin;
+    border-radius: 5px;
 }
 
 .nav-brand {
@@ -81,22 +82,21 @@ a {
     background: none;
     color: white;
     font-family: 'myFont2', sans-serif;
-    font-size: 9px;
+    font-size: 10px;
     cursor: pointer;
     border-style: none;
 }
 
 .active-nav a,
 .active-dropdown {
-    border-radius: 5px;
-    box-shadow: 0 0 2px dodgerblue;
+    box-shadow: 0 0 10px dodgerblue;
+    background: dodgerblue;
 }
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
     transition: 0.4s ease;
-    color: #3498DB;
-    border-radius: 5px;
+    color: #ffffff;
     box-shadow: 0 0 4px #33ffff;
 }
 
@@ -132,6 +132,8 @@ a {
     .nav-menu {
         position: fixed;
         padding: 0;
+        border: none;
+        border-radius: 0;
         right: -100%;
         top: 51px;
         gap: 0;
@@ -167,6 +169,7 @@ a {
     .active-dropdown {
         border-radius: 0;
         box-shadow: none;
+        background: none;
     }
 }
 
@@ -321,7 +324,6 @@ a {
     font-size: x-small;
 }
 
-/* Adds a background color and changes the size of the top navigation */
 .mininav {
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
@@ -384,7 +386,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
+    background: rgba(0, 162, 255);
     border-radius: 9px;
 }
 
