@@ -26,7 +26,6 @@ video {
     max-height: 596px;
     height: 596px;
     background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
-    object-position: center;
     border: solid thin dodgerblue;
     object-position: center;
     pointer-events: none;
