@@ -292,6 +292,9 @@ label {
         width: 100%;
         display: block;
     }
+    .footer {
+            margin-top: 0;
+        }
     @media screen and (max-width: 500px) {
         .footer {
             margin-top: 0;
