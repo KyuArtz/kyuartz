@@ -12,11 +12,11 @@ header {
     position: fixed;
     width: 100%;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
     top: 0;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: dodgerblue;
+    border-color: rgb(255, 30, 30);
     z-index: 100000;
 }
 
@@ -48,7 +48,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    border: dodgerblue solid thin;
+    border: rgb(255, 30, 30) solid thin;
     border-radius: 5px;
 }
 
@@ -58,7 +58,7 @@ a {
     font-size: xx-large;
     margin-top: -6px;
     color: dodgerblue;
-    background: -webkit-linear-gradient(left, dodgerblue, lightblue);
+    background: -webkit-linear-gradient(left, rgb(255, 30, 30), rgb(230, 173, 173));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0.9;
@@ -72,7 +72,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: solid thin dodgerblue;
+    border: solid thin rgb(255, 30, 30);
 }
 
 .nav-link,
@@ -89,15 +89,15 @@ a {
 
 .active-nav a,
 .active-dropdown {
-    box-shadow: 0 0 10px dodgerblue;
-    background: dodgerblue;
+    box-shadow: 0 0 10px rgb(255, 30, 30);
+    background: rgb(255, 30, 30);
 }
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
     transition: 0.4s ease;
     color: #ffffff;
-    box-shadow: 0 0 4px #33ffff;
+    box-shadow: 0 0 4px #ff3333;
 }
 
 .hamburger {
@@ -112,7 +112,7 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: dodgerblue;
+    background-color: rgb(255, 30, 30);
 }
 
 @media screen and (max-width: 978px) {
@@ -139,7 +139,7 @@ a {
         gap: 0;
         flex-direction: column;
         background-color: #1a1a1a;
-        background-image: linear-gradient(to top, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+        background-image: linear-gradient(to top, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
         width: 100%;
         height: 100%;
         text-align: center;
@@ -156,7 +156,7 @@ a {
         font-weight: 800;
     }
     .nav-item a:hover {
-        color: #3498DB;
+        color: #db3434;
         transition: 0.7s;
     }
     .nav-menu.active-nav {
@@ -184,7 +184,7 @@ a {
     min-width: 200px;
     height: 100%;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(194, 14, 14, 0.103));
     transition: all 0.3s ease 0s;
     overflow: auto;
     z-index: 5;
@@ -209,7 +209,7 @@ a {
 
 .dropdown-content a:hover {
     background-color: #ddd;
-    background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
     transition: 0.7s;
 }
@@ -227,7 +227,7 @@ a {
     left: 7px;
     border-style: solid;
     border-width: thin;
-    border-color: dodgerblue;
+    border-color: rgb(255, 30, 30);
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
@@ -245,7 +245,7 @@ a {
 }
 
 .three-dots:hover {
-    background-color: #0b5b91;
+    background-color: #910b0b;
     transition: 0.5s ease;
 }
 
@@ -256,7 +256,7 @@ a {
     gap: 0;
     flex-direction: column;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(194, 14, 14, 0.103));
     min-width: 100px;
     height: 100%;
     text-align: left;
@@ -266,13 +266,13 @@ a {
 }
 
 .dots-menu h3 {
-    color: dodgerblue;
+    color: rgb(255, 30, 30);
     background-color: rgba(255, 255, 255, 0.15);
     font-family: myFont2, sans-serif;
     text-align: center;
     font-size: small;
     cursor: default;
-    border-bottom: dodgerblue;
+    border-bottom: rgb(255, 30, 30);
     border-top-style: solid;
     border-bottom-style: solid;
     border-width: thin;
@@ -296,7 +296,7 @@ a {
 }
 .dot-item a:hover {
     color: #000000;
-    background-image: linear-gradient(to right, rgb(126, 178, 255), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to right, rgb(255, 126, 126), rgba(255, 255, 255, 0));
     transition: 0.7s ease;
 }
 .dots-menu.active-dot {
@@ -313,7 +313,7 @@ a {
     padding: 10px;
     border-style: solid;
     border-width: thin;
-    border-color: dodgerblue;
+    border-color: rgb(255, 30, 30);
     outline: none;
     font-size: 15px;
     border-radius: 50px;
@@ -325,7 +325,7 @@ a {
 
 .mininav {
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
     text-align: center;
     position: fixed;
     display: flex;
@@ -340,7 +340,7 @@ a {
     overflow: visible;
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: dodgerblue;
+    border-color: rgb(255, 30, 30);
     gap: 3px;
 }
 
@@ -348,7 +348,7 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     background-color: #2a2a2a;
     border-radius: 2px 2px 2px 2px;
-    color: dodgerblue;
+    color: rgb(255, 30, 30);
     padding: 5px 20px;
     font-family: sans-serif;
     text-decoration: none;
@@ -358,7 +358,7 @@ a {
 
 .mininav a:hover {
     transition: 0.7 ease;
-    background-color: #154360;
+    background-color: #601515;
     color: white;
     opacity: 1;
     transition: 0.5s;
@@ -385,11 +385,11 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(0, 162, 255);
+    background: rgb(255, 0, 0);
     border-radius: 9px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
+    background: rgb(187, 26, 26);
 }

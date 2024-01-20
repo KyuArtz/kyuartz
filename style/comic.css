@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    background-image: linear-gradient(to left, rgba(194, 14, 14, 0.103) , rgba(14, 11, 11, 0.753));
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@ ul {
     align-items: center;
     width: 100%;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #343434;
@@ -60,13 +60,13 @@ ul {
     border-radius: 9px;
     border-style: solid;
     border-width: thin;
-    border-color: dodgerblue;
-    background: dodgerblue;
+    border-color: rgb(255, 30, 30);
+    background: rgb(255, 30, 30);
 }
 
 .mySlides img:hover {
     transition: 0.5s ease;
-    box-shadow: dodgerblue 0 0 10px 0.5px;
+    box-shadow: rgb(255, 30, 30) 0 0 10px 0.5px;
 }
 
 .btnlink:hover {
@@ -94,14 +94,14 @@ ul {
 .next {
     right: 0;
     border-radius: 7px 0 0 7px;
-    background-image: linear-gradient(to left, rgba(0 49 85 / 90%) , rgba(0, 102, 255, 0.103));
+    background-image: linear-gradient(to left, rgba(85, 0, 0, 0.9) , rgba(255, 0, 0, 0.103));
 }
 
 /* Position the "next button" to the left */
 .prev {
     left: 0;
     border-radius: 0 7px 7px 0;
-    background-image: linear-gradient(to right, rgba(0 49 85 / 90%) , rgba(0, 102, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(85, 0, 0, 0.9) , rgba(255, 0, 0, 0.103));
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -127,7 +127,7 @@ ul {
     position: absolute;
     top: 10px;
     left: 0;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(255, 0, 0, 0.103));
     font-family: myFont2, sans-serif;
     cursor: default;
     z-index: 1;
@@ -136,7 +136,7 @@ ul {
 /* Chapter text */
 .chapter {
     color: #fff;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(0, 102, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.900) , rgba(255, 0, 0, 0.103));
     font-family: myFont2, sans-serif;
     padding: 8px 12px;
     position: absolute;
@@ -177,7 +177,7 @@ ul {
 
 .active,
 .dot:hover {
-    background-color: rgb(20, 103, 158);
+    background-color: rgb(158, 20, 20);
 }
 
 @media screen and (max-width: 500px) {
@@ -202,10 +202,10 @@ ul {
     position: relative;
     padding: 8px 0;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    background-image: linear-gradient(to left, rgba(194, 14, 14, 0.103) , rgba(14, 11, 11, 0.753));
     font-family: myFont2, sans-serif;
     font-size: x-small;
-    border-top: solid thin dodgerblue;
+    border-top: solid thin rgb(255, 30, 30);
 }
 
 .copyright p {
@@ -229,7 +229,7 @@ ul {
 }
 
 .detail:hover {
-    color: rgb(33, 110, 197);
+    color: rgb(197, 33, 33);
     transition: 0.5s ease;
     text-decoration: underline;
 }

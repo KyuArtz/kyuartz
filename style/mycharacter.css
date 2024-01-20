@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
     margin: 0;
     padding: 0;
 }
@@ -136,7 +136,7 @@ body {
 }
 
 .element {
-    color: #2c687e;
+    color: #7e2c2c;
     cursor: default;
     padding: 3px 0;
     margin: 3px;
@@ -195,10 +195,10 @@ body {
     position: relative;
     padding: 8px 0;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    background-image: linear-gradient(to left, rgba(194, 14, 14, 0.103) , rgba(14, 11, 11, 0.753));
     font-family: myFont2, sans-serif;
     font-size: x-small;
-    border-top: solid thin dodgerblue;
+    border-top: solid thin rgb(255, 30, 30);
 }
 
 .copyright p {
@@ -222,7 +222,7 @@ body {
 }
 
 .detail:hover {
-    color: rgb(33, 110, 197);
+    color: rgb(197, 33, 33);
     transition: 0.5s ease;
     text-decoration: underline;
 }

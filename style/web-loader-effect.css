@@ -7,13 +7,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(14, 11, 11), rgb(24, 42, 63));
+    background-image: linear-gradient(to right, rgb(14, 11, 11), rgb(63, 24, 24));
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
 }
 
 .bg-loader {
-    background-image: url("../images/bg/loader-bg-landscape.png");
+    background-image: url("../images/bg/landscape-mode-2.png");
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 500px) {
     .bg-loader {
-        background-image: url("../images/bg/loader-bg-portrait.png");
+        background-image: url("../images/bg/");
     }
 }
 
@@ -55,8 +55,8 @@
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #9eb5e0;
-    border-bottom-color: rgb(20, 111, 202);
+    border: 15px solid #e09e9e;
+    border-bottom-color: rgb(202, 20, 20);
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
     border-width: thin;
@@ -66,8 +66,8 @@
     content: "";
     width: 50px;
     height: 50px;
-    border: 15px double #9eb5e0;
-    border-top-color: rgb(20, 111, 202);
+    border: 15px double #e09e9e;
+    border-top-color: rgb(202, 20, 20);
     border-radius: 50%;
     animation: loading2 0.75s ease infinite;
     position: absolute;

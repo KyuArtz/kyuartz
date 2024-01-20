@@ -7,9 +7,9 @@ var usernamevalid = document.getElementById("username-valid");
 function validateUsername(){
   if(!usernamefield.value.match(/^[A-Za-z\._\-0-9]*[A-Za-z]*[\ \][a-z]{3,25}$/)){
     usernameerror.innerHTML ="Please enter a valid username!";
-    usernamefield.style.borderColor ="red";
+    usernamefield.style.borderColor ="orange";
     usernamevalid.innerHTML ="";
-    usernamelabel.style.color ="red";
+    usernamelabel.style.color ="orange";
     return false;
   }
   usernameerror.innerHTML ="";
@@ -27,9 +27,9 @@ var emailvalid = document.getElementById("email-valid");
 function validateEmail(){
   if(!emailfield.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{3,3}$/)){
     emailerror.innerHTML = "Please enter a valid email address!";
-    emailfield.style.borderColor ="red";
+    emailfield.style.borderColor ="orange";
     emailvalid.innerHTML ="";
-    emaillabel.style.color ="red";
+    emaillabel.style.color ="orange";
     return false;
   }
   emailerror.innerHTML = "";
@@ -47,9 +47,9 @@ var messagevalid = document.getElementById("message-valid");
 function validateMessage(){
   if(!messagefield.value.match(/^[A-Za-z\,_\.\]*[\ \][a-z]{10,500}$/)){
     messageerror.innerHTML ="Please don't leave this blank!";
-    messagefield.style.borderColor ="red";
+    messagefield.style.borderColor ="orange";
     messagevalid.innerHTML ="";
-    messagelabel.style.color ="red";
+    messagelabel.style.color ="orange";
     return false;
   }
   messageerror.innerHTML ="";

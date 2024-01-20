@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: url("../images/bg/landscape-mode.png");
+    background-image: url("../images/bg/landscape-mode-2.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@ body {
 .contact-bg {
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to top, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
 }
 
 .contact-container {
@@ -52,7 +52,7 @@ textarea {
     font-size: small;
     font-weight: bolder;
     padding: 12px;
-    border: 1px solid #006eff;
+    border: 1px solid #ff0000;
     border-right-width: 6px;
     border-left-width: 6px;
     outline: none;
@@ -82,7 +82,7 @@ textarea {
 }
 
 input[type=Submit] {
-    background-color: #105a88;
+    background-color: #881010;
     font-family: myFont2, sans-serif;
     font-size: x-small;
     color: rgb(255, 255, 255);
@@ -100,7 +100,7 @@ input[type=checkbox] {
 
 input[type=file] {
     cursor: pointer;
-    border: 1px solid #006eff;
+    border: 1px solid #ff0000;
     border-radius: 10px 2px 20px 10px;
     background: rgba(11, 11, 14, 0.753);
     width: 100%;
@@ -110,7 +110,7 @@ input[type=file] {
 input[type=Submit]:hover {
     background-color: #1d8f56;
     color: rgb(255, 255, 255);
-    box-shadow: dodgerblue 0px 0px 100px 0.5px;
+    box-shadow: rgb(255, 30, 30) 0px 0px 100px 0.5px;
     opacity: 1;
     transition: 0.3s ease;
     transform: scale(1.1);
@@ -140,7 +140,7 @@ label {
 .tos-info img {
     width: 12px;
     height: 12px;
-    background-color: #105a88;
+    background-color: #881010;
     border-radius: 50%;
     margin-left: 5px;
     display: flex;
@@ -175,7 +175,7 @@ label {
     position: relative;
     font-weight: 400;
     font-size: 10px;
-    color: rgb(255, 0, 0);
+    color: orange;
     padding-top: 2px;
     padding-left: 5px;
     transition: all 0.3s ease-in-out;
@@ -232,7 +232,7 @@ label {
     opacity: 0.7;
     transform: rotate(360deg);
     transition: transform 0.6s;
-    box-shadow: dodgerblue 0px 0px 50px 0.5px;
+    box-shadow: rgb(255, 30, 30) 0px 0px 50px 0.5px;
 }
 
 .donate {
@@ -255,10 +255,10 @@ label {
     padding: 8px 0;
     margin-top: 160px;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
     font-family: myFont2, sans-serif;
     font-size: x-small;
-    border-top: solid thin dodgerblue;
+    border-top: solid thin rgb(255, 30, 30);
 }
 
 .copyright p {
@@ -282,7 +282,7 @@ label {
 }
 
 .detail:hover {
-    color: rgb(33, 110, 197);
+    color: rgb(197, 33, 33);
     transition: 0.5s ease;
     text-decoration: underline;
 }
@@ -306,6 +306,6 @@ label {
         }
     }
     body {
-        background-image: url("../images/bg/portrait-mode.png");
+        background-image: url("../images/bg/");
     }
 }

@@ -52,7 +52,7 @@ body.lb-disable-scrolling {
 
     /* Background color behind image.
      This is visible during transitions. */
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
     background-color: #22222279;
 }
 
@@ -173,12 +173,12 @@ body.lb-disable-scrolling {
     font-size: 12px;
     font-weight: bold;
     line-height: 1em;
-    color: #3498DB;
+    color: #db3434;
     cursor: default;
 }
 
 .lb-data .lb-caption a {
-    color: #4ae;
+    color: rgb(238, 68, 68);
 }
 
 .lb-data .lb-number {

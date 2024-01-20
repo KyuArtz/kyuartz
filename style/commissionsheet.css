@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
     margin: 0;
     padding: 0;
     transition: 0.5s;
@@ -25,10 +25,10 @@ ul {
     align-items: center;
     width: 100%;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: dodgerblue;
+    border-color: rgb(255, 30, 30);
     top: 50px;
     z-index: 99;
 }
@@ -57,7 +57,7 @@ ul {
     cursor: default;
     font-family: myFont2, sans-serif;
     font-size: small;
-    color: dodgerblue;
+    color: rgb(255, 30, 30);
 }
 
 .cs-container p {
@@ -75,7 +75,7 @@ ul {
 
 .price h5 {
     font-weight: bolder;
-    color: dodgerblue;
+    color: rgb(255, 30, 30);
     font-family: myFont2;
     padding: 9px;
     border-radius: 5px;
@@ -88,13 +88,13 @@ ul {
     text-align: right;
     margin: 20px 0 10px;
     width: 100%;
-    background-color: #3498DB;
+    background-color: #db3434;
     border-radius: 1px 1px 10px 10px;
 }
 
 .inquire-button a {
     padding: 10px;
-    background-color: #3498DB;
+    background-color: #db3434;
     border-radius: 4px;
     border-radius: 10px 1px 10px 1px;
     font-size: small;
@@ -107,7 +107,7 @@ ul {
 .inquire-button a:hover {
     transition: 0.5s ease;
     color: #000000;
-    box-shadow: dodgerblue 0 0 50px 0.5px;
+    box-shadow: rgb(255, 30, 30) 0 0 50px 0.5px;
 }
 
 @media screen and (max-width: 500px) {
@@ -150,10 +150,10 @@ ul {
     position: relative;
     padding: 8px 0;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    background-image: linear-gradient(to left, rgba(194, 14, 14, 0.103) , rgba(14, 11, 11, 0.753));
     font-family: myFont2, sans-serif;
     font-size: x-small;
-    border-top: solid thin dodgerblue;
+    border-top: solid thin rgb(255, 30, 30);
 }
 
 .copyright p {
@@ -177,7 +177,7 @@ ul {
 }
 
 .detail:hover {
-    color: rgb(33, 110, 197);
+    color: rgb(197, 33, 33);
     transition: 0.5s ease;
     text-decoration: underline;
 }
