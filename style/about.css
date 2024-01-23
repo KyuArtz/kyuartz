@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: url("../images/bg/landscape-mode-2.png");
+    background-image: url("../images/bg/landscape-mode.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
 
 .summary {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     text-align: center;
     color: white;
     padding: 20px;
@@ -32,8 +32,8 @@ body {
 .summarycontent {
     display: flex;
     background-color: rgba(40, 42, 54, 0.200);
-    background-image: linear-gradient(to right, rgba(41, 24, 24, 0.753), rgba(255, 0, 0, 0.281));
-    box-shadow: rgb(255, 30, 30) 0px 0px 2px 0.5px;
+    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+    box-shadow: dodgerblue 0px 0px 2px 0.5px;
     border-radius: 10px;
     text-align: justify;
     font-family: sans-serif;
@@ -44,7 +44,7 @@ body {
 
 .experience {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     text-align: center;
     color: white;
     padding: 15px;
@@ -54,24 +54,24 @@ body {
     font-size: small;
 }
 
-.xpcontent h2 {
+.expcontent h2 {
     font-family: myFont2, sans-serif;
 }
 
-.xpcontent {
+.expcontent {
     font-family: sans-serif;
     color: white;
     padding: 30px;
     cursor: default;
 }
 
-.xpcontent p {
+.expcontent p {
     padding: 10px;
     margin: 2px;
     display: inline-block;
     background-color: rgba(40, 42, 54, 0.200);
-    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(255, 0, 0, 0.281));
-    box-shadow: rgb(255, 30, 30) 0px 0px 2px 0.5px;
+    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
+    box-shadow: dodgerblue 0px 0px 2px 0.5px;
     border-radius: 0 10px 0 10px;
     cursor: default;
     width: 175px;
@@ -86,14 +86,14 @@ body {
     cursor: default;
 }
 
-.appxpcontent h2 {
+.appexpcontent h2 {
     font-family: myFont2, sans-serif;
     font-size: medium;
 }
 
-.appxpcontent {
+.appexpcontent {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: sans-serif;
     color: white;
     padding: 50px;
@@ -105,7 +105,7 @@ body {
     height: 50px;
     border-radius: 6px;
     opacity: 0.6;
-    box-shadow: rgb(255, 30, 30) 0px 0px 2px 0.5px;
+    box-shadow: dodgerblue 0px 0px 2px 0.5px;
     pointer-events: none;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to bottom, rgba(18, 18, 26, 0.753), rgba(255, 0, 0, 0.103));
+    background-image: linear-gradient(to bottom, rgba(18, 18, 26, 0.753), rgba(0, 119, 255, 0.103));
     background-color: rgba(20, 20, 20, 0.5);
     margin: 8px;
     padding: 10px;
@@ -156,7 +156,7 @@ body {
     font-size: 12px;
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
-    border: solid rgb(255, 30, 30) thin;
+    border: solid dodgerblue thin;
     border-radius: 0px 50px 50px 0px;
 }
 
@@ -170,7 +170,7 @@ body {
 
 .email,
 .exp {
-    color: #7e2c2c;
+    color: #2c687e;
     cursor: default;
 }
 
@@ -179,10 +179,10 @@ body {
     width: 100%;
     padding: 8px 0;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(255, 0, 0, 0.103));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
     font-family: myFont2, sans-serif;
     font-size: x-small;
-    border-top: solid thin rgb(255, 30, 30);
+    border-top: solid thin dodgerblue;
 }
 
 .copyright p {
@@ -206,7 +206,7 @@ body {
 }
 
 .detail:hover {
-    color: rgb(197, 33, 33);
+    color: rgb(33, 110, 197);
     transition: 0.5s ease;
     text-decoration: underline;
 }

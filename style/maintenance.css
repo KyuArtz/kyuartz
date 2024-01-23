@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
     margin: 0;
     padding: 0;
 }
@@ -32,13 +32,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(138, 11, 11);
+    background: rgb(11, 91, 138);
     border-radius: 9px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(187, 26, 26);
+    background: rgb(26, 128, 187);
 }
 
 .popup {
@@ -52,26 +52,26 @@ body {
     text-align: left;
     font-family: myFont2, sans-serif;
     padding: 0 30px 30px;
-    color: #ff0000;
+    color: #008cff;
     border-style: solid;
     border-left-width: 0;
     border-right-width: 0;
     border-bottom-width: thick;
     z-index: 1;
-    background-image: url("../images/bg/landscape-mode-2.png");
+    background-image: url("../images/popup/maintenance-notice-landscape.png");
 }
 
 .bg {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
 }
 
 .popup h1 {
     font-size: 40px;
     font-weight: 500;
-    color: #ff0000;
+    color: #008cff;
     margin: 20px 0 25px;
     border-style: solid;
     border-top-width: 0;
@@ -91,13 +91,13 @@ body {
 .tb {
     width: 100%;
     padding: 30px;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
     position: absolute;
     bottom: 0;
     left: 0;
     border-style: solid;
     border-width: 1px 0 0 0;
-    color: #ff0000;
+    color: #008cff;
 }
 
 .popup a {
@@ -120,9 +120,9 @@ body {
 }
 
 .popup a:hover {
-    border-color: #c41111;
-    color: #a11313;
-    background: -webkit-linear-gradient(#312828, #1c1c22);
+    border-color: #117cc4;
+    color: #1368a1;
+    background: -webkit-linear-gradient(#282831, #1c1c22);
 }
 
 @media screen and (max-width: 500px) {
@@ -137,7 +137,7 @@ body {
         text-align: center;
     }
     .popup {
-        background-image: url("../images/popup/");
+        background-image: url("../images/popup/maintenance-notice-portrait.png");
     }
     .popup a {
         font-size: xx-small;

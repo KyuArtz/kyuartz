@@ -5,7 +5,7 @@
 
 body {
     background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(194, 14, 14, 0.103));
+    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
     margin: 0;
     padding: 0;
 }
@@ -25,8 +25,8 @@ video {
     width: 100%;
     max-height: 596px;
     height: 596px;
-    background-image: radial-gradient(rgb(14 11 11), rgb(53, 22, 22));
-    border: solid thin rgb(255, 30, 30);
+    background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
+    border: solid thin dodgerblue;
     object-position: center;
     pointer-events: none;
 }
@@ -53,20 +53,20 @@ video {
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
-    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.281), rgba(41, 24, 24, 0.753));
+    background-image: linear-gradient(to right, rgba(0, 119, 255, 0.281), rgba(24, 24, 41, 0.753));
 }
 
 /* Position the "next button" to the left */
 .prev {
     left: 0;
     border-radius: 0 3px 3px 0;
-    background-image: linear-gradient(to right, rgba(41, 24, 24, 0.753), rgba(255, 0, 0, 0.281));
+    background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .next:hover,
 .prev:hover {
-    background-color: #601515a9;
+    background-color: #154360a9;
     opacity: 1;
 }
 
@@ -88,7 +88,7 @@ video {
 /* Caption text */
 .intro {
     color: #f2f2f2;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.653), rgba(145, 19, 19, 0.5));
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.653), rgba(19, 77, 145, 0.5));
     font-size: 8px;
     font-family: myFont2, sans-serif;
     padding: 8px 12px;
@@ -117,7 +117,7 @@ video {
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 5px 0 5px 0;
-    border: rgb(255, 30, 30) solid thin;
+    border: dodgerblue solid thin;
     display: inline-block;
     transition: background-color 0.6s ease;
     opacity: 0.2;
@@ -126,7 +126,7 @@ video {
 
 .active-btn,
 .btn:hover {
-    background-color: #832424;
+    background-color: #244d83;
     opacity: 0.5;
 }
 
@@ -154,14 +154,14 @@ iframe {
     max-width: 350px;
     height: 250px;
     border-radius: 5px;
-    border: solid thin rgb(255, 30, 30);
-    background-color: rgba(97, 36, 36, 0.5);
+    border: solid thin dodgerblue;
+    background-color: rgba(36, 65, 97, 50%);
 }
 
 iframe:hover {
     transform: scale(1.02);
     transition: all 0.5s ease;
-    box-shadow: rgb(255, 30, 30) 0 0 20px 0.5px;
+    box-shadow: dodgerblue 0 0 20px 0.5px;
 }
 
 /* styles the text container section font header*/
@@ -184,10 +184,10 @@ iframe:hover {
     position: relative;
     padding: 8px 0;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to left, rgba(194, 14, 14, 0.103) , rgba(14, 11, 11, 0.753));
+    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
     font-family: myFont2, sans-serif;
     font-size: x-small;
-    border-top: solid thin rgb(255, 30, 30);
+    border-top: solid thin dodgerblue;
 }
 
 .copyright p {
@@ -211,7 +211,7 @@ iframe:hover {
 }
 
 .detail:hover {
-    color: rgb(197, 33, 33);
+    color: rgb(33, 110, 197);
     transition: 0.5s ease;
     text-decoration: underline;
 }
