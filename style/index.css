@@ -25,8 +25,10 @@ video {
     width: 100%;
     max-height: 596px;
     height: 596px;
+    object-fit: cover;
     background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
     border: solid thin dodgerblue;
+    border-radius: 0 0 15px 15px;
     object-position: center;
     pointer-events: none;
 }
@@ -52,14 +54,14 @@ video {
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 20px 0 0 20px;
     background-image: linear-gradient(to right, rgba(0, 119, 255, 0.281), rgba(24, 24, 41, 0.753));
 }
 
 /* Position the "next button" to the left */
 .prev {
     left: 0;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 20px 20px 0;
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
 }
 
@@ -80,23 +82,30 @@ video {
     }
     .mySlides img,
     video {
-        height: 100vh;
+        height: 50vh;
         max-height: none;
+        object-fit: contain;
     }
 }
 
 /* Caption text */
 .intro {
+    width: 100%;
     color: #f2f2f2;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.653), rgba(19, 77, 145, 0.5));
-    font-size: 8px;
+    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.5), rgba(19, 77, 145, 0.5));
+    font-size: 10px;
     font-family: myFont2, sans-serif;
-    padding: 8px 12px;
     position: absolute;
     top: 0;
-    text-align: left;
+    text-align: center;
     cursor: default;
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 0 0;
+}
+
+@media screen and (max-width:500px) {
+    .intro {
+        font-size: 7px;
+    }
 }
 
 .img-size image {
@@ -120,7 +129,7 @@ video {
     border: dodgerblue solid thin;
     display: inline-block;
     transition: background-color 0.6s ease;
-    opacity: 0.2;
+    opacity: 0.7;
     box-shadow: 0 0 5px #0a0a0a;
 }
 

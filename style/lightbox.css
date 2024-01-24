@@ -3,13 +3,13 @@ body.lb-disable-scrolling {
 }
 
 .lightboxOverlay {
-    position: absolute;
+    position: fixed;/* absolute */
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: black;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(36, 64, 95));
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-    opacity: 0.8;
+    opacity: 1;
     display: none;
 }
 
@@ -45,10 +45,11 @@ body.lb-disable-scrolling {
     width: 250px;
     height: 250px;
     margin: 0 auto;
+    margin-top: 15px;
     border-radius: 4px;
     border-style: solid;
     border-width: thin;
-    color: #ccc;
+    color: dodgerblue;
 
     /* Background color behind image.
      This is visible during transitions. */

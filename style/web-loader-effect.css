@@ -13,7 +13,7 @@
 }
 
 .bg-loader {
-    background-image: url("../images/bg/loader-landscape.png");
+    background-image: url("../images/imgloader/loader-landscape.png");
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 500px) {
     .bg-loader {
-        background-image: url("../images/bg/loader-portrait.png");
+        background-image: url("../images/imgloader/loader-landscape.png");
     }
 }
 
