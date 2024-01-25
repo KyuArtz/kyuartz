@@ -7,7 +7,7 @@ body.lb-disable-scrolling {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-image: linear-gradient(to top, rgb(0, 0, 0), rgb(36, 64, 95));
+    background-color: rgb(20 30 41 / 99%);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 1;
     display: none;
@@ -174,7 +174,7 @@ body.lb-disable-scrolling {
     font-size: 12px;
     font-weight: bold;
     line-height: 1em;
-    color: #3498DB;
+    color: dodgerblue;
     cursor: default;
 }
 
@@ -187,7 +187,7 @@ body.lb-disable-scrolling {
     clear: left;
     padding-bottom: 1em;
     font-size: 12px;
-    color: #999999;
+    color: #e0e0e0;
     cursor: default;
 }
 

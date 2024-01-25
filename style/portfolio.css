@@ -79,7 +79,7 @@ ul {
 
 .gallary img:hover {
     transform: scale(0.98);
-    box-shadow: dodgerblue 0px 0px 50px 0.5px;
+    box-shadow: dodgerblue 0px 0px 10px 0.5px;
 }
 
 @media (max-width: 500px) {
