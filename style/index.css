@@ -170,7 +170,7 @@ iframe {
 iframe:hover {
     transform: scale(1.02);
     transition: all 0.5s ease;
-    box-shadow: dodgerblue 0 0 20px 0.5px;
+    box-shadow: dodgerblue 0 0 10px 0.5px;
 }
 
 /* styles the text container section font header*/
