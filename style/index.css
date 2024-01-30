@@ -12,7 +12,7 @@ body {
 
 .slideshow-container {
     position: relative;
-    margin: 50px auto auto;
+    margin: 60px 10px auto;
 }
 
 /* Hide the images by default */
@@ -23,12 +23,12 @@ body {
 .mySlides img,
 video {
     width: 100%;
-    max-height: 596px;
-    height: 596px;
+    max-height: 576px;
+    height: 576px;
     object-fit: cover;
     background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
     border: solid thin dodgerblue;
-    border-radius: 0 0 15px 15px;
+    border-radius: 15px;
     object-position: center;
     pointer-events: none;
 }
@@ -99,7 +99,7 @@ video {
     top: 0;
     text-align: center;
     cursor: default;
-    border-radius: 0 0 0 0;
+    border-radius: 15px;
 }
 
 @media screen and (max-width:500px) {
@@ -162,7 +162,7 @@ iframe {
     margin: 5px;
     max-width: 350px;
     height: 250px;
-    border-radius: 5px;
+    border-radius: 9px;
     border: solid thin dodgerblue;
     background-color: rgba(36, 65, 97, 50%);
 }
@@ -173,12 +173,25 @@ iframe:hover {
     box-shadow: dodgerblue 0 0 10px 0.5px;
 }
 
+@media screen and (max-width: 768px) {
+    iframe {
+        max-width: 200px;
+    }
+    @media screen and (max-width: 500px) {
+        iframe {
+            max-width: 90px;
+        }
+    }
+}
+
 /* styles the text container section font header*/
 .video-container h1 {
     cursor: default;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: 10px;
+    border-radius: 15px;
     font-family: myFont2, sans-serif;
     letter-spacing: 1px;
     color: white;
@@ -186,7 +199,7 @@ iframe:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: medium;
+    font-size: small;
 }
 
 .footer {
