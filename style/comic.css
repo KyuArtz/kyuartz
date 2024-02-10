@@ -65,13 +65,13 @@ ul {
 }
 
 .mySlides img:hover {
-    transition: 0.5s ease;
+    transition: 0.5s ease-in-out;
     box-shadow: dodgerblue 0 0 10px 0.5px;
 }
 
 .btnlink:hover {
-    opacity: 0.7;
-    transition: 0.5s ease;
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
 }
 
 /* Next & previous buttons */
@@ -88,6 +88,7 @@ ul {
     font-size: 30px;
     transition: 0.6s ease;
     user-select: none;
+    opacity: 0.5;
 }
 
 /* Position the "next button" to the right */
@@ -166,6 +167,7 @@ ul {
     border-style: none;
     left: 132px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .dot a {
@@ -188,6 +190,9 @@ ul {
     }
     .mySlides img {
         height: 250px;
+        border-radius: 0;
+    }
+    .chapter {
         border-radius: 0;
     }
     .comic-title {
