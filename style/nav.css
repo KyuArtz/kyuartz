@@ -48,7 +48,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    border: dodgerblue solid thin;
+    /*border: dodgerblue solid thin;*/
     border-radius: 5px;
 }
 
