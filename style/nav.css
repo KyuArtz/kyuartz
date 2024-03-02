@@ -97,7 +97,7 @@ a {
 .nav-link:hover {
     transition: 0.4s ease;
     color: #ffffff;
-    box-shadow: 0 0 4px #33ffff;
+    box-shadow: 0 0 1px #33ffff;
 }
 
 .hamburger {
