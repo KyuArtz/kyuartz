@@ -57,7 +57,7 @@
     height: 75px;
     border: 15px solid #9eb5e0;
     border-bottom-color: rgb(20, 111, 202);
-    border-radius: 50%;
+    border-radius: 9px;
     animation: loading 0.75s ease infinite;
     border-width: thin;
 }
