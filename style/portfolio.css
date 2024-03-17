@@ -85,7 +85,6 @@ ul {
 @media (max-width: 500px) {
     .gallary,
     .gallary img {
-        grid-auto-rows: auto auto;
         border-radius: 0;
     }
     .gallary img:hover {
