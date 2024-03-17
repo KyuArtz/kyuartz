@@ -82,7 +82,7 @@ ul {
     box-shadow: dodgerblue 0px 0px 10px 0.5px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .gallary,
     .gallary img {
         border-radius: 0;
