@@ -86,6 +86,7 @@ ul {
     .gallary,
     .gallary img {
         border-radius: 0;
+        grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     }
     .gallary img:hover {
         transform: none;
