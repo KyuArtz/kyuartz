@@ -85,7 +85,8 @@ body {
 .popup p {
     color: #ffffff;
     cursor: default;
-    font-size: x-large;
+    font-size: large;
+    text-align: center;
 }
 
 .tb {
@@ -117,6 +118,7 @@ body {
     position: absolute;
     bottom: 0;
     margin: 9px;
+    transition: all 0.4s ease-in-out;
 }
 
 .popup a:hover {

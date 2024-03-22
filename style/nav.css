@@ -85,6 +85,7 @@ a {
     font-size: 9px;
     cursor: pointer;
     border-style: none;
+    transition: all 0.4s ease-in-out;
 }
 
 .active-nav a,
@@ -95,7 +96,6 @@ a {
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
-    transition: 0.4s ease;
     color: #ffffff;
     box-shadow: 0 0 1px #33ffff;
 }
@@ -185,7 +185,7 @@ a {
     height: 100%;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(14, 98, 194, 0.103));
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
     overflow: auto;
     z-index: 5;
 }
@@ -201,6 +201,7 @@ a {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
 }
 
 .show {
@@ -211,7 +212,6 @@ a {
     background-color: #ddd;
     background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
-    transition: 0.7s;
 }
 
 @media screen and (max-width: 650px) {
@@ -231,6 +231,7 @@ a {
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .dot-btn {
@@ -246,7 +247,6 @@ a {
 
 .three-dots:hover {
     background-color: #0b5b91;
-    transition: 0.5s ease;
 }
 
 .dots-menu {
@@ -261,7 +261,7 @@ a {
     height: 100%;
     text-align: left;
     justify-content: left;
-    transition: 0.3s;
+    transition: all 0.5s ease 0s;
     z-index: 1;
 }
 
@@ -289,6 +289,7 @@ a {
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: #1e1e1e;
+    transition: all 0.5s ease-in-out;
 }
 
 .dot-link {
@@ -297,7 +298,6 @@ a {
 .dot-item a:hover {
     color: #000000;
     background-image: linear-gradient(to right, rgb(126, 178, 255), rgba(255, 255, 255, 0));
-    transition: 0.7s ease;
 }
 .dots-menu.active-dot {
     left: 0;
@@ -356,14 +356,13 @@ a {
     text-decoration: none;
     font-size: 11px;
     opacity: 0.5;
+    transition: all 0.5s ease-in-out;
 }
 
 .mininav a:hover {
-    transition: 0.7 ease;
     background-color: #154360;
     color: white;
     opacity: 1;
-    transition: 0.5s;
 }
 
 .category {

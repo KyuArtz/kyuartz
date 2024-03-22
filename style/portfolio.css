@@ -30,7 +30,7 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 3px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease-in-out;
 }
 
 .dots-container,

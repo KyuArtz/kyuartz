@@ -102,12 +102,12 @@ ul {
     border-color: #000000;
     border-width: thin;
     font-family: myFont2, sans-serif;
+    transition: all 0.4s ease-in-out;
 }
 
 .inquire-button a:hover {
-    transition: 0.5s ease;
     color: #000000;
-    box-shadow: dodgerblue 0 0 50px 0.5px;
+    box-shadow: dodgerblue 0 0 10px 0.5px;
 }
 
 @media screen and (max-width: 500px) {
