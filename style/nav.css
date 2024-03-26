@@ -90,14 +90,16 @@ a {
 
 .active-nav a,
 .active-dropdown {
-    box-shadow: 0 0 10px dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
     background: dodgerblue;
+    border-radius: 9px;
 }
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
     color: #ffffff;
-    box-shadow: 0 0 1px #33ffff;
+    box-shadow: 0 0 1px dodgerblue;
+    border-radius: 9px;
 }
 
 .hamburger {
@@ -144,7 +146,7 @@ a {
         height: 100%;
         text-align: center;
         justify-content: center;
-        transition: all 0.5s ease 0s;
+        transition: 0.3s;
         z-index: 1;
     }
     .nav-item {
