@@ -58,7 +58,7 @@ body {
     border-right-width: 0;
     border-bottom-width: thick;
     z-index: 1;
-    background-image: url("../images/popup/maintenance-notice-landscape.png");
+    background-image: url("../images/bg/landscape-mode.png");
 }
 
 .bg {
@@ -111,13 +111,15 @@ body {
     border-style: solid;
     border-color: #333;
     font-family: inherit;
-    border-radius: 0 20px 0 20px;
+    border-radius: 9px;
     cursor: pointer;
     text-decoration: none;
     font-size: small;
     position: absolute;
-    bottom: 0;
-    margin: 9px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
     transition: all 0.4s ease-in-out;
 }
 
@@ -134,15 +136,17 @@ body {
     }
     .popup p {
         font-size: small;
-        top: 60%;
         position: relative;
         text-align: center;
     }
     .popup {
-        background-image: url("../images/popup/maintenance-notice-portrait.png");
+        background-image: url("../images/bg/portrait-mode.png");
     }
     .popup a {
         font-size: xx-small;
-        left: 32%;
+    }
+    .tb{
+        height: 100%;
+        z-index: -1;
     }
 }

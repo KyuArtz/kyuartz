@@ -12,7 +12,7 @@ body {
 
 .slideshow-container {
     position: relative;
-    margin: 55px 5px auto;
+    margin: 50px auto 0 0;
 }
 
 /* Hide the images by default */
@@ -24,11 +24,10 @@ body {
 video {
     width: 100%;
     max-height: 576px;
-    height: 548px;
+    height: 557px;
     object-fit: cover;
     background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
     border: solid thin dodgerblue;
-    border-radius: 15px;
     object-position: center;
     pointer-events: none;
 }
@@ -119,13 +118,13 @@ video {
 /* The dots/bullets/indicators */
 .btn {
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 0 2px;
     background-color: #bbb;
-    border-radius: 5px 0 5px 0;
+    border-radius: 50%;
     border: dodgerblue solid thin;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -163,14 +162,14 @@ iframe {
     max-width: 350px;
     height: 250px;
     border-radius: 9px;
-    border: solid thin dodgerblue;
+    border: solid thin rgb(0, 0, 0);
     background-color: rgba(36, 65, 97, 50%);
     transition: all 0.3s ease-in-out;
 }
 
 iframe:hover {
     transform: scale(1.02);
-    box-shadow: dodgerblue 0 0 10px 0.5px;
+    border: solid thin dodgerblue;
 }
 
 @media screen and (max-width: 768px) {
@@ -190,8 +189,6 @@ iframe:hover {
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
     padding-top: 15px;
     padding-bottom: 15px;
-    margin: 10px;
-    border-radius: 15px;
     font-family: myFont2, sans-serif;
     letter-spacing: 1px;
     color: white;
