@@ -54,7 +54,7 @@ a {
 
 .nav-brand {
     font-family: myFont2, sans-serif;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: dodgerblue;
     background: -webkit-linear-gradient(left, dodgerblue, lightblue);
     background-clip: text;
