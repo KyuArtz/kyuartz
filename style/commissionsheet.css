@@ -148,6 +148,12 @@ ul {
     pointer-events: none;
 }
 
+@media screen and (max-width:500px) {
+    .cs-container img {
+       width: 250px;
+    }
+}
+
 .footer {
     position: relative;
     padding: 8px 0;
