@@ -136,12 +136,14 @@ ul {
 
 .cs-container img {
     margin: 5px 2px;
-    width: 270px;
-    object-fit: cover;
+    width: 450px;
+    object-fit: contain;
     object-position: center;
-    border-radius: 5px;
+    aspect-ratio: 1 / 1;
+    border-radius: 9px;
     border-style: solid;
-    color: rgb(255, 255, 255);
+    color: dodgerblue;
+    background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
     border-width: thin;
     pointer-events: none;
 }
