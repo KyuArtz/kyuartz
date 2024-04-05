@@ -14,15 +14,15 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  let btn = document.getElementsByClassName("btn");
+  let dot = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < btn.length; i++) {
-    btn[i].className = btn[i].className.replace(" active-btn", "");
+  for (i = 0; i < dot.length; i++) {
+    dot[i].className = dot[i].className.replace(" active-dot", "");
   }
   slides[slideIndex-1].style.display = "block";
-  btn[slideIndex-1].className += " active-btn";
+  dot[slideIndex-1].className += " active-dot";
 }

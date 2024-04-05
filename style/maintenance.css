@@ -41,7 +41,7 @@ body {
     background: rgb(26, 128, 187);
 }
 
-.popup {
+.maintenance_body {
     width: 100%;
     box-sizing: border-box;
     height: 100%;
@@ -68,7 +68,7 @@ body {
     background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
 }
 
-.popup h1 {
+.maintenance_body h1 {
     font-size: 40px;
     font-weight: 500;
     color: #008cff;
@@ -82,14 +82,14 @@ body {
     text-align: center;
 }
 
-.popup p {
+.maintenance_body p {
     color: #ffffff;
     cursor: default;
     font-size: large;
     text-align: center;
 }
 
-.tb {
+.maintenace_button {
     width: 100%;
     padding: 30px;
     background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
@@ -101,7 +101,7 @@ body {
     color: #008cff;
 }
 
-.popup a {
+.maintenance_body a {
     margin-top: 30px;
     padding: 10px 20px;
     background: -webkit-linear-gradient(#282831, #1c1c22);
@@ -123,29 +123,29 @@ body {
     transition: all 0.4s ease-in-out;
 }
 
-.popup a:hover {
+.maintenance_body a:hover {
     border-color: #117cc4;
     color: #1368a1;
     background: -webkit-linear-gradient(#282831, #1c1c22);
 }
 
 @media screen and (max-width: 500px) {
-    .popup h1 {
+    .maintenance_body h1 {
         font-size: large;
         text-align: center;
     }
-    .popup p {
+    .maintenance_body p {
         font-size: small;
         position: relative;
         text-align: center;
     }
-    .popup {
+    .maintenance_body {
         background-image: url("../images/bg/portrait-mode.png");
     }
-    .popup a {
+    .maintenance_body a {
         font-size: xx-small;
     }
-    .tb{
+    .maintenace_button{
         height: 100%;
         z-index: -1;
     }

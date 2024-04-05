@@ -92,7 +92,6 @@ ul {
     .gallary img:hover {
         transform: none;
         box-shadow: none;
-        border: none;
     }
     .up-container img {
         left: 0;

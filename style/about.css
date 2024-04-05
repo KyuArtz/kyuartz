@@ -72,7 +72,7 @@ body {
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
     box-shadow: dodgerblue 0px 0px 2px 0.5px;
-    border-radius: 0 10px 0 10px;
+    border-radius: 10px;
     cursor: default;
     width: 175px;
     font-size: medium;
@@ -157,7 +157,7 @@ body {
     padding: 5px;
     background: rgba(0, 0, 0, 0.5);
     border: solid dodgerblue thin;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 30px 50px 50px 30px;
 }
 
 /*  */

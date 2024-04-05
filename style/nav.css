@@ -53,20 +53,19 @@ a {
 }
 
 .nav-brand {
-    font-size: 1.1rem;
-    font-family: myFont, sans-serif;
-    font-size: xx-large;
-    margin-top: -6px;
+    font-family: myFont2, sans-serif;
+    font-size: 1.9rem;
     color: dodgerblue;
     background: -webkit-linear-gradient(left, dodgerblue, lightblue);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    opacity: 0.9;
 }
 
 .my-avatar {
     position: absolute;
-    left: 9px;
+    top: 5px;
+    left: 7px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -203,7 +202,7 @@ a {
     border-color: #1e1e1e;
     transition: all 0.5s ease-in-out;
 }
-/*shows the navagation menu overlay on mobile view*/
+
 .show {
     left: 0;
 }

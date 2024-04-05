@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-.slideshow-container {
+.slideshow_container {
     position: relative;
     margin: 50px auto 0 0;
 }
@@ -88,7 +88,7 @@ video {
 }
 
 /* Caption text */
-.intro {
+.caption {
     width: 100%;
     color: #f2f2f2;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.5), rgba(19, 77, 145, 0.5));
@@ -102,21 +102,17 @@ video {
 }
 
 @media screen and (max-width:500px) {
-    .intro {
+    .caption {
         font-size: 7px;
     }
 }
 
-.img-size image {
-    width: 100%;
-}
-
-.btn-container {
+.home_slider_dot {
     text-align: center;
 }
 
 /* The dots/bullets/indicators */
-.btn {
+.dot {
     position: relative;
     bottom: 30px;
     cursor: pointer;
@@ -132,8 +128,8 @@ video {
     box-shadow: 0 0 5px #0a0a0a;
 }
 
-.active-btn,
-.btn:hover {
+.active-dot,
+.dot:hover {
     background-color: #244d83;
     opacity: 0.5;
 }
@@ -146,14 +142,14 @@ video {
 
 @keyframes fade {
     from {
-        opacity: 0.4;
+        opacity: 0.1;
     }
     to {
         opacity: 1;
     }
 }
 
-.video-container {
+.video_container {
     text-align: center;
 }
 
@@ -184,7 +180,7 @@ iframe:hover {
 }
 
 /* styles the text container section font header*/
-.video-container h1 {
+.video_container h1 {
     cursor: default;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
     padding-top: 15px;
