@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="style/web-loader-effect.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-  
 <body>
 
 <div class="loader" oncontextmenu="return false">
@@ -63,42 +62,40 @@
 <script defer src="js/hamburger.js"></script>
 <script defer src="js/dropdownmenu.js"></script>
 
-<div class="title"><h1>MY WORK</h1>
-<div class="three-dots" title="Category">
-  <span class="dot-btn"></span>
-  <span class="dot-btn"></span>
-  <span class="dot-btn"></span>
+<div class="category-navigation"><h1>MY WORK</h1>
+<div class="category-dots" title="Category">
+  <span class="category-dot"></span>
+  <span class="category-dot"></span>
+  <span class="category-dot"></span>
 </div>
-
-<div class="dots-container">
-  <ul class="dots-menu">
+<div class="category-container">
+  <ul class="category-menu">
     <h3>Category</h3>
-    <li class="dot-item">
-      <a href="portfolio.html" class="dot-link">All</a>
+    <li class="category-item">
+      <a href="portfolio.html" class="category-link">All</a>
     </li>
-    <li class="dot-item">
-      <a href="portfolio_semi_realistic.html" class="dot-link">Semi realistic</a>
+    <li class="category-item">
+      <a href="portfolio_semi_realistic.html" class="category-link">Semi realistic</a>
     </li>
-    <li class="dot-item">
-      <a href="portfolio_grayscale.html" class="dot-link">Grayscale</a>
+    <li class="category-item">
+      <a href="portfolio_grayscale.html" class="category-link">Grayscale</a>
     </li>
-    <li class="dot-item">
-      <a href="portfolio_anime_style.html" class="dot-link">Anime style</a>
+    <li class="category-item">
+      <a href="portfolio_anime_style.html" class="category-link">Anime style</a>
     </li>
-    <li class="dot-item">
-      <a href="portfolio_traditional.html" class="dot-link">Traditioanl art</a>
+    <li class="category-item">
+      <a href="portfolio_traditional.html" class="category-link">Traditioanl art</a>
     </li>
   </ul>
 </div>
 </div>
-
+<script defer src="js/category-drop-menu.js"></script>
 <div class="up-container">
   <a href="#" onclick="topFunction()" id="upBtn" title="Go to top">
     <img src="images/imgbtn/up-icon.png">
   </a>
 </div>
 <script defer src="js/button-auto-scroll.js"></script>
-<script defer src="js/dots-functionality.js"></script>
 
 <div class="image-container">
   <div class="gallary">
@@ -178,7 +175,7 @@
 
 <div class="footer">
   <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
-    <div class="detail-container">
+    <div class="footer-container">
     <a class="detail" href="terms_of_service.html"> Terms of Service</a>
     <a class="detail" href="about.html"> About Me</a>
     <a class="detail" href="contact.html"> Contact Me</a>

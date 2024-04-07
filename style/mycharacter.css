@@ -207,7 +207,7 @@ body {
     cursor: default;
 }
 
-.detail-container {
+.footer-container {
     display: flex;
     justify-content: center;
 }

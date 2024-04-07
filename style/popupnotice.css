@@ -14,7 +14,7 @@
     text-align: center;
     font-family: myFont2, sans-serif;
     padding: 0 30px 30px;
-    background-image: url("../images/popup/popup-bg.png");
+    background-image: url("../images/bg/landscape-mode.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -53,9 +53,20 @@
 }
 
 .popup p {
-    color: #000000;
+    color: #ffffff;
     cursor: default;
     font-size: 14px;
+}
+
+.popup a {
+    padding: 5px;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%);
 }
 
 .popup button {

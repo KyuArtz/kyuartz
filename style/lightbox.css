@@ -53,8 +53,9 @@ body.lb-disable-scrolling {
 
     /* Background color behind image.
      This is visible during transitions. */
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+     background-image: linear-gradient(to right, rgb(21, 24, 37, 0.5), rgb(20, 46, 75, 0.5));
     background-color: #22222279;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
 }
 
 .lb-outerContainer:after {

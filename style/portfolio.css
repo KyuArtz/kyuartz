@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     overflow-x: hidden;
 }
 
@@ -29,37 +29,38 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 
-.dots-container,
+.category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
 
-.title {
+.category-navigation {
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgba(11, 11, 14, 0.753), rgba(0, 119, 255, 0.103));
+    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: dodgerblue;
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
     top: 50px;
     z-index: 99;
 }
 
-.title h1 {
+.category-navigation h1 {
     text-align: center;
     font-family: myFont2, sans-serif;
-    font-size: large;
-    color: #ffff;
+    font-size: 1.1rem;
+    color: dodgerblue;
     display: flex;
     cursor: default;
 }
@@ -103,10 +104,12 @@ ul {
     padding: 8px 0;
     margin-top: 5px;
     background-color: #1a1a1a;
-    background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
+    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     font-family: myFont2, sans-serif;
-    font-size: x-small;
-    border-top: solid thin dodgerblue;
+    font-size: 0.6rem;
+    border-top: solid thin rgb(28 55 97);
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
 
 .copyright p {
@@ -115,7 +118,7 @@ ul {
     cursor: default;
 }
 
-.detail-container {
+.footer-container {
     display: flex;
     justify-content: center;
 }
@@ -126,11 +129,11 @@ ul {
     display: inline-block;
     padding: 0 5px;
     text-decoration: none;
-    font-size: xx-small;
+    font-size: 0.5rem;
+    transition: 0.5s ease-in-out;
 }
 
 .detail:hover {
     color: rgb(33, 110, 197);
-    transition: 0.5s ease;
     text-decoration: underline;
 }

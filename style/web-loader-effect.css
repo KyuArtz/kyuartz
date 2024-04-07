@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(14, 11, 11), rgb(24, 42, 63));
+    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
 }

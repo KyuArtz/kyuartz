@@ -69,7 +69,7 @@ body {
 }
 
 .maintenance_body h1 {
-    font-size: 40px;
+    font-size: 2.0rem;
     font-weight: 500;
     color: #008cff;
     margin: 20px 0 25px;
@@ -85,7 +85,7 @@ body {
 .maintenance_body p {
     color: #ffffff;
     cursor: default;
-    font-size: large;
+    font-size: 1.10rem;
     text-align: center;
 }
 
@@ -114,7 +114,7 @@ body {
     border-radius: 9px;
     cursor: pointer;
     text-decoration: none;
-    font-size: small;
+    font-size: 0.7rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,19 +131,13 @@ body {
 
 @media screen and (max-width: 500px) {
     .maintenance_body h1 {
-        font-size: large;
-        text-align: center;
+        font-size: 1.1rem;
     }
     .maintenance_body p {
-        font-size: small;
-        position: relative;
-        text-align: center;
+        font-size: 0.7rem;
     }
     .maintenance_body {
         background-image: url("../images/bg/portrait-mode.png");
-    }
-    .maintenance_body a {
-        font-size: xx-small;
     }
     .maintenace_button{
         height: 100%;
