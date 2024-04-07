@@ -87,7 +87,7 @@ a {
 
 .active-nav a,
 .active-dropdown {
-    box-shadow: 0 0 5px dodgerblue;
+    box-shadow: 0 0 1px dodgerblue;
     background: #15202f;
     border-radius: 9px;
 }
