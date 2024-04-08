@@ -14,7 +14,7 @@
     list-style-image: url("../images/bullet/n-bullet.png");
     padding: 12px;
     background-color: #222222a4;
-    background-image: linear-gradient(to right, rgba(14, 20, 34, 0.70), rgba(0, 51, 109, 0.3));
+    background-image: linear-gradient(to right, rgb(21, 24, 37, 0.6), rgb(20, 46, 75, 0.6));
     border-radius: 7px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
     font-size: 1.0rem;
