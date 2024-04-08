@@ -8,10 +8,18 @@
     src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    overflow-x: hidden;
+}
+
 header {
     position: fixed;
     width: 100%;
-    background-color: #1a1a1a;
+    background-color: inherit;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     top: 0;
     border: solid rgb(28 55 97);
@@ -155,7 +163,6 @@ a {
     .nav-item a,
     .nav-link-dropdown {
         font-size: 1.0rem;
-        font-weight: 800;
         transition: 0.7s;
     }
     .nav-item a:hover {

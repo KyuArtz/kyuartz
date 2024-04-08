@@ -4,7 +4,7 @@
 
 .popup {
     width: 450px;
-    background: #fff;
+    background: inherit;
     border-radius: 6px;
     border: solid thin red;
     position: fixed;

@@ -4,18 +4,18 @@
 }
 
 body {
-    background-color: #222222;
-    background-image: url("../images/bg/landscape-mode.png");
+    background-image: url("../images/bg/landscape-mode-1.png")!important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
+}
+
+.card-overlay {
+    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.800), rgb(20, 46, 75, 0.800));
 }
 
 .summary {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
     text-align: center;
     color: white;
     padding: 20px;
@@ -44,7 +44,6 @@ body {
 
 .experience {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
     text-align: center;
     color: white;
     padding: 15px;
@@ -78,41 +77,37 @@ body {
     font-size: 1.0rem;
 }
 
-.expapp {
+.program {
     text-align: center;
     color: white;
-    padding: 5px;
-    font-family: sans-serif;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
     cursor: default;
 }
 
-.appexpcontent h2 {
+.program-content h2 {
     font-family: myFont2, sans-serif;
     font-size: 0.8rem;
 }
 
-.appexpcontent {
-    background-color: rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
-    font-family: sans-serif;
-    color: white;
-    padding: 50px;
-    cursor: default;
-}
-
-.applogo img {
+.program-logo img {
     width: 55px;
     height: 55px;
     border-radius: 6px;
     opacity: 0.6;
-    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1);
+}
+
+.program-logo img:hover {
+    transform: scale(0.90);
+    border: solid 3px dodgerblue;
 }
 
 .me {
     float: left;
     width: 33.3%;
     margin-bottom: 16px;
-    box-sizing: border-box;
 }
 
 .card {
@@ -174,7 +169,7 @@ body {
 }
 
 .footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     padding: 8px 0;
     background-color: #1a1a1a;
@@ -188,7 +183,7 @@ body {
 
 .copyright p {
     text-align: center;
-    color: white;
+    color: dodgerblue;
     cursor: default;
 }
 
@@ -228,6 +223,6 @@ body {
         text-align: justify;
     }
     body {
-        background-image: url("../images/bg/portrait-mode.png");
+        background-image: url("../images/bg/portrait-mode.png")!important;
     }
 }

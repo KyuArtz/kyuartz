@@ -39,7 +39,7 @@
 .loader h2 {
     font-family: myFont2, sans-serif;
     font-size: small;
-    color: #dddddd;
+    color: dodgerblue;
     position: absolute;
     bottom: 35%;
     transition: inherit;
@@ -55,9 +55,9 @@
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #9eb5e0;
+    border: 15px solid dodgerblue;
     border-color: rgb(20, 111, 202);
-    border-radius: 9px;
+    border-radius: 15px;
     animation: loading 0.75s ease infinite;
     border-width: thin;
 }
@@ -66,11 +66,12 @@
     content: "";
     width: 50px;
     height: 50px;
-    border: 15px double #9eb5e0;
-    border-top-color: rgb(20, 111, 202);
+    border: 15px double dodgerblue;
+    border-top-color: rgb(21, 33, 44);
     border-radius: 50%;
     animation: loading2 0.75s ease infinite;
     position: absolute;
+    box-shadow: 0 1px 50px 5px rgba(0, 217, 255, 0.5);
 }
 
 @keyframes loading {

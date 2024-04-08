@@ -3,10 +3,10 @@ var usernamefield = document.getElementById("username-field");
 var usernameerror = document.getElementById("username-error");
 var usernamevalid = document.getElementById("username-valid");
 
-// sends a message info to the user if the contact form is valid or not
+// promts a message info to the user if the contact form is valid or not
 function validateUsername(){
-  if(!usernamefield.value.match(/^[A-Za-z\._\-0-9]*[A-Za-z]*[\ \][a-z]{3,25}$/)){
-    usernameerror.innerHTML ="Please enter a valid username!";
+  if(!usernamefield.value.match(/^[A-Za-z]*[\ \][a-z]{3,25}$/)){
+    usernameerror.innerHTML ="Must be atleast 1-3 characters no number/special char!";
     usernamefield.style.borderColor ="red";
     usernamevalid.innerHTML ="";
     usernamelabel.style.color ="red";

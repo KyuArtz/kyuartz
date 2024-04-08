@@ -3,14 +3,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-body {
-    background-color: #222222;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
 .ts-content {
     cursor: default;
 }
@@ -68,7 +60,7 @@ body {
 .copyright p {
     padding: 8px 0;
     text-align: center;
-    color: white;
+    color: dodgerblue;
     font-family: myFont2, sans-serif;
     font-size: 0.5rem;
 }

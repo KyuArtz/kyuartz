@@ -3,14 +3,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #222222;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    overflow-x: hidden;
-}
-
 .image-container {
     width: 100%;
     min-height: 100vh;
@@ -103,7 +95,7 @@ ul {
     position: relative;
     padding: 8px 0;
     margin-top: 5px;
-    background-color: #1a1a1a;
+    background-color: inherit;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     font-family: myFont2, sans-serif;
     font-size: 0.6rem;
@@ -114,7 +106,7 @@ ul {
 
 .copyright p {
     text-align: center;
-    color: white;
+    color: dodgerblue;
     cursor: default;
 }
 

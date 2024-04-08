@@ -8,17 +8,17 @@ function init() {
 
   for (j = 0; j < parents.length; j++) {
     var slides = parents[j].getElementsByClassName("mySlides");
-    var dots = parents[j].getElementsByClassName("dot");
+    var dot = parents[j].getElementsByClassName("dot");
     slides[0].classList.add('active-slide');
-    dots[0].classList.add('active');
+    dot[0].classList.add('active');
   }
 }
 
-dots = document.getElementsByClassName('dot'); //dots functionality
+dot = document.getElementsByClassName('dot'); //dot functionality
 
-for (i = 0; i < dots.length; i++) {
+for (i = 0; i < dot.length; i++) {
 
-  dots[i].onclick = function() {
+  dot[i].onclick = function() {
 
     slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
 
@@ -42,7 +42,7 @@ for (i = 0; i < links.length; i++) {
     current = this.parentNode;
 
     var slides = current.getElementsByClassName("mySlides");
-    var dots = current.getElementsByClassName("dot");
+    var dot = current.getElementsByClassName("dot");
     curr_slide = current.getElementsByClassName('active-slide')[0];
     curr_dot = current.getElementsByClassName('active')[0];
     curr_slide.classList.remove('active-slide');
@@ -54,7 +54,7 @@ for (i = 0; i < links.length; i++) {
         curr_dot.nextElementSibling.classList.add('active');
       } else {
         slides[0].classList.add('active-slide');
-        dots[0].classList.add('active');
+        dot[0].classList.add('active');
       }
 
     }
@@ -66,7 +66,7 @@ for (i = 0; i < links.length; i++) {
         curr_dot.previousElementSibling.classList.add('active');
       } else {
         slides[slides.length - 1].classList.add('active-slide');
-        dots[slides.length - 1].classList.add('active');
+        dot[slides.length - 1].classList.add('active');
       }
 
     }

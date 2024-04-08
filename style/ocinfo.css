@@ -3,14 +3,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-body {
-    background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
-    margin: 0;
-    padding: 0;
-    transition: 0.5s;
-}
-
 .slideshow-container {
     position: relative;
     margin: 50px auto auto;
