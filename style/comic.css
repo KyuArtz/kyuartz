@@ -151,7 +151,7 @@ ul {
 .dot {
     cursor: pointer;
     padding: 5px 11px;
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(18, 22, 32);
     transition: background-color 0.6s ease 0s;
     position: relative;
     bottom: 52px;
@@ -163,7 +163,7 @@ ul {
 .dot a {
     color: white;
     text-decoration: none;
-    font-family: myFont2, sans-serif;
+    font-family: sans-serif;
     font-size: small;
 }
 
