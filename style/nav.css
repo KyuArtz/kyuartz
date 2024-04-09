@@ -262,7 +262,7 @@ a {
 .category-menu {
     position: fixed;
     left: -100%;
-    top: 80px;
+    top: 79px;
     gap: 0;
     flex-direction: column;
     background-color: #1a1a1a;
