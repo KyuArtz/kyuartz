@@ -189,6 +189,7 @@ ul {
     }
     .dot {
         bottom: 45px;
+        left: 95px;
     }
     .dot a {
         font-size: 0.5rem;
