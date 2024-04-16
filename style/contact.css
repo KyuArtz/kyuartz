@@ -35,7 +35,7 @@ ul {
 
 .category-navigation h1 {
     text-align: center;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 1.1rem;
     color: dodgerblue;
     display: flex;
@@ -50,7 +50,7 @@ ul {
     float: left;
     box-sizing: border-box;
     color: rgb(255, 255, 255);
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     padding: 30px 40px 20px;
     width: 50%;
 }
@@ -111,7 +111,7 @@ textarea {
 
 input[type=Submit] {
     background-color: #105a88;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 0.7rem;
     color: rgb(255, 255, 255);
     padding: 12px 30px;
@@ -131,7 +131,7 @@ input[type=file] {
     &::file-selector-button{
         background-color: dodgerblue;
         border: none;
-        font-family: myFont2;
+        font-family: myFont;
         font-size: 0.6rem;
         cursor: pointer;
         padding: 10px;
@@ -236,7 +236,7 @@ label {
 }
 
 .mysocial {
-    font-family: myFont2, monospace;
+    font-family: myFont, monospace;
     color: dodgerblue;
     font-size: 0.8rem;
     cursor: default;
@@ -290,7 +290,7 @@ label {
     margin-top: 230px;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 0.6rem;
     border-top: solid thin rgb(28 55 97);
     border-radius: 20px 20px 0 0;

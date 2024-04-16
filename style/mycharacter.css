@@ -148,7 +148,7 @@
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-family: myfont2, sans-serif;
+    font-family: myfont, sans-serif;
     font-size: xx-small;
     border-style: solid;
     border-left-width: 6px;
@@ -189,7 +189,7 @@
     padding: 8px 0;
     background-color: inherit;
     background-image: linear-gradient(to left, rgba(14, 98, 194, 0.103) , rgba(14, 11, 11, 0.753));
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: x-small;
     border-top: solid thin dodgerblue;
 }

@@ -81,7 +81,7 @@ video {
     color: #f2f2f2;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.653), rgba(19, 77, 145, 0.5));
     font-size: 8px;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     padding: 8px 12px;
     position: absolute;
     top: 0;
@@ -152,7 +152,7 @@ iframe {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     letter-spacing: 1px;
     color: white;
     font-size: larger;

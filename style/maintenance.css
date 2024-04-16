@@ -16,7 +16,7 @@ body {
 }
 
 @font-face {
-    font-family: myFont2;
+    font-family: myFont;
     src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
 
@@ -50,7 +50,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: left;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     padding: 0 30px 30px;
     color: #008cff;
     border-style: solid;

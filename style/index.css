@@ -87,7 +87,7 @@ video {
     color: #f2f2f2;
     background-image: linear-gradient(to right, rgba(11, 11, 14, 0.5), rgba(19, 77, 145, 0.5));
     font-size: 10px;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     position: absolute;
     top: 0;
     text-align: center;
@@ -155,7 +155,7 @@ video {
     cursor: default;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     letter-spacing: 1px;
     color: dodgerblue;
     font-size: 0.8rem;
@@ -189,7 +189,7 @@ iframe:hover {
     padding: 8px 0;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 0.6rem;
     border-top: solid thin rgb(28 55 97);
     border-radius: 20px 20px 0 0;

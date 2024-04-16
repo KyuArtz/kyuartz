@@ -11,7 +11,7 @@ body {
 }
 
 @font-face {
-    font-family: myFont2;
+    font-family: myFont;
     src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
 
@@ -60,7 +60,7 @@ a {
     color: white;
     text-decoration: none;
     font-size: 11px;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
 }
 
 .navbar {
@@ -144,7 +144,7 @@ a {
     padding: 19px 20px;
     text-decoration: none;
     text-align: left;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: x-small;
     border-radius: 5px;
 }

@@ -20,7 +20,7 @@ body {
     color: white;
     padding: 20px;
     margin-top: 51px;
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     cursor: default;
     font-size: 0.8rem;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .expcontent h2 {
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
 }
 
 .expcontent {
@@ -86,7 +86,7 @@ body {
 }
 
 .program-content h2 {
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 0.8rem;
 }
 
@@ -130,7 +130,7 @@ body {
 }
 
 .my-info {
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 0.8rem;
     color: white;
     padding: 10px 16px;
@@ -174,7 +174,7 @@ body {
     padding: 8px 0;
     background-color: #1a1a1a;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    font-family: myFont2, sans-serif;
+    font-family: myFont, sans-serif;
     font-size: 0.6rem;
     border-top: solid thin rgb(28 55 97);
     border-radius: 20px 20px 0 0;
