@@ -2,21 +2,18 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
-
 body {
     background-image: url("../images/bg/landscape-mode.png")!important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
-
 .category-navigation {
     position: fixed;
     display: flex;
@@ -32,7 +29,6 @@ ul {
     top: 50px;
     z-index: 99;
 }
-
 .category-navigation h1 {
     text-align: center;
     font-family: myFont, sans-serif;
@@ -41,11 +37,9 @@ ul {
     display: flex;
     cursor: default;
 }
-
 .contact-overlay {
     background-image: linear-gradient(to right, rgb(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
 }
-
 .contact-container {
     float: left;
     box-sizing: border-box;
@@ -54,19 +48,16 @@ ul {
     padding: 30px 40px 20px;
     width: 50%;
 }
-
 @media screen and (max-width: 500px) {
     .contact-container {
         color: rgb(255, 255, 255);
     }
 }
-
 .title h2 {
     text-align: center;
     cursor: default;
     color: dodgerblue;
 }
-
 /* Style inputs with type="text", select elements and textareas */
 input[type=email],
 input[type=message],
@@ -94,21 +85,18 @@ textarea {
     background: rgba(12, 12, 20, 0.7);
     color: #ffffff;
 }
-
 input[type=email],
 input[type=text],
 select,
 textarea {
     border-radius: 4px;
 }
-
 input[type=message],
 textarea {
     max-height: 150px;
     height: 150px;
     border-radius: 4px 4px 4px 50px;
 }
-
 input[type=Submit] {
     background-color: #105a88;
     font-family: myFont, sans-serif;
@@ -122,11 +110,9 @@ input[type=Submit] {
     transform: scale(1);
     transition: 0.3s ease-in-out;
 }
-
 input[type=checkbox] {
     cursor: pointer;
 }
-
 input[type=file] {
     &::file-selector-button{
         background-color: dodgerblue;
@@ -137,12 +123,11 @@ input[type=file] {
         padding: 10px;
         border-radius: 5px;
     }
-    border: 1px solid #006eff;
+    border: solid 1px #006eff;
     border-radius: 10px 2px 30px 10px;
     width: 100%;
     margin-top: 3px;
 }
-
 input[type=Submit]:hover {
     background-color: #00c3ff;
     color: rgb(255, 255, 255);
@@ -151,11 +136,9 @@ input[type=Submit]:hover {
     transition: 0.3s ease;
     transform: scale(1.1);
 }
-
 label {
     font-size: 0.7rem;
 }
-
 .tos-container {
     display: flex;
     justify-content: right;
@@ -164,14 +147,12 @@ label {
     font-size: small;
     font-family: sans-serif;
 }
-
 .tos,
 .tos-info {
     font-family: sans-serif;
     display: flex;
     cursor: pointer;
 }
-
 .tos-info img {
     width: 12px;
     height: 12px;
@@ -180,12 +161,10 @@ label {
     margin-left: 5px;
     display: flex;
 }
-
 .send-container {
     display: flex;
     justify-content: left;
 }
-
 @media screen and (max-width: 500px) {
     .tos-container {
         justify-content: center;
@@ -200,7 +179,6 @@ label {
         margin-top: 0;
     }
 }
-
 #email-error,
 #message-error,
 #username-error {
@@ -214,7 +192,6 @@ label {
     transition: all 0.3s ease-in-out;
     cursor: default;
 }
-
 #email-valid,
 #message-valid,
 #username-valid {
@@ -227,33 +204,28 @@ label {
     transition: all 0.3s ease-in-out;
     cursor: default;
 }
-
 .my-contact {
     text-align: center;
     color: #ffff;
     font-family: sans-serif;
     cursor: default;
 }
-
 .mysocial {
     font-family: myFont, monospace;
     color: dodgerblue;
     font-size: 0.8rem;
     cursor: default;
 }
-
 .mysocial h4 {
     background: rgba(12, 12, 20, 0.5);
     padding: 10px;
     margin-top: 50px;
     border-radius: 0 0 30px 30px;
 }
-
 .logo-view img {
     position: relative;
     height: 35px;
 }
-
 .applogo img {
     padding: 4px;
     background-color:#11121a;
@@ -261,29 +233,24 @@ label {
     border-radius: 50%;
     border: solid thin dodgerblue;
 }
-
 .applogo img:hover {
     opacity: 0.7;
     transform: rotate(360deg);
     transition: transform 0.6s;
     box-shadow: dodgerblue 0px 0px 50px 0.5px;
 }
-
 .donate {
     display: flex;
     justify-content: center;
 }
-
 .gbm img {
     width: 450px;
     transform: scale(1);
     transition: transform 0.4s;
 }
-
 .gbm img:hover {
     transform: scale(0.96);
 }
-
 .footer {
     position: relative;
     padding: 8px 0;
@@ -296,18 +263,15 @@ label {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
-
 .copyright p {
     text-align: center;
     color: dodgerblue;
     cursor: default;
 }
-
 .footer-container {
     display: flex;
     justify-content: center;
 }
-
 .detail {
     margin-top: 5px;
     color: rgb(255, 255, 255);
@@ -317,12 +281,10 @@ label {
     font-size: 0.5rem;
     transition: 0.5s ease-in-out;
 }
-
 .detail:hover {
     color: rgb(33, 110, 197);
     text-decoration: underline;
 }
-
 @media screen and (max-width: 690px) {
     .contact-container {
         width: 100%;

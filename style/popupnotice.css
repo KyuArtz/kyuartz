@@ -1,7 +1,6 @@
 * {
     -webkit-tap-highlight-color: transparent;
 }
-
 .popup {
     width: 450px;
     background: inherit;
@@ -22,13 +21,11 @@
     transition: transform 0.4s;
     box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
 }
-
 .open-popup {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
     z-index: 1;
 }
-
 .popup img {
     width: 130px;
     position: absolute;
@@ -38,7 +35,6 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     pointer-events: none;
 }
-
 .popup h2 {
     font-size: 38px;
     font-weight: 500;
@@ -51,13 +47,11 @@
     border-bottom-width: thin;
     cursor: default;
 }
-
 .popup p {
     color: #ffffff;
     cursor: default;
     font-size: 14px;
 }
-
 .popup a {
     padding: 5px;
     font-size: 0.7rem;
@@ -68,7 +62,6 @@
     bottom: 5px;
     transform: translate(-50%);
 }
-
 .popup button {
     width: 50%;
     margin-top: 30px;
@@ -86,13 +79,11 @@
     border-radius: 0 20px 0 20px;
     cursor: pointer;
 }
-
 .popup button:hover {
     border-color: #117cc4;
     color: #1368a1;
     background: -webkit-linear-gradient(#282831, #1c1c22);
 }
-
 @media(max-width: 450px) {
     .popup {
         width: 300px;

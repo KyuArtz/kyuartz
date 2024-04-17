@@ -2,17 +2,14 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
-
 .slideshow_container {
     position: relative;
     margin: 50px auto 0 0;
 }
-
 /* Hide the images by default */
 .mySlides {
     display: none;
 }
-
 .mySlides img,
 video {
     width: 100%;
@@ -25,8 +22,6 @@ video {
     object-position: center;
     /*pointer-events: none;*/
 }
-
-/* Next & previous buttons */
 .next,
 .prev {
     cursor: pointer;
@@ -43,29 +38,21 @@ video {
     user-select: none;
     opacity: 0;
 }
-
-/* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 20px 0 0 20px;
     background-image: linear-gradient(to right, rgba(0, 119, 255, 0.281), rgba(24, 24, 41, 0.753));
 }
-
-/* Position the "next button" to the left */
 .prev {
     left: 0;
     border-radius: 0 20px 20px 0;
     background-image: linear-gradient(to right, rgba(24, 24, 41, 0.753), rgba(0, 119, 255, 0.281));
 }
-
-/* On hover, add a black background color with a little bit see-through */
 .next:hover,
 .prev:hover {
     background-color: #154360a9;
     opacity: 1;
 }
-
-/* On smaller screens, decrease text size */
 @media screen and (max-width: 500px) {
     .next,
     .prev {
@@ -80,8 +67,6 @@ video {
         object-fit: contain;
     }
 }
-
-/* Caption text */
 .caption {
     width: 100%;
     color: #f2f2f2;
@@ -94,18 +79,14 @@ video {
     cursor: default;
     border-radius: 0px 15px 0px 0px;
 }
-
 @media screen and (max-width:500px) {
     .caption {
         font-size: 7px;
     }
 }
-
 .home_slider_dot {
     text-align: center;
 }
-
-/* The dots/bullets/indicators */
 .dot {
     position: relative;
     bottom: 30px;
@@ -121,36 +102,27 @@ video {
     opacity: 0.7;
     box-shadow: 0 0 5px #0a0a0a;
 }
-
 .active-dot,
 .dot:hover {
     background-color: #244d83;
     opacity: 0.5;
 }
-
-/* Fading animation */
 .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @keyframes fade {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
+    from {opacity: 0.1;}
+    to {opacity: 1;}
 }
-
 .video_container {
     text-align: center;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
     margin: 9px;
     border-radius: 9px;
 }
-
-/* styles the text container section font header*/
 .video_container h1 {
     cursor: default;
     padding-top: 15px;
@@ -162,7 +134,6 @@ video {
     background-color: rgba(18, 23, 31, 0.5);
     border-radius: 9px 9px 0 0;
 }
-
 .video_content {
     display: block ruby;
     overflow: auto;
@@ -177,13 +148,11 @@ iframe{
     background-color: rgba(36, 65, 97, 50%);
     transition: all 0.3s ease-in-out;
 }
-
 .video:hover,
 iframe:hover {
     /*transform: scale(1.02);*/
     border: solid thin dodgerblue;
 }
-
 .footer {
     position: relative;
     padding: 8px 0;
@@ -195,18 +164,15 @@ iframe:hover {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
-
 .copyright p {
     text-align: center;
     color: dodgerblue;
     cursor: default;
 }
-
 .footer-container {
     display: flex;
     justify-content: center;
 }
-
 .detail {
     margin-top: 5px;
     color: rgb(255, 255, 255);
@@ -216,7 +182,6 @@ iframe:hover {
     font-size: 0.5rem;
     transition: 0.5s ease-in-out;
 }
-
 .detail:hover {
     color: rgb(33, 110, 197);
     text-decoration: underline;

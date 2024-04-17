@@ -2,14 +2,12 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
-
 .category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
-
 .category-navigation {
     position: fixed;
     display: flex;
@@ -25,7 +23,6 @@ ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     z-index: 99;
 }
-
 .category-navigation h1 {
     text-align: center;
     font-family: myFont, sans-serif;
@@ -34,12 +31,10 @@ ul {
     display: flex;
     cursor: default;
 }
-
 .cs-container {
     padding: 10px;
     margin-top: 95px;
 }
-
 .cs-container h3 {
     padding: 9px;
     margin: auto;
@@ -52,7 +47,6 @@ ul {
     font-size: 0.9rem;
     color: dodgerblue;
 }
-
 .cs-container p {
     text-align: center;
     padding: 9px;
@@ -64,7 +58,6 @@ ul {
     font-size: 0.8rem;
     color: white;
 }
-
 .price h5 {
     font-weight: bolder;
     color: dodgerblue;
@@ -75,7 +68,6 @@ ul {
     opacity: 0.9;
     cursor: default;
 }
-
 .inquire-button {
     text-align: right;
     margin: 20px 0 10px;
@@ -83,7 +75,6 @@ ul {
     background-color: #19415B;
     border-radius: 1px 1px 10px 10px;
 }
-
 .inquire-button a {
     padding: 10px;
     background-color: #19415B;
@@ -96,12 +87,10 @@ ul {
     font-family: myFont, sans-serif;
     transition: all 0.4s ease-in-out;
 }
-
 .inquire-button a:hover {
     color: #000000;
     box-shadow: dodgerblue 0 0 10px 0.5px;
 }
-
 @media screen and (max-width: 500px) {
     .inquire-button {
         text-align: center;
@@ -110,7 +99,6 @@ ul {
         text-align: left;
     }
 }
-
 .cs-content {
     color: white;
     text-align: center;
@@ -121,11 +109,9 @@ ul {
     box-shadow: 0 0 5px #0a0a0a;
     border-radius: 10px;
 }
-
 .img-container {
     text-align: center;
 }
-
 .cs-container img {
     margin: 5px 2px;
     width: 450px;
@@ -139,13 +125,11 @@ ul {
     border-width: thin;
     pointer-events: none;
 }
-
 @media screen and (max-width:500px) {
     .cs-container img {
        width: 250px;
     }
 }
-
 .footer {
     position: relative;
     padding: 8px 0;
@@ -157,18 +141,15 @@ ul {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
-
 .copyright p {
     text-align: center;
     color: dodgerblue;
     cursor: default;
 }
-
 .footer-container {
     display: flex;
     justify-content: center;
 }
-
 .detail {
     margin-top: 5px;
     color: rgb(255, 255, 255);
@@ -177,7 +158,6 @@ ul {
     text-decoration: none;
     font-size: 0.5rem;
 }
-
 .detail:hover {
     color: rgb(33, 110, 197);
     transition: 0.5s ease;

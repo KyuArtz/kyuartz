@@ -2,7 +2,6 @@
     font-family: myFont;
     src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +9,6 @@ body {
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     overflow-x: hidden;
 }
-
 header {
     position: fixed;
     width: 100%;
@@ -22,20 +20,16 @@ header {
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
     z-index: 100000;
 }
-
 .nav-menu li {
     list-style: none;
 }
-
 .nav-menu {
     padding: 0;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 .navbar {
     min-height: 50px;
     display: flex;
@@ -44,8 +38,6 @@ a {
     padding: 0 0 0 56px;
     margin-right: 3px;
 }
-
-/* default nav display on landscape mode */
 .nav-menu {
     display: flex;
     justify-content: space-between;
@@ -54,7 +46,6 @@ a {
     /*border: dodgerblue solid thin;*/
     border-radius: 5px;
 }
-
 .nav-brand {
     font-family: myFont, sans-serif;
     font-size: 1.5rem;
@@ -64,7 +55,6 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .my-avatar {
     position: absolute;
     top: 5px;
@@ -74,7 +64,6 @@ a {
     border-radius: 50%;
     border: solid thin dodgerblue;
 }
-
 .nav-link,
 .nav-link-dropdown {
     border: none;
@@ -87,26 +76,22 @@ a {
     transition: all 0.4s ease-in-out;
     padding: 15px 25px 12px;
 }
-
 .active-nav a,
 .active-dropdown {
     box-shadow: 0 0 1px dodgerblue;
     background: #15202f;
     border-radius: 9px;
 }
-
 .nav-link-dropdown:hover,
 .nav-link:hover {
-    color: #ffffff;
+    color: dodgerblue;
     box-shadow: 0 0 1px dodgerblue;
     border-radius: 9px;
 }
-
 .hamburger {
     display: none;
     cursor: pointer;
 }
-
 .bar {
     display: block;
     width: 25px;
@@ -116,7 +101,6 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: dodgerblue;
 }
-
 @media screen and (max-width: 978px) {
     .hamburger {
         display: block;
@@ -143,7 +127,7 @@ a {
         top: 51px;
         gap: 0;
         flex-direction: column;
-        background-color: #1a1a1a;
+        background-color: inherit;
         background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
         background-image: url(../images/bg/portrait-mode1.png);
         background-position: center;
@@ -181,7 +165,6 @@ a {
         background: none;
     }
 }
-
 .dropdown-content {
     display: flex;
     flex-direction: column;
@@ -201,7 +184,6 @@ a {
     overflow: auto;
     z-index: 5;
 }
-
 .dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 19px 20px;
@@ -213,23 +195,19 @@ a {
     border-width: 0 1px 0 0;
     transition: all 0.5s ease-in-out;
 }
-
 .show {
     left: 0;
 }
-
 .dropdown-content a:hover {
     background-color: #ddd;
     background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
 }
-
 @media screen and (max-width: 650px) {
     .dropdown-content {
         width: 90%;
     }
 }
-
 .category-dots {
     position: absolute;
     display: flex;
@@ -243,7 +221,6 @@ a {
     cursor: pointer;
     transition: 0.5s ease-in-out;
 }
-
 .category-dot {
     position: relative;
     cursor: pointer;
@@ -254,11 +231,9 @@ a {
     border-radius: 50%;
     display: inline-block;
 }
-
 .category-dots:hover {
     background-color: #0b5b91;
 }
-
 .category-menu {
     position: fixed;
     left: -100%;
@@ -277,7 +252,6 @@ a {
     border-color: dodgerblue;
     z-index: 1;
 }
-
 .category-menu h3 {
     color: dodgerblue;
     background-color: rgba(8, 10, 22, 0.5);
@@ -288,7 +262,6 @@ a {
     padding: 5px;
     margin-top: 0;
 }
-
 .category-item {
     display: flex;
 }
@@ -298,7 +271,6 @@ a {
     width: 100%;
     transition: all 0.5s ease-in-out;
 }
-
 .category-link {
     padding: 15px;
 }
@@ -309,13 +281,11 @@ a {
 .category-menu.active-category {
     left: 0;
 }
-
 @media screen and (max-width: 500px) {
     .category-menu {
         width: 50%;
     }
 }
-
 .navbar input[type=search] {
     padding: 13px;
     border-style: solid;
@@ -330,23 +300,19 @@ a {
     margin: 0 10px;
     font-family: myFont, sans-serif;
 }
-
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
     background: rgb(49, 49, 49);
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgba(0, 162, 255);
     border-radius: 9px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(26, 128, 187);

@@ -2,14 +2,12 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
-
 .category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
-
 .category-navigation {
     position: fixed;
     display: flex;
@@ -25,7 +23,6 @@ ul {
     top: 50px;
     z-index: 99;
 }
-
 .category-navigation h1 {
     text-align: center;
     font-family: myFont, sans-serif;
@@ -34,17 +31,14 @@ ul {
     display: flex;
     cursor: default;
 }
-
 .top-spacing {
     margin-top: 100px;
 }
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: 0 auto;
 }
-
 .mySlides img {
     width: 100%;
     height: 503px;
@@ -55,17 +49,14 @@ ul {
     transition: 0.3s ease-in-out;
     transform: scale(1);
 }
-
 .mySlides img:hover {
     box-shadow: rgb(0, 0, 0) 0 0 9px 0.5px;
     border: solid thin dodgerblue;
     transform: scale(1.01);
 }
-
 .btnlink:hover {
     transition: 0.5s ease-in-out;
 }
-
 .next,
 .prev {
     cursor: pointer;
@@ -81,37 +72,30 @@ ul {
     user-select: none;
     opacity: 0.3;
 }
-
 /* Position the "next button" to the right */
 .next {
     right: 0;
     border-radius: 20px 0 0 20px;
     background-image: linear-gradient(to left, rgba(0 49 85 / 90%) , rgba(0, 102, 255, 0.103));
 }
-
 /* Position the "next button" to the left */
 .prev {
     left: 0;
     border-radius: 0 20px 20px 0;
     background-image: linear-gradient(to right, rgba(0 49 85 / 90%) , rgba(0, 102, 255, 0.103));
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .next:hover,
 .prev:hover {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
 }
-
 .mySlides {
     display: none;
 }
-
 .active-slide {
     display: block;
 }
-
-/* Title of the slideshow */
 .comic-title {
     color: #ffff;
     font-size: 0.9rem;
@@ -125,8 +109,18 @@ ul {
     border-radius: 0 10px 10px 0;
     z-index: 1;
 }
-
-/* Chapter text */
+.comic-chapter {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 8px 12px;
+    border-radius:10px 0 0 10px;
+    color: #ffff;
+    background-image: linear-gradient(to right, rgb(21, 24, 37, 0.6), rgb(20, 46, 75, 0.6));
+    font-family: myFont, sans-serif;
+    cursor: default;
+    z-index: 1;
+}
 .chapter {
     color: #fff;
     background-image: linear-gradient(to right, rgb(21, 24, 37, 0.6), rgb(20, 46, 75, 0.6));
@@ -140,14 +134,11 @@ ul {
     cursor: default;
     border-radius: 0 0 9px 6px;
 }
-
 .btn-container {
     position: relative;
     display: flex;
     width: 100%;
 }
-
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     padding: 5px 11px;
@@ -159,19 +150,16 @@ ul {
     left: 132px;
     transition: all 0.5s ease-in-out;
 }
-
 .dot a {
     color: white;
     text-decoration: none;
     font-family: sans-serif;
     font-size: small;
 }
-
 .active,
 .dot:hover {
     background-color: rgb(20, 103, 158);
 }
-
 @media screen and (max-width: 500px) {
     .next,
     .prev {
@@ -184,7 +172,8 @@ ul {
     .chapter {
         border-radius: 0;
     }
-    .comic-title {
+    .comic-title,
+    .comic-chapter {
         font-size: 0.5rem;
     }
     .dot {
@@ -206,7 +195,6 @@ ul {
         transform: scale(1);
     }
 }
-
 .footer {
     position: relative;
     padding: 8px 0;
@@ -218,18 +206,15 @@ ul {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
-
 .copyright p {
     text-align: center;
     color: dodgerblue;
     cursor: default;
 }
-
 .footer-container {
     display: flex;
     justify-content: center;
 }
-
 .detail {
     margin-top: 5px;
     color: rgb(255, 255, 255);
@@ -239,25 +224,21 @@ ul {
     font-size: 0.5rem;
     transition: 0.5s ease-in-out;
 }
-
 .detail:hover {
     color: rgb(33, 110, 197);
     text-decoration: underline;
 }
-
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .8}
   to {opacity: 1}
 }
-
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .8}
   to {opacity: 1}
 }

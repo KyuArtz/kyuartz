@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico"><title>Kyushiartz | Wasteland</title>
+  <link rel="stylesheet" href="style/chapter-1.css">
+  <link rel="stylesheet" href="style/popupnotice.css">
+  <link rel="stylesheet" href="style/web-loader-effect.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="loader" oncontextmenu="return false">
+  <div class="bg-loader"></div>
+  <h2>Loading Webpage...</h2>
+  <div class="loader2"></div>
+</div>
+<script defer src="js/loader.js"></script>  
+
+<header>
+<nav class="navbar">
+  <div class="chapter-indicator"></div>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <div class="dropdown">
+        <button href="#" class="nav-link-dropdown" onclick="myFunction()" title="Chapters">&#10094;</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="">1</a>
+          <a href="">2</a>
+          <a href="">3</a>
+          <a href="">4</a>
+          <a href="">5</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link" onclick="openFullscreen();" title="Full Screen">+</a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link" onclick="closeFullscreen();" title="Minimize Screen">-</a>
+    </li>
+    <li class="nav-item">
+      <a onclick="window.history.back()" class="nav-link" title="Back">&#10095;</a>
+    </li>
+  </ul>
+</nav>
+</header>
+<script defer src="js/dropdownmenu.js"></script>
+<script src="js/Fullscreen.js"></script>
+
+<div class="slideshow-container">
+<div class="comicSlide fade">
+  <div class="numbertext">1/19</div>
+  <img src="images/comic/1.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">2/19</div>
+  <img src="images/comic/2.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">3/19</div>
+  <img src="images/comic/3.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">4/19</div>
+  <img src="images/comic/4.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">5/19</div>
+  <img src="images/comic/5.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">6/19</div>
+  <img src="images/comic/6.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">7/19</div>
+  <img src="images/comic/7.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">8/19</div>
+  <img src="images/comic/8.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">9/19</div>
+  <img src="images/comic/9.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">10/19</div>
+  <img src="images/comic/10.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">11/19</div>
+  <img src="images/comic/11.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">12/19</div>
+  <img src="images/comic/12.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">13/19</div>
+  <img src="images/comic/13.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">14/19</div>
+  <img src="images/comic/14.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">15/19</div>
+  <img src="images/comic/15.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">16/19</div>
+  <img src="images/comic/16.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">17/19</div>
+  <img src="images/comic/17.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">18/19</div>
+  <img src="images/comic/18.png">
+</div>
+<div class="comicSlide fade">
+  <div class="numbertext">19/19</div>
+  <img src="images/comic/19.png">
+</div>
+<div class="botnav">
+  <div class="btn">
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
+</div>
+<script>
+  let slideIndex = 1;
+    showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("comicSlide");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slides[slideIndex-1].style.display = "block";  
+  }
+</script>
+</body>
+</html>
