@@ -23,7 +23,7 @@ header {
     border: solid rgb(28 55 97);
     border-width: 0 0 1px 0;
     z-index: 100000;
-    opacity: 0;
+    opacity: 0.1;
     transition: 0.5s ease-in-out;
 }
 header:hover {
