@@ -172,4 +172,9 @@ a {
 @media screen and (max-width: 500px) {
     .chapter-indicator {
         font-size: 0.4rem;
-}}
+    }
+    .comicSlide img {
+        height: 100vh;
+        max-height: none;
+    }
+}
