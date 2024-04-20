@@ -131,7 +131,7 @@ a {
 .mySlides img {
     width: 100%;
     border: solid thin dodgerblue;
-    background-image: #fff;
+    background-color: #fff;
     height: 100vh;
     max-height: 100vh;
     pointer-events: none;
