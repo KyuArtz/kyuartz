@@ -12,7 +12,7 @@
     z-index: 80;
 }
 .bg-loader {
-    background-image: url("../images/imgloader/loader-landscape.png");
+    background-image: url("../images/bg/landscape-mode.png");
     position: fixed;
     top: 0;
     left: 0;
@@ -30,12 +30,13 @@
     .loader h2 {
         display: none;
         opacity: 0;
+        visibility: hidden;
     }
 }
 .loader h2 {
     font-family: myFont, sans-serif;
     font-size: small;
-    color: dodgerblue;
+    color: rgb(255, 255, 255);
     position: absolute;
     bottom: 35%;
     transition: inherit;
@@ -50,28 +51,40 @@
     width: 75px;
     height: 75px;
     border: 15px solid dodgerblue;
-    border-color: rgb(20, 111, 202);
-    border-radius: 15px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 50%;
     animation: loading 0.75s ease infinite;
     border-width: thin;
+    box-shadow: 0 1px 100px 30px rgba(0, 217, 255, 0.5);
 }
 .loader2 {
     content: "";
     width: 50px;
     height: 50px;
-    border: 15px double dodgerblue;
-    border-top-color: #ffff;
+    border: 15px double rgb(0, 183, 255);
+    border-top-color: rgba(30, 143, 255, 0);
+    border-bottom-color: rgba(30, 143, 255, 0) ;
     border-radius: 50%;
     animation: loading2 0.75s ease infinite;
     position: absolute;
-    box-shadow: 0 1px 50px 5px rgba(0, 217, 255, 0.5);
+}
+.loader3 {
+    content: "";
+    width: 85px;
+    height: 85px;
+    border: solid thick rgb(30, 143, 255);
+    border-top-color: #ffff;
+    border-radius: 50%;
+    animation: loading3 0.75s ease infinite;
+    position: absolute;
+    box-shadow: 0 1px 10px 1px rgba(0, 217, 255, 0.5);
 }
 @keyframes loading {
     from {
-        transition: rotate(0turn);
+        transform: scale(0);
     }
     to {
-        transform: rotate(1turn);
+        transform: scale(1);
     }
 }
 @keyframes loading2 {
@@ -80,6 +93,14 @@
     }
     to {
         transform: rotate(-1turn);
+    }
+}
+@keyframes loading3 {
+    from {
+        transition: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
     }
 }
 .loader h2 {

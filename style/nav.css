@@ -2,6 +2,23 @@
     font-family: myFont;
     src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
 }
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(30, 31, 37);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+    border-radius: 9px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: dodgerblue;
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,7 +32,7 @@ header {
     background-color: inherit;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     top: 0;
-    border: solid rgb(28 55 97);
+    border: solid dodgerblue;
     border-width: 0 0 1px 0;
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
     z-index: 100000;
@@ -299,21 +316,4 @@ a {
     position: relative;
     margin: 0 10px;
     font-family: myFont, sans-serif;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgba(0, 162, 255);
-    border-radius: 9px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
 }

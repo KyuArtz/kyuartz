@@ -6,19 +6,17 @@
     position: relative;
     margin: 50px auto 0 0;
 }
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
 .mySlides img,
 video {
     width: 100%;
-    max-height: 557px;
-    height: 557px;
+    max-height: 95vh;
+    height: 95vh;
     object-fit: cover;
     background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
     border: solid thin dodgerblue;
-    border-radius: 0 0 20px 20px;
     object-position: center;
     /*pointer-events: none;*/
 }
@@ -62,9 +60,10 @@ video {
     }
     .mySlides img,
     video {
-        height: 50vh;
+        height: 60vh;
         max-height: none;
         object-fit: contain;
+        border-radius: 0 0 20px 20px;
     }
 }
 .caption {
@@ -89,11 +88,11 @@ video {
 }
 .dot {
     position: relative;
-    bottom: 30px;
+    bottom: 40px;
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 0 1px;
     background-color: #bbb;
     border-radius: 50%;
     border: dodgerblue solid thin;
@@ -120,6 +119,7 @@ video {
 .video_container {
     text-align: center;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+    border: solid thin dodgerblue;
     margin: 9px;
     border-radius: 9px;
 }
@@ -131,7 +131,6 @@ video {
     letter-spacing: 1px;
     color: dodgerblue;
     font-size: 0.8rem;
-    background-color: rgba(18, 23, 31, 0.5);
     border-radius: 9px 9px 0 0;
 }
 .video_content {

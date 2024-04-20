@@ -28,7 +28,7 @@ body {
     display: flex;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
-    box-shadow: dodgerblue 0px 0px 2px 0.5px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
     border-radius: 10px;
     text-align: justify;
     font-family: sans-serif;
@@ -61,7 +61,7 @@ body {
     display: inline-block;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
-    box-shadow: dodgerblue 0px 0px 2px 0.5px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
     border-radius: 10px;
     cursor: default;
     width: 175px;
@@ -96,7 +96,7 @@ body {
     margin-bottom: 16px;
 }
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
     background-image: linear-gradient(to right, rgba(33, 38, 59, 0.5), rgb(20, 46, 75, 0.500));
     background-color: rgba(20, 20, 20, 0.5);
     margin: 8px;

@@ -6,28 +6,36 @@
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(30, 31, 37);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: dodgerblue;
+    border-radius: 9px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: dodgerblue;
+}
 body {
     margin: 0;
     padding: 0;
     background-color: #222222;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    overflow-x: hidden;
+    overflow: hidden;
+    -webkit-overflow-scrolling: hidden;
 }
 header {
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: inherit;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
-    border: solid rgb(28 55 97);
-    border-width: 0 0 1px 0;
-    z-index: 100000;
-    opacity: 0.1;
-    transition: 0.5s ease-in-out;
-}
-header:hover {
-    opacity: 1;
+    z-index: 100;
 }
 .nav-menu li {
     list-style: none;
@@ -51,10 +59,14 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    /*border: dodgerblue solid thin;*/
-    border-radius: 5px;
     background-color: #15202f;
-    border-radius: 10px;
+    border-radius: 50px;
+    border: solid thin dodgerblue;
+    opacity: 0.1;
+    transition: all 0.5s ease-in-out;
+}
+.nav-menu:hover {
+    opacity: 1;
 }
 .nav-link,
 .nav-link-dropdown {
@@ -75,14 +87,16 @@ a {
 }
 .dropdown-content {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+    width: auto;
+    height: 100vh;
+    border-radius: 30px 0 0 30px;
+    border: solid thin dodgerblue;
+    flex-direction: column;
+    justify-content: start;
     box-shadow: none;
     position: fixed;
     right: -100%;
-    top: 51px;
-    min-width: 200px;
+    top: 0;
     background-color: inherit;
     background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     transition: all 0.5s ease 0s;
@@ -101,34 +115,31 @@ a {
     transition: all 0.5s ease-in-out;
 }
 .show {
-    right: 0;
+    right: 0px;
 }
 .dropdown-content a:hover {
     background-color: #ddd;
     background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
 }
-.comicSlide {
+.slideshow-container {
+    position: relative;
+}
+.mySlides {
     display: none;
 }
-.comicSlide img {
+.mySlides img {
     width: 100%;
     border: solid thin dodgerblue;
     background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
-    height: 607px;
-    max-height: 607px;
-    object-fit: contain;
-    object-position: center;
+    height: 100vh;
+    max-height: 100vh;
     pointer-events: none;
-}
-.slideshow-container {
-    position: relative;
 }
 .botnav {
     width: 100%;
     overflow: hidden;
     z-index: 1;
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.5), rgba(20, 46, 75, 0.5));
     position: fixed;
     bottom: 0;
     padding: 14px 0;
@@ -147,9 +158,9 @@ a {
     cursor: pointer;
     position: relative;
     margin: 0 40px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 35px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -160,7 +171,7 @@ a {
 }
 .numbertext {
     color: #ffff;
-    background-color: dodgerblue;
+    background-color: rgba(30, 143, 255, 0.500);
     font-family: sans-serif;
     padding: 10px 12px;
     position: fixed;
@@ -173,8 +184,22 @@ a {
     .chapter-indicator {
         font-size: 0.4rem;
     }
-    .comicSlide img {
-        height: 100vh;
-        max-height: none;
+    .mySlides img {
+        object-fit: contain;
+        object-position: center;
     }
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
 }
