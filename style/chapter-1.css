@@ -131,7 +131,7 @@ a {
 .mySlides img {
     width: 100%;
     border: solid thin dodgerblue;
-    background-image: radial-gradient(rgb(14 11 11), rgb(22 36 53));
+    background-image: #fff;
     height: 100vh;
     max-height: 100vh;
     pointer-events: none;
