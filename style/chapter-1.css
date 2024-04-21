@@ -131,7 +131,7 @@ a {
 .mySlides img {
     width: 100%;
     border: solid thin dodgerblue;
-    background-color: ffffff;
+    background-color: #ffffff;
     height: 100vh;
     max-height: 100vh;
     pointer-events: none;
@@ -142,7 +142,7 @@ a {
     z-index: 1;
     position: fixed;
     bottom: 0;
-    padding: 14px 0;
+    padding: 10px 0;
     opacity: 0.3;
     transition: 0.5s ease-in-out;
 }
@@ -160,9 +160,8 @@ a {
     margin: 0 40px;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 35px;
+    font-size: 2.10rem;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
 }
 .next:hover,
