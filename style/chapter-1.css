@@ -98,7 +98,7 @@ a {
     right: -100%;
     top: 0;
     background-color: inherit;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-image: linear-gradient(to left, rgb(21, 24, 37), rgb(20, 46, 75));
     transition: all 0.5s ease 0s;
     overflow: auto;
     z-index: 5;
