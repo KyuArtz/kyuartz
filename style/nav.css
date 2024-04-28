@@ -103,7 +103,7 @@ a {
     font-size: 0.6rem;
     cursor: pointer;
     border-style: none;
-    transition: all 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
     padding: 15px 25px 12px;
 }
 .active-nav a,
@@ -127,8 +127,8 @@ a {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     background-color: var(--color);
 }
 @media screen and (max-width: 978px) {
@@ -209,7 +209,7 @@ a {
     height: 100%;
     background-color: var(--background-color);
     background-image: var(--theme);
-    transition: all 0.5s ease 0s;
+    transition: 0.5s ease 0s;
     overflow: auto;
     z-index: 5;
 }
@@ -222,7 +222,7 @@ a {
     font-size: 0.6rem;
     font-weight: 500;
     border-width: 0 1px 0 0;
-    transition: all 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .show {
     left: 0;
@@ -273,7 +273,7 @@ a {
     height: 100%;
     text-align: left;
     justify-content: left;
-    transition: all 0.5s ease 0s;
+    transition: 0.5s ease 0s;
     border-style: solid;
     border-width: 0 5px 0 0;
     border-color: var(--color);
@@ -295,7 +295,7 @@ a {
     font-size: 0.6rem;
     font-family: var(--font-style);
     width: 100%;
-    transition: all 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 .category-link {
     padding: 15px;

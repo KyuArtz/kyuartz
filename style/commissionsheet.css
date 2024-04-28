@@ -79,7 +79,7 @@ ul {
     font-size: 0.8rem;
     border: solid thin var(--color);
     font-family: var(--font-style);
-    transition: all 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 .inquire-button a:hover {
     color: var(--color);
