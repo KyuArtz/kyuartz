@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-}
 .category-container,
 li,
 ul {
@@ -14,20 +10,20 @@ ul {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-color: var(--background-color);
+    background-image: var(--theme);
     border-style: solid;
     border-width: 0 0 1px 0;
-    border-color: dodgerblue;
+    border-color: var(--color);
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
     top: 50px;
     z-index: 99;
 }
 .category-navigation h1 {
     text-align: center;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     font-size: 1.1rem;
-    color: dodgerblue;
+    color: var(--color);
     display: flex;
     cursor: default;
 }
@@ -41,18 +37,19 @@ ul {
 }
 .mySlides img {
     width: 100%;
-    height: 503px;
+    height: 528px;
     object-fit: cover;
     object-position: center;
     border-radius: 9px;
-    background: #1b3146;
+    background: var(--content-bg);
+    box-shadow: var(--color) 0px 0px 4px 0.5px;
     transition: 0.3s ease-in-out;
     transform: scale(1);
 }
 .mySlides img:hover {
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
-    border: solid thin dodgerblue;
-    transform: scale(1.009);
+    border: solid thin var(--color);
+    transform: scale(1);
 }
 .btnlink:hover {
     transition: 0.5s ease-in-out;
@@ -87,7 +84,7 @@ ul {
 /* On hover, add a black background color with a little bit see-through */
 .next:hover,
 .prev:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--color);
     opacity: 1;
 }
 .mySlides {
@@ -103,15 +100,15 @@ ul {
     position: absolute;
     top: 10px;
     left: 0;
-    background-image: linear-gradient(to right, rgb(21, 24, 37, 0.6), rgb(20, 46, 75, 0.6));
-    font-family: myFont, sans-serif;
+    background-image: var(--theme);
+    font-family: var(--font-style);
     cursor: default;
     border-radius: 0 10px 10px 0;
     z-index: 1;
 }
 .comic-title p {
     display: inline;
-    color: rgb(30, 221, 255);
+    color: var(--color);
 }
 .comic-chapter {
     position: absolute;
@@ -120,15 +117,15 @@ ul {
     padding: 8px 12px;
     border-radius:10px 0 0 10px;
     color: #ffff;
-    background-image: linear-gradient(to right, rgb(21, 24, 37, 0.6), rgb(20, 46, 75, 0.6));
-    font-family: myFont, sans-serif;
+    background-image: var(--theme);
+    font-family: var(--font-style);
     cursor: default;
     z-index: 1;
 }
 .chapter {
     color: #fff;
-    background-image: linear-gradient(to right, rgb(21, 24, 37, 0.6), rgb(20, 46, 75, 0.6));
-    font-family: myFont, sans-serif;
+    background-image: var(--theme);
+    font-family: var(--font-style);
     padding: 8px 12px;
     position: absolute;
     bottom: 31px;
@@ -147,7 +144,6 @@ ul {
     cursor: pointer;
     padding: 5px 11px;
     background-color: rgb(18, 22, 32);
-    transition: background-color 0.6s ease 0s;
     position: relative;
     bottom: 52px;
     border-style: none;
@@ -157,12 +153,12 @@ ul {
 .dot a {
     color: white;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: var(--font-style);
     font-size: small;
 }
 .active,
 .dot:hover {
-    background-color: rgb(20, 103, 158);
+    background-color: var(--color);
 }
 @media screen and (max-width: 500px) {
     .next,
@@ -202,17 +198,17 @@ ul {
 .footer {
     position: relative;
     padding: 8px 0;
-    background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    font-family: myFont, sans-serif;
+    background-color: var(--background-color);
+    background-image: var(--theme);
+    font-family: var(--font-style);
     font-size: 0.6rem;
-    border-top: solid thin rgb(28 55 97);
+    border-top: solid thin var(--color);
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
 .copyright p {
     text-align: center;
-    color: dodgerblue;
+    color: var(--color);
     cursor: default;
 }
 .footer-container {
@@ -226,10 +222,10 @@ ul {
     padding: 0 5px;
     text-decoration: none;
     font-size: 0.5rem;
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .detail:hover {
-    color: rgb(33, 110, 197);
+    color: var(--color);
     text-decoration: underline;
 }
 .fade {

@@ -3,15 +3,15 @@
 }
 .popup {
     width: 450px;
-    background: inherit;
+    background: var(--background-color);
     border-radius: 6px;
-    border: solid thin dodgerblue;
+    border: solid thin var(--color);
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     padding: 0 30px 30px;
     background-image: url("../images/bg/landscape-mode.png");
     background-position: center;
@@ -38,7 +38,7 @@
 .popup h2 {
     font-size: 38px;
     font-weight: 500;
-    color: #008cff;
+    color: var(--color);
     margin: 30px 0 25px;
     border-style: solid;
     border-top-width: 0;
@@ -67,7 +67,7 @@
     margin-top: 30px;
     padding: 10px 0;
     background: #117cc4;
-    background: -webkit-linear-gradient(#1d1d24, #117cc4);
+    background-image: var(--theme);
     color: #fff;
     border-left-width: thick;
     border-right-width: thick;
@@ -80,8 +80,8 @@
     cursor: pointer;
 }
 .popup button:hover {
-    border-color: #117cc4;
-    color: #1368a1;
+    border-color: var(--color);
+    color: var(--color);
     background: -webkit-linear-gradient(#282831, #1c1c22);
 }
 @media(max-width: 450px) {

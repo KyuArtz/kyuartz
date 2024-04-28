@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-}
 body {
     background-image: url("../images/bg/landscape-mode-1.png")!important;
     background-position: center;
@@ -17,7 +13,7 @@ body {
     color: white;
     padding: 20px;
     margin-top: 51px;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     cursor: default;
     font-size: 0.8rem;
 }
@@ -28,7 +24,7 @@ body {
     display: flex;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
-    box-shadow: dodgerblue 0px 0px 1px 0.5px;
+    box-shadow: var(--color) 0px 0px 1px 0.5px;
     border-radius: 10px;
     text-align: justify;
     font-family: sans-serif;
@@ -47,7 +43,7 @@ body {
     font-size: 0.8rem;
 }
 .expcontent h2 {
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
 }
 .expcontent {
     font-family: sans-serif;
@@ -61,7 +57,7 @@ body {
     display: inline-block;
     background-color: rgba(40, 42, 54, 0.200);
     background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
-    box-shadow: dodgerblue 0px 0px 1px 0.5px;
+    box-shadow: var(--color) 0px 0px 1px 0.5px;
     border-radius: 10px;
     cursor: default;
     width: 175px;
@@ -75,7 +71,7 @@ body {
     cursor: default;
 }
 .program-content h2 {
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     font-size: 0.8rem;
 }
 .program-logo img {
@@ -88,7 +84,7 @@ body {
 }
 .program-logo img:hover {
     transform: scale(0.90);
-    border: solid 3px dodgerblue;
+    border: solid 3px var(--color);
 }
 .me {
     float: left;
@@ -113,7 +109,7 @@ body {
     pointer-events: none;
 }
 .my-info {
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     font-size: 0.8rem;
     color: white;
     padding: 10px 16px;
@@ -131,7 +127,7 @@ body {
     font-size: 0.7rem;
     padding: 5px;
     background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
-    border: solid dodgerblue thin;
+    border: solid var(--color) thin;
     border-radius: 30px 50px 50px 30px;
 }
 .container::after,
@@ -142,24 +138,24 @@ body {
 }
 .email,
 .exp {
-    color: #2c687e;
+    color: var(--color);
     cursor: default;
 }
 .footer {
     position: relative;
     width: 100%;
     padding: 8px 0;
-    background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
-    font-family: myFont, sans-serif;
+    background-color: var(--background-color);
+    background-image: var(--theme);
+    font-family: var(--font-style);
     font-size: 0.6rem;
-    border-top: solid thin rgb(28 55 97);
+    border-top: solid thin var(--color);
     border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
 .copyright p {
     text-align: center;
-    color: dodgerblue;
+    color: var(--color);
     cursor: default;
 }
 .footer-container {
@@ -176,7 +172,7 @@ body {
     transition: 0.5s ease-in-out;
 }
 .detail:hover {
-    color: rgb(33, 110, 197);
+    color: var(--color);
     text-decoration: underline;
 }
 @media screen and (max-width: 650px) {

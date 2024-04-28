@@ -6,7 +6,7 @@ body.lb-disable-scrolling {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: rgb(20 30 41 / 99%);
+    background-image: var(--theme);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 1;
     display: none;
@@ -44,12 +44,12 @@ body.lb-disable-scrolling {
     border-radius: 4px;
     border-style: solid;
     border-width: thin;
-    color: dodgerblue;
+    color: var(--color);
 
     /* Background color behind image.
      This is visible during transitions. */
-     background-image: linear-gradient(to right, rgb(21, 24, 37, 0.5), rgb(20, 46, 75, 0.5));
-    background-color: #22222279;
+     background-image: var(--theme);
+    background-color: var(--background-color);
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
 }
 .lb-outerContainer:after {
@@ -148,16 +148,16 @@ body.lb-disable-scrolling {
     float: left;
     text-align: left;
     line-height: 1.1em;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
 }
 .lb-data .lb-caption {
     font-size: 10px;
     line-height: 1em;
-    color: dodgerblue;
+    color: var(--color);
     cursor: default;
 }
 .lb-data .lb-caption a {
-    color: #4ae;
+    color: var(--color);
 }
 .lb-data .lb-number {
     display: block;

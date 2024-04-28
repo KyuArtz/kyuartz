@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
 @font-face {
     font-family: myFont;
     src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
@@ -8,31 +12,40 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgb(30, 31, 37);
+    background: var(--scroll-color);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: dodgerblue;
+    background: var(--scroll-color);
     border-radius: 9px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: dodgerblue;
+    background: var(--scroll-color);
+}
+:root{
+    --theme: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    --background-color: #222222;
+    --scroll-color: dodgerblue;
+    --color: dodgerblue;
+    --font-style: myFont, sans-serif;
+    --brand-color: -webkit-linear-gradient(left, dodgerblue, lightblue);
+    --content-bg: radial-gradient(rgb(14 11 11), rgb(22 36 53));
 }
 body {
     margin: 0;
     padding: 0;
-    background-color: #222222;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-color: var(--background-color);
+    background-image: var(--theme);
     overflow-x: hidden;
 }
 header {
     position: fixed;
     width: 100%;
-    background-color: inherit;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-color: var(--background-color);
+    background-image: var(--theme);
     top: 0;
-    border: solid dodgerblue;
+    border: solid var(--color);
     border-width: 0 0 1px 0;
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
     z-index: 100000;
@@ -64,10 +77,10 @@ a {
     border-radius: 5px;
 }
 .nav-brand {
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     font-size: 1.5rem;
-    color: dodgerblue;
-    background: -webkit-linear-gradient(left, dodgerblue, lightblue);
+    color: var(--color);
+    background: var(--brand-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -79,14 +92,14 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: solid thin dodgerblue;
+    border: solid thin var(--color);
 }
 .nav-link,
 .nav-link-dropdown {
     border: none;
     background: none;
     color: white;
-    font-family: 'myFont', sans-serif;
+    font-family: var(--font-style);
     font-size: 0.6rem;
     cursor: pointer;
     border-style: none;
@@ -95,14 +108,14 @@ a {
 }
 .active-nav a,
 .active-dropdown {
-    box-shadow: 0 0 1px dodgerblue;
+    box-shadow: 0 0 1px var(--color);
     background: #15202f;
     border-radius: 9px;
 }
 .nav-link-dropdown:hover,
 .nav-link:hover {
-    color: dodgerblue;
-    box-shadow: 0 0 1px dodgerblue;
+    color: var(--color);
+    box-shadow: 0 0 1px var(--color);
     border-radius: 9px;
 }
 .hamburger {
@@ -116,13 +129,13 @@ a {
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: dodgerblue;
+    background-color: var(--color);
 }
 @media screen and (max-width: 978px) {
     .hamburger {
         display: block;
         margin: 0 12px 0 0;
-        border: solid thin dodgerblue;
+        border: solid thin var(--color);
         border-radius: 9px;
         padding: 5px;
     }
@@ -144,8 +157,7 @@ a {
         top: 51px;
         gap: 0;
         flex-direction: column;
-        background-color: inherit;
-        background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+        background-color: var(--background-color);
         background-image: url(../images/bg/portrait-mode1.png);
         background-position: center;
         background-size: cover;
@@ -189,14 +201,14 @@ a {
     box-shadow: none;
     border-width: 0 5px 0 0;
     border-style: solid;
-    border-color: dodgerblue;
+    border-color: var(--color);
     position: fixed;
     left: -100%;
     top: 51px;
     min-width: 200px;
     height: 100%;
-    background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-color: var(--background-color);
+    background-image: var(--theme);
     transition: all 0.5s ease 0s;
     overflow: auto;
     z-index: 5;
@@ -206,7 +218,7 @@ a {
     padding: 19px 20px;
     text-decoration: none;
     text-align: left;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     font-size: 0.6rem;
     font-weight: 500;
     border-width: 0 1px 0 0;
@@ -230,9 +242,7 @@ a {
     display: flex;
     align-items: center;
     left: 7px;
-    border-style: solid;
-    border-width: thin;
-    border-color: dodgerblue;
+    border: solid thin var(--color);
     border-radius: 5px;
     padding: 5px;
     cursor: pointer;
@@ -244,7 +254,7 @@ a {
     height: 7px;
     width: 7px;
     margin: 1px;
-    background-color: #0a94be;
+    background-color: var(--color);
     border-radius: 50%;
     display: inline-block;
 }
@@ -257,8 +267,8 @@ a {
     top: 79px;
     gap: 0;
     flex-direction: column;
-    background-color: #1a1a1a;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-color: var(--background-color);
+    background-image: var(--theme);
     min-width: 100px;
     height: 100%;
     text-align: left;
@@ -266,13 +276,12 @@ a {
     transition: all 0.5s ease 0s;
     border-style: solid;
     border-width: 0 5px 0 0;
-    border-color: dodgerblue;
+    border-color: var(--color);
     z-index: 1;
 }
 .category-menu h3 {
     color: dodgerblue;
-    background-color: rgba(8, 10, 22, 0.5);
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     text-align: center;
     font-size: small;
     cursor: default;
@@ -284,7 +293,7 @@ a {
 }
 .category-item a {
     font-size: 0.6rem;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     width: 100%;
     transition: all 0.5s ease-in-out;
 }
@@ -307,13 +316,13 @@ a {
     padding: 13px;
     border-style: solid;
     border-width: thin;
-    border-color: dodgerblue;
+    border-color: var(--color);
     background-color: rgba(11, 15, 19, 0.5);
-    color: dodgerblue;
+    color: var(--color);
     outline: none;
     font-size: 0.6rem;
     border-radius: 50px;
     position: relative;
     margin: 0 10px;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
 }
