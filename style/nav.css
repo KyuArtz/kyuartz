@@ -12,11 +12,11 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--scroll-color);
+    background: var(--baackground-color);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--scroll-color);
+    background: var(--color);
     border-radius: 9px;
 }
 /* Handle on hover */
@@ -26,7 +26,6 @@
 :root{
     --theme: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     --background-color: #222222;
-    --scroll-color: dodgerblue;
     --color: dodgerblue;
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, lightblue);
