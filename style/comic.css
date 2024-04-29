@@ -100,7 +100,7 @@ ul {
     position: absolute;
     top: 10px;
     left: 0;
-    background-image: var(--theme);
+    background-color: var(--overlay);
     font-family: var(--font-style);
     cursor: default;
     border-radius: 0 10px 10px 0;
@@ -117,14 +117,14 @@ ul {
     padding: 8px 12px;
     border-radius:10px 0 0 10px;
     color: #ffff;
-    background-image: var(--theme);
+    background-color: var(--overlay);
     font-family: var(--font-style);
     cursor: default;
     z-index: 1;
 }
 .chapter {
     color: #fff;
-    background-image: var(--theme);
+    background-color: var(--overlay);
     font-family: var(--font-style);
     padding: 8px 12px;
     position: absolute;
@@ -146,14 +146,14 @@ ul {
     background-color: rgb(18, 22, 32);
     position: relative;
     bottom: 52px;
-    border-style: none;
+    border: none;
     left: 132px;
     transition: 0.5s ease-in-out;
 }
 .dot a {
     color: white;
     text-decoration: none;
-    font-family: var(--font-style);
+    font-family: sans-serif;
     font-size: small;
 }
 .active,
@@ -190,7 +190,6 @@ ul {
         font-size: 0.7rem;
     }
     .mySlides img:hover {
-        box-shadow: none;
         border: 0;
         transform: scale(1);
     }

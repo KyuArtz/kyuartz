@@ -24,9 +24,13 @@
     background: var(--scroll-color);
 }
 :root{
-    --theme: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(20, 46, 75));
     --background-color: #222222;
     --color: dodgerblue;
+    --overlay: rgba(20, 26, 31, 0.6);
+    --active: rgba(20, 26, 31, 0.9);
+    --hover-light: dodgerblue;
+    --hover-dark: rgb(23, 75, 128);
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, lightblue);
     --content-bg: radial-gradient(rgb(14 11 11), rgb(22 36 53));
@@ -99,7 +103,7 @@ a {
     background: none;
     color: white;
     font-family: var(--font-style);
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     cursor: pointer;
     border-style: none;
     transition: 0.4s ease-in-out;
@@ -108,7 +112,7 @@ a {
 .active-nav a,
 .active-dropdown {
     box-shadow: 0 0 1px var(--color);
-    background: #15202f;
+    background: var(--active);
     border-radius: 9px;
 }
 .nav-link-dropdown:hover,
@@ -178,7 +182,7 @@ a {
         padding: 10px;
     }
     .nav-item a:hover {
-        color: #3498DB;
+        color: var(--color);
     }
     .nav-menu.active-nav {
         right: 0;
@@ -218,7 +222,7 @@ a {
     text-decoration: none;
     text-align: left;
     font-family: var(--font-style);
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-weight: 500;
     border-width: 0 1px 0 0;
     transition: 0.5s ease-in-out;
@@ -227,8 +231,7 @@ a {
     left: 0;
 }
 .dropdown-content a:hover {
-    background-color: #ddd;
-    background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
+    background-color: var(--hover-light);
     color: #000000;
 }
 @media screen and (max-width: 650px) {
@@ -258,7 +261,8 @@ a {
     display: inline-block;
 }
 .category-dots:hover {
-    background-color: #0b5b91;
+    background-color: var(--hover-dark);
+    color: #000000;
 }
 .category-menu {
     position: fixed;
@@ -279,10 +283,10 @@ a {
     z-index: 1;
 }
 .category-menu h3 {
-    color: dodgerblue;
+    color: var(--color);
     font-family: var(--font-style);
     text-align: center;
-    font-size: small;
+    font-size: 0.7rem;
     cursor: default;
     padding: 5px;
     margin-top: 0;
@@ -291,7 +295,7 @@ a {
     display: flex;
 }
 .category-item a {
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     font-family: var(--font-style);
     width: 100%;
     transition: 0.5s ease-in-out;
@@ -301,7 +305,7 @@ a {
 }
 .category-item a:hover {
     color: #000000;
-    background-image: linear-gradient(to right, rgb(126, 178, 255), rgba(255, 255, 255, 0));
+    background-color: var(--hover-light);
 }
 .category-menu.active-category {
     left: 0;
@@ -316,7 +320,7 @@ a {
     border-style: solid;
     border-width: thin;
     border-color: var(--color);
-    background-color: rgba(11, 15, 19, 0.5);
+    background-color: var(--overlay);
     color: var(--color);
     outline: none;
     font-size: 0.6rem;

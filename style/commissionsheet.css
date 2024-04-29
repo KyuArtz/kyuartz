@@ -46,7 +46,7 @@ ul {
 .cs-container p {
     text-align: center;
     padding: 9px;
-    background-color: rgba(46, 71, 94, 0.50);
+    background-color: var(--color);
     display: inline-block;
     border-radius: 50px;
     cursor: default;
@@ -60,7 +60,7 @@ ul {
     font-family: var(--font-style);
     padding: 9px;
     border-radius: 5px;
-    background-color: rgba(10, 15, 17, 0.50);
+    background-color: var(--overlay);
     opacity: 0.9;
     cursor: default;
 }
@@ -68,21 +68,19 @@ ul {
     text-align: right;
     margin: 20px 0 10px;
     width: 100%;
-    background-color: #19415B;
+    background-color: var(--color);
     border-radius: 1px 1px 10px 10px;
 }
 .inquire-button a {
     padding: 10px;
-    background-color: #19415B;
-    border-radius: 4px;
+    background-color: var(--color);
     border-radius: 10px 1px 10px 1px;
     font-size: 0.8rem;
-    border: solid thin var(--color);
+    border: solid thin #ffffff;
     font-family: var(--font-style);
     transition: 0.4s ease-in-out;
 }
 .inquire-button a:hover {
-    color: var(--color);
     box-shadow: var(--color) 0 0 10px 0.5px;
 }
 @media screen and (max-width: 500px) {

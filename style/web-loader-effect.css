@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
+    background-image: var(--theme);
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
 }
@@ -34,7 +34,7 @@
     }
 }
 .loader h2 {
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     font-size: small;
     color: rgb(255, 255, 255);
     position: absolute;
@@ -50,18 +50,18 @@
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid dodgerblue;
+    border: 15px solid var(--color);
     border-color: rgb(255, 255, 255);
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
     border-width: thin;
-    box-shadow: 0 1px 100px 30px rgba(0, 217, 255, 0.5);
+    box-shadow: 0 1px 100px 30px var(--color);
 }
 .loader2 {
     content: "";
     width: 50px;
     height: 50px;
-    border: 15px double rgb(0, 183, 255);
+    border: 15px double var(--color);
     border-top-color: rgba(30, 143, 255, 0);
     border-bottom-color: rgba(30, 143, 255, 0) ;
     border-radius: 50%;
@@ -72,12 +72,12 @@
     content: "";
     width: 85px;
     height: 85px;
-    border: solid thick rgb(30, 143, 255);
+    border: solid thick var(--color);
     border-top-color: #ffff;
     border-radius: 50%;
     animation: loading3 0.75s ease infinite;
     position: absolute;
-    box-shadow: 0 1px 10px 1px rgba(0, 217, 255, 0.5);
+    box-shadow: 0 1px 10px 1px var(--color);
 }
 @keyframes loading {
     from {

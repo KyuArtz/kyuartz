@@ -1,41 +1,3 @@
-* {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-}
-body {
-    background-color: #222222;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
-    margin: 0;
-    padding: 0;
-}
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/hermes-font/hermes-font.otf");
-}
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-/* width */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(49, 49, 49);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(11, 91, 138);
-    border-radius: 9px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(26, 128, 187);
-}
 .maintenance_body {
     width: 100%;
     box-sizing: border-box;
@@ -45,9 +7,9 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: left;
-    font-family: myFont, sans-serif;
+    font-family: var(--font-style);
     padding: 0 30px 30px;
-    color: #008cff;
+    color: var(--color);
     border-style: solid;
     border-left-width: 0;
     border-right-width: 0;
@@ -59,12 +21,12 @@ body {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-image: linear-gradient(to right, rgba(14, 11, 11, 0.753), rgba(14, 98, 194, 0.103));
+    background-image: var(--theme);
 }
 .maintenance_body h1 {
     font-size: 2.0rem;
     font-weight: 500;
-    color: #008cff;
+    color: var(--color);
     margin: 20px 0 25px;
     border-style: solid;
     border-top-width: 0;
@@ -89,7 +51,7 @@ body {
     left: 0;
     border-style: solid;
     border-width: 1px 0 0 0;
-    color: #008cff;
+    color: var(--color);
 }
 .maintenance_body a {
     margin-top: 30px;
@@ -100,7 +62,7 @@ body {
     border-right-width: thick;
     border-style: solid;
     border-color: #333;
-    font-family: inherit;
+    font-family: var(--font-style);
     border-radius: 9px;
     cursor: pointer;
     text-decoration: none;
@@ -113,8 +75,8 @@ body {
     transition: all 0.4s ease-in-out;
 }
 .maintenance_body a:hover {
-    border-color: #117cc4;
-    color: #1368a1;
+    border-color: var(--color);
+    color: var(--color);
     background: -webkit-linear-gradient(#282831, #1c1c22);
 }
 @media screen and (max-width: 500px) {

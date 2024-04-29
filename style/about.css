@@ -5,10 +5,10 @@ body {
     background-repeat: no-repeat;
 }
 .card-overlay {
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.800), rgb(20, 46, 75, 0.800));
+    background-color: var(--overlay);
 }
 .summary {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--overlay);
     text-align: center;
     color: white;
     padding: 20px;
@@ -22,8 +22,8 @@ body {
 }
 .summarycontent {
     display: flex;
-    background-color: rgba(40, 42, 54, 0.200);
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
+    background-color: var(--overlay);
+    background-image: var(--theme);
     box-shadow: var(--color) 0px 0px 1px 0.5px;
     border-radius: 10px;
     text-align: justify;
@@ -33,7 +33,7 @@ body {
     cursor: default;
 }
 .experience {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--overlay);
     text-align: center;
     color: white;
     padding: 15px;
@@ -53,10 +53,10 @@ body {
 }
 .expcontent p {
     padding: 10px;
-    margin: 2px;
+    margin: 5px;
     display: inline-block;
     background-color: rgba(40, 42, 54, 0.200);
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
+    background-image: var(--theme);
     box-shadow: var(--color) 0px 0px 1px 0.5px;
     border-radius: 10px;
     cursor: default;
@@ -67,7 +67,7 @@ body {
     text-align: center;
     color: white;
     padding: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--overlay);
     cursor: default;
 }
 .program-content h2 {
@@ -78,13 +78,12 @@ body {
     width: 55px;
     height: 55px;
     border-radius: 6px;
-    opacity: 0.6;
     transition: 0.3s ease-in-out;
     transform: scale(1);
 }
 .program-logo img:hover {
     transform: scale(0.90);
-    border: solid 3px var(--color);
+    border: solid 3px var(--hover-light);
 }
 .me {
     float: left;
@@ -93,8 +92,8 @@ body {
 }
 .card {
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
-    background-image: linear-gradient(to right, rgba(33, 38, 59, 0.5), rgb(20, 46, 75, 0.500));
-    background-color: rgba(20, 20, 20, 0.5);
+    background-image: var(--theme);
+    background-color: var(--background-color);
     margin: 8px;
     padding: 10px;
     border-radius: 9px;
@@ -126,7 +125,7 @@ body {
 .my-info p {
     font-size: 0.7rem;
     padding: 5px;
-    background-image: linear-gradient(to right, rgba(21, 24, 37, 0.500), rgb(20, 46, 75, 0.500));
+    background-image: var(--theme);
     border: solid var(--color) thin;
     border-radius: 30px 50px 50px 30px;
 }
