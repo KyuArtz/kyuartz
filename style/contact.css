@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/bg/landscape-mode.png")!important;
+    background-image: url("../images/bg/landscape-mode-1.jpg")!important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -300,6 +300,6 @@ label {
         }
     }
     body {
-        background-image: url("../images/bg/portrait-mode.png")!important;
+        background-image: url("../images/bg/portrait-mode.jpg")!important;
     }
 }

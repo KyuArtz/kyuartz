@@ -31,7 +31,6 @@
     list-style-image: url("../images/bullet/n-bullet.png");
     padding: 12px;
     background-color: var(--overlay);
-    background-image: var(--theme);
     border-radius: 7px;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
     font-size: 1.0rem;
@@ -52,7 +51,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: url("../images/bg/landscape-mode.png");
+    background-image: url("../images/bg/landscape-mode.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,7 +62,7 @@
 }
 @media screen and (max-width: 500px) {
     .background {
-        background-image: url("../images/bg/portrait-mode.png");
+        background-image: url("../images/bg/portrait-mode.jpg");
     }
     .ts-content li {
         font-size: small;

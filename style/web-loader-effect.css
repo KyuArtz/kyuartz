@@ -12,7 +12,7 @@
     z-index: 80;
 }
 .bg-loader {
-    background-image: url("../images/bg/landscape-mode.png");
+    background-image: url("../images/bg/landscape-mode.jpg");
     position: fixed;
     top: 0;
     left: 0;
@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 500px) {
     .bg-loader {
-        background-image: url("../images/imgloader/loader-portrait.png");
+        background-image: url("../images/bg/portrait-mode.jpg");
     }
 }
 @media screen and (max-height: 470px) {

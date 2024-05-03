@@ -27,8 +27,8 @@
     --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(23, 62, 105));
     --background-color: #222222;
     --color: dodgerblue;
-    --overlay: rgba(20, 26, 31, 0.6);
-    --active: rgba(20, 26, 31, 0.5);
+    --overlay: rgba(10, 18, 24, 0.6);
+    --active: rgba(10, 18, 24, 0.6);
     --hover-light: dodgerblue;
     --hover-dark: rgb(23, 75, 128);
     --font-style: myFont, sans-serif;
@@ -81,7 +81,8 @@ a {
 }
 .nav-brand {
     font-family: var(--font-style);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     color: var(--color);
     background: var(--brand-color);
     background-clip: text;
@@ -110,9 +111,10 @@ a {
     padding: 15px 25px 12px;
 }
 .active-nav a,
-.active-dropdown {
+.active-dropdown button {
     box-shadow: 0 0 1px var(--color);
     background: var(--active);
+    color: var(--color);
     border-radius: 9px;
 }
 .nav-link-dropdown:hover,
@@ -161,7 +163,7 @@ a {
         gap: 0;
         flex-direction: column;
         background-color: var(--background-color);
-        background-image: url(../images/bg/portrait-mode1.png);
+        background-image: url(../images/bg/portrait-mode.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -178,7 +180,6 @@ a {
     .nav-item a,
     .nav-link-dropdown {
         font-size: 1.0rem;
-        transition: 0.7s;
         padding: 10px;
     }
     .nav-item a:hover {
@@ -191,10 +192,10 @@ a {
         width: 100%;
     }
     .active-nav a,
-    .active-dropdown {
-        border-radius: 0;
+    .active-dropdown button {
         box-shadow: none;
         background: none;
+        color: #ffffff;
     }
 }
 .dropdown-content {
