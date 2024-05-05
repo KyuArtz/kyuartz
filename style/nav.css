@@ -24,8 +24,8 @@
     background: var(--scroll-color);
 }
 :root{
-    --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(23, 62, 105));
-    --background-color: #222222;
+    --theme: linear-gradient(to right, rgb(21, 31, 37, 80%), rgb(23, 62, 105, 80%));
+    --background-color: rgba(30, 143, 255, 50%);
     --color: dodgerblue;
     --overlay: rgba(10, 18, 24, 0.6);
     --active: rgba(10, 18, 24, 0.6);
@@ -196,6 +196,7 @@ a {
         box-shadow: none;
         background: none;
         color: #ffffff;
+        border-radius: 0;
     }
 }
 .dropdown-content {
