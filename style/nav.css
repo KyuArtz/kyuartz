@@ -12,7 +12,7 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--baackground-color);
+    background: var(--scrollbar-track-color);
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -28,6 +28,8 @@
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;
     --overlay: rgba(10, 18, 24, 0.6);
+    --transparent-overlay: rgba(11, 31, 49, 0.950);
+    --scrollbar-track-color: #09243a;
     --active: rgba(10, 18, 24, 0.6);
     --hover-light: dodgerblue;
     --hover-dark: rgb(23, 75, 128);

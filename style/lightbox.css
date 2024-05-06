@@ -6,7 +6,7 @@ body.lb-disable-scrolling {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-image: var(--theme);
+    background-color: var(--transparent-overlay);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 1;
     display: none;

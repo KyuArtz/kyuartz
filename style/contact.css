@@ -223,7 +223,6 @@ label {
 }
 .applogo img {
     padding: 4px;
-    background-color:var(--background-color);
     transition: transform 0.7s ease-in-out;
     border-radius: 10px;
     border: solid thin var(--color);
