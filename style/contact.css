@@ -77,7 +77,7 @@ textarea {
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
     border-radius: 4px 90px 4px 4px;
-    background: var(--overlay);
+    background-color: var(--overlay);
     color: #ffffff;
 }
 input[type=email],
@@ -226,6 +226,7 @@ label {
     transition: transform 0.7s ease-in-out;
     border-radius: 10px;
     border: solid thin var(--color);
+    background-color: var(--transparent-overlay);
 }
 .applogo img:hover {
     transform: rotate(360deg);
