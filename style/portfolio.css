@@ -41,7 +41,7 @@ ul {
 .category-navigation h1 {
     text-align: center;
     font-family: var(--font-style);
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     color: var(--color);
     display: flex;
     cursor: default;

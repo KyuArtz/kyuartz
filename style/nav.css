@@ -270,7 +270,7 @@ form.search::after {
     text-decoration: none;
     text-align: left;
     font-family: var(--font-style);
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-weight: 500;
     border-width: 0 1px 0 0;
     transition: 0.5s ease-in-out;
