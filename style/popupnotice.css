@@ -78,6 +78,7 @@
     font-family: var(--font-style);
     border-radius: 0 20px 0 20px;
     cursor: pointer;
+    transition: none;
 }
 .popup button:hover {
     border-color: var(--color);
