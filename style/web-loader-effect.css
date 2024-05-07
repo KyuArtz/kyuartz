@@ -36,7 +36,7 @@
 .loader h2 {
     font-family: var(--font-style);
     font-size: small;
-    color: rgb(255, 255, 255);
+    color: var(--default-font-color);
     position: absolute;
     bottom: 35%;
     transition: inherit;
@@ -51,7 +51,7 @@
     width: 75px;
     height: 75px;
     border: 15px solid var(--color);
-    border-color: rgb(255, 255, 255);
+    border-color: #ffffff;
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
     border-width: thin;
@@ -73,7 +73,7 @@
     width: 85px;
     height: 85px;
     border: solid thick var(--color);
-    border-top-color: #ffff;
+    border-top-color: #ffffff;
     border-radius: 50%;
     animation: loading3 0.75s ease infinite;
     position: absolute;

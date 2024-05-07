@@ -37,7 +37,7 @@
     text-align: center;
 }
 .maintenance_body p {
-    color: #ffffff;
+    color: var(--default-font-color);
     cursor: default;
     font-size: 1.10rem;
     text-align: center;
@@ -57,7 +57,7 @@
     margin-top: 30px;
     padding: 10px 20px;
     background: -webkit-linear-gradient(#282831, #1c1c22);
-    color: #fff;
+    color: var(--default-font-color);
     border-left-width: thick;
     border-right-width: thick;
     border-style: solid;

@@ -22,7 +22,7 @@ ul {
 .category-navigation h1 {
     text-align: center;
     font-family: var(--font-style);
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     color: var(--color);
     display: flex;
     cursor: default;
@@ -41,7 +41,7 @@ ul {
     cursor: default;
     font-family: var(--font-style);
     font-size: 0.9rem;
-    color: var(--color);
+    color: var(--default-font-color);
 }
 .cs-container p {
     text-align: center;

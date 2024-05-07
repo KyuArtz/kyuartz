@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="style/web-loader-effect.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script defer src="js/loader.js"></script> 
+  <script defer src="js/hamburger.js"></script>
+  <script defer src="js/dropdownmenu.js"></script>
+  <script defer src="js/category-drop-menu.js"></script>
+  <script defer src="js/universalslideshow.js"></script>
+  <script defer src="js/current-year.js"></script>
 </head>
 <body>
 
@@ -18,14 +24,16 @@
   <div class="loader2"></div>
   <div class="loader3"></div>
 </div>
-<script defer src="js/loader.js"></script>  
 	
 <header>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">KYU
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <input type="search" placeholder="Quick Search..." autocomplete="off">
+  <form class="search" action="maintenance.html">
+    <input type="text" placeholder="Quick Search..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
   <ul class="nav-menu">
     <li class="nav-item">
       <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a>
@@ -60,8 +68,6 @@
 </div>
 </nav>
 </header>
-<script defer src="js/hamburger.js"></script>
-<script defer src="js/dropdownmenu.js"></script>
 
 <div class="category-navigation"><h1>MY COMIC</h1>
 <div class="category-dots" title="Category">
@@ -73,18 +79,17 @@
   <ul class="category-menu">
     <h3>Type of Genre</h3>
     <li class="category-item">
-      <a href="comic.html" class="category-link">All</a>
+      <a href="comic.html" class="category-link"><i class="fa-regular fa-file"></i> All</a>
     </li>
     <li class="category-item">
-      <a href="comic-sci-fi.html" class="category-link">Sci-fi</a>
+      <a href="comic-sci-fi.html" class="category-link"><i class="fa-regular fa-file"></i> Sci-fi</a>
     </li>
     <li class="category-item">
-      <a href="comic-fantasy.html" class="category-link">Fantasy</a>
+      <a href="comic-fantasy.html" class="category-link"><i class="fa-regular fa-file"></i> Fantasy</a>
     </li>
   </ul>
 </div>
 </div>
-<script defer src="js/category-drop-menu.js"></script>
 
 <div class="top-spacing">
 <div class="slideshow-container">
@@ -148,7 +153,6 @@
     <span class="dot"><a href="maintenance.html">5</a></span>
   </div>  
 </div>
-<script defer src="js/universalslideshow.js"></script>
 
 <div class="footer">
   <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
@@ -159,7 +163,6 @@
     </div>
   </div>
 </div>
-<script defer src="js/current-year.js"></script>
 
 </body>
 </html>

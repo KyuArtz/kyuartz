@@ -25,7 +25,7 @@
     cursor: default;
 }
 .ts-content li {
-    color: white;
+    color: var(--default-font-color);
     font-family: sans-serif;
     margin: 5px;
     list-style-image: url("../images/bullet/n-bullet.png");

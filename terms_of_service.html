@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="style/web-loader-effect.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script src="js/loader.js"></script>  
+  <script defer src="js/hamburger.js"></script>
+  <script defer src="js/dropdownmenu.js"></script>
+  <script defer src="js/current-year.js"></script>
 </head>
 <body>
 
@@ -18,14 +22,16 @@
   <div class="loader2"></div>
   <div class="loader3"></div>
 </div>
-<script src="js/loader.js"></script>  
 	
 <header>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">KYU
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <input type="search" placeholder="Quick Search...">
+  <form class="search" action="maintenance.html">
+    <input type="text" placeholder="Quick Search..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
   <ul class="nav-menu">
     <li class="nav-item">
       <a href="index.html" class="nav-link"><i class="fa fw fa-home"></i> HOME</a>
@@ -60,16 +66,15 @@
 </div>
 </nav>
 </header>
-<script defer src="js/hamburger.js"></script>
-<script defer src="js/dropdownmenu.js"></script>
 
 <div class="tos-navigation"><h1>Terms of service</h1></div>
 
 <div class="ts-content">
   <div class="background">
     <ul>
-      <li>The only accepted payment method is via PayPal.</li>
+      <li>The only accepted payment method is via PayPal or Gcash.</li>
       <li>To avoid potential scams, the client is required to make the payment upfront before receiving the finalized product.</li>
+      <li>Revision is unlimitid as long as the client is not satisfied, but the work time is increased and I might take extra charge.</li>
       <li>Refunds are not accepted.</li>
       <li>Prices can be negotiated based on the client's budget.</li>
       <li>I reserve the right to reject a commission that I find uncomfortable or unsuitable.</li>
@@ -88,7 +93,6 @@
       </div>
   </div>
 </div>
-<script defer src="js/current-year.js"></script>
 
 </body>
 </html>

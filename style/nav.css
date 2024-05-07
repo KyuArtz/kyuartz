@@ -27,11 +27,12 @@
     --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(23, 62, 105));
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;
+    --default-font-color: #ffffff;
     --overlay: rgba(10, 18, 24, 0.7);
     --transparent-overlay: rgba(11, 31, 49, 0.950);
     --scrollbar-track-color: #09243a;
     --active: rgba(10, 18, 24, 0.6);
-    --hover-light: dodgerblue;
+    --hover-light: rgb(0, 204, 255);
     --hover-dark: rgb(23, 75, 128);
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
@@ -62,7 +63,7 @@ header {
     padding: 0;
 }
 a {
-    color: white;
+    color: var(--default-font-color);
     text-decoration: none;
 }
 .navbar {
@@ -81,6 +82,15 @@ a {
     /*border: dodgerblue solid thin;*/
     border-radius: 5px;
 }
+.my-avatar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid thin var(--color);
+}
 .nav-brand {
     font-family: var(--font-style);
     font-size: 1.3rem;
@@ -91,20 +101,11 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.my-avatar {
-    position: absolute;
-    top: 5px;
-    left: 7px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: solid thin var(--color);
-}
 .nav-link,
 .nav-link-dropdown {
     border: none;
     background: none;
-    color: white;
+    color: var(--default-font-color);
     font-family: var(--font-style);
     font-size: 0.6rem;
     cursor: pointer;
@@ -138,10 +139,53 @@ a {
     transition: 0.3s ease-in-out;
     background-color: var(--color);
 }
+form.search {
+    margin: 0 3px;
+}
+form.search input[type=text] {
+    font-family: sans-serif;
+    border: 1px solid var(--color);
+    color: var(--color);
+    border-radius: 30px 0 0 30px;
+    float: left;
+    width: 80%;
+    background-color: var(--overlay);
+    margin: 0;
+}
+form.search button {
+    float: left;
+    width: 20%;
+    background-color: var(--color);
+    color: white;
+    border: 1px solid var(--color);
+    border-radius: 0 30px 30px 0;
+    border-left: none;
+    margin: 0;
+    cursor: pointer;
+}
+form.search input[type=text], button {
+    padding: 12px;
+    font-size: 0.9rem;
+    transition: 0.5s ease-in-out;
+}
+form.search input[type=text]:hover {
+    background-color: #0a0f16;
+    border-color: var(--hover-light);
+}
+form.search button:hover {
+    background-color: var(--hover-light);
+    border-color: var(--hover-light);
+}
+/* Clear floats */
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 @media screen and (max-width: 978px) {
     .hamburger {
         display: block;
-        margin: 0 12px 0 0;
+        margin: 0 5px 0 0;
         border: solid thin var(--color);
         border-radius: 9px;
         padding: 5px;
@@ -197,7 +241,7 @@ a {
     .active-dropdown button {
         box-shadow: none;
         background: none;
-        color: #ffffff;
+        color: var(--default-font-color);
         border-radius: 0;
     }
 }
@@ -221,7 +265,7 @@ a {
     z-index: 5;
 }
 .dropdown-content a {
-    color: rgb(255, 255, 255);
+    color: var(--default-font-color);
     padding: 19px 20px;
     text-decoration: none;
     text-align: left;
@@ -271,7 +315,7 @@ a {
 .category-menu {
     position: fixed;
     left: -100%;
-    top: 79px;
+    top: 74px;
     gap: 0;
     flex-direction: column;
     background-color: var(--background-color);
@@ -300,7 +344,7 @@ a {
     display: flex;
 }
 .category-item a {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-family: var(--font-style);
     width: 100%;
     transition: 0.5s ease-in-out;
@@ -319,18 +363,4 @@ a {
     .category-menu {
         width: 50%;
     }
-}
-.navbar input[type=search] {
-    padding: 13px;
-    border-style: solid;
-    border-width: thin;
-    border-color: var(--color);
-    background-color: var(--overlay);
-    color: var(--color);
-    outline: none;
-    font-size: 0.6rem;
-    border-radius: 50px;
-    position: relative;
-    margin: 0 10px;
-    font-family: var(--font-style);
 }

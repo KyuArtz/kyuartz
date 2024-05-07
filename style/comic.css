@@ -22,7 +22,7 @@ ul {
 .category-navigation h1 {
     text-align: center;
     font-family: var(--font-style);
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     color: var(--color);
     display: flex;
     cursor: default;
@@ -62,7 +62,7 @@ ul {
     width: auto;
     margin-top: -82px;
     padding: 50px 16px;
-    color: white;
+    color: var(--default-font-color);
     font-weight: bold;
     font-size: 30px;
     transition: 0.6s ease;
@@ -94,7 +94,7 @@ ul {
     display: block;
 }
 .comic-title {
-    color: #ffff;
+    color: var(--default-font-color);
     font-size: 0.9rem;
     padding: 8px 12px;
     position: absolute;
@@ -116,14 +116,14 @@ ul {
     right: 0;
     padding: 8px 12px;
     border-radius:10px 0 0 10px;
-    color: #ffff;
+    color: var(--default-font-color);
     background-color: var(--overlay);
     font-family: var(--font-style);
     cursor: default;
     z-index: 1;
 }
 .chapter {
-    color: #fff;
+    color: var(--default-font-color);
     background-color: var(--overlay);
     font-family: var(--font-style);
     padding: 8px 12px;
@@ -151,7 +151,7 @@ ul {
     transition: 0.5s ease-in-out;
 }
 .dot a {
-    color: white;
+    color: var(--default-font-color);
     text-decoration: none;
     font-family: sans-serif;
     font-size: small;
@@ -216,7 +216,7 @@ ul {
 }
 .detail {
     margin-top: 5px;
-    color: rgb(255, 255, 255);
+    color: var(--default-font-color);
     display: inline-block;
     padding: 0 5px;
     text-decoration: none;

@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="style/nav.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script defer src="js/loader.js"></script>
+  <script defer src="js/hamburger.js"></script>
+  <script defer src="js/dropdownmenu.js"></script>
+  <script defer src="js/singleslideshow.js"></script>
+  <script defer src="js/current-year.js"></script>
 </head>
 <body>
 
@@ -18,14 +23,16 @@
   <div class="loader2"></div>
   <div class="loader3"></div>
 </div>
-<script defer src="js/loader.js"></script>
 	 
 <header>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">KYU
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <input type="search" placeholder="Quick Search..." autocomplete="off">
+  <form class="search" action="maintenance.html">
+    <input type="text" placeholder="Quick Search..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
   <ul class="nav-menu">
     <li class="nav-item">
       <div class="active-nav">
@@ -60,8 +67,6 @@
 </div>
 </nav>
 </header>
-<script defer src="js/hamburger.js"></script>
-<script defer src="js/dropdownmenu.js"></script>
 
 <div class="slideshow_container">
   <div class="mySlides fade">
@@ -88,7 +93,6 @@
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-<script defer src="js/singleslideshow.js"></script>
 
 <div class="video_container">
   <h1>FEATURED VIDEOS</h1>
@@ -118,7 +122,6 @@
     </div>
   </div>
 </div>
-<script defer src="js/current-year.js"></script>
 
 </body>
 </html>

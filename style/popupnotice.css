@@ -48,7 +48,7 @@
     cursor: default;
 }
 .popup p {
-    color: #ffffff;
+    color: var(--default-font-color);
     cursor: default;
     font-size: 14px;
 }
@@ -68,14 +68,14 @@
     padding: 10px 0;
     background: #117cc4;
     background-image: var(--theme);
-    color: #fff;
+    color: var(--defaut-font-color);
     border-left-width: thick;
     border-right-width: thick;
     border-style: solid;
     border-color: #333;
     outline: none;
     font-size: 15px;
-    font-family: inherit;
+    font-family: var(--font-style);
     border-radius: 0 20px 0 20px;
     cursor: pointer;
 }

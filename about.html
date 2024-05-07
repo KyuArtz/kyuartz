@@ -9,6 +9,10 @@
   <link rel="stylesheet" href="style/web-loader-effect.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script defer src="js/loader.js"></script> 
+  <script defer src="js/hamburger.js"></script>
+  <script defer src="js/dropdownmenu.js"></script>
+  <script defer src="js/current-year.js"></script>
 </head>
 <body>
 
@@ -18,14 +22,16 @@
   <div class="loader2"></div>
   <div class="loader3"></div>
 </div>
-<script defer src="js/loader.js"></script>  
 	
 <header>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">KYU
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <input type="search" placeholder="Quick Search..." autocomplete="off">
+  <form class="search" action="maintenance.html">
+    <input type="text" placeholder="Quick Search..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
   <ul class="nav-menu">
     <li class="nav-item">
       <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a>
@@ -60,8 +66,6 @@
 </div>
 </nav>
 </header>
-<script defer src="js/hamburger.js"></script>
-<script defer src="js/dropdownmenu.js"></script>
 
 <div class="card-overlay">
 <div class="me">
@@ -69,10 +73,10 @@
     <img src="images/myavatarlogo/avatar.jpg" oncontextmenu="return false">
     <div class="my-info">
       <h2>Kyu shi</h2>
-      <p class="exp"><i class="fa fw fa-pencil"></i> Digital Illustrator</p>
-      <p class="exp"><i class="fa fw fa-pencil"></i> Character Designer</p>
+      <p class="exp"><i class="fa-solid fa-pencil"></i> Digital Illustrator</p>
+      <p class="exp"><i class="fa-solid fa-pencil"></i> Character Designer</p>
       <br>
-      <p class="email"><i class="fa fw fa-envelope"></i> kyuushi992@gmail.com</p>
+      <p class="email"><i class="fa-solid fa-envelope"></i> kyuushi992@gmail.com</p>
       <div class="mysocial">
         <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png"></a>
         <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png"></a>
@@ -118,7 +122,6 @@
     </div>
   </div>
 </div>
-<script defer src="js/current-year.js"></script>
 
 </body>
 </html>

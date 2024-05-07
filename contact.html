@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="style/web-loader-effect.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script defer src="js/loader.js"></script> 
+  <script defer src="js/hamburger.js"></script>
+  <script defer src="js/dropdownmenu.js"></script>
+  <script defer src="js/contact-validation.js"></script>
+  <script defer src="js/popup.js"></script>
+  <script defer src="js/current-year.js"></script>
 </head>
 <body>
 
@@ -18,15 +24,17 @@
   <h2>Loading Webpage...</h2>
   <div class="loader2"></div>
   <div class="loader3"></div>
-</div>
-<script defer src="js/loader.js"></script>  
+</div> 
 	
 <header>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">KYU
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <input type="search" placeholder="Quick Search..." autocomplete="off">
+  <form class="search" action="maintenance.html">
+    <input type="text" placeholder="Quick Search..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
   <ul class="nav-menu">
     <li class="nav-item">
       <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a>
@@ -61,8 +69,6 @@
 </div>
 </nav>
 </header>
-<script defer src="js/hamburger.js"></script>
-<script defer src="js/dropdownmenu.js"></script>
 
 <div class="contact-overlay">
 <div class="contact-container">
@@ -126,14 +132,11 @@
     </div>
   </form>
 </div>
-<script defer src="js/contact-validation.js"></script>
-<script defer src="js/popup.js"></script>
 
 <div class="my-contact">
-  <div class="mysocial" style="text-align:center">
-    <h4>MY CONTACTS <i class="fa fw fa-globe"></i></h4>
-    <p><i class="fa fw fa-money"></i> Method of Payment</p>
-	<div class="applogo">
+  <div class="e-wallet" style="text-align:center">
+    <h4>PAYMENT METHOD <i class="fa-solid fa-dollar-sign"></i></h4>
+	<div class="payment">
     <a class="logo-view" href="maintenance.html" title="Paypal"><img src="images/imgbtn/paypal.png"></a>	
     <a class="logo-view" href="maintenance.html" title="Gcash"><img src="images/imgbtn/gcash.png"></a>	
   </div>
@@ -151,7 +154,6 @@
     </div>
   </div>
 </div>
-<script defer src="js/current-year.js"></script>
 </div>
 </body>
 </html>

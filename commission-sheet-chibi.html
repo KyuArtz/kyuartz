@@ -9,6 +9,11 @@
   <link rel="stylesheet" href="style/nav.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script defer src="js/loader.js"></script>
+  <script defer src="js/hamburger.js"></script>
+  <script defer src="js/dropdownmenu.js"></script>
+  <script defer src="js/category-drop-menu.js"></script>
+  <script defer src="js/current-year.js"></script>
 </head>
 <body>
 
@@ -18,14 +23,16 @@
   <div class="loader2"></div>
   <div class="loader3"></div>
 </div>
-<script defer src="js/loader.js"></script>  
 	 
 <header>
 <nav class="navbar">
   <a href="index.html" class="nav-brand">KYU
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <input type="search" placeholder="Quick Search..." autocomplete="off">
+  <form class="search" action="maintenance.html">
+    <input type="text" placeholder="Quick Search..." name="search">
+    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
   <ul class="nav-menu">
     <li class="nav-item">
       <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a>
@@ -60,8 +67,6 @@
 </div>
 </nav>
 </header>
-<script defer src="js/hamburger.js"></script>
-<script defer src="js/dropdownmenu.js"></script>
 
 <div class="category-navigation"><h1>My Samples</h1>
 <div class="category-dots" title="Category">
@@ -73,30 +78,29 @@
   <ul class="category-menu">
     <h3>Category</h3>
     <li class="category-item">
-      <a href="commission-sheet.html" class="category-link">All</a>
+      <a href="commission-sheet.html" class="category-link"><i class="fa-regular fa-file"></i> All</a>
     </li>
     <li class="category-item">
-      <a href="commission-sheet-semirealistic.html" class="category-link">Semi Realistic</a>
+      <a href="commission-sheet-semirealistic.html" class="category-link"><i class="fa-regular fa-file"></i> Semi Realistic</a>
     </li>
     <li class="category-item">
-      <a href="commission-sheet-anime.html" class="category-link">Anime Style</a>
+      <a href="commission-sheet-anime.html" class="category-link"><i class="fa-regular fa-file"></i> Anime Style</a>
     </li>
     <li class="category-item">
-      <a href="commission-sheet-grayscale.html" class="category-link">Grayscale</a>
+      <a href="commission-sheet-grayscale.html" class="category-link"><i class="fa-regular fa-file"></i> Grayscale</a>
     </li>
     <li class="category-item">
-      <a href="commission-sheet-landscape.html" class="category-link">Landscape</a>
+      <a href="commission-sheet-landscape.html" class="category-link"><i class="fa-regular fa-file"></i> Landscape</a>
     </li>
     <li class="category-item">
-      <a href="commission-sheet-chibi.html" class="category-link">Chibi</a>
+      <a href="commission-sheet-chibi.html" class="category-link"><i class="fa-regular fa-file"></i> Chibi</a>
     </li>
     <li class="category-item">
-      <a href="commission-sheet-emote.html" class="category-link">Emotes</a>
+      <a href="commission-sheet-emote.html" class="category-link"><i class="fa-regular fa-file"></i> Emotes</a>
     </li>
   </ul>
 </div>
 </div>
-<script defer src="js/category-drop-menu.js"></script>
 
 <div class="cs-container">
   <div class="cs-content">
@@ -124,7 +128,6 @@
     </div>
   </div>
 </div>
-<script defer src="js/current-year.js"></script>
 
 </body>
 </html>
