@@ -38,10 +38,8 @@
 .ts-content ul {
     padding-right: 40px;
     overflow-x: scroll;
-    -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 /* Hides the scrollbar for Chrome, Safari and Opera */
 .ts-content ul::-webkit-scrollbar {

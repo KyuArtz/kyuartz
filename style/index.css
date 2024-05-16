@@ -1,6 +1,6 @@
 .slideshow_container {
     position: relative;
-    margin: 50px auto 0 0;
+    margin: 0 auto 0 0;
 }
 .mySlides {
     display: none;
@@ -8,8 +8,8 @@
 .mySlides img,
 video {
     width: 100%;
-    max-height: 95vh;
-    height: 95vh;
+    max-height: 100vh;
+    height: 100vh;
     object-fit: cover;
     background-image: var(--content-bg);
     border: solid thin var(--color);
@@ -131,13 +131,14 @@ video {
     border-radius: 9px 9px 0 0;
 }
 .video_content {
-    display: block ruby;
+    display: flex;
+    justify-content: space-between;
     overflow: auto;
 }
 .video,
 iframe{
     margin: 5px;
-    max-width: 317px;
+    max-width: 350px;
     height: 250px;
     border-radius: 9px;
     border: solid thin rgb(0, 0, 0);

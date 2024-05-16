@@ -9,6 +9,10 @@
 /* width */
 ::-webkit-scrollbar {
     width: 3px;
+    height: 3px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;/* Firefox */
+    display: none;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -24,8 +28,8 @@
     background: var(--scroll-color);
 }
 :root{
-    --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(23, 62, 105));
-    --background-color: rgba(30, 143, 255);
+    --theme: linear-gradient(to right, rgb(21, 31, 37, 0.900), rgb(23, 62, 105, 0.900));
+    --background-color: rgba(30, 143, 255, 0.500);
     --color: dodgerblue;
     --default-font-color: #ffffff;
     --overlay: rgba(10, 18, 24, 0.7);
@@ -74,7 +78,13 @@ a {
     padding: 0 0 0 56px;
     margin-right: 3px;
 }
-.nav-menu {
+.glass {
+    background: linear-gradient(135deg, rgba(0 0 0 0.500), rgba(0, 0, 0, 0.500));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.nav-menu,
+.glass{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +95,7 @@ a {
 .my-avatar {
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 7px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -146,8 +156,7 @@ form.search input[type=text] {
     font-family: var(--font-style);
     border: 1px solid var(--color);
     color: var(--color);
-    border-radius: 30px 0 0 30px;
-    float: left;
+    border-radius: 0 30px 30px 0;
     width: 80%;
     background-color: var(--overlay);
     margin: 0;
@@ -158,7 +167,7 @@ form.search button {
     background-color: var(--color);
     color: white;
     border: 1px solid var(--color);
-    border-radius: 0 30px 30px 0;
+    border-radius: 30px 0 0 30px;
     border-left: none;
     margin: 0;
     cursor: pointer;
@@ -186,7 +195,7 @@ form.search::after {
 @media screen and (max-width: 978px) {
     .hamburger {
         display: block;
-        margin: 0 5px 0 0;
+        margin: 0 3px 0 auto;
         border: solid thin var(--color);
         border-radius: 9px;
         padding: 5px;
@@ -234,9 +243,6 @@ form.search::after {
     }
     .nav-menu.active-nav {
         right: 0;
-    }
-    .navbar input[type=search] {
-        width: 100%;
     }
     .active-nav a,
     .active-dropdown button {
@@ -361,6 +367,9 @@ form.search::after {
     left: 0;
 }
 @media screen and (max-width: 500px) {
+    .brand{
+        display: none;
+    }
     .category-menu {
         width: 50%;
     }

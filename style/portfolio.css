@@ -4,7 +4,7 @@
 }
 .gallary {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
     grid-gap: 5px;
     margin-top: 100px;
 }
@@ -14,7 +14,6 @@
     aspect-ratio: 1/1;
     object-fit: cover;
     object-position: center;
-    border-radius: 5px;
     transition: transform 0.3s ease-in-out;
 }
 .category-container,
@@ -65,7 +64,6 @@ ul {
 @media screen and (max-width: 500px) {
     .gallary,
     .gallary img {
-        border-radius: 0;
         grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
     }
     .gallary img:hover {
