@@ -127,7 +127,7 @@ video {
     font-family: var(--font-style);
     letter-spacing: 1px;
     color: var(--color);
-    font-size: 0.8rem;
+    font-size: 1.0rem;
     border-radius: 9px 9px 0 0;
 }
 .video_content {
