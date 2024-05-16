@@ -60,7 +60,7 @@ video {
     video {
         height: 60vh;
         max-height: none;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 0 0 20px 20px;
     }
 }
