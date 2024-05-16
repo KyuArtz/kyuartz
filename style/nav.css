@@ -271,6 +271,16 @@ form.search::after {
     overflow: auto;
     z-index: 5;
 }
+.dropdown-content h3 {
+    color: #ffffff;
+    background-color: var(--color);
+    font-family: var(--font-style);
+    text-align: center;
+    font-size: 0.8rem;
+    cursor: default;
+    padding: 5px;
+    margin: 0;
+}
 .dropdown-content a {
     color: var(--default-font-color);
     padding: 19px 20px;
@@ -279,7 +289,6 @@ form.search::after {
     font-family: var(--font-style);
     font-size: 0.6rem;
     font-weight: 500;
-    border-width: 0 1px 0 0;
     transition: 0.5s ease-in-out;
 }
 .show {
@@ -338,7 +347,7 @@ form.search::after {
     z-index: 1;
 }
 .category-menu h3 {
-    color: #000000;
+    color: #ffffff;
     background-color: var(--color);
     font-family: var(--font-style);
     text-align: center;
