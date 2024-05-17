@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style/nav.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   <script src="js/loader.js" defer></script>
+  <script src="js/popup.js"></script>
   <script src="js/hamburger.js" defer></script>
   <script src="js/search.js" defer></script>
   <script src="js/singleslideshow.js" defer></script>
@@ -22,7 +23,14 @@
   <div class="loader2"></div>
   <div class="loader3"></div>
 </div>
-	 
+
+<div id="overlay"></div>
+  <div id="popup">
+    <h2>Welcome to Our Website!</h2>
+    <p>We're glad you're here.</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
 <header>
     <nav class="navbar glass">
       <a href="index.html" class="nav-brand">
