@@ -80,8 +80,7 @@ a {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
-.nav-menu,
-.glass{
+.nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
