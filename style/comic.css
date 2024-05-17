@@ -129,7 +129,7 @@ ul {
     font-family: var(--font-style);
     padding: 8px 12px;
     position: absolute;
-    bottom: 31px;
+    bottom: 22px;
     left: 0;
     width: 100%;
     text-align: left;
@@ -137,25 +137,23 @@ ul {
     border-radius: 0 0 9px 6px;
 }
 .btn-container {
-    display: flex;
+    display: inline;
     width: 100%;
     position: relative;
-    bottom: 52px;
-    left: 132px;
+    bottom: 46px;
+    left: 90px;
 }
 .dot {
     cursor: pointer;
     padding: 5px 11px;
     background-color: rgb(18, 22, 32);
-    
-    border: none;
-    
+    border-radius: 5px;
     transition: 0.5s ease-in-out;
 }
 .dot a {
     color: var(--default-font-color);
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: var(--font-style);
     font-size: small;
 }
 .active,

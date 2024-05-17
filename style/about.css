@@ -15,7 +15,7 @@ body {
     margin-top: 51px;
     font-family: var(--font-style);
     cursor: default;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .summary p {
     font-size: 1.0rem;
@@ -38,15 +38,15 @@ body {
     color: var(--default-font-color);
     padding: 15px;
     margin: 1px 0;
-    font-family: sans-serif;
+    font-family: var(--font-style);
     cursor: default;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .expcontent h2 {
     font-family: var(--font-style);
 }
 .expcontent {
-    font-family: sans-serif;
+    font-family: var(--font-style);
     color: var(--default-font-color);
     padding: 30px;
     cursor: default;
@@ -72,7 +72,7 @@ body {
 }
 .program-content h2 {
     font-family: var(--font-style);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .program-logo img {
     width: 55px;
@@ -109,7 +109,7 @@ body {
 }
 .my-info {
     font-family: var(--font-style);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--default-font-color);
     padding: 10px 16px;
     cursor: default;
