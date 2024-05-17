@@ -99,7 +99,7 @@ a {
 }
 .nav-brand {
     font-family: var(--font-style);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: var(--color);
     background: var(--brand-color);
@@ -125,12 +125,14 @@ a {
     background: var(--active);
     color: var(--color);
     border-radius: 9px;
+    text-shadow: 0 0 5px var(--color);
 }
 .nav-link-dropdown:hover,
 .nav-link:hover {
     color: var(--color);
     box-shadow: 0 0 1px var(--color);
     border-radius: 9px;
+    -webkit-text-backdrop-shadow: ;
 }
 .hamburger {
     display: none;
