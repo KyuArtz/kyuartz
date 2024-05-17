@@ -11,7 +11,6 @@
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   <script src="js/loader.js" defer></script>
   <script src="js/hamburger.js" defer></script>
-  <script src="js/dropdownmenu.js" defer></script>
   <script src="js/search.js" defer></script>
   <script src="js/category-drop-menu.js" defer></script>
   <script src="js/button-auto-scroll.js" defer></script>
@@ -20,7 +19,7 @@
 </head>
 <body>
 
-<div class="loader" oncontextmenu="return false">
+<div class="loader glass" oncontextmenu="return false">
   <div class="bg-loader"></div>
   <h2>Loading Webpage...</h2>
   <div class="loader2"></div>
@@ -28,58 +27,48 @@
 </div>
 	
 <header>
-<nav class="navbar">
-  <a href="index.html" class="nav-brand"><div class="brand">KYU</div>
-  <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
-  </a>
-  <form class="search" onsubmit="return false;">
-    <input type="search" id="input-box" placeholder="Quick Search..." name="search">
-    <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-    <div class="search-result" style="display: none;"></div>
-  </form>
-  <ul class="nav-menu">
-    <li class="nav-item">
-      <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a>
-    </li>
-    <li class="nav-item">
-      <div class="active-nav">
-        <a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <div class="dropdown">
-        <button type="button" class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> CONTENT &#10095;</button>
-        <div id="myDropdown" class="dropdown-content"><h3>CONTENT</h3>
+  <nav class="navbar glass">
+    <a href="index.html" class="nav-brand">
+      <div class="brand">Kyu</div>
+      <img src="images/myavatarlogo/avatar.jpg" class="my-avatar" alt="Avatar">
+    </a>
+    <form class="search" onsubmit="return false;">
+      <input type="search" id="input-box" placeholder="Quick Search..." name="search">
+      <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <div class="search-result glass" style="display: none;"></div>
+    </form>
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+      <li class="nav-item active-nav"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> CONTENT &#10095;</a>
+        <div id="myDropdown" class="dropdown-content glass">
+          <h3>CONTENT</h3>
           <a href="comic.html"><i class="fa-solid fa-file"></i> Comic</a>
           <a href="maintenance.html"><i class="fa-solid fa-file"></i> Original Character's</a>
-		      <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
+          <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
           <a href="terms_of_service.html"><i class="fa-solid fa-file"></i> Terms of Service</a>
-      </div>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a>
-    </li>
-    <li class="nav-item">
-      <a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a>
-    </li>
-  </ul>
-  <div class="hamburger">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-</div>
-</nav>
+        </div>
+      </li>
+      <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
 </header>
 
-<div class="category-navigation"><h1>MY WORK</h1>
+<div class="category-navigation glass"><h1>MY WORK</h1>
 <div class="category-dots" title="Category">
   <span class="category-dot"></span>
   <span class="category-dot"></span>
   <span class="category-dot"></span>
 </div>
 <div class="category-container">
-  <ul class="category-menu">
+  <ul class="category-menu glass">
     <h3>Category</h3>
     <li class="category-item">
       <a href="portfolio.html" class="category-link"><i class="fa-solid fa-file"></i> All</a>
@@ -209,7 +198,7 @@
   </div>
 </div>
 
-<div class="footer">
+<div class="footer glass">
   <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
     <div class="footer-container">
     <a class="detail" href="terms_of_service.html"> Terms of Service</a>

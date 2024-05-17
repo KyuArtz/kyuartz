@@ -7,6 +7,8 @@ body.lb-disable-scrolling {
     left: 0;
     z-index: 9999;
     background-color: var(--transparent-overlay);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 1;
     display: none;
@@ -45,11 +47,9 @@ body.lb-disable-scrolling {
     border-style: solid;
     border-width: thin;
     color: var(--color);
-
     /* Background color behind image.
      This is visible during transitions. */
-     background-image: var(--theme);
-    background-color: var(--background-color);
+    background-image: var(--theme);
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
 }
 .lb-outerContainer:after {

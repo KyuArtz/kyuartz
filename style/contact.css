@@ -224,12 +224,10 @@ label {
     position: relative;
     padding: 8px 0;
     margin-top: 230px;
-    background-color: var(--background-color);
     background-image: var(--theme);
     font-family: var(--font-style);
     font-size: 0.6rem;
     border-top: solid thin var(--color);
-    border-radius: 20px 20px 0 0;
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
 .copyright p {
@@ -237,35 +235,10 @@ label {
     color: var(--color);
     cursor: default;
 }
-.footer-container {
-    display: flex;
-    justify-content: center;
-}
-.detail {
-    margin-top: 5px;
-    color: var(--default-font-color);
-    display: inline-block;
-    padding: 0 5px;
-    text-decoration: none;
-    font-size: 0.5rem;
-    transition: 0.5s ease-in-out;
-}
-.detail:hover {
-    color: var(--color);
-    text-decoration: underline;
-}
 @media screen and (max-width: 690px) {
     .contact-container {
         width: 100%;
         display: block;
-    }
-    .footer {
-            margin-top: 0;
-        }
-    @media screen and (max-width: 500px) {
-        .footer {
-            margin-top: 0;
-        }
     }
     @media screen and (max-width: 450px) {
         .donate img {
