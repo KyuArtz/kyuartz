@@ -189,6 +189,8 @@ form.search::after {
     position: absolute;
     top: 50px;
     background: var(--theme);
+    border-radius: 0 0 10px 10px;
+    border: solid thin var(--color);
 }
 .search-result ul li {
     list-style: none;
@@ -200,7 +202,6 @@ form.search::after {
     height: 250px;
     padding-left: 0;
     margin: 0 auto;
-    border: solid thin var(--color);
     overflow: auto;
 }
 .search-result a {
@@ -218,7 +219,7 @@ form.search::after {
     font-size: small;
     color: #ffffff;
     background: var(--theme);
-    border: solid thin var(--color);
+    border-radius: 0 0 10px 10px;
 }
 .search-result a:hover {
     background-color: var(--hover-light);
