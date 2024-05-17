@@ -12,6 +12,7 @@
   <script src="js/loader.js" defer></script> 
   <script src="js/hamburger.js" defer></script>
   <script src="js/dropdownmenu.js" defer></script>
+  <script src="js/search.js" defer></script>
   <script src="js/contact-validation.js" defer></script>
   <script src="js/popup.js" defer></script>
   <script src="js/current-year.js" defer></script>
@@ -30,9 +31,10 @@
   <a href="index.html" class="nav-brand"><div class="brand">KYU</div>
   <img src="images/myavatarlogo/avatar.jpg" class="my-avatar">
   </a>
-  <form class="search" action="maintenance.html">
-    <input type="text" placeholder="Quick Search..." name="search">
-    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+  <form class="search" onsubmit="return false;">
+    <input type="search" id="input-box" placeholder="Quick Search..." name="search">
+    <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="search-result" style="display: none;"></div>
   </form>
   <ul class="nav-menu">
     <li class="nav-item">
