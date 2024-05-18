@@ -1,37 +1,42 @@
 #overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--transparent-overlay);
-  display: none;
-  z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--transparent-overlay);
+    display: none;
+    z-index: 1;
 }
 #popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  font-family: var(--font-style);
-  display: none;
-  z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/bg/landscape-mode.jpg');
+    background-position: center;
+    background-size: cover;
+    color: var(--default-font-color);
+    padding: 20px;
+    border-radius: 6px;
+    border: solid thin var(--color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-family: var(--font-style);
+    display: none;
+    z-index: 1;
 }
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-style);
+    cursor: pointer;
 }
 button:hover {
-  background-color: #0056b3;
+    background-color: var(--hover-light);
 }
 .slideshow_container {
     position: relative;
@@ -96,28 +101,57 @@ video {
         height: 60vh;
         max-height: none;
         object-fit: contain;
-        border-radius: 0 0 20px 20px;
     }
 }
 .caption {
     width: 100%;
     color: #f2f2f2;
     background-image: var(--theme);
-    font-size: 10px;
+    font-size: 1.5rem;
     font-family: var(--font-style);
     position: absolute;
     top: 0;
     text-align: center;
     cursor: default;
-    border-radius: 0px 15px 0px 0px;
+    height: 99.3%;
+    align-content: center;
+}
+.caption-btn {
+    position: absolute;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    bottom: 35%;
+}
+.caption-btn a {
+    padding: 10px 20px;
+    margin: 2px;
+    background: var(--color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-family: var(--font-style);
+    transition: 0.5s ease-in-out;
+}
+.caption-btn a:hover {
+    background-color: var(--hover-light);
+    color: rgb(9, 82, 31);
+    box-shadow: 0 0 10px var(--color);
 }
 @media screen and (max-width:500px) {
     .caption {
-        font-size: 7px;
+        font-size: 0.7rem;
+    }
+    .caption-btn a {
+        font-size: 0.4rem;
     }
 }
 .home_slider_dot {
     text-align: center;
+    opacity: 0.1;
+    transition: 0.5s ease-in-out;
+}
+.home_slider_dot:hover {
+    opacity: 1;
 }
 .dot {
     position: relative;
@@ -129,8 +163,7 @@ video {
     border-radius: 5px;
     border: solid thin var(--color);
     display: inline-block;
-    transition: all 0.6s var(--background-color) ease-in-out;
-    opacity: 0.7;
+    transition: 0.6s var(--background-color) ease-in-out;
     box-shadow: 0 0 5px #0a0a0a;
 }
 .active-dot,
