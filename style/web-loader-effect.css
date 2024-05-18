@@ -35,6 +35,7 @@
     bottom: 35%;
     transition: inherit;
     cursor: default;
+    letter-spacing: 3px;
 }
 .loader-hidden {
     opacity: 0;
