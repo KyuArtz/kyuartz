@@ -153,7 +153,7 @@ video {
     text-shadow: 0 0 10px var(--color);
 }
 .caption p {
-    text-shadow: 0 0 5px var(--default-font-color);
+    text-shadow: 0 0 5px #000000;
 }
 .caption-btn {
     position: absolute;
