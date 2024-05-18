@@ -17,7 +17,7 @@
     background-position: center;
     background-size: cover;
     color: var(--default-font-color);
-    padding: 20px;
+    padding: 30px;
     border-radius: 6px;
     border: solid thin var(--color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -25,6 +25,22 @@
     font-family: var(--font-style);
     display: none;
     z-index: 1;
+}
+#popup h2 {
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: var(--color);
+    margin: 30px 0 25px;
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: thin;
+    cursor: default;
+}
+#popup p {
+    color: var(--default-font-color);
+    cursor: default;
 }
 button {
     padding: 10px 20px;
@@ -37,6 +53,21 @@ button {
 }
 button:hover {
     background-color: var(--hover-light);
+    color: #000000;
+}
+@media(max-width: 500px) {
+    #popup {
+        width: 300px;
+    }
+    #popup p {
+        font-size: x-small;
+    }
+    #popup h2 {
+        font-size: x-large;
+    }
+    #popup button {
+        font-size: 10px;
+    }
 }
 .slideshow_container {
     position: relative;

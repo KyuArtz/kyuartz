@@ -36,7 +36,7 @@
     pointer-events: none;
 }
 .popup h2 {
-    font-size: 38px;
+    font-size: 2.0rem;
     font-weight: 500;
     color: var(--color);
     margin: 30px 0 25px;
@@ -85,7 +85,7 @@
     color: var(--color);
     background: -webkit-linear-gradient(#282831, #1c1c22);
 }
-@media(max-width: 450px) {
+@media(max-width: 500px) {
     .popup {
         width: 300px;
     }
