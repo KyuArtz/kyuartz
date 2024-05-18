@@ -51,13 +51,11 @@ ul {
 .next {
     right: 0;
     border-radius: 20px 0 0 20px;
-    background-image: linear-gradient(to left, rgba(0 49 85 / 90%) , rgba(0, 102, 255, 0.103));
 }
 /* Position the "next button" to the left */
 .prev {
     left: 0;
     border-radius: 0 20px 20px 0;
-    background-image: linear-gradient(to right, rgba(0 49 85 / 90%) , rgba(0, 102, 255, 0.103));
 }
 /* On hover, add a black background color with a little bit see-through */
 .next:hover,
