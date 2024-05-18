@@ -1,28 +1,36 @@
 let slideIndex = 1;
-  showSlides(slideIndex);
-  
+showSlides(slideIndex);
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-  
-  // Thumbnail image controls
+
+// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+// Display slides and handle navigation
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
-  let dot = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
+  let dots = document.getElementsByClassName("dot");
+  
+  // Handle edge cases
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  
+  // Hide all slides and deactivate dots
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
+    dots[i].classList.remove("active-dot");
   }
-  for (i = 0; i < dot.length; i++) {
-    dot[i].className = dot[i].className.replace(" active-dot", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dot[slideIndex-1].className += " active-dot";
+  
+  // Display the current slide and activate corresponding dot
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active-dot");
 }

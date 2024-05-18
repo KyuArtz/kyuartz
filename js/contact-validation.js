@@ -1,60 +1,77 @@
-var usernamelabel = document.getElementById("username-label");
-var usernamefield = document.getElementById("username-field");
-var usernameerror = document.getElementById("username-error");
-var usernamevalid = document.getElementById("username-valid");
-
-// promts a message info to the user if the contact form is valid or not
-function validateUsername(){
-  if(!usernamefield.value.match(/^[A-Za-z]*[\ \][a-z]{3,25}$/)){
-    usernameerror.innerHTML ="Must be at least 1-4 characters no number/special character!";
-    usernamefield.style.borderColor ="red";
-    usernamevalid.innerHTML ="";
-    usernamelabel.style.color ="red";
-    return false;
+function validateInput(fieldType) {
+  let field = document.getElementById(`${fieldType}-field`);
+  let errorElement = document.getElementById(`${fieldType}-error`);
+  let validElement = document.getElementById(`${fieldType}-valid`);
+  let labelElement = document.querySelector(`label[for=${fieldType}-field]`);
+  
+  let isValid;
+  if (fieldType === 'username') {
+    isValid = field.value.match(/^[A-Za-z]*[\ \][a-z]{3,25}$/);
+  } else if (fieldType === 'email') {
+    isValid = field.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{3,3}$/);
+  } else if (fieldType === 'message') {
+    isValid = field.value.match(/^[A-Za-z\,_\.\]*[\ \][a-z]{10,500}$/);
   }
-  usernameerror.innerHTML ="";
-  usernamefield.style.borderColor ="#1d8f56";
-  usernamevalid.innerHTML ="You're good to go!";
-  usernamelabel.style.color ="#1d8f56";
-  return true;
+
+  if (!isValid) {
+    errorElement.textContent = fieldType === 'username' ? "Must be at least 1-4 characters, no numbers/special characters!" :
+                               fieldType === 'email' ? "Please enter a valid email address!" :
+                               "Please don't leave this blank!";
+    field.style.borderColor = "red";
+    validElement.textContent = "";
+    labelElement.style.color = "red";
+  } else {
+    errorElement.textContent = "";
+    field.style.borderColor = "lightgreen";
+    validElement.textContent = "You're good to go!";
+    labelElement.style.color = "lightgreen";
+  }
+
+  return isValid;
 }
 
-var emaillabel = document.getElementById("email-label");
-var emailfield = document.getElementById("email-field");
-var emailerror = document.getElementById("email-error");
-var emailvalid = document.getElementById("email-valid");
+function validateCommissionType() {
+  var commissionSelect = document.getElementById("commission-select");
+  var commissionError = document.getElementById("commission-error");
+  var commissionValid = document.getElementById("commission-valid");
+  var commissionLabel = document.querySelector('label[for="commission-select"]');
 
-function validateEmail(){
-  if(!emailfield.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{3,3}$/)){
-    emailerror.innerHTML = "Please enter a valid email address!";
-    emailfield.style.borderColor ="red";
-    emailvalid.innerHTML ="";
-    emaillabel.style.color ="red";
-    return false;
+  if (commissionSelect.value === "") {
+    commissionError.textContent = "Please select a commission type!";
+    commissionSelect.style.borderColor = "red";
+    commissionLabel.style.color = "red";
+    commissionValid.textContent = "";
+  } else {
+    commissionError.textContent = "";
+    commissionSelect.style.borderColor = "lightgreen";
+    commissionLabel.style.color = "lightgreen";
+    commissionValid.textContent = "You're good to go!";
   }
-  emailerror.innerHTML = "";
-  emailfield.style.borderColor ="#1d8f56";
-  emailvalid.innerHTML ="You're good to go!";
-  emaillabel.style.color ="#1d8f56";
-  return true;
 }
 
-var messagelabel = document.getElementById("message-label");
-var messagefield = document.getElementById("message-field");
-var messageerror = document.getElementById("message-error");
-var messagevalid = document.getElementById("message-valid");
+function validateFile() {
+  var fileInput = document.getElementById("myFile");
+  var fileError = document.getElementById("file-error");
+  var fileValid = document.getElementById("file-valid");
+  var fileLabel = document.querySelector('label[for="myFile"]');
 
-function validateMessage(){
-  if(!messagefield.value.match(/^[A-Za-z\,_\.\]*[\ \][a-z]{10,500}$/)){
-    messageerror.innerHTML ="Please don't leave this blank!";
-    messagefield.style.borderColor ="red";
-    messagevalid.innerHTML ="";
-    messagelabel.style.color ="red";
-    return false;
+  if (fileInput.files.length === 0) {
+    fileError.textContent = "";
+    fileValid.textContent = "";
+  } else {
+    var file = fileInput.files[0];
+    var fileSize = file.size / 1024; // File size in KB
+
+    if (fileSize > 1024) { // Change the size limit as needed
+      fileError.textContent = "File size should be less than 1MB!";
+      fileInput.style.borderColor = "red";
+      fileLabel.style.color = "red";
+      fileValid.textContent = "";
+    } else {
+      fileError.textContent = "";
+      fileInput.style.borderColor = "lightgreen";
+      fileLabel.style.color = "lightgreen";
+      fileValid.textContent = "File uploaded successfully!";
+    }
   }
-  messageerror.innerHTML ="";
-  messagefield.style.borderColor ="#1d8f56";
-  messagevalid.innerHTML ="You're good to go!";
-  messagelabel.style.color ="#1d8f56"
-  return true;
 }
