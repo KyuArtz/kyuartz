@@ -200,7 +200,6 @@ form.search::after {
 .search-result ul {
     height: 250px;
     padding-left: 0;
-    margin: 0 auto;
     overflow: auto;
 }
 .search-result a {
