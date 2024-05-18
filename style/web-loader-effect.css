@@ -71,7 +71,7 @@
     border-radius: 50%;
     animation: loading3 0.75s ease infinite;
     position: absolute;
-    box-shadow: 0 1px 10px 1px var(--color);
+    box-shadow: 0 0 1000px 50px var(--color);
 }
 @keyframes loading {
     from {
