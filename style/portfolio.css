@@ -50,6 +50,10 @@ ul {
     border: solid 2px var(--color);
 }
 
+.hidden {
+    display: none !important;
+}  
+
 /* Responsive Styles */
 @media screen and (max-width: 500px) {
     .gallary,
