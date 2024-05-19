@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico"><title>Kyushiartz | Home Page</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
+  <title>Kyushiartz | Home Page</title>
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/web-loader-effect.css">
   <link rel="stylesheet" href="style/nav.css">
@@ -16,24 +17,27 @@
   <script src="js/carousel.js" defer></script>
   <script src="js/current-year.js" defer></script>
 </head>
+
 <body>
+  <!-- Loader -->
+  <div class="loader glass" oncontextmenu="return false">
+    <div class="bg-loader"></div>
+    <h2 class="loading-text">Loading Webpage...</h2>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
 
-<div class="loader glass" oncontextmenu="return false">
-  <div class="bg-loader"></div>
-  <h2 class="loading-text">Loading Webpage...</h2>
-  <div class="spinner small-spinner"></div>
-  <div class="spinner medium-spinner"></div>
-  <div class="spinner large-spinner"></div>
-</div>
-
-<div id="overlay"></div>
+  <!-- Welcome Popup -->
+  <div id="overlay"></div>
   <div id="popup">
     <h2>Welcome to Our Website!</h2>
     <p>We're glad you're here.</p>
     <button onclick="closePopup()">Close</button>
-</div>
+  </div>
 
-<header>
+  <!-- Header and Navigation -->
+  <header>
     <nav class="navbar glass">
       <a href="index.html" class="nav-brand">
         <div class="brand">Kyu</div>
@@ -68,91 +72,94 @@
     </nav>
   </header>
 
-<div class="slideshow_container">
-  <div class="mySlides fade">
-    <img src="images/home-page-cover/Polish_20240517_003306778.jpg" oncontextmenu="return false">
-    <div class="caption">
-      <h2>Welcome to my website!</h2>
-      <p>My art from 2023</p>
+  <!-- Slideshow Container -->
+  <div class="slideshow_container">
+    <div class="mySlides fade">
+      <img src="images/home-page-cover/Polish_20240517_003306778.jpg" oncontextmenu="return false">
+      <div class="caption">
+        <h2>Welcome to my website!</h2>
+        <p>My art from 2023</p>
+      </div>
+      <div class="caption-btn">
+        <a href="portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
+        <a href="commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+      </div>
     </div>
-    <div class="caption-btn">
-      <a href="portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-      <a href="commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+    <div class="mySlides fade">
+      <img src="images/home-page-cover/Polish_20240517_012022456.jpg" oncontextmenu="return false">
+      <div class="caption">
+        <h2>Welcome to my website!</h2>
+        <p>Discover more arts created by me</p>
+      </div>
+      <div class="caption-btn">
+        <a href="portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
+        <a href="commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+      </div>
     </div>
+    <div class="mySlides fade">
+      <img src="images/home-page-cover/Polish_20240517_010922248.jpg" oncontextmenu="return false">
+      <div class="caption">
+        <h2>Welcome to my website!</h2>
+        <p>Discover more arts created by me</p>
+      </div>
+      <div class="caption-btn">
+        <a href="portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
+        <a href="commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+      </div>
+    </div>
+    <div class="mySlides fade">
+      <video src="video/km_welcome_1080p_60f_20240516_233121.mp4" autoplay loop muted oncontextmenu="return false"></video>
+    </div>
+    <div class="mySlides fade">
+      <video src="video/km_20240516_1080p_60f_20240518_113357.mp4" autoplay loop muted oncontextmenu="return false"></video>
+    </div>
+    <!-- Other slides... -->
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
   </div>
-  <div class="mySlides fade">
-    <img src="images/home-page-cover/Polish_20240517_012022456.jpg" oncontextmenu="return false">
-    <div class="caption">
-      <h2>Welcome to my website!</h2>
-      <p>Discover more arts created by me</p>
-    </div>
-    <div class="caption-btn">
-      <a href="portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-      <a href="commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
-    </div>
+  <div class="home_slider_dot">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
-  <div class="mySlides fade">
-    <img src="images/home-page-cover/Polish_20240517_010922248.jpg" oncontextmenu="return false">
-    <div class="caption">
-      <h2>Welcome to my website!</h2>
-      <p>Discover more arts created by me</p>
-    </div>
-    <div class="caption-btn">
-      <a href="portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-      <a href="commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
-    </div>
-  </div>
-  <div class="mySlides fade">
-    <video src="video/km_welcome_1080p_60f_20240516_233121.mp4" autoplay loop muted oncontextmenu="return false"></video>
-  </div>
-  <div class="mySlides fade">
-    <video src="video/km_20240516_1080p_60f_20240518_113357.mp4" autoplay loop muted oncontextmenu="return false"></video>
-  </div>
-  <!-- Other slides... -->
-  <a class="prev">&#10094;</a>
-  <a class="next">&#10095;</a>
-</div>
-<div class="home_slider_dot">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
 
-<div class="video_container">
-  <h2>FEATURED VIDEOS</h2>
-  <div class="carousel">
+  <!-- Video Container -->
+  <div class="video_container">
+    <h2>FEATURED VIDEOS</h2>
+    <div class="carousel">
       <div class="carousel_inner">
-          <div class="video">
-              <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_232022.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
-          </div>
-          <div class="video">
-              <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_232651.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
-          </div>
-          <div class="video">
-              <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_233331.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
-          </div>
-          <div class="video">
-              <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_233552.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
-          </div>
+        <div class="video">
+          <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_232022.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
+        </div>
+        <div class="video">
+          <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_232651.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
+        </div>
+        <div class="video">
+          <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_233331.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
+        </div>
+        <div class="video">
+          <video controls source src="video/km_SpeedPaint 1_480p_60f_20240406_233552.mp4" type="video/mp4" muted oncontextmenu="return false"></video>
+        </div>
       </div>
       <div class="carousel_nav">
-          <button class="carousel-prev">&lt;</button>
-          <button class="carousel-next">&gt;</button>
+        <button class="carousel-prev">&lt;</button>
+        <button class="carousel-next">&gt;</button>
       </div>
-  </div>
-</div>
-
-<div class="footer glass">
-  <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
-    <div class="footer-container">
-    <a class="detail" href="terms_of_service.html"> Terms of Service</a>
-    <a class="detail" href="about.html"> About Me</a>
-    <a class="detail" href="contact.html"> Contact Me</a>
     </div>
   </div>
-</div>
 
+  <div class="footer glass">
+    <div class="copyright">
+      <p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+      <div class="footer-container">
+        <a class="detail" href="terms_of_service.html"> Terms of Service</a>
+        <a class="detail" href="about.html"> About Me</a>
+        <a class="detail" href="contact.html"> Contact Me</a>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>

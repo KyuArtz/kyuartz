@@ -53,12 +53,3 @@
         font-size: small;
     }
 }
-
-/* Copyright Notice */
-.copyright p {
-    padding: 8px 0;
-    text-align: center;
-    color: var(--color);
-    font-family: var(--font-style);
-    font-size: 0.5rem;
-}
