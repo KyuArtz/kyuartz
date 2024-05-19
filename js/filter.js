@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Elishia_chibi_grayscale (2023).jpg",
       title: "",
-      category: "anime-style"
+      category: "grayscale"
     },
     {
       src: "images/artgallary/Tragic_past_grayscale (2023).jpg",
