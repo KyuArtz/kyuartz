@@ -1,121 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta content="width=device-width, initial-scale=1" name="viewport" />
-   <title>Kyushiartz | Characters</title>
-   <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
-   <link rel="stylesheet" href="style/mycharacter.css">
-   <link rel="stylesheet" href="style/nav.css">
-   <link rel="stylesheet" href="style/web-loader-effect.css">
-   <link rel="stylesheet" href="style/popuperror.css">
-   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Kyushiartz | Characters</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
+  <link rel="stylesheet" href="style/mycharacter.css">
+  <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/web-loader-effect.css">
+  <link rel="stylesheet" href="style/popuperror.css">
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<div class="loader glass" oncontextmenu="return false">
-  <div class="bg-loader"></div>
-  <h2 class="loading-text">Loading Webpage...</h2>
-  <div class="spinner small-spinner"></div>
-  <div class="spinner medium-spinner"></div>
-  <div class="spinner large-spinner"></div>
-</div>
+  <div class="loader glass" oncontextmenu="return false">
+    <div class="bg-loader"></div>
+    <h2 class="loading-text">Loading Webpage...</h2>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
 
-<header>
-  <nav class="navbar glass">
-    <a href="index.html" class="nav-brand">
-      <div class="brand">Kyu</div>
-      <img src="images/myavatarlogo/avatar.jpg" class="my-avatar" alt="Avatar">
-    </a>
-    <form class="search" onsubmit="return false;">
-      <input type="search" id="input-box" autocomplete="off" placeholder="Quick Search..." name="search">
-      <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-      <div class="search-result glass" style="display: none;"></div>
-    </form>
-    <ul class="nav-menu">
-      <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
-      <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
-      <li class="nav-item dropdown">
-        <a class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> CONTENT &#10095;</a>
-        <div id="myDropdown" class="dropdown-content">
-          <h3>CONTENT</h3>
-          <a href="comic.html"><i class="fa-solid fa-file"></i> Comic</a>
-          <a href="maintenance.html"><i class="fa-solid fa-file"></i> Original Character's</a>
-          <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
-          <a href="terms_of_service.html"><i class="fa-solid fa-file"></i> Terms of Service</a>
-        </div>
-      </li>
-      <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
-      <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
-    </ul>
-    <div class="hamburger">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </nav>
-</header>
+  <header>
+    <nav class="navbar glass">
+      <a href="index.html" class="nav-brand">
+        <div class="brand">Kyu</div>
+        <img src="images/myavatarlogo/avatar.jpg" class="my-avatar" alt="Avatar">
+      </a>
+      <form class="search" onsubmit="return false;">
+        <input type="search" id="input-box" autocomplete="off" placeholder="Quick Search..." name="search">
+        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search-result glass" style="display: none;"></div>
+      </form>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i>
+            PORTFOLIO</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> CONTENT &#10095;</a>
+          <div id="myDropdown" class="dropdown-content">
+            <h3>CONTENT</h3>
+            <a href="comic.html"><i class="fa-solid fa-file"></i> Comic</a>
+            <a href="maintenance.html"><i class="fa-solid fa-file"></i> Original Character's</a>
+            <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
+            <a href="terms_of_service.html"><i class="fa-solid fa-file"></i> Terms of Service</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a>
+        </li>
+        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 
-<div class="popup" id="popup">
-  <img src="images/popup/popup-icon.png">
-  <h2>OOPS <i class="fa fw fa-warning"></i></h2>
-  <p>Sorry the content you're trying to access is not yet available at this time.</p>
-  <button type="button" onclick="closePopup()">CLOSE</button>
-</div>
-  
-<div class="character-container">
+  <div class="popup" id="popup">
+    <img src="images/popup/popup-icon.png">
+    <h2>OOPS <i class="fa fw fa-warning"></i></h2>
+    <p>Sorry the content you're trying to access is not yet available at this time.</p>
+    <button type="button" onclick="closePopup()">CLOSE</button>
+  </div>
 
-  <div class="row">
-    <div class="column">
-      <div class="oc-profile-green">
-        <div class="class"><img src="images/elements/wip.jpg"></div>
-        <img src="images/ocprofile/workinprogress.png" alt="photo">
-        <div class="oc-info">
-          <h3>Arzhel</h3>
-          <p class="element">Elemental Mastery:</p>
-          <img src="images/elements/wip.jpg" alt="">
-          <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+  <div class="character-container">
+
+    <div class="row">
+      <div class="column">
+        <div class="oc-profile-green">
+          <div class="class"><img src="images/elements/wip.jpg"></div>
+          <img src="images/ocprofile/workinprogress.png" alt="photo">
+          <div class="oc-info">
+            <h3>Arzhel</h3>
+            <p class="element">Elemental Mastery:</p>
+            <img src="images/elements/wip.jpg" alt="">
+            <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="oc-profile-yellow">
-        <div class="class"><img src="images/elements/wip.jpg"></div>
-        <img src="images/ocprofile/blessica.png" alt="photo">
-        <div class="oc-info">         
-          <h3>Blessica</h3>
-           <p class="element">Elemental Mastery:</p>
-           <img src="images/elements/wip.jpg" alt="">
-           <img src="images/elements/wip.jpg" alt="">
-           <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+      <div class="column">
+        <div class="oc-profile-yellow">
+          <div class="class"><img src="images/elements/wip.jpg"></div>
+          <img src="images/ocprofile/blessica.png" alt="photo">
+          <div class="oc-info">
+            <h3>Blessica</h3>
+            <p class="element">Elemental Mastery:</p>
+            <img src="images/elements/wip.jpg" alt="">
+            <img src="images/elements/wip.jpg" alt="">
+            <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="column">
-      <div class="oc-profile-orange">
-        <div class="class"><img src="images/elements/wip.jpg"></div>
-        <img src="images/ocprofile/workinprogress.png" alt="photo">
-        <div class="oc-info">
-        <h3>Drakeon</h3>
-         <p class="element">Elemental Mastery:</p>
-         <img src="images/elements/wip.jpg" alt="">
-         <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
-         </div>
-      </div>
-    </div>
-    <div class="column">
-      <div class="oc-profile-green">
-        <div class="class"><img src="images/elements/wip.jpg"></div>
-        <img src="images/ocprofile/workinprogress.png" alt="photo">
-        <div class="oc-info">
-          <h3>Evany</h3>
-          <p class="element">Elemental Mastery:</p>
-          <img src="images/elements/wip.jpg" alt="">
-          <img src="images/elements/wip.jpg" alt="">
-          <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+      <div class="column">
+        <div class="oc-profile-orange">
+          <div class="class"><img src="images/elements/wip.jpg"></div>
+          <img src="images/ocprofile/workinprogress.png" alt="photo">
+          <div class="oc-info">
+            <h3>Drakeon</h3>
+            <p class="element">Elemental Mastery:</p>
+            <img src="images/elements/wip.jpg" alt="">
+            <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+          </div>
         </div>
       </div>
-    </div>
+      <div class="column">
+        <div class="oc-profile-green">
+          <div class="class"><img src="images/elements/wip.jpg"></div>
+          <img src="images/ocprofile/workinprogress.png" alt="photo">
+          <div class="oc-info">
+            <h3>Evany</h3>
+            <p class="element">Elemental Mastery:</p>
+            <img src="images/elements/wip.jpg" alt="">
+            <img src="images/elements/wip.jpg" alt="">
+            <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="column">
           <div class="oc-profile-purple">
@@ -133,16 +137,16 @@
         <div class="column">
           <div class="oc-profile-orange">
             <div class="class"><img src="images/elements/wip.jpg"></div>
-           <img src="images/ocprofile/feya.png" alt="photo">
+            <img src="images/ocprofile/feya.png" alt="photo">
             <div class="oc-info">
-             <h3>Feya</h3>
-             <p class="element">Elemental Mastery:</p>
-             <img src="images/elements/wip.jpg" alt="">
-             <img src="images/elements/wip.jpg" alt="">
-             <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
-             </div>
-           </div>
-         </div>
+              <h3>Feya</h3>
+              <p class="element">Elemental Mastery:</p>
+              <img src="images/elements/wip.jpg" alt="">
+              <img src="images/elements/wip.jpg" alt="">
+              <a class="button" onclick="openPopup()"><i class="fa fw fa-book"></i> Character Info</a>
+            </div>
+          </div>
+        </div>
         <div class="column">
           <div class="oc-profile-purple">
             <div class="class"><img src="images/elements/wip.jpg"></div>
@@ -238,19 +242,21 @@
         </div>
       </div>
     </div>
-</div>
-<script defer src="js/popup.js"></script>
+  </div>
+  <script defer src="js/popup.js"></script>
 
-<div class="footer">
-  <div class="copyright"><p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
-    <div class="footer-container">
-    <a class="detail" href="terms_of_service.html"> Terms of Service</a>
-    <a class="detail" href="about.html"> About Me</a>
-    <a class="detail" href="contact.html"> Contact Me</a>
+  <div class="footer">
+    <div class="copyright">
+      <p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+      <div class="footer-container">
+        <a class="detail" href="terms_of_service.html"> Terms of Service</a>
+        <a class="detail" href="about.html"> About Me</a>
+        <a class="detail" href="contact.html"> Contact Me</a>
+      </div>
     </div>
   </div>
-</div>
-<script defer src="js/current-year.js"></script>
+  <script defer src="js/current-year.js"></script>
 
 </body>
+
 </html>
