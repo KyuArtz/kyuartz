@@ -14,10 +14,16 @@ window.addEventListener("load", () => {
         loadingText.textContent = messages[messageIndex];
     }, 2000); // Change text every 2 seconds
 
-    loader.classList.add("loader-hidden");
+    // Remove this line to let the loader remain visible until transition ends
+    // loader.classList.add("loader-hidden");
 
     loader.addEventListener("transitionend", () => {
         clearInterval(interval); // Stop changing text when loader is hidden
         loader.remove();
     });
+
+    // Add loader-hidden class only after the page has fully loaded and displayed
+    window.setTimeout(() => {
+        loader.classList.add("loader-hidden");
+    }, 100); // Slight delay to ensure everything is ready
 });

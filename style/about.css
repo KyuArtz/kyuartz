@@ -1,25 +1,51 @@
+/* Global Styles */
 body {
-    background-image: url("../images/bg/landscape-mode-1.jpg")!important;
+    background-image: url("../images/bg/landscape-mode-1.jpg") !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.card-overlay {
+
+/* Overlay Classes */
+.card-overlay,
+.summary,
+.experience,
+.program {
     background-color: var(--overlay);
 }
-.summary {
-    background-color: var(--overlay);
-    text-align: center;
+
+.card-overlay,
+.summary,
+.experience,
+.program,
+.summary p,
+.expcontent h2,
+.expcontent,
+.expcontent p,
+.program-content h2,
+.program-logo img,
+.my-info,
+.my-info h2,
+.my-info p,
+.email,
+.exp {
+    font-family: var(--font-style);
     color: var(--default-font-color);
+    cursor: default;
+}
+
+/* Summary Section */
+.summary {
+    text-align: center;
     padding: 20px;
     margin-top: 51px;
-    font-family: var(--font-style);
-    cursor: default;
     font-size: 0.9rem;
 }
+
 .summary p {
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
+
 .summarycontent {
     display: flex;
     background-image: var(--theme);
@@ -27,29 +53,21 @@ body {
     border-radius: 10px;
     text-align: justify;
     font-family: sans-serif;
-    color: var(--default-font-color);
     padding: 25px;
-    cursor: default;
 }
+
+/* Experience Section */
 .experience {
-    background-color: var(--overlay);
     text-align: center;
-    color: var(--default-font-color);
     padding: 15px;
     margin: 1px 0;
-    font-family: var(--font-style);
-    cursor: default;
     font-size: 0.9rem;
 }
-.expcontent h2 {
-    font-family: var(--font-style);
-}
+
 .expcontent {
-    font-family: var(--font-style);
-    color: var(--default-font-color);
     padding: 30px;
-    cursor: default;
 }
+
 .expcontent p {
     padding: 10px;
     margin: 5px;
@@ -57,21 +75,20 @@ body {
     background-image: var(--theme);
     box-shadow: var(--color) 0px 0px 1px 0.5px;
     border-radius: 10px;
-    cursor: default;
     width: 175px;
-    font-size: 1.0rem;
+    font-size: 1rem;
 }
+
+/* Program Section */
 .program {
     text-align: center;
-    color: var(--default-font-color);
     padding: 50px;
-    background-color: var(--overlay);
-    cursor: default;
 }
+
 .program-content h2 {
-    font-family: var(--font-style);
     font-size: 0.9rem;
 }
+
 .program-logo img {
     width: 55px;
     height: 55px;
@@ -79,15 +96,19 @@ body {
     transition: 0.3s ease-in-out;
     transform: scale(1);
 }
+
 .program-logo img:hover {
     transform: scale(0.90);
     border: solid 3px var(--hover-light);
 }
+
+/* Card Section */
 .me {
     float: left;
     width: 33.3%;
     margin-bottom: 16px;
 }
+
 .card {
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
     background-image: var(--theme);
@@ -95,30 +116,29 @@ body {
     padding: 10px;
     border-radius: 9px;
 }
+
 .card img {
     max-width: 100%;
     border-radius: 50%;
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: #ffffff;
+    border: 2px solid #ffffff;
     margin-bottom: -70px;
     pointer-events: none;
 }
+
+/* Info Section */
 .my-info {
-    font-family: var(--font-style);
     font-size: 0.9rem;
-    color: var(--default-font-color);
     padding: 10px 16px;
-    cursor: default;
     background-color: rgba(20, 20, 20, 0.600);
     border-radius: 50px 50px 5px 5px;
 }
+
 .my-info h2 {
-    border-style: solid;
-    border-width: 0 0 2px 0;
+    border-bottom: 2px solid;
     margin-top: 70px;
     text-align: center;
 }
+
 .my-info p {
     font-size: 0.7rem;
     padding: 5px;
@@ -126,45 +146,52 @@ body {
     border: solid var(--color) thin;
     border-radius: 30px 50px 50px 30px;
 }
+
+/* Container Utilities */
 .container::after,
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
+
+/* Email and Experience Highlight */
 .email,
 .exp {
     color: var(--color);
-    cursor: default;
 }
+
+/* Social Media Icons */
 .mysocial {
     display: flex;
     justify-content: center;
-    
 }
+
 .mysocial img {
     width: 35px;
-    height:35px;
+    height: 35px;
     margin: 3px;
     border: solid thin var(--color);
     background-color: var(--transparent-overlay);
 }
+
+/* Responsive Styles */
 @media screen and (max-width: 650px) {
     .me {
-    width: 100%;
+        width: 100%;
         display: block;
     }
-    .my-info h2 {
+    .my-info h2,
+    .my-info p {
         text-align: center;
     }
     .my-info p {
-        text-align: center;
         border-radius: 50px;
     }
     .summary .summarycontent p {
         text-align: justify;
     }
     body {
-        background-image: url("../images/bg/portrait-mode.jpg")!important;
+        background-image: url("../images/bg/portrait-mode.jpg") !important;
     }
 }

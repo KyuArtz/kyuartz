@@ -1,6 +1,9 @@
+/* Default Cursor for .ts-content */
 .ts-content {
     cursor: default;
 }
+
+/* List Items */
 .ts-content li {
     color: var(--default-font-color);
     font-family: sans-serif;
@@ -12,16 +15,21 @@
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
     font-size: 1.0rem;
 }
+
+/* Unordered List */
 .ts-content ul {
     padding-right: 40px;
     overflow-x: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
-/* Hides the scrollbar for Chrome, Safari and Opera */
+
+/* Hide Scrollbar for WebKit Browsers */
 .ts-content ul::-webkit-scrollbar {
     display: none;
 }
+
+/* Background Container */
 .background {
     display: flex;
     justify-content: center;
@@ -35,6 +43,8 @@
     height: 100%;
     padding-top: 81px;
 }
+
+/* Responsive Styling */
 @media screen and (max-width: 500px) {
     .background {
         background-image: url("../images/bg/portrait-mode.jpg");
@@ -43,6 +53,8 @@
         font-size: small;
     }
 }
+
+/* Copyright Notice */
 .copyright p {
     padding: 8px 0;
     text-align: center;

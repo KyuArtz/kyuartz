@@ -1,6 +1,4 @@
-* {
-    -webkit-tap-highlight-color: transparent;
-}
+/* Popup Container */
 .popup {
     width: 450px;
     background: var(--background-color);
@@ -21,11 +19,15 @@
     transition: transform 0.4s;
     box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
 }
+
+/* Open Popup Animation */
 .open-popup {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
     z-index: 1;
 }
+
+/* Popup Image */
 .popup img {
     width: 130px;
     position: absolute;
@@ -35,6 +37,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     pointer-events: none;
 }
+
+/* Popup Title */
 .popup h2 {
     font-size: 2.0rem;
     font-weight: 500;
@@ -47,11 +51,15 @@
     border-bottom-width: thin;
     cursor: default;
 }
+
+/* Popup Text */
 .popup p {
     color: var(--default-font-color);
     cursor: default;
     font-size: 14px;
 }
+
+/* Popup Action Link */
 .popup a {
     padding: 5px;
     font-size: 0.7rem;
@@ -62,6 +70,8 @@
     bottom: 5px;
     transform: translate(-50%);
 }
+
+/* Popup Button */
 .popup button {
     width: 50%;
     margin-top: 30px;
@@ -80,11 +90,15 @@
     cursor: pointer;
     transition: none;
 }
+
+/* Button Hover Effect */
 .popup button:hover {
     border-color: var(--color);
     color: var(--color);
     background: -webkit-linear-gradient(#282831, #1c1c22);
 }
+
+/* Responsive Styles */
 @media(max-width: 500px) {
     .popup {
         width: 300px;

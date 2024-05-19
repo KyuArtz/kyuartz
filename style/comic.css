@@ -1,17 +1,28 @@
+/* List Reset */
 .category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
+
+/* Spacing */
 .top-spacing {
     margin-top: 100px;
 }
+
+/* Slideshow Container */
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: 0 auto;
 }
+
+/* Slides */
+.mySlides {
+    display: none;
+}
+
 .mySlides img {
     position: relative;
     width: 100%;
@@ -24,14 +35,14 @@ ul {
     transition: 0.3s ease-in-out;
     transform: scale(1);
 }
+
 .mySlides img:hover {
     box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
     border: solid thin var(--color);
     transform: scale(1);
 }
-.btnlink:hover {
-    transition: 0.5s ease-in-out;
-}
+
+/* Navigation Buttons */
 .next,
 .prev {
     cursor: pointer;
@@ -47,28 +58,29 @@ ul {
     user-select: none;
     opacity: 0.3;
 }
-/* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 20px 0 0 20px;
 }
-/* Position the "next button" to the left */
+
 .prev {
     left: 0;
     border-radius: 0 20px 20px 0;
 }
-/* On hover, add a black background color with a little bit see-through */
+
 .next:hover,
 .prev:hover {
     background-color: var(--color);
     opacity: 1;
 }
-.mySlides {
-    display: none;
-}
+
+/* Active Slide */
 .active-slide {
     display: block;
 }
+
+/* Comic Title */
 .comic-title {
     color: var(--default-font-color);
     font-size: 0.9rem;
@@ -82,22 +94,27 @@ ul {
     border-radius: 0 10px 10px 0;
     z-index: 1;
 }
+
 .comic-title p {
     display: inline;
     color: var(--color);
 }
+
+/* Comic Chapter */
 .comic-chapter {
     position: absolute;
     top: 10px;
     right: 0;
     padding: 8px 12px;
-    border-radius:10px 0 0 10px;
+    border-radius: 10px 0 0 10px;
     color: var(--default-font-color);
     background-color: var(--overlay);
     font-family: var(--font-style);
     cursor: default;
     z-index: 1;
 }
+
+/* Chapter */
 .chapter {
     color: var(--default-font-color);
     background-color: var(--overlay);
@@ -111,6 +128,8 @@ ul {
     cursor: default;
     border-radius: 0 0 9px 6px;
 }
+
+/* Button Container */
 .btn-container {
     display: inline;
     width: 100%;
@@ -118,6 +137,8 @@ ul {
     bottom: 46px;
     left: 90px;
 }
+
+/* Dots */
 .dot {
     cursor: pointer;
     padding: 5px 11px;
@@ -125,16 +146,25 @@ ul {
     border-radius: 5px;
     transition: 0.5s ease-in-out;
 }
+
 .dot a {
     color: var(--default-font-color);
     text-decoration: none;
     font-family: var(--font-style);
     font-size: small;
 }
+
 .active,
 .dot:hover {
     background-color: var(--color);
 }
+
+/* Hover Transition */
+.btnlink:hover {
+    transition: 0.5s ease-in-out;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 500px) {
     .next,
     .prev {
@@ -143,6 +173,7 @@ ul {
     }
     .mySlides img {
         height: 250px;
+        border-radius: 0;
     }
     .chapter {
         border-radius: 0;
@@ -158,9 +189,6 @@ ul {
     .dot a {
         font-size: 0.5rem;
     }
-    .mySlides img {
-        border-radius: 0;
-    }
     .chapter p {
         font-size: 0.7rem;
     }
@@ -169,17 +197,21 @@ ul {
         transform: scale(1);
     }
 }
+
+/* Fade Animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
+    from {opacity: 0.8;}
+    to {opacity: 1;}
 }
+
 @keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
+    from {opacity: 0.8;}
+    to {opacity: 1;}
 }

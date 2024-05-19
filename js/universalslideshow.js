@@ -1,76 +1,59 @@
 (function() {
+  document.addEventListener('DOMContentLoaded', () => {
+      initSlideshow();
+  });
 
-init(); //on page load - show first slide, hidethe rest
+  function initSlideshow() {
+      const slideshowContainers = document.querySelectorAll('.slideshow-container');
 
-function init() {
+      slideshowContainers.forEach(container => {
+          const slides = container.querySelectorAll('.mySlides');
+          const dots = container.querySelectorAll('.dot');
+          if (slides.length > 0 && dots.length > 0) {
+              slides[0].classList.add('active-slide');
+              dots[0].classList.add('active');
+          }
 
-  parents = document.getElementsByClassName('slideshow-container');
+          // Dot click functionality
+          container.addEventListener('click', (event) => {
+              if (event.target.classList.contains('dot')) {
+                  const index = Array.from(dots).indexOf(event.target);
+                  setActiveSlide(container, index);
+              }
+          });
 
-  for (j = 0; j < parents.length; j++) {
-    var slides = parents[j].getElementsByClassName("mySlides");
-    var dot = parents[j].getElementsByClassName("dot");
-    slides[0].classList.add('active-slide');
-    dot[0].classList.add('active');
+          // Prev/Next click functionality
+          container.querySelectorAll('a').forEach(link => {
+              link.addEventListener('click', (event) => {
+                  event.preventDefault();
+                  if (link.classList.contains('next')) {
+                      changeSlide(container, 1);
+                  } else if (link.classList.contains('prev')) {
+                      changeSlide(container, -1);
+                  }
+              });
+          });
+      });
   }
-}
 
-dot = document.getElementsByClassName('dot'); //dot functionality
+  function setActiveSlide(container, index) {
+      const slides = container.querySelectorAll('.mySlides');
+      const dots = container.querySelectorAll('.dot');
+      
+      slides.forEach(slide => slide.classList.remove('active-slide'));
+      dots.forEach(dot => dot.classList.remove('active'));
 
-for (i = 0; i < dot.length; i++) {
-
-  dot[i].onclick = function() {
-
-    slides = this.parentNode.parentNode.getElementsByClassName("mySlides");
-
-    for (j = 0; j < this.parentNode.children.length; j++) {
-      this.parentNode.children[j].classList.remove('active');
-      slides[j].classList.remove('active-slide');
-      if (this.parentNode.children[j] == this) {
-        index = j;
-      }
-    }
-    this.classList.add('active');
-    slides[index].classList.add('active-slide');
-
+      slides[index].classList.add('active-slide');
+      dots[index].classList.add('active');
   }
-}
-//prev/next functionality
-links = document.querySelectorAll('.slideshow-container a');
 
-for (i = 0; i < links.length; i++) {
-  links[i].onclick = function() {
-    current = this.parentNode;
+  function changeSlide(container, direction) {
+      const slides = container.querySelectorAll('.mySlides');
+      const dots = container.querySelectorAll('.dot');
+      const currentSlide = container.querySelector('.active-slide');
+      const currentIndex = Array.from(slides).indexOf(currentSlide);
+      let newIndex = (currentIndex + direction + slides.length) % slides.length;
 
-    var slides = current.getElementsByClassName("mySlides");
-    var dot = current.getElementsByClassName("dot");
-    curr_slide = current.getElementsByClassName('active-slide')[0];
-    curr_dot = current.getElementsByClassName('active')[0];
-    curr_slide.classList.remove('active-slide');
-    curr_dot.classList.remove('active');
-    if (this.className == 'next') {
-
-      if (curr_slide.nextElementSibling.classList.contains('mySlides')) {
-        curr_slide.nextElementSibling.classList.add('active-slide');
-        curr_dot.nextElementSibling.classList.add('active');
-      } else {
-        slides[0].classList.add('active-slide');
-        dot[0].classList.add('active');
-      }
-
-    }
-
-    if (this.className == 'prev') {
-
-      if (curr_slide.previousElementSibling) {
-        curr_slide.previousElementSibling.classList.add('active-slide');
-        curr_dot.previousElementSibling.classList.add('active');
-      } else {
-        slides[slides.length - 1].classList.add('active-slide');
-        dot[slides.length - 1].classList.add('active');
-      }
-
-    }
-
+      setActiveSlide(container, newIndex);
   }
-}
 })();

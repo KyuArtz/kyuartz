@@ -1,13 +1,17 @@
+/* List Reset */
 .category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
+
+/* Container */
 .cs-container {
     padding: 10px;
     margin-top: 95px;
 }
+
 .cs-container h3 {
     padding: 9px;
     margin: auto;
@@ -20,6 +24,7 @@ ul {
     font-size: 0.9rem;
     color: var(--default-font-color);
 }
+
 .cs-container p {
     text-align: center;
     padding: 9px;
@@ -31,6 +36,8 @@ ul {
     font-size: 0.9rem;
     color: white;
 }
+
+/* Price */
 .price h5 {
     letter-spacing: 5px;
     color: var(--color);
@@ -42,6 +49,8 @@ ul {
     opacity: 0.9;
     cursor: default;
 }
+
+/* Inquire Button */
 .inquire-button {
     text-align: right;
     margin: 20px 0 10px;
@@ -49,6 +58,7 @@ ul {
     background-color: var(--color);
     border-radius: 1px 1px 10px 10px;
 }
+
 .inquire-button a {
     padding: 10px;
     background-color: var(--color);
@@ -58,9 +68,12 @@ ul {
     font-family: var(--font-style);
     transition: 0.4s ease-in-out;
 }
+
 .inquire-button a:hover {
     box-shadow: var(--color) 0 0 10px 0.5px;
 }
+
+/* Responsive Inquire Button */
 @media screen and (max-width: 500px) {
     .inquire-button {
         text-align: center;
@@ -69,19 +82,24 @@ ul {
         text-align: left;
     }
 }
+
+/* Content */
 .cs-content {
     color: white;
     text-align: center;
     padding: 5px 11px 10px;
     margin-bottom: 9px;
-    background-image: url("../images/bg/");
     background-color: rgba(26, 26, 26, 0.5);
     box-shadow: 0 0 5px #0a0a0a;
     border-radius: 10px;
 }
+
+/* Image Container */
 .img-container {
     text-align: center;
 }
+
+/* Image */
 .cs-container img {
     margin: 5px 2px;
     width: 450px;
@@ -93,8 +111,10 @@ ul {
     background-image: var(--content-bg);
     pointer-events: none;
 }
-@media screen and (max-width:500px) {
+
+/* Responsive Image */
+@media screen and (max-width: 500px) {
     .cs-container img {
-       width: 250px;
+        width: 250px;
     }
 }

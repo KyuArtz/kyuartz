@@ -1,3 +1,4 @@
+/* Loader Container */
 .loader {
     position: fixed;
     top: 0;
@@ -11,6 +12,8 @@
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
 }
+
+/* Background Loader */
 .bg-loader {
     background-image: var(--theme);
     position: fixed;
@@ -21,12 +24,8 @@
     background-position: center;
     background-size: cover;
 }
-@media screen and (max-height: 470px) {
-    .loader h2 {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
+
+/* Loader Title */
 .loader h2 {
     font-family: var(--font-style);
     font-size: small;
@@ -38,15 +37,21 @@
     letter-spacing: 3px;
     animation: flicker 1s infinite;
 }
+
+/* Loader Hidden */
 .loader-hidden {
     opacity: 0;
     visibility: hidden;
 }
+
+/* Spinner Styles */
 .spinner {
     border-radius: 50%;
     position: absolute;
     animation-timing-function: ease;
 }
+
+/* Small Spinner */
 .small-spinner {
     width: 50px;
     height: 50px;
@@ -55,6 +60,8 @@
     border-bottom-color: rgba(30, 143, 255, 0);
     animation: rotateCounterclockwise 0.75s infinite;
 }
+
+/* Medium Spinner */
 .medium-spinner {
     width: 75px;
     height: 75px;
@@ -62,6 +69,8 @@
     box-shadow: 0 1px 100px 30px var(--color);
     animation: pulse 0.75s infinite;
 }
+
+/* Large Spinner */
 .large-spinner {
     width: 85px;
     height: 85px;
@@ -70,6 +79,8 @@
     box-shadow: 0 0 1000px 50px var(--color);
     animation: rotateClockwise 0.75s infinite;
 }
+
+/* Keyframe Animations */
 @keyframes pulse {
     from {
         transform: scale(0);
@@ -78,6 +89,7 @@
         transform: scale(1);
     }
 }
+
 @keyframes rotateCounterclockwise {
     from {
         transform: rotate(0turn);
@@ -86,6 +98,7 @@
         transform: rotate(-1turn);
     }
 }
+
 @keyframes rotateClockwise {
     from {
         transform: rotate(0turn);
@@ -94,7 +107,16 @@
         transform: rotate(1turn);
     }
 }
+
 @keyframes flicker {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+/* Media Query */
+@media screen and (max-height: 470px) {
+    .loader h2 {
+        opacity: 0;
+        visibility: hidden;
+    }
 }

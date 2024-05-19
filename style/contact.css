@@ -1,12 +1,17 @@
+/* Body */
 body {
-    background-image: url("../images/bg/landscape-mode-1.jpg")!important;
+    background-image: url("../images/bg/landscape-mode-1.jpg") !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* Contact Overlay */
 .contact-overlay {
     background-color: var(--overlay);
 }
+
+/* Contact Container */
 .contact-container {
     float: left;
     color: var(--default-font-color);
@@ -14,12 +19,15 @@ body {
     padding: 30px 40px 20px;
     width: 50%;
 }
+
+/* Title */
 .title h2 {
     text-align: center;
     cursor: default;
     color: var(--color);
 }
-/* Style inputs with type="text", select elements, and textareas */
+
+/* Input Fields */
 input[type="email"],
 input[type="text"],
 input[type="file"],
@@ -40,12 +48,16 @@ textarea {
     background-color: var(--overlay);
     color: var(--default-font-color);
 }
+
+/* Message Input */
 input[type="message"],
 textarea {
     max-height: 150px;
     height: 150px;
     border-radius: 4px 4px 4px 50px;
 }
+
+/* Submit Button */
 input[type="Submit"] {
     background-color: var(--color);
     font-family: var(--font-style);
@@ -57,9 +69,13 @@ input[type="Submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 }
+
+/* Checkbox */
 input[type="checkbox"] {
     cursor: pointer;
 }
+
+/* File Input */
 input[type="file"] {
     background-color: var(--overlay);
     border: solid 1px var(--color);
@@ -68,9 +84,13 @@ input[type="file"] {
     width: 100%;
     margin-top: 3px;
 }
+
+/* Label */
 label {
     font-size: 0.9rem;
 }
+
+/* Terms of Service Container */
 .tos-container {
     display: flex;
     justify-content: flex-end;
@@ -79,35 +99,29 @@ label {
     font-size: small;
     font-family: var(--font-style);
 }
+
+/* Terms of Service */
 .tos,
 .tos-info {
     display: flex;
     cursor: pointer;
 }
+
+/* Terms of Service Info Image */
 .tos-info img {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     margin-left: 5px;
 }
+
+/* Send Container */
 .send-container {
     display: flex;
     justify-content: flex-start;
 }
-@media screen and (max-width: 500px) {
-    .tos-container {
-        justify-content: center;
-    }
-    input[type="Submit"] {
-        margin-top: 20px;
-    }
-    .send-container {
-        justify-content: center;
-    }
-    .footer {
-        margin-top: 0;
-    }
-}
+
+/* Error Messages */
 #email-error,
 #message-error,
 #username-error,
@@ -122,6 +136,8 @@ label {
     transition: 0.3s ease-in-out;
     cursor: default;
 }
+
+/* Valid Messages */
 #email-valid,
 #message-valid,
 #username-valid,
@@ -136,32 +152,42 @@ label {
     transition: 0.3s ease-in-out;
     cursor: default;
 }
+
+/* Contact Information */
 .my-contact {
     text-align: center;
     color: var(--default-font-color);
     font-family: var(--font-style);
     cursor: default;
 }
+
+/* E-Wallet */
 .e-wallet {
     font-family: var(--font-style);
     color: var(--default-font-color);
     font-size: 0.8rem;
     cursor: default;
 }
+
 .e-wallet h4 {
     background: rgba(12, 12, 20, 0.5);
     padding: 10px;
     margin-top: 50px;
     border-radius: 0 0 30px 30px;
 }
+
+/* Logo View */
 .logo-view img {
     position: relative;
     height: 35px;
 }
+
+/* Payment */
 .payment {
     display: flex;
     justify-content: center;
 }
+
 .payment img {
     padding: 4px;
     margin: 3px;
@@ -170,24 +196,32 @@ label {
     border: solid thin var(--color);
     background-color: var(--transparent-overlay);
 }
+
 .payment img:hover {
     transform: rotate(360deg);
     box-shadow: var(--color) 0px 0px 50px 0.5px;
 }
+
+/* Donation */
 .donate {
     display: flex;
     justify-content: center;
 }
+
+/* GBM Image */
 .gbm img {
     width: 450px;
     transform: scale(1);
     transition: transform 0.4s ease-in-out;
     filter: drop-shadow(0 0 5px rgb(0, 0, 0));
 }
+
 .gbm img:hover {
     transform: scale(0.96);
     filter: drop-shadow(0 0 5px var(--color));
 }
+
+/* Footer */
 .footer {
     position: relative;
     padding: 8px 0;
@@ -198,24 +232,47 @@ label {
     border-top: solid thin var(--color);
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
-.copyright p {
+
+.footer .copyright p {
     text-align: center;
     color: var(--color);
     cursor: default;
 }
+
+/* Responsive Design */
 @media screen and (max-width: 690px) {
     .contact-container {
         width: 100%;
         display: block;
     }
 }
+
 @media screen and (max-width: 450px) {
     .donate img {
         width: 320px;
     }
 }
+
 @media screen and (max-width: 690px) {
     body {
         background-image: url("../images/bg/portrait-mode.jpg");
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tos-container {
+        justify-content: center;
+    }
+
+    input[type="Submit"] {
+        margin-top: 20px;
+    }
+
+    .send-container {
+        justify-content: center;
+    }
+
+    .footer {
+        margin-top: 0;
     }
 }

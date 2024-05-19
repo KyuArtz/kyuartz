@@ -1,13 +1,18 @@
+/* Image Container */
 .image-container {
     width: 100%;
     min-height: 100vh;
 }
+
+/* Gallery Grid */
 .gallary {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     grid-gap: 3px;
     margin-top: 100px;
 }
+
+/* Gallery Images */
 .gallary img {
     width: 100%;
     height: 100%;
@@ -16,12 +21,16 @@
     object-position: center;
     transition: transform 0.3s ease-in-out;
 }
+
+/* Reset List Styles */
 .category-container,
 li,
 ul {
     list-style: none;
     padding-left: 0;
 }
+
+/* Up Container Image */
 .up-container a img {
     background-color: var(--background-color);
     position: fixed;
@@ -34,14 +43,18 @@ ul {
     box-shadow: 0 0 9px #000000;
     z-index: 1;
 }
+
+/* Hover Effect on Gallery Images */
 .gallary img:hover {
     transform: scale(0.98);
     border: solid 2px var(--color);
 }
+
+/* Responsive Styles */
 @media screen and (max-width: 500px) {
     .gallary,
     .gallary img {
-        grid-template-columns: repeat(auto-fit,minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
     .gallary img:hover {
         transform: none;

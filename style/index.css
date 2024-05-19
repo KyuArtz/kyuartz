@@ -1,3 +1,4 @@
+/* Overlay and Popup */
 #overlay {
     position: fixed;
     top: 0;
@@ -8,6 +9,7 @@
     display: none;
     z-index: 1;
 }
+
 #popup {
     position: fixed;
     top: 50%;
@@ -26,6 +28,7 @@
     display: none;
     z-index: 1;
 }
+
 #popup h2 {
     font-size: 2.0rem;
     font-weight: 500;
@@ -38,10 +41,12 @@
     border-bottom-width: thin;
     cursor: default;
 }
+
 #popup p {
     color: var(--default-font-color);
     cursor: default;
 }
+
 button {
     padding: 10px 20px;
     background-color: var(--color);
@@ -51,118 +56,100 @@ button {
     font-family: var(--font-style);
     cursor: pointer;
 }
+
 button:hover {
     background-color: var(--hover-light);
     color: #000000;
 }
-@media(max-width: 500px) {
-    #popup {
-        width: 300px;
-    }
-    #popup p {
-        font-size: x-small;
-    }
-    #popup h2 {
-        font-size: x-large;
-    }
-    #popup button {
-        font-size: 10px;
-    }
-}
+
+/* Slideshow Container */
 .slideshow_container {
     position: relative;
-    margin: 0 auto 0 0;
+    margin: 0 auto;
 }
+
 .mySlides {
     display: none;
 }
+
+.mySlides.active-slide {
+    display: block;
+}
+
 .mySlides img,
-video {
+.mySlides video {
     width: 100%;
     max-height: 100vh;
     height: 100vh;
     object-fit: cover;
-    background-image: var(--content-bg);
     border: solid thin var(--color);
     object-position: center;
-    /*pointer-events: none;*/
 }
+
+/* Navigation Buttons */
 .next,
 .prev {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
-    margin-top: -62px;
-    padding: 50px 16px;
+    margin-top: -32px;
+    padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
     opacity: 0.5;
+    transition: background-color 0.5s ease-in-out;
 }
+
 .next {
     right: 0;
     border-radius: 20px 0 0 20px;
-    background-image: var(--color);
-    transition: all 0.5s ease-in-out;
 }
+
 .prev {
     left: 0;
     border-radius: 0 20px 20px 0;
-    background-image: var(--color);
-    transition: all 0.5s ease-in-out;
 }
+
 .next:hover,
 .prev:hover {
     background-color: var(--color);
     opacity: 1;
 }
-@media screen and (max-width: 500px) {
-    .next,
-    .prev {
-        font-size: 20px;
-        padding: 20px 10px;
-        margin-top: -32px;
-    }
-    .mySlides img,
-    video {
-        height: 60vh;
-        max-height: none;
-        object-fit: contain;
-    }
-}
+
+/* Captions */
 .caption {
+    position: absolute;
     width: 100%;
     color: #f2f2f2;
     background-image: var(--theme);
     font-size: 1.6rem;
     font-family: var(--font-style);
-    position: absolute;
     top: 0;
     text-align: center;
-    cursor: default;
-    height: 99.3%;
     align-content: center;
+    height: 99.3%;
+    cursor: default;
 }
+
 .caption h2 {
-    margin: 0 auto;
     color: var(--color);
     text-shadow: 0 0 10px var(--color);
     letter-spacing: 5px;
 }
+
 .caption p {
     text-shadow: 0 0 5px #000000;
 }
+
 .caption-btn {
     position: absolute;
-    align-content: center;
     width: 100%;
     text-align: center;
-    bottom: 35%;
+    bottom: 30%;
 }
+
 .caption-btn a {
     padding: 10px 20px;
     margin: 2px;
@@ -170,29 +157,26 @@ video {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: var(--font-style);
-    transition: 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
 }
+
 .caption-btn a:hover {
     background-color: var(--hover-light);
     color: rgb(9, 82, 31);
     box-shadow: 0 0 10px var(--color);
 }
-@media screen and (max-width:500px) {
-    .caption {
-        font-size: 0.7rem;
-    }
-    .caption-btn a {
-        font-size: 0.4rem;
-    }
-}
+
+/* Dots */
 .home_slider_dot {
     text-align: center;
     opacity: 0.1;
-    transition: 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
+
 .home_slider_dot:hover {
     opacity: 1;
 }
+
 .dot {
     position: relative;
     bottom: 40px;
@@ -203,24 +187,30 @@ video {
     border-radius: 5px;
     border: solid thin var(--color);
     display: inline-block;
-    transition: 0.6s var(--background-color) ease-in-out;
-    box-shadow: 0 0 5px #0a0a0a;
+    transition: background-color 0.6s ease-in-out;
 }
-.active-dot,
+
+.dot.active-dot,
 .dot:hover {
     background-color: var(--color);
     opacity: 1;
 }
+
+/* Fade Animation */
 .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
+    animation: fade 1.5s;
 }
+
 @keyframes fade {
-    from {opacity: 0.1;}
-    to {opacity: 1;}
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+/* Video Container */
 .video_container {
     display: grid;
     text-align: center;
@@ -230,6 +220,7 @@ video {
     border-radius: 9px;
     padding: 15px;
 }
+
 .video_container h2 {
     cursor: default;
     font-family: var(--font-style);
@@ -237,21 +228,26 @@ video {
     font-size: 1.3rem;
     border-radius: 9px 9px 0 0;
 }
+
+/* Carousel */
 .carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
+
 .carousel_inner {
     display: flex;
     transition: transform 0.3s ease-in-out;
 }
+
 .video {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
     box-sizing: border-box;
     padding: 10px;
 }
+
 .video video {
     width: 100%;
     height: auto;
@@ -260,9 +256,12 @@ video {
     background-color: var(--content-bg);
     transition: all 0.3s ease-in-out;
 }
+
 .video video:hover {
     border: solid thin var(--color);
 }
+
+/* Carousel Navigation */
 .carousel_nav {
     position: absolute;
     top: 50%;
@@ -271,6 +270,7 @@ video {
     justify-content: space-between;
     transform: translateY(-50%);
 }
+
 .carousel_nav button {
     background-color: var(--color);
     border: none;
@@ -280,15 +280,57 @@ video {
     border-radius: 50px;
     cursor: pointer;
 }
+
+/* Media Queries */
 @media (max-width: 768px) {
-    .video {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
+  .video {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
+
+@media (max-width: 500px) {
+  #popup {
+    width: 300px;
+  }
+
+  #popup p {
+    font-size: x-small;
+  }
+
+  #popup h2 {
+    font-size: x-large;
+  }
+
+  #popup button {
+    font-size: 10px;
+  }
+
+  .next,
+  .prev {
+    font-size: 20px;
+    padding: 20px 10px;
+    margin-top: -32px;
+  }
+
+  .mySlides img,
+  .mySlides video {
+    height: 60vh;
+    object-fit: contain;
+  }
+
+  .caption {
+    font-size: 0.7rem;
+  }
+
+  .caption-btn a {
+    font-size: 0.4rem;
+  }
+}
+
 @media (max-width: 480px) {
-    .video {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+  .video {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
