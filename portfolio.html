@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <title>Kyushiartz | Portfolio</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
+  <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/portfolio.css">
   <link rel="stylesheet" href="style/nav.css">
   <link rel="stylesheet" href="style/lightbox.css">
@@ -18,6 +19,7 @@
   <script src="js/button-auto-scroll.js" defer></script>
   <script src="js/lightbox-plus-jquery.js" defer></script>
   <script src="js/filter.js" defer></script>
+  <script src="js/theme-toggle.js"></script>
   <script src="js/current-year.js" defer></script>
 </head>
 
@@ -60,6 +62,12 @@
         </li>
         <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
       </ul>
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -94,17 +102,12 @@
     </div>
   </div>
 
-  <div class="up-container">
-    <a href="#" onclick="topFunction()" id="upBtn" title="Go to top">
-      <img src="images/imgbtn/up-icon.png">
-    </a>
-  </div>
-
   <div class="image-container">
     <div class="gallary" id="gallery">
       <!-- JavaScript will dynamically insert images here -->
     </div>
   </div>
+  <button onclick="topFunction()" id="upBtn" title="Go to top">&#11165;</button>
 
   <div class="footer glass">
     <div class="copyright">

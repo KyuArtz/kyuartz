@@ -1,0 +1,55 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Font Face */
+@font-face {
+    font-family: myFont;
+    src: url("../fonts/squarefont/Square.ttf");
+}
+
+/* Root Variables */
+:root {
+    --theme: linear-gradient(to right, rgb(21, 31, 37, 0.700), rgb(23, 62, 105, 0.700));
+    --background-color: rgba(30, 143, 255);
+    --color: dodgerblue;
+    --default-font-color: #ffffff;
+    --overlay: rgba(10, 18, 24, 0.5);
+    --transparent-overlay: rgba(11, 31, 49, 0.950);
+    --scrollbar-track-color: #09243a;
+    --active: rgba(10, 18, 24, 0.6);
+    --hover-light: rgb(0, 204, 255);
+    --hover-dark: rgb(23, 75, 128);
+    --font-style: myFont, sans-serif;
+    --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
+    --content-bg: radial-gradient(rgb(14 11 11), rgb(22 36 53));
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    background-image: var(--theme);
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color);
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-color);
+}

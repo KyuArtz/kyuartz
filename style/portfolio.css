@@ -31,17 +31,24 @@ ul {
 }
 
 /* Up Container Image */
-.up-container a img {
-    background-color: var(--background-color);
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin: 9px;
-    box-shadow: 0 0 9px #000000;
-    z-index: 1;
+#upBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 1; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--color); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 20px; /* Some padding */
+    border-radius: 15px; /* Rounded corners */
+    
+}
+
+#upBtn:hover {
+    background-color: var(--hover-light); /* Add a dark-grey background on hover */
 }
 
 /* Hover Effect on Gallery Images */
