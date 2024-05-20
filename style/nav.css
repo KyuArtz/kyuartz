@@ -237,7 +237,7 @@ form.search::after {
 }
 
 .search-result ul {
-    height: 250px;
+    max-height: 250px;
     padding-left: 0;
     overflow: auto;
 }
