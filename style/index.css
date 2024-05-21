@@ -315,8 +315,8 @@ button:hover {
 
   .mySlides img,
   .mySlides video {
-    height: 60vh;
-    object-fit: contain;
+    height: 100vh;
+    object-fit: cover;
   }
 
   .caption {
@@ -324,7 +324,7 @@ button:hover {
   }
 
   .caption-btn a {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 }
 
