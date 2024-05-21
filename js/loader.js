@@ -1,29 +1,25 @@
-window.addEventListener("load", () => {
-    const loader = document.querySelector(".loader");
-    const loadingText = document.querySelector(".loading-text");
-    const messages = [
-        "Loading Webpage...",
-        "Almost there...",
-        "Just a moment...",
-        "Thank you for your patience..."
-    ];
-    let messageIndex = 0;
-
-    const interval = setInterval(() => {
-        messageIndex = (messageIndex + 1) % messages.length;
-        loadingText.textContent = messages[messageIndex];
-    }, 2000); // Change text every 2 seconds
-
-    // Remove this line to let the loader remain visible until transition ends
-    // loader.classList.add("loader-hidden");
-
-    loader.addEventListener("transitionend", () => {
-        clearInterval(interval); // Stop changing text when loader is hidden
-        loader.remove();
-    });
-
-    // Add loader-hidden class only after the page has fully loaded and displayed
-    window.setTimeout(() => {
-        loader.classList.add("loader-hidden");
-    }, 100); // Slight delay to ensure everything is ready
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the loader has been shown before
+    if (localStorage.getItem('loaderDisplayed') === 'true') {
+        // Hide the loader if it has been shown before
+        hideLoader();
+    } else {
+        // Show the loader for the first time
+        localStorage.setItem('loaderDisplayed', 'true');
+        window.addEventListener('load', function() {
+            // Add a small delay to ensure the page is fully loaded before hiding the loader
+            setTimeout(hideLoader, 500); // Adjust the delay as necessary
+        });
+    }
 });
+
+function hideLoader() {
+    var loader = document.querySelector('.loader');
+    if (loader) {
+        loader.classList.add('loader-hidden');
+        // Remove the loader from the DOM once hidden
+        setTimeout(function() {
+            loader.remove();
+        }, 750); // Adjust the delay to match the transition duration in CSS
+    }
+}
