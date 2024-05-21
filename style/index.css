@@ -137,6 +137,8 @@ button:hover {
     color: var(--color);
     text-shadow: 0 0 10px var(--color);
     letter-spacing: 5px;
+    font-size: 4.0rem;
+    margin: 0;
 }
 
 .caption p {
@@ -321,6 +323,9 @@ button:hover {
 
   .caption {
     font-size: 0.7rem;
+  }
+  .caption h2 {
+    font-size: 1.0rem;
   }
 
   .caption-btn a {
