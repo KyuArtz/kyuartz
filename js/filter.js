@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = [
     {
+      src: "images/artgallary/Wasteland.jpg",
+      title: "",
+      category: "anime-style"
+    },
+    {
       src: "images/artgallary/Awakened_from_a_deep_slumber (2024).jpg",
       title: "",
       category: "semi-realistic"
