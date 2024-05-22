@@ -246,7 +246,6 @@ button:hover {
 .video {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
-    box-sizing: border-box;
     padding: 10px;
 }
 
@@ -255,7 +254,7 @@ button:hover {
     height: auto;
     border-radius: 9px;
     border: solid thin rgb(0, 0, 0);
-    background-color: var(--content-bg);
+    background-image: var(--content-bg);
     transition: all 0.3s ease-in-out;
 }
 
