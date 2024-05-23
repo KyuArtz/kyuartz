@@ -67,7 +67,11 @@ input[type="Submit"] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+input[type="Submit"]:hover {
+    background-color: var(--hover-light);
 }
 
 /* Checkbox */

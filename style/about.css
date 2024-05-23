@@ -18,6 +18,7 @@ body {
 .summary,
 .experience,
 .program,
+.summary h2,
 .summary p,
 .expcontent h2,
 .expcontent,
@@ -32,6 +33,7 @@ body {
     font-family: var(--font-style);
     color: var(--default-font-color);
     cursor: default;
+    font-size: 1.5rem;
 }
 
 /* Summary Section */
@@ -39,7 +41,6 @@ body {
     text-align: center;
     padding: 20px;
     margin-top: 51px;
-    font-size: 0.9rem;
 }
 
 .summary p {
@@ -52,7 +53,6 @@ body {
     box-shadow: var(--color) 0px 0px 1px 0.5px;
     border-radius: 10px;
     text-align: justify;
-    font-family: sans-serif;
     padding: 25px;
 }
 
@@ -83,10 +83,6 @@ body {
 .program {
     text-align: center;
     padding: 50px;
-}
-
-.program-content h2 {
-    font-size: 0.9rem;
 }
 
 .program-logo img {
@@ -127,7 +123,6 @@ body {
 
 /* Info Section */
 .my-info {
-    font-size: 0.9rem;
     padding: 10px 16px;
     background-color: rgba(20, 20, 20, 0.600);
     border-radius: 50px 50px 5px 5px;
@@ -140,7 +135,7 @@ body {
 }
 
 .my-info p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     padding: 5px;
     background-image: var(--theme);
     border: solid var(--color) thin;

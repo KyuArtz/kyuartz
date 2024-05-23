@@ -1,10 +1,6 @@
 let availableKeywords = [
     { name: 'Home', url: 'index.html' },
     { name: 'Portfolio', url: 'portfolio.html' },
-    { name: 'Portfolio semi-realistic', url: 'portfolio_semi_realistic.html' },
-    { name: 'Portfolio grayscale', url: 'portfolio_grayscale.html' },
-    { name: 'Portfolio anime style', url: 'portfolio_anime_style.html' },
-    { name: 'Portfolio traditional', url: 'portfolio.html_traditional' },
     { name: 'Comic', url: 'comic.html' },
     { name: 'Comic sci-fi', url: 'comic-sci-fi.html' },
     { name: 'Comic fantasy', url: 'comic-fantasy.html' },
