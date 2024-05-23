@@ -255,7 +255,7 @@ label {
 
 @media screen and (max-width: 690px) {
     body {
-        background-image: url("../images/bg/portrait-mode.jpg");
+        background-image: url("../images/bg/portrait-mode.jpg")!important;
     }
 }
 
