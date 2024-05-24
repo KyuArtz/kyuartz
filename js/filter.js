@@ -6,6 +6,26 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "anime-style"
     },
     {
+      src: "images/artgallary/Rayza_character_design.jpg",
+      title: "",
+      category: "semi-realism"
+    },
+    {
+      src: "images/artgallary/Undawn_character.jpg",
+      title: "",
+      category: "semi-realism"
+    },
+    {
+      src: "images/artgallary/Feya_bust_up.jpg",
+      title: "",
+      category: "semi-realism"
+    },
+    {
+      src: "images/artgallary/Elishia_full_body (grayscale).jpg",
+      title: "",
+      category: "grayscale"
+    },
+    {
       src: "images/artgallary/Awakened_from_a_deep_slumber (2024).jpg",
       title: "",
       category: "semi-realism"
