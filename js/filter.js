@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/RB9_cover (2020).jpg",
       title: "",
-      category: "anime-style"
+      category: "semi-realism"
     },
     {
       src: "images/artgallary/Elishia_portrait (2020).jpg",
