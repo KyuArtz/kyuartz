@@ -10,12 +10,6 @@ header {
     z-index: 100000;
 }
 
-/* Glass Effect */
-.glass {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
-
 /* Navigation Menu */
 .nav-menu {
     padding: 0;
@@ -36,7 +30,7 @@ body.light-theme {
 
 /* Dark Theme */
 body.dark-theme {
-    background-color: #000000;
+    background-image: var(--theme-2);
     transition: .5s ease-in-out;
 }
 
@@ -457,7 +451,7 @@ form.search::after {
     position: fixed;
     display: flex;
     left: -100%;
-    top: 29px;
+    top: 79px;
     flex-direction: column;
     background-image: var(--theme);
     min-width: 150px;
@@ -521,7 +515,7 @@ form.search::after {
     padding: 8px 0;
     background-image: var(--theme);
     font-family: var(--font-style);
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     border-top: solid thin var(--color);
     box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
@@ -543,7 +537,6 @@ form.search::after {
     display: inline-block;
     padding: 0 5px;
     text-decoration: none;
-    font-size: 0.5rem;
     transition: 0.5s ease-in-out;
 }
 

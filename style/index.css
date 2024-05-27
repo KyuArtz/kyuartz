@@ -123,7 +123,7 @@ button:hover {
     position: absolute;
     width: 100%;
     color: #f2f2f2;
-    background-image: var(--theme);
+    background-image: var(--theme-overlay);
     font-size: 1.6rem;
     font-family: var(--font-style);
     top: 0;
