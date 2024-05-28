@@ -84,6 +84,7 @@ button:hover {
     object-fit: cover;
     border: solid thin var(--color);
     object-position: center;
+    background-image: var(--content-bg);
 }
 
 /* Navigation Buttons */
