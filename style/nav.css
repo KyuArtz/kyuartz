@@ -125,6 +125,15 @@ a {
     border: solid thin var(--color);
 }
 
+.my-avatar {
+  animation: 3s linear infinite rotate-con;
+}
+
+@keyframes rotate-con {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
+}
+
 /* Nav Links */
 .nav-link,
 .nav-link-dropdown {
