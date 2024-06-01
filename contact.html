@@ -80,15 +80,12 @@
         </div>
 
         <label for="username-field">Name:</label><span id="username-error"></span><span id="username-valid"></span>
-        <input type="text" id="username-field" name="Username" placeholder="Enter your name.."
-          onkeyup="validateInput('username')" required>
+        <input type="text" id="username-field" name="Username" placeholder="Enter your name.." onkeyup="validateInput('username')" required>
 
         <label for="email-field">Email:</label><span id="email-error"></span><span id="email-valid"></span>
-        <input type="email" id="email-field" name="Email" placeholder="Enter your email.."
-          onkeyup="validateInput('email')" required>
+        <input type="email" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateInput('email')" required>
 
-        <label for="commission-select">Commission Type:</label><span id="commission-error"></span><span
-          id="commission-valid"></span>
+        <label for="commission-select">Commission Type:</label><span id="commission-error"></span><span id="commission-valid"></span>
         <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
           <option value="" disabled selected hidden></option>
           <option value="Portrait (Semi-realistic)">Portrait (Semi-realistic)</option>
@@ -111,17 +108,12 @@
           <option value="Landscape (Grayscale)">Landscape (Grayscale)</option>
         </select>
 
-        <label for="message-field">Commission Details:</label><span id="message-error"></span><span
-          id="message-valid"></span>
-        <textarea id="message-field" name="Commssion Details"
-          placeholder="Details about your commissioned art request.." onkeyup="validateInput('message')"
-          required></textarea>
+        <label for="message-field">Commission Details:</label><span id="message-error"></span><span id="message-valid"></span>
+        <textarea id="message-field" name="Commssion Details" placeholder="Details about your commissioned art request.." onkeyup="validateInput('message')" required></textarea>
 
         <div class="uploadimg-container">
-          <label class="upload" for="myFile">Upload sample: (Optional)</label><span id="file-error"></span><span
-            id="file-valid"></span>
-          <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image"
-            onchange="validateFile()">
+          <label class="upload" for="myFile">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+          <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()">
           <img id="image-preview" src="#" alt="Uploaded Image" style="display: none; max-width: 100%; height: auto;">
         </div>
 
