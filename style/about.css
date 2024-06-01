@@ -111,6 +111,7 @@ body {
     margin: 8px;
     padding: 10px;
     border-radius: 9px;
+    border: solid thin var(--color);
 }
 
 .card img {
