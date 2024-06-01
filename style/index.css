@@ -15,18 +15,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('../images/bg/landscape-mode.jpg');
-    background-position: center;
-    background-size: cover;
+    background-image: var(--theme);
     color: var(--default-font-color);
     padding: 30px;
-    border-radius: 6px;
+    border-radius: 10px;
     border: solid thin var(--color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     font-family: var(--font-style);
     display: none;
     z-index: 1;
+}
+
+#popup img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  right: -55px;
+  top: -55px;
+  border: solid thin var(--color);
+  filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.5));
 }
 
 #popup h2 {
@@ -316,6 +325,11 @@ button:hover {
 @media (max-width: 500px) {
   #popup {
     width: 300px;
+  }
+
+  #popup img {
+    width: 120px;
+    height: 120px;
   }
 
   #popup p {
