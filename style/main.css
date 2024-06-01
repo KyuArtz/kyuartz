@@ -13,7 +13,7 @@
 /* Root Variables */
 :root {
     --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(23, 62, 105));
-    --theme-2: linear-gradient(to right, rgb(19, 18, 18), rgb(19, 18, 18));
+    --theme-2: linear-gradient(to right, rgb(26, 26, 26), rgb(26, 26, 26));
     --theme-overlay: linear-gradient(to right, rgb(21, 31, 37, 0.650), rgb(23, 62, 105, 0.650));
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;

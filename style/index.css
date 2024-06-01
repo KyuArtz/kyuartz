@@ -135,8 +135,8 @@ button:hover {
 }
 
 .caption h2 {
-    color: var(--color);
-    text-shadow: 0 0 10px var(--color);
+    color: var(--default-font-color);
+    text-shadow: 0 0 15px var(--color);
     letter-spacing: 5px;
     font-size: 4.0rem;
     margin: 0;
@@ -144,18 +144,22 @@ button:hover {
 
 .caption p {
     text-shadow: 0 0 5px #000000;
+    text-decoration: underline;
 }
 
 .caption-btn {
     position: absolute;
     width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    bottom: 30%;
+    bottom: 25%;
 }
 
 .caption-btn a {
     padding: 10px 20px;
     margin: 2px;
+    width: 15%;
     background: var(--color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -165,7 +169,7 @@ button:hover {
 
 .caption-btn a:hover {
     background-color: var(--hover-light);
-    color: rgb(9, 82, 31);
+    color: #000000;
     box-shadow: 0 0 10px var(--color);
 }
 
@@ -257,6 +261,7 @@ button:hover {
     border: solid thin rgb(0, 0, 0);
     background-image: var(--content-bg);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .video video:hover {
@@ -268,9 +273,6 @@ button:hover {
     position: absolute;
     top: 50%;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
 }
 
 .carousel_nav button {
@@ -281,6 +283,26 @@ button:hover {
     font-size: 1.0rem;
     border-radius: 50px;
     cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+.carousel-prev,
+.carousel-next {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+  background-color: var(--hover-light);
 }
 
 /* Media Queries */
@@ -325,11 +347,17 @@ button:hover {
     font-size: 0.7rem;
   }
   .caption h2 {
-    font-size: 1.0rem;
+    font-size: 1.5rem;
+  }
+
+  .caption-btn {
+    flex-direction: column;
+    padding: 0 50px;
   }
 
   .caption-btn a {
     font-size: 0.6rem;
+    width: unset;
   }
 }
 
