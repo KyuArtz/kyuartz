@@ -1,0 +1,64 @@
+/* Default Cursor for .pp-content */
+.pp-content {
+    cursor: default;
+}
+
+.pp-content h3 {
+    color: var(--color);
+    font-family: sans-serif;
+    margin: 5px;
+    padding: 12px;
+    font-size: 1.0rem;
+    background-image: var(--theme-overlay);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* List Items */
+.pp-content li {
+    color: var(--default-font-color);
+    font-family: sans-serif;
+    margin: 5px;
+    list-style-image: url("../images/bullet/n-bullet.png");
+    padding: 12px;
+    font-size: 1.0rem;
+    text-align: justify;
+}
+
+/* Unordered List */
+.pp-content ul {
+    padding-right: 40px;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide Scrollbar for WebKit Browsers */
+.pp-content ul::-webkit-scrollbar {
+    display: none;
+}
+
+/* Background Container */
+.background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-image: url("../images/bg/landscape-mode.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 81px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 500px) {
+    .background {
+        background-image: url("../images/bg/portrait-mode.jpg");
+    }
+    .pp-content li {
+        font-size: small;
+    }
+}
