@@ -23,7 +23,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     font-family: var(--font-style);
-    display: none;
+    display: ;
     z-index: 1;
 }
 
