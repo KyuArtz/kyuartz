@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Kyushiartz | About Me</title>
+  <link rel="shortcut icon" type="image/png" href="../images/favicon/rb9.ico">
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/about.css">
+  <link rel="stylesheet" href="../style/nav.css">
+  <link rel="stylesheet" href="../style/loader.css">
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script src="../js/loader.js" defer></script>
+  <script src="../js/hamburger.js" defer></script>
+  <script src="../js/search.js" async></script>
+  <script src="../js/theme-toggle.js"></script>
+  <script src="../js/current-year.js" defer></script>
+</head>
+
+<body>
+
+  <div class="loader glass" oncontextmenu="return false">
+    <div class="bg-loader"></div>
+    <h2 class="loading-text">Loading Webpage...</h2>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
+
+  <header>
+    <nav class="navbar glass">
+      <a href="../html/index.html" class="nav-brand">
+        <div class="brand">Kyu</div>
+        <img src="../images/myavatarlogo/avatar.ico" class="my-avatar" alt="Avatar">
+      </a>
+      <form class="search" onsubmit="return false;">
+        <input type="search" id="input-box" autocomplete="off" placeholder="Quick Search..." name="search">
+        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search-result glass" style="display: none;"></div>
+      </form>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../html/index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+        <li class="nav-item"><a href="../html/portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> CONTENT &#10095;</a>
+          <div id="myDropdown" class="dropdown-content glass">
+            <h3>CONTENT</h3>
+            <a href="../html/comic.html"><i class="fa-solid fa-file"></i> Comic</a>
+            <a href="../html/maintenance.html"><i class="fa-solid fa-file"></i> Original Character's</a>
+            <a href="../html/commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
+            <a href="../html/terms_of_service.html"><i class="fa-solid fa-file"></i> Terms of Service</a>
+          </div>
+        </li>
+        <li class="nav-item active-nav"><a href="../html/about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
+        <li class="nav-item"><a href="../html/contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle-checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="card-overlay">
+    <div class="me">
+      <div class="card glass">
+        <img src="../images/myprofile/me.jpg" oncontextmenu="return false">
+        <div class="my-info">
+          <h2>Paul Roman</h2>
+          <p class="exp"><i class="fa-solid fa-pencil"></i> Digital Illustrator</p>
+          <p class="exp"><i class="fa-solid fa-pencil"></i> Character Designer</p>
+          <br>
+          <p class="email"><i class="fa-solid fa-envelope"></i> kyuushi992@gmail.com</p>
+          <div class="mysocial">
+            <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="../images/imgbtn/fb.png"></a>
+            <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="../images/imgbtn/yt.png"></a>
+            <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="../images/imgbtn/ast.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="summary">
+      <h2>SUMMARY</h2>
+      <div class="summarycontent">
+        <p>
+          Hello, I'm Paul Roman, a self-taught freelance artist who has been passionate about drawing since my early
+          childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm.
+          Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities
+          and gain more experience.
+          Despite being a self-learner, I remain persistent and never give up. After four years of focusing on
+          traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the
+          popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into
+          digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While
+          adapting to the challenges presented by digital art techniques, I eventually became comfortable with the
+          process.
+        </p>
+      </div>
+    </div>
+    <div class="experience">
+      <div class="expcontent" style="text-align:center">
+        <h2>EXPERIENCE</h2>
+        <P>Self taught</P>
+        <p>Freelance</p>
+      </div>
+    </div>
+    <div class="program">
+      <div class="program-content" style="text-align:center">
+        <h2>PROGRAMS I USE TO DRAW</h2>
+        <div class="program-logo">
+          <img src="../images/applogo/ibp.png">
+          <img src="../images/applogo/clip.jpg">
+          <img src="../images/applogo/adob.png">
+          <img src="../images/applogo/krit.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer glass">
+    <div class="copyright">
+      <p>© 2022 &mdash; <span id="currentyear"></span> Kyushiartz, All rights reserved</p>
+      <div class="footer-container">
+        <a class="detail" href="../html/terms_of_service.html"> Terms of Service</a>
+        <a class="detail" href="../html/privacy-policy.html">Privacy Policy</a>
+        <a class="detail" href="../html/contact.html"> Contact Me</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
