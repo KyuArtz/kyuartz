@@ -6,7 +6,6 @@ header {
     top: 0;
     border: solid var(--color);
     border-width: 0 0 1px 0;
-    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.5);
     z-index: 100000;
 }
 
@@ -413,7 +412,6 @@ form.search::after {
     border-width: 0 0 1px 0;
     border-color: var(--color);
     top: 50px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     z-index: 99;
 }
 
