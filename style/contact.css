@@ -236,7 +236,6 @@ label {
     font-family: var(--font-style);
     font-size: 0.6rem;
     border-top: solid thin var(--color);
-    box-shadow: 0 -8px 9px 0 rgba(0, 0, 0, 0.5);
 }
 
 .footer .copyright p {
