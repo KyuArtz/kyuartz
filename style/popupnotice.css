@@ -11,7 +11,7 @@
     text-align: center;
     font-family: var(--font-style);
     padding: 0 30px 30px;
-    background-image: url("../images/bg/landscape-mode.jpg");
+    background-image: var(--theme);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,7 +34,8 @@
     margin-top: -40px;
     left: 370px;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: solid thin var(--color);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     pointer-events: none;
 }
 
