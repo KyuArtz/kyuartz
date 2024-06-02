@@ -13,6 +13,7 @@ let availableKeywords = [
     { name: 'Commission sheet landscape', url: 'commission-sheet-landscape.html' },
     { name: 'Commission sheet emote', url: 'commission-sheet-emote.html' },
     { name: 'Terms of service', url: 'terms_of_service.html' },
+    { name: 'Privacy policy', url: 'privacy-policy.html' },
     { name: 'About me', url: 'about.html' },
     { name: 'contact', url: 'contact.html' },
 ];
