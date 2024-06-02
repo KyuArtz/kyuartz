@@ -25,6 +25,11 @@
     scrollbar-width: none; /* Firefox */
 }
 
+.ts-content ul a {
+    text-decoration: underline;
+    color: var(--color);
+}
+
 /* Hide Scrollbar for WebKit Browsers */
 .ts-content ul::-webkit-scrollbar {
     display: none;

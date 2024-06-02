@@ -3,19 +3,30 @@
     cursor: default;
 }
 
-.pp-content h3 {
-    color: var(--color);
-    font-family: sans-serif;
-    margin: 5px;
-    padding: 12px;
-    font-size: 1.0rem;
+.overlay {
     background-image: var(--theme-overlay);
     border-radius: 10px;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+.pp-content h1, h2 {
+    color: var(--color);
+    font-family: var(--font-style);
+    font-weight: 500;
+    margin: 5px;
+    padding: 12px;
+}
+
+.pp-content h1 {
+    font-size: 1.5rem;
+}
+
+.pp-content h2 {
+    font-size: 1.1rem;
+}
+
 /* List Items */
-.pp-content li {
+.pp-content li, p {
     color: var(--default-font-color);
     font-family: sans-serif;
     margin: 5px;
@@ -31,6 +42,11 @@
     overflow-x: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
+}
+
+.pp-content ul a {
+    text-decoration: underline;
+    color: var(--color);
 }
 
 /* Hide Scrollbar for WebKit Browsers */
