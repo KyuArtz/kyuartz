@@ -367,7 +367,7 @@ form.search::after {
     background-color: var(--color);
     font-family: var(--font-style);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     cursor: default;
     padding: 5px;
     margin: 0;
@@ -383,7 +383,7 @@ form.search::after {
     text-decoration: none;
     text-align: left;
     font-family: var(--font-style);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     transition: 0.5s ease-in-out;
 }
 
@@ -478,7 +478,7 @@ form.search::after {
     background-color: var(--color);
     font-family: var(--font-style);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     cursor: default;
     padding: 5px;
     margin: 0;
@@ -489,7 +489,7 @@ form.search::after {
 }
 
 .category-item a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: var(--font-style);
     width: 100%;
     transition: 0.5s ease-in-out;
