@@ -1,6 +1,7 @@
 /* Default Cursor for .ts-content */
 .ts-content {
     cursor: default;
+    margin-top: 100px;
 }
 
 /* List Items */
@@ -35,26 +36,8 @@
     display: none;
 }
 
-/* Background Container */
-.background {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    background-image: url("../images/bg/landscape-mode.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    padding-top: 81px;
-}
-
 /* Responsive Styling */
 @media screen and (max-width: 500px) {
-    .background {
-        background-image: url("../images/bg/portrait-mode.jpg");
-    }
     .ts-content li {
         font-size: small;
     }

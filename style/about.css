@@ -1,11 +1,3 @@
-/* Global Styles */
-body {
-    background-image: url("../images/bg/landscape-mode.jpg") !important;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /* Overlay Classes */
 .card-overlay,
 .summary,
@@ -14,16 +6,21 @@ body {
     background-color: var(--overlay);
 }
 
+.summary h2,
+.expcontent h2,
+.program-content h2 {
+    font-family: var(--font-style);
+    font-size: 1.5rem;
+}
+
+
 .card-overlay,
 .summary,
 .experience,
 .program,
-.summary h2,
 .summary p,
-.expcontent h2,
 .expcontent,
 .expcontent p,
-.program-content h2,
 .program-logo img,
 .my-info,
 .my-info h2,
@@ -50,7 +47,8 @@ body {
 .summarycontent {
     display: flex;
     background-image: var(--theme);
-    box-shadow: var(--color) 0px 0px 1px 0.5px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
+    border: solid thin var(--color);
     border-radius: 10px;
     text-align: justify;
     padding: 25px;
@@ -73,7 +71,8 @@ body {
     margin: 5px;
     display: inline-block;
     background-image: var(--theme);
-    box-shadow: var(--color) 0px 0px 1px 0.5px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
+    border: solid thin var(--color);
     border-radius: 10px;
     width: 175px;
     font-size: 1rem;
@@ -106,7 +105,7 @@ body {
 }
 
 .card {
-    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
     background-image: var(--theme);
     margin: 8px;
     padding: 10px;
@@ -186,8 +185,5 @@ body {
     }
     .summary .summarycontent p {
         text-align: justify;
-    }
-    body {
-        background-image: url("../images/bg/portrait-mode.jpg") !important;
     }
 }

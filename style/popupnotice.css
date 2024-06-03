@@ -1,7 +1,6 @@
 /* Popup Container */
 .popup {
     width: 450px;
-    background: var(--background-color);
     border-radius: 6px;
     border: solid thin var(--color);
     position: fixed;

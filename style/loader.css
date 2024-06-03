@@ -7,15 +7,14 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+    background-image: inherit;
     align-items: center;
-    background-image: var(--theme);
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
 }
 
 /* Background Loader */
 .bg-loader {
-    background-image: var(--theme);
     position: fixed;
     top: 0;
     left: 0;

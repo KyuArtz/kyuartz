@@ -1,11 +1,3 @@
-/* Body */
-body {
-    background-image: url("../images/bg/landscape-mode.jpg") !important;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /* Contact Overlay */
 .contact-overlay {
     background-color: var(--overlay);
@@ -255,12 +247,6 @@ label {
 @media screen and (max-width: 450px) {
     .donate img {
         width: 320px;
-    }
-}
-
-@media screen and (max-width: 690px) {
-    body {
-        background-image: url("../images/bg/portrait-mode.jpg")!important;
     }
 }
 
