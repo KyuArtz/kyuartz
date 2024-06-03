@@ -12,12 +12,12 @@
 
 /* Root Variables */
 :root {
-    --theme: linear-gradient(to right, rgb(21, 31, 37), rgb(23, 62, 105));
-    --theme-2: linear-gradient(to right, rgb(26, 26, 26), rgb(26, 26, 26));
+    --theme: linear-gradient(to right, rgb(26, 27, 32), rgb(26, 27, 32));
+    --theme-2: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
     --theme-overlay: linear-gradient(to right, rgb(21, 31, 37, 0.600), rgb(23, 62, 105, 0.600));
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;
-    --default-font-color: #ffffff;
+    --default-font-color: rgb(230, 230, 230);
     --overlay: rgba(10, 18, 24, 0.5);
     --transparent-overlay: rgba(11, 31, 49, 0.950);
     --scrollbar-track-color: #09243a;

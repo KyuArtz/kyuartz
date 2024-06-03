@@ -31,7 +31,6 @@ ul {
     object-position: center;
     border-radius: 9px;
     background: var(--content-bg);
-    box-shadow: var(--color) 0px 0px 4px 0.5px;
     transition: 0.3s ease-in-out;
     transform: scale(1);
 }
