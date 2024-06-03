@@ -8,9 +8,11 @@
 
 .summary h2,
 .expcontent h2,
-.program-content h2 {
+.program-content h2,
+.my-info h2 {
     font-family: var(--font-style);
     font-size: 1.5rem;
+    color: var(--color);
 }
 
 
@@ -23,7 +25,6 @@
 .expcontent p,
 .program-logo img,
 .my-info,
-.my-info h2,
 .my-info p,
 .email,
 .exp {

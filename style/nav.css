@@ -20,7 +20,7 @@ header {
 }
 
 /* Light Theme */
-body.light-theme {
+body.default-theme {
     background-image: var(--theme);
     background-color: var(--color);
     color: var(--color);
@@ -28,7 +28,7 @@ body.light-theme {
 }
 
 /* Dark Theme */
-body.dark-theme {
+body.custom-theme {
     background-image: var(--theme-2);
     transition: .5s ease-in-out;
 }
