@@ -231,7 +231,7 @@ button:hover {
     display: grid;
     text-align: center;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
-    background-image: var(--theme);
+    background-image: inherit;
     border: solid thin var(--color);
     margin: 9px;
     border-radius: 9px;

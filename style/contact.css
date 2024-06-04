@@ -1,6 +1,9 @@
 /* Contact Overlay */
 .contact-overlay {
-    background-color: var(--overlay);
+    background-image: url("../images/home-page-cover/Wasteland.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Contact Container */
@@ -221,23 +224,16 @@ label {
 
 /* Footer */
 .footer {
-    position: relative;
-    padding: 8px 0;
     margin-top: 230px;
-    background-image: var(--theme);
-    font-family: var(--font-style);
-    font-size: 0.6rem;
-    border-top: solid thin var(--color);
-}
-
-.footer .copyright p {
-    text-align: center;
-    color: var(--color);
-    cursor: default;
+    background-color: unset !important;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 690px) {
+    .contact-overlay {
+        background-image: url('../images/bg/portrait-mode.jpg');
+    }
+
     .contact-container {
         width: 100%;
         display: block;

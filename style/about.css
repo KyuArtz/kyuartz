@@ -1,5 +1,11 @@
 /* Overlay Classes */
-.card-overlay,
+.card-overlay {
+    background-image: url('../images/home-page-cover/Wasteland.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .summary,
 .experience,
 .program {
@@ -14,7 +20,6 @@
     font-size: 1.5rem;
     color: var(--color);
 }
-
 
 .card-overlay,
 .summary,
@@ -173,6 +178,9 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 650px) {
+    .card-overlay {
+        background-image: url('../images/bg/portrait-mode.jpg');
+    }
     .me {
         width: 100%;
         display: block;
