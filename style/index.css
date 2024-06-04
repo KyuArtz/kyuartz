@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: var(--theme);
+    background-image: inherit;
     color: var(--default-font-color);
     padding: 30px;
     border-radius: 10px;
@@ -167,10 +167,10 @@ button:hover {
 
 .caption-btn a {
     padding: 10px 20px;
-    margin: 2px;
+    margin: 5px;
     width: 15%;
     background: var(--color);
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     font-family: var(--font-style);
     transition: background-color 0.5s ease-in-out;
