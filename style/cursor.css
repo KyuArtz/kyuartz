@@ -1,0 +1,23 @@
+body {
+  cursor: none; /* Hide the default cursor */
+}
+
+.custom-cursor {
+  width: 32px; /* Adjust the size */
+  height: 32px; /* Adjust the size */
+  position: absolute;
+  pointer-events: none; /* Make sure the cursor element does not block interactions */
+  background: url('../images/imgbtn/question-mark.png') no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%); /* Center the cursor */
+  transition: transform 0.1s; /* Optional: Add some smoothness */
+}
+
+.hover-element {
+  /* Elements that trigger cursor change */
+}
+
+.custom-cursor.hover {
+  background: url('../images/imgbtn/question-mark.png') no-repeat center center;
+  background-size: contain;
+}
