@@ -514,8 +514,7 @@ form.search::after {
 }
 
 .footer-container {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .copyright p {
@@ -528,7 +527,6 @@ form.search::after {
 .detail {
     margin-top: 5px;
     color: rgb(255, 255, 255);
-    display: inline-block;
     padding: 0 5px;
     text-decoration: none;
     transition: 0.5s ease-in-out;
@@ -537,4 +535,17 @@ form.search::after {
 .detail:hover {
     color: var(--color);
     text-decoration: underline;
+}
+
+.social {
+    position: relative;
+    margin: 10px 0 auto;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid thin var(--color);
+    margin: auto 3px;
 }
