@@ -62,11 +62,9 @@
 /* Maintenance Link */
 .maintenance_body a {
     padding: 10px 50px;
-    background: -webkit-linear-gradient(#282831, #1c1c22);
+    background-color: var(--color);
     color: var(--default-font-color);
-    border-style: solid;
-    border-width: thick;
-    border-color: #333;
+    border: solid thin;
     font-family: var(--font-style);
     border-radius: 9px;
     cursor: pointer;
@@ -76,19 +74,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: background-color 0.5s ease-in-out;
 }
 
 /* Maintenance Link Hover */
 .maintenance_body a:hover {
-    border-color: var(--color);
-    color: var(--color);
-    background: -webkit-linear-gradient(#282831, #1c1c22);
+    background-color: var(--hover-light);
 }
 
 /* Media Queries */
 @media screen and (max-width: 500px) {
     .maintenance_body h1 {
-        font-size: 1.5rem;
+        font-size: 2.0rem;
     }
 
     .maintenance_body p {

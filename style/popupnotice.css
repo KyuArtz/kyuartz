@@ -11,9 +11,6 @@
     font-family: var(--font-style);
     padding: 0 30px 30px;
     background-image: var(--theme);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     visibility: hidden;
     transition: transform 0.4s;
     box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
@@ -76,13 +73,9 @@
     width: 50%;
     margin-top: 30px;
     padding: 10px 0;
-    background: #117cc4;
-    background-image: var(--theme);
+    background-color: var(--color);
     color: var(--defaut-font-color);
-    border-left-width: thick;
-    border-right-width: thick;
-    border-style: solid;
-    border-color: #333;
+    border: solid thin;
     outline: none;
     font-size: 15px;
     font-family: var(--font-style);
@@ -93,9 +86,7 @@
 
 /* Button Hover Effect */
 .popup button:hover {
-    border-color: var(--color);
-    color: var(--color);
-    background: -webkit-linear-gradient(#282831, #1c1c22);
+    background-color: var(--hover-light);
 }
 
 /* Responsive Styles */
