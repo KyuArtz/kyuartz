@@ -225,7 +225,7 @@ label {
 /* Footer */
 .footer {
     margin-top: 230px;
-    background-color: unset !important;
+    background-image: unset !important;
 }
 
 /* Responsive Design */
