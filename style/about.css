@@ -33,7 +33,7 @@
 .my-info p,
 .email,
 .exp {
-    font-family: var(--font-style);
+    font-family: sans-serif;
     color: var(--default-font-color);
     cursor: default;
     font-size: 1.5rem;
