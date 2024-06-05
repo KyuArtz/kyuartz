@@ -7,7 +7,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: inherit;
+    background-image: var(--background-color);
     align-items: center;
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
@@ -21,7 +21,7 @@
     width: 100vw;
     height: 100vh;
     background-image: url('../images/bg/landscape-mode.jpg');
-    background-color: inherit;
+    background-color: var(--background-color);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
