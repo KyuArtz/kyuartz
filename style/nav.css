@@ -290,7 +290,7 @@ form.search::after {
         top: 51px;
         gap: 0;
         flex-direction: column;
-        background-color: var(--background-color);
+        background-color: var(--theme);
         width: 100%;
         height: 100vh;
         justify-content: center;
