@@ -7,7 +7,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: var(--theme);
+    background-image: inherit;
     align-items: center;
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 80;
@@ -20,8 +20,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/bg/landscape-mode.jpg');
-    background-color: var(--background-color);
+    /*background-image: url('../images/bg/landscape-mode.jpg');*/
+    background-image: inherit;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -125,6 +125,6 @@
 
 @media screen and (max-width: 500px) {
     .bg-loader {
-        background-image: url('../images/bg/portrait-mode.jpg');
+        /*background-image: url('../images/bg/portrait-mode.jpg');*/
     }
 }
