@@ -122,9 +122,6 @@
 }
 
 @media screen and (max-width: 500px) {
-    .bg-loader {
-        /*background-image: url('../images/bg/portrait-mode.jpg');*/
-    }
     .loader h2 {
         display: none;
     }
