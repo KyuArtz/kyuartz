@@ -4,6 +4,10 @@
     margin-top: 90px;
 }
 
+strong {
+    color: var(--color);
+}
+
 .overlay {
     background-image: var(--theme-overlay);
     border-radius: 10px;

@@ -4,6 +4,10 @@
     margin-top: 100px;
 }
 
+strong {
+    color: var(--color);
+}
+
 /* List Items */
 .ts-content li {
     color: var(--default-font-color);
