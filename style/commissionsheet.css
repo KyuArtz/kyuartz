@@ -35,6 +35,12 @@ ul {
     font-family: var(--font-style);
     font-size: 0.9rem;
     color: white;
+    box-shadow: 0 0 5px #0a0a0a;
+}
+
+.price {
+    background-color: var(--overlay);
+    border-radius: 9px;
 }
 
 /* Price */
