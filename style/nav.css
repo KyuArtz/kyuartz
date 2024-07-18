@@ -401,6 +401,7 @@ form.search::after {
 
 .category-navigation h1 {
     text-align: center;
+    letter-spacing: 3px;
     font-family: var(--font-style);
     font-size: 1.1rem;
     color: var(--color);
