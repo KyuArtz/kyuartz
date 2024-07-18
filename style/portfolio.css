@@ -8,7 +8,7 @@
 .gallary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    margin-top: 96px;
+    margin-top: 100px;
 }
 
 /* Gallery Images */
