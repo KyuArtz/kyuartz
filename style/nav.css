@@ -442,7 +442,7 @@ form.search::after {
     position: fixed;
     display: flex;
     left: -100%;
-    top: 83px;
+    top: 81px;
     flex-direction: column;
     background-image: var(--theme);
     min-width: 150px;
