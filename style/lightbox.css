@@ -53,7 +53,7 @@ body.lb-disable-scrolling {
     margin-top: 15px;
     border-radius: 5px;
     color: var(--color);
-    background-image: var(--theme);
+    background-image: var(--content-bg);
     box-shadow: 0 0 5px 0 rgb(0, 0, 0);
 }
 

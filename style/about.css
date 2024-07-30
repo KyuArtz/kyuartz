@@ -52,7 +52,7 @@
 
 .summarycontent {
     display: flex;
-    background-image: var(--theme);
+    background-image: var(--content-bg);
     box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
     border: solid thin var(--color);
     border-radius: 10px;
@@ -76,7 +76,7 @@
     padding: 10px;
     margin: 5px;
     display: inline-block;
-    background-image: var(--theme);
+    background-image: var(--content-bg);
     box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
     border: solid thin var(--color);
     border-radius: 10px;
@@ -112,7 +112,7 @@
 
 .card {
     box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
-    background-image: var(--theme);
+    background-image: var(--content-bg);
     margin: 8px;
     padding: 10px;
     border-radius: 9px;
@@ -143,7 +143,7 @@
 .my-info p {
     font-size: 0.9rem;
     padding: 5px;
-    background-image: var(--theme);
+    background-image: var(--content-bg);
     border: solid var(--color) thin;
     border-radius: 30px 50px 50px 30px;
 }
