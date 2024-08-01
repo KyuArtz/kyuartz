@@ -255,7 +255,7 @@ form.search::after {
     font-family: var(--font-style);
     font-size: small;
     color: #ffffff;
-    background: var(--theme);
+    background: var(--content-bg);
     border-radius: 0 0 10px 10px;
     margin: 0 auto;
     text-align: center;
