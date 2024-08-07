@@ -29,6 +29,25 @@
     --content-bg: radial-gradient(rgb(14 11 11), rgb(22 36 53));
 }
 
+/* Root Variables
+:root {
+    --theme: linear-gradient(to right, rgb(32, 26, 26), rgb(51, 40, 40));
+    --theme-2: linear-gradient(to right, rgb(32, 26, 26), rgb(95, 31, 31));
+    --theme-overlay: linear-gradient(to right, rgba(32, 26, 26, 0.6), rgba(51, 40, 40, 0.6));
+    --background-color: rgb(255, 30, 30);
+    --color: rgb(255, 30, 30);
+    --default-font-color: rgb(230, 230, 230);
+    --overlay: rgba(24, 10, 10, 0.5);
+    --transparent-overlay: rgba(49, 11, 11, 0.95);
+    --scrollbar-track-color: #3a0909;
+    --active: rgba(24, 10, 10, 0.6);
+    --hover-light: rgb(255, 0, 0);
+    --hover-dark: rgb(128, 23, 23);
+    --font-style: myFont, sans-serif;
+    --brand-color: -webkit-linear-gradient(left, rgb(255, 30, 30), rgb(255, 0, 0));
+    --content-bg: radial-gradient(rgb(14, 11, 11), rgb(53, 22, 22));
+} */
+
 /* Default Theme */
 body.default-theme {
     background-image: var(--theme);
