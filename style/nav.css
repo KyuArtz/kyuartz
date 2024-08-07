@@ -366,6 +366,8 @@ form.search::after {
     text-align: left;
     font-family: var(--font-style);
     font-size: 0.8rem;
+    margin: 3px;
+    border-radius: 9px;
     transition: 0.5s ease-in-out;
 }
 
@@ -475,6 +477,8 @@ form.search::after {
     font-size: 0.8rem;
     font-family: var(--font-style);
     width: 100%;
+    margin: 3px;
+    border-radius: 9px;
     transition: 0.5s ease-in-out;
 }
 
