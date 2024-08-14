@@ -82,7 +82,7 @@ ul {
 /* Comic Title */
 .comic-title {
     color: var(--default-font-color);
-    font-size: 0.9rem;
+    font-size: 1.3rem;
     padding: 8px 12px;
     position: absolute;
     top: 10px;
@@ -179,7 +179,7 @@ ul {
     }
     .comic-title,
     .comic-chapter {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     .dot {
         bottom: 45px;
