@@ -46,7 +46,7 @@
 }
 
 /* Maintenance Button Container */
-.maintenace_button {
+.maintenance_button {
     width: 100%;
     padding: 30px;
     background-image: var(--theme-overlay);
