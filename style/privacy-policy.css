@@ -1,7 +1,11 @@
+body {
+    overflow: hidden;
+}
+
 /* Default Cursor for .pp-content */
 .pp-content {
     cursor: default;
-    margin-top: 90px;
+    margin-top: 80px;
 }
 
 strong {
@@ -61,8 +65,25 @@ strong {
     display: none;
 }
 
+.background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-image: url("../images/bg/landscape-mode.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 65px;
+}
+
 /* Responsive Styling */
 @media screen and (max-width: 500px) {
+    .background {
+        background-image: url("../images/bg/portrait-mode.jpg");
+    }
     .pp-content li {
         font-size: small;
     }
