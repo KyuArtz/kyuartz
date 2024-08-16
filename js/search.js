@@ -46,7 +46,7 @@ function search() {
 
 function display(result) {
     if (result.length === 0) {
-        resultBox.innerHTML = "<p>No related search found</p>";
+        resultBox.innerHTML = "<p>No matching results were found.</p>";
     } else {
         const content = result.map((list) => {
             return `<li><a href="${list.url}">${list.name}</a></li>`;
