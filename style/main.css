@@ -10,7 +10,7 @@
     src: url("../fonts/squarefont/Square.ttf");
 }
 
-/* Root Variables 
+/* Root Variables */
 :root {
     --theme: linear-gradient(to right, rgb(26, 27, 32), rgb(40, 41, 51));
     --theme-2: linear-gradient(to right, rgb(26, 27, 32), rgb(31, 63, 95));
@@ -27,9 +27,9 @@
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
     --content-bg: radial-gradient(rgb(14 11 11), rgb(22 36 53));
-}*/
+}
 
-/* Root Variables*/
+/* Root Variables
 :root {
     --theme: linear-gradient(to right, rgb(32, 26, 26), rgb(51, 40, 40));
     --theme-2: linear-gradient(to right, rgb(32, 26, 26), rgb(95, 31, 31));
@@ -46,7 +46,7 @@
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, rgb(255, 30, 30), rgb(255, 0, 0));
     --content-bg: radial-gradient(rgb(14, 11, 11), rgb(53, 22, 22));
-}
+}*/
 
 /* Default Theme */
 body.default-theme {
