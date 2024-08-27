@@ -1,33 +1,4 @@
-@font-face {
-    font-family: myFont;
-    src: url("../fonts/ethnocentric/ethnocentric\ rg\ it.otf");
-}
-* {
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
-}
-/* width */
-::-webkit-scrollbar {
-    width: 3px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(30, 31, 37);
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: dodgerblue;
-    border-radius: 9px;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: dodgerblue;
-}
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #222222;
-    background-image: linear-gradient(to right, rgb(21, 24, 37), rgb(20, 46, 75));
     overflow: hidden;
     -webkit-overflow-scrolling: hidden;
 }
@@ -122,19 +93,29 @@ a {
     background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
 }
-.slideshow-container {
+/* Slideshow Container */
+.slideshow_container {
     position: relative;
+    margin: 0 auto;
 }
+
 .mySlides {
     display: none;
 }
-.mySlides img {
+
+.mySlides.active-slide {
+    display: block;
+}
+
+.mySlides img,
+.mySlides video {
     width: 100%;
-    border: solid thin dodgerblue;
-    background-color: #ffffff;
-    height: 100vh;
     max-height: 100vh;
-    pointer-events: none;
+    height: 100vh;
+    object-fit: cover;
+    border: solid thin var(--color);
+    object-position: center;
+    background-image: var(--content-bg);
 }
 .botnav {
     width: 100%;
@@ -188,17 +169,16 @@ a {
         object-position: center;
     }
 }
+/* Fade Animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation: fade 1.5s;
 }
-@-webkit-keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
-}
+
 @keyframes fade {
-  from {opacity: .8}
-  to {opacity: 1}
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }

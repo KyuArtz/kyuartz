@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Wasteland</title>
+  <title>Wasteland | Chapter 1</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
-  <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/chapter-1.css">
-  <link rel="stylesheet" href="style/popupnotice.css">
+  <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/loader.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
-  <script src="js/theme-toggle.js"></script>
+  <script src="js/loader.js" defer></script>
+  <script src="js/category-drop-menu.js" defer></script>
+  <script src="js/Fullscreen.js" defer></script>
+  <script src="js/singleslideshow.js" defer></script>
+  <script src="js/theme-toggle.js" defer></script>
 </head>
 
 <body>
@@ -52,13 +55,11 @@
       </ul>
     </nav>
   </header>
-  <script defer src="js/dropdownmenu.js"></script>
-  <script src="js/Fullscreen.js"></script>
 
   <div class="slideshow-container">
     <div class="mySlides fade">
       <div class="numbertext">DEMO</div>
-      <img src="images/imgloader/loader-landscape.png" style="object-fit: cover;" , style="object-position: center;">
+      <img src="images/bg/landscape-mode.jpg" style="object-fit: cover;" , style="object-position: center;">
     </div>
     <div class="mySlides fade">
       <div class="numbertext">1/19</div>
@@ -138,12 +139,12 @@
     </div>
     <div class="botnav">
       <div class="btn">
-        <a class="prev" onclick="plusSlides(-1)" title="Previous">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)" title="Next">&#10095;</a>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
       </div>
     </div>
   </div>
-  <script defer src="js/singleslideshow.js"></script>
+
 </body>
 
 </html>
