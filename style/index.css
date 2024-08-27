@@ -163,6 +163,7 @@ button:hover {
     justify-content: center;
     text-align: center;
     bottom: 25%;
+    z-index: 1;
 }
 
 .caption-btn a {
