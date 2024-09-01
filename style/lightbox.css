@@ -35,7 +35,7 @@ body.lb-disable-scrolling {
     max-height: none;
     border-radius: 5px;
     pointer-events: none;
-    border: 5px solid white;
+    border: 5px solid #ffffff;
 }
 
 /* Remove Border from Linked Images */
