@@ -93,6 +93,7 @@ ul {
 
 /* Image */
 .cs-container img {
+    position: relative;
     margin: 5px 2px;
     width: 350px;
     object-fit: contain;
