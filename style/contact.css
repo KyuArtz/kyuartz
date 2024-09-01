@@ -193,7 +193,7 @@ label {
     padding: 4px;
     margin: 3px;
     transition: transform 0.7s ease-in-out;
-    border-radius: 10px;
+    border-radius: 50px;
     border: solid thin var(--color);
     background-color: var(--transparent-overlay);
 }

@@ -40,7 +40,7 @@ ul {
     border: none; 
     outline: none; 
     background-color: var(--color); 
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     padding: 20px;
     border-radius: 15px;

@@ -59,7 +59,7 @@
 button {
     padding: 10px 20px;
     background-color: var(--color);
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 50px;
     font-family: var(--font-style);
@@ -104,7 +104,7 @@ button:hover {
     top: 50%;
     margin-top: -32px;
     padding: 16px;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1.5rem;
     user-select: none;
@@ -288,7 +288,7 @@ button:hover {
 .carousel_nav button {
     background-color: var(--color);
     border: none;
-    color: white;
+    color: #ffffff;
     padding: 15px;
     font-size: 1.0rem;
     border-radius: 50px;
