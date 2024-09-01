@@ -60,7 +60,7 @@ input[type="Submit"] {
     color: var(--default-font-color);
     padding: 12px 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }

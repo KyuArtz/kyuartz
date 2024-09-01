@@ -30,11 +30,11 @@ ul {
     padding: 9px;
     background-color: var(--color);
     display: inline-block;
-    border-radius: 50px;
+    border-radius: 9px;
     cursor: default;
     font-family: sans-serif;
     font-size: 0.9rem;
-    color: white;
+    color: #0a0a0a;
     box-shadow: 0 0 5px #0a0a0a;
 }
 
@@ -54,7 +54,7 @@ ul {
 
 /* Inquire Button */
 .inquire-button {
-    text-align: right;
+    text-align: center;
     margin: 20px 0 10px;
     width: 100%;
     background-color: var(--color);
@@ -64,7 +64,7 @@ ul {
 .inquire-button a {
     padding: 10px;
     background-color: var(--color);
-    border-radius: 10px 1px 10px 1px;
+    border-radius: 50px;
     font-size: 0.9rem;
     border: solid thin #ffffff;
     font-family: var(--font-style);
@@ -73,16 +73,6 @@ ul {
 
 .inquire-button a:hover {
     box-shadow: var(--color) 0 0 10px 0.5px;
-}
-
-/* Responsive Inquire Button */
-@media screen and (max-width: 500px) {
-    .inquire-button {
-        text-align: center;
-    }
-    .cs-container p {
-        text-align: left;
-    }
 }
 
 /* Content */
@@ -118,5 +108,8 @@ ul {
 @media screen and (max-width: 500px) {
     .cs-container img {
         width: 250px;
+    }
+    .cs-container p {
+        text-align: left;
     }
 }

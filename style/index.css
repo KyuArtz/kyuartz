@@ -61,7 +61,7 @@ button {
     background-color: var(--color);
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     font-family: var(--font-style);
     cursor: pointer;
 }
