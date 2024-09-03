@@ -191,7 +191,7 @@ form.search button {
 
 form.search input[type=search], form.search button {
     margin: 0;
-    padding: 12px;
+    padding: 10px;
     transition: 0.3s ease-in-out;
 }
 
