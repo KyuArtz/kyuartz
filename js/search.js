@@ -49,7 +49,7 @@ function display(result) {
         resultBox.innerHTML = "<p>No matching results were found.</p>";
     } else {
         const content = result.map((list) => {
-            return `<li><a href="${list.url}">${list.name}</a></li>`;
+            return `<li><a href="${list.url}"><i class="fa-solid fa-arrow-up-right-from-square"></i> ${list.name}</a></li>`;
         }).join(""); // join the array into a single string
 
         resultBox.innerHTML = `<ul>${content}</ul>`;
