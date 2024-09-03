@@ -175,9 +175,7 @@ form.search input[type=search] {
     border-radius: 0 20px 20px 0;
     width: 80%;
     background: var(--overlay);
-    font-size: 0.7rem;
     outline: none;
-    
 }
 
 form.search button {
@@ -187,7 +185,6 @@ form.search button {
     color: #ffffff;
     border: 1px solid var(--color);
     border-radius: 20px 0 0 20px;
-    font-size: 0.7rem;
     cursor: pointer;
     outline: none;
 }
