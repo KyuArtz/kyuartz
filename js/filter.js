@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Wasteland.jpg",
       title: "",
-      category: "anime-style"
+      category: "semi-realism"
     },
     {
       src: "images/artgallary/Rayza_character_design.jpg",
