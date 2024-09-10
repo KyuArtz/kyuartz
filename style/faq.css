@@ -1,0 +1,72 @@
+body {
+    overflow: hidden;
+}
+
+.faq-container {
+    margin: 0 auto;
+    cursor: default;
+    margin-top: 80px;
+}
+
+.faq-item {
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--theme-overlay);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    margin: 10px;
+}
+
+.faq-item h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: var(--font-style);
+}
+
+.faq-item p {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #ffff;
+}
+
+.faq-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+/* Unordered List */
+.faq-container ul {
+    padding-right: 40px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.faq-container ul a {
+    text-decoration: underline;
+    color: var(--color);
+}
+
+/* Hide Scrollbar for WebKit Browsers */
+.faq-container ul::-webkit-scrollbar {
+    display: none;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-image: url("../images/bg/landscape-mode.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 65px;
+}
