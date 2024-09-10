@@ -72,6 +72,7 @@ input[type="Submit"]:hover {
 /* Checkbox */
 input[type="checkbox"] {
     cursor: pointer;
+    margin-top: -2px;
 }
 
 /* File Input */
