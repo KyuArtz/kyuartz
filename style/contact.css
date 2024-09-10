@@ -180,7 +180,9 @@ label {
 /* Logo View */
 .logo-view img {
     position: relative;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
 /* Payment */
