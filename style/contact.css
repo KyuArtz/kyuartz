@@ -49,7 +49,7 @@ input[type="message"],
 textarea {
     max-height: 150px;
     height: 150px;
-    border-radius: 10px 50px 10px 50px;
+    border-radius: 10px 40px 10px 40px;
 }
 
 /* Submit Button */
@@ -110,8 +110,8 @@ label {
 
 /* Terms of Service Info Image */
 .tos-info img {
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     margin-left: 5px;
 }

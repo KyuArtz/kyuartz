@@ -547,4 +547,5 @@ form.search::after {
     border-radius: 50%;
     border: solid thin var(--color);
     margin: auto 3px;
+    object-fit: cover;
 }

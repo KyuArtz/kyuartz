@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Kyushiartz | Contact</title>
+  <title>Kyushiartz | Contact Us</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/contact.css">
@@ -80,13 +80,13 @@
           <h2>INQUIRY FORM (CLOSED)</h2>
         </div>
 
-        <label for="username-field">Client Name:</label><span id="username-error"></span><span id="username-valid"></span>
+        <label for="username-field">Client Name: required</label><span id="username-error"></span><span id="username-valid"></span>
         <input type="text" id="username-field" name="Username" placeholder="Enter your name.." onkeyup="validateInput('username')" required>
 
-        <label for="email-field">Email:</label><span id="email-error"></span><span id="email-valid"></span>
+        <label for="email-field">Email: required</label><span id="email-error"></span><span id="email-valid"></span>
         <input type="email" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateInput('email')" required>
 
-        <label for="commission-select">Commission Type:</label><span id="commission-error"></span><span id="commission-valid"></span>
+        <label for="commission-select">Commission Type: required</label><span id="commission-error"></span><span id="commission-valid"></span>
         <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
           <option value="" disabled selected hidden></option>
           <option value="Portrait (Semi-realism)">Portrait (Semi-realism)</option>
@@ -110,7 +110,7 @@
           <option value="Others">Others (Other types of art/style)</option>
         </select>
 
-        <label for="message-field">Commission Details:</label><span id="message-error"></span><span id="message-valid"></span>
+        <label for="message-field">Commission Details: required</label><span id="message-error"></span><span id="message-valid"></span>
         <textarea id="message-field" name="Commssion Details" placeholder="Information regarding your commissioned art request to improve workflow efficiency.." onkeyup="validateInput('message')" required></textarea>
 
         <div class="uploadimg-container">
@@ -163,8 +163,10 @@
           <a class="detail" href="about.html"> About Me</a>
           <div class="social">
             <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png"></a>
-            <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="images/imgbtn/ast.png"></a>
-            <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="images/imgbtn/cara-logo.png"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png"></a>
+          <a class="logo-view" href="" title="X" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/X.png"></a>
+          <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="images/imgbtn/ast.png"></a>
+          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="images/imgbtn/cara-logo.png"></a>
           </div>
         </div>
       </div>
