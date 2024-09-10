@@ -252,10 +252,9 @@ form.search::after {
     font-family: var(--font-style);
     font-size: small;
     color: #ffffff;
-    background: var(--content-bg);
     border-radius: 0 0 10px 10px;
-    margin: 0 auto;
     text-align: center;
+    cursor: default;
 }
 
 /* Media Queries */
@@ -333,6 +332,7 @@ form.search::after {
     position: fixed;
     left: -100%;
     top: 50px;
+    padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
     background-image: var(--content-bg);
@@ -443,6 +443,7 @@ form.search::after {
     display: flex;
     left: -100%;
     top: 79px;
+    padding-bottom: 100px;
     flex-direction: column;
     background-image: var(--content-bg);
     min-width: 150px;
@@ -452,6 +453,7 @@ form.search::after {
     border-style: solid;
     border-width: 0 1px 0 0;
     border-color: var(--color);
+    overflow: auto;
     z-index: 1;
 }
 

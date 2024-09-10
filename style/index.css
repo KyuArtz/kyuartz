@@ -137,6 +137,7 @@ button:hover {
     font-size: 1.3rem;
     font-family: var(--font-style);
     top: 0;
+    padding: 0 5px 0;
     text-align: center;
     align-content: center;
     height: 99.3%;
@@ -327,12 +328,13 @@ button:hover {
 
 @media (max-width: 500px) {
   #popup {
-    width: 300px;
+    width: 350px;
   }
 
   #popup img {
     width: 120px;
     height: 120px;
+    position: unset;
   }
 
   #popup p {

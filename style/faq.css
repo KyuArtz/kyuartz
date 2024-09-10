@@ -20,6 +20,7 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     font-family: var(--font-style);
+    color: var(--color);
 }
 
 .faq-item p {
