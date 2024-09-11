@@ -42,7 +42,7 @@
 /* Summary Section */
 .summary {
     text-align: center;
-    padding: 20px;
+    padding: 50px;
     margin-top: 51px;
 }
 
@@ -57,7 +57,7 @@
     border: solid thin var(--color);
     border-radius: 10px;
     text-align: justify;
-    padding: 50px;
+    padding: 25px;
 }
 
 /* Experience Section */
