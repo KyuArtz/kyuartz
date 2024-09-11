@@ -17,6 +17,11 @@ let availableKeywords = [
     { name: 'FAQ', url: 'faq.html' },
     { name: 'About me', url: 'about.html' },
     { name: 'contact', url: 'contact.html' },
+    { name: 'Facebook (kyushiartz page)', url: 'https://www.facebook.com/kyushiartz' },
+    { name: 'Youtube (kyushiartz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
+    { name: 'X (kyushiartz page)', url: ' ' },
+    { name: 'Artstation (kyushiartz page)', url: 'https://kyushiartz.artstation.com/' },
+    { name: 'Cara (kyushiartz page)', url: 'https://cara.app/kyuu' },
 ];
 
 const resultBox = document.querySelector(".search-result");
