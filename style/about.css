@@ -4,6 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .summary,
@@ -42,7 +43,7 @@
 /* Summary Section */
 .summary {
     text-align: center;
-    padding: 50px;
+    padding: 30px;
     margin-top: 51px;
 }
 
@@ -69,7 +70,7 @@
 }
 
 .expcontent {
-    padding: 50px;
+    padding: 30px;
 }
 
 .expcontent p {
