@@ -57,7 +57,7 @@
     border: solid thin var(--color);
     border-radius: 10px;
     text-align: justify;
-    padding: 25px;
+    padding: 30px;
 }
 
 /* Experience Section */
@@ -87,7 +87,7 @@
 /* Program Section */
 .program {
     text-align: center;
-    padding: 50px;
+    padding: 45px;
 }
 
 .program-logo img {
