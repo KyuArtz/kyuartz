@@ -90,7 +90,3 @@ body {
     background: var(--color);
     border-radius: 9px;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--scroll-color);
-}
