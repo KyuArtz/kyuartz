@@ -13,21 +13,8 @@
     z-index: 80;
 }
 
-/* Background Loader */
-.bg-loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: var(--theme);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 /* Loader Title */
-.loader h2 {
+.loader h1 {
     font-family: var(--font-style);
     font-size: small;
     color: var(--default-font-color);
@@ -67,7 +54,7 @@
     width: 75px;
     height: 75px;
     border: thin solid #ffffff;
-    box-shadow: 0 1px 5000px 30px var(--color);
+    /*box-shadow: 0 1px 5000px 30px var(--color);*/
     animation: pulse 0.75s infinite;
 }
 
@@ -115,14 +102,14 @@
 
 /* Media Query */
 @media screen and (max-height: 470px) {
-    .loader h2 {
+    .loader h1 {
         opacity: 0;
         visibility: hidden;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .loader h2 {
+    .loader h1 {
         display: none;
     }
 }

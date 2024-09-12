@@ -73,7 +73,7 @@
     width: 50%;
     margin-top: 30px;
     padding: 10px 0;
-    background-color: var(--color);
+    background: var(--color);
     color: var(--defaut-font-color);
     border: solid thin;
     outline: none;
@@ -86,7 +86,7 @@
 
 /* Button Hover Effect */
 .popup button:hover {
-    background-color: var(--hover-light);
+    background: var(--hover-light);
 }
 
 /* Responsive Styles */

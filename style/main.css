@@ -26,7 +26,7 @@
     --hover-dark: rgb(23, 75, 128);
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
-    --content-bg: radial-gradient(rgb(14 11 11), rgb(22 36 53));
+    --content-bg: rgb(22, 33, 46);
 }
 
 /* Root Variables

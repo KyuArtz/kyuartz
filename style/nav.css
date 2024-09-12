@@ -286,7 +286,7 @@ form.search::after {
         top: 51px;
         gap: 0;
         flex-direction: column;
-        background-image: var(--content-bg);
+        background: var(--content-bg);
         width: 100%;
         height: 100vh;
         justify-content: center;
@@ -335,7 +335,7 @@ form.search::after {
     padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
-    background-image: var(--content-bg);
+    background: var(--content-bg);
     transition: 0.5s ease 0s;
     overflow: auto;
     z-index: 5;
@@ -442,10 +442,10 @@ form.search::after {
     position: fixed;
     display: flex;
     left: -100%;
-    top: 79px;
+    top: 79.5px;
     padding-bottom: 100px;
     flex-direction: column;
-    background-image: var(--content-bg);
+    background: var(--content-bg);
     min-width: 150px;
     height: 100vh;
     justify-content: left;

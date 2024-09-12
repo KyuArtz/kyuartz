@@ -15,7 +15,7 @@ ul {
 .cs-container h3 {
     padding: 9px;
     margin: auto;
-    background-color: rgba(10, 15, 17, 0.50);
+    background: rgba(10, 15, 17, 0.50);
     border-radius: 9px;
     opacity: 0.7;
     letter-spacing: 3px;
@@ -28,7 +28,7 @@ ul {
 .cs-container p {
     text-align: center;
     padding: 9px;
-    background-color: var(--color);
+    background: var(--color);
     display: inline-block;
     border-radius: 9px;
     cursor: default;
@@ -47,7 +47,7 @@ ul {
     font-family: var(--font-style);
     padding: 9px;
     border-radius: 5px;
-    background-color: var(--overlay);
+    background: var(--overlay);
     opacity: 0.9;
     cursor: default;
 }
@@ -57,13 +57,13 @@ ul {
     text-align: center;
     margin: 20px 0 10px;
     width: 100%;
-    background-color: var(--color);
+    background: var(--color);
     border-radius: 1px 1px 10px 10px;
 }
 
 .inquire-button a {
     padding: 10px;
-    background-color: var(--color);
+    background: var(--color);
     border-radius: 50px;
     font-size: 0.9rem;
     border: solid thin #ffffff;
@@ -81,7 +81,7 @@ ul {
     text-align: center;
     padding: 5px 11px 10px;
     margin-bottom: 9px;
-    background-color: rgba(26, 26, 26, 0.5);
+    background: rgba(26, 26, 26, 0.5);
     box-shadow: 0 0 5px #0a0a0a;
     border-radius: 10px;
 }

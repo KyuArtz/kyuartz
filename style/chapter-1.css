@@ -30,7 +30,7 @@ a {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: #15202f;
+    background: #15202f;
     border-radius: 50px;
     border: solid thin dodgerblue;
     opacity: 0.1;
@@ -68,8 +68,8 @@ a {
     position: fixed;
     right: -100%;
     top: 0;
-    background-color: inherit;
-    background-image: linear-gradient(to left, rgb(21, 24, 37), rgb(20, 46, 75));
+    background: inherit;
+    background: linear-gradient(to left, rgb(21, 24, 37), rgb(20, 46, 75));
     transition: all 0.5s ease 0s;
     overflow: auto;
     z-index: 5;
@@ -89,8 +89,8 @@ a {
     right: 0px;
 }
 .dropdown-content a:hover {
-    background-color: #ddd;
-    background-image: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
+    background: #ddd;
+    background: linear-gradient(to right, rgba(0, 102, 255, 0.5), rgba(255, 255, 255, 0));
     color: #000000;
 }
 /* Slideshow Container */
@@ -115,7 +115,7 @@ a {
     object-fit: cover;
     border: solid thin var(--color);
     object-position: center;
-    background-image: var(--content-bg);
+    background: var(--content-bg);
 }
 .botnav {
     width: 100%;
@@ -151,7 +151,7 @@ a {
 }
 .numbertext {
     color: #ffff;
-    background-color: rgba(30, 143, 255, 0.500);
+    background: rgba(30, 143, 255, 0.500);
     font-family: sans-serif;
     padding: 10px 12px;
     position: fixed;

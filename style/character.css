@@ -33,22 +33,22 @@
     border-right-width: thin;
 }
 .oc-profile-red {
-    background-image: url("../images/bg/red-tier.jpg");
+    background: url("../images/bg/red-tier.jpg");
 }
 .oc-profile-blue {
-    background-image: url("../images/bg/blue-tier.jpg");
+    background: url("../images/bg/blue-tier.jpg");
 }
 .oc-profile-orange {
-    background-image: url("../images/bg/orange-tier.jpg");
+    background: url("../images/bg/orange-tier.jpg");
 }
 .oc-profile-purple {
-    background-image: url("../images/bg/purple-tier.jpg");
+    background: url("../images/bg/purple-tier.jpg");
 }
 .oc-profile-green {
-    background-image: url("../images/bg/green-tier.jpg");
+    background: url("../images/bg/green-tier.jpg");
 }
 .oc-profile-yellow {
-    background-image: url("../images/bg/yellow-tier.jpg");
+    background: url("../images/bg/yellow-tier.jpg");
 }
 .oc-profile-red img,
 .oc-profile-blue img,

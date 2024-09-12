@@ -1,6 +1,6 @@
 /* Contact Overlay */
 .contact-overlay {
-    background-image: url("../images/bg/landscape-mode.jpg");
+    background: url("../images/bg/landscape-mode.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,13 +227,13 @@ label {
 /* Footer */
 .footer {
     margin-top: 230px;
-    background-image: unset !important;
+    background: unset !important;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 690px) {
     .contact-overlay {
-        background-image: url('../images/bg/portrait-mode.jpg');
+        background: url('../images/bg/portrait-mode.jpg');
     }
 
     .contact-container {
