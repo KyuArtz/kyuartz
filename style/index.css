@@ -15,7 +15,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: inherit;
+    background: inherit;
     color: var(--default-font-color);
     padding: 30px;
     border-radius: 10px;
@@ -93,7 +93,7 @@ button:hover {
     object-fit: cover;
     border: solid thin var(--color);
     object-position: center;
-    background-image: var(--content-bg);
+    background: var(--content-bg);
 }
 
 /* Navigation Buttons */
@@ -132,7 +132,7 @@ button:hover {
     position: absolute;
     width: 100%;
     color: #f2f2f2;
-    background-image: var(--theme-overlay);
+    background: var(--overlay);
     font-size: 1.3rem;
     font-family: var(--font-style);
     top: 0;
@@ -265,7 +265,7 @@ button:hover {
     height: auto;
     border-radius: 15px;
     border: solid thin rgb(0, 0, 0);
-    background-image: var(--content-bg);
+    background: var(--content-bg);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
