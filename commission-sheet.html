@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style/nav.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   <script src="js/loader.js" defer></script>
+  <script src="js/cs-filter.js"></script>
   <script src="js/hamburger.js" defer></script>
   <script src="js/search.js" defer></script>
   <script src="js/category-drop-menu.js" defer></script>
@@ -87,32 +88,32 @@
       <ul class="category-menu">
         <h3>Category</h3>
         <li class="category-item">
-          <a href="commission-sheet.html" class="category-link"><i class="fa-solid fa-star"></i> All</a>
+          <a href="#" class="category-link" data-category="all"><i class="fa-solid fa-star"></i> All</a>
         </li>
         <li class="category-item">
-          <a href="commission-sheet-semirealism.html" class="category-link"><i class="fa-solid fa-star"></i> Semi Realism</a>
+          <a href="#" class="category-link" data-category="semi-realism"><i class="fa-solid fa-star"></i> Semi Realism</a>
         </li>
         <li class="category-item">
-          <a href="commission-sheet-anime.html" class="category-link"><i class="fa-solid fa-star"></i> Anime Style</a>
+          <a href="#" class="category-link" data-category="anime"><i class="fa-solid fa-star"></i> Anime Style</a>
         </li>
         <li class="category-item">
-          <a href="commission-sheet-grayscale.html" class="category-link"><i class="fa-solid fa-star"></i> Grayscale</a>
+          <a href="#" class="category-link" data-category="grayscale"><i class="fa-solid fa-star"></i> Grayscale</a>
         </li>
         <li class="category-item">
-          <a href="commission-sheet-landscape.html" class="category-link"><i class="fa-solid fa-star"></i> Landscape</a>
+          <a href="#" class="category-link" data-category="chibi"><i class="fa-solid fa-star"></i> Chibi</a>
         </li>
         <li class="category-item">
-          <a href="commission-sheet-chibi.html" class="category-link"><i class="fa-solid fa-star"></i> Chibi</a>
+          <a href="#" class="category-link" data-category="emote"><i class="fa-solid fa-star"></i> Emote</a>
         </li>
         <li class="category-item">
-          <a href="commission-sheet-emote.html" class="category-link"><i class="fa-solid fa-star"></i> Emotes</a>
+          <a href="#" class="category-link" data-category="background"><i class="fa-solid fa-star"></i> Background</a>
         </li>
-      </ul>
+      </ul>      
     </div>
   </div>
 
   <div class="cs-container">
-    <div class="cs-content">
+    <div class="cs-content" data-category="semi-realism">
       <h3>PORTRAIT / Bust-UP (SEMI-REALISM)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/portrait-sample.png" loading="lazy" alt="">
@@ -129,7 +130,7 @@
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-    <div class="cs-content">
+    <div class="cs-content" data-category="anime">
       <h3>PORTRAIT / BUST-UP (ANIME-STYLE)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/portrait-sample-anime.png" loading="lazy" alt="">
@@ -146,7 +147,7 @@
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-    <div class="cs-content">
+    <div class="cs-content" data-category="semi-realism">
       <h3>FULL BODY (SEMI-REALISM)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/full-body-sample.png" loading="lazy" alt="">
@@ -163,7 +164,7 @@
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-    <div class="cs-content">
+    <div class="cs-content" data-category="anime">
       <h3>FULL BODY (ANIME-STYLE)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/anime-sample.png" loading="lazy" alt="">
@@ -180,7 +181,7 @@
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-    <div class="cs-content">
+    <div class="cs-content" data-category="emote">
       <h3>CUTE EMOTES</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/emote-sample.png" loading="lazy" alt="">
@@ -197,7 +198,7 @@
         </div>
       </div>
     </div>
-    <div class="cs-content">
+    <div class="cs-content" data-category="chibi">
       <h3>CHIBI</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/chibi-sample.png" loading="lazy" alt="">
@@ -214,7 +215,7 @@
         </div>
       </div>
     </div>
-    <div class="cs-content">
+    <div class="cs-content" data-category="background">
       <h3>BACKGROUND</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/bg-sample.png" loading="lazy" alt="">
@@ -230,6 +231,111 @@
         </div>
       </div>
     </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>PORTRAIT / Bust-UP (SEMI-REALISM)</h3>
+      <div class="img-container">
+        <img src="images/commission-sheet-sample/portrait-sample-grayscale.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $30</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 30 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional BG: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>PORTRAIT / BUST-UP (ANIME-STYLE)</h3>
+      <div class="img-container">
+        <img src="images/commission-sheet-sample/portrait-sample-anime-grayscale.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $20</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 20 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional BG: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>FULL BODY (SEMI-REALISM)</h3>
+      <div class="img-container">
+        <img src="images/commission-sheet-sample/full-body-sample-grayscale.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $50</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 50 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional BG: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>FULL BODY (ANIME-STYLE)</h3>
+      <div class="img-container">
+        <img src="images/commission-sheet-sample/anime-sample-grayscale.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $30</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 30 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional BG: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>CUTE EMOTES</h3>
+      <div class="img-container">
+        <img src="images/commission-sheet-sample/emote-sample-grayscale.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $10</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional BG: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>CHIBI</h3>
+      <div class="img-container">
+        <img src="images/commission-sheet-sample/chibi-sample2.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $15</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 15 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional BG: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+    <div class="cs-content" data-category="grayscale">
+      <h3>BACKGROUND</h3>
+      <div class="row">
+        <img src="images/commission-sheet-sample/bg-sample-grayscale.png" loading="lazy" alt="">
+      </div>
+      <div class="price">
+        <h5><i class="fa-solid fa-tag"></i> PRICE: $60</h5>
+        <p><i class="fa-solid fa-tag"></i> Fully Rendered: 60 USD</p>
+        <p><i class="fa-solid fa-tag"></i> Additional Character: + 10 USD</p>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  </div>
   </div>
 
   <div class="footer">
