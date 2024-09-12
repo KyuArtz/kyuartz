@@ -12,9 +12,10 @@
   <link rel="stylesheet" href="style/nav.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   <script src="js/loader.js" defer></script>
-  <script src="js/cs-filter.js"></script>
+  <script src="js/cs-filter.js" defer></script>
   <script src="js/hamburger.js" defer></script>
   <script src="js/search.js" defer></script>
+  <script src="js/button-auto-scroll.js" defer></script>
   <script src="js/category-drop-menu.js" defer></script>
   <script src="js/theme-toggle.js" defer></script>
   <script src="js/current-year.js" defer></script>
@@ -117,7 +118,6 @@
       <h3>PORTRAIT / Bust-UP (SEMI-REALISM)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/portrait-sample.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/portrait-sample-grayscale.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $50</h5>
@@ -134,7 +134,6 @@
       <h3>PORTRAIT / BUST-UP (ANIME-STYLE)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/portrait-sample-anime.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/portrait-sample-anime-grayscale.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $30</h5>
@@ -151,7 +150,6 @@
       <h3>FULL BODY (SEMI-REALISM)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/full-body-sample.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/full-body-sample-grayscale.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $90</h5>
@@ -168,7 +166,6 @@
       <h3>FULL BODY (ANIME-STYLE)</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/anime-sample.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/anime-sample-grayscale.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $60</h5>
@@ -185,7 +182,6 @@
       <h3>CUTE EMOTES</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/emote-sample.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/emote-sample-grayscale.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $20</h5>
@@ -202,7 +198,6 @@
       <h3>CHIBI</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/chibi-sample.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/chibi-sample2.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $30</h5>
@@ -219,7 +214,6 @@
       <h3>BACKGROUND</h3>
       <div class="img-container">
         <img src="images/commission-sheet-sample/bg-sample.png" loading="lazy" alt="">
-        <img src="images/commission-sheet-sample/bg-sample-grayscale.png" loading="lazy" alt="">
       </div>
       <div class="price">
         <h5><i class="fa-solid fa-tag"></i> PRICE: $100</h5>
@@ -337,6 +331,7 @@
     </div>
   </div>
   </div>
+  <button onclick="topFunction()" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
   <div class="footer">
     <div class="copyright">

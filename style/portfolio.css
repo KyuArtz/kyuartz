@@ -29,27 +29,6 @@ ul {
     padding-left: 0;
 }
 
-/* Up Container Image */
-#upBtn {
-    display: none; 
-    position: fixed;
-    bottom: 20px; 
-    right: 20px;
-    z-index: 1;
-    border: none; 
-    outline: none; 
-    background: var(--color); 
-    color: #ffffff;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
-
-#upBtn:hover {
-    background: var(--hover-light);
-}
-
 /* Hover Effect on Gallery Images */
 .gallary img:hover {
     transform: scale(0.98);
