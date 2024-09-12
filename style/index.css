@@ -339,13 +339,8 @@ button:hover {
     font-size: x-large;
   }
 
-  #popup button {
-    font-size: 10px;
-  }
-
   .next,
   .prev {
-    font-size: 20px;
     padding: 20px 10px;
     margin-top: -32px;
   }

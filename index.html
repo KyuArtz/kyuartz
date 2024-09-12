@@ -33,7 +33,7 @@
 
   <div id="overlay"></div>
   <div id="popup">
-    <img src="images/popup/popup-icon.png">
+    <img src="images/popup/popup-icon.png" loading="lazy">
     <h2>Thanks for visiting!</h2>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopup()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
@@ -43,7 +43,7 @@
     <nav class="navbar">
       <a href="index.html" class="nav-brand">
         <div class="brand">Kyu</div>
-        <img src="images/myavatarlogo/avatar.ico" class="my-avatar" alt="Avatar">
+        <img src="images/myavatarlogo/avatar.ico" loading="lazy" class="my-avatar" alt="Avatar">
       </a>
       <form class="search" onsubmit="return false;">
         <input type="search" id="input-box" autocomplete="off" placeholder="Quick Search..." name="search">
@@ -54,7 +54,7 @@
         <li class="nav-item active-nav"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
         <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> MORE &#10095;</a>
+          <a class="nav-link-dropdown" aria-expanded="false" onclick="myFunction()"><i class="fa-solid fa-folder"></i> MORE &#10095;</a>
           <div id="myDropdown" class="dropdown-content">
             <h3>CONTENT</h3>
             <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
@@ -110,7 +110,7 @@
       <video src="video/km_20231209_480p_60f_20240522_171635.mp4" type="video/mp4" muted autoplay loop oncontextmenu="return false">
     </div>
     <div class="mySlides fade">
-      <img src="images/home-page-cover/Polish_20240501_031025494.jpg" oncontextmenu="return false">
+      <img src="images/home-page-cover/Polish_20240501_031025494.jpg" loading="lazy" oncontextmenu="return false">
       <div class="caption">
         <h2>Welcome to my website!</h2>
         <p>"Cherish every moment that brings you happiness, until it becomes a fragment of your memories"</p>
@@ -121,7 +121,7 @@
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/home-page-cover/Wasteland.jpg" oncontextmenu="return false">
+      <img src="images/home-page-cover/Wasteland.jpg" loading="lazy" oncontextmenu="return false">
       <div class="caption">
         <h2>Welcome to my website!</h2>
         <p>"If you feel like the world is against you, always give your best to overcome what tomorrow brings"</p>
@@ -132,7 +132,7 @@
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/home-page-cover/Polish_20240501_025724752.jpg" oncontextmenu="return false">
+      <img src="images/home-page-cover/Polish_20240501_025724752.jpg" loading="lazy" oncontextmenu="return false">
       <div class="caption">
         <h2>Welcome to my website!</h2>
         <p>"Solitude is my choice, not by chance, but by reason"</p>
@@ -143,7 +143,7 @@
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/home-page-cover/Polish_20240501_024312281.jpg" oncontextmenu="return false">
+      <img src="images/home-page-cover/Polish_20240501_024312281.jpg" loading="lazy" oncontextmenu="return false">
       <div class="caption">
         <h2>Welcome to my website!</h2>
         <p>"No living thing is born perfect. I don’t judge because I walk this world imperfectly myself"</p>
@@ -154,7 +154,7 @@
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/home-page-cover/Journey.jpg" oncontextmenu="return false">
+      <img src="images/home-page-cover/Journey.jpg" loading="lazy" oncontextmenu="return false">
       <div class="caption">
         <h2>Welcome to my website!</h2>
         <p>"As I gaze through the night sky filled with a billion stars, I always admire the one that shines the brightest"</p>
@@ -165,7 +165,7 @@
       </div>
     </div>
     <div class="mySlides fade">
-      <img src="images/home-page-cover/Polish_20240501_024312283.jpg" oncontextmenu="return false">
+      <img src="images/home-page-cover/Polish_20240501_024312283.jpg" loading="lazy" oncontextmenu="return false">
       <div class="caption">
         <h2>Welcome to my website!</h2>
         <p>"Accept your true self, not the expectations of others, because you are already unique"</p>
@@ -232,11 +232,11 @@
         <a class="detail" href="about.html"> About Me</a>
         <a class="detail" href="contact.html"> Contact Us</a>
         <div class="social">
-          <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png"></a>
-          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png"></a>
-          <a class="logo-view" href="" title="X" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/X.png"></a>
-          <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="images/imgbtn/ast.png"></a>
-          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="images/imgbtn/cara-logo.png"></a>
+          <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png" loading="lazy"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png" loading="lazy"></a>
+          <a class="logo-view" href="" title="X" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/X.png" loading="lazy"></a>
+          <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="images/imgbtn/ast.png" loading="lazy"></a>
+          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="images/imgbtn/cara-logo.png" loading="lazy"></a>
         </div>
       </div>
     </div>

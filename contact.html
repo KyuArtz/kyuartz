@@ -35,7 +35,7 @@
     <nav class="navbar">
       <a href="index.html" class="nav-brand">
         <div class="brand">Kyu</div>
-        <img src="images/myavatarlogo/avatar.ico" class="my-avatar" alt="Avatar">
+        <img src="images/myavatarlogo/avatar.ico" loading="lazy" class="my-avatar" alt="Avatar">
       </a>
       <form class="search" onsubmit="return false;">
         <input type="search" id="input-box" autocomplete="off" placeholder="Quick Search..." name="search">
@@ -46,7 +46,7 @@
         <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
         <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
         <li class="nav-item dropdown">
-          <a class="nav-link-dropdown" onclick="myFunction()"><i class="fa-solid fa-folder"></i> MORE &#10095;</a>
+          <a class="nav-link-dropdown" aria-expanded="false" onclick="myFunction()"><i class="fa-solid fa-folder"></i> MORE &#10095;</a>
           <div id="myDropdown" class="dropdown-content">
             <h3>CONTENT</h3>
             <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
@@ -127,7 +127,7 @@
         <div class="tos-container" title="Terms of Service">
           <input type="checkbox" value="Agreed" name="Terms of Service" required> Agree to terms of service
           <div class="tos-info">
-            <a title="Info" onclick="openPopup()"><img src="images/imgbtn/question-mark.png"></a>
+            <a title="Info" onclick="openPopup()"><img src="images/imgbtn/question-mark.png" loading="lazy"></a>
           </div>
         </div>
 
@@ -136,7 +136,7 @@
         </div>
 
         <div class="popup" id="popup">
-          <img src="images/popup/popup-icon.png">
+          <img src="images/popup/popup-icon.png" loading="lazy">
           <h2>NOTICE <i class="fa-solid fa-circle-exclamation"></i></h2>
           <p>By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
           <button type="button" onclick="closePopup()">Understood</button>
@@ -149,14 +149,14 @@
       <div class="e-wallet" style="text-align:center">
         <h4>MODE OF PAYMENT:</h4><p>kyuushiartz@gmail.com</p>
         <div class="payment">
-          <a class="logo-view" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Paypal" rel="noopener noreferrer"><img src="images/imgbtn/paypal.png"></a>
-          <a class="logo-view" href="maintenance.html" title="PayMaya"><img src="images/imgbtn/maya.png"></a>
-          <a class="logo-view" href="maintenance.html" title="Gcash"><img src="images/imgbtn/gcash.png"></a>
+          <a class="logo-view" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Paypal" rel="noopener noreferrer"><img src="images/imgbtn/paypal.png" loading="lazy"></a>
+          <a class="logo-view" href="maintenance.html" title="PayMaya"><img src="images/imgbtn/maya.png" loading="lazy"></a>
+          <a class="logo-view" href="maintenance.html" title="Gcash"><img src="images/imgbtn/gcash.png" loading="lazy"></a>
         </div>
       </div>
     </div>
     <div class="donate">
-      <a class="gbm" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Donate" rel="noopener noreferrer"><img src="images/imgbtn/gbm.png" alt=""></a>
+      <a class="gbm" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Donate" rel="noopener noreferrer"><img src="images/imgbtn/gbm.png" loading="lazy" alt=""></a>
     </div>
 
     <div class="footer">
@@ -167,11 +167,11 @@
           <a class="detail" href="privacy-policy.html"> Privacy Policy</a>
           <a class="detail" href="about.html"> About Me</a>
           <div class="social">
-          <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png"></a>
-          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png"></a>
-          <a class="logo-view" href="" title="X" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/X.png"></a>
-          <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="images/imgbtn/ast.png"></a>
-          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="images/imgbtn/cara-logo.png"></a>
+          <a class="logo-view" href="https://www.facebook.com/kyushiartz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/fb.png" loading="lazy"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/yt.png" loading="lazy"></a>
+          <a class="logo-view" href="" title="X" view target="_blank" rel="noopener noreferrer"><img src="images/imgbtn/X.png" loading="lazy"></a>
+          <a class="logo-view" href="https://kyushiartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="images/imgbtn/ast.png" loading="lazy"></a>
+          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="images/imgbtn/cara-logo.png" loading="lazy"></a>
           </div>
         </div>
       </div>
