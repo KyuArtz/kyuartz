@@ -93,7 +93,7 @@
     }
 
     .maintenance_body {
-        background: url("../images/bg/portrait-mode.jpg");
+        background-image: url("../images/bg/portrait-mode.jpg");
     }
 
     .maintenance_button {

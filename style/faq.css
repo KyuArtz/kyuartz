@@ -63,7 +63,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    background: url("../images/bg/landscape-mode.jpg");
+    background-image: url("../images/bg/landscape-mode.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,6 +76,6 @@ body {
 /* Responsive Styling */
 @media screen and (max-width: 500px) {
     .background {
-        background: url("../images/bg/portrait-mode.jpg");
+        background-image: url("../images/bg/portrait-mode.jpg");
     }
 }
