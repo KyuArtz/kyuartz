@@ -171,10 +171,11 @@ label {
 }
 
 .e-wallet h4 {
-    background: rgba(12, 12, 20, 0.5);
+    background: var(--overlay);
     padding: 10px;
     margin-top: 50px;
     border-radius: 0 0 30px 30px;
+    border: solid thin var(--color);
 }
 
 /* Logo View */

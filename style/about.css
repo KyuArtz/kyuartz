@@ -1,6 +1,6 @@
 /* Overlay Classes */
 .card-overlay {
-    background-image: url('../images/bg/landscape-mode.jpg');
+    background-image: url('../images/bg/landscape-mode-2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,6 +9,12 @@
 .summary,
 .experience,
 .program {
+    background: var(--overlay);
+}
+
+.summarycontent,
+.expcontent p,
+.card {
     background: var(--overlay);
 }
 
