@@ -348,7 +348,7 @@ form.search::after {
     border-radius: unset;
     position: fixed;
     left: -100%;
-    top: 51px;
+    top: 50px;
     padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
