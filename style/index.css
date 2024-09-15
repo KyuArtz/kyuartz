@@ -19,8 +19,7 @@
     color: var(--default-font-color);
     padding: 30px;
     border-radius: 10px;
-    border: solid thin var(--color);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
     text-align: center;
     font-family: var(--font-style);
     display: none;
@@ -34,7 +33,6 @@
   border-radius: 50%;
   right: -55px;
   top: -55px;
-  border: solid thin var(--color);
   filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.5));
 }
 
@@ -321,7 +319,7 @@ button:hover {
 
 @media (max-width: 500px) {
   #popup {
-    width: 350px;
+    width: 300px;
   }
 
   #popup img {

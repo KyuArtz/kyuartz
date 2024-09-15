@@ -1,8 +1,7 @@
 /* Popup Container */
 .popup {
     width: 450px;
-    border-radius: 6px;
-    border: solid thin var(--color);
+    border-radius: 9px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -30,7 +29,6 @@
     margin-top: -40px;
     left: 370px;
     border-radius: 50%;
-    border: solid thin var(--color);
     box-shadow: 0 0 5px #000;
     pointer-events: none;
 }
@@ -40,7 +38,6 @@
     font-size: 2.0rem;
     font-weight: 500;
     color: var(--color);
-    margin: 30px 0 25px;
     border-style: solid;
     border-top-width: 0;
     border-left-width: 0;
@@ -71,7 +68,6 @@
 /* Popup Button */
 .popup button {
     width: 50%;
-    margin-top: 30px;
     padding: 10px 0;
     background: var(--color);
     color: var(--defaut-font-color);
@@ -101,7 +97,7 @@
         font-size: x-large;
     }
     .popup img {
-        display: none;
+        position: unset;
     }
     .popup button {
         font-size: 10px;
