@@ -2,7 +2,7 @@
 header {
     position: fixed;
     width: 100%;
-    background: inherit;
+    background-image: inherit;
     box-shadow: 0 4px 5px -4px #000;
     top: 0;
     z-index: 100000;
@@ -407,7 +407,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: inherit;
+    background-image: inherit;
     box-shadow: 0 4px 5px -4px #000;
     top: 50px;
     z-index: 99;
@@ -520,7 +520,7 @@ form.search::after {
 .footer {
     position: relative;
     padding: 8px 0;
-    background: inherit;
+    background-image: inherit;
     font-family: var(--font-style);
     font-size: 0.6rem;
     box-shadow: 0 4px 5px 4px #000;
