@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <title>Kyushiartz | Comic - All</title>
+  <title>Kyushiartz | Comic</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon/rb9.ico">
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/comic.css">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style/loader.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   <script src="js/loader.js" defer></script>
+  <script src="js/comic-filter.js" defer></script>
   <script src="js/hamburger.js" defer></script>
   <script src="js/search.js" defer></script>
   <script src="js/category-drop-menu.js" defer></script>
@@ -84,24 +85,22 @@
       <span class="category-dot"></span>
       <span class="category-dot"></span>
     </div>
-    <div class="category-container">
-      <ul class="category-menu">
-        <h3>Type of Genre</h3>
-        <li class="category-item">
-          <a href="comic.html" class="category-link"><i class="fa-solid fa-star"></i> All</a>
-        </li>
-        <li class="category-item">
-          <a href="comic-sci-fi.html" class="category-link"><i class="fa-solid fa-star"></i> Sci-fi</a>
-        </li>
-        <li class="category-item">
-          <a href="comic-fantasy.html" class="category-link"><i class="fa-solid fa-star"></i> Fantasy</a>
-        </li>
-      </ul>
-    </div>
+    <ul class="category-menu">
+      <h3>Type of Genre</h3>
+      <li class="category-item">
+        <a href="#" class="category-link" data-category="all"><i class="fa-solid fa-star"></i> All</a>
+      </li>
+      <li class="category-item">
+        <a href="#" class="category-link" data-category="sci-fi"><i class="fa-solid fa-star"></i> Sci-fi</a>
+      </li>
+      <li class="category-item">
+        <a href="#" class="category-link" data-category="fantasy"><i class="fa-solid fa-star"></i> Fantasy</a>
+      </li>
+    </ul>    
   </div>
 
   <div class="top-spacing">
-    <div class="slideshow-container">
+    <div class="slideshow-container" data-category="sci-fi">
       <div class="mySlides fade">
         <div class="comic-title">WASTELAND <p>(Coming Soon)</p>
         </div>
@@ -179,11 +178,11 @@
         <span class="dot"><a href="maintenance.html">5</a></span>
       </div>
     </div>
-    <div class="slideshow-container">
+    <div class="slideshow-container" data-category="fantasy">
       <div class="mySlides fade">
         <div class="comic-title">LEGEND OF THE CRYSTALIGHT <p>(Coming Soon)</p>
         </div>
-        <div class="comic-chapter">1 / 5</div>
+        <div class="comic-chapter">Prologue</div>
         <a class="btnlink" href="maintenance.html">
           <img src="images/comic-cover/legend-of-the-crystalight.jpg" loading="lazy" oncontextmenu="return false">
         </a>
@@ -194,7 +193,7 @@
       <div class="mySlides fade">
         <div class="comic-title">LEGEND OF THE CRYSTALIGHT <p>(Coming Soon)</p>
         </div>
-        <div class="comic-chapter">2 / 5</div>
+        <div class="comic-chapter">1 / 3</div>
         <a class="btnlink" href="maintenance.html">
           <img src="images/comic-cover/legend-of-the-crystalight.jpg" loading="lazy" oncontextmenu="return false">
         </a>
@@ -205,7 +204,7 @@
       <div class="mySlides fade">
         <div class="comic-title">LEGEND OF THE CRYSTALIGHT <p>(Coming Soon)</p>
         </div>
-        <div class="comic-chapter">3 / 5</div>
+        <div class="comic-chapter">2 / 3</div>
         <a class="btnlink" href="maintenance.html">
           <img src="images/comic-cover/legend-of-the-crystalight.jpg" loading="lazy" oncontextmenu="return false">
         </a>
@@ -216,18 +215,7 @@
       <div class="mySlides fade">
         <div class="comic-title">LEGEND OF THE CRYSTALIGHT <p>(Coming Soon)</p>
         </div>
-        <div class="comic-chapter">4 / 5</div>
-        <a class="btnlink" href="maintenance.html">
-          <img src="images/comic-cover/legend-of-the-crystalight.jpg" loading="lazy" oncontextmenu="return false">
-        </a>
-        <div class="chapter">
-          <p>CHAPTER</p>
-        </div>
-      </div>
-      <div class="mySlides fade">
-        <div class="comic-title">LEGEND OF THE CRYSTALIGHT <p>(Coming Soon)</p>
-        </div>
-        <div class="comic-chapter">5 / 5</div>
+        <div class="comic-chapter">3 / 3</div>
         <a class="btnlink" href="maintenance.html">
           <img src="images/comic-cover/legend-of-the-crystalight.jpg" loading="lazy" oncontextmenu="return false">
         </a>
@@ -238,11 +226,10 @@
       <a class="prev">&#10094;</a>
       <a class="next">&#10095;</a>
       <div class="btn-container">
+        <span class="dot"><a href="maintenance.html">Pro</a></span>
         <span class="dot"><a href="maintenance.html">1</a></span>
         <span class="dot"><a href="maintenance.html">2</a></span>
         <span class="dot"><a href="maintenance.html">3</a></span>
-        <span class="dot"><a href="maintenance.html">4</a></span>
-        <span class="dot"><a href="maintenance.html">5</a></span>
       </div>
     </div>
   </div>
