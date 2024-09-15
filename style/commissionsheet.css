@@ -12,7 +12,7 @@ ul {
     margin-top: 95px;
 }
 
-.cs-container h3 {
+.cs-container h1 {
     padding: 9px;
     margin: auto;
     background: rgba(10, 15, 17, 0.50);
@@ -21,7 +21,7 @@ ul {
     letter-spacing: 3px;
     cursor: default;
     font-family: var(--font-style);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: var(--default-font-color);
 }
 
