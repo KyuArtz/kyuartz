@@ -146,7 +146,7 @@
 .my-info p {
     font-size: 0.9rem;
     padding: 5px;
-    border: solid var(--color) thin;
+    box-shadow: 0 0 5px #000;
     border-radius: 30px 50px 50px 30px;
 }
 
