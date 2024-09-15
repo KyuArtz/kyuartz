@@ -1,7 +1,7 @@
 /* Popup Container */
 .popup {
     width: 450px;
-    border-radius: 9px;
+    border-radius: 10px;
     position: fixed;
     top: 50%;
     left: 50%;
