@@ -304,7 +304,7 @@ form.search::after {
         position: fixed;
         padding: 0;
         right: -100%;
-        top: 51px;
+        top: 50px;
         gap: 0;
         flex-direction: column;
         background: var(--content-bg);
