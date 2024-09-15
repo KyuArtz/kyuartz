@@ -60,7 +60,7 @@
 .expcontent p,
 .card,
 .program-logo img {
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
 }
 
 .summarycontent {

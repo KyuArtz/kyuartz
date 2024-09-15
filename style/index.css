@@ -172,7 +172,7 @@ button:hover {
     width: 15%;
     border-radius: 50px;
     border: solid thin;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
     font-family: var(--font-style);
     transition: background-color 0.5s ease-in-out;
 }
@@ -226,7 +226,7 @@ button:hover {
 .video_container {
     display: grid;
     text-align: center;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
     background: var(--overlay);
     margin: 9px;
     border-radius: 9px;

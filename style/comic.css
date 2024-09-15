@@ -36,7 +36,7 @@ ul {
 }
 
 .mySlides img:hover {
-    box-shadow: rgb(0, 0, 0) 0px 0px 10px 0.5px;
+    box-shadow: 0 0 5px #000;
     border: solid thin var(--color);
     transform: scale(1);
 }

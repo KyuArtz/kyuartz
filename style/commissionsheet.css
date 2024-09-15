@@ -9,18 +9,17 @@ ul {
 /* Container */
 .cs-container {
     padding: 10px;
-    margin-top: 95px;
+    margin-top: 85px;
 }
 
 .cs-container h1 {
     padding: 9px;
     margin: auto;
     border-radius: 9px;
-    opacity: 0.7;
     letter-spacing: 3px;
     cursor: default;
     font-family: var(--font-style);
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: var(--default-font-color);
 }
 
@@ -33,20 +32,21 @@ ul {
     cursor: default;
     font-family: sans-serif;
     font-size: 0.9rem;
-    color: #0a0a0a;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    color: #000;
+    box-shadow: 0 0 5px #000;
 }
 
 /* Price */
 .price h5 {
     margin: 5px;
     letter-spacing: 3px;
-    color: var(--color);
+    color: #000;
+    box-shadow: 0 0 5px #000;
     font-size: 1.1rem;
     font-family: var(--font-style);
     padding: 9px;
     border-radius: 5px;
-    background: var(--overlay);
+    background: var(--color);
     opacity: 0.9;
     cursor: default;
 }
@@ -57,7 +57,7 @@ ul {
     margin: 20px 0 10px;
     width: 100%;
     background: var(--color);
-    border-radius: 1px 1px 10px 10px;
+    border-radius: 10px;
 }
 
 .inquire-button a {
@@ -79,10 +79,11 @@ ul {
     color: #ffffff;
     text-align: center;
     padding: 5px 11px 10px;
-    margin-bottom: 9px;
-    background: rgba(26, 26, 26, 0.5);
-    box-shadow: 0 0 5px #0a0a0a;
+    background: var(--overlay);
+    box-shadow: 0 0 5px #000;
     border-radius: 10px;
+    max-width: 1000px;
+    margin: 10px auto;
 }
 
 /* Image Container */
@@ -99,7 +100,7 @@ ul {
     object-position: center;
     aspect-ratio: 1 / 1;
     border-radius: 9px;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
     background: var(--content-bg);
     pointer-events: none;
 }

@@ -15,7 +15,7 @@ strong {
 .overlay {
     background: var(--theme-overlay);
     border-radius: 10px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
 }
 
 .pp-content h1, h2 {
@@ -29,7 +29,7 @@ strong {
     font-size: 1.5rem;
     background: var(--theme);
     border-radius: 10px;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px #000;
 }
 
 .pp-content h2 {

@@ -13,7 +13,7 @@
     background: var(--theme);
     visibility: hidden;
     transition: transform 0.4s;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 4px 8px 0;
+    box-shadow: 0 0 5px #000;
 }
 
 /* Open Popup Animation */
@@ -31,7 +31,7 @@
     left: 370px;
     border-radius: 50%;
     border: solid thin var(--color);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 5px #000;
     pointer-events: none;
 }
 
