@@ -15,7 +15,6 @@ ul {
 .cs-container h1 {
     padding: 9px;
     margin: auto;
-    background: rgba(10, 15, 17, 0.50);
     border-radius: 9px;
     opacity: 0.7;
     letter-spacing: 3px;
@@ -100,7 +99,7 @@ ul {
     object-position: center;
     aspect-ratio: 1 / 1;
     border-radius: 9px;
-    border: solid thin var(--color);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
     background: var(--content-bg);
     pointer-events: none;
 }

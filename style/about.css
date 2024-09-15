@@ -56,10 +56,15 @@
     font-size: 1rem;
 }
 
+.summarycontent,
+.expcontent p,
+.card,
+.program-logo img {
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.5);
+}
+
 .summarycontent {
     display: flex;
-    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
-    border: solid thin var(--color);
     border-radius: 10px;
     text-align: justify;
     padding: 30px;
@@ -80,8 +85,6 @@
     padding: 10px;
     margin: 5px;
     display: inline-block;
-    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
-    border: solid thin var(--color);
     border-radius: 10px;
     width: 175px;
     font-size: 1rem;
@@ -114,11 +117,9 @@
 }
 
 .card {
-    box-shadow: rgb(0, 0, 0) 0px 0px 5px 0.5px;
     margin: 8px;
     padding: 10px;
     border-radius: 9px;
-    border: solid thin var(--color);
 }
 
 .card img {
