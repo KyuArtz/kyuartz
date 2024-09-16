@@ -54,7 +54,7 @@
     cursor: default;
 }
 
-button {
+#popup button {
     padding: 10px 20px;
     background: var(--color);
     color: #ffffff;

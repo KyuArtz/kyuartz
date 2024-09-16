@@ -169,23 +169,27 @@ form.search {
 }
 
 form.search input[type=search] {
-    font-family: var(--font-style);
-    border: 1px solid var(--color);
-    color: var(--color);
-    border-radius: 0 20px 20px 0;
+    float: right;
     width: 80%;
-    background: var(--overlay);
-    outline: none;
+    border-radius: 0 20px 20px 0;
 }
 
 form.search button {
     float: left;
     width: 20%;
-    background: var(--color);
-    color: #ffffff;
     border: 1px solid var(--color);
     border-radius: 20px 0 0 20px;
+    background: var(--color);
+    color: #000;
     cursor: pointer;
+}
+
+form.search input[type=search],
+.form.search, button {
+    font-family: sans-serif;
+    border: 1px solid var(--color);
+    color: var(--color);
+    background: var(--overlay);
     outline: none;
 }
 
@@ -230,7 +234,7 @@ form.search::after {
 
 .search-result ul li {
     list-style: none;
-    font-family: var(--font-style);
+    font-family: sans-serif;
     font-size: small;
     color: #ffffff;
 }
@@ -249,7 +253,7 @@ form.search::after {
 
 .search-result p {
     padding: 15px 10px;
-    font-family: var(--font-style);
+    font-family: sans-serif;
     font-size: small;
     color: #ffffff;
     border-radius: 0 0 10px 10px;
