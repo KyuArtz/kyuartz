@@ -55,7 +55,7 @@ header {
     width: 24px;
     left: 4px;
     bottom: 4px;
-    background: #ffffff;
+    background: var(--color);
     transition: .4s;
     border-radius: 50%;
 }
