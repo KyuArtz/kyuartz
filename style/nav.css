@@ -248,6 +248,7 @@ form.search::after {
 
 .search-result a:hover {
     background: var(--hover-light);
+    color: #000;
 }
 
 .search-result p {
