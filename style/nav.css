@@ -180,7 +180,7 @@ form.search button {
     border: 1px solid var(--color);
     border-radius: 20px 0 0 20px;
     background: var(--color);
-    color: #000;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -248,7 +248,6 @@ form.search::after {
 
 .search-result a:hover {
     background: var(--hover-light);
-    color: #000000;
 }
 
 .search-result p {
