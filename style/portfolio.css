@@ -2,6 +2,7 @@
 .image-container {
     width: 100%;
     min-height: 100vh;
+    padding-top: 5px;
 }
 
 /* Gallery Grid */
