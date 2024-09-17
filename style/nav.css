@@ -187,10 +187,10 @@ form.search button {
 }
 
 form.search input[type=search],
-.form.search, button {
+.form.search button {
     font-family: var(--font-style);
     border: 1px solid var(--color);
-    color: var(--color);
+    color: #ffffff;
     background: var(--overlay);
     outline: none;
 }
