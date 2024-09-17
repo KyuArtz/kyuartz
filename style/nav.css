@@ -241,8 +241,10 @@ form.search::after {
 
 form.search input[type=search],
 .form.search button,
-.search-result ul li {
+.search-result ul li,
+.search-result p {
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 .search-result a {
@@ -259,7 +261,6 @@ form.search input[type=search],
 
 .search-result p {
     padding: 15px 10px;
-    font-family: var(--font-style);
     font-size: small;
     color: #ffffff;
     border-radius: 0 0 10px 10px;
