@@ -113,7 +113,6 @@
 
 .qr {
     flex: 1 1 30%; /* Ensures that QR codes adapt to smaller screens */
-    margin: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
