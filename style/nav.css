@@ -188,7 +188,7 @@ form.search button {
 
 form.search input[type=search],
 .form.search, button {
-    font-family: sans-serif;
+    font-family: var(--font-style);
     border: 1px solid var(--color);
     color: var(--color);
     background: var(--overlay);
@@ -236,7 +236,7 @@ form.search::after {
 
 .search-result ul li {
     list-style: none;
-    font-family: sans-serif;
+    font-family: var(--font-style);
     font-size: small;
     color: #ffffff;
 }
@@ -255,7 +255,7 @@ form.search::after {
 
 .search-result p {
     padding: 15px 10px;
-    font-family: sans-serif;
+    font-family: var(--font-style);
     font-size: small;
     color: #ffffff;
     border-radius: 0 0 10px 10px;

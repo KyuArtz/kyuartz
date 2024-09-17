@@ -169,7 +169,16 @@
       </div>
     </div>
     <div class="donate">
-      <a class="gbm" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Donate" rel="noopener noreferrer"><img src="images/imgbtn/gbm.png" loading="lazy" alt=""></a>
+      <a class="gbm" onclick="openDonate()" href="#" title="Donate"><img src="images/imgbtn/gbm.png" loading="lazy" alt=""></a>
+    </div>
+    <div class="donate-popup" id="donate-popup">
+      <h2>CHOOSE QR CODE</h2>
+      <div class="qr-content">
+        <img src="images/popup/">
+        <img src="images/popup/">
+        <img src="images/popup/">
+      </div>
+      <button type="button" onclick="closeDonate()">Close</button>
     </div>
 
     <div class="footer">
