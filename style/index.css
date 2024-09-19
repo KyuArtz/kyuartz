@@ -121,8 +121,8 @@ button:hover {
 
 .next:hover,
 .prev:hover {
-    background: var(--color);
     opacity: 1;
+    color: var(--color);
 }
 
 /* Captions */
