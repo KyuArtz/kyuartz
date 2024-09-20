@@ -70,7 +70,7 @@ ul {
 
 .next:hover,
 .prev:hover {
-    background: var(--color);
+    color: var(--color);
     opacity: 1;
 }
 
@@ -82,6 +82,7 @@ ul {
 /* Comic Title */
 .comic-title {
     color: var(--default-font-color);
+    max-width: 50%;
     font-size: 1.3rem;
     padding: 8px 12px;
     position: absolute;
@@ -168,7 +169,6 @@ ul {
     .next,
     .prev {
         font-size: 20px;
-        padding: 30px 10px;
     }
     .mySlides img {
         height: 250px;
