@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = [
     {
+      src: "images/artgallary/Legend_of_the_crystalight (2024).jpg",
+      title: "",
+      category: "all"
+    },
+    {
       src: "images/artgallary/Bday_Art(2024).jpg",
       title: "",
       category: "anime-style"
