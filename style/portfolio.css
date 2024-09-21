@@ -7,7 +7,7 @@
 /* Gallery Grid */
 .gallary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr)); /* 273px 5 column : 274px 4 column */
     margin-top: 100px;
 }
 

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Legend_of_the_crystalight (2024).jpg",
       title: "",
-      category: "all"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Bday_Art(2024).jpg",
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Wasteland.jpg",
       title: "",
-      category: "semi-realism"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Rayza_character_design.jpg",
@@ -233,7 +233,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Enemy_territory (2021).jpg",
       title: "",
-      category: "semi-realism"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Elishia_cute_emote.jpg",
@@ -288,12 +288,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Day_off (2021).jpg",
       title: "",
-      category: "anime-style"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Christmas_theme (2020).jpg",
       title: "",
-      category: "semi-realism"
+      category: "landscape"
     },
     {
       src: "images/artgallary/RB9_cover (2020).jpg",
@@ -328,12 +328,12 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Journey (2020).jpg",
       title: "",
-      category: "all"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Ruins (2020).jpg",
       title: "",
-      category: "all"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Elishia_Hexxana (2020).jpg",
@@ -348,7 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "images/artgallary/Duel (2020).jpg",
       title: "",
-      category: "semi-realism"
+      category: "landscape"
     },
     {
       src: "images/artgallary/Hexxana_tekushiki (2020).jpg",
