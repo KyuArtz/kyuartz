@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-function closePopup() {
+function closePopupMessage() {
   var overlay = document.getElementById('overlay');
   var popupMessage = document.getElementById('popup-message');
 
