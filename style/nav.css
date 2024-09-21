@@ -27,13 +27,13 @@
 }
 
 #popup-message img {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  right: -55px;
-  top: -55px;
-  filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.5));
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    right: -55px;
+    top: -55px;
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0, 0.5));
 }
 
 #popup-message h2 {
@@ -177,16 +177,7 @@ a {
     border-radius: 50%;
     border: solid thin var(--color);
 }
-/*
-.my-avatar {
-  animation: 3s linear infinite rotate-con;
-}
 
-@keyframes rotate-con {
-    from {transform: rotate(360deg);}
-    to {transform: rotate(0deg);}
-}
-*/
 /* Nav Links */
 .nav-link,
 .nav-link-dropdown {
@@ -260,7 +251,8 @@ form.search input[type=search],
     outline: none;
 }
 
-form.search input[type=search], form.search button {
+form.search input[type=search],
+form.search button {
     margin: 0;
     padding: 10px;
     transition: 0.3s ease-in-out;
@@ -336,14 +328,14 @@ form.search input[type=search],
 
 /* Up Container Image */
 #upBtn {
-    display: none; 
+    display: none;
     position: fixed;
-    bottom: 20px; 
+    bottom: 20px;
     right: 20px;
     z-index: 1;
-    border: none; 
-    outline: none; 
-    background: var(--color); 
+    border: none;
+    outline: none;
+    background: var(--color);
     color: #ffffff;
     cursor: pointer;
     padding: 15px;
@@ -353,6 +345,69 @@ form.search input[type=search],
 
 #upBtn:hover {
     background: var(--hover-light);
+}
+
+/* Media Queries */
+@media screen and (max-width: 978px) {
+    .hamburger {
+        display: block;
+        margin: 0 3px 0 0;
+        border: solid thin var(--color);
+        border-radius: 9px;
+        padding: 5px;
+    }
+
+    .hamburger.active-hamburger .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active-hamburger .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active-hamburger .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        padding: 0;
+        right: -100%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        background: var(--content-bg);
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+    }
+
+    .nav-item a,
+    .nav-link-dropdown {
+        font-size: 1.5rem;
+        background: none;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .nav-item a:hover {
+        color: var(--color);
+    }
+
+    .nav-menu.active-nav {
+        right: 0;
+    }
+
+    .active-nav a,
+    .active-dropdown a {
+        color: var(--default-font-color);
+        border-radius: 0;
+    }
 }
 
 /* Dropdown Content */
@@ -515,6 +570,38 @@ form.search input[type=search],
     left: 0;
 }
 
+@media screen and (max-width: 500px) {
+    .brand {
+        display: none;
+    }
+
+    .category-menu {
+        width: 50%;
+    }
+
+    .dropdown-content {
+        width: 90%;
+    }
+
+    #popup-message {
+        width: 300px;
+    }
+
+    #popup-message img {
+        width: 120px;
+        height: 120px;
+        position: unset;
+    }
+
+    #popup-message p {
+        font-size: x-small;
+    }
+
+    #popup-message h2 {
+        font-size: x-large;
+    }
+}
+
 /* Footer */
 .footer {
     position: relative;
@@ -561,101 +648,4 @@ form.search input[type=search],
     border: solid thin var(--color);
     margin: auto 3px;
     object-fit: cover;
-}
-
-/* Media Queries */
-@media screen and (max-width: 978px) {
-    .hamburger {
-        display: block;
-        margin: 0 3px 0 0;
-        border: solid thin var(--color);
-        border-radius: 9px;
-        padding: 5px;
-    }
-
-    .hamburger.active-hamburger .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active-hamburger .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active-hamburger .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        position: fixed;
-        padding: 0;
-        right: -100%;
-        top: 50px;
-        gap: 0;
-        flex-direction: column;
-        background: var(--content-bg);
-        width: 100%;
-        height: 100vh;
-        justify-content: center;
-        transition: 0.3s ease-in-out;
-    }
-
-    .nav-item {
-        margin: 20px 0;
-    }
-
-    .nav-item a,
-    .nav-link-dropdown {
-        font-size: 1.5rem;
-        background: none;
-        box-shadow: none;
-        text-shadow: none;
-    }
-
-    .nav-item a:hover {
-        color: var(--color);
-    }
-
-    .nav-menu.active-nav {
-        right: 0;
-    }
-
-    .active-nav a,
-    .active-dropdown a {
-        color: var(--default-font-color);
-        border-radius: 0;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .dropdown-content {
-        width: 90%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #popup-message {
-        width: 300px;
-    }
-    
-    #popup-message img {
-        width: 120px;
-        height: 120px;
-        position: unset;
-    }
-    
-    #popup-message p {
-        font-size: x-small;
-    }
-    
-    #popup-message h2 {
-        font-size: x-large;
-    }
-
-    .brand {
-        display: none;
-    }
-
-    .category-menu {
-        width: 50%;
-    }
 }
