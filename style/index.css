@@ -247,24 +247,6 @@
 }
 
 @media (max-width: 500px) {
-  #popup {
-    width: 300px;
-  }
-
-  #popup img {
-    width: 120px;
-    height: 120px;
-    position: unset;
-  }
-
-  #popup p {
-    font-size: x-small;
-  }
-
-  #popup h2 {
-    font-size: x-large;
-  }
-
   .next,
   .prev {
     padding: 20px 10px;
