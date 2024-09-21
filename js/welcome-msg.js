@@ -1,20 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
-  if (!getCookie("popupShown")) {
+  if (!getCookie("popup-messageShown")) {
     var overlay = document.getElementById('overlay');
-    var popup = document.getElementById('popup');
+    var popupMessage = document.getElementById('popup-message');
 
     overlay.style.display = 'block';
-    popup.style.display = 'block';
-    setCookie("popupShown", true, 365); // Cookie expires in 365 days
+    popupMessage.style.display = 'block';
+    setCookie("popup-messageShown", true, 365); // Cookie expires in 365 days
   }
 });
 
 function closePopup() {
   var overlay = document.getElementById('overlay');
-  var popup = document.getElementById('popup');
+  var popupMessage = document.getElementById('popup-message');
 
   overlay.style.display = 'none';
-  popup.style.display = 'none';
+  popupMessage.style.display = 'none';
 }
 
 function setCookie(name, value, days) {
