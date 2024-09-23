@@ -12,14 +12,12 @@ let availableKeywords = [
     { name: 'FAQ', url: 'faq.html' },
     { name: 'About me', url: 'about.html' },
     { name: 'Contact', url: 'contact.html' },
-    { name: 'Paypal (kyushiartz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },
-    { name: 'Maya (kyushiartz)', url: 'maintenance.html' },
-    { name: 'Gcash (kyushiartz)', url: 'maintenance.html' },
-    { name: 'Facebook (kyushiartz page)', url: 'https://www.facebook.com/kyushiartz' },
-    { name: 'Youtube (kyushiartz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
-    { name: 'X (kyushiartz page)', url: ' ' },
-    { name: 'Artstation (kyushiartz page)', url: 'https://kyushiartz.artstation.com/' },
-    { name: 'Cara (kyushiartz page)', url: 'https://cara.app/kyuu' },
+    { name: 'Paypal (KyuArtz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },
+    { name: 'Facebook (KyuArtz page)', url: 'https://www.facebook.com/KyuArtz' },
+    { name: 'Youtube (KyuArtz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
+    { name: 'X (KyuArtz page)', url: ' ' },
+    { name: 'Artstation (KyuArtz page)', url: 'https://KyuArtz.artstation.com/' },
+    { name: 'Cara (KyuArtz page)', url: 'https://cara.app/kyuu' },
 ];
 
 const resultBox = document.querySelector(".search-result");
