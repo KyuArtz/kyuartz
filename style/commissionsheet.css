@@ -89,10 +89,6 @@ ul {
     transition: 0.4s ease-in-out;
 }
 
-.inquire-button a:hover {
-    box-shadow: var(--color) 0 0 10px 0.5px;
-}
-
 /* Content */
 .cs-content {
     color: #ffffff;
