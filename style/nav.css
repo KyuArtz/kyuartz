@@ -422,7 +422,7 @@ form.search input[type=search],
     min-width: 200px;
     height: 100vh;
     background: var(--content-bg);
-    box-shadow: 5px 0 5px -5px #000;
+    box-shadow: 5px 0 1px -5px #000;
     transition: 0.5s ease 0s;
     overflow: auto;
 }
@@ -529,7 +529,7 @@ form.search input[type=search],
     height: 100vh;
     justify-content: left;
     transition: 0.5s ease 0s;
-    box-shadow: 5px 0 5px -5px #000;
+    box-shadow: 5px 0 1px -5px #000;
     overflow: auto;
 }
 
