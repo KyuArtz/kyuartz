@@ -19,8 +19,7 @@ ul {
 
 .price {
     width: 100%;
-    margin: 3px;
-    height: 340px;
+    height: 350px;
     overflow: auto;
     border: solid thin var(--color);
     border-radius: 9px;
@@ -104,7 +103,7 @@ ul {
 
 /* Image Container */
 .img-container {
-    text-align: center;
+    width: 100%;
 }
 
 /* Image */
@@ -128,6 +127,6 @@ ul {
         text-align: center;
     }
     .cs-container img {
-        width: 250px;
+        width: 100%;
     }
 }
