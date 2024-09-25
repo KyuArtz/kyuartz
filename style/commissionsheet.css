@@ -23,7 +23,6 @@ ul {
     overflow: auto;
     border: solid thin var(--color);
     border-radius: 9px;
-    padding: 10px 0;
 }
 
 .price, .img-container {
