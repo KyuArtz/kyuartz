@@ -15,7 +15,7 @@ let availableKeywords = [
     { name: 'Paypal (KyuArtz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },
     { name: 'Facebook (KyuArtz page)', url: 'https://www.facebook.com/KyuArtz' },
     { name: 'Youtube (KyuArtz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
-    { name: 'X (KyuArtz page)', url: ' ' },
+    { name: 'X (KyuArtz page)', url: 'https://x.com/KyuArtz_992' },
     { name: 'Artstation (KyuArtz page)', url: 'https://KyuArtz.artstation.com/' },
     { name: 'Cara (KyuArtz page)', url: 'https://cara.app/kyuu' },
 ];
