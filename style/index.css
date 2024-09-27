@@ -154,6 +154,7 @@
     display: grid;
     text-align: center;
     box-shadow: 0 0 5px #000;
+    border: solid thin #000;
     background: var(--overlay);
     margin: 10px;
     border-radius: 10px;
