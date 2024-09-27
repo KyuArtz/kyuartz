@@ -196,6 +196,7 @@ a {
 .nav-link:hover,
 .nav-link-dropdown:hover {
     color: var(--color);
+    border-bottom: solid thin dodgerblue;
 }
 
 .active-nav a {
@@ -427,6 +428,7 @@ form.search input[type=search],
     border-top: solid thin #000;
     border-bottom: solid thin #000;
     font-family: var(--font-style);
+    font-size: 1.1rem;
     text-align: center;
     cursor: default;
     padding: 5px;
@@ -439,7 +441,7 @@ form.search input[type=search],
     box-shadow: none;
     text-shadow: none;
     border: none;
-    padding: 19px 20px;
+    padding: 20px 20px;
     text-decoration: none;
     text-align: left;
     font-family: var(--font-style);
@@ -525,6 +527,7 @@ form.search input[type=search],
     border-top: solid thin #000;
     border-bottom: solid thin #000;
     font-family: var(--font-style);
+    font-size: 1.1rem;
     text-align: center;
     cursor: default;
     padding: 5px;
