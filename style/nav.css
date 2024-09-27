@@ -184,7 +184,7 @@ a {
     background: none;
     color: var(--default-font-color);
     font-family: var(--font-style);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     cursor: pointer;
     transition: 0.4s ease-in-out;
     padding: 15px 25px 12px;
