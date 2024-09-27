@@ -65,7 +65,7 @@
     color: var(--default-font-color);
     border: solid thin;
     font-family: var(--font-style);
-    border-radius: 9px;
+    border-radius: 50px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;

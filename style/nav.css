@@ -157,7 +157,7 @@ a {
 
 .nav-brand {
     font-family: var(--font-style);
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     font-weight: bold;
     color: var(--color);
     background: var(--brand-color);
@@ -189,21 +189,20 @@ a {
     font-size: 0.9rem;
     cursor: pointer;
     transition: 0.4s ease-in-out;
-    padding: 12px 25px;
+    padding: 15px 25px 12px;
     margin: 0 2px;
 }
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
     color: var(--color);
-    border-bottom: solid thin var(--color);
 }
 
 .active-nav a {
-    border: solid thin var(--color);
-    border-radius: 10px;
     color: var(--color);
-
+    border: solid thin var(--color);
+    border-radius: 50px;
+    background: var(--overlay);
 }
 
 /* Hamburger Menu */
@@ -229,15 +228,15 @@ form.search {
 form.search input[type=search] {
     float: right;
     width: 80%;
-    border-radius: 0 20px 20px 0;
-    background: none;
+    border-radius: 0 50px 50px 0;
+    background: var(--overlay);
 }
 
 form.search button {
     float: left;
     width: 20%;
     border: 1px solid var(--color);
-    border-radius: 20px 0 0 20px;
+    border-radius: 50px 0 0 50px;
     color: var(--default-font-color);
     background: var(--color);
     cursor: pointer;
@@ -253,7 +252,7 @@ form.search input[type=search],
 form.search input[type=search],
 form.search button {
     margin: 0;
-    padding: 12px;
+    padding: 10px;
     transition: 0.3s ease-in-out;
 }
 
