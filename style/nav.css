@@ -171,6 +171,7 @@ a {
 /* Avatar */
 .my-avatar {
     width: 42px;
+    height: 42px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: solid thin var(--color);
@@ -328,8 +329,10 @@ form.search input[type=search],
     background: var(--color);
     color: var(--default-font-color);
     cursor: pointer;
-    padding: 15px;
-    border-radius: 15px;
+    aspect-ratio: 1 / 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
     box-shadow: 0 0 5px #000;
 }
 
