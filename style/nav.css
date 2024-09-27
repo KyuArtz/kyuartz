@@ -80,12 +80,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
 }
 
 /* Toggle Switch Styles */
 .theme-toggle {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .switch {
@@ -152,29 +151,30 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0 0 56px;
+    margin: auto 5px;
 }
 
 .nav-brand {
     font-family: var(--font-style);
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     font-weight: bold;
     color: var(--color);
     background: var(--brand-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 /* Avatar */
 .my-avatar {
-    position: absolute;
-    top: 4px;
-    left: 8px;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    aspect-ratio: 1 / 1;
     border-radius: 50%;
     border: solid thin var(--color);
+    margin-right: 5px;
 }
 
 /* Nav Links */
@@ -187,20 +187,21 @@ a {
     font-size: 0.9rem;
     cursor: pointer;
     transition: 0.4s ease-in-out;
-    padding: 15px 25px 12px;
+    padding: 12px 25px;
     margin: 0 2px;
 }
 
 .nav-link-dropdown:hover,
 .nav-link:hover {
     color: var(--color);
+    border-bottom: solid thin var(--color);
 }
 
 .active-nav a {
     border: solid thin var(--color);
-    background: var(--overlay);
+    border-radius: 10px;
     color: var(--color);
-    border-radius: 50px;
+
 }
 
 /* Hamburger Menu */
@@ -227,6 +228,7 @@ form.search input[type=search] {
     float: right;
     width: 80%;
     border-radius: 0 20px 20px 0;
+    background: none;
 }
 
 form.search button {
@@ -235,6 +237,7 @@ form.search button {
     border: 1px solid var(--color);
     border-radius: 20px 0 0 20px;
     color: var(--default-font-color);
+    background: var(--color);
     cursor: pointer;
 }
 
@@ -248,13 +251,12 @@ form.search input[type=search],
 form.search input[type=search],
 form.search button {
     margin: 0;
-    padding: 10px;
+    padding: 12px;
     transition: 0.3s ease-in-out;
-    background: var(--overlay);
 }
 
 form.search button:hover {
-    color: var(--hover-light);
+    color: #000;
 }
 
 /* Clear floats */
@@ -339,11 +341,9 @@ form.search input[type=search],
 @media screen and (max-width: 978px) {
     .hamburger {
         display: block;
-        margin: 0 3px 0 0;
         border: solid thin var(--color);
         border-radius: 10px;
         padding: 5px;
-        background: var(--overlay);
     }
 
     .hamburger.active-hamburger .bar:nth-child(2) {
@@ -371,6 +371,7 @@ form.search input[type=search],
         justify-content: center;
         border-top: solid thin #000;
         transition: 0.3s ease-in-out;
+        margin: 0;
     }
 
     .nav-item {
@@ -408,7 +409,7 @@ form.search input[type=search],
     border-radius: unset;
     position: fixed;
     left: -100%;
-    top: 50px;
+    top: 52px;
     padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
@@ -461,7 +462,7 @@ form.search input[type=search],
     min-height: 50px;
     background-image: inherit;
     border-bottom: solid thin #000;
-    top: 50px;
+    top: 51px;
     z-index: 99;
 }
 
@@ -483,7 +484,6 @@ form.search input[type=search],
     left: 7px;
     border: solid thin var(--color);
     border-radius: 50px;
-    background: var(--overlay);
     padding: 5px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
