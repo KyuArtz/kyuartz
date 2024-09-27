@@ -21,9 +21,7 @@
     --overlay: rgba(10, 18, 24, 0.5);
     --transparent-overlay: rgba(11, 31, 49, 0.950);
     --scrollbar-track-color: #09243a;
-    --active: rgba(10, 18, 24, 0.6);
     --hover-light: dodgerblue;
-    --hover-dark: rgb(23, 75, 128);
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
     --content-bg: rgb(22, 33, 46);

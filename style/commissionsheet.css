@@ -93,7 +93,6 @@ ul {
     color: #ffffff;
     text-align: center;
     padding: 5px 11px 10px;
-    background: var(--overlay);
     box-shadow: 0 0 5px #000;
     border-radius: 10px;
     max-width: 1000px;

@@ -155,9 +155,9 @@
     text-align: center;
     box-shadow: 0 0 5px #000;
     background: var(--overlay);
-    margin: 9px;
-    border-radius: 9px;
-    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .video_container h2 {
@@ -165,7 +165,6 @@
     font-family: var(--font-style);
     color: var(--color);
     font-size: 1.3rem;
-    border-radius: 9px 9px 0 0;
 }
 
 /* Carousel */
@@ -190,7 +189,7 @@
     width: 100%;
     height: auto;
     border-radius: 15px;
-    border: solid thin rgb(0, 0, 0);
+    border: solid thin #ffffff;
     background: var(--content-bg);
     transition: all 0.3s ease-in-out;
     cursor: pointer;

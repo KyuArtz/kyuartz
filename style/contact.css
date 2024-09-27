@@ -16,7 +16,7 @@
 }
 
 /* Title */
-.title h2 {
+.title h1 {
     text-align: center;
     cursor: default;
     color: var(--color);
@@ -58,14 +58,10 @@ input[type="Submit"] {
     font-size: 0.7rem;
     color: var(--default-font-color);
     padding: 12px 30px;
-    border: none;
+    border: solid thin var(--default-font-color);
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-input[type="Submit"]:hover {
-    background-color: var(--hover-light);
 }
 
 /* Checkbox */

@@ -164,7 +164,6 @@ a {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 5px var(--color);
 }
 
 /* Avatar */
@@ -195,16 +194,13 @@ a {
 .nav-link-dropdown:hover,
 .nav-link:hover {
     color: var(--color);
-    box-shadow: 0 0 1px var(--color);
-    border-radius: 9px;
 }
 
 .active-nav a {
-    box-shadow: 0 0 1px var(--color);
-    background: var(--active);
+    border: solid thin var(--color);
+    background: var(--overlay);
     color: var(--color);
-    border-radius: 9px;
-    text-shadow: 0 0 5px var(--color);
+    border-radius: 50px;
 }
 
 /* Hamburger Menu */
@@ -259,7 +255,6 @@ form.search button {
 }
 
 form.search input[type=search]:hover {
-    background: #0a0f16;
     border-color: var(--hover-light);
 }
 
@@ -280,7 +275,7 @@ form.search::after {
     width: 50%;
     position: absolute;
     top: 55px;
-    background: var(--content-bg);
+    background: var(--theme);
     border-radius: 10px;
     box-shadow: 0 0 5px #000;
 }
@@ -302,7 +297,6 @@ form.search input[type=search],
 .search-result ul li,
 .search-result p {
     font-family: sans-serif;
-    font-weight: bold;
 }
 
 .search-result a {
@@ -353,8 +347,9 @@ form.search input[type=search],
         display: block;
         margin: 0 3px 0 0;
         border: solid thin var(--color);
-        border-radius: 9px;
+        border-radius: 10px;
         padding: 5px;
+        background: var(--overlay);
     }
 
     .hamburger.active-hamburger .bar:nth-child(2) {
@@ -376,7 +371,7 @@ form.search input[type=search],
         top: 50px;
         gap: 0;
         flex-direction: column;
-        background: var(--content-bg);
+        background: var(--theme);
         width: 100%;
         height: 100vh;
         justify-content: center;
@@ -393,6 +388,7 @@ form.search input[type=search],
         background: none;
         box-shadow: none;
         text-shadow: none;
+        border: none;
     }
 
     .nav-item a:hover {
@@ -421,18 +417,18 @@ form.search input[type=search],
     padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
-    background: var(--content-bg);
+    background: var(--theme);
     box-shadow: 5px 0 1px -5px #000;
     transition: 0.5s ease 0s;
     overflow: auto;
 }
 
 .dropdown-content h3 {
-    color: #ffffff;
-    background: var(--color);
+    color: var(--color);
+    border-top: solid thin #000;
+    border-bottom: solid thin #000;
     font-family: var(--font-style);
     text-align: center;
-    font-size: 1.0rem;
     cursor: default;
     padding: 5px;
     margin: 0;
@@ -443,20 +439,17 @@ form.search input[type=search],
     background: none;
     box-shadow: none;
     text-shadow: none;
-    border-radius: 0;
+    border: none;
     padding: 19px 20px;
     text-decoration: none;
     text-align: left;
     font-family: var(--font-style);
     font-size: 0.8rem;
-    margin: 3px;
-    border-radius: 9px;
     transition: 0.5s ease-in-out;
 }
 
 .dropdown-content a:hover {
-    background: var(--hover-light);
-    color: #000000;
+    color: var(--color);
 }
 
 .show {
@@ -494,7 +487,8 @@ form.search input[type=search],
     align-items: center;
     left: 7px;
     border: solid thin var(--color);
-    border-radius: 5px;
+    border-radius: 50px;
+    background: var(--overlay);
     padding: 5px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
@@ -511,11 +505,6 @@ form.search input[type=search],
     display: inline-block;
 }
 
-.category-dots:hover {
-    background: var(--hover-dark);
-    color: #000000;
-}
-
 /* Category Menu */
 .category-menu {
     position: fixed;
@@ -524,7 +513,7 @@ form.search input[type=search],
     top: 84px;
     padding-bottom: 100px;
     flex-direction: column;
-    background: var(--content-bg);
+    background: var(--theme);
     min-width: 150px;
     height: 100vh;
     justify-content: left;
@@ -534,11 +523,11 @@ form.search input[type=search],
 }
 
 .category-menu h3 {
-    color: #ffffff;
-    background: var(--color);
+    color: var(--color);
+    border-top: solid thin #000;
+    border-bottom: solid thin #000;
     font-family: var(--font-style);
     text-align: center;
-    font-size: 1.0rem;
     cursor: default;
     padding: 5px;
     margin: 0;
@@ -552,8 +541,6 @@ form.search input[type=search],
     font-size: 0.8rem;
     font-family: var(--font-style);
     width: 100%;
-    margin: 3px;
-    border-radius: 9px;
     transition: 0.5s ease-in-out;
 }
 
@@ -562,8 +549,7 @@ form.search input[type=search],
 }
 
 .category-item a:hover {
-    color: #000000;
-    background: var(--hover-light);
+    color: var(--color);
 }
 
 .category-menu.active-category {
@@ -646,6 +632,7 @@ form.search input[type=search],
     height: 30px;
     border-radius: 50%;
     border: solid thin var(--color);
+    background: var(--overlay);
     margin: auto 3px;
     object-fit: cover;
 }
