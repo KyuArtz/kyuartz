@@ -375,6 +375,7 @@ form.search input[type=search],
         width: 100%;
         height: 100vh;
         justify-content: center;
+        box-shadow: 0 0 1px #000;
         transition: 0.3s ease-in-out;
     }
 
