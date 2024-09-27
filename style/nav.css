@@ -58,7 +58,7 @@
     padding: 10px 20px;
     background: var(--color);
     color: var(--default-font-color);
-    border: none;
+    border: solid thin var(--default-font-color);
     border-radius: 50px;
     font-family: var(--font-style);
     cursor: pointer;
