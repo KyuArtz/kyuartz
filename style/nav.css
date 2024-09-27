@@ -513,7 +513,6 @@ form.search input[type=search],
     height: 100vh;
     justify-content: left;
     transition: 0.5s ease 0s;
-    box-shadow: 5px 0 1px -5px #000;
     border-right: solid thin #000;
     overflow: auto;
 }
