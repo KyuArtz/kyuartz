@@ -13,14 +13,14 @@
 /* Root Variables */
 :root {
     --theme: linear-gradient(to right, rgb(26, 27, 32), rgb(40, 41, 51));
-    --theme-2: linear-gradient(to right, rgb(26, 27, 32), rgb(31, 63, 95));
+    --theme-2: linear-gradient(to right, rgb(46, 51, 61), rgb(31, 63, 95));
     --theme-overlay: linear-gradient(to right, rgb(26, 27, 32, 0.600), rgb(40, 41, 51, 0.600));
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;
     --default-font-color: rgb(230, 230, 230);
     --overlay: rgba(10, 18, 24, 0.5);
     --transparent-overlay: rgba(11, 31, 49, 0.950);
-    --scrollbar-track-color: #09243a;
+    --scrollbar-track-color: #0000;
     --hover-light: dodgerblue;
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));

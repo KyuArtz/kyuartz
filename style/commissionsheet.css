@@ -21,8 +21,6 @@ ul {
     width: 100%;
     height: 350px;
     overflow: auto;
-    border: solid thin var(--color);
-    border-radius: 10px;
 }
 
 .price, .img-container {
