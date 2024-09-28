@@ -12,8 +12,8 @@
 
 /* Root Variables */
 :root {
-    --theme: linear-gradient(to right, rgb(26, 27, 32), rgb(40, 41, 51));
-    --theme-2: linear-gradient(to right, rgb(46, 51, 61), rgb(31, 63, 95));
+    --theme: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
+    --theme-2: linear-gradient(to right, rgb(58, 64, 74), rgb(42, 54, 68), rgb(36, 72, 92));
     --theme-overlay: linear-gradient(to right, rgb(26, 27, 32, 0.600), rgb(40, 41, 51, 0.600));
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;
