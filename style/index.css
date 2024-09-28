@@ -273,6 +273,9 @@
     flex-direction: column;
     padding: 0 30px;
   }
+  .caption-btn a {
+    font-size: unset;
+  }
 }
 
 @media (max-width: 480px) {
