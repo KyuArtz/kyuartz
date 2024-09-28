@@ -99,6 +99,7 @@
 .caption-btn a {
     padding: 10px 50px;
     margin: 5px;
+    min-width: 20%;
     border-radius: 50px;
     border: solid thin;
     box-shadow: 0 0 5px #000;
@@ -275,6 +276,7 @@
   }
   .caption-btn a {
     font-size: unset;
+    width: unset;
   }
 }
 
