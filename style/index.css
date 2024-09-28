@@ -84,7 +84,7 @@
 }
 
 .caption h2, p {
-  margin: auto 15px;
+  margin: auto 20px;
   padding: 5px 0;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .caption-btn a {
-    padding: 10px 50px;
+    padding: 10px;
     margin: 5px;
     min-width: 20%;
     border-radius: 50px;
