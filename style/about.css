@@ -191,10 +191,6 @@
         width: 100%;
         display: block;
     }
-    .my-info h2,
-    .my-info p {
-        text-align: center;
-    }
     .my-info p {
         border-radius: 50px;
     }
