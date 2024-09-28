@@ -58,12 +58,11 @@
 .caption {
     position: absolute;
     width: 100%;
-    color: #f2f2f2;
+    color: var(--default-font-color);
     background: var(--overlay);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: var(--font-style);
     top: 0;
-    padding: 0 20px 0;
     text-align: center;
     align-content: center;
     height: 99.5%;
@@ -72,15 +71,19 @@
 
 .caption h2 {
     color: var(--default-font-color);
-    text-shadow: 0 0 15px var(--color);
+    text-shadow: 0 0 10px var(--color);
     letter-spacing: 5px;
     font-size: 4.0rem;
-    margin: 0;
 }
 
 .caption p {
     text-shadow: 0 0 5px #000000;
     text-decoration: underline;
+}
+
+.caption h2, p {
+  margin: auto 15px;
+  padding: 5px 0;
 }
 
 .caption-btn {
@@ -94,12 +97,12 @@
 }
 
 .caption-btn a {
-    padding: 10px 20px;
+    padding: 10px 50px;
     margin: 5px;
-    width: 15%;
     border-radius: 50px;
     border: solid thin;
     box-shadow: 0 0 5px #000;
+    font-size: 1.1rem;
     font-family: var(--font-style);
     transition: background-color 0.5s ease-in-out;
 }
@@ -263,17 +266,12 @@
     font-size: 0.7rem;
   }
   .caption h2 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   .caption-btn {
     flex-direction: column;
-    padding: 0 50px;
-  }
-
-  .caption-btn a {
-    font-size: 0.6rem;
-    width: unset;
+    padding: 0 30px;
   }
 }
 
