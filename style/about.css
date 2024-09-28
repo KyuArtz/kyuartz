@@ -15,7 +15,9 @@
 .summarycontent,
 .expcontent p,
 .card {
-    background: var(--overlay);
+    background-color: var(--overlay);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .summary h2,

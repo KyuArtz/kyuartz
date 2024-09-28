@@ -47,13 +47,6 @@ body {
     background-color: var(--background-color);
 }
 
-/* Glass Effect 
-.glass {
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}*/
-
-
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 3px;

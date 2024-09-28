@@ -59,7 +59,9 @@
     position: absolute;
     width: 100%;
     color: var(--default-font-color);
-    background: var(--overlay);
+    background-color: var(--overlay);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     font-size: 1.2rem;
     font-family: var(--font-style);
     top: 0;
