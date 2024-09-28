@@ -18,7 +18,7 @@
     --background-color: rgba(30, 143, 255);
     --color: dodgerblue;
     --default-font-color: rgb(230, 230, 230);
-    --overlay: rgba(10, 18, 24, 0.5);
+    --overlay: rgba(10, 18, 24, 0.6);
     --transparent-overlay: rgba(11, 31, 49, 0.950);
     --scrollbar-track-color: #0000;
     --hover-light: dodgerblue;
@@ -30,7 +30,6 @@
 /* Default Theme */
 body.default-theme {
     background-image: var(--theme);
-    background-color: var(--color);
     color: var(--color);
     transition: .5s ease-in-out;
 }
