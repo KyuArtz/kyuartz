@@ -255,7 +255,7 @@ form.search input[type=search],
 form.search input[type=search],
 form.search button {
     margin: 0;
-    padding: 10px;
+    padding: 12px;
     transition: 0.3s ease-in-out;
 }
 
