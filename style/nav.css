@@ -272,10 +272,12 @@ form.search::after {
 
 /* Search Result */
 .search-result {
-    width: 50%;
+    min-width: 50%;
     position: absolute;
     top: 55px;
-    background: var(--theme);
+    background-color: var(--overlay);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 5px #000;
 }
