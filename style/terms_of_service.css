@@ -17,7 +17,7 @@ strong {
     color: var(--default-font-color);
     font-family: sans-serif;
     margin: 5px;
-    list-style-image: url("../images/bullet/n-bullet.png");
+    list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
     background: var(--overlay);
     border-radius: 10px;
@@ -48,7 +48,7 @@ strong {
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: url("../images/bg/landscape-mode.jpg");
+    background-image: url("../assets/images/bg/landscape-mode.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@ strong {
 /* Responsive Styling */
 @media screen and (max-width: 500px) {
     .background {
-        background-image: url("../images/bg/portrait-mode.jpg");
+        background-image: url("../assets/images/bg/portrait-mode.jpg");
     }
     .ts-content li {
         font-size: small;

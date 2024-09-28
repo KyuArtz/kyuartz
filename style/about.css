@@ -1,6 +1,6 @@
 /* Overlay Classes */
 .card-overlay {
-    background-image: url('../images/bg/landscape-mode.jpg');
+    background-image: url('../assets/images/bg/landscape-mode.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,7 +185,7 @@
 /* Responsive Styles */
 @media screen and (max-width: 650px) {
     .card-overlay {
-        background-image: url('../images/bg/portrait-mode.jpg');
+        background-image: url('../assets/images/bg/portrait-mode.jpg');
     }
     .me {
         width: 100%;
