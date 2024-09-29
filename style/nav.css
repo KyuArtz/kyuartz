@@ -267,6 +267,7 @@ form.search::after {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 1px #000;
+    font-family: sans-serif;
 }
 
 .search-result ul {
@@ -295,7 +296,7 @@ form.search::after {
 .search-result p {
     text-align: center;
     padding: 15px 10px;
-    color: var(--default-font-color);
+    color: inherit;
     border-radius: 0 0 10px 10px;
     cursor: default;
 }
