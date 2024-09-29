@@ -3,10 +3,9 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    text-align: left;
     font-family: var(--font-style);
     padding: 0 30px 30px;
     color: var(--color);
@@ -14,7 +13,6 @@
     border-width: 0 0 thick 0;
     z-index: 1;
     background-image: url("../assets/images/bg/landscape-mode.jpg");
-    box-sizing: border-box;
 }
 
 /* Background Overlay */
@@ -22,7 +20,7 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background: var(--theme);
+    background: inherit;
 }
 
 /* Maintenance Header */
@@ -49,7 +47,7 @@
 .maintenance_button {
     width: 100%;
     padding: 30px;
-    background: var(--theme-overlay);
+    background: var(--overlay);
     position: absolute;
     bottom: 0;
     left: 0;
