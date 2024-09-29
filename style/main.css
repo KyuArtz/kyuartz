@@ -33,14 +33,12 @@
 body.default-theme {
     background-image: var(--theme);
     color: var(--default-font-color);
-    transition: .5s ease-in-out;
 }
 
 /* Custom Theme */
 body.custom-theme {
     background-image: var(--theme-2);
     color: #0e0e0e;
-    transition: .5s ease-in-out;
 }
 
 /* Body */
