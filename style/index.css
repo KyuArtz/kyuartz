@@ -80,12 +80,12 @@
 
 .caption p {
     text-shadow: 0 0 5px #000000;
-    text-decoration: underline;
+    font-weight: 500;
 }
 
 .caption h2, p {
   margin: auto 20px;
-  padding: 15px 0;
+  padding: 13px 0;
 }
 
 .caption-btn {
@@ -101,7 +101,7 @@
 .caption-btn a {
     padding: 10px;
     margin: 5px;
-    min-width: 20%;
+    min-width: 15%;
     border-radius: 50px;
     border: solid thin;
     box-shadow: 0 0 5px #000;
