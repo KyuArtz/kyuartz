@@ -26,7 +26,7 @@
     --hover-light: dodgerblue;
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
-    --content-bg: rgb(22, 33, 46);
+    --content-bg: rgb(22, 33, 46, 0.8);
 }
 
 /* Default Theme */

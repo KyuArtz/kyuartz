@@ -369,7 +369,7 @@ form.search input[type=search],
         gap: 0;
         flex-direction: column;
         align-items: center;
-        background: var(--overlay);
+        background: var(--content-bg);
         width: 100%;
         height: 100%;
         justify-content: center;
@@ -414,7 +414,7 @@ form.search input[type=search],
     border-radius: unset;
     position: fixed;
     left: -100%;
-    top: 51px;
+    top: 50px;
     padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
@@ -560,6 +560,13 @@ form.search input[type=search],
     left: 0;
 }
 
+@media screen and (max-width: 978px) {
+    .dropdown-content {
+        width: 100%;
+        top: 0;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .brand {
         display: none;
@@ -571,11 +578,6 @@ form.search input[type=search],
 
     .category-menu {
         width: 100%;
-    }
-
-    .dropdown-content {
-        width: 100%;
-        top: 0;
     }
 
     #popup-message {
