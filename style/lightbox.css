@@ -55,7 +55,7 @@ body.lb-disable-scrolling {
     margin-top: 15px;
     border-radius: 5px;
     color: var(--color);
-    background: var(--content-bg);
+    background: inherit;
     box-shadow: 0 0 5px #000;
 }
 

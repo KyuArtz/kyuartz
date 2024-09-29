@@ -6,16 +6,10 @@
     background-size: cover;
 }
 
-.summary,
-.experience,
-.program {
-    background: var(--overlay);
-}
-
 .summarycontent,
 .expcontent p,
 .card {
-    background-color: var(--overlay);
+    background-color: inherit;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
@@ -62,7 +56,7 @@
 .expcontent p,
 .card,
 .program-logo img {
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 3px #000;
 }
 
 .summarycontent {
@@ -137,7 +131,7 @@
     padding: 10px 16px;
     background: var(--overlay);
     border-radius: 50px 50px 5px 5px;
-    border: solid thin #000;
+    border: solid thin #ffffff;
 }
 
 .my-info h2 {
@@ -149,7 +143,7 @@
 .my-info p {
     font-size: 0.9rem;
     padding: 5px;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 3px #000;
     border-radius: 30px 50px 50px 30px;
     border: solid thin var(--color);
 }

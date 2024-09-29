@@ -18,7 +18,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: inherit;
-    color: var(--default-font-color);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 5px #000;
@@ -30,7 +29,7 @@
 
 #popup-message img {
     position: absolute;
-    width: 150px;
+    min-width: 150px;
     height: 150px;
     border-radius: 50%;
     right: -55px;
@@ -52,7 +51,7 @@
 }
 
 #popup-message p {
-    color: var(--default-font-color);
+    color: inherit;
     cursor: default;
 }
 
@@ -71,7 +70,7 @@ header {
     position: fixed;
     width: 100%;
     background-image: inherit;
-    border-bottom: solid thin #000;
+    box-shadow: 0 0 1px #000;
     top: 0;
     z-index: 100000;
 }
@@ -110,7 +109,6 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--overlay);
     transition: .4s;
     border-radius: 34px;
     border: solid thin var(--color);
@@ -129,8 +127,7 @@ header {
 }
 
 input:checked + .slider {
-    background: var(--color);
-    border: solid thin #000;
+    border: solid thin var(--color);
 }
 
 input:checked + .slider:before {
@@ -186,7 +183,7 @@ a {
 .nav-link-dropdown {
     border: none;
     background: none;
-    color: var(--default-font-color);
+    color: inherit;
     font-family: var(--font-style);
     font-size: 0.9rem;
     cursor: pointer;
@@ -205,7 +202,6 @@ a {
     color: var(--color);
     border: solid thin var(--color);
     border-radius: 15px;
-    background: var(--overlay);
 }
 
 /* Hamburger Menu */
@@ -232,7 +228,7 @@ form.search input[type=search] {
     float: right;
     width: 80%;
     border-radius: 0 50px 50px 0;
-    background: var(--overlay);
+    background: none;
 }
 
 form.search button {
@@ -248,7 +244,7 @@ form.search button {
 form.search input[type=search],
 .form.search button {
     border: 1px solid var(--color);
-    color: var(--default-font-color);
+    color: inherit;
     outline: none;
 }
 
@@ -275,11 +271,11 @@ form.search::after {
     min-width: 50%;
     position: absolute;
     top: 55px;
-    background-color: var(--overlay);
+    background-color: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 1px #000;
 }
 
 .search-result ul {
@@ -290,8 +286,6 @@ form.search::after {
 
 .search-result ul li {
     list-style: none;
-    font-size: small;
-    color: var(--default-font-color);
 }
 
 form.search input[type=search],
@@ -304,6 +298,7 @@ form.search input[type=search],
 .search-result a {
     width: 100%;
     display: block;
+    color: inherit;
     padding: 15px 10px;
     transition: 0.5s ease-in-out;
 }
@@ -315,7 +310,6 @@ form.search input[type=search],
 
 .search-result p {
     padding: 15px 10px;
-    font-size: small;
     color: var(--default-font-color);
     border-radius: 0 0 10px 10px;
     text-align: center;
@@ -342,7 +336,7 @@ form.search input[type=search],
 }
 
 #upBtn:hover {
-    background: var(--hover-light);
+    color: #000;
 }
 
 /* Media Queries */
@@ -352,6 +346,7 @@ form.search input[type=search],
         border: solid thin var(--color);
         border-radius: 10px;
         padding: 5px;
+        z-index: 1;
     }
 
     .hamburger.active-hamburger .bar:nth-child(2) {
@@ -370,16 +365,18 @@ form.search input[type=search],
         position: fixed;
         padding: 0;
         right: -100%;
-        top: 50px;
+        top: 0;
         gap: 0;
         flex-direction: column;
-        background: var(--theme);
+        align-items: center;
+        background: var(--content-bg);
         width: 100%;
-        height: 100vh;
+        height: 100%;
         justify-content: center;
-        border: solid thin #000;
+        box-shadow: 0 0 1px #000;
         transition: 0.3s ease-in-out;
         margin: 0;
+        z-index: 1;
     }
 
     .nav-item {
@@ -417,21 +414,20 @@ form.search input[type=search],
     border-radius: unset;
     position: fixed;
     left: -100%;
-    top: 50px;
+    top: 51px;
     padding-bottom: 50px;
     min-width: 200px;
     height: 100vh;
-    background-color: var(--overlay);
+    background-color: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: solid thin #000;
+    box-shadow: 0 0 1px #000;
     transition: 0.5s ease 0s;
     overflow: auto;
 }
 
 .dropdown-content h3 {
     color: var(--color);
-    border-top: solid thin #000;
     font-family: var(--font-style);
     font-size: 1.1rem;
     cursor: default;
@@ -439,11 +435,12 @@ form.search input[type=search],
 }
 
 .dropdown-content a {
-    color: var(--default-font-color);
+    color: inherit;
     background: none;
     box-shadow: none;
     text-shadow: none;
     border: none;
+    border-radius: 0;
     text-decoration: none;
     font-family: var(--font-style);
     font-size: 0.8rem;
@@ -452,10 +449,6 @@ form.search input[type=search],
 
 .dropdown-content a, h3 {
     padding: 20px 15px;
-}
-
-.dropdown-content a:hover {
-    color: var(--color);
 }
 
 .show {
@@ -471,7 +464,7 @@ form.search input[type=search],
     width: 100%;
     min-height: 50px;
     background-image: inherit;
-    border-bottom: solid thin #000;
+    box-shadow: 0 0 1px #000;
     top: 50px;
     z-index: 99;
 }
@@ -515,23 +508,22 @@ form.search input[type=search],
     position: fixed;
     display: flex;
     left: -100%;
-    top: 83px;
+    top: 84px;
     padding-bottom: 100px;
     flex-direction: column;
-    background-color: var(--overlay);
+    background-color: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     min-width: 150px;
     height: 100vh;
     justify-content: left;
     transition: 0.5s ease 0s;
-    border: solid thin #000;
+    box-shadow: 0 0 1px #000;
     overflow: auto;
 }
 
 .category-menu h3 {
     color: var(--color);
-    border-top: solid thin #000;
     font-family: var(--font-style);
     font-size: 1.1rem;
     cursor: default;
@@ -544,6 +536,7 @@ form.search input[type=search],
 
 .category-item a {
     font-size: 0.8rem;
+    color: inherit;
     font-family: var(--font-style);
     width: 100%;
     transition: 0.5s ease-in-out;
@@ -557,8 +550,10 @@ form.search input[type=search],
     padding: 15px;
 }
 
+.dropdown-content a:hover,
 .category-item a:hover {
-    color: var(--color);
+    color: var(--default-font-color);
+    background: var(--color);
 }
 
 .category-menu.active-category {
@@ -579,7 +574,8 @@ form.search input[type=search],
     }
 
     .dropdown-content {
-        width: 90%;
+        width: 100%;
+        top: 0;
     }
 
     #popup-message {
@@ -608,7 +604,7 @@ form.search input[type=search],
     background-image: inherit;
     font-family: var(--font-style);
     font-size: 0.6rem;
-    border-top: solid thin #000;
+    box-shadow: 0 -1px 1px #000;
 }
 
 .footer-container {
@@ -624,7 +620,7 @@ form.search input[type=search],
 
 .detail {
     margin-top: 5px;
-    color: rgb(255, 255, 255);
+    color: inherit;
     padding: 0 5px;
     text-decoration: none;
     transition: 0.5s ease-in-out;
@@ -644,8 +640,8 @@ form.search input[type=search],
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: solid thin var(--color);
-    background: var(--overlay);
+    border: solid thin var(--default-font-color);
+    background: var(--content-bg);
     margin: auto 3px;
     object-fit: cover;
 }

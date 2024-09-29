@@ -9,10 +9,12 @@
     text-align: center;
     font-family: var(--font-style);
     padding: 0 30px 30px;
-    background: var(--theme);
+    background: var(--overlay);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     visibility: hidden;
     transition: transform 0.4s;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 3px #000;
 }
 
 /* Open Popup Animation */
@@ -90,10 +92,12 @@
     text-align: center;
     font-family: var(--font-style);
     padding: 30px;
-    background: var(--theme);
+    background: var(--overlay);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     visibility: hidden;
     transition: transform 0.4s;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 3px #000;
     overflow-y: auto; /* Enables scroll when content overflows */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
