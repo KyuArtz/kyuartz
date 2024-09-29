@@ -369,7 +369,7 @@ form.search input[type=search],
         gap: 0;
         flex-direction: column;
         align-items: center;
-        background: var(--content-bg);
+        background: var(--overlay);
         width: 100%;
         height: 100%;
         justify-content: center;
