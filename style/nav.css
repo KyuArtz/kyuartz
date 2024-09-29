@@ -196,8 +196,7 @@ a {
 
 .active-nav a {
     color: var(--color);
-    border: thin solid var(--color);
-    border-radius: 15px;
+    border-bottom: thick solid var(--color);
 }
 
 /* Hamburger Menu */
