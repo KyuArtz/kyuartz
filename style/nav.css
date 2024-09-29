@@ -244,6 +244,7 @@ form.search button {
     outline: none;
     margin: 0;
     padding: 12px;
+    font-family: var(--font-style);
     transition: 0.3s ease-in-out;
 }
 
@@ -267,7 +268,6 @@ form.search::after {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     box-shadow: 0 0 1px #000;
-    font-family: sans-serif;
 }
 
 .search-result ul {
@@ -299,6 +299,11 @@ form.search::after {
     color: inherit;
     border-radius: 0 0 10px 10px;
     cursor: default;
+}
+
+.search-result, p {
+    font-family: var(--font-style);
+    font-size: .9rem;
 }
 
 /* Scroll Button */
