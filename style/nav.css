@@ -301,7 +301,8 @@ form.search::after {
     cursor: default;
 }
 
-.search-result, p {
+.search-result,
+.search-result p {
     font-family: var(--font-style);
     font-size: .9rem;
 }
