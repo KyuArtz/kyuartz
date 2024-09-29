@@ -27,6 +27,7 @@
   <script src="../js/loader.js" defer></script>
   <script src="../js/welcome-msg.js" defer></script>
   <script src="../js/cs-filter.js" defer></script>
+  <script src="../js/currency-conversion.js" defer></script>
   <script src="../js/hamburger.js" defer></script>
   <script src="../js/search.js" defer></script>
   <script src="../js/button-auto-scroll.js" defer></script>
@@ -129,150 +130,178 @@
         </li>
       </ul>      
     </div>
+    
+    <!-- Currency Selector Dropdown -->
+    <select class="currency-conversion-btn" id="currency-selector">
+        <option value="USD">USD</option>
+        <option value="PHP">PHP</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+    </select>
   </div>
 
   <div class="cs-container">
-
+    <!-- Semi-Realism Section -->
     <div class="cs-content" data-category="semi-realism">
       <h1>PORTRAIT / Bust-UP (SEMI-REALISM)</h1>
       <div class="cs-flex">
         <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/portrait-sample.jpg" loading="lazy" alt="">
+          <img src="../assets/images/commission-sheet-sample/portrait-sample.jpg" loading="lazy" alt="Portrait Sample">
         </div>
         <div class="price">
           <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  50 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered Without BG:  30 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  25 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  15 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="50">50 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="30">30 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="25">25 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="15">15 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="5">5 USD</span> per request</p>
         </div>
       </div>
       <div class="inquire-button">
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-
-    <div class="cs-content" data-category="anime">
-      <h1>PORTRAIT / BUST-UP (ANIME-STYLE)</h1>
-      <div class="cs-flex">
-        <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/portrait-sample-anime.jpg" loading="lazy" alt="">
-        </div>
-        <div class="price">
-          <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  30 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered Without BG:  20 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  15 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  10 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
-        </div>
-      </div>
-      <div class="inquire-button">
-        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
-      </div>
-    </div>
-
+  
     <div class="cs-content" data-category="semi-realism">
       <h1>FULL BODY (SEMI-REALISM)</h1>
       <div class="cs-flex">
         <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/full-body-sample.jpg" loading="lazy" alt="">
+          <img src="../assets/images/commission-sheet-sample/full-body-sample.jpg" loading="lazy" alt="Full Body Sample">
         </div>
         <div class="price">
           <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  100 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered Without BG:  55 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  35 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  25 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="100">100 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="55">55 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="35">35 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="25">25 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="10">10 USD</span> per request</p>
         </div>
       </div>
       <div class="inquire-button">
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-
+  
+    <!-- Anime Section -->
+    <div class="cs-content" data-category="anime">
+      <h1>PORTRAIT / Bust-UP (ANIME-STYLE)</h1>
+      <div class="cs-flex">
+        <div class="img-container">
+          <img src="../assets/images/commission-sheet-sample/portrait-sample-anime.jpg" loading="lazy" alt="Anime Portrait Sample">
+        </div>
+        <div class="price">
+          <h2>PRICE INFO</h2>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="30">30 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="20">20 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="15">15 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="10">10 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="5">5 USD</span> per request</p>
+        </div>
+      </div>
+      <div class="inquire-button">
+        <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+    </div>
+  
     <div class="cs-content" data-category="anime">
       <h1>FULL BODY (ANIME-STYLE)</h1>
       <div class="cs-flex">
         <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/anime-sample.jpg" loading="lazy" alt="">
+          <img src="../assets/images/commission-sheet-sample/anime-sample.jpg" loading="lazy" alt="Anime Full Body Sample">
         </div>
         <div class="price">
           <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  75 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered Without BG:  45 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  25 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  19 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="75">75 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="45">45 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="25">25 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="19">19 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="10">10 USD</span> per request</p>
         </div>
       </div>
       <div class="inquire-button">
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-
+  
+    <!-- Chibi Section -->
     <div class="cs-content" data-category="chibi">
       <h1>CHIBI</h1>
       <div class="cs-flex">
         <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/chibi-sample.jpg" loading="lazy" alt="">
+          <img src="../assets/images/commission-sheet-sample/chibi-sample.jpg" loading="lazy" alt="Chibi Sample">
         </div>
         <div class="price">
           <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  25 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered Without BG:  19 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  15 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  10 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="25">25 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="19">19 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="15">15 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="10">10 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="5">5 USD</span> per request</p>
         </div>
       </div>
       <div class="inquire-button">
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-
+  
+    <!-- Emote Section -->
     <div class="cs-content" data-category="emote">
       <h1>EMOTE</h1>
       <div class="cs-flex">
         <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/emote-sample.jpg" loading="lazy" alt="">
+          <img src="../assets/images/commission-sheet-sample/emote-sample.jpg" loading="lazy" alt="Emote Sample">
         </div>
         <div class="price">
           <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  15 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered Without BG:  10 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  5 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  3 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="15">15 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="10">10 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="5">5 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="3">3 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="5">5 USD</span> per request</p>
         </div>
       </div>
       <div class="inquire-button">
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-
+  
+    <!-- Landscape Section -->
     <div class="cs-content" data-category="landscape">
-      <h1>Landscape</h1>
+      <h1>LANDSCAPE</h1>
       <div class="cs-flex">
         <div class="img-container">
-          <img src="../assets/images/commission-sheet-sample/bg-sample.jpg" loading="lazy" alt="">
+          <img src="../assets/images/commission-sheet-sample/bg-sample.jpg" loading="lazy" alt="Landscape Sample">
         </div>
         <div class="price">
           <h2>PRICE INFO</h2>
-          <p><i class="fa-solid fa-tag"></i> Fully Rendered With BG:  150 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Grayscale:  65 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Lineart:  45 USD</p>
-          <p><i class="fa-solid fa-tag"></i> Revisions: + 10 USD</p>
+          <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="150">150 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="65">65 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="45">45 USD</span></p>
+          <p><i class="fa-solid fa-tag"></i> Commercial Use: +50% of total cost</p>
+          <p><i class="fa-solid fa-tag"></i> Revisions: First request free, additional <span class="price-amount" data-usd="10">10 USD</span> per request</p>
         </div>
       </div>
       <div class="inquire-button">
         <a href="contact.html">Order Now <i class="fa-solid fa-cart-shopping"></i></a>
       </div>
     </div>
-
+  
+    <!-- Bundle and Promotions -->
+    <div class="cs-content">
+      <h1>BUNDLES & PROMOTIONS</h1>
+      <div class="price">
+        <p><i class="fa-solid fa-tag"></i> <strong>**Character with Detailed Background**:</strong> Starting from <span class="price-amount" data-usd="120">120 USD</span> (Semi-Realism) or <span class="price-amount" data-usd="90">90 USD</span> (Anime Style)</p>
+        <p><i class="fa-solid fa-tag"></i> <strong>**Limited-Time Discount**:</strong> Enjoy a 10% discount during Holidays!</p>
+      </div>
     </div>
+  </div>  
 
   <button onclick="topFunction()" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 

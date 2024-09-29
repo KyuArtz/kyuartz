@@ -478,7 +478,8 @@ form.search::after {
 /* Category Dots */
 .category-dots {
     position: absolute;
-    left: 7px;
+    left: 0;
+    margin: auto 5px;
     display: flex;
     align-items: center;
     padding: 5px;
@@ -495,6 +496,19 @@ form.search::after {
     margin: 1px;
     background: var(--color);
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.currency-conversion-btn {
+    position: absolute;
+    right: 0;
+    padding: 5px 20px;
+    margin: auto 5px;
+    font-family: var(--font-style);
+    border: solid thin var(--color);
+    border-radius: 5px;
+    color: inherit;
+    background: var(--color);
     cursor: pointer;
 }
 
