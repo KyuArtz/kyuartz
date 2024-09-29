@@ -10,14 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Filter slides based on category
       slideshowContainer.forEach(slide => {
+        const slideCategories = slide.getAttribute('data-category').split(' '); // Assuming space-separated
+
         if (category === 'all') {
-          slide.style.display = 'block'; // Show all slideshow container
+          slide.style.display = 'block'; // Show all slideshow containers
         } else {
-          // Show only slides that match the category, hide the rest
-          if (slide.getAttribute('data-category') === category) {
-            slide.style.display = 'block';
+          // Check if the slide's categories include the selected category
+          if (slideCategories.includes(category)) {
+            slide.style.display = 'block'; // Show if matches the category
           } else {
-            slide.style.display = 'none';
+            slide.style.display = 'none'; // Hide if it doesn't match
           }
         }
       });

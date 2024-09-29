@@ -624,7 +624,7 @@ form.search::after {
     height: 30px;
     border-radius: 50%;
     border: thin solid var(--default-font-color);
-    background: var(--content-bg);
+    background: var(--color);
     margin: 0 3px;
     object-fit: cover;
 }
