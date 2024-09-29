@@ -244,7 +244,7 @@ form.search button {
     outline: none;
     margin: 0;
     padding: 12px;
-    font-family: var(--font-style);
+    font-family: sans-serif;
     transition: 0.3s ease-in-out;
 }
 
@@ -532,11 +532,17 @@ form.search::after {
 }
 
 .category-item a {
+    width: 100%;
     font-family: var(--font-style);
     font-size: 0.8rem;
     color: inherit;
     padding: 20px 15px;
     transition: 0.5s ease-in-out;
+}
+
+.category-item a:hover {
+    background: var(--color);
+    color: #000;
 }
 
 .category-menu.active-category {
