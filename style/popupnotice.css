@@ -16,7 +16,7 @@
     transition: transform 0.4s;
     box-shadow: 0 0 3px #000;
     border: solid thin;
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Open Popup Animation */
@@ -105,7 +105,7 @@
     max-height: 80%; /* Set a max height for the popup */
     overflow-y: auto; /* Add vertical scrolling if content exceeds */
     border: solid thin;
-    z-index: 1;
+    z-index: 2;
 }
 
 .popup-wn ol {
@@ -183,7 +183,7 @@
     overflow-y: auto; /* Enables scroll when content overflows */
     max-height: 80vh; /* Limits height to 80% of the viewport */
     border: solid thin;
-    z-index: 1;
+    z-index: 2;
 }
 
 .qr-content {
