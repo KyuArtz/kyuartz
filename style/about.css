@@ -7,8 +7,6 @@
 .expcontent p,
 .card {
     background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 
 .summary h2,

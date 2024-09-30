@@ -260,7 +260,6 @@ form.search::after {
     position: absolute;
     top: 55px;
     min-width: 50%;
-    background: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -429,7 +428,6 @@ form.search::after {
     flex-direction: column;
     min-width: 200px;
     height: 100vh;
-    background: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 1px 0 0;
