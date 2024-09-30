@@ -47,7 +47,7 @@
   <div id="overlay"></div>
   <div id="popup-message">
     <img src="../assets/images/popup/popup-icon.png" loading="lazy">
-    <h2>Thanks for visiting!</h2>
+    <h1>Thanks for visiting!</h1>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
@@ -160,7 +160,7 @@
 
         <div class="popup" id="popup">
           <img src="../assets/images/popup/popup-icon.png" loading="lazy">
-          <h2>NOTICE <i class="fa-solid fa-circle-exclamation"></i></h2>
+          <h1>NOTICE <i class="fa-solid fa-circle-exclamation"></i></h1>
           <p>By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
           <button type="button" onclick="closePopup()">Understood</button>
           <a href="terms-of-service.html">Terms Of Service</a>
@@ -172,17 +172,17 @@
       <div class="e-wallet" style="text-align:center">
         <h4>MODE OF PAYMENT:</h4><p>kyuushiartz@gmail.com</p>
         <div class="payment">
-          <a class="logo-view" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Paypal" rel="noopener noreferrer"><img src="../assets/images/imgbtn/paypal.webp" loading="lazy"></a>
+          <a class="logo-view" onclick="openDonate()" href="#" view target="_blank" title="Paypal" rel="noopener noreferrer"><img src="../assets/images/imgbtn/paypal.webp" loading="lazy"></a>
           <a class="logo-view" onclick="openDonate()" href="#" title="PayMaya"><img src="../assets/images/imgbtn/maya.webp" loading="lazy"></a>
           <a class="logo-view" onclick="openDonate()" href="#" title="Gcash"><img src="../assets/images/imgbtn/gcash.webp" loading="lazy"></a>
         </div>
       </div>
     </div>
     <div class="donate">
-      <a class="gbm" onclick="openDonate()" href="#" title="Mode of Payment"><img src="../assets/images/imgbtn/gbm.webp" loading="lazy" alt=""></a>
+      <a class="gbm" href="https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US" view target="_blank" title="Mode of Payment" rel="noopener noreferrer"><img src="../assets/images/imgbtn/gbm.webp" loading="lazy" alt=""></a>
     </div>
     <div class="donate-popup" id="donate-popup">
-      <h2>CHOOSE QR CODE</h2>
+      <h1>CHOOSE QR CODE</h1>
       <div class="qr-content">
         <div class="qr">
           <img src="../assets/images/popup/qr-code-paypal.webp">

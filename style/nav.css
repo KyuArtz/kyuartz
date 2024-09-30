@@ -37,7 +37,7 @@
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
-#popup-message h2 {
+#popup-message h1 {
     font-size: 2rem;
     font-weight: 500;
     color: var(--color);
@@ -327,6 +327,23 @@ form.search::after {
 
 #upBtn:hover {
     color: #000;
+}
+
+.wn-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    background: var(--color);
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 0 3px #000;
+    z-index: 1;
 }
 
 /* Media Queries */

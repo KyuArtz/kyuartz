@@ -15,13 +15,13 @@
     visibility: hidden;
     transition: transform 0.4s;
     box-shadow: 0 0 3px #000;
+    z-index: 1;
 }
 
 /* Open Popup Animation */
 .open-popup {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
-    z-index: 1;
 }
 
 /* Popup Image */
@@ -36,7 +36,7 @@
 }
 
 /* Popup Title */
-.popup h2 {
+.popup h1 {
     font-size: 2.0rem;
     font-weight: 500;
     color: var(--color);
@@ -82,6 +82,82 @@
     transition: none;
 }
 
+.popup-wn {
+    width: 50%;
+    max-width: 600px; /* Set a maximum width for larger screens */
+    min-width: 300px; /* Set a minimum width for smaller screens */
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%) scale(0.1);
+    font-family: var(--font-style);
+    padding: 0 20px 30px;
+    background: var(--overlay);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    visibility: hidden;
+    transition: transform 0.4s;
+    box-shadow: 0 0 3px #000;
+    cursor: default;
+    max-height: 80%; /* Set a max height for the popup */
+    overflow-y: auto; /* Add vertical scrolling if content exceeds */
+    z-index: 1;
+}
+
+.popup-wn ol {
+    text-align: justify;
+    font-family: sans-serif;
+    padding-right: 20px;
+    max-height: 200px; /* You can adjust this height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+}
+
+.popup-wn li {
+    margin: 10px auto;
+}
+
+/* Open Popup Animation */
+.open-popup-wn {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Popup Title */
+.popup-wn h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--color);
+    border-style: solid;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom-width: thin;
+    cursor: default;
+}
+
+.popup-wn h2 {
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+/* Popup Button */
+.popup-wn button {
+    width: 50%;
+    padding: 10px 0;
+    background: var(--color);
+    color: var(--defaut-font-color);
+    border: solid thin;
+    outline: none;
+    font-size: 15px;
+    font-family: var(--font-style);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: none;
+}
+
 .donate-popup {
     max-width: 1000px;
     border-radius: 10px;
@@ -102,6 +178,7 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     max-height: 80vh; /* Limits height to 80% of the viewport */
+    z-index: 1;
 }
 
 .donate-popup ::-webkit-scrollbar {
@@ -132,11 +209,10 @@
 .open-donate {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
-    z-index: 1;
 }
 
 /* Popup Title */
-.donate-popup h2 {
+.donate-popup h1 {
     font-size: 2.0rem;
     font-weight: 500;
     color: var(--color);
@@ -171,23 +247,6 @@
 }
 
 @media (max-width: 768px) {
-    @media(max-width: 500px) {
-        .popup {
-            width: 300px;
-        }
-        .popup p {
-            font-size: x-small;
-        }
-        .popup h2 {
-            font-size: x-large;
-        }
-        .popup img {
-            position: unset;
-        }
-        .popup button {
-            font-size: 10px;
-        }
-    }
     .qr-content {
         flex-direction: column; /* Stack QR codes vertically */
     }
@@ -199,5 +258,53 @@
     .donate-popup {
         width: 90%; /* Ensures popup scales down on smaller devices */
         max-width: 100%; /* Remove max width on smaller screens */
+    }
+
+    .popup-wn {
+        width: 80%;
+        padding: 0 15px 20px;
+    }
+
+    .popup-wn ol {
+        max-height: 150px;
+    }
+
+    .popup-wn button {
+        width: 70%;
+    }
+}
+
+@media(max-width: 500px) {
+    .popup {
+        width: 300px;
+    }
+
+    .popup p {
+        font-size: x-small;
+    }
+
+    .popup h1 {
+        font-size: x-large;
+    }
+
+    .popup img {
+        position: unset;
+    }
+
+    .popup button {
+        font-size: 10px;
+    }
+
+    .popup-wn {
+        width: 90%;
+        padding: 0 10px 15px;
+    }
+
+    .popup-wn ol {
+        max-height: 120px;
+    }
+
+    .popup-wn button {
+        width: 80%;
     }
 }

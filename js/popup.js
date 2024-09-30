@@ -1,4 +1,5 @@
 let popup = document.getElementById("popup");
+let popupWn = document.getElementById("popup-wn");
 let donatePopup = document.getElementById("donate-popup");
   
 function openPopup(){
@@ -6,6 +7,12 @@ function openPopup(){
 }
 function closePopup(){
   popup.classList.remove("open-popup");
+}
+function openWn(){
+  popupWn.classList.add("open-popup-wn");
+}
+function closeWn(){
+  popupWn.classList.remove("open-popup-wn");
 }
 function openDonate(){
   donatePopup.classList.add("open-donate");

@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/loader.css">
   <link rel="stylesheet" href="style/nav.css">
+  <link rel="stylesheet" href="style/popupnotice.css">
 
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   
@@ -31,6 +32,7 @@
   <script src="js/singleslideshow.js" defer></script>
   <script src="js/carousel.js" defer></script>
   <script src="js/theme-toggle.js" defer></script>
+  <script src="js/popup.js" defer></script>
   <script src="js/current-year.js" defer></script>
 </head>
 
@@ -46,7 +48,7 @@
   <div id="overlay"></div>
   <div id="popup-message">
     <img src="assets/images/popup/popup-icon.png" loading="lazy">
-    <h2>Thanks for visiting!</h2>
+    <h1>Thanks for visiting!</h1>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
@@ -247,6 +249,34 @@
       </div>
     </div>
   </div>
+
+  <div class="popup-wn" id="popup-wn">
+    <h1>WHAT'S NEW?</h1>
+
+    <h2>- NEW UPDATES -</h2>
+    <ol>
+      <li>Added a currency converter to the commission sheet page.</li>
+      <li>Enhanced the overall interface and refined the main theme.</li>
+      <li>Updated the second theme, which now toggles to a white design.</li>
+      <li>Improved the dropdown and category menus, with added blur effects.</li>
+      <li>Optimized the navigation menu for mobile viewports, now with 90% opacity.</li>
+      <li>Streamlined code for better performance and applied several fixes.</li>
+    </ol>
+
+    <h2>- UPCOMING UPDATES -</h2>
+    <ol>
+      <li>Character page (coming soon).</li>
+      <li>Comic chapters (coming soon).</li>
+      <li>Commissioner info page (coming soon).</li>
+      <li>Timelapse video page (coming soon).</li>
+      <li>Personal project page (coming soon).</li>
+    </ol>
+
+    <button type="button" onclick="closeWn()">Close</button>
+  </div>
+
+  <button type="button" class="wn-btn" onclick="openWn()" title="What's new">What's new?</button>
+
 
   <div class="footer">
     <div class="copyright">
