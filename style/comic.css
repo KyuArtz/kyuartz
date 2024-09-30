@@ -32,13 +32,10 @@ ul {
     border-radius: 9px;
     background: var(--content-bg);
     transition: 0.3s ease-in-out;
-    transform: scale(1);
 }
 
 .mySlides img:hover {
-    box-shadow: 0 0 3px #000;
-    border: solid thin var(--color);
-    transform: scale(1);
+    box-shadow: 0 0 10px #000;
 }
 
 /* Navigation Buttons */

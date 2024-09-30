@@ -71,19 +71,18 @@
     cursor: default;
 }
 
-.caption h2 {
+.caption h1 {
     color: var(--default-font-color);
-    text-shadow: 0 0 10px var(--color);
+    text-shadow: 0 0 5px #000;
     letter-spacing: 5px;
     font-size: 4.0rem;
 }
 
 .caption p {
-    text-shadow: 0 0 5px #000000;
-    font-weight: 500;
+    text-shadow: 0 0 3px #000;
 }
 
-.caption h2, p {
+.caption h1, p {
   margin: auto 20px;
   padding: 13px 0;
 }
@@ -165,11 +164,11 @@
     padding: 10px;
 }
 
-.video_container h2 {
+.video_container h1 {
     cursor: default;
     font-family: var(--font-style);
     color: var(--color);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 /* Carousel */
@@ -194,7 +193,8 @@
     width: 100%;
     height: auto;
     border-radius: 15px;
-    border: solid thin var(--default-font-color);
+    border: solid thin;
+    color: inherit;
     background: var(--content-bg);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
@@ -214,13 +214,13 @@
 .carousel_nav button {
     background: var(--color);
     border: none;
-    color: var(--default-font-color);
+    color: inherit;
     padding: 15px;
     font-size: 1.0rem;
     border-radius: 50px;
     cursor: pointer;
     position: absolute;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3px #000;
     transform: translateY(-50%);
 }
 
@@ -266,7 +266,7 @@
   .caption {
     font-size: 0.7rem;
   }
-  .caption h2 {
+  .caption h1 {
     font-size: 1.9rem;
   }
 

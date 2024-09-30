@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--overlay);
+    background: var(--overlay);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     display: none;
@@ -66,7 +66,8 @@ header {
     position: fixed;
     width: 100%;
     background-image: inherit;
-    box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px;
+    color: inherit;
     top: 0;
     z-index: 100000;
 }
@@ -137,8 +138,8 @@ input:checked + .slider:before {
 }
 
 a {
-    color: var(--default-font-color);
     text-decoration: none;
+    color: var(--default-font-color);
 }
 
 /* Navbar */
@@ -224,12 +225,14 @@ form.search input[type="search"] {
     width: 80%;
     border-radius: 0 50px 50px 0;
     background: none;
+    border: thin solid;
 }
 
 form.search button {
     float: left;
     width: 20%;
-    border: 1px solid var(--color);
+    border: 1px solid;
+    border-right: none;
     border-radius: 50px 0 0 50px;
     background: var(--color);
     color: var(--default-font-color);
@@ -238,17 +241,12 @@ form.search button {
 
 form.search input[type="search"],
 form.search button {
-    border: 1px solid var(--color);
     color: inherit;
     outline: none;
     margin: 0;
     padding: 12px;
     font-family: sans-serif;
     transition: 0.3s ease-in-out;
-}
-
-form.search button:hover {
-    color: #000;
 }
 
 form.search::after {
@@ -262,11 +260,12 @@ form.search::after {
     position: absolute;
     top: 55px;
     min-width: 50%;
-    background-color: inherit;
+    background: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px;
+    color: inherit;
 }
 
 .search-result ul {
@@ -316,12 +315,12 @@ form.search::after {
     height: 50px;
     border-radius: 50px;
     background: var(--color);
-    color: var(--default-font-color);
     cursor: pointer;
     border: none;
     outline: none;
     aspect-ratio: 1 / 1;
     box-shadow: 0 0 3px #000;
+    color: inherit;
     z-index: 1;
 }
 
@@ -430,10 +429,11 @@ form.search::after {
     flex-direction: column;
     min-width: 200px;
     height: 100vh;
-    background-color: inherit;
+    background: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 1px #000;
+    box-shadow: 1px 0 0;
+    color: inherit;
     padding-bottom: 50px;
     overflow: auto;
     transition: 0.5s ease;
@@ -480,7 +480,8 @@ form.search::after {
     width: 100%;
     min-height: 50px;
     background-image: inherit;
-    box-shadow: 0 0 1px #000;
+    box-shadow: 0 0 1px;
+    color: inherit;
     top: 50px;
     z-index: 99;
 }
@@ -540,11 +541,11 @@ form.search::after {
     flex-direction: column;
     min-width: 150px;
     height: 100vh;
-    background-color: inherit;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding-bottom: 100px;
-    box-shadow: 0 0 1px #000;
+    box-shadow: 1px 0 0;
+    color: inherit;
     justify-content: left;
     overflow: auto;
     transition: 0.5s ease;
@@ -619,11 +620,9 @@ form.search::after {
     padding: 8px 0;
     background-image: inherit;
     font-family: var(--font-style);
-    font-size: 0.6rem;
-    box-shadow: 0 -1px 1px #000;
-}
-
-.footer-container {
+    font-size: 0.7rem;
+    box-shadow: 0 -1px 0;
+    color: inherit;
     text-align: center;
 }
 
