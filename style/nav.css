@@ -335,7 +335,7 @@ form.search::after {
     right: 20px;
     width: 50px;
     height: 50px;
-    border-radius: 15px;
+    border-radius: 10px;
     background: var(--color);
     color: inherit;
     cursor: pointer;
