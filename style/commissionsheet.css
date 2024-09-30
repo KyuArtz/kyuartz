@@ -81,7 +81,8 @@ ul {
     background: var(--color);
     border-radius: 50px;
     font-size: 0.9rem;
-    border: solid thin #ffffff;
+    border: solid thin;
+    color: inherit;
     font-family: var(--font-style);
     transition: 0.4s ease-in-out;
 }

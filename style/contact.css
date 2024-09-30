@@ -9,7 +9,6 @@
 /* Contact Container */
 .contact-container {
     float: left;
-    color: var(--default-font-color);
     font-family: var(--font-style);
     padding: 30px 40px 20px;
     width: 50%;
@@ -56,9 +55,9 @@ input[type="Submit"] {
     background-color: var(--color);
     font-family: var(--font-style);
     font-size: 0.7rem;
-    color: var(--default-font-color);
+    color: inherit;
     padding: 12px 30px;
-    border: solid thin var(--default-font-color);
+    border: solid thin;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
