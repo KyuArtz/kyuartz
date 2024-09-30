@@ -251,40 +251,55 @@
       </div>
     </div>
 
-    <div class="popup-wn" id="popup-wn">
-      <h1>WHAT'S NEW?</h1>
-
-      <h2>- NEW UPDATES - ( 09/30/2024 )</h2>
-      <ol>
-        <li>Added the "What's New" section on the homepage for updates.</li>
-        <li>Added a currency converter to the commission sheet page.</li>
-        <li>Made several changes and adjustments to the commission sheet information and pricing.</li>
-        <li>Enhanced the overall interface and refined the main theme.</li>
-        <li>Updated the second theme, which now toggles to a white design.</li>
-        <li>Improved the dropdown, category menus, and search bar with added blur effects.</li>
-        <li>Optimized the navigation menu for mobile viewports, now with 90% opacity.</li>
-        <li>Adjusted the home slideshow for better presentation.</li>
-        <li>Improved the filter function in the comic category.</li>
-        <li>Removed the background on the about and contact pages, with plans to bring it back after further improvements.</li>
-        <li>Improved the contact form by replacing the old API FormSubmit with Web3Forms.</li>
-        <li>Made some adjustments to the loading screen.</li>
-        <li>Streamlined code for improved performance and applied various fixes.</li>
-      </ol>    
-
-      <h2>- UPCOMING UPDATES -</h2>
-      <ol>
-        <li>Character page (coming soon).</li>
-        <li>Comic chapters (coming soon).</li>
-        <li>Commissioner info page (coming soon).</li>
-        <li>Timelapse video page (coming soon).</li>
-        <li>Personal project page (coming soon).</li>
-      </ol>
-
-      <button type="button" onclick="closeWn()">Close</button>
-    </div>
-
-    <button type="button" class="wn-btn" onclick="openWn()" title="What's new">What's New?</button>
+    <div class="popup-wn" id="popup-wn" aria-hidden="true" role="dialog">
+      <h1>What's New?</h1>
+  
+      <section>
+          <h2>Major Updates</h2>
+          <ul>
+              <li>Added the "What's New" section on the homepage for updates.</li>
+              <li>Added a currency converter to the commission sheet page.</li>
+              <li>Improved the contact form by replacing the old free API FormSubmit with Web3Submit.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Minor Updates</h2>
+          <ul>
+              <li>Made several changes and adjustments to the commission sheet information and pricing.</li>
+              <li>Enhanced the overall interface and refined the main theme.</li>
+              <li>Updated the second theme, which now toggles to a white design.</li>
+              <li>Improved the dropdown, category menus, and search bar with added blur effects.</li>
+              <li>Optimized the navigation menu for mobile viewports, now with 90% opacity.</li>
+              <li>Adjusted the home slideshow for better presentation.</li>
+              <li>Improved the filter function in the comic category.</li>
+              <li>Removed the background on the about and contact pages, with plans to bring it back after further improvements.</li>
+              <li>Made several enhancements to the Terms of Service, Privacy Policy, and FAQ pages.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Bug Fixes/Improvements</h2>
+          <ul>
+              <li>Streamlined code for improved performance and applied various fixes.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Upcoming Updates</h2>
+          <ul>
+              <li>Character page (coming soon).</li>
+              <li>Comic chapters (coming soon).</li>
+              <li>Commissioner info page (coming soon).</li>
+              <li>Timelapse video page (coming soon).</li>
+              <li>Personal project page (coming soon).</li>
+          </ul>
+      </section>
+  
+      <button type="button" onclick="closeWn()" aria-label="Close what's new section">Close</button>
   </div>
+  
+  <button type="button" class="wn-btn" onclick="openWn()" title="What's New">What's New?</button>  
 
   <div class="footer">
     <div class="copyright">
