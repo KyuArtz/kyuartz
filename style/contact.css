@@ -224,11 +224,7 @@ label {
 
 /* Responsive Design */
 @media screen and (max-width: 690px) {
-    .contact-overlay {
-        background-image: url('../assets/images/bg/portrait-mode.jpg');
-    }
-
-    .contact-container {
+    .contact-content {
         width: 100%;
         display: block;
     }

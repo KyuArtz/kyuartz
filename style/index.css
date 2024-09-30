@@ -200,12 +200,12 @@
     border: solid thin;
     color: inherit;
     background: var(--content-bg);
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .video video:hover {
-    border: solid thin var(--color);
+    box-shadow: 0 0 10px #000;
 }
 
 /* Carousel Navigation */

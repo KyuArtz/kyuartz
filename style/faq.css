@@ -1,11 +1,5 @@
-body {
-    overflow: hidden;
-}
-
 .faq-container {
-    margin: 0 auto;
     cursor: default;
-    margin-top: 80px;
 }
 
 .faq-item {
@@ -69,8 +63,8 @@ body {
     background-position: center;
     margin: auto;
     width: 100%;
-    height: 100%;
-    padding-bottom: 65px;
+    height: 100vh;
+    padding-top: 90px;
 }
 
 /* Responsive Styling */

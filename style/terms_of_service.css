@@ -1,11 +1,6 @@
-body {
-    overflow: hidden;
-}
-
-/* Default Cursor for .ts-content */
-.ts-content {
+/* Default Cursor for .ts-container */
+.ts-container {
     cursor: default;
-    margin-top: 85px;
 }
 
 strong {
@@ -13,7 +8,7 @@ strong {
 }
 
 /* List Items */
-.ts-content li {
+.ts-container li {
     color: var(--default-font-color);
     font-family: sans-serif;
     margin: 5px;
@@ -27,20 +22,20 @@ strong {
 }
 
 /* Unordered List */
-.ts-content ul {
+.ts-container ul {
     padding-right: 40px;
     overflow-x: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
 
-.ts-content ul a {
+.ts-container ul a {
     text-decoration: underline;
     color: var(--color);
 }
 
 /* Hide Scrollbar for WebKit Browsers */
-.ts-content ul::-webkit-scrollbar {
+.ts-container ul::-webkit-scrollbar {
     display: none;
 }
 
@@ -54,8 +49,8 @@ strong {
     background-position: center;
     margin: auto;
     width: 100%;
-    height: 100%;
-    padding-bottom: 70px;
+    height: 100vh;
+    padding-top: 90px;
 }
 
 /* Responsive Styling */
@@ -63,7 +58,7 @@ strong {
     .background {
         background-image: url("../assets/images/bg/portrait-mode.jpg");
     }
-    .ts-content li {
+    .ts-container li {
         font-size: small;
     }
 }

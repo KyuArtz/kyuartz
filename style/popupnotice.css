@@ -129,7 +129,6 @@
 .popup-wn h1 {
     font-size: 1.8rem;
     font-weight: 500;
-    color: var(--color);
     border-style: solid;
     border-top-width: 0;
     border-left-width: 0;
@@ -141,6 +140,11 @@
 .popup-wn h2 {
     font-size: 1.3rem;
     text-align: left;
+}
+
+.popup-wn h1,
+.popup-wn h2 {
+    color: var(--color);
 }
 
 /* Popup Button */

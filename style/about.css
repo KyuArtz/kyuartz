@@ -175,9 +175,6 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 650px) {
-    .card-overlay {
-        background-image: url('../assets/images/bg/portrait-mode.jpg');
-    }
     .me {
         width: 100%;
         display: block;
