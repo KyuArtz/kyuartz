@@ -343,6 +343,7 @@ form.search::after {
     outline: none;
     aspect-ratio: 1 / 1;
     box-shadow: 0 0 3px #000;
+    font-family: sans-serif;
     z-index: 1;
 }
 
