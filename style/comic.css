@@ -8,7 +8,8 @@ ul {
 
 /* Spacing */
 .top-spacing {
-    margin-top: 105px;
+    margin-top: 109px;
+    min-height: 100vh;
 }
 
 /* Slideshow Container */

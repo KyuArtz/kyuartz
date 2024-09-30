@@ -1,13 +1,10 @@
 /* Contact Overlay */
-.contact-overlay {
-    background-image: url("../assets/images/bg/landscape-mode.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.contact-container {
+    min-height: 100vh;
 }
 
 /* Contact Container */
-.contact-container {
+.contact-content {
     float: left;
     font-family: var(--font-style);
     padding: 30px 40px 20px;
@@ -164,9 +161,10 @@ label {
     cursor: default;
 }
 
-.e-wallet h4 {
+.e-wallet h1 {
     background: var(--overlay);
     padding: 10px;
+    font-size: 1rem;
     margin-top: 50px;
     border-radius: 0 0 30px 30px;
     box-shadow: 0 0 5px #000;
@@ -221,8 +219,7 @@ label {
 
 /* Footer */
 .footer {
-    margin-top: 230px;
-    background: unset !important;
+    margin-top: 190px;
 }
 
 /* Responsive Design */
@@ -254,9 +251,5 @@ label {
 
     .send-container {
         justify-content: center;
-    }
-
-    .footer {
-        margin-top: 0;
     }
 }

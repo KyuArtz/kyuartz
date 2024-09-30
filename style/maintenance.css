@@ -57,7 +57,7 @@
 }
 
 /* Maintenance Link */
-.maintenance_body a {
+.maintenance_body button {
     padding: 10px 50px;
     background-color: var(--color);
     color: var(--default-font-color);
@@ -76,7 +76,7 @@
 }
 
 /* Maintenance Link Hover */
-.maintenance_body a:hover {
+.maintenance_body button:hover {
     background-color: var(--hover-light);
 }
 

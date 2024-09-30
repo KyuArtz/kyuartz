@@ -1,9 +1,6 @@
 /* Overlay Classes */
-.card-overlay {
-    background-image: url('../assets/images/bg/landscape-mode.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.card-container {
+    min-height: 100vh;
 }
 
 .summarycontent,

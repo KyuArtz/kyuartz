@@ -439,7 +439,7 @@ form.search::after {
     transition: 0.5s ease;
 }
 
-.dropdown-content h3 {
+.dropdown-content h1 {
     font-family: var(--font-style);
     font-size: 1.1rem;
     color: var(--color);
@@ -551,7 +551,7 @@ form.search::after {
     transition: 0.5s ease;
 }
 
-.category-menu h3 {
+.category-menu h2 {
     font-family: var(--font-style);
     font-size: 1.1rem;
     color: var(--color);
@@ -587,7 +587,7 @@ form.search::after {
         display: none;
     }
 
-    .category-menu h3 {
+    .category-menu h2 {
         text-align: left;
     }
 
