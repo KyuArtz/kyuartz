@@ -144,6 +144,10 @@
     text-align: left;
 }
 
+.update h2 {
+    text-align: right;
+}
+
 .popup-wn h1,
 .popup-wn h2 {
     color: var(--color);
