@@ -9,10 +9,10 @@
     background: var(--overlay);
 }
 
-.summary h2,
-.expcontent h2,
-.program-content h2,
-.my-info h2 {
+.summary h1,
+.expcontent h1,
+.program-content h1,
+.my-info h1 {
     font-family: var(--font-style);
     font-size: 1.5rem;
     color: var(--color);
@@ -129,7 +129,7 @@
 
 }
 
-.my-info h2 {
+.my-info h1 {
     border-bottom: 2px solid;
     margin-top: 70px;
     text-align: center;
