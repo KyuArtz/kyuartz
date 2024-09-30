@@ -40,8 +40,6 @@ textarea {
     margin-bottom: 20px;
     resize: vertical;
     background-color: var(--overlay);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     color: var(--default-font-color);
 }
 

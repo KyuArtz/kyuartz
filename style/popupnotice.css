@@ -10,8 +10,8 @@
     font-family: var(--font-style);
     padding: 0 30px 30px;
     background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     visibility: hidden;
     transition: transform 0.4s;
     box-shadow: 0 0 3px #000;
@@ -95,8 +95,8 @@
     font-family: var(--font-style);
     padding: 0 20px 30px;
     background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     visibility: hidden;
     transition: transform 0.4s;
     box-shadow: 0 0 3px #000;
@@ -169,8 +169,8 @@
     font-family: var(--font-style);
     padding: 30px;
     background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     visibility: hidden;
     transition: transform 0.4s;
     box-shadow: 0 0 3px #000;
