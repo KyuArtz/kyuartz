@@ -54,8 +54,8 @@
 #popup-message button {
     padding: 10px 20px;
     background: var(--color);
-    color: var(--default-font-color);
-    border: thin solid var(--default-font-color);
+    color: inherit;
+    border: thin solid;
     border-radius: 50px;
     font-family: var(--font-style);
     cursor: pointer;
