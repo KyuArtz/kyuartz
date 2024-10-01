@@ -108,6 +108,27 @@
     z-index: 50;
 }
 
+.wn-btn {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--color);
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    aspect-ratio: 1 / 1;
+    box-shadow: 0 0 3px #000;
+    font-family: var(--font-style);
+    border: solid thin;
+    transition: background-color 0.3s ease;
+    animation: wiggleAnimation 1s infinite; /* Wiggle animation applied */
+    z-index: 50;
+}
+
 .popup-wn ul {
     text-align: justify;
     font-family: sans-serif;
