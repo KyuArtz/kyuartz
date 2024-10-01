@@ -1,1 +1,0 @@
-document.querySelector('meta[name="theme-color"]').setAttribute('content', 'red');
