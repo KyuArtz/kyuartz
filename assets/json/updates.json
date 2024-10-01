@@ -3,26 +3,26 @@
     {
       "date": "10/1/2024",
       "major": [
-        "Introduced a cookie popup to enhance user experience.",
-        "Enhanced and organized the code for the popup functionality.",
-        "Adjusted the dropdown behavior when hidden on mobile viewport to remove the annoying line to the left.",
-        "Fixed the favicon and avatar visibility issues not showing.",
-        "Revamped the logic of the 'What's New' button to allow it to toggle the popup open and closed with a single click, removing the need for a separate close button within the popup content.",
-        "Enhanced the meta data tags."
+        "Added a cookie popup to improve user experience and compliance.",
+        "Refined and optimized the code for popup functionality.",
+        "Resolved an issue with the dropdown's hidden behavior on mobile, removing the distracting line on the left.",
+        "Fixed visibility issues with the favicon and avatar.",
+        "Redesigned the 'What's New' button logic to toggle the popup with a single click, removing the need for a separate close button.",
+        "Updated meta tags for better SEO and sharing optimization."
       ],
       "minor": [
-        "Removed the blur effect from the slideshow on the homepage to improve performance.",
-        "Implemented an animation for the 'What's New' button.",
-        "Optimized various assets, including images, logos, and other media files.",
-        "Updated the logo with a modern design approach."
+        "Removed the blur effect from the homepage slideshow for improved performance.",
+        "Added an animation to the 'What's New' button for a more dynamic user interaction.",
+        "Optimized media assets, including images and logos, for faster loading.",
+        "Updated the logo with a sleek, modern design."
       ],
       "bugfixes": [
-        "Eliminated unused code and reorganized for better performance."
+        "Cleaned up unused code and reorganized it for better performance."
       ],
       "upcoming": [
-        "Change to about page (ongoing).",
-        "Character page (coming soon).",
-        "Comic chapters (coming soon).",
+        "Revamp of the About page (in progress).",
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
         "Commissioner info page (coming soon).",
         "Timelapse video page (coming soon).",
         "Personal project page (coming soon)."
