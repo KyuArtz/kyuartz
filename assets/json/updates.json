@@ -13,7 +13,8 @@
       "minor": [
         "Removed the blur effect from the slideshow on the homepage to improve performance.",
         "Implemented an animation for the 'What's New' button.",
-        "Optimized various assets, including images, logos, and other media files."
+        "Optimized various assets, including images, logos, and other media files.",
+        "Updated the logo with a modern design approach."
       ],
       "bugfixes": [
         "Eliminated unused code and reorganized for better performance."
