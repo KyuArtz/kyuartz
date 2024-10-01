@@ -528,6 +528,7 @@ form.search::after {
     border: solid thin var(--color);
     border-radius: 5px;
     color: inherit;
+    outline: none;
     background: var(--color);
     cursor: pointer;
 }
