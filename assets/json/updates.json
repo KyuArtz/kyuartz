@@ -6,7 +6,7 @@
         "Introduced a cookie popup to enhance user experience.",
         "Enhanced and organized the code for the popup functionality.",
         "Adjusted the dropdown behavior when hidden on mobile viewport to remove the annoying line to the left.",
-        "Fixed the favicon and avatar visibility issues on the portfolio page.",
+        "Fixed the favicon and avatar visibility issues not showing.",
         "Revamped the logic of the 'What's New' button to allow it to toggle the popup open and closed with a single click, removing the need for a separate close button within the popup content."
       ],
       "minor": [
