@@ -7,7 +7,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: inherit;
+    background: var(--theme);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     align-items: center;
