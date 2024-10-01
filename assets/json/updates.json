@@ -1,0 +1,54 @@
+{
+  "updates": [
+    {
+      "date": "10/1/2024",
+      "major": [
+        "Introduced a cookie popup to enhance user experience.",
+        "Enhanced and organized the code for the popup functionality.",
+        "Adjusted the dropdown behavior when hidden on mobile viewport to remove the annoying line to the left.",
+        "Fixed the favicon and avatar visibility issues on the portfolio page.",
+        "Revamped the logic of the 'What's New' button to allow it to toggle the popup open and closed with a single click, removing the need for a separate close button within the popup content."
+      ],
+      "minor": [
+        "Removed the blur effect from the slideshow on the homepage to improve performance.",
+        "Implemented an animation for the 'What's New' button.",
+        "Optimized various assets, including images, logos, and other media files."
+      ],
+      "bugfixes": [
+        "Eliminated unused code and reorganized for better performance."
+      ],
+      "upcoming": [
+        "Change to about page (Ungoing).",
+        "Character page (coming soon).",
+        "Comic chapters (coming soon).",
+        "Commissioner info page (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },    
+
+    {
+      "date": "09/30/2024",
+      "major": [
+        "Added the 'What's New' section on the homepage for updates.",
+        "Added a currency converter to the commission sheet page.",
+        "Improved the contact form by replacing the old free API FormSubmit with Web3Forms."
+      ],
+      "minor": [
+        "Made several changes and adjustments to the commission sheet information and pricing.",
+        "Enhanced the overall interface and refined the main theme.",
+        "Updated the second theme, which now toggles to a white design."
+      ],
+      "bugfixes": [
+        "Streamlined code for improved performance and applied various fixes."
+      ],
+      "upcoming": [
+        "Character page (coming soon).",
+        "Comic chapters (coming soon).",
+        "Commissioner info page (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    }
+  ]
+}

@@ -64,8 +64,6 @@
     width: 100%;
     color: var(--default-font-color);
     background-color: var(--overlay);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
     font-size: 1.2rem;
     font-family: var(--font-style);
     top: 0;

@@ -18,29 +18,25 @@
     color: var(--color);
 }
 
-.card-overlay,
-.summary,
-.experience,
-.program,
 .summary p,
-.expcontent,
 .expcontent p,
-.program-logo img,
-.my-info,
-.my-info p,
-.email,
-.exp {
+.my-info p {
     font-family: sans-serif;
     color: var(--default-font-color);
     cursor: default;
     font-size: 1.5rem;
 }
 
+.summary,
+.experience,
+.program {
+    padding: 40px 10px;
+}
+
 /* Summary Section */
 .summary {
     text-align: center;
-    padding: 30px;
-    margin-top: 50px;
+
 }
 
 .summary p {
@@ -64,12 +60,7 @@
 /* Experience Section */
 .experience {
     text-align: center;
-    padding: 15px;
     font-size: 0.9rem;
-}
-
-.expcontent {
-    padding: 30px;
 }
 
 .expcontent p {
@@ -84,7 +75,6 @@
 /* Program Section */
 .program {
     text-align: center;
-    padding: 45px;
 }
 
 .program-logo img {
@@ -105,6 +95,10 @@
     float: left;
     width: 33.3%;
     margin-bottom: 16px;
+}
+
+.info-container {
+    margin-top: 50px;
 }
 
 .card {
@@ -172,7 +166,7 @@
 }
 
 /* Responsive Styles */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
     .me {
         width: 100%;
         display: block;

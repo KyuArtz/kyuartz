@@ -16,7 +16,7 @@
     transition: transform 0.4s;
     box-shadow: 0 0 3px #000;
     border: solid thin;
-    z-index: 2;
+    z-index: 50;
 }
 
 /* Open Popup Animation */
@@ -105,7 +105,7 @@
     max-height: 80%; /* Set a max height for the popup */
     overflow-y: auto; /* Add vertical scrolling if content exceeds */
     border: solid thin;
-    z-index: 2;
+    z-index: 50;
 }
 
 .popup-wn ul {
@@ -129,7 +129,6 @@
 
 /* Popup Title */
 .popup-wn h1 {
-    font-size: 1.8rem;
     font-weight: 500;
     border-style: solid;
     border-top-width: 0;
@@ -153,21 +152,6 @@
     color: var(--color);
 }
 
-/* Popup Button */
-.popup-wn button {
-    width: 50%;
-    padding: 10px 0;
-    background: var(--color);
-    color: var(--defaut-font-color);
-    border: solid thin;
-    outline: none;
-    font-size: 15px;
-    font-family: var(--font-style);
-    border-radius: 50px;
-    cursor: pointer;
-    transition: none;
-}
-
 .donate-popup {
     max-width: 1000px;
     border-radius: 10px;
@@ -187,7 +171,7 @@
     overflow-y: auto; /* Enables scroll when content overflows */
     max-height: 80vh; /* Limits height to 80% of the viewport */
     border: solid thin;
-    z-index: 2;
+    z-index: 50;
 }
 
 .qr-content {
@@ -250,6 +234,45 @@
     border-radius: 50px;
     cursor: pointer;
     transition: none;
+}
+
+.cookie-popup {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: inherit;
+    border: thin solid;
+    color: inherit;
+    padding: 20px;
+    box-shadow: 0 0 3px #000;
+    text-align: center;
+    z-index: 100;
+    display: none; /* Initially hidden */
+}
+
+.cookie-popup p {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-family: sans-serif;
+}
+
+.cookie-popup a {
+    color: var(--color);
+    transition: 0.5s ease-in-out;
+}
+
+.cookie-popup a:hover{
+    text-decoration: underline;
+}
+
+.cookie-popup button {
+    background: var(--color);
+    color: inherit;
+    border: solid thin;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: var(--font-style);
 }
 
 @media (max-width: 768px) {

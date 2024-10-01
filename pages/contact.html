@@ -16,6 +16,12 @@
 
   <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
 
+  <!-- Apple touch icon for home screen -->
+  <link rel="apple-touch-icon" href="assets/images/icons/icon.png">
+  
+  <!-- Favicon for browsers -->
+  <link rel="icon" href="assets/images/favicon/rb9.ico">
+
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/contact.css">
   <link rel="stylesheet" href="../style/nav.css">
@@ -32,6 +38,7 @@
   <script src="../js/contact-validation.js" defer></script>
   <script src="../js/popup.js" defer></script>
   <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/popup.js" defer></script>
   <script src="../js/current-year.js" defer></script>
 </head>
 
@@ -50,6 +57,11 @@
     <h1>Thanks for visiting!</h1>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="pages/privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
   </div>
 
   <header>
@@ -150,7 +162,7 @@
         <div class="tos-container" title="Terms of Service">
           <input type="checkbox" value="Agreed" name="Terms of Service" required> Agree to terms of service
           <div class="tos-info">
-            <a title="Info" onclick="openPopup()"><img src="../assets/images/imgbtn/question-mark.png" loading="lazy"></a>
+            <a title="Info" onclick="openPopup()"><img src="../assets/images/imgbtn/question-mark.webp" loading="lazy"></a>
           </div>
         </div>
 
@@ -159,7 +171,7 @@
         </div>
 
         <div class="popup" id="popup">
-          <img src="../assets/images/popup/popup-icon.png" loading="lazy">
+          <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
           <h1>NOTICE <i class="fa-solid fa-circle-exclamation"></i></h1>
           <p>By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
           <button type="button" onclick="closePopup()">Understood</button>

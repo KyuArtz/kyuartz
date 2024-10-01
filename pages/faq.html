@@ -16,10 +16,17 @@
 
   <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
 
+  <!-- Apple touch icon for home screen -->
+  <link rel="apple-touch-icon" href="assets/images/icons/icon.png">
+  
+  <!-- Favicon for browsers -->
+  <link rel="icon" href="assets/images/favicon/rb9.ico">
+
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/faq.css">
   <link rel="stylesheet" href="../style/nav.css">
   <link rel="stylesheet" href="../style/loader.css">
+  <link rel="stylesheet" href="../style/popupnotice.css">
 
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   
@@ -29,6 +36,7 @@
   <script src="../js/hamburger.js" defer></script>
   <script src="../js/search.js" defer></script>
   <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/popup.js" defer></script>
 </head>
 
 <body>
@@ -46,6 +54,11 @@
     <h1>Thanks for visiting!</h1>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="pages/privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
   </div>
 
   <header>

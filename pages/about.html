@@ -16,10 +16,17 @@
 
   <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
 
+  <!-- Apple touch icon for home screen -->
+  <link rel="apple-touch-icon" href="assets/images/icons/icon.png">
+  
+  <!-- Favicon for browsers -->
+  <link rel="icon" href="assets/images/favicon/rb9.ico">
+
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/about.css">
   <link rel="stylesheet" href="../style/nav.css">
   <link rel="stylesheet" href="../style/loader.css">
+  <link rel="stylesheet" href="../style/popupnotice.css">
 
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
   
@@ -29,6 +36,7 @@
   <script src="../js/hamburger.js" defer></script>
   <script src="../js/search.js" defer></script>
   <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/popup.js" defer></script>
   <script src="../js/current-year.js" defer></script>
 </head>
 
@@ -47,6 +55,11 @@
     <h1>Thanks for visiting!</h1>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="pages/privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
   </div>
 
   <header>
@@ -116,38 +129,43 @@
         </div>
       </div>
     </div>
-    <div class="summary">
-      <h1>SUMMARY</h1>
-      <div class="summarycontent">
-        <p>
-          Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early
-          childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm.
-          Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities
-          and gain more experience.
-          Despite being a self-learner, I remain persistent and never give up. After four years of focusing on
-          traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the
-          popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into
-          digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While
-          adapting to the challenges presented by digital art techniques, I eventually became comfortable with the
-          process.
-        </p>
+
+    <div class="info-container">
+      <div class="summary">
+        <h1>SUMMARY</h1>
+        <div class="summarycontent">
+          <p>
+            Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early
+            childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm.
+            Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities
+            and gain more experience.
+            Despite being a self-learner, I remain persistent and never give up. After four years of focusing on
+            traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the
+            popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into
+            digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While
+            adapting to the challenges presented by digital art techniques, I eventually became comfortable with the
+            process.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="experience">
-      <div class="expcontent" style="text-align:center">
-        <h1>EXPERIENCE</h1>
-        <P><i class="fa-solid fa-lightbulb"></i> Self taught</P>
-        <p><i class="fa-solid fa-lightbulb"></i> Freelance</p>
+
+      <div class="experience">
+        <div class="expcontent" style="text-align:center">
+          <h1>EXPERIENCE</h1>
+          <P><i class="fa-solid fa-lightbulb"></i> Self taught</P>
+          <p><i class="fa-solid fa-lightbulb"></i> Freelance</p>
+        </div>
       </div>
-    </div>
-    <div class="program">
-      <div class="program-content" style="text-align:center">
-        <h1>PROGRAMS I USE TO DRAW</h1>
-        <div class="program-logo">
-          <img src="../assets/images/applogo/ibp.png" loading="lazy">
-          <img src="../assets/images/applogo/clip.jpg" loading="lazy">
-          <img src="../assets/images/applogo/adob.png" loading="lazy">
-          <img src="../assets/images/applogo/krit.png" loading="lazy">
+
+      <div class="program">
+        <div class="program-content" style="text-align:center">
+          <h1>PROGRAMS I USE TO DRAW</h1>
+          <div class="program-logo">
+            <img src="../assets/images/applogo/ibp.png" loading="lazy">
+            <img src="../assets/images/applogo/clip.jpg" loading="lazy">
+            <img src="../assets/images/applogo/adob.png" loading="lazy">
+            <img src="../assets/images/applogo/krit.png" loading="lazy">
+          </div>
         </div>
       </div>
     </div>
