@@ -64,7 +64,7 @@ strong {
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: url("../assets/images/bg/landscape-mode.jpg");
+    background-image: url("../assets/images/bg/landscape-mode.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -77,7 +77,7 @@ strong {
 /* Responsive Styling */
 @media screen and (max-width: 500px) {
     .background {
-        background-image: url("../assets/images/bg/portrait-mode.jpg");
+        background-image: url("../assets/images/bg/portrait-mode.webp");
     }
     .pp-container li {
         font-size: small;
