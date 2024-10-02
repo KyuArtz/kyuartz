@@ -1,5 +1,25 @@
 {
   "updates": [
+
+    {
+      "date": "10/2/2024",
+      "major": [
+        "Resolved the issue with the welcome popup icon not appearing on certain pages."
+      ],
+      "minor": [
+        "Made general minor adjustments."
+      ],
+      "bugfixes": [
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Commissioner info page (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },    
+
     {
       "date": "10/1/2024",
       "major": [
@@ -20,7 +40,6 @@
         "Cleaned up unused code and reorganized it for better performance."
       ],
       "upcoming": [
-        "Revamp of the About page (in progress).",
         "Introduction of a Character page (coming soon).",
         "Addition of Comic chapters (coming soon).",
         "Commissioner info page (coming soon).",
@@ -45,7 +64,7 @@
         "Streamlined code for improved performance and applied various fixes."
       ],
       "upcoming": [
-        "Character page (coming soon).",
+        "Introduction of a Character page (coming soon).",
         "Comic chapters (coming soon).",
         "Commissioner info page (coming soon).",
         "Timelapse video page (coming soon).",
