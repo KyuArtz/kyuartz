@@ -12,7 +12,7 @@
     -webkit-backdrop-filter: blur(10px);
     align-items: center;
     transition: opacity 0.75s, visibility 0.75s;
-    z-index: 100;
+    z-index: 300000;
 }
 
 /* Loader Title */

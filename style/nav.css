@@ -1,69 +1,3 @@
-/* Overlay and Popup */
-#overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--overlay);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    display: none;
-}
-
-#popup-message {
-    position: fixed;
-    min-width: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: inherit;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px #000;
-    text-align: center;
-    font-family: var(--font-style);
-    display: none;
-}
-
-#overlay, #popup-message {
-    z-index: 200000;
-}
-
-#popup-message img {
-    position: absolute;
-    min-width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    right: -55px;
-    top: -55px;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
-}
-
-#popup-message h1 {
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--color);
-    margin: 30px 0 25px;
-    border-bottom: thin solid;
-    cursor: default;
-}
-
-#popup-message p {
-    color: inherit;
-    cursor: default;
-}
-
-#popup-message button {
-    padding: 10px 20px;
-    background: var(--color);
-    color: inherit;
-    border: thin solid;
-    border-radius: 50px;
-    font-family: var(--font-style);
-    cursor: pointer;
-}
-
 /* Header */
 header {
     position: fixed;
@@ -594,18 +528,6 @@ form.search::after {
 
     .category-menu {
         width: 100%;
-    }
-
-    #popup-message img {
-        position: unset;
-    }
-
-    #popup-message p {
-        font-size: small;
-    }
-
-    #popup-message h2 {
-        font-size: large;
     }
 }
 

@@ -148,7 +148,7 @@ label {
 /* Contact Information */
 .my-contact {
     text-align: center;
-    color: var(--default-font-color);
+    color: inherit;
     font-family: var(--font-style);
     cursor: default;
 }
@@ -156,7 +156,6 @@ label {
 /* E-Wallet */
 .e-wallet {
     font-family: var(--font-style);
-    color: var(--default-font-color);
     font-size: 0.8rem;
     cursor: default;
 }
