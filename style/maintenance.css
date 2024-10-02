@@ -12,7 +12,7 @@
     border-style: solid;
     border-width: 0 0 thick 0;
     z-index: 1;
-    background-image: url("../assets/images/bg/landscape-mode.jpg");
+    background-image: url("../assets/images/bg/landscape-mode.webp");
 }
 
 /* Background Overlay */
@@ -91,7 +91,7 @@
     }
 
     .maintenance_body {
-        background-image: url("../assets/images/bg/portrait-mode.jpg");
+        background-image: url("../assets/images/bg/portrait-mode.webp");
     }
 
     .maintenance_button {
