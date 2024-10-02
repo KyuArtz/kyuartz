@@ -92,11 +92,7 @@ a {
     font-family: var(--font-style);
     font-size: 1.7rem;
     font-weight: bold;
-    color: var(--color);
-    background: var(--brand-color);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: inherit;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
