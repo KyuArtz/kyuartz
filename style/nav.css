@@ -125,7 +125,7 @@ a {
 .nav-link:hover,
 .nav-link-dropdown:hover {
     color: var(--color);
-    border-bottom: thin solid dodgerblue;
+    border-bottom: thin solid var(--color);
 }
 
 .active-nav a {

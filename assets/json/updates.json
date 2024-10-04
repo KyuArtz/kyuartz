@@ -1,5 +1,23 @@
 {
   "updates": [
+    
+    {
+      "date": "10/5/2024",
+      "major": [
+      ],
+      "minor": [
+        "Added a queue button on the commission sheet for quick access to the commissioner info page during inquiries."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
 
     {
       "date": "10/4/2024",

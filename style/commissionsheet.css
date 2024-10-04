@@ -71,14 +71,14 @@ ul {
 /* Inquire Button */
 .inquire-button {
     text-align: right;
-    margin: 10px auto;
     width: 100%;
-    background: var(--color);
-    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .inquire-button a {
-    padding: 10px 50px;
+    padding: 10px 30px;
+    margin: 5px;
     background: var(--color);
     border-radius: 50px;
     border: solid thin;
@@ -117,6 +117,7 @@ ul {
     }
     .inquire-button {
         text-align: center;
+        flex-direction: column;
     }
     .cs-container img {
         width: 100%;
