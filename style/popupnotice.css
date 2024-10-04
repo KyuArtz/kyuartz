@@ -20,7 +20,7 @@
     background: inherit;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 3px #000;
     text-align: center;
     font-family: var(--font-style);
     display: none;
@@ -97,7 +97,7 @@
     margin-top: -40px;
     left: 370px;
     border-radius: 50%;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 3px #000;
     pointer-events: none;
 }
 
@@ -125,7 +125,7 @@
 .popup a {
     padding: 5px;
     font-size: 0.7rem;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     position: absolute;
     left: 50%;
@@ -195,7 +195,7 @@
 
 .popup-wn ul {
     text-align: justify;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding-right: 20px;
     max-height: 200px; /* You can adjust this height */
     overflow-y: auto; /* Enable vertical scrolling */
@@ -343,7 +343,7 @@
 .cookie-popup p {
     margin: 0;
     padding: 0 0 10px 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 

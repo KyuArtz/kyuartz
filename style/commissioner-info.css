@@ -1,0 +1,124 @@
+.commission-container {
+    margin-top: 60px;
+    font-family: 'poppins', sans-serif;
+    cursor: default;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: default;
+}
+
+section h1, h2 {
+    font-family: myFont;
+    color: var(--color);
+    padding: 10px;
+    cursor: default;
+}
+section p {
+    font-family: 'poppins', sans-serif;
+    padding: 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: inherit;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid;
+    text-align: left;
+}
+
+th {
+    background: var(--overlay);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background: inherit;
+}
+
+tbody tr:hover {
+    background: var(--overlay);
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    cursor: default;
+    font-family: 'poppins', sans-serif;
+}
+
+strong {
+    color: var(--color);
+}
+
+/* Responsive styles for form inputs */
+@media (max-width: 480px) {
+    .form-input {
+        width: 100%;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    tr {
+        margin-bottom: 15px;
+    }
+    
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border: none;
+    }
+    
+    td:before {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    
+    td:nth-of-type(1):before { content: "Commissioner Name"; }
+    td:nth-of-type(2):before { content: "Commission Type"; }
+    td:nth-of-type(3):before { content: "Contact"; }
+    td:nth-of-type(4):before { content: "Status"; }
+    td:nth-of-type(5):before { content: "Notes"; }
+}
+
+#upcoming-slots ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove padding */
+}
+
+#upcoming-slots li {
+    margin: 10px 0; /* Space between items */
+}
+
+.remaining-slots {
+    font-weight: bold;
+    color: #FF6347; /* Different color for remaining slots */
+}

@@ -45,7 +45,7 @@ ul {
     display: inline-block;
     border-radius: 10px;
     cursor: default;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     width: inherit;
 }
@@ -81,7 +81,6 @@ ul {
     padding: 10px 50px;
     background: var(--color);
     border-radius: 50px;
-    font-size: 0.9rem;
     border: solid thin;
     color: inherit;
     font-family: var(--font-style);

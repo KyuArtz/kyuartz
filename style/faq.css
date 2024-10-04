@@ -19,7 +19,7 @@
 
 .faq-item p {
     font-size: 1rem;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--default-font-color);
     text-align: justify;
 }

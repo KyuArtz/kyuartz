@@ -3,12 +3,6 @@
     min-height: 100vh;
 }
 
-.summarycontent,
-.expcontent p,
-.card {
-    background: var(--overlay);
-}
-
 .summary h1,
 .expcontent h1,
 .program-content h1,
@@ -21,8 +15,8 @@
 .summary p,
 .expcontent p,
 .my-info p {
-    font-family: sans-serif;
-    color: var(--default-font-color);
+    font-family: 'Poppins', sans-serif;
+    color: inherit;
     cursor: default;
     font-size: 1.5rem;
 }
@@ -110,7 +104,7 @@
 .card img {
     max-width: 100%;
     border-radius: 50%;
-    border: 2px solid #ffffff;
+    border: 2px solid;
     margin-bottom: -70px;
     pointer-events: none;
 }
@@ -118,8 +112,8 @@
 /* Info Section */
 .my-info {
     padding: 10px 16px;
-    background: var(--overlay);
     border-radius: 50px 50px 5px 5px;
+    border: solid thin;
 
 }
 
@@ -134,7 +128,7 @@
     padding: 5px;
     box-shadow: 0 0 3px #000;
     border-radius: 30px 50px 50px 30px;
-    border: solid thin var(--color);
+    border: solid thin;
 }
 
 /* Container Utilities */
@@ -143,12 +137,6 @@
     content: "";
     clear: both;
     display: table;
-}
-
-/* Email and Experience Highlight */
-.email,
-.exp {
-    color: var(--color);
 }
 
 /* Social Media Icons */
@@ -161,7 +149,7 @@
     width: 35px;
     height: 35px;
     margin: 3px;
-    border: solid thin var(--color);
+    border: solid thin;
     object-fit: cover;
 }
 

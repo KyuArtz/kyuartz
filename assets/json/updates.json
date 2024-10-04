@@ -2,6 +2,26 @@
   "updates": [
 
     {
+      "date": "10/4/2024",
+      "major": [
+          "Introduced a customer support page.",
+          "Created a commissioner information page."
+      ],
+      "minor": [
+          "Made general minor adjustments and optimizations."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },  
+
+    {
       "date": "10/2/2024",
       "major": [
         "Resolved the issue with the welcome popup icon not appearing on certain pages."

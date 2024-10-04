@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- For Chrome, Firefox OS, Opera, and Vivaldi -->
-  <meta name="theme-color" content="#1E90FF">
-
-  <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Theme Color for Various Browsers -->
+  <meta name="theme-color" content="#1E90FF"> <!-- Chrome, Firefox OS, Opera, Vivaldi -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Safari iOS -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+  <!-- Title and Description -->
   <title>KyuArtz | Contact Us</title>
   <meta name="description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
 
+  <!-- Favicon and Touch Icon -->
   <link rel="icon" type="image/png" href="../assets/images/favicon/rb9.ico">
   <link rel="apple-touch-icon" href="../assets/images/favicon/rb9.ico">
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/contact.css">
   <link rel="stylesheet" href="../style/nav.css">
   <link rel="stylesheet" href="../style/popupnotice.css">
   <link rel="stylesheet" href="../style/loader.css">
 
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
-  
+
+  <!-- Defer JavaScript for Faster Page Load -->
   <script src="../js/loader.js" defer></script>
   <script src="../js/welcome-msg.js" defer></script>
   <script src="../js/hamburger.js" defer></script>
@@ -35,14 +37,13 @@
   <script src="../js/theme-toggle.js" defer></script>
   <script src="../js/current-year.js" defer></script>
 
-  <!-- Open Graph Tags -->
+  <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="KyuArtz | Contact Us">
   <meta property="og:description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/myavatarlogo/logo.jpg">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/contact">
   <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
 
   <div class="loader" oncontextmenu="return false">
@@ -86,12 +87,13 @@
             <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
             <a href="maintenance.html"><i class="fa-solid fa-user"></i> Original Character</a>
             <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
-            <a href="maintenance.html"><i class="fa-solid fa-table"></i> Commissioner info</a>
+            <a href="commissioner-info.html"><i class="fa-solid fa-table"></i> Commissioner info</a>
             <a href="maintenance.html"><i class="fa-solid fa-film"></i> Time lapse video</a>
             <a href="maintenance.html"><i class="fa-solid fa-diagram-project"></i> Personal Project</a>
             <h1>SERVICE INFO</h1>
             <a href="terms-of-service.html"><i class="fa-solid fa-circle-info"></i> Terms of Service</a>
             <a href="privacy-policy.html"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
+            <a href="customer-support.html"><i class="fa-solid fa-circle-info"></i> Customer Support</a>
             <a href="faq.html"><i class="fa-solid fa-circle-info"></i> FAQ</a>
           </div>
         </li>
@@ -113,72 +115,73 @@
   </header>
 
   <div class="contact-container">
-    <div class="contact-content">
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <div class="title">
-          <h1>INQUIRY FORM</h1>
+    <form class="contact" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+      <h1>INQUIRY FORM ( CLOSED )</h1>
+      <input type="hidden" name="access_key" value="8b83998c-019e-46bf-975a-be7797d3fe51">
+
+      <label for="username-field">Client Name: required</label><span id="username-error"></span><span id="username-valid"></span>
+      <input type="text" id="username-field" name="Client Name" placeholder="Enter your name.." onkeyup="validateInput('username')" required><br><br>
+
+      <label for="email-field">Email: required</label><span id="email-error"></span><span id="email-valid"></span>
+      <input type="email" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateInput('email')" required><br><br>
+
+      <label for="commission-select">Commission Type: required</label><span id="commission-error"></span><span id="commission-valid"></span>
+      <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
+        <option value="" disabled selected hidden></option>
+        <option value="Portrait (Semi-realism)">Portrait (Semi-realism)</option>
+        <option value="Portrait (Anime-Style)">Portrait (Anime-Style)</option>
+        <option value="Portrait (Semi-realism-grayscale)">Portrait (Semi-realism-grayscale)</option>
+        <option value="Portrait (Anime-Style-grayscale)">Portrait (Anime-Style-grayscale)</option>
+        <option value="Bustup (Semi-realism)">Bustup (Semi-realism)</option>
+        <option value="Bustup (Anime-Style)">Bustup (Anime-Style)</option>
+        <option value="Bustup (Semi-realism-grayscale)">Bustup (Semi-realism-grayscale)</option>
+        <option value="Bustup (Anime-Style-grayscale)">Bustup (Anime-Style-grayscale)</option>
+        <option value="Full Body (Semi-realism)">Full Body (Semi-realism)</option>
+        <option value="Full Body (Anime-Style)">Full Body (Anime-Style)</option>
+        <option value="Full Body (Semi-realism-grayscale)">Full Body (Semi-realism-grayscale)</option>
+        <option value="Full Body (Anime-Style-grayscale)">Full Body (Anime-Style-grayscale)</option>
+        <option value="Chibi (Colored)">Chibi (Colored)</option>
+        <option value="Chibi (Grayscale)">Chibi (Grayscale)</option>
+        <option value="Emotes (Colored)">Emotes (Colored)</option>
+        <option value="Emotes (Grayscale)">Emotes (Grayscale)</option>
+        <option value="Landscape (Colored)">Landscape (Colored)</option>
+        <option value="Landscape (Grayscale)">Landscape (Grayscale)</option>
+        <option value="Others">Others (Clarify your request at the commission details)</option>
+      </select><br><br>
+
+      <label for="message-field">Commission Details: required</label><span id="message-error"></span><span id="message-valid"></span>
+      <textarea id="message-field" name="Commssion Details" placeholder="Information regarding your commissioned art request to improve workflow efficiency.." onkeyup="validateInput('message')" required></textarea><br><br>
+
+      <div class="uploadimg-container">
+        <label class="upload" for="myFile">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+        <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()"><br><br>
+        <img id="image-preview" src="#" alt="Uploaded Image" style="display: none; max-width: 100%; height: auto;">
+      </div>
+
+      <div class="tos-container" title="Terms of Service">
+        <input type="checkbox" value="Agreed" name="Terms of Service" required> Agree to terms of service
+        <div class="tos-info">
+          <a title="Info" onclick="openPopup()"><img src="../assets/images/imgbtn/question-mark.webp" loading="lazy"></a>
         </div>
+      </div>
 
-        <input type="hidden" name="access_key" value="8b83998c-019e-46bf-975a-be7797d3fe51">
+      <div class="submit-container">
+        <input type="Submit" value="Submit">
+      </div>
+    </form>
 
-        <label for="username-field">Client Name: required</label><span id="username-error"></span><span id="username-valid"></span>
-        <input type="text" id="username-field" name="Client Name" placeholder="Enter your name.." onkeyup="validateInput('username')" required>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function() {
+        alert('Thank you for inquiring. We will get back to you shortly.');
+      });
+    </script>
 
-        <label for="email-field">Email: required</label><span id="email-error"></span><span id="email-valid"></span>
-        <input type="email" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateInput('email')" required>
-
-        <label for="commission-select">Commission Type: required</label><span id="commission-error"></span><span id="commission-valid"></span>
-        <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
-          <option value="" disabled selected hidden></option>
-          <option value="Portrait (Semi-realism)">Portrait (Semi-realism)</option>
-          <option value="Portrait (Anime-Style)">Portrait (Anime-Style)</option>
-          <option value="Portrait (Semi-realism-grayscale)">Portrait (Semi-realism-grayscale)</option>
-          <option value="Portrait (Anime-Style-grayscale)">Portrait (Anime-Style-grayscale)</option>
-          <option value="Bustup (Semi-realism)">Bustup (Semi-realism)</option>
-          <option value="Bustup (Anime-Style)">Bustup (Anime-Style)</option>
-          <option value="Bustup (Semi-realism-grayscale)">Bustup (Semi-realism-grayscale)</option>
-          <option value="Bustup (Anime-Style-grayscale)">Bustup (Anime-Style-grayscale)</option>
-          <option value="Full Body (Semi-realism)">Full Body (Semi-realism)</option>
-          <option value="Full Body (Anime-Style)">Full Body (Anime-Style)</option>
-          <option value="Full Body (Semi-realism-grayscale)">Full Body (Semi-realism-grayscale)</option>
-          <option value="Full Body (Anime-Style-grayscale)">Full Body (Anime-Style-grayscale)</option>
-          <option value="Chibi (Colored)">Chibi (Colored)</option>
-          <option value="Chibi (Grayscale)">Chibi (Grayscale)</option>
-          <option value="Emotes (Colored)">Emotes (Colored)</option>
-          <option value="Emotes (Grayscale)">Emotes (Grayscale)</option>
-          <option value="Landscape (Colored)">Landscape (Colored)</option>
-          <option value="Landscape (Grayscale)">Landscape (Grayscale)</option>
-          <option value="Others">Others (Clarify your request at the commission details)</option>
-        </select>
-
-        <label for="message-field">Commission Details: required</label><span id="message-error"></span><span id="message-valid"></span>
-        <textarea id="message-field" name="Commssion Details" placeholder="Information regarding your commissioned art request to improve workflow efficiency.." onkeyup="validateInput('message')" required></textarea>
-
-        <div class="uploadimg-container">
-          <label class="upload" for="myFile">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
-          <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()">
-          <img id="image-preview" src="#" alt="Uploaded Image" style="display: none; max-width: 100%; height: auto;">
-        </div>
-
-        <div class="tos-container" title="Terms of Service">
-          <input type="checkbox" value="Agreed" name="Terms of Service" required> Agree to terms of service
-          <div class="tos-info">
-            <a title="Info" onclick="openPopup()"><img src="../assets/images/imgbtn/question-mark.webp" loading="lazy"></a>
-          </div>
-        </div>
-
-        <div class="send-container">
-          <input type="Submit" value="Submit">
-        </div>
-
-        <div class="popup" id="popup">
-          <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
-          <h1>NOTICE <i class="fa-solid fa-circle-exclamation"></i></h1>
-          <p>By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
-          <button type="button" onclick="closePopup()">Understood</button>
-          <a href="terms-of-service.html">Terms Of Service</a>
-        </div>
-      </form>
+    <div class="popup" id="popup">
+      <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
+      <h1>NOTICE <i class="fa-solid fa-circle-exclamation"></i></h1>
+      <p>By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
+      <button type="button" onclick="closePopup()">Understood</button>
+      <a href="terms-of-service.html">Terms Of Service</a>
     </div>
 
     <div class="my-contact">
@@ -195,6 +198,7 @@
     <div class="donate">
       <a class="gbm" onclick="openDonate()" href="#" title="Mode of Payment"><img src="../assets/images/imgbtn/gbm.webp" loading="lazy" alt=""></a>
     </div>
+  </div>
     
     <div class="donate-popup" id="donate-popup">
       <h1>CHOOSE QR CODE</h1>
@@ -214,7 +218,6 @@
       </div>
       <button type="button" onclick="closeDonate()">Close</button>
     </div>
-  </div>
 
   <div class="footer">
     <div class="copyright">
@@ -222,6 +225,7 @@
       <div class="footer-container">
         <a class="detail" href="terms-of-service.html"> Terms of Service</a>
         <a class="detail" href="privacy-policy.html"> Privacy Policy</a>
+        <a class="detail" href="customer-support.html"> Customer Support</a>
         <a class="detail" href="faq.html"> FAQ</a>
         <a class="detail" href="about.html"> About Me</a>
         <a class="detail" href="contact.html"> Contact Us</a>
@@ -236,5 +240,4 @@
   </div>
 
 </body>
-
 </html>

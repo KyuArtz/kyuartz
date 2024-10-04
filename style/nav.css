@@ -151,6 +151,7 @@ a {
 /* Search Form */
 form.search {
     margin: 0 3px;
+    padding: 0;
 }
 
 form.search input[type="search"] {
@@ -178,7 +179,7 @@ form.search button {
     outline: none;
     margin: 0;
     padding: 12px;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: 0.3s ease-in-out;
 }
 

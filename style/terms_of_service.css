@@ -10,7 +10,7 @@ strong {
 /* List Items */
 .ts-container li {
     color: var(--default-font-color);
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 5px;
     list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
