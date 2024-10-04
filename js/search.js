@@ -2,7 +2,7 @@ let availableKeywords = [
     { name: 'Portfolio', url: '../pages/portfolio.html' },
     { name: 'My Comic', url: '../pages/comic.html' },
     { name: 'Original Character', url: '../pages/maintenance.html' },
-    { name: 'Commissioner Information', url: '../pages/maintenance.html' },
+    { name: 'Commissioner Information', url: '../pages/commissioner-info.html' },
     { name: 'Time Lapse Video', url: '../pages/maintenance.html' },
     { name: 'Personal Project', url: '../pages/maintenance.html' },
     { name: 'Commission Sheet', url: '../pages/commission-sheet.html' },
