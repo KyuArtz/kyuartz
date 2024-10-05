@@ -44,7 +44,7 @@ header {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 0 3px #000;
-  border-radius: 5px;
+  border-radius: 10px;
   right: 0;
   margin: 10px auto;
   border: solid thin;
