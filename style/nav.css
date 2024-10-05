@@ -517,7 +517,7 @@ form.search::after {
     padding: 5px 20px;
     margin: auto 5px;
     font-family: var(--font-style);
-    border: solid thin var(--color);
+    border: solid thin;
     border-radius: 5px;
     color: inherit;
     outline: none;
