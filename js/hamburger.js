@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
-  const dropdownLinks = document.querySelectorAll(".nav-link-dropdown");
-  const dropdownContents = document.querySelectorAll(".dropdown-content");
+  const sideMenuLinks = document.querySelectorAll(".nav-link-sideMenu");
+  const sideMenuContents = document.querySelectorAll(".sideMenu-content");
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
 
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Toggle dropdown menu visibility
-  dropdownLinks.forEach(dropdownLink => {
+  // Toggle sidemenu menu visibility
+  sideMenuLinks.forEach(dropdownLink => {
     dropdownLink.addEventListener("click", (event) => {
       event.stopPropagation(); // Prevents window click handler from immediately closing the dropdown
       const dropdownContent = event.currentTarget.nextElementSibling;
@@ -31,15 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close dropdown and nav menus when clicking outside
+  // Close sidemenu and nav menus when clicking outside
   window.addEventListener("click", (event) => {
     // Check if clicked target is part of the dropdown link or content
-    const clickedInsideDropdown = [...dropdownLinks].some(link => link.contains(event.target));
-    const clickedInsideContent = [...dropdownContents].some(content => content.contains(event.target));
+    const clickedInsideDropdown = [...sideMenuLinks].some(link => link.contains(event.target));
+    const clickedInsideContent = [...sideMenuContents].some(content => content.contains(event.target));
     
     // Close dropdowns if the click is outside
     if (!clickedInsideDropdown && !clickedInsideContent) {
-      dropdownContents.forEach(content => content.classList.remove("show"));
+      sideMenuContents.forEach(content => content.classList.remove("show"));
     }
 
     // Close the nav menu if not clicked on hamburger or nav menu

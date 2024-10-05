@@ -170,7 +170,7 @@ a {
 
 /* Nav Links */
 .nav-link,
-.nav-link-dropdown {
+.nav-link-sideMenu {
     font-family: var(--font-style);
     font-size: 0.9rem;
     color: inherit;
@@ -183,7 +183,7 @@ a {
 }
 
 .nav-link:hover,
-.nav-link-dropdown:hover {
+.nav-link-sideMenu:hover {
     color: var(--color);
     border-bottom: thin solid var(--color);
 }
@@ -385,7 +385,7 @@ form.search::after {
     }
 
     .nav-item a,
-    .nav-link-dropdown {
+    .nav-link-sideMenu {
         font-size: 1.5rem;
         background: none;
         box-shadow: none;
@@ -407,14 +407,14 @@ form.search::after {
         border-radius: 0;
     }
 
-    .dropdown-content {
+    .sideMenu-content {
         width: 100%;
         top: 0 !important;
     }
 }
 
 /* Dropdown Content */
-.dropdown-content {
+.sideMenu-content {
     position: fixed;
     top: 50px;
     left: -101%;
@@ -432,7 +432,7 @@ form.search::after {
     transition: 0.5s ease;
 }
 
-.dropdown-content h1 {
+.sideMenu-content h1 {
     font-family: var(--font-style);
     font-size: 1.1rem;
     color: var(--color);
@@ -441,7 +441,7 @@ form.search::after {
     padding: 15px;
 }
 
-.dropdown-content a {
+.sideMenu-content a {
     font-family: var(--font-style);
     font-size: 0.8rem;
     color: inherit;
@@ -455,7 +455,7 @@ form.search::after {
     transition: 0.5s ease-in-out;
 }
 
-.dropdown-content a:hover {
+.sideMenu-content a:hover {
     color: var(--default-font-color);
     background: var(--color);
 }
