@@ -26,6 +26,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     background: inherit;
+    box-shadow: 0 0 3px #000;
 }
 
 th, td {
