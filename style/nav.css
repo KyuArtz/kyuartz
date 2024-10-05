@@ -21,6 +21,7 @@ header {
 .settings-menu {
   position: relative;
   display: inline-block;
+  margin: 5px auto;
 }
 
 .settings-btn {
