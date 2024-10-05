@@ -19,6 +19,7 @@ section h1, h2 {
 section p {
     font-family: 'poppins', sans-serif;
     padding: 0 10px;
+    cursor: default;
 }
 
 table {

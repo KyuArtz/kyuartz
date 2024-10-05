@@ -2,31 +2,31 @@
 const commissions = [
     {
         commissioner: "Client A",
-        type: "",
-        contact: "",
-        status: "",
-        notes: ""
+        type: "Null",
+        contact: "Null",
+        status: "Null",
+        notes: "Null"
     },
     {
         commissioner: "Client B",
-        type: "",
-        contact: "",
-        status: "",
-        notes: ""
+        type: "Null",
+        contact: "Null",
+        status: "Null",
+        notes: "Null"
     },
     {
         commissioner: "Client C",
-        type: "",
-        contact: "",
-        status: "",
-        notes: ""
+        type: "Null",
+        contact: "Null",
+        status: "Null",
+        notes: "Null"
     },
     {
         commissioner: "Client D",
-        type: "",
-        contact: "",
-        status: "",
-        notes: ""
+        type: "Null",
+        contact: "Null",
+        status: "Null",
+        notes: "Null"
     }
 ];
 

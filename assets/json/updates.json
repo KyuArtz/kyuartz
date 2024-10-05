@@ -6,7 +6,8 @@
       "major": [
       ],
       "minor": [
-        "Added a queue button on the commission sheet for quick access to the commissioner info page during inquiries."
+        "Added a queue button on the commission sheet for quick access to the commissioner info page during inquiries.",
+        "Improved the categorization on sidebar menu."
       ],
       "bugfixes": [
         
