@@ -84,7 +84,8 @@
     text-shadow: 0 0 3px #000;
 }
 
-.caption h1, p {
+.caption h1,
+.caption p {
   margin: auto 20px;
   padding: 13px 0;
 }

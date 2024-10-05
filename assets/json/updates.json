@@ -4,10 +4,11 @@
     {
       "date": "10/5/2024",
       "major": [
+        "Added a settings button for a more streamlined and organized navigation."
       ],
       "minor": [
         "Added a queue button on the commission sheet for quick access to the commissioner info page during inquiries.",
-        "Improved the categorization on sidebar menu."
+        "Enhanced the categorization in the sidebar menu for better user experience."
       ],
       "bugfixes": [
         

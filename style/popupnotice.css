@@ -305,7 +305,7 @@
 
 /* Popup Text */
 .donate-popup p {
-    color: inherit;
+    color: var(--default-font-color);
     cursor: default;
     font-size: 14px;
 }

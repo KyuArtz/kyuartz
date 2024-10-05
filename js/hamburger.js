@@ -1,9 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Cache DOM elements
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");
   const navLinks = document.querySelectorAll(".nav-link");
   const dropdownLinks = document.querySelectorAll(".nav-link-dropdown");
   const dropdownContents = document.querySelectorAll(".dropdown-content");
+  const settingsBtn = document.querySelector(".settings-btn");
+  const settingsMenu = document.querySelector(".settings-menu");
 
   // Toggle hamburger and nav menu
   hamburger.addEventListener("click", () => {
@@ -11,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navMenu.classList.toggle("active-nav");
   });
 
-  // Close nav menu on link click
+  // Close nav menu when a nav link is clicked
   navLinks.forEach(navLink => {
     navLink.addEventListener("click", () => {
       hamburger.classList.remove("active-hamburger");
@@ -19,27 +22,43 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Toggle dropdown menu
-  function toggleDropdown(event) {
-    event.stopPropagation(); // Prevent this event from bubbling to window click event
-    event.currentTarget.nextElementSibling.classList.toggle("show");
-  }
-
-  // Add click event to dropdown links
+  // Toggle dropdown menu visibility
   dropdownLinks.forEach(dropdownLink => {
-    dropdownLink.addEventListener("click", toggleDropdown);
+    dropdownLink.addEventListener("click", (event) => {
+      event.stopPropagation(); // Prevents window click handler from immediately closing the dropdown
+      const dropdownContent = event.currentTarget.nextElementSibling;
+      dropdownContent.classList.toggle("show");
+    });
   });
 
-  // Close dropdown if user clicks outside
+  // Close dropdown and nav menus when clicking outside
   window.addEventListener("click", (event) => {
-    const isDropdownLink = [...dropdownLinks].some(link => link.contains(event.target));
-    const isDropdownContent = [...dropdownContents].some(content => content.contains(event.target));
+    // Check if clicked target is part of the dropdown link or content
+    const clickedInsideDropdown = [...dropdownLinks].some(link => link.contains(event.target));
+    const clickedInsideContent = [...dropdownContents].some(content => content.contains(event.target));
+    
+    // Close dropdowns if the click is outside
+    if (!clickedInsideDropdown && !clickedInsideContent) {
+      dropdownContents.forEach(content => content.classList.remove("show"));
+    }
 
-    // Only close if neither dropdown links nor content are clicked
-    if (!isDropdownLink && !isDropdownContent) {
-      dropdownContents.forEach(content => {
-        content.classList.remove("show");
-      });
+    // Close the nav menu if not clicked on hamburger or nav menu
+    if (!event.target.closest('.hamburger') && !event.target.closest('.nav-menu')) {
+      hamburger.classList.remove("active-hamburger");
+      navMenu.classList.remove("active-nav");
+    }
+  });
+
+  // Toggle settings menu
+  settingsBtn?.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent window click from closing it immediately
+    settingsMenu.classList.toggle("show");
+  });
+
+  // Close settings menu when clicking outside
+  window.addEventListener("click", (event) => {
+    if (!event.target.closest('.settings-btn') && !event.target.closest('.settings-menu')) {
+      settingsMenu.classList.remove("show");
     }
   });
 });

@@ -47,43 +47,43 @@
 </head>
 <body>
 
-    <div class="loader" oncontextmenu="return false">
-        <h1 class="loading-text">Loading Webpage...</h1>
-        <div class="spinner small-spinner"></div>
-        <div class="spinner medium-spinner"></div>
-        <div class="spinner large-spinner"></div>
-    </div>
-    
-    <div id="overlay"></div>
-    <div id="popup-message">
-        <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
-        <h1>Thanks for visiting!</h1>
-        <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-        <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
-    </div>
-    
-    <div id="cookie-popup" class="cookie-popup">
-        <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-        <button id="accept-cookies">Got It</button>
-    </div>
+  <div class="loader" oncontextmenu="return false">
+    <h1 class="loading-text">Loading Webpage...</h1>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
 
-    <header>
+  <div id="overlay"></div>
+  <div id="popup-message">
+    <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
+    <h1>Thanks for visiting!</h1>
+    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
+  </div>
+
+  <header>
     <nav class="navbar">
-        <a href="../index.html" class="nav-brand">
+      <a href="../index.html" class="nav-brand">
         <div class="brand">Kyu</div>
         <img src="../assets/images/myavatarlogo/avatar.ico" loading="lazy" class="my-avatar">
-        </a>
-        <form class="search" onsubmit="return false;">
+      </a>
+      <form class="search" onsubmit="return false;">
         <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search">
         <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
         <div class="search-result" style="display: none;"></div>
-        </form>
-        <ul class="nav-menu">
+      </form>
+      <ul class="nav-menu">
         <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
         <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
         <li class="nav-item dropdown active-nav">
-            <a class="nav-link-dropdown" aria-expanded="false" onclick="myFunction()"><i class="fa-solid fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i></a>
-            <div id="myDropdown" class="dropdown-content">
+          <a class="nav-link-dropdown" aria-expanded="false" onclick="myFunction()"><i class="fa-solid fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i></a>
+          <div id="myDropdown" class="dropdown-content">
             <h1>CONTENT</h1>
             <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
             <a href="maintenance.html"><i class="fa-solid fa-user"></i> Original Character</a>
@@ -97,64 +97,72 @@
             <a href="privacy-policy.html"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
             <a href="customer-support.html"><i class="fa-solid fa-circle-info"></i> Customer Support</a>
             <a href="faq.html"><i class="fa-solid fa-circle-info"></i> FAQ</a>
-            </div>
+          </div>
         </li>
         <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
         <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
-        </ul>
-        <div class="theme-toggle">
-        <label class="switch">
-            <input type="checkbox" id="theme-toggle-checkbox">
-            <span class="slider round"></span>
-        </label>
+      </ul>
+      <div class="settings-menu">
+        <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="dropdown-setting">
+          <div class="theme-toggle">
+            <p>Theme:</p>
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle-checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="faq.html">Help</a>
         </div>
-        <div class="hamburger">
+      </div>
+      <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-        </div>
+      </div>
     </nav>
-    </header>
+  </header>
 
-    <section class="commission-container">
-        <section id="commissioner-info">
-            <h1>Commissioner Information - Public View</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Commissioner Name</th>
-                        <th>Commission Type</th>
-                        <th>Contact</th>
-                        <th>Status</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tbody id="commission-list">
-                    <!-- Dynamic content will be inserted here -->
-                </tbody>
-            </table>
-        </section>
-    </section>      
+  <section class="commission-container">
+      <section id="commissioner-info">
+          <h1>Commissioner Information - Public View</h1>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Commissioner Name</th>
+                      <th>Commission Type</th>
+                      <th>Contact</th>
+                      <th>Status</th>
+                      <th>Notes</th>
+                  </tr>
+              </thead>
+              <tbody id="commission-list">
+                  <!-- Dynamic content will be inserted here -->
+              </tbody>
+          </table>
+      </section>
+  </section>      
     
-    <section id="upcoming-slots">
-        <h2>Upcoming Slots</h2>
-        <p>Maximum slots available: <strong>4</strong></p>
-        <ul>
-            <li>
-                Available slot: <strong></strong> 
-                <span class="remaining-slots"></span>
-            </li>
-        </ul>
-    </section>        
+  <section id="upcoming-slots">
+      <h2>Upcoming Slots</h2>
+      <p>Maximum slots available: <strong>4</strong></p>
+      <ul>
+          <li>
+              Available slot: <strong></strong> 
+              <span class="remaining-slots"></span>
+          </li>
+      </ul>
+  </section>        
 
-    <section id="status-definitions">
-    <h2>Status Definitions</h2>
-        <ul>
-            <li><strong>Pending</strong>: Commission is confirmed but work hasn't started.</li>
-            <li><strong>In Progress</strong>: Currently working on this commission.</li>
-            <li><strong>Completed</strong>: Commission has been finished and delivered.</li>
-        </ul>
-    </section>
+  <section id="status-definitions">
+  <h2>Status Definitions</h2>
+      <ul>
+          <li><strong>Pending</strong>: Commission is confirmed but work hasn't started.</li>
+          <li><strong>In Progress</strong>: Currently working on this commission.</li>
+          <li><strong>Completed</strong>: Commission has been finished and delivered.</li>
+      </ul>
+  </section>
 
 </body>
 </html>

@@ -5,9 +5,9 @@
 
 form.contact {
     float: left;
-    font-family: var(--font-style);
     padding: 30px 40px 20px;
     width: 50%;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Title */
@@ -15,6 +15,7 @@ form h1 {
     text-align: center;
     cursor: default;
     color: var(--color);
+    font-family: var(--font-style);
 }
 
 /* Input Fields */
@@ -24,7 +25,6 @@ input[type="file"],
 select,
 textarea {
     width: 100%;
-    font-family: 'Poppins', sans-serif;
     padding: 12px;
     border: 1px solid var(--color);
     border-radius: 50px;
@@ -33,6 +33,7 @@ textarea {
     resize: vertical;
     background: none;
     color: var(--color);
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Message Input */
@@ -41,6 +42,7 @@ textarea {
     max-height: 150px;
     height: 150px;
     border-radius: 10px 30px 10px 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 input[type="text"]:focus, 

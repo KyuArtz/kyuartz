@@ -101,11 +101,19 @@
         <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
         <li class="nav-item active-nav"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
       </ul>
-      <div class="theme-toggle">
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle-checkbox">
-          <span class="slider round"></span>
-        </label>
+      <div class="settings-menu">
+        <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="dropdown-setting">
+          <div class="theme-toggle">
+            <p>Theme:</p>
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle-checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="faq.html">Help</a>
+        </div>
       </div>
       <div class="hamburger">
         <span class="bar"></span>
@@ -120,13 +128,13 @@
       <h1>INQUIRY FORM</h1>
       <input type="hidden" name="access_key" value="8b83998c-019e-46bf-975a-be7797d3fe51">
 
-      <label for="username-field">Client Name: required</label><span id="username-error"></span><span id="username-valid"></span>
+      <label for="username-field">Client Name:</label><span id="username-error"></span><span id="username-valid"></span>
       <input type="text" id="username-field" name="Client Name" placeholder="Enter your name.." onkeyup="validateInput('username')" required><br><br>
 
-      <label for="email-field">Email: required</label><span id="email-error"></span><span id="email-valid"></span>
+      <label for="email-field">Email:</label><span id="email-error"></span><span id="email-valid"></span>
       <input type="email" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateInput('email')" required><br><br>
 
-      <label for="commission-select">Commission Type: required</label><span id="commission-error"></span><span id="commission-valid"></span>
+      <label for="commission-select">Commission Type:</label><span id="commission-error"></span><span id="commission-valid"></span>
       <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
         <option value="" disabled selected hidden></option>
         <option value="Portrait (Semi-realism)">Portrait (Semi-realism)</option>
@@ -150,7 +158,7 @@
         <option value="Others">Others (Clarify your request at the commission details)</option>
       </select><br><br>
 
-      <label for="message-field">Commission Details: required</label><span id="message-error"></span><span id="message-valid"></span>
+      <label for="message-field">Commission Details:</label><span id="message-error"></span><span id="message-valid"></span>
       <textarea id="message-field" name="Commssion Details" placeholder="Information regarding your commissioned art request to improve workflow efficiency.." onkeyup="validateInput('message')" required></textarea><br><br>
 
       <div class="uploadimg-container">
