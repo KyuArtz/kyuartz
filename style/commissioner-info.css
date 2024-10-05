@@ -64,6 +64,17 @@ strong {
     color: var(--color);
 }
 
+.csc {
+    display: flex;
+}
+
+.csc section {
+    flex: 1;
+    box-shadow: 0 0 3px #000;
+    margin: 30px 5px 5px;
+    border-radius: 10px;
+}
+
 /* Responsive styles for form inputs */
 @media (max-width: 480px) {
     .form-input {
