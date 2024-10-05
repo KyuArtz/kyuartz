@@ -148,9 +148,12 @@
 .mysocial img {
     width: 35px;
     height: 35px;
+    aspect-ratio: 1/1;
     margin: 3px;
     border: solid thin;
     object-fit: cover;
+    background-color: #000;
+    border-radius: 10px;
 }
 
 /* Responsive Styles */
