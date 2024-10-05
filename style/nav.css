@@ -31,7 +31,7 @@ header {
   font-size: 16px;
   border: none;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   border: solid thin;
   transition: background-color 0.3s ease;
 }
@@ -578,18 +578,13 @@ form.search::after {
 }
 
 @media (max-width: 600px) {
-  .settings-btn {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
+    .dropdown-setting {
+        min-width: 120px;
+    }
 
-  .dropdown-setting {
-    min-width: 120px;
-  }
-
-  .dropdown-setting a {
-    font-size: 14px;
-  }
+    .dropdown-setting a {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 500px) {
