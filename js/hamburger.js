@@ -23,22 +23,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Toggle sidemenu menu visibility
-  sideMenuLinks.forEach(dropdownLink => {
-    dropdownLink.addEventListener("click", (event) => {
+  sideMenuLinks.forEach(sideMenuLink => {
+    sideMenuLink.addEventListener("click", (event) => {
       event.stopPropagation(); // Prevents window click handler from immediately closing the dropdown
-      const dropdownContent = event.currentTarget.nextElementSibling;
-      dropdownContent.classList.toggle("show");
+      const sideMenuContent = event.currentTarget.nextElementSibling;
+      sideMenuContent.classList.toggle("show");
     });
   });
 
   // Close sidemenu and nav menus when clicking outside
   window.addEventListener("click", (event) => {
     // Check if clicked target is part of the dropdown link or content
-    const clickedInsideDropdown = [...sideMenuLinks].some(link => link.contains(event.target));
+    const clickedInsideSideMenu = [...sideMenuLinks].some(link => link.contains(event.target));
     const clickedInsideContent = [...sideMenuContents].some(content => content.contains(event.target));
     
-    // Close dropdowns if the click is outside
-    if (!clickedInsideDropdown && !clickedInsideContent) {
+    // Close sidemenu if the click is outside
+    if (!clickedInsideSideMenu && !clickedInsideContent) {
       sideMenuContents.forEach(content => content.classList.remove("show"));
     }
 
