@@ -5,11 +5,16 @@
 
 .summary h1,
 .expcontent h1,
-.program-content h1,
-.my-info h1 {
+.program-content h1 {
     font-family: var(--font-style);
     font-size: 1.5rem;
     color: var(--color);
+    cursor: default;
+}
+
+.my-info h1 {
+    cursor: default;
+    font-family: myFont;
 }
 
 .summary p,
