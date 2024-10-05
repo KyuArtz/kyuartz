@@ -21,11 +21,11 @@ header {
 .settings-menu {
   position: relative;
   display: inline-block;
-  margin: 5px auto;
+  margin: auto 5px;
 }
 
 .settings-btn {
-  background: var(--color);
+  background: none;
   color: inherit;
   padding: 10px 15px;
   font-size: 16px;
@@ -164,7 +164,7 @@ a {
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    border: thin solid var(--color);
+    border: thin solid;
     margin-right: 5px;
 }
 
@@ -345,7 +345,7 @@ form.search::after {
     .hamburger {
         display: block;
         padding: 5px;
-        border: thin solid var(--color);
+        border: thin solid;
         border-radius: 10px;
         z-index: 1;
     }
