@@ -21,14 +21,9 @@ strong {
 }
 
 .pp-container h1 {
-    font-size: 1.5rem;
     background: inherit;
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
-}
-
-.pp-container h2 {
-    font-size: 1.1rem;
 }
 
 /* List Items */
@@ -37,7 +32,6 @@ strong {
     font-family: 'Poppins', sans-serif;
     list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
-    font-size: 1.0rem;
     text-align: justify;
 }
 
@@ -50,11 +44,10 @@ strong {
 }
 
 .pp-container ul a {
-    text-decoration: underline;
     color: var(--color);
 }
 
-.pp-container ul a {
+.pp-container ul a:hover {
     text-decoration: underline;
 }
 

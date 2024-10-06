@@ -11,14 +11,11 @@
 }
 
 .faq-item h2 {
-    font-size: 1.1rem;
-    font-weight: 500;
     font-family: var(--font-style);
     color: var(--color);
 }
 
 .faq-item p {
-    font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     color: var(--default-font-color);
     text-align: justify;
@@ -45,12 +42,7 @@
 }
 
 .faq-container ul a {
-    text-decoration: underline;
     color: var(--color);
-}
-
-.faq-container ul a {
-    text-decoration: underline;
 }
 
 /* Hide Scrollbar for WebKit Browsers */

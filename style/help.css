@@ -5,71 +5,71 @@
 }
 
 .help-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .help-card {
-  width: calc(50% - 10px); /* Two cards per row on larger screens */
-  background-color: inherit;
-  border-radius: 8px;
-  box-shadow: 0 0 3px #000;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(50% - 10px); /* Two cards per row on larger screens */
+    background-color: inherit;
+    border-radius: 8px;
+    box-shadow: 0 0 3px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .help-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .help-link {
-  display: block;
-  color: inherit;
-  text-decoration: none;
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
 .card-content {
-  padding: 20px;
+    padding: 20px;
 }
 
 .help-section h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: var(--color);
-  font-family: myFont;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--color);
+    font-family: myFont;
 }
 
 .help-section p {
-  color: var(--defaul-font-color);
-  font-size: 1em;
+    color: var(--defaul-font-color);
+    font-size: 1em;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .help-card {
-    width: calc(100% - 10px); /* Single card per row for tablet and below */
-  }
+    .help-card {
+      width: calc(100% - 10px); /* Single card per row for tablet and below */
+    }
 }
 
 @media (max-width: 480px) {
-  .help-section {
-    flex-direction: column;
-    align-items: center;
-  }
+    .help-section {
+      flex-direction: column;
+      align-items: center;
+    }
 
-  .help-card {
-    width: 100%; /* Full width for mobile */
-    margin-bottom: 15px;
-  }
+    .help-card {
+      width: 100%; /* Full width for mobile */
+      margin-bottom: 15px;
+    }
 
-  .help-section h3 {
-    font-size: 1.3em;
-  }
+    .help-section h3 {
+      font-size: 1.3em;
+    }
 
-  .help-section p {
-    font-size: 0.9em;
-  }
+    .help-section p {
+      font-size: 0.9em;
+    }
 }

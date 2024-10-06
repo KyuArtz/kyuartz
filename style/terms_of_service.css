@@ -17,7 +17,6 @@ strong {
     background: var(--overlay);
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
-    font-size: 1.0rem;
     text-align: justify;
 }
 
@@ -30,8 +29,11 @@ strong {
 }
 
 .ts-container ul a {
-    text-decoration: underline;
     color: var(--color);
+}
+
+.ts-container ul a:hover {
+    text-decoration: underline;
 }
 
 .ts-container ul li {

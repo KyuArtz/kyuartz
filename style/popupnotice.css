@@ -42,7 +42,6 @@
 
 #popup-message h1 {
     font-size: 2rem;
-    font-weight: 500;
     color: var(--color);
     margin: 30px 0 25px;
     border-bottom: thin solid;
@@ -104,7 +103,6 @@
 /* Popup Title */
 .popup h1 {
     font-size: 2.0rem;
-    font-weight: 500;
     color: var(--color);
     border-style: solid;
     border-top-width: 0;
@@ -215,7 +213,6 @@
 
 /* Popup Title */
 .popup-wn h1 {
-    font-weight: 500;
     border-style: solid;
     border-top-width: 0;
     border-left-width: 0;
@@ -294,7 +291,6 @@
 /* Popup Title */
 .donate-popup h1 {
     font-size: 2.0rem;
-    font-weight: 500;
     color: var(--color);
     border-style: solid;
     border-top-width: 0;
