@@ -116,19 +116,24 @@
 .popup p {
     color: var(--default-font-color);
     cursor: default;
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Popup Action Link */
 .popup a {
     padding: 5px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-family: 'Poppins', sans-serif;
+    color: var(--color);
     text-align: center;
     position: absolute;
     left: 50%;
     bottom: 5px;
     transform: translate(-50%);
+}
+
+.popup a:hover {
+    text-decoration: underline;
 }
 
 /* Popup Button */
