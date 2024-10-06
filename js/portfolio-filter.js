@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = [
     {
+      src: "../assets/images/artgallary/Evany_portrait (2024).webp",
+      title: "",
+      category: "semi-realism"
+    },
+    {
       src: "../assets/images/artgallary/Legend_of_the_crystalight (2024).webp",
       title: "",
       category: "landscape"
