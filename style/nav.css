@@ -582,8 +582,9 @@ form.search::after {
         min-width: 120px;
     }
 
-    .dropdown-setting a {
-        font-size: 14px;
+    .dropdown-setting a,
+    .dropdown-setting p{
+        font-size: 0.8rem;
     }
 }
 
