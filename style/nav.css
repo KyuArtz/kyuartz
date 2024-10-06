@@ -496,7 +496,7 @@ form.search::after {
     display: flex;
     align-items: center;
     padding: 5px;
-    border: thin solid var(--color);
+    border: thin solid;
     border-radius: 50px;
     cursor: pointer;
     transition: 0.5s ease-in-out;
