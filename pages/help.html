@@ -4,42 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Theme Color for Various Browsers -->
-  <meta name="theme-color" content="#1E90FF"> <!-- Chrome, Firefox OS, Opera, Vivaldi -->
+  <!-- Theme color for different platforms -->
+  <meta name="theme-color" content="#1E90FF"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
   <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Safari iOS -->
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-  <!-- Title and Description -->
-  <title>KyuArtz | Customer Support</title>
-  <meta name="description" content="Contact KyuArtz for customer support, inquiries, or assistance with any services.">
+  <!-- Page Title and Meta Description -->
+  <title>KyuArtz | Help</title>
+  <meta name="description" content="Welcome to KyuArtz, your go-to destination for comics, art, and creative projects. Find help navigating through the features, commission processes, and troubleshooting tips.">
 
-  <!-- Favicon and Touch Icon -->
-  <link rel="icon" type="image/png" href="../assets/images/favicon/rb9.ico">
-  <link rel="apple-touch-icon" href="../assets/images/favicon/rb9.ico">
+  <!-- Favicons and Icons -->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
+  <link rel="apple-touch-icon" href="../assets/images/icons/icon.png">
+  <link rel="icon" href="../assets/images/favicon/rb9.ico">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../style/main.css">
-  <link rel="stylesheet" href="../style/customer-support.css">
+  <link rel="stylesheet" href="../style/help.css">
+  <link rel="stylesheet" href="../style/loader.css">
   <link rel="stylesheet" href="../style/nav.css">
   <link rel="stylesheet" href="../style/popupnotice.css">
-  <link rel="stylesheet" href="../style/loader.css">
 
-  <!-- Font Awesome Icons -->
+  <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
 
-  <!-- Defer JavaScript for Faster Load -->
+  <!-- Defer scripts for performance optimization -->
   <script src="../js/loader.js" defer></script>
   <script src="../js/welcome-msg.js" defer></script>
   <script src="../js/nav.js" defer></script>
   <script src="../js/search.js" defer></script>
-  <script src="../js/popup.js" defer></script>
+  <script src="../js/singleslideshow.js" defer></script>
   <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/popup.js" defer></script>
+  <script src="../js/current-year.js" defer></script>
 
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="KyuArtz | Customer Support">
-  <meta property="og:description" content="Get in touch with KyuArtz for customer support, assistance with services, or inquiries.">
+  <!-- Open Graph Tags for Social Media Sharing -->
+  <meta property="og:title" content="KyuArtz | Help">
+  <meta property="og:description" content="Explore KyuArtz help section for troubleshooting tips, navigation guides, and information about commissions.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/myavatarlogo/logo.jpg">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/customer-support">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/help">
   <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
@@ -60,7 +63,7 @@
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="pages/privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies">Got It</button>
   </div>
 
@@ -122,64 +125,49 @@
     </nav>
   </header>
 
-  <div class="customer-support-container">
-    <form class="customer" id="supportForm" action="https://api.web3forms.com/submit" method="POST">
-      <h1>CUSTOMER SUPPORT</h1>
-      <input type="hidden" name="access_key" value="19cfb576-ef37-4a40-b621-64caca87bbf1">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+  <div class="help-container">
+    <div class="help-section">
+        <!-- FAQ Card -->
+        <div class="help-card">
+          <a href="faq.html" class="help-link">
+            <div class="card-content">
+              <h3>FAQs</h3>
+              <p>Find answers to frequently asked questions about commissions, projects, and more.</p>
+            </div>
+          </a>
+        </div>
       
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+        <!-- Contact Information Card -->
+        <div class="help-card">
+          <a href="customer-support.html" class="help-link">
+            <div class="card-content">
+              <h3>Contact Support</h3>
+              <p>Need help? Contact us through the customer support form for assistance.</p>
+            </div>
+          </a>
+        </div>
       
-      <label for="reference">Order/Commission Reference (if applicable):</label><br>
-      <input type="text" id="reference" name="reference"><br><br>
+        <!-- User Guide or Tutorials Card -->
+        <div class="help-card">
+          <a href="guide.html" class="help-link">
+            <div class="card-content">
+              <h3>User Guides</h3>
+              <p>Learn how to navigate the site, request commissions, or explore our features.</p>
+            </div>
+          </a>
+        </div>
       
-      <label for="issueType">Issue Type:</label><br>
-      <select id="issueType" name="issueType" required>
-        <option value="technical">Technical Issue</option>
-        <option value="payment">Payment Issue</option>
-        <option value="order">Order/Commission Inquiry</option>
-        <option value="general">General Question</option>
-        <option value="other">Other</option>
-      </select><br><br>
-      
-      <label for="description">Description of Issue:</label><br>
-      <textarea id="description" name="description" rows="5" required></textarea><br><br>
-      
-      <label for="fileUpload">Upload File (Optional):</label><br>
-      <input type="file" id="fileUpload" name="fileUpload"><br><br>
-
-      <input type="submit" value="Submit">
-    </form>
-    
-    <script>
-      document.getElementById('supportForm').addEventListener('submit', function() {
-        alert('Thank you for contacting customer support. We will get back to you shortly.');
-      });
-    </script>    
+        <!-- Troubleshooting Information Card -->
+        <div class="help-card">
+          <a href="troubleshoot.html" class="help-link">
+            <div class="card-content">
+              <h3>Troubleshooting</h3>
+              <p>Having technical issues? Find solutions to common problems.</p>
+            </div>
+          </a>
+        </div>
+      </div>  
   </div>
-
-  <div class="footer">
-    <div class="copyright">
-      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> KyuArtz, All rights reserved</p>
-      <div class="footer-container">
-        <a class="detail" href="terms-of-service.html"> Terms of Service</a>
-        <a class="detail" href="privacy-policy.html"> Privacy Policy</a>
-        <a class="detail" href="customer-support.html"> Customer Support</a>
-        <a class="detail" href="faq.html"> FAQ</a>
-        <a class="detail" href="about.html"> About Me</a>
-        <a class="detail" href="contact.html"> Contact Us</a>
-        <a class="detail" href="help.html"> Help</a>
-        <div class="social">
-          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="../assets/images/imgbtn/fb.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="../assets/images/imgbtn/yt.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="../assets/images/imgbtn/X.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="../assets/images/imgbtn/ast.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="../assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>        </div>
-      </div>
-    </div>
-  </div>
-
+  
 </body>
 </html>

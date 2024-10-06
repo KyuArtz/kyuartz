@@ -1,5 +1,24 @@
 {
   "updates": [
+
+    {
+      "date": "10/6/2024",
+      "major": [
+        "Added a help page for further assistance or questions."
+      ],
+      "minor": [
+        "Overall adjustments."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
     
     {
       "date": "10/5/2024",

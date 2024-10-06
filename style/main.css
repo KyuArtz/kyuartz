@@ -22,7 +22,7 @@
     --default-font-color: #ffffff;
     --overlay: rgba(10, 18, 24, 0.5);
     --transparent-overlay: rgba(11, 31, 49, 0.950);
-    --scrollbar-track-color: #0000;
+    --scrollbar-track-color: #00000000;
     --hover-light: dodgerblue;
     --font-style: myFont, sans-serif;
     --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
@@ -38,7 +38,7 @@ body.default-theme {
 /* Custom Theme */
 body.custom-theme {
     background-image: var(--theme-2) !important;
-    color: #0e0e0e !important;
+    color: #252525 !important;
 }
 
 /* Body */

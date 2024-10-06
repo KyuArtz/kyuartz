@@ -41,11 +41,16 @@
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+    list-style: none;
 }
 
 .faq-container ul a {
     text-decoration: underline;
     color: var(--color);
+}
+
+.faq-container ul a {
+    text-decoration: underline;
 }
 
 /* Hide Scrollbar for WebKit Browsers */

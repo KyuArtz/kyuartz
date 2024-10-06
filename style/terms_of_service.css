@@ -11,9 +11,9 @@ strong {
 .ts-container li {
     color: var(--default-font-color);
     font-family: 'Poppins', sans-serif;
-    margin: 5px;
     list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
+    margin: 5px;
     background: var(--overlay);
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
@@ -32,6 +32,10 @@ strong {
 .ts-container ul a {
     text-decoration: underline;
     color: var(--color);
+}
+
+.ts-container ul li {
+    line-height: 1.6;
 }
 
 /* Hide Scrollbar for WebKit Browsers */

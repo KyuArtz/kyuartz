@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Theme color for different platforms -->
+  <meta name="theme-color" content="#1E90FF"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Safari iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Page Title and Meta Description -->
+  <title>KyuArtz | Troubleshooting</title>
+  <meta name="description" content="Welcome to the KyuArtz Troubleshooting page. Find solutions to common issues, FAQs, and tips to enhance your experience on our platform.">
+
+  <!-- Favicons and Icons -->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
+  <link rel="apple-touch-icon" href="../assets/images/icons/icon.png">
+  <link rel="icon" href="../assets/images/favicon/rb9.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/troubleshoot.css">
+  <link rel="stylesheet" href="../style/loader.css">
+  <link rel="stylesheet" href="../style/nav.css">
+  <link rel="stylesheet" href="../style/popupnotice.css">
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+
+  <!-- Defer scripts for performance optimization -->
+  <script src="../js/loader.js" defer></script>
+  <script src="../js/welcome-msg.js" defer></script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/search.js" defer></script>
+  <script src="../js/singleslideshow.js" defer></script>
+  <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/popup.js" defer></script>
+  <script src="../js/current-year.js" defer></script>
+
+  <!-- Open Graph Tags for Social Media Sharing -->
+  <meta property="og:title" content="KyuArtz | Troubleshooting">
+  <meta property="og:description" content="Find solutions to common issues, FAQs, and tips to enhance your experience on KyuArtz.">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/myavatarlogo/logo.jpg">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/troubleshooting">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <div class="loader" oncontextmenu="return false">
+    <h1 class="loading-text">Loading Webpage...</h1>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
+
+  <div id="overlay"></div>
+  <div id="popup-message">
+    <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
+    <h1>Thanks for visiting!</h1>
+    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="nav-brand">
+        <div class="brand">Kyu</div>
+        <img src="../assets/images/myavatarlogo/avatar.ico" loading="lazy" class="my-avatar">
+      </a>
+      <form class="search" onsubmit="return false;">
+        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search">
+        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search-result" style="display: none;"></div>
+      </form>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
+        <li class="nav-item sideMenu active-nav">
+          <a href="#" class="nav-link-sideMenu" aria-expanded="false"><i class="fa-solid fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i></a>
+          <div class="sideMenu-content">
+            <h1>CONTENT</h1>
+            <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
+            <a href="maintenance.html"><i class="fa-solid fa-user"></i> Original Character</a>
+            <a href="maintenance.html"><i class="fa-solid fa-film"></i> Time lapse video</a>
+            <a href="maintenance.html"><i class="fa-solid fa-diagram-project"></i> Personal Project</a>
+            <h1>Commission Art</h1>
+            <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
+            <a href="commissioner-info.html"><i class="fa-solid fa-table"></i> Commissioner info</a>
+            <h1>SERVICE INFO</h1>
+            <a href="terms-of-service.html"><i class="fa-solid fa-circle-info"></i> Terms of Service</a>
+            <a href="privacy-policy.html"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
+            <a href="customer-support.html"><i class="fa-solid fa-circle-info"></i> Customer Support</a>
+            <a href="faq.html"><i class="fa-solid fa-circle-info"></i> FAQ</a>
+            <a href="help.html"><i class="fa-solid fa-circle-info"></i> Help</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+      </ul>
+      <div class="settings-menu">
+        <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="dropdown-setting">
+          <div class="theme-toggle">
+            <p>Theme:</p>
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle-checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="help.html">Help</a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="troubleshoot-container">
+    <div class="troubleshooting-section">
+      <h1>Troubleshooting Guide</h1>
+      <p>If you’re experiencing issues while using KyuArtz, this guide will help you troubleshoot and resolve common problems. If your issue persists, feel free to <a href="mailto:kyuartzassist@gmail.com">contact us</a> directly for assistance.</p>
+    
+      <h2>1. Website Loading Issues</h2>
+      <p>Sometimes the website may not load correctly or parts of the site may not function as expected. Try the following solutions:</p>
+      <ul>
+        <li><strong>Clear your browser cache:</strong> Outdated cache files can sometimes cause loading problems. Clear your cache by going to your browser settings.</li>
+        <li><strong>Update your browser:</strong> Ensure you’re using the latest version of your browser for the best experience. Older browsers may not support the latest web standards.</li>
+        <li><strong>Disable browser extensions:</strong> Certain extensions (like ad blockers or script blockers) may interfere with the functionality of the website. Try disabling them and reloading the page.</li>
+        <li><strong>Try a different browser:</strong> If the issue persists, test the website in a different browser (e.g., Chrome, Firefox, Safari) to see if the problem is browser-specific.</li>
+      </ul>
+    
+      <h2>2. Contact Form Issues</h2>
+      <p>If the contact form isn’t working or you’re unable to submit a request, follow these steps:</p>
+      <ul>
+        <li><strong>Check your internet connection:</strong> Ensure that you have a stable connection. If the form doesn’t submit, it could be due to connectivity problems.</li>
+        <li><strong>Double-check required fields:</strong> Make sure all the mandatory fields (such as your name, email, and message) are filled out correctly.</li>
+        <li><strong>Reload the page:</strong> Sometimes refreshing the page can solve temporary glitches. After refreshing, try submitting the form again.</li>
+        <li><strong>Use the direct email:</strong> If the form still doesn’t work, you can always email us at <a href="mailto:kyuartzassist@gmail.com">kyuartzassist@gmail.com</a> with your inquiries or commission requests.</li>
+      </ul>
+    
+      <h2>3. Commission Form or Currency Converter Not Working</h2>
+      <p>If you are having issues with the commission form or the currency converter, try these solutions:</p>
+      <ul>
+        <li><strong>Clear browser cache:</strong> Like the website issues, clearing your cache may help resolve problems with the form or converter.</li>
+        <li><strong>Ensure JavaScript is enabled:</strong> Both the commission form and currency converter rely on JavaScript. Make sure JavaScript is enabled in your browser’s settings.</li>
+        <li><strong>Try using a different device:</strong> If the form isn’t working on your current device, try submitting it using another device (e.g., mobile or tablet).</li>
+      </ul>
+    
+      <h2>4. Image or Portfolio Page Not Loading</h2>
+      <p>If images or portfolio pages are not loading correctly, here are a few potential fixes:</p>
+      <ul>
+        <li><strong>Check your internet speed:</strong> Slow connections can result in images not loading properly. Try refreshing the page once your connection improves.</li>
+        <li><strong>Turn off ad blockers:</strong> In some cases, ad blockers may block images or content from being displayed. Disable the blocker temporarily to see if that resolves the issue.</li>
+        <li><strong>Clear your cache:</strong> Cached images may fail to load if they’re outdated. Clear your browser cache and reload the page.</li>
+      </ul>
+    
+      <h2>5. Mobile View Issues</h2>
+      <p>Having trouble viewing the site on mobile devices? Here are some tips:</p>
+      <ul>
+        <li><strong>Refresh the page:</strong> If the layout doesn’t look right, refresh the page to ensure all elements load properly.</li>
+        <li><strong>Try a different browser:</strong> If the mobile browser you’re using doesn’t support some features, try switching to another one, like Chrome or Safari.</li>
+        <li><strong>Zooming issues:</strong> If you are having trouble with zoom, ensure that your mobile browser settings allow you to zoom in or out properly.</li>
+      </ul>
+    
+      <h2>6. Payment Processing Issues</h2>
+      <p>If you're having trouble with making payments or encountering errors during the checkout process, follow these steps:</p>
+      <ul>
+        <li><strong>Verify payment information:</strong> Double-check the payment details you have entered (e.g., card number, expiration date, billing address).</li>
+        <li><strong>Use a different payment method:</strong> If one method isn't working, try using an alternate method (if available).</li>
+        <li><strong>Contact your bank:</strong> If your payment is being declined, your bank might be blocking the transaction. Reach out to your bank to resolve the issue.</li>
+      </ul>
+    
+      <h2>7. Other Technical Issues</h2>
+      <p>If you’re facing other technical difficulties not listed here, please don’t hesitate to <a href="mailto:kyuartzassist@gmail.com">contact us</a> with details about the issue. We’ll get back to you as soon as possible to help resolve the problem.</p>
+    </div>    
+  </div>
+  
+</body>
+</html>

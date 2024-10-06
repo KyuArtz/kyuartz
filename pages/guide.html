@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Theme color for different platforms -->
+  <meta name="theme-color" content="#1E90FF"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Safari iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Page Title and Meta Description -->
+  <title>KyuArtz | User Guide</title>
+  <meta name="description" content="Welcome to the KyuArtz User Guide. Discover how to navigate our website, make commissions, and find troubleshooting tips for a seamless experience.">
+
+  <!-- Favicons and Icons -->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
+  <link rel="apple-touch-icon" href="../assets/images/icons/icon.png">
+  <link rel="icon" href="../assets/images/favicon/rb9.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/guide.css">
+  <link rel="stylesheet" href="../style/loader.css">
+  <link rel="stylesheet" href="../style/nav.css">
+  <link rel="stylesheet" href="../style/popupnotice.css">
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+
+  <!-- Defer scripts for performance optimization -->
+  <script src="../js/loader.js" defer></script>
+  <script src="../js/welcome-msg.js" defer></script>
+  <script src="../js/nav.js" defer></script>
+  <script src="../js/search.js" defer></script>
+  <script src="../js/singleslideshow.js" defer></script>
+  <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/popup.js" defer></script>
+  <script src="../js/current-year.js" defer></script>
+
+  <!-- Open Graph Tags for Social Media Sharing -->
+  <meta property="og:title" content="KyuArtz | User Guide">
+  <meta property="og:description" content="Explore the KyuArtz User Guide to navigate our site, make commissions, and troubleshoot any issues for a better experience.">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/myavatarlogo/logo.jpg">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/user-guide">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <div class="loader" oncontextmenu="return false">
+    <h1 class="loading-text">Loading Webpage...</h1>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
+
+  <div id="overlay"></div>
+  <div id="popup-message">
+    <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
+    <h1>Thanks for visiting!</h1>
+    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <a href="../index.html" class="nav-brand">
+        <div class="brand">Kyu</div>
+        <img src="../assets/images/myavatarlogo/avatar.ico" loading="lazy" class="my-avatar">
+      </a>
+      <form class="search" onsubmit="return false;">
+        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search">
+        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="search-result" style="display: none;"></div>
+      </form>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
+        <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-solid fa-briefcase"></i> PORTFOLIO</a></li>
+        <li class="nav-item sideMenu active-nav">
+          <a href="#" class="nav-link-sideMenu" aria-expanded="false"><i class="fa-solid fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i></a>
+          <div class="sideMenu-content">
+            <h1>CONTENT</h1>
+            <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
+            <a href="maintenance.html"><i class="fa-solid fa-user"></i> Original Character</a>
+            <a href="maintenance.html"><i class="fa-solid fa-film"></i> Time lapse video</a>
+            <a href="maintenance.html"><i class="fa-solid fa-diagram-project"></i> Personal Project</a>
+            <h1>Commission Art</h1>
+            <a href="commission-sheet.html"><i class="fa-solid fa-file"></i> Commission Sheet</a>
+            <a href="commissioner-info.html"><i class="fa-solid fa-table"></i> Commissioner info</a>
+            <h1>SERVICE INFO</h1>
+            <a href="terms-of-service.html"><i class="fa-solid fa-circle-info"></i> Terms of Service</a>
+            <a href="privacy-policy.html"><i class="fa-solid fa-circle-info"></i> Privacy Policy</a>
+            <a href="customer-support.html"><i class="fa-solid fa-circle-info"></i> Customer Support</a>
+            <a href="faq.html"><i class="fa-solid fa-circle-info"></i> FAQ</a>
+            <a href="help.html"><i class="fa-solid fa-circle-info"></i> Help</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-address-book"></i> ABOUT</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
+      </ul>
+      <div class="settings-menu">
+        <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
+        <div class="dropdown-setting">
+          <div class="theme-toggle">
+            <p>Theme:</p>
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle-checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <a href="privacy-policy.html">Privacy</a>
+          <a href="help.html">Help</a>
+        </div>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="guide-container">
+    <div class="user-guide">
+        <h1>User Guide for KyuArtz</h1>
+        <p>Welcome to KyuArtz! This guide will help you navigate through the website and make the most out of the features offered, whether you’re exploring artwork, commissioning a piece, or just browsing.</p>
+      
+        <h2>1. Navigating the Website</h2>
+        <p>KyuArtz is designed with a clean and intuitive interface to ensure an easy browsing experience.</p>
+        <ul>
+          <li><strong>Homepage:</strong> The homepage features a dynamic slideshow showcasing the latest updates and projects. You can also find the "What's New" button to stay informed about recent changes or new features.</li>
+          <li><strong>Portfolio:</strong> View the latest artworks and projects here. Filter artworks by category (e.g., illustrations, comics, etc.), or use the search bar to find specific pieces.</li>
+          <li><strong>About:</strong> Learn more about Kyu (the artist) and their journey in the art world, as well as details about the services offered on the site.</li>
+          <li><strong>Contact:</strong> If you have questions or want to reach out for commissions, head to the contact page. There's also an email address provided (kyuartzassist@gmail.com) for direct communication.</li>
+        </ul>
+      
+        <h2>2. Requesting a Commission</h2>
+        <p>The commission process is easy and customizable to suit your needs.</p>
+        <ul>
+          <li><strong>Commission Sheet:</strong> Start by visiting the <a href="commission-sheet.html">Commission Page</a> to check the available packages and pricing. There's a <strong>Currency Converter</strong> available, which allows you to view the prices in your local currency.</li>
+          <li><strong>How to Order:</strong> Once you've decided, fill out the commission request form available on the page or send an email to <a href="mailto:kyuartzassist@gmail.com">kyuartzassist@gmail.com</a> with your requirements. Be sure to include details like:
+            <ul>
+              <li>Type of commission (e.g., character art, scene, etc.)</li>
+              <li>Preferred style (if applicable)</li>
+              <li>Specific deadlines, if any</li>
+            </ul>
+          </li>
+        </ul>
+        <p>KyuArtz will then get back to you with further steps, including timelines and payment details.</p>
+      
+        <h2>3. FAQ and Policies</h2>
+        <p>If you’re new to the website or commissioning process, check out the <a href="faq.html">FAQ section</a> for answers to common questions, such as:</p>
+        <ul>
+          <li>What are the available commission types?</li>
+          <li>How long does it take to complete an artwork?</li>
+          <li>What are the accepted payment methods?</li>
+        </ul>
+        <p>Additionally, the <a href="terms-of-service.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a> sections outline important information about how personal data is handled and the guidelines for commissioning artwork.</p>
+      
+        <h2>4. What's New?</h2>
+        <p>Stay up-to-date with the <a href="#whats-new">What's New</a> section, which you can access from the homepage. This will inform you of the latest updates to the site, new projects, or upcoming features.</p>
+        <p><strong>Examples of new features:</strong></p>
+        <ul>
+          <li>Upcoming <strong>comic chapters</strong> or personal projects.</li>
+          <li><strong>Timelapse videos</strong> of recent works.</li>
+          <li>Introduction of a <strong>character page</strong> where you can explore Kyu’s original characters, including Feya from the Magelion Empire.</li>
+        </ul>
+      
+        <h2>5. Troubleshooting and Support</h2>
+        <p>Encountering issues? Here are some common problems and their solutions:</p>
+        <ul>
+          <li><strong>Contact Form Not Working:</strong> If you’re unable to use the contact form, you can directly email us at <a href="mailto:kyuartzassist@gmail.com">kyuartzassist@gmail.com</a> for assistance.</li>
+          <li><strong>Commission Sheet Problems:</strong> If the commission form or currency converter isn't loading correctly, try refreshing the page or clearing your browser cache.</li>
+        </ul>
+        <p>For any technical issues or specific support needs, don’t hesitate to reach out!</p>
+      </div>
+  </div>
+  
+</body>
+</html>
