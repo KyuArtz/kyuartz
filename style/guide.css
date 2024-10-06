@@ -1,6 +1,6 @@
 .guide-container {
     margin-top: 60px;
-    min-height: 100vh;
+    padding: 5px;
 }
 
 .user-guide {
@@ -48,10 +48,4 @@
 .user-guide ul ul {
   margin-left: 20px;
   list-style-type: circle;
-}
-
-@media screen and (max-width: 500px){
-  .user-guide {
-    border-radius: 0;
-}
 }

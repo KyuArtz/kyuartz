@@ -1,12 +1,14 @@
 .help-container {
     margin-top: 60px;
     font-family: 'poppins', sans-serif;
+    padding: 5px;
 }
 
 .help-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .help-card {
@@ -15,7 +17,6 @@
   border-radius: 8px;
   box-shadow: 0 0 3px #000;
   overflow: hidden;
-  margin: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
