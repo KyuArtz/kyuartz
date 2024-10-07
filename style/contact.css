@@ -9,7 +9,7 @@
 
 form.contact {
     padding: 30px 40px 20px;
-    width: 100%;
+    width: 130%;
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 3px #000;
     border-radius: 10px;
@@ -190,10 +190,14 @@ input[type="file"] {
 
 /* Responsive Design */
 @media screen and (max-width: 995px) {
+    form.contact {
+        width: 100%;
+    }
+    
     .contact-container {
         flex-direction: column;
     }
-    
+
     input[type="Submit"] {
         margin: 15px 0;
         width: 100%;
