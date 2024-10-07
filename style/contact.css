@@ -1,13 +1,18 @@
 /* Contact Overlay */
 .contact-container {
+    margin-top: 50px;
+    padding: 10px;
     min-height: 100vh;
+    display: flex;
+    gap: 10px;
 }
 
 form.contact {
-    float: left;
     padding: 30px 40px 20px;
-    width: 50%;
+    width: 100%;
     font-family: 'Poppins', sans-serif;
+    box-shadow: 0 0 3px #000;
+    border-radius: 10px;
 }
 
 /* Title */
@@ -104,17 +109,17 @@ input[type="file"] {
 
 /* E-Wallet */
 .e-wallet {
+    width: 100%;
     font-family: var(--font-style);
     font-size: 0.8rem;
+    box-shadow: 0 0 3px #000;
+    border-radius: 10px;
     cursor: default;
 }
 
 .e-wallet h1 {
     padding: 10px;
     font-size: 1rem;
-    margin-top: 50px;
-    border-radius: 0 0 30px 30px;
-    box-shadow: 0 0 3px #000;
 }
 
 /* Logo View */
@@ -123,12 +128,6 @@ input[type="file"] {
     width: 40px;
     height: 40px;
     object-fit: cover;
-}
-
-/* Payment */
-.payment {
-    display: flex;
-    justify-content: center;
 }
 
 .payment img {
@@ -144,23 +143,17 @@ input[type="file"] {
     box-shadow: var(--color) 0px 0px 50px 0.5px;
 }
 
-/* Donation */
-.donate {
-    display: flex;
-    justify-content: center;
-}
-
 /* GBM Image */
 .gbm img {
-    width: 450px;
+    width: 100%;
     transform: scale(1);
     transition: transform 0.4s ease-in-out;
-    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+    filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 }
 
 .gbm img:hover {
     transform: scale(0.96);
-    filter: drop-shadow(0 0 5px var(--color));
+    filter: drop-shadow(0 0 3px var(--color));
 }
 
 /* Error Messages */
@@ -196,7 +189,11 @@ input[type="file"] {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 995px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
     form.contact {
         width: 100%;
         display: block;
@@ -205,12 +202,6 @@ input[type="file"] {
     input[type="Submit"] {
         margin: 15px 0;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .donate img {
-        width: 320px;
     }
 }
 
