@@ -8,7 +8,7 @@
   margin: 5px auto;
   padding: 20px;
   background: inherit;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 0 3px #000;
 }
 
@@ -42,4 +42,10 @@
 
 .troubleshooting-section li {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .troubleshooting-section {
+      border-radius: 0;
+  }
 }
