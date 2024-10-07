@@ -189,7 +189,7 @@ a {
     border-bottom: thin solid var(--color);
 }
 
-.active-nav a {
+.activeLink a {
     color: var(--color);
     border-bottom: thick solid var(--color);
 }
