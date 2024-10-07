@@ -23,6 +23,7 @@ strong {
 /* Unordered List */
 .ts-container ul {
     padding-right: 40px;
+    max-width: 1000px;
     overflow-x: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
