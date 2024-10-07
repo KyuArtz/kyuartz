@@ -6,7 +6,7 @@ class Slideshow {
     this.prevButton = container.querySelector('.prev');
     this.nextButton = container.querySelector('.next');
     this.slideIndex = 1;
-    this.autoSlideInterval = 5000; // 5 seconds
+    this.autoSlideInterval = 10000; // 10 seconds
     this.autoSlideTimer = null;
 
     this.showSlides(this.slideIndex);
