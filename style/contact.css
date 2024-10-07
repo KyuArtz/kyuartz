@@ -130,11 +130,6 @@ input[type="file"] {
     object-fit: cover;
 }
 
-.payment {
-    border-bottom: solid thin;
-    padding-bottom: 10px;
-}
-
 .payment img {
     padding: 4px;
     margin: 3px;
