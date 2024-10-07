@@ -483,10 +483,11 @@ form.search::after {
 .category-navigation h1 {
     text-align: center;
     font-family: var(--font-style);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     letter-spacing: 3px;
     color: var(--color);
     cursor: default;
+    margin: 0 auto;
 }
 
 /* Category Dots */

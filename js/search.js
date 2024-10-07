@@ -12,7 +12,7 @@ let availableKeywords = [
     { name: 'Help', url: '../pages/help.html' },
     { name: 'User Guide', url: '../pages/guide.html' },
     { name: 'Troubleshoot', url: '../pages/troubleshoot.html' },
-    { name: 'FAQ', url: '../pages/faq.html' },
+    { name: 'FAQs', url: '../pages/faq.html' },
     { name: 'About Me', url: '../pages/about.html' },
     { name: 'Contact Us', url: '../pages/contact.html' },
     { name: 'Paypal (KyuArtz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },

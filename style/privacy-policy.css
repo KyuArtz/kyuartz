@@ -16,7 +16,6 @@ strong {
 .pp-container h1, h2 {
     color: var(--color);
     font-family: var(--font-style);
-    font-weight: 500;
     padding: 12px;
 }
 

@@ -21,11 +21,9 @@
     --color: dodgerblue;
     --default-font-color: #ffffff;
     --overlay: rgba(10, 18, 24, 0.5);
-    --transparent-overlay: rgba(11, 31, 49, 0.950);
     --scrollbar-track-color: #00000000;
     --hover-light: dodgerblue;
     --font-style: myFont, sans-serif;
-    --brand-color: -webkit-linear-gradient(left, dodgerblue, rgb(0, 238, 255));
     --content-bg: rgb(22, 33, 46, 0.9);
 }
 
