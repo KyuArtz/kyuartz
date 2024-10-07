@@ -163,11 +163,6 @@ input[type="file"] {
     filter: drop-shadow(0 0 5px var(--color));
 }
 
-/* Footer */
-.footer {
-    margin-top: 190px;
-}
-
 /* Error Messages */
 #email-error,
 #message-error,
@@ -222,10 +217,6 @@ input[type="file"] {
 @media screen and (max-width: 500px) {
     .tos-container {
         justify-content: center;
-    }
-
-    .footer {
-        margin-top: 0;
     }
 
     .submit-container {
