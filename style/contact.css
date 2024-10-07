@@ -31,7 +31,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid var(--color);
+    border: 1px solid;
     border-radius: 50px;
     outline: none;
     margin: 8px 0;
@@ -78,7 +78,6 @@ input[type="checkbox"] {
 
 /* File Input */
 input[type="file"] {
-    border: solid 1px var(--color);
     border-radius: 10px 10px 30px 10px;
     width: 100%;
 }
@@ -120,6 +119,7 @@ input[type="file"] {
 .e-wallet h1 {
     padding: 10px;
     font-size: 1rem;
+    color: var(--color);
 }
 
 /* Logo View */
@@ -128,6 +128,11 @@ input[type="file"] {
     width: 40px;
     height: 40px;
     object-fit: cover;
+}
+
+.payment {
+    border-bottom: solid thin;
+    padding-bottom: 10px;
 }
 
 .payment img {
