@@ -4,6 +4,27 @@
     {
       "date": "10/6/2024",
       "major": [
+
+      ],
+      "minor": [
+        "Enhanced the layout and responsiveness of the contact page.",
+        "Removed the footer on certain pages."
+        
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
+      "date": "10/6/2024",
+      "major": [
         "Added a help page for further assistance or questions."
       ],
       "minor": [
