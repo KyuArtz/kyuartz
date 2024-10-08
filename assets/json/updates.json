@@ -8,7 +8,8 @@
       ],
       "minor": [
         "Enhanced the currency dropdown for better usability and added additional information for clearer user guidance.",
-        "Made the text of direct email at contact page interactable for direct commission."
+        "Made the direct email on the contact page interactable, allowing users to initiate commission requests easily.",
+        "Added a direct link to the contact page for easy access to the commissioner info page, allowing you to view your queue status."
       ],
       "bugfixes": [
         

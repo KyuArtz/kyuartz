@@ -114,6 +114,8 @@ input[type="file"] {
     box-shadow: 0 0 3px #000;
     border-radius: 10px;
     cursor: default;
+    text-align: center;
+    padding: 10px;
 }
 
 .e-wallet h1 {
