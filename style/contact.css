@@ -124,11 +124,11 @@ input[type="file"] {
     color: var(--color);
 }
 
-.dE {
+.dL {
     color: var(--color);
 }
 
-.dE:hover {
+.dL:hover {
     text-decoration: underline;
 }
 
