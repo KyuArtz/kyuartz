@@ -122,6 +122,14 @@ input[type="file"] {
     color: var(--color);
 }
 
+.dE {
+    color: var(--color);
+}
+
+.dE:hover {
+    text-decoration: underline;
+}
+
 /* Logo View */
 .logo-view img {
     position: relative;

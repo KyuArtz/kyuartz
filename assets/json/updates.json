@@ -2,6 +2,26 @@
   "updates": [
 
     {
+      "date": "10/8/2024",
+      "major": [
+
+      ],
+      "minor": [
+        "Enhanced the currency dropdown for better usability and added additional information for clearer user guidance.",
+        "Made the text of direct email at contact page interactable for direct commission."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/7/2024",
       "major": [
 
