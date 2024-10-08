@@ -119,8 +119,6 @@ input[type="file"] {
 }
 
 .e-wallet h1 {
-    padding: 10px;
-    font-size: 1rem;
     color: var(--color);
 }
 
