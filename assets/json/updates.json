@@ -2,6 +2,25 @@
   "updates": [
 
     {
+      "date": "10/9/2024",
+      "major": [
+        "Introduced a waitlist table on the commissioner information page for better transparency."
+      ],
+      "minor": [
+        "Updated the Terms of Service (TOS) and Frequently asked questions (FAQs)."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/8/2024",
       "major": [
 

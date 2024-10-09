@@ -124,7 +124,7 @@
     </nav>
   </header>
 
-  <section class="commission-container">
+  <section class="commission-section">
       <section id="commissioner-info">
           <h1>Commissioner Information - Public View</h1>
           <table>
@@ -142,7 +142,24 @@
               </tbody>
           </table>
       </section>
-  </section>      
+  </section>
+  
+  <section class="waitlist-section">
+    <h1>Waitlist</h1>
+    <table id="waitlist-table">
+        <thead>
+            <tr>
+                <th>Commissioner Name</th>
+                <th>Commission Type</th>
+                <th>Contact</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Waitlist data will be inserted here -->
+        </tbody>
+    </table>
+  </section>
     
   <div class="csc">
     <section id="upcoming-slots">
@@ -159,6 +176,7 @@
     <section id="status-definitions">
     <h2><i class="fa-solid fa-circle-info"></i> Status Definitions</h2>
         <ul>
+            <li><strong><i class="fa-solid fa-clock"></i> Waiting</strong>: Your request is on the waitlist. Thank you for your patience!</li>
             <li><strong><i class="fa-solid fa-hourglass-start"></i> Pending</strong>: Commission is confirmed but work hasn't started.</li>
             <li><strong><i class="fa-solid fa-bars-progress"></i> In Progress</strong>: Currently working on this commission.</li>
             <li><strong><i class="fa-solid fa-check"></i> Completed</strong>: Commission has been finished and delivered.</li>

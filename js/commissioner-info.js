@@ -52,6 +52,28 @@ function renderCommissionList() {
 // Initial render
 renderCommissionList();
 
+const waitlistData = [
+    {
+        name: "Client A",
+        commissionType: "Null",
+        contact: "Null",
+        status: "Waiting" 
+    }
+];
+
+const waitlistTableBody = document.querySelector('#waitlist-table tbody');
+
+waitlistData.forEach(wait => {
+    const waitListRow = document.createElement('tr');
+    waitListRow.innerHTML = `
+        <td>${wait.name}</td>
+        <td>${wait.commissionType}</td>
+        <td>${wait.contact}</td>
+        <td>${wait.status}</td>
+    `;
+    waitlistTableBody.appendChild(waitListRow);
+});
+
 let slots = {
     "": 4
 };

@@ -1,25 +1,25 @@
-.commission-container {
+.commission-section {
     margin-top: 60px;
-    font-family: 'poppins', sans-serif;
-    cursor: default;
 }
 
 section h1 {
     text-align: center;
     font-size: 1.6rem;
-    cursor: default;
 }
 
 section h1, h2 {
     font-family: myFont;
     color: var(--color);
     padding: 10px;
+}
+
+section {
+    font-family: 'poppins', sans-serif;
     cursor: default;
 }
+
 section p {
-    font-family: 'poppins', sans-serif;
     padding: 0 10px;
-    cursor: default;
 }
 
 table {
@@ -57,8 +57,6 @@ section ul li {
     margin: 10px 0;
     padding: 10px;
     border-left: 4px solid #4CAF50;
-    cursor: default;
-    font-family: 'poppins', sans-serif;
 }
 
 strong {
@@ -74,13 +72,6 @@ strong {
     box-shadow: 0 0 3px #000;
     margin: 30px 5px 5px;
     border-radius: 10px;
-}
-
-/* Responsive styles for form inputs */
-@media (max-width: 480px) {
-    .form-input {
-        width: 100%;
-    }
 }
 
 /* Responsive Styles */
@@ -120,6 +111,12 @@ strong {
     td:nth-of-type(3):before { content: "Contact"; }
     td:nth-of-type(4):before { content: "Status"; }
     td:nth-of-type(5):before { content: "Notes"; }
+}
+
+@media (max-width: 500px) { 
+    .csc {
+        flex-direction: column;
+    }
 }
 
 #upcoming-slots ul {
