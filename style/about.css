@@ -1,6 +1,14 @@
 /* Overlay Classes */
 .card-container {
-    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 5px 10px;
+    background-image: url('../assets/images/bg/wasteland.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .summary h1,
@@ -8,8 +16,9 @@
 .program-content h1 {
     font-family: var(--font-style);
     font-size: 1.5rem;
-    color: var(--color);
+    color: var(--default-font-color);
     cursor: default;
+    margin-top: 50px;
 }
 
 .my-info h1 {
@@ -21,16 +30,10 @@
 .expcontent p,
 .my-info p {
     font-family: 'Poppins', sans-serif;
-    color: inherit;
+    color: var(--default-font-color);
     cursor: default;
     font-size: 1.5rem;
     line-height: 1.6;
-}
-
-.summary,
-.experience,
-.program {
-    padding: 40px 10px;
 }
 
 /* Summary Section */
@@ -45,27 +48,30 @@
 
 .summarycontent,
 .expcontent p,
-.card,
 .program-logo img {
     box-shadow: 0 0 3px #000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .summarycontent {
     display: flex;
     border-radius: 10px;
     text-align: justify;
-    padding: 30px;
+    padding: 20px;
 }
 
 /* Experience Section */
 .experience {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     font-size: 0.9rem;
 }
 
 .expcontent p {
     padding: 10px;
-    margin: 5px;
     display: inline-block;
     border-radius: 10px;
     width: 175px;
@@ -74,7 +80,9 @@
 
 /* Program Section */
 .program {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .program-logo img {
@@ -92,25 +100,34 @@
 
 /* Card Section */
 .me {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
+    flex: 1;
 }
 
 .info-container {
-    margin-top: 50px;
+    flex: 1;
 }
 
 .card {
-    margin: 8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0 0 3px #000;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
-.card img {
-    max-width: 100%;
+.pfp-container {
+    width: 100%;
+    z-index: 1;
+}
+
+.card img.pfp {
+    width: 60%;
     border-radius: 50%;
-    border: 2px solid;
+    border: 2px solid #ffffff;
     margin-bottom: -70px;
     pointer-events: none;
 }
@@ -119,36 +136,28 @@
 .my-info {
     padding: 10px 16px;
     border-radius: 50px 50px 5px 5px;
-    border: solid thin;
-
+    box-shadow: 0 0 1px #ffffff;
 }
 
 .my-info h1 {
     border-bottom: 2px solid;
     margin-top: 70px;
-    text-align: center;
+    color: var(--default-font-color);
 }
 
 .my-info p {
     font-size: 0.9rem;
     padding: 5px;
+    text-align: left;
     box-shadow: 0 0 3px #000;
+    color: var(--default-font-color);
     border-radius: 30px 50px 50px 30px;
     border: solid thin;
+    transition: background-color 0.3s ease-in;
 }
 
-/* Container Utilities */
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* Social Media Icons */
-.mysocial {
-    display: flex;
-    justify-content: center;
+.my-info p:hover {
+    background: var(--color);
 }
 
 .mysocial img {
@@ -158,20 +167,26 @@
     margin: 3px;
     border: solid thin;
     object-fit: cover;
-    background: #252525;
     border-radius: 10px;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 750px) {
-    .me {
+    .card img.pfp {
         width: 100%;
-        display: block;
     }
+
     .my-info p {
         border-radius: 50px;
     }
+
     .summary .summarycontent p {
         text-align: justify;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-container {
+        background-image: url('../assets/images/bg/portrait-mode.webp');
     }
 }

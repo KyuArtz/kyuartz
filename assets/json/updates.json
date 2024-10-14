@@ -2,6 +2,25 @@
   "updates": [
 
     {
+      "date": "10/15/2024",
+      "major": [
+  
+      ],
+      "minor": [
+        "Reinstated the background on the About and Contact pages with minor adjustments."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/11/2024",
       "major": [
         "Enhanced the contact us page with improved validation status and file preview image."

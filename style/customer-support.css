@@ -31,9 +31,9 @@ select {
     padding: 12px;
     margin: 8px 0;
     border-radius: 50px;
-    border: 1px solid var(--color);
+    border: solid thin;
     background: none;
-    color: var(--color);
+    color: inherit;
     transition: border-color 0.3s ease;
 }
 
@@ -43,6 +43,24 @@ textarea {
     max-height: 150px;
     height: 150px;
     border-radius: 10px 30px 10px 30px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="file"],
+input[type="message"],
+textarea,
+select {
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="text"]:hover, 
+input[type="email"]:hover,
+input[type="file"]:hover,
+input[type="message"]:hover,
+textarea:hover, 
+select:hover {
+    background: var(--overlay);
 }
 
 input[type="text"]:focus, 
@@ -61,7 +79,7 @@ textarea {
 
 /* File Input */
 input[type="file"] {
-    border: solid 1px var(--color);
+    border: solid thin;
     border-radius: 10px 10px 30px 10px;
     width: 100%;
 }

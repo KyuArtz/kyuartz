@@ -6,11 +6,20 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    background-image: url('../assets/images/bg/wasteland.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 form.contact,
 .e-wallet {
     flex: 1;
+}
+
+form.contact,
+.e-wallet p {
+    color: var(--default-font-color);
 }
 
 form.contact {
@@ -19,6 +28,8 @@ form.contact {
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 3px #000;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 /* Title */
@@ -27,6 +38,10 @@ form h1 {
     cursor: default;
     color: var(--color);
     font-family: var(--font-style);
+}
+
+label {
+    color: var(--default-font-color);
 }
 
 /* Input Fields */
@@ -43,7 +58,7 @@ textarea {
     margin: 8px 0;
     resize: vertical;
     background: none;
-    color: var(--color);
+    color: var(--default-font-color);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -54,6 +69,24 @@ textarea {
     height: 150px;
     border-radius: 10px 30px 10px 30px;
     font-family: 'Poppins', sans-serif;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="file"],
+input[type="message"],
+select,
+textarea {
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="email"]:hover,
+input[type="text"]:hover,
+input[type="file"]:hover,
+input[type="message"]:hover,
+select:hover,
+textarea:hover {
+    background: var(--overlay);
 }
 
 input[type="text"]:focus, 
@@ -138,6 +171,8 @@ input[type="file"] {
     cursor: default;
     text-align: center;
     padding: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .e-wallet h1 {
@@ -165,7 +200,7 @@ input[type="file"] {
     margin: 3px;
     transition: transform 0.7s ease-in-out;
     border-radius: 50px;
-    border: solid thin var(--color);
+    border: solid thin;
 }
 
 .payment img:hover {
@@ -235,6 +270,7 @@ input[type="file"] {
 @media screen and (max-width: 500px) {
     .contact-container {
         flex-direction: column;
+        background-image: url('../assets/images/bg/portrait-mode.webp');
     }
 
     .popup p {
