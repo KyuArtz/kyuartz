@@ -17,13 +17,12 @@
     --theme: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
     --theme-2: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
     --theme-overlay: linear-gradient(to right, rgb(26, 27, 32, 0.600), rgb(40, 41, 51, 0.600));
-    --background-color: rgba(30, 143, 255);
-    --color: dodgerblue;
+    --color: #1e90ff;
     --default-font-color: #ffffff;
     --overlay: rgba(10, 18, 24, 0.5);
     --scrollbar-track-color: #00000000;
-    --hover-light: dodgerblue;
-    --font-style: myFont, sans-serif;
+    --hover-light: #7cbeff;
+    --font-style: myFont, 'Poppins', sans-serif;
     --content-bg: rgb(22, 33, 46, 0.9);
 }
 
@@ -36,7 +35,7 @@ body.default-theme {
 /* Custom Theme */
 body.custom-theme {
     background-image: var(--theme-2) !important;
-    color: #252525 !important;
+    color: #1f1f1f !important;
 }
 
 /* Body */

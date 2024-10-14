@@ -1,11 +1,3 @@
-/* List Reset */
-.category-container,
-li,
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 /* Container */
 .cs-container {
     padding: 10px;

@@ -113,7 +113,7 @@
 }
 
 .caption-btn a:hover {
-    background: var(--hover-light);
+    background: var(--color);
     color: #000000;
     box-shadow: 0 0 10px var(--color);
 }
@@ -164,7 +164,6 @@
     box-shadow: 0 0 3px #000;
     margin: 10px;
     border-radius: 10px;
-    padding: 10px;
 }
 
 .video_container h1 {
@@ -218,6 +217,7 @@
     border: none;
     color: inherit;
     padding: 15px;
+    margin: auto 5px;
     font-size: 1.0rem;
     border-radius: 50px;
     cursor: pointer;
@@ -237,11 +237,6 @@
 .carousel-prev,
 .carousel-next {
   transition: background-color 0.3s ease-in-out;
-}
-
-.carousel-prev:hover,
-.carousel-next:hover {
-  background: var(--hover-light);
 }
 
 /* Media Queries */

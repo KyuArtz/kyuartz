@@ -1,15 +1,6 @@
-/* List Reset */
-.category-container,
-li,
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 /* Spacing */
 .top-spacing {
     margin-top: 109px;
-    min-height: 100vh;
 }
 
 /* Slideshow Container */

@@ -1,7 +1,6 @@
 /* Image Container */
 .image-container {
     width: 100%;
-    min-height: 100vh;
 }
 
 /* Gallery Grid */
@@ -19,14 +18,6 @@
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease-in-out;
-}
-
-/* Reset List Styles */
-.category-container,
-li,
-ul {
-    list-style: none;
-    padding-left: 0;
 }
 
 /* Hover Effect on Gallery Images */

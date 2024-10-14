@@ -105,7 +105,7 @@ header {
     bottom: 0;
     cursor: pointer;
     border-radius: 34px;
-    border: thin solid var(--color);
+    border: thin solid;
     transition: .4s;
 }
 
@@ -116,13 +116,13 @@ header {
     width: 24px;
     left: 4px;
     bottom: 4px;
-    background: var(--color);
+    background: #ffffff;
     border-radius: 50%;
     transition: .4s;
 }
 
 input:checked + .slider {
-    border: thin solid var(--color);
+    border: thin solid;
 }
 
 input:checked + .slider:before {
@@ -568,6 +568,14 @@ form.search::after {
     color: inherit;
     padding: 20px 15px;
     transition: 0.5s ease-in-out;
+}
+
+/* List Reset */
+.category-container,
+li,
+ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .category-item a:hover {
