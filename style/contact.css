@@ -5,11 +5,16 @@
     min-height: 100vh;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+}
+form.contact,
+.e-wallet {
+    flex: 1;
 }
 
 form.contact {
     padding: 30px 40px 20px;
-    width: 130%;
+    flex: 1.3;
     font-family: 'Poppins', sans-serif;
     box-shadow: 0 0 3px #000;
     border-radius: 10px;
@@ -125,7 +130,6 @@ input[type="file"] {
 
 /* E-Wallet */
 .e-wallet {
-    width: 100%;
     font-family: var(--font-style);
     font-size: 0.8rem;
     box-shadow: 0 0 3px #000;
@@ -215,14 +219,6 @@ input[type="file"] {
 
 /* Responsive Design */
 @media screen and (max-width: 995px) {
-    form.contact {
-        width: 100%;
-    }
-    
-    .contact-container {
-        flex-direction: column;
-    }
-
     input[type="Submit"] {
         margin: 15px 0;
         width: 100%;
