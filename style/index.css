@@ -191,9 +191,9 @@
     padding: 10px;
 }
 
-.video video {
+.video video, iframe {
     width: 100%;
-    height: auto;
+    height: 230px;
     border-radius: 15px;
     color: inherit;
     background: var(--content-bg);

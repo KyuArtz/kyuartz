@@ -2,6 +2,25 @@
   "updates": [
 
     {
+      "date": "10/16/2024",
+      "major": [
+  
+      ],
+      "minor": [
+        "Updated the featured videos section, now embedding videos directly from YouTube."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/15/2024",
       "major": [
   
