@@ -84,6 +84,47 @@ input[type="file"] {
     width: 100%;
 }
 
+#image-preview {
+    border-radius: 10px;
+    border: solid thin;
+}
+
+#remove-btn {
+    padding: 5px;
+    border: solid thin;
+    color: inherit;
+    background: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px auto;
+    outline: none;
+}
+
+/* Error Messages */
+#file-error {
+    position: relative;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 0, 0);
+    padding-top: 2px;
+    padding-left: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: default;
+}
+
+/* Valid Messages */
+#file-valid {
+    position: relative;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(144, 238, 144);
+    padding-top: 2px;
+    padding-left: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: default;
+}
+
 /* Submit Button */
 input[type="submit"] {
     background: var(--color);

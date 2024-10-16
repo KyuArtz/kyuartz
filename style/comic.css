@@ -23,8 +23,8 @@
     object-position: center;
     border-radius: 9px;
     background: var(--content-bg);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
+    /*filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);*/
     transition: 0.3s ease-in-out;
 }
 
@@ -99,7 +99,6 @@
     background: var(--overlay);
     font-family: var(--font-style);
     cursor: default;
-    width: 20%;
     z-index: 1;
 }
 
