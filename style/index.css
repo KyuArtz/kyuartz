@@ -201,7 +201,8 @@
     cursor: pointer;
 }
 
-.video video:hover {
+.video video:hover,
+iframe:hover {
     box-shadow: 0 0 10px #000;
 }
 
