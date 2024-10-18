@@ -549,6 +549,7 @@ form.search::after {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding-bottom: 100px;
+    padding-left: 0;
     box-shadow: 1px 0 0;
     justify-content: left;
     overflow: auto;
@@ -577,13 +578,6 @@ form.search::after {
     transition: 0.5s ease-in-out;
 }
 
-/* List Reset */
-.category-container li,
-.category-container ul {
-    list-style: none;
-    padding-left: 0;
-}
-
 .category-item a:hover {
     background: var(--hover-light);
     color: #1f1f1f;
@@ -591,6 +585,13 @@ form.search::after {
 
 .category-menu.active-category {
     left: 0;
+}
+
+/* List Reset */
+.category-container li,
+.category-container ul {
+    list-style: none;
+    padding: 0;
 }
 
 @media (max-width: 600px) {
