@@ -2,6 +2,25 @@
   "updates": [
 
     {
+      "date": "10/18/2024",
+      "major": [
+  
+      ],
+      "minor": [
+        "Applied the theme color to the popup, side menu, and dropdown, matching the blue scheme of the website."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/16/2024",
       "major": [
   

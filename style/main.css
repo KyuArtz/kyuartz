@@ -20,8 +20,9 @@
     --color: #1e90ff;
     --default-font-color: #ffffff;
     --overlay: rgba(10, 18, 24, 0.5);
+    --overlay-blue: rgba(30, 143, 255, 0.500);
     --scrollbar-track-color: #00000000;
-    --hover-light: #7cbeff;
+    --hover-light: #47a3ff;
     --font-style: myFont, 'Poppins', sans-serif;
     --content-bg: rgb(22, 33, 46, 0.9);
 }

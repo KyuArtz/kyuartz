@@ -27,7 +27,7 @@
     cursor: default;
     font-family: var(--font-style);
     font-size: 1.1rem;
-    color: var(--default-font-color);
+    color: inherit;
     border-radius: 10px;
 }
 
