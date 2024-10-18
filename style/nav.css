@@ -411,6 +411,7 @@ form.search::after {
 
     .sideMenu-content {
         width: 100%;
+        padding: 0 !important;
         top: 0 !important;
     }
 }
@@ -435,7 +436,7 @@ form.search::after {
 
 .sideMenu-content h1 {
     font-family: var(--font-style);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: inherit;
     cursor: default;
     margin: 0;
@@ -444,7 +445,7 @@ form.search::after {
 
 .sideMenu-content a {
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: inherit;
     background: none;
     text-decoration: none;
@@ -452,7 +453,7 @@ form.search::after {
     text-shadow: none;
     border: none;
     border-radius: 0;
-    padding: 20px 15px;
+    padding: 15px 15px;
     transition: 0.5s ease-in-out;
 }
 
@@ -549,7 +550,7 @@ form.search::after {
 
 .category-menu h2 {
     font-family: var(--font-style);
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: inherit;
     cursor: default;
     margin: 0;
@@ -563,9 +564,9 @@ form.search::after {
 .category-item a {
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: inherit;
-    padding: 20px 15px;
+    padding: 15px 15px;
     transition: 0.5s ease-in-out;
 }
 
