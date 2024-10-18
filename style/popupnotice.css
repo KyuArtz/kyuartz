@@ -104,7 +104,6 @@
 /* Popup Title */
 .popup h1 {
     font-size: 2.0rem;
-    color: var(--color);
     border-style: solid;
     border-top-width: 0;
     border-left-width: 0;
@@ -115,7 +114,6 @@
 
 /* Popup Text */
 .popup p {
-    color: var(--default-font-color);
     cursor: default;
     font-family: 'Poppins', sans-serif;
 }
@@ -125,7 +123,7 @@
     padding: 5px;
     font-size: 0.7rem;
     font-family: 'Poppins', sans-serif;
-    color: var(--color);
+    color: inherit;
     text-align: center;
     position: absolute;
     left: 50%;
