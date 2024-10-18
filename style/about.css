@@ -89,7 +89,6 @@
     width: 55px;
     height: 55px;
     border-radius: 6px;
-    transition: 0.3s ease-in-out;
     transform: scale(1);
 }
 
@@ -156,8 +155,17 @@
     transition: background-color 0.3s ease-in;
 }
 
-.my-info p:hover {
-    background: var(--color);
+.summarycontent:hover,
+.expcontent p:hover,
+.my-info p:hover,
+.mysocial img:hover,
+.card:hover {
+    background: var(--overlay);
+}
+
+.my-info p:hover,
+.mysocial img:hover {
+    transform: scale(1.03);
 }
 
 .mysocial img {
