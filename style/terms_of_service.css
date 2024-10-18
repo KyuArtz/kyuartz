@@ -3,17 +3,13 @@
     cursor: default;
 }
 
-strong {
-    color: var(--color);
-}
-
 /* List Items */
 .ts-container li {
-    color: var(--default-font-color);
+    color: inherit;
     font-family: 'Poppins', sans-serif;
     padding: 12px;
     margin: 5px;
-    background: var(--overlay);
+    background: var(--overlay-blue);
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
     text-align: justify;

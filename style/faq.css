@@ -5,19 +5,19 @@
 .faq-item {
     padding: 20px;
     border-radius: 10px;
-    background: var(--overlay);
+    background: var(--overlay-blue);
     box-shadow: 0 0 3px #000;
     margin: 10px;
 }
 
 .faq-item h2 {
     font-family: var(--font-style);
-    color: var(--color);
+    color: inherit;
 }
 
 .faq-item p {
     font-family: 'Poppins', sans-serif;
-    color: var(--default-font-color);
+    color: inherit;
     text-align: justify;
 }
 

@@ -3,18 +3,14 @@
     cursor: default;
 }
 
-strong {
-    color: var(--color);
-}
-
 .overlay {
-    background: var(--overlay);
+    background: var(--overlay-blue);
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
 }
 
 .pp-container h1, h2 {
-    color: var(--color);
+    color: inherit;
     font-family: var(--font-style);
     padding: 12px;
 }
@@ -27,7 +23,7 @@ strong {
 
 /* List Items */
 .pp-container li, p {
-    color: var(--default-font-color);
+    color: inherit;
     font-family: 'Poppins', sans-serif;
     list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
