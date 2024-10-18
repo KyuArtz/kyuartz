@@ -7,7 +7,9 @@
   
       ],
       "minor": [
-        "Applied the theme color to the popup, side menu, and dropdown, matching the blue scheme of the website."
+        "Applied the theme color to the popup, side menu, and dropdown, matching the blue accent of the website.",
+        "Made a small adjustments to the comic page."
+
       ],
       "bugfixes": [
         
