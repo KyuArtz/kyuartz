@@ -133,16 +133,18 @@
 /* Button Container */
 .btn-container {
     display: flex;
-    gap: 3px;
+    gap: 5px;
 }
 
 /* Dots */
 .dot {
     cursor: pointer;
-    padding: 5px 11px;
+    padding: 5px;
     background: none;
     box-shadow: 0 0 1px;
     border-radius: 5px;
+    width: 30px;
+    text-align: center;
     transition: 0.5s ease-in-out;
 }
 
