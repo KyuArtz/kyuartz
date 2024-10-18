@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     sideMenuLink.addEventListener("click", (event) => {
       event.stopPropagation(); // Prevents window click handler from immediately closing the side menu
       const sideMenuContent = event.currentTarget.nextElementSibling;
-      sideMenuContent.classList.toggle("show");
+      sideMenuContent.classList.toggle("show-sideMenu");
     });
   });
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Close side menu if the click is outside
     if (!clickedInsideSideMenu && !clickedInsideContent) {
-      sideMenuContents.forEach(content => content.classList.remove("show"));
+      sideMenuContents.forEach(content => content.classList.remove("show-sideMenu"));
     }
 
     // Close the nav menu if not clicked on hamburger or nav menu
@@ -52,13 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Toggle settings menu
   settingsBtn?.addEventListener('click', (event) => {
     event.stopPropagation(); // Prevent window click from closing it immediately
-    settingsMenu.classList.toggle("show");
+    settingsMenu.classList.toggle("show-settings");
   });
 
   // Close settings menu when clicking outside
   window.addEventListener("click", (event) => {
     if (!event.target.closest('.settings-btn') && !event.target.closest('.settings-menu')) {
-      settingsMenu.classList.remove("show");
+      settingsMenu.classList.remove("show-settings");
     }
   });
 });

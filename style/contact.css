@@ -15,8 +15,7 @@ form.contact,
     flex: 1;
 }
 
-form.contact,
-.e-wallet p {
+form.contact {
     color: var(--default-font-color);
 }
 
@@ -47,13 +46,9 @@ label {
     cursor: default;
     text-align: center;
     padding: 10px;
-    background: var(--overlay);
+    background: var(--overlay-blue);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-}
-
-.e-wallet h1 {
-    color: var(--color);
 }
 
 .dL {
