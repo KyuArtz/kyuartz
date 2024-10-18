@@ -109,6 +109,7 @@
 }
 
 .card {
+    min-height: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -123,7 +124,7 @@
 }
 
 .card img.pfp {
-    width: 60%;
+    width: 50%;
     border-radius: 50%;
     border: 2px solid #ffffff;
     margin-bottom: -70px;
@@ -191,6 +192,7 @@
 
 @media screen and (max-width: 500px) {
     .card-container {
+        display: block;
         background-image: url('../assets/images/bg/portrait-mode.webp');
     }
 }
