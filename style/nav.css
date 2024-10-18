@@ -24,12 +24,11 @@ li {
 
 .subMenu-container {
     display: flex;
+    gap: 5px;
 }
 
 .settings-menu {
   position: relative;
-  display: inline-block;
-  margin: auto 5px;
 }
 
 .settings-btn {
@@ -468,10 +467,6 @@ form.search::after {
 .sideMenu-content a:hover {
     color: #1f1f1f;
     background: var(--hover-light);
-}
-
-.show {
-    left: 0;
 }
 
 /* Category Navigation */
