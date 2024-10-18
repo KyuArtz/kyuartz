@@ -9,6 +9,10 @@ header {
     z-index: 100000;
 }
 
+li {
+    list-style-image: url("../assets/images/bullet/n-bullet.png");
+}
+
 /* Navigation Menu */
 .nav-menu {
     display: flex;
@@ -16,6 +20,10 @@ header {
     align-items: center;
     margin: 0;
     padding: 0;
+}
+
+.subMenu-container {
+    display: flex;
 }
 
 .settings-menu {
@@ -571,9 +579,8 @@ form.search::after {
 }
 
 /* List Reset */
-.category-container,
-li,
-ul {
+.category-container li,
+.category-container ul {
     list-style: none;
     padding-left: 0;
 }

@@ -33,6 +33,7 @@
 /* Unordered List */
 .faq-container ul {
     max-width: 1000px;
+    padding: 0;
     overflow-x: scroll;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
