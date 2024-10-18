@@ -57,6 +57,7 @@ section ul li {
     margin: 10px 0;
     padding: 10px;
     border-left: 4px solid #4CAF50;
+    list-style: none;
 }
 
 strong {
