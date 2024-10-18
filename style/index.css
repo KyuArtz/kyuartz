@@ -97,12 +97,12 @@
     justify-content: center;
     text-align: center;
     bottom: 25%;
+    gap: 10px;
     z-index: 1;
 }
 
 .caption-btn a {
     padding: 10px;
-    margin: 5px;
     min-width: 15%;
     border-radius: 50px;
     border: solid thin;
