@@ -30,8 +30,8 @@ window.onload = function() {
 
 const themeOptions = [
     { name: "Default", value: "default" },
-    { name: "Darker", value: "darker" },
     { name: "Traditional", value: "traditional"},
+    { name: "Darker", value: "darker" },
     { name: "Dark-Red", value: "dark-red"},
     { name: "White-Red", value: "white-red" },
     { name: "Dark-Purple", value: "dark-purple"},

@@ -35,16 +35,6 @@
     --overlay-blue: rgba(30, 143, 255, 0.500);
 }
 
-/* Dark-Black theme */
-.theme-darker {
-    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
-    --default-font-color: #f0f0f0;
-    --color: #8a8a8a;
-    --content-bg: rgba(15, 15, 15, 0.9);
-    --hover-light: #4d4d4d;
-    --overlay-blue: rgba(64, 64, 64, 0.5);
-}
-
 /* Traditional theme */
 .theme-traditional {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
@@ -53,6 +43,16 @@
     --content-bg: rgba(22, 33, 46, 0.9);
     --hover-light: #1ac3da;
     --overlay-blue: rgba(30, 143, 255, 0.500);
+}
+
+/* Dark-Black theme */
+.theme-darker {
+    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+    --default-font-color: #f0f0f0;
+    --color: #8a8a8a;
+    --content-bg: rgba(15, 15, 15, 0.9);
+    --hover-light: #4d4d4d;
+    --overlay-blue: rgba(64, 64, 64, 0.5);
 }
 
 /* Dark-Red theme */
