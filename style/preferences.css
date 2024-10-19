@@ -1,0 +1,48 @@
+#preferences-container {
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: default;
+}
+
+#preferences-container h1 {
+    font-family: myFont;
+    text-align: center;
+    border-bottom: solid thin;
+    color: var(--color);
+}
+
+#preferences-container h2 {
+    font-family: myFont;
+    font-size: 1em;
+    color: var(--default-font-color); /* Use theme font color */
+}
+
+#theme-select {
+    max-width: 200px;
+    padding: 10px;
+    background: var(--color); 
+    color: inherit;
+    border: solid thin;
+    border-radius: 10px;
+    appearance: none;
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/60/60995.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+#theme-select:focus {
+    outline: none;
+}
+
+/* Additional dropdown styling */
+option {
+    background: var(--color); /* Default background color */
+    color: inherit;
+}

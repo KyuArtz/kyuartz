@@ -16,7 +16,7 @@
 .program-content h1 {
     font-family: var(--font-style);
     font-size: 1.5rem;
-    color: var(--default-font-color);
+    color: var(--color);
     cursor: default;
     margin-top: 50px;
 }
@@ -105,7 +105,7 @@
 }
 
 .info-container {
-    flex: 1;
+    flex: 2;
 }
 
 .card {
@@ -119,14 +119,13 @@
 }
 
 .pfp-container {
-    width: 100%;
     z-index: 1;
 }
 
 .card img.pfp {
-    width: 50%;
+    width: 60%;
     border-radius: 50%;
-    border: 2px solid #ffffff;
+    border: 2px solid;
     margin-bottom: -70px;
     pointer-events: none;
 }
@@ -135,7 +134,7 @@
 .my-info {
     padding: 10px 16px;
     border-radius: 50px 50px 5px 5px;
-    box-shadow: 0 0 1px #ffffff;
+    box-shadow: 0 0 1px;
 }
 
 .my-info h1 {
@@ -148,7 +147,6 @@
     font-size: 0.9rem;
     padding: 5px;
     text-align: left;
-    box-shadow: 0 0 3px #000;
     color: var(--default-font-color);
     border-radius: 30px 50px 50px 30px;
     border: solid thin;

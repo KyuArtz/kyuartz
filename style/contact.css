@@ -16,7 +16,7 @@ form.contact,
 }
 
 form.contact {
-    color: var(--default-font-color);
+    color: #ffffff;
 }
 
 form.contact {
@@ -33,10 +33,6 @@ form h1 {
     cursor: default;
     color: var(--color);
     font-family: var(--font-style);
-}
-
-label {
-    color: var(--default-font-color);
 }
 
 /* E-Wallet */
@@ -67,13 +63,13 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid;
+    border: solid thin;
     border-radius: 50px;
     outline: none;
     margin: 8px 0;
     resize: vertical;
     background: none;
-    color: var(--default-font-color);
+    color: var(--color);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -93,15 +89,6 @@ input[type="message"],
 select,
 textarea {
     transition: background-color 0.3s ease-in-out;
-}
-
-input[type="email"]:hover,
-input[type="text"]:hover,
-input[type="file"]:hover,
-input[type="message"]:hover,
-select:hover,
-textarea:hover {
-    background: var(--overlay);
 }
 
 input[type="text"]:focus, 
@@ -139,12 +126,13 @@ input[type="file"] {
 #image-preview {
     border-radius: 10px;
     border: solid thin;
+    color: var(--color);
 }
 
 #remove-btn {
     padding: 5px;
     border: solid thin;
-    color: inherit;
+    color: var(--color);
     background: none;
     border-radius: 50px;
     cursor: pointer;

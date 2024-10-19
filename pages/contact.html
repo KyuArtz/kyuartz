@@ -2,30 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Theme Color for Various Browsers -->
-  <meta name="theme-color" content="#1E90FF"> <!-- Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <!-- Title and Description -->
+  <!-- SEO Optimization -->
   <title>KyuArtz | Contact Us</title>
   <meta name="description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
+  <meta name="keywords" content="KyuArtz">
+  <meta name="author" content="KyuArtz">
+  
+  <!-- Theme color for different platforms -->
+  <meta name="theme-color" content="#1E90FF"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
+  <meta name="msapplication-TileColor" content="#1E90FF"> <!-- For Windows 8 and Windows Phone -->
 
-  <!-- Favicon and Touch Icon -->
-  <link rel="icon" type="image/png" href="../assets/images/favicon/rb9.ico">
-  <link rel="apple-touch-icon" href="../assets/images/favicon/rb9.ico">
+  <!-- Favicons and Icons -->
+  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/rb9.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/icons/icon-180x180.png">
+  <link rel="icon" sizes="32x32" href="../assets/images/favicon/rb9.ico">
+  <link rel="icon" sizes="16x16" href="../assets/images/favicon/rb9.ico">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="../style/main.css" as="style">
+  <link rel="preload" href="../style/loader.css" as="style">
+  <link rel="preload" href="../style/nav.css" as="style">
+  <link rel="preconnect" href="https://kit.fontawesome.com">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../style/main.css">
   <link rel="stylesheet" href="../style/contact.css">
   <link rel="stylesheet" href="../style/nav.css">
-  <link rel="stylesheet" href="../style/popupnotice.css">
+  <link rel="stylesheet" href="../style/popup.css">
   <link rel="stylesheet" href="../style/loader.css">
 
   <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
 
   <!-- Defer JavaScript for Faster Page Load -->
   <script src="../js/loader.js" defer></script>
@@ -34,15 +45,23 @@
   <script src="../js/search.js" defer></script>
   <script src="../js/contact-validation.js" defer></script>
   <script src="../js/popup.js" defer></script>
-  <script src="../js/theme-toggle.js" defer></script>
+  <script src="../js/theme.js" defer></script>
   <script src="../js/current-year.js" defer></script>
 
   <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="KyuArtz | Contact Us">
   <meta property="og:description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/myavatarlogo/logo.jpg">
+  <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/contact">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KyuArtz | Privacy Policy">
+  <meta name="twitter:description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/myavatarlogo/logo.jpg">
+  <meta name="twitter:image:alt" content="KyuArtz logo and branding">
 </head>
 <body>
 
@@ -106,15 +125,9 @@
         <div class="settings-menu">
           <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
           <div class="dropdown-setting">
-            <div class="theme-toggle">
-              <p>Theme:</p>
-              <label class="switch">
-                <input type="checkbox" id="theme-toggle-checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-            <a href="pages/privacy-policy.html">Privacy</a>
-            <a href="pages/help.html">Help</a>
+            <a href="preferences.html"><i class="fa-solid fa-palette"></i> Preferences</a>
+            <a href="privacy-policy.html"><i class="fa-solid fa-user-shield"></i> Privacy</a>
+            <a href="help.html"><i class="fa-regular fa-circle-question"></i> Help Center</a>
           </div>
         </div>
         <div class="hamburger">

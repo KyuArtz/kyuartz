@@ -2,6 +2,26 @@
   "updates": [
 
     {
+      "date": "10/19/2024",
+      "major": [
+        "Removed the old toggle theme and added a preference page for users to change there desired theme, and more features will be available soon!"
+      ],
+      "minor": [
+        "Minor adjustments and improvements."
+
+      ],
+      "bugfixes": [
+        "Optimized the overall code for best performance possible."
+      ],
+      "upcoming": [
+        "Introduction of a Character page (coming soon).",
+        "Addition of Comic chapters (coming soon).",
+        "Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/18/2024",
       "major": [
   

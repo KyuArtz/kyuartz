@@ -14,33 +14,130 @@
 
 /* Root Variables */
 :root {
-    --theme: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
-    --theme-2: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
-    --theme-overlay: linear-gradient(to right, rgb(26, 27, 32, 0.600), rgb(40, 41, 51, 0.600));
-    --color: #1e90ff;
+    --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
     --default-font-color: #ffffff;
-    --overlay: rgba(10, 18, 24, 0.5);
+    --color: #1e90ff;
+    --content-bg: rgba(22, 33, 46, 0.9);
+    --hover-light: #1ac3da;
     --overlay-blue: rgba(30, 143, 255, 0.500);
-    --scrollbar-track-color: #00000000;
-    --hover-light: #47a3ff;
+    --overlay: rgba(10, 18, 24, 0.5);
+    --scrollbar-track-color: rgba(0, 0, 0, 0);
     --font-style: myFont, 'Poppins', sans-serif;
-    --content-bg: rgb(22, 33, 46, 0.9);
 }
 
-/* Default Theme */
-body.default-theme {
-    background-image: var(--theme) !important;
-    color: var(--default-font-color) !important;
+/* Default theme */
+.theme-default {
+    --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
+    --default-font-color: #ffffff;
+    --color: #1e90ff;
+    --content-bg: rgba(22, 33, 46, 0.9);
+    --hover-light: #1ac3da;
+    --overlay-blue: rgba(30, 143, 255, 0.500);
 }
 
-/* Custom Theme */
-body.custom-theme {
-    background-image: var(--theme-2) !important;
-    color: #1f1f1f !important;
+/* Dark-Black theme */
+.theme-darker {
+    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+    --default-font-color: #f0f0f0;
+    --color: #8a8a8a;
+    --content-bg: rgba(15, 15, 15, 0.9);
+    --hover-light: #4d4d4d;
+    --overlay-blue: rgba(64, 64, 64, 0.5);
 }
 
-/* Body */
+/* Traditional theme */
+.theme-traditional {
+    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --default-font-color: #1f1f1f;
+    --color: #1e90ff;
+    --content-bg: rgba(22, 33, 46, 0.9);
+    --hover-light: #1ac3da;
+    --overlay-blue: rgba(30, 143, 255, 0.500);
+}
+
+/* Dark-Red theme */
+.theme-dark-red {
+    --theme-color: linear-gradient(to right, rgb(22, 15, 15), rgb(39, 28, 28), rgb(61, 45, 45));
+    --default-font-color: #ffffff;
+    --color: #ff1e1e;
+    --content-bg: rgba(46, 22, 22, 0.9);
+    --hover-light: #da1a1a;
+    --overlay-blue: rgba(255, 30, 30, 0.5);
+}
+
+/* Red theme */
+.theme-white-red {
+    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --default-font-color: #1f1f1f;
+    --color: #ff1e1e;
+    --content-bg: rgba(46, 22, 22, 0.9);
+    --hover-light: #da1a1a;
+    --overlay-blue: rgba(255, 30, 30, 0.5);
+}
+
+/* Dark-Purple theme */
+.theme-dark-purple {
+    --theme-color: linear-gradient(to right, rgb(35, 0, 61), rgb(55, 0, 85), rgb(85, 0, 115));
+    --default-font-color: #ffffff;
+    --color: #a832ff;
+    --content-bg: rgba(70, 30, 90, 0.9); 
+    --hover-light: #c43cff;
+    --overlay-blue: rgba(168, 50, 255, 0.5);
+}
+
+/* White-Purple theme */
+.theme-white-purple {
+    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --default-font-color: #1f1f1f;
+    --color: #a832ff;
+    --content-bg: rgba(70, 30, 90, 0.9); 
+    --hover-light: #c43cff;
+    --overlay-blue: rgba(168, 50, 255, 0.5);
+}
+
+/* Dark-Green theme */
+.theme-dark-green {
+    --theme-color: linear-gradient(to right, rgb(0, 61, 35), rgb(0, 85, 55), rgb(0, 115, 85));
+    --default-font-color: #ffffff;
+    --color: #32ffa8;
+    --content-bg: rgba(30, 90, 70, 0.9);
+    --hover-light: #3cffc4;
+    --overlay-blue: rgba(50, 255, 168, 0.5);
+}
+
+/* White-Green theme */
+.theme-white-green {
+    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --default-font-color: #1f1f1f;
+    --color: #32ffa8;
+    --content-bg: rgba(30, 90, 70, 0.9);
+    --hover-light: #3cffc4;
+    --overlay-blue: rgba(50, 255, 168, 0.5);
+}
+
+/* Dark-Yellow theme */
+.theme-dark-yellow {
+    --theme-color: linear-gradient(to right, rgb(61, 61, 0), rgb(85, 85, 0), rgb(115, 115, 0));
+    --default-font-color: #ffffff;
+    --color: #ffa832;
+    --content-bg: rgba(90, 90, 30, 0.9);
+    --hover-light: #ffc43c;
+    --overlay-blue: rgba(255, 168, 50, 0.5);
+}
+
+/* White-Yellow theme */
+.theme-white-yellow {
+    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --default-font-color: #1f1f1f;
+    --color: #ffa832;
+    --content-bg: rgba(90, 90, 30, 0.9);
+    --hover-light: #ffc43c;
+    --overlay-blue: rgba(255, 168, 50, 0.5);
+}
+
 body {
+    background: var(--theme-color);
+    color: var(--default-font-color);
     margin: 0;
     padding: 0;
 }

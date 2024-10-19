@@ -7,7 +7,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: var(--theme);
+    background: var(--theme-color);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     align-items: center;
@@ -55,7 +55,7 @@
 .medium-spinner {
     width: 75px;
     height: 75px;
-    border: thin solid #ffffff;
+    border: thin solid;
     /*box-shadow: 0 1px 5000px 30px var(--color);*/
     animation: pulse 0.75s infinite;
 }
@@ -65,7 +65,7 @@
     width: 85px;
     height: 85px;
     border: thick solid var(--color);
-    border-top-color: #ffffff;
+    border-top-color: inherit;
     animation: rotateClockwise 0.75s infinite;
 }
 

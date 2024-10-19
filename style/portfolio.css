@@ -1,6 +1,7 @@
 /* Image Container */
 .image-container {
     width: 100%;
+    min-height: 100vh;
 }
 
 /* Gallery Grid */
