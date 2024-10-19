@@ -127,7 +127,7 @@ a {
     cursor: pointer;
     padding: 14px 25px 12px;
     margin: 0 2px;
-    transition: 0.4s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .nav-link:hover,
