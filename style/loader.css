@@ -8,8 +8,6 @@
     display: flex;
     justify-content: center;
     background: var(--theme-color);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     align-items: center;
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 300000;
