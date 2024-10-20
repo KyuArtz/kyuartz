@@ -8,13 +8,11 @@ section h1 {
 }
 
 section h1, h2 {
-    font-family: myFont;
     color: var(--color);
     padding: 10px;
 }
 
 section {
-    font-family: 'poppins', sans-serif;
     cursor: default;
 }
 

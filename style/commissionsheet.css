@@ -24,7 +24,6 @@
     padding: 9px;
     letter-spacing: 3px;
     cursor: default;
-    font-family: var(--font-style);
     font-size: 1.1rem;
     color: inherit;
     border-radius: 10px;
@@ -36,7 +35,6 @@
     display: inline-block;
     border-radius: 10px;
     cursor: default;
-    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     width: inherit;
 }
@@ -53,7 +51,6 @@
     text-align: center;
     font-size: 1rem;
     color: var(--color);
-    font-family: var(--font-style);
     padding: 9px;
     opacity: 0.9;
     cursor: default;
@@ -74,7 +71,6 @@
     border-radius: 50px;
     border: solid thin;
     color: inherit;
-    font-family: var(--font-style);
     transition: 0.4s ease-in-out;
 }
 

@@ -1,6 +1,7 @@
 /* Universal Styles */
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -17,6 +18,39 @@ body {
 @font-face {
     font-family: myFont;
     src: url("../assets/fonts/squarefont/Square.ttf");
+}
+
+li {
+    list-style-image: url("../assets/images/bullet/n-bullet.png");
+}
+
+a {
+    text-decoration: none;
+    color: var(--default-font-color);
+}
+
+h1, h2, h3, a, button, label,
+.main-navigation a,
+.caption p,
+.lb-data .lb-number,
+.contact-subContainer p,
+.contact-subContainer a,
+.tos-container,
+input[type="Submit"],
+.comic-title,
+.comic-chapter,
+.chapter p,
+.footer a,
+.footer p,
+.footer span,
+.maintenance_body p {
+    font-family: myFont;
+}
+
+.sideMenu-content a,
+.category-menu a,
+.settings-menu a {
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Root Variables */

@@ -10,7 +10,6 @@
 
 .pp-container h1, h2 {
     color: inherit;
-    font-family: var(--font-style);
     padding: 12px;
 }
 
@@ -22,7 +21,6 @@
 /* List Items */
 .pp-container li, p {
     color: inherit;
-    font-family: 'Poppins', sans-serif;
     list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
     text-align: justify;

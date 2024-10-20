@@ -15,7 +15,6 @@
 
 /* Loader Title */
 .loader h1 {
-    font-family: var(--font-style);
     font-size: small;
     color: var(--default-font-color);
     position: absolute;

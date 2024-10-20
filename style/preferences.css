@@ -8,14 +8,12 @@
 }
 
 #preferences-container h1 {
-    font-family: myFont;
     text-align: center;
     border-bottom: solid thin;
     color: var(--color);
 }
 
 #preferences-container h2 {
-    font-family: myFont;
     font-size: 1em;
     color: var(--default-font-color); /* Use theme font color */
 }

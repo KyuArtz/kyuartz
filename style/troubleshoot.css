@@ -15,14 +15,12 @@
 .troubleshooting-section h1,
 .troubleshooting-section h2 {
   color: var(--color);
-  font-family: myFont;
 }
 
 .troubleshooting-section p,
 .troubleshooting-section ul,
 .troubleshooting-section li {
   color: inherit;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
 

@@ -15,14 +15,12 @@
 .user-guide h1,
 .user-guide h2 {
     color: var(--color);
-    font-family: var(--font-style);
 }
 
 .user-guide p,
 .user-guide ul,
 .user-guide li {
     color: inherit;
-    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
 }
 

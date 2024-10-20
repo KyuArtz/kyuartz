@@ -9,18 +9,9 @@ header {
     z-index: 100000;
 }
 
-li {
-    list-style-image: url("../assets/images/bullet/n-bullet.png");
-}
-
 /* Navigation Links */
 .navigation-menu li {
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--default-font-color);
 }
 
 /* Navigation Menu */
@@ -74,7 +65,6 @@ a {
   text-decoration: none;
   color: inherit;
   display: block;
-  font-family: 'poppins', sans-serif;
   transition: background-color 0.3s ease;
 }
 
@@ -96,7 +86,6 @@ a {
 }
 
 .nav-brand {
-    font-family: var(--font-style);
     font-size: 1.7rem;
     font-weight: bold;
     color: inherit;
@@ -119,7 +108,6 @@ a {
 /* Nav Links */
 .nav-link,
 .nav-link-sideMenu {
-    font-family: var(--font-style);
     font-size: 0.9rem;
     color: inherit;
     background: none;
@@ -214,7 +202,6 @@ form.search button {
     outline: none;
     margin: 0;
     padding: 12px;
-    font-family: 'Poppins', sans-serif;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -270,7 +257,6 @@ form.search::after {
 
 .search-result,
 .search-result p {
-    font-family: var(--font-style);
     font-size: .9rem;
 }
 
@@ -395,7 +381,6 @@ form.search::after {
 }
 
 .sideMenu-content h1 {
-    font-family: var(--font-style);
     font-size: 1rem;
     color: inherit;
     cursor: default;
@@ -404,7 +389,6 @@ form.search::after {
 }
 
 .sideMenu-content a {
-    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     color: inherit;
     background: none;
@@ -443,7 +427,6 @@ form.search::after {
 
 .secondary-navigation h1 {
     text-align: center;
-    font-family: var(--font-style);
     font-size: 1.3rem;
     letter-spacing: 3px;
     color: var(--color);
@@ -496,7 +479,6 @@ form.search::after {
 }
 
 .category-menu h2 {
-    font-family: var(--font-style);
     font-size: 1rem;
     color: inherit;
     cursor: default;
@@ -510,7 +492,6 @@ form.search::after {
 
 .category-item a {
     width: 100%;
-    font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     color: inherit;
     padding: 15px 15px;
@@ -531,7 +512,6 @@ form.search::after {
     right: 0;
     padding: 5px 20px;
     margin: auto 5px;
-    font-family: var(--font-style);
     border: solid thin;
     border-radius: 5px;
     color: inherit;
@@ -573,7 +553,6 @@ form.search::after {
     position: relative;
     padding: 8px 0;
     background-image: inherit;
-    font-family: var(--font-style);
     font-size: 0.7rem;
     box-shadow: 0 -1px 0;
     color: inherit;

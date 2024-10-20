@@ -170,7 +170,6 @@ body.lb-disable-scrolling {
     float: left;
     text-align: left;
     line-height: 1.1em;
-    font-family: var(--font-style);
 }
 
 /* Caption */

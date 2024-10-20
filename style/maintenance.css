@@ -6,7 +6,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: var(--font-style);
     padding: 0 30px 30px;
     color: var(--color);
     border-style: solid;
@@ -62,7 +61,6 @@
     background-color: var(--color);
     color: var(--default-font-color);
     border: solid thin;
-    font-family: var(--font-style);
     border-radius: 50px;
     cursor: pointer;
     text-align: center;

@@ -11,7 +11,7 @@
 }
 
 form.contact,
-.e-wallet {
+.contact-subContainer {
     flex: 1;
 }
 
@@ -22,7 +22,6 @@ form.contact {
 form.contact {
     padding: 30px 40px 20px;
     flex: 1.3;
-    font-family: 'Poppins', sans-serif;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
@@ -32,12 +31,9 @@ form h1 {
     text-align: center;
     cursor: default;
     color: var(--color);
-    font-family: var(--font-style);
 }
 
-/* E-Wallet */
-.e-wallet {
-    font-family: var(--font-style);
+.contact-subContainer {
     font-size: 0.8rem;
     cursor: default;
     text-align: center;
@@ -70,7 +66,6 @@ textarea {
     resize: vertical;
     background: none;
     color: var(--color);
-    font-family: 'Poppins', sans-serif;
 }
 
 /* Message Input */
@@ -79,7 +74,6 @@ textarea {
     max-height: 150px;
     height: 150px;
     border-radius: 10px 30px 10px 30px;
-    font-family: 'Poppins', sans-serif;
 }
 
 input[type="email"],
@@ -102,7 +96,6 @@ select:focus {
 /* Submit Button */
 input[type="Submit"] {
     background-color: var(--color);
-    font-family: var(--font-style);
     color: inherit;
     padding: 10px 30px;
     border: solid thin;
@@ -147,7 +140,6 @@ input[type="file"] {
     justify-content: flex-end;
     cursor: default;
     font-size: small;
-    font-family: var(--font-style);
 }
 
 /* Terms of Service */
@@ -207,7 +199,6 @@ input[type="file"] {
 #file-error {
     position: relative;
     font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
     color: rgb(255, 0, 0);
     padding-top: 2px;
     padding-left: 5px;
@@ -223,7 +214,6 @@ input[type="file"] {
 #file-valid {
     position: relative;
     font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
     color: rgb(144, 238, 144);
     padding-top: 2px;
     padding-left: 5px;

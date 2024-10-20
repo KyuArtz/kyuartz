@@ -10,12 +10,10 @@
 }
 
 .faq-item h2 {
-    font-family: var(--font-style);
     color: inherit;
 }
 
 .faq-item p {
-    font-family: 'Poppins', sans-serif;
     color: inherit;
     text-align: justify;
 }
