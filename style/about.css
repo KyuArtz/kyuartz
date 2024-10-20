@@ -1,14 +1,19 @@
 /* Overlay Classes */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
     margin-top: 50px;
-    padding: 5px 10px;
     background-image: url('../assets/images/bg/wasteland.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.overlay {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+    gap: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .summary h1,
@@ -49,8 +54,6 @@
 .program-logo img {
     box-shadow: 0 0 3px #000;
     background: var(--theme-overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
 }
 
 .summarycontent {
