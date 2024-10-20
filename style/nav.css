@@ -365,7 +365,7 @@ form.search::after {
         border: none;
     }
 
-    .navigation-menu.active-nav {
+    .navigation-menu.navMenu-active {
         right: 0;
     }
 

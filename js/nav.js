@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Cache DOM elements
   const hamburger = document.querySelector(".hamburger");
-  const navMenu = document.querySelector(".nav-menu");
+  const navMenu = document.querySelector(".navigation-menu");
   const navLinks = document.querySelectorAll(".nav-link");
   const sideMenuLinks = document.querySelectorAll(".nav-link-sideMenu");
   const sideMenuContents = document.querySelectorAll(".sideMenu-content");
@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
   // Toggle hamburger and nav menu
   hamburger?.addEventListener("click", () => {
     hamburger.classList.toggle("active-hamburger");
-    navMenu.classList.toggle("active-nav");
+    navMenu.classList.toggle("navMenu-active");
   });
 
   // Close nav menu when a nav link is clicked
   navLinks.forEach(navLink => {
     navLink.addEventListener("click", () => {
       hamburger.classList.remove("active-hamburger");
-      navMenu.classList.remove("active-nav");
+      navMenu.classList.remove("navMenu-active");
     });
   });
 
@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Close nav menu if clicked outside
-    if (!event.target.closest('.hamburger') && !event.target.closest('.nav-menu')) {
+    if (!event.target.closest('.hamburger') && !event.target.closest('.navigation-menu')) {
       hamburger.classList.remove("active-hamburger");
-      navMenu.classList.remove("active-nav");
+      navMenu.classList.remove("navMenu-active");
     }
   });
 
