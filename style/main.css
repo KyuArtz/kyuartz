@@ -29,14 +29,14 @@ a {
     color: var(--default-font-color);
 }
 
-h1, h2, h3, a, button, label,
+h1, h2, h3, a, button, label, #popup-message p, input[type="Submit"],
 .main-navigation a,
 .caption p,
 .lb-data .lb-number,
-.contact-subContainer p,
-.contact-subContainer a,
+.contact-subContent p,
+.donate-popup p,
+.contact-subContent a,
 .tos-container,
-input[type="Submit"],
 .comic-title,
 .comic-chapter,
 .chapter p,
