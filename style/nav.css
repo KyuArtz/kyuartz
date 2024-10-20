@@ -48,7 +48,7 @@ li {
   position: absolute;
   background: inherit;
   min-width: 160px;
-  background: var(--overlay-blue);
+  background: var(--theme-overlay);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 0 3px #000;
@@ -86,8 +86,8 @@ a {
     color: var(--default-font-color);
 }
 
-/* Navbar */
-.navbar {
+/* Main Navigation */
+.main-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -141,6 +141,33 @@ a {
     border-bottom: thick solid var(--color);
 }
 
+/* Active Link Styles for the Main Navigation */
+.nav-link.activeLink {
+    color: var(--color);
+    border-bottom: thick solid var(--color);
+}
+
+.nav-link-sideMenu.activeLink {
+    color: var(--color);
+    border-bottom: thick solid var(--color);
+    font-weight: bold;
+}
+
+.sideMenu-content a.activeLink {
+    color: #1f1f1f;
+    background: var(--hover-light);
+    font-weight: bold;
+}
+
+.nav-link.activeLink:hover {
+    border-bottom: thin solid var(--color);
+}
+
+.nav-link-sideMenu.activeLink:hover,
+.sideMenu-content a.activeLink:hover {
+    color: #ffffff;
+}
+
 /* Hamburger Menu */
 .hamburger {
     display: none;
@@ -166,14 +193,14 @@ form.search input[type="search"] {
     float: right;
     width: 80%;
     border-radius: 0 50px 50px 0;
-    background: none;
-    border: thin solid;
+    background: var(--theme-overlay);
+    border: thin solid var(--color);
 }
 
 form.search button {
     float: left;
     width: 20%;
-    border: 1px solid;
+    border: solid thin var(--color);
     border-right: none;
     border-radius: 50px 0 0 50px;
     background: var(--color);
@@ -202,7 +229,7 @@ form.search::after {
     position: absolute;
     top: 55px;
     min-width: 50%;
-    background: var(--overlay-blue);
+    background: var(--theme-overlay);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -372,7 +399,7 @@ form.search::after {
     flex-direction: column;
     min-width: 200px;
     height: 100vh;
-    background: var(--overlay-blue);
+    background: var(--theme-overlay);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 1px 0 0;
@@ -413,8 +440,8 @@ form.search::after {
     left: 0;
 }
 
-/* Category Navigation */
-.category-navigation {
+/* Secondary Navigation */
+.secondary-navigation {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -428,7 +455,7 @@ form.search::after {
     z-index: 99;
 }
 
-.category-navigation h1 {
+.secondary-navigation h1 {
     text-align: center;
     font-family: var(--font-style);
     font-size: 1.3rem;
@@ -438,8 +465,8 @@ form.search::after {
     margin: 0 auto;
 }
 
-/* Category Dots */
-.category-dots {
+/* Category Btn */
+.category-btn {
     position: absolute;
     left: 0;
     margin: auto 5px;
@@ -462,34 +489,20 @@ form.search::after {
     cursor: pointer;
 }
 
-.currency-conversion-btn {
-    position: absolute;
-    right: 0;
-    padding: 5px 20px;
-    margin: auto 5px;
-    font-family: var(--font-style);
-    border: solid thin;
-    border-radius: 5px;
-    color: inherit;
-    outline: none;
-    background: var(--color);
-    cursor: pointer;
-}
-
 /* Category Menu */
 .category-menu {
     position: fixed;
-    top: 84px;
+    top: 100px;
     left: -101%;
     display: flex;
     flex-direction: column;
     min-width: 150px;
     height: 100vh;
-    background: var(--overlay-blue);
+    background: var(--theme-overlay);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding-bottom: 100px;
-    padding-left: 0;
+    padding: 0 0 50px 0;
+    margin: 0;
     box-shadow: 1px 0 0;
     justify-content: left;
     overflow: auto;
@@ -523,15 +536,22 @@ form.search::after {
     color: #1f1f1f;
 }
 
-.category-menu.active-category {
+.category-menu.active-categoryMenu {
     left: 0;
 }
 
-/* List Reset */
-.category-container li,
-.category-container ul {
-    list-style: none;
-    padding: 0;
+.currency-conversion-btn {
+    position: absolute;
+    right: 0;
+    padding: 5px 20px;
+    margin: auto 5px;
+    font-family: var(--font-style);
+    border: solid thin;
+    border-radius: 5px;
+    color: inherit;
+    outline: none;
+    background: var(--color);
+    cursor: pointer;
 }
 
 @media (max-width: 600px) {

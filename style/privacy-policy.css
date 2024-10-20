@@ -4,9 +4,8 @@
 }
 
 .overlay {
-    background: var(--overlay-blue);
+    background: var(--theme-overlay);
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
 }
 
 .pp-container h1, h2 {
@@ -18,7 +17,6 @@
 .pp-container h1 {
     background: inherit;
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
 }
 
 /* List Items */

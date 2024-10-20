@@ -5,8 +5,7 @@
 .faq-item {
     padding: 20px;
     border-radius: 10px;
-    background: var(--overlay-blue);
-    box-shadow: 0 0 3px #000;
+    background: var(--theme-overlay);
     margin: 10px auto;
 }
 

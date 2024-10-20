@@ -2,6 +2,26 @@
   "updates": [
 
     {
+      "date": "10/20/2024",
+      "major": [
+    
+      ],
+      "minor": [
+        "Improvements and optimizations to the overall interface design",
+        "Enhanced the active link logic"
+      ],
+      "bugfixes": [
+        "Overall adjustments and fixes."
+      ],
+      "upcoming": [
+        "Launch of a Character page (coming soon).",
+        "New Comic chapters (coming soon).",
+        "A Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/19/2024",
       "major": [
         "Replaced the old theme toggle system with a dedicated Preferences page, allowing users to customize their desired theme. More features will be added soon!"

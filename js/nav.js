@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-link");
   const sideMenuLinks = document.querySelectorAll(".nav-link-sideMenu");
   const sideMenuContents = document.querySelectorAll(".sideMenu-content");
-  const dots = document.querySelector(".category-dots");
-  const dotMenu = document.querySelector(".category-menu");
+  const btn = document.querySelector(".category-btn");
+  const categoryMenu = document.querySelector(".category-menu");
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
   const upBtn = document.getElementById("upBtn");
@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Toggle category menu visibility
-  dots?.addEventListener("click", () => {
-    dotMenu.classList.toggle("active-category");
+  btn?.addEventListener("click", () => {
+    categoryMenu.classList.toggle("active-categoryMenu");
   });
 
   document.querySelectorAll(".category-link").forEach(n => 
     n.addEventListener("click", () => {
-      dotMenu.classList.remove("active-category");
+      categoryMenu.classList.remove("active-categoryMenu");
     })
   );
 
@@ -95,4 +95,19 @@ document.addEventListener("DOMContentLoaded", () => {
   // Update the current year dynamically
   const year = new Date().getFullYear();
   document.getElementById('currentyear').textContent = year;
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the current page's filename
+  const currentPage = window.location.pathname.split('/').pop();
+
+  // Get all nav links
+  const navLinks = document.querySelectorAll('.nav-link, .nav-link-sideMenu, .sideMenu-content a');
+
+  // Loop through links and add 'activeLink' class to the matching link
+  navLinks.forEach(link => {
+    if (link.getAttribute('data-page') === currentPage) {
+      link.classList.add('activeLink');
+    }
+  });
 });

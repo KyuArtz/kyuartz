@@ -42,7 +42,7 @@ form h1 {
     cursor: default;
     text-align: center;
     padding: 10px;
-    background: var(--overlay-blue);
+    background: var(--theme-overlay);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }

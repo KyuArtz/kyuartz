@@ -9,9 +9,8 @@
     font-family: 'Poppins', sans-serif;
     padding: 12px;
     margin: 5px;
-    background: var(--overlay-blue);
+    background: var(--theme-overlay);
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
     text-align: justify;
 }
 

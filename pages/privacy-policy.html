@@ -84,51 +84,110 @@
   </div>
 
   <header>
-    <nav class="navbar">
-      <a href="../index.html" class="nav-brand">
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+      <!-- Brand and Logo -->
+      <a href="../index.html" class="nav-brand" aria-label="KyuArtz Home Page">
         <div class="brand">Kyu</div>
-        <img src="../assets/images/brand-logo/logo.ico" loading="lazy" class="my-avatar">
+        <img src="../assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
       </a>
-      <form class="search" onsubmit="return false;">
-        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search">
-        <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  
+      <!-- Search Form -->
+      <form class="search" aria-label="Search KyuArtz">
+        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search" aria-label="Search">
+        <button type="submit" id="search-button" aria-label="Submit search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
         <div class="search-result" style="display: none;"></div>
       </form>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fa-solid fa-house"></i> HOME</a></li>
-        <li class="nav-item"><a href="portfolio.html" class="nav-link"><i class="fa-regular fa-image"></i> PORTFOLIO</a></li>
+  
+      <!-- Main Navigation Menu -->
+      <ul class="nav-menu" role="menubar">
+        <li class="nav-item">
+          <a href="../index.html" class="nav-link" data-page="index.html" role="menuitem">
+            <i class="fa-solid fa-house"></i> HOME
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
+            <i class="fa-regular fa-image"></i> PORTFOLIO
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
+            <i class="fa-regular fa-address-card"></i> ABOUT
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
+            <i class="fa-solid fa-phone"></i> CONTACT US
+          </a>
+        </li>
+  
+        <!-- More Dropdown Menu -->
         <li class="nav-item sideMenu activeLink">
-          <a href="#" class="nav-link-sideMenu" aria-expanded="false"><i class="fa-regular fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i></a>
-          <div class="sideMenu-content">
+          <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
+            <i class="fa-regular fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i>
+          </a>
+          <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <h1>Commission Art</h1>
-            <a href="commission-sheet.html"><i class="fa-regular fa-file"></i> Commission Sheet</a>
-            <a href="commissioner-info.html"><i class="fa-solid fa-table"></i> Commissioner info</a>
+            <a href="commission-sheet.html" data-page="commission-sheet.html">
+              <i class="fa-regular fa-file"></i> Commission Sheet
+            </a>
+            <a href="commissioner-info.html" data-page="commissioner-info.html">
+              <i class="fa-solid fa-table"></i> Commissioner info
+            </a>
             <h1>Explore</h1>
-            <a href="comic.html"><i class="fa-solid fa-book"></i> My Comic</a>
-            <a href="maintenance.html"><i class="fa-solid fa-person-rifle"></i> Original Character</a>
-            <a href="maintenance.html"><i class="fa-solid fa-video"></i> Time lapse video</a>
-            <a href="maintenance.html"><i class="fa-solid fa-diagram-project"></i> Personal Project</a>
+            <a href="comic.html" data-page="comic.html">
+              <i class="fa-solid fa-book"></i> My Comic
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-person-rifle"></i> Original Character
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-video"></i> Time lapse video
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-diagram-project"></i> Personal Project
+            </a>
             <h1>SERVICE INFO</h1>
-            <a href="terms-of-service.html"><i class="fa-regular fa-circle-question"></i> Terms of Service</a>
-            <a href="privacy-policy.html"><i class="fa-regular fa-circle-question"></i> Privacy Policy</a>
-            <a href="faq.html"><i class="fa-regular fa-circle-question"></i> FAQs</a>
-            <a href="customer-support.html"><i class="fa-regular fa-circle-question"></i> Customer Support</a>
-            <a href="help.html"><i class="fa-regular fa-circle-question"></i> Help Center</a>
+            <a href="terms-of-service.html" data-page="terms-of-service.html">
+              <i class="fa-regular fa-circle-question"></i> Terms of Service
+            </a>
+            <a href="privacy-policy.html" data-page="privacy-policy.html">
+              <i class="fa-regular fa-circle-question"></i> Privacy Policy
+            </a>
+            <a href="faq.html" data-page="faq.html">
+              <i class="fa-regular fa-circle-question"></i> FAQs
+            </a>
+            <a href="customer-support.html" data-page="customer-support.html">
+              <i class="fa-regular fa-circle-question"></i> Customer Support
+            </a>
+            <a href="help.html" data-page="help.html">
+              <i class="fa-regular fa-circle-question"></i> Help Center
+            </a>
           </div>
         </li>
-        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-regular fa-address-card"></i> ABOUT</a></li>
-        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-solid fa-phone"></i> CONTACT</a></li>
       </ul>
+  
+      <!-- Mobile and Settings Menu -->
       <div class="subMenu-container">
         <div class="settings-menu">
-          <button class="settings-btn"><i class="fa-solid fa-gear"></i></button>
-          <div class="dropdown-setting">
-            <a href="preferences.html"><i class="fa-solid fa-palette"></i> Preferences</a>
-            <a href="privacy-policy.html"><i class="fa-solid fa-user-shield"></i> Privacy</a>
-            <a href="help.html"><i class="fa-regular fa-circle-question"></i> Help Center</a>
+          <button class="settings-btn" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <div class="dropdown-setting" aria-label="Settings dropdown">
+            <a href="preferences.html">
+              <i class="fa-solid fa-palette"></i> Preferences
+            </a>
+            <a href="privacy-policy.html">
+              <i class="fa-solid fa-user-shield"></i> Privacy
+            </a>
+            <a href="help.html">
+              <i class="fa-regular fa-circle-question"></i> Help Center
+            </a>
           </div>
         </div>
-        <div class="hamburger">
+        <div class="hamburger" aria-label="Mobile menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -137,9 +196,10 @@
     </nav>
   </header>
 
-  <div class="category-navigation">
+  <!--Secondary-Navigation-->
+  <nav class="secondary-navigation">
     <h1>Privacy Policy</h1>
-  </div>
+  </nav>
 
   <div class="pp-container">
     <div class="background">
