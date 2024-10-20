@@ -13,14 +13,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Toggle hamburger and nav menu
   hamburger?.addEventListener("click", () => {
-    hamburger.classList.toggle("active-hamburger");
+    hamburger.classList.toggle("hamburger-active");
     navMenu.classList.toggle("navMenu-active");
   });
 
   // Close nav menu when a nav link is clicked
   navLinks.forEach(navLink => {
     navLink.addEventListener("click", () => {
-      hamburger.classList.remove("active-hamburger");
+      hamburger.classList.remove("hamburger-active");
       navMenu.classList.remove("navMenu-active");
     });
   });
@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Toggle category menu visibility
   btn?.addEventListener("click", () => {
-    categoryMenu.classList.toggle("active-categoryMenu");
+    categoryMenu.classList.toggle("categoryMenu-active");
   });
 
   document.querySelectorAll(".category-link").forEach(n => 
     n.addEventListener("click", () => {
-      categoryMenu.classList.remove("active-categoryMenu");
+      categoryMenu.classList.remove("categoryMenu-active");
     })
   );
 
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Close nav menu if clicked outside
     if (!event.target.closest('.hamburger') && !event.target.closest('.navigation-menu')) {
-      hamburger.classList.remove("active-hamburger");
+      hamburger.classList.remove("hamburger-active");
       navMenu.classList.remove("navMenu-active");
     }
   });

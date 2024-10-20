@@ -326,15 +326,15 @@ form.search::after {
         z-index: 1;
     }
 
-    .hamburger.active-hamburger .bar:nth-child(2) {
+    .hamburger.hamburger-active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburger.active-hamburger .bar:nth-child(1) {
+    .hamburger.hamburger-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    .hamburger.active-hamburger .bar:nth-child(3) {
+    .hamburger.hamburger-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
@@ -522,7 +522,7 @@ form.search::after {
     color: #1f1f1f;
 }
 
-.category-menu.active-categoryMenu {
+.category-menu.categoryMenu-active {
     left: 0;
 }
 
