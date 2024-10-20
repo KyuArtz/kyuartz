@@ -92,7 +92,7 @@ select:focus {
 /* Submit Button */
 input[type="Submit"] {
     background-color: var(--color);
-    color: inherit;
+    color: var(--default-font-color);
     padding: 10px 30px;
     border: solid thin;
     border-radius: 50px;
