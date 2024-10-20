@@ -47,6 +47,7 @@ h1, h2, h3, a, button, label, #popup-message p, input[type="Submit"],
     font-family: myFont;
 }
 
+form.search input[type="search"], form.search button,
 .sideMenu-content a,
 .category-menu a,
 .settings-menu a {
