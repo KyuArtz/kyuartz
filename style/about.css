@@ -175,6 +175,11 @@
 
 /* Responsive Styles */
 @media screen and (max-width: 750px) {
+    .overlay {
+        display: block;
+        background-image: url('../assets/images/bg/portrait-mode.webp');
+    }
+
     .card img.pfp {
         width: 100%;
     }
@@ -185,12 +190,5 @@
 
     .summary .summarycontent p {
         text-align: justify;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .card-container {
-        display: block;
-        background-image: url('../assets/images/bg/portrait-mode.webp');
     }
 }
