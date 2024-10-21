@@ -107,6 +107,8 @@ p {
 }
 
 h1, h2, h3, a, button, label, input[type="Submit"],
+.search-result a,
+.search-result p,
 .main-navigation a,
 .caption p,
 .lb-data .lb-number,
