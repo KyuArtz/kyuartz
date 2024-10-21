@@ -15,6 +15,7 @@ let availableKeywords = [
     { name: 'Help Center', url: '../pages/help.html' },
     { name: 'User Guide to KyuArtz', url: '../pages/guide.html' },
     { name: 'Troubleshooting', url: '../pages/troubleshoot.html' },
+    { name: 'Preferences', url: '../pages/preferences.html' },
     { name: 'Paypal (KyuArtz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },
     { name: 'Facebook (KyuArtz page)', url: 'https://www.facebook.com/KyuArtz' },
     { name: 'Youtube (KyuArtz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
