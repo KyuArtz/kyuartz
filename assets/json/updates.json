@@ -2,6 +2,25 @@
   "updates": [
 
     {
+      "date": "10/21/2024",
+      "major": [
+        "A language selection dropdown has been added to the preferences page. This feature is still under development, and additional languages and options will be implemented in future updates."
+      ],
+      "minor": [
+        
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "Launch of a Character page (coming soon).",
+        "New Comic chapters (coming soon).",
+        "A Timelapse video page (coming soon).",
+        "Personal project page (coming soon)."
+      ]
+    },
+
+    {
       "date": "10/20/2024",
       "major": [
     

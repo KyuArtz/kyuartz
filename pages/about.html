@@ -40,6 +40,7 @@
   
   <!-- Defer scripts for better performance -->
   <script src="../js/loader.js" defer></script>
+  <script src="../js/translations.js" defer></script>
   <script src="../js/welcome-msg.js" defer></script>
   <script src="../js/nav.js" defer></script>
   <script src="../js/search.js" defer></script>
@@ -87,7 +88,7 @@
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <!-- Brand and Logo -->
       <div class="nav-brand" aria-label="KyuArtz Home Page">
-        <a href="../index.html" class="brand">Kyu</a>
+        <a href="../index.html" class="brand" data-translate="brand">Kyu</a>
         <img src="../assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
       </div>
   
@@ -104,29 +105,29 @@
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="../index.html" class="nav-link" data-page="index.html" role="menuitem">
-            <i class="fa-solid fa-house"></i> HOME
+            <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
-            <i class="fa-regular fa-image"></i> PORTFOLIO
+            <i class="fa-regular fa-image"></i> <span data-translate="portfolio">PORTFOLIO</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
-            <i class="fa-regular fa-address-card"></i> ABOUT
+            <i class="fa-regular fa-address-card"></i> <span data-translate="about">ABOUT</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
-            <i class="fa-solid fa-phone"></i> CONTACT US
+            <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
   
         <!-- More Dropdown Menu -->
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
-            <i class="fa-regular fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-regular fa-folder"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <h1>Commission Art</h1>
@@ -170,7 +171,7 @@
       </ul>
   
       <!-- Mobile and Settings Menu -->
-      <div class="subMenu-container">
+      <div class="subMenu-container">    
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>

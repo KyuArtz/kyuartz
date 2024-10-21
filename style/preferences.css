@@ -17,7 +17,8 @@
     color: var(--default-font-color); /* Use theme font color */
 }
 
-#theme-select {
+#theme-select,
+#languageSwitcher {
     max-width: 200px;
     padding: 10px;
     background: var(--color); 
@@ -34,7 +35,8 @@
     cursor: pointer;
 }
 
-#theme-select:focus {
+#theme-select:focus,
+#languageSwitcher:focus {
     outline: none;
 }
 

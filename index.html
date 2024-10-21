@@ -40,6 +40,7 @@
 
   <!-- Defer scripts for performance optimization -->
   <script src="js/loader.js" defer></script>
+  <script src="js/translations.js" defer></script>
   <script src="js/welcome-msg.js" defer></script>
   <script src="js/nav.js" defer></script>
   <script src="js/search.js" defer></script>
@@ -90,7 +91,7 @@
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <!-- Brand and Logo -->
       <div class="nav-brand" aria-label="KyuArtz Home Page">
-        <a href="index.html" class="brand">Kyu</a>
+        <a href="index.html" class="brand" data-translate="brand">Kyu</a>
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
       </div>
   
@@ -107,29 +108,29 @@
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
-            <i class="fa-solid fa-house"></i> HOME
+            <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="pages/portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
-            <i class="fa-regular fa-image"></i> PORTFOLIO
+            <i class="fa-regular fa-image"></i> <span data-translate="portfolio">PORTFOLIO</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="pages/about.html" class="nav-link" data-page="about.html" role="menuitem">
-            <i class="fa-regular fa-address-card"></i> ABOUT
+            <i class="fa-regular fa-address-card"></i> <span data-translate="about">ABOUT</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="pages/contact.html" class="nav-link" data-page="contact.html" role="menuitem">
-            <i class="fa-solid fa-phone"></i> CONTACT US
+            <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
   
         <!-- More Dropdown Menu -->
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
-            <i class="fa-regular fa-folder"></i> MORE <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-regular fa-folder"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <h1>Commission Art</h1>
@@ -173,7 +174,7 @@
       </ul>
   
       <!-- Mobile and Settings Menu -->
-      <div class="subMenu-container">
+      <div class="subMenu-container">    
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -203,11 +204,11 @@
     <div class="slideshow_container">
       <div class="mySlides fade">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
-          <p>"Discover more art created by Kyu Artz"</p>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
+          <p data-translate="caption">"Discover more art created by Kyu Artz"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
         <video src="assets/videos/Wasteland-Visual-Intro.mp4" type="video/mp4" muted autoplay loop oncontextmenu="return false"></video>
@@ -216,11 +217,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/IMG_20240919_212612.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"happiness is a journey, not a destination. Allow yourself the freedom to experience life as it comes, and happiness often follows when we least expect it"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
       </div>
@@ -228,11 +229,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/Polish_20240501_031025494.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"Cherish every moment that brings you happiness, for one day it will become a fragment of your memories"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
     
@@ -241,11 +242,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/Legend_of_the_crystalight.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"Everyone cherishes the day over the night, but few realize the hidden beauty the night holds"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
       </div>
@@ -253,11 +254,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/Polish_20240501_025724752.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"Solitude is my choice, not by chance, but with purpose"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
       </div>
@@ -265,11 +266,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/Polish_20240501_024312281.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"No living being is born perfect. I don't judge, for I walk this world with my own imperfections"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
       </div>
@@ -277,11 +278,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/Journey.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"Each of us carries a story yet to be told"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
       </div>
@@ -289,11 +290,11 @@
       <div class="mySlides fade">
         <img src="assets/images/slider-cover/Polish_20240501_024312283.webp" loading="lazy" oncontextmenu="return false">
         <div class="caption">
-          <h1>Welcome to Kyu Artz!</h1>
+          <h1 data-translate="welcome">Welcome to Kyu Artz!</h1>
           <p>"Embrace your true self, not the expectations of others, for you are already unique"</p>
           <div class="caption-btn">
-            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> See more</a>
-            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> Inquire now</a>
+            <a href="pages/portfolio.html"><i class="fa-solid fa-eye"></i> <span data-translate="seeMore">See More</span></a>
+            <a href="pages/commission-sheet.html"><i class="fa-solid fa-cart-shopping"></i> <span data-translate="inquire">Inquire Now</span></a>
           </div>
         </div>
       </div>
@@ -314,7 +315,7 @@
     </div>
 
     <div class="video_container">
-      <h1>FEATURED VIDEOS</h1>
+      <h1 data-translate="featuredVideos">FEATURED VIDEOS</h1>
       <div class="carousel">
         <div class="carousel_inner">
           <div class="video">

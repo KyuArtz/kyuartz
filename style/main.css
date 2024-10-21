@@ -105,7 +105,7 @@ p {
     font-size: 0.7rem;
 }
 
-h1, h2, h3, a, button, label, input[type="Submit"],
+h1, h2, h3, a, button, label, span, input[type="Submit"],
 .search-result a,
 .search-result p,
 .main-navigation a,

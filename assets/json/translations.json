@@ -1,0 +1,29 @@
+{
+  "en": {
+    "welcome": "WELCOME TO KYU ARTZ",
+    "caption": "Discover more art created by Kyu Artz",
+    "seeMore": "See More",
+    "inquire": "Inquire Now", 
+    "featuredVideos": "FEATURED VIDEOS",
+    "brand": "Kyu",
+    "home": "HOME",
+    "portfolio": "PORTFOLIO",
+    "about": "ABOUT",
+    "contact": "CONTACT US",
+    "more": "MORE"
+  },
+  
+  "ja": {
+    "welcome": "Kyu Artzへようこそ",
+    "caption": "Kyu Artzによって作られたアートをもっと発見する",
+    "seeMore": "もっと見る",
+    "inquire": "今すぐお問い合わせ",
+    "featuredVideos": "特集動画",
+    "brand": "キュウ",
+    "home": "ホーム",
+    "portfolio": "ポートフォリオ",
+    "about": "について",
+    "contact": "お問い合わせ",
+    "more": "もっと"
+  }
+}
