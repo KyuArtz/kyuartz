@@ -72,7 +72,7 @@
 
 .caption h1 {
     text-shadow: 0 0 5px #000;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 .caption p {
@@ -83,7 +83,6 @@
 .caption p {
   color: #ffffff;
   margin: auto 20px;
-  padding: 13px 0;
 }
 
 .caption-btn {
