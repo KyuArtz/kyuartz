@@ -82,7 +82,7 @@
 .caption h1,
 .caption p {
   color: #ffffff;
-  margin: auto 20px;
+  margin: 15px 20px;
 }
 
 .caption-btn {
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    bottom: 25%;
+    padding: 20px 20px;
     gap: 10px;
     z-index: 1;
 }
@@ -259,7 +259,6 @@ iframe:hover {
 
   .caption-btn {
     flex-direction: column;
-    padding: 0 30px;
   }
 }
 
