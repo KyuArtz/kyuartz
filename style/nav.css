@@ -531,8 +531,10 @@ form.search::after {
 
 /* Footer */
 .footer {
+    display: flex;
+    justify-content: center;
     position: relative;
-    padding: 8px 0;
+    padding: 10px;
     background-image: inherit;
     box-shadow: 0 -1px 0;
     color: inherit;
@@ -547,7 +549,7 @@ form.search::after {
 
 .detail {
     color: inherit;
-    padding: 0 5px;
+    padding: 0 2px;
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
 }
