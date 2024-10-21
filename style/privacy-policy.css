@@ -34,7 +34,6 @@
     color: inherit;
     list-style-image: url("../assets/images/bullet/n-bullet.png");
     padding: 12px;
-    text-align: justify;
 }
 
 .pp-container ul {
@@ -49,6 +48,14 @@
     background: var(--theme-overlay);
     border-radius: 10px;
     margin: 5px;
+}
+
+.pp-item ul {
+    text-align: justify;
+}
+
+.pp-item p {
+    text-align: justify;
 }
 
 

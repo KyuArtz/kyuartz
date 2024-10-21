@@ -19,7 +19,6 @@
 
 .tos-container li {
     color: inherit;
-    text-align: justify;
     list-style: none;
 }
 
@@ -36,6 +35,10 @@
     padding: 12px;
     margin: 5px;
     border-radius: 10px;
+}
+
+.tos-item p {
+    text-align: justify;
 }
 
 .tos-container ul {
