@@ -17,13 +17,13 @@
     padding-top: 90px;
 }
 
-.pp-container h1, 
-.pp-container h2 {
+.pp-container h2,
+.pp-container h3 {
     color: inherit;
     padding: 12px;
 }
 
-.pp-container h1 {
+.pp-container h2 {
     background: inherit;
     border-radius: 10px;
     margin: 0;

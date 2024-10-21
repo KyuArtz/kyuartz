@@ -71,7 +71,7 @@ p {
 }
 
 .maintenance_body h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 }
 
 .maintenance_body p {
@@ -101,8 +101,7 @@ p {
     font-size: 1.3rem;
 }
 
-.footer a,
-.footer p {
+.footer a {
     font-size: 0.7rem;
 }
 
