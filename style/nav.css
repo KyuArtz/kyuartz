@@ -512,9 +512,6 @@ form.search::after {
     .currency-conversion-btn {
         width: 90px;
     }
-    .dropdown-setting {
-        min-width: 120px;
-    }
 
 @media screen and (max-width: 500px) {
     .brand {
