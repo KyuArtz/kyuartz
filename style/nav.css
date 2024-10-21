@@ -19,61 +19,62 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2px;
     margin: 0;
     padding: 0;
 }
 
 .subMenu-container {
     display: flex;
+    align-items: center;
     gap: 5px;
 }
 
 .settings-menu {
-  position: relative;
+    position: relative;
 }
 
 .settings-btn {
-  background: var(--color);
-  color: inherit;
-  padding: 10px 15px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px;
-  border: solid thin;
-  transition: background-color 0.3s ease;
+    background: var(--color);
+    color: inherit;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid thin;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-setting {
-  display: none;
-  position: absolute;
-  background: inherit;
-  min-width: 160px;
-  background: var(--theme-overlay);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 0 3px #000;
-  border-radius: 10px;
-  right: 0;
-  margin: 10px auto;
-  border: solid thin;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background: inherit;
+    min-width: 160px;
+    background: var(--theme-overlay);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 3px #000;
+    border-radius: 10px;
+    right: 0;
+    margin: 10px auto;
+    border: solid thin;
+    z-index: 1;
 }
 
 .dropdown-setting a {
-  padding: 12px 16px;
-  text-decoration: none;
-  color: inherit;
-  display: block;
-  transition: background-color 0.3s ease;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-setting a:hover {
-  color: var(--color);
+    color: var(--color);
 }
 
 .settings-menu.show-settings .dropdown-setting {
-  display: block;
+    display: block;
 }
 
 /* Main Navigation */
@@ -86,7 +87,6 @@ header {
 }
 
 .nav-brand {
-    font-size: 1.7rem;
     font-weight: bold;
     color: inherit;
     display: flex;
@@ -108,13 +108,11 @@ header {
 /* Nav Links */
 .nav-link,
 .nav-link-sideMenu {
-    font-size: 0.9rem;
     color: inherit;
     background: none;
     border: none;
     cursor: pointer;
     padding: 14px 25px 12px;
-    margin: 0 2px;
     transition: color 0.3s ease-in-out;
 }
 
@@ -255,11 +253,6 @@ form.search::after {
     cursor: default;
 }
 
-.search-result,
-.search-result p {
-    font-size: .9rem;
-}
-
 /* Scroll Button */
 #upBtn {
     display: none;
@@ -344,7 +337,6 @@ form.search::after {
 
     .nav-item a,
     .nav-link-sideMenu {
-        font-size: 1.5rem;
         background: none;
         box-shadow: none;
         text-shadow: none;
@@ -381,7 +373,6 @@ form.search::after {
 }
 
 .sideMenu-content h1 {
-    font-size: 1rem;
     color: inherit;
     cursor: default;
     margin: 0;
@@ -389,7 +380,6 @@ form.search::after {
 }
 
 .sideMenu-content a {
-    font-size: 0.9rem;
     color: inherit;
     background: none;
     text-decoration: none;
@@ -427,7 +417,6 @@ form.search::after {
 
 .secondary-navigation h1 {
     text-align: center;
-    font-size: 1.3rem;
     letter-spacing: 3px;
     color: var(--color);
     cursor: default;
@@ -479,7 +468,6 @@ form.search::after {
 }
 
 .category-menu h2 {
-    font-size: 1rem;
     color: inherit;
     cursor: default;
     margin: 0;
@@ -492,7 +480,6 @@ form.search::after {
 
 .category-item a {
     width: 100%;
-    font-size: 0.9rem;
     color: inherit;
     padding: 15px 15px;
     transition: background-color 0.3s ease-in-out;
@@ -528,12 +515,6 @@ form.search::after {
         min-width: 120px;
     }
 
-    .dropdown-setting a,
-    .dropdown-setting p{
-        font-size: 0.8rem;
-    }
-}
-
 @media screen and (max-width: 500px) {
     .brand {
         display: none;
@@ -546,14 +527,13 @@ form.search::after {
     .category-menu {
         width: 100%;
     }
-}
+}}
 
 /* Footer */
 .footer {
     position: relative;
     padding: 8px 0;
     background-image: inherit;
-    font-size: 0.7rem;
     box-shadow: 0 -1px 0;
     color: inherit;
     text-align: center;
@@ -561,13 +541,11 @@ form.search::after {
 
 .copyright p {
     text-align: center;
-    font-size: 0.8rem;
     color: var(--color);
     cursor: default;
 }
 
 .detail {
-    margin-top: 5px;
     color: inherit;
     padding: 0 5px;
     text-decoration: none;

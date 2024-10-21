@@ -35,14 +35,12 @@
 }
 
 .help-section h3 {
-    font-size: 1.5em;
     margin-bottom: 10px;
     color: var(--color);
 }
 
 .help-section p {
     color: var(--defaul-font-color);
-    font-size: 1em;
 }
 
 /* Responsive Design */
@@ -61,13 +59,5 @@
     .help-card {
       width: 100%; /* Full width for mobile */
       margin-bottom: 15px;
-    }
-
-    .help-section h3 {
-      font-size: 1.3em;
-    }
-
-    .help-section p {
-      font-size: 0.9em;
     }
 }

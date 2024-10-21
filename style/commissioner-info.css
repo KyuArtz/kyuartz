@@ -4,7 +4,11 @@
 
 section h1 {
     text-align: center;
-    font-size: 1.6rem;
+}
+
+.slots h1,
+.status h1 {
+    text-align: left;
 }
 
 section h1, h2 {

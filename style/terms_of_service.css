@@ -1,49 +1,14 @@
-/* Default Cursor for .ts-container */
-.ts-container {
+/* Default Cursor for .tos-container */
+.tos-container {
     cursor: default;
 }
 
-/* List Items */
-.ts-container li {
-    color: inherit;
-    padding: 12px;
-    margin: 5px;
-    background: var(--theme-overlay);
-    border-radius: 10px;
-    text-align: justify;
-}
-
-/* Unordered List */
-.ts-container ul {
-    max-width: 1000px;
-    overflow-x: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-
-.ts-container ul a {
-    color: var(--color);
-}
-
-.ts-container ul a:hover {
-    text-decoration: underline;
-}
-
-.ts-container ul li {
-    line-height: 1.6;
-}
-
-/* Hide Scrollbar for WebKit Browsers */
-.ts-container ul::-webkit-scrollbar {
-    display: none;
-}
-
-.background {
+.tos-overlay {
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: url("../assets/images/bg/landscape-mode.webp");
-    background-size: cover;
+    background-image: var(--theme-color);
+    background: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: auto;
@@ -52,12 +17,45 @@
     padding-top: 90px;
 }
 
-/* Responsive Styling */
-@media screen and (max-width: 500px) {
-    .background {
-        background-image: url("../assets/images/bg/portrait-mode.webp");
-    }
-    .ts-container li {
-        font-size: small;
-    }
+.tos-container li {
+    color: inherit;
+    text-align: justify;
+    list-style: none;
+}
+
+.tos-container ul {
+    max-width: 1000px;
+    padding: 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.tos-item {
+    background: var(--theme-overlay);
+    padding: 12px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.tos-container ul {
+    color: var(--default-font-color);
+}
+
+.tos-container a {
+    color: var(--color);
+}
+
+.tos-container a:hover {
+    text-decoration: underline;
+}
+
+.tos-container ul,
+.tos-container li {
+    line-height: 1.6;
+}
+
+/* Hide Scrollbar for WebKit Browsers */
+.tos-container ul::-webkit-scrollbar {
+    display: none;
 }

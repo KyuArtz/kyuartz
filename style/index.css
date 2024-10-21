@@ -36,7 +36,6 @@
     padding: 16px;
     color: var(--color);
     font-weight: bold;
-    font-size: 1.5rem;
     user-select: none;
     transition: background-color 0.5s ease-in-out;
     opacity: 0.5;
@@ -64,7 +63,6 @@
     width: 100%;
     color: var(--default-font-color);
     background-color: var(--overlay);
-    font-size: 1.2rem;
     top: 0;
     text-align: center;
     align-content: center;
@@ -75,7 +73,6 @@
 .caption h1 {
     text-shadow: 0 0 5px #000;
     letter-spacing: 5px;
-    font-size: 4.0rem;
 }
 
 .caption p {
@@ -107,7 +104,6 @@
     border: solid thin;
     color: #ffffff;
     box-shadow: 0 0 5px #000;
-    font-size: 1rem;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -173,7 +169,6 @@
 .video_container h1 {
     cursor: default;
     color: var(--color);
-    font-size: 1.5rem;
 }
 
 /* Carousel */
@@ -222,7 +217,6 @@ iframe:hover {
     color: inherit;
     padding: 15px;
     margin: auto 5px;
-    font-size: 1.0rem;
     border-radius: 50px;
     cursor: pointer;
     position: absolute;
@@ -264,20 +258,9 @@ iframe:hover {
     object-fit: cover;
   }
 
-  .caption {
-    font-size: 0.7rem;
-  }
-  .caption h1 {
-    font-size: 1.9rem;
-  }
-
   .caption-btn {
     flex-direction: column;
     padding: 0 30px;
-  }
-  .caption-btn a {
-    font-size: unset;
-    width: unset;
   }
 }
 

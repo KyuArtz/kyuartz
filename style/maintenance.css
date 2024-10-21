@@ -24,8 +24,6 @@
 
 /* Maintenance Header */
 .maintenance_body h1 {
-    font-size: 3.0rem;
-    font-weight: 500;
     color: var(--color);
     margin: 20px 0 25px;
     border-style: solid;
@@ -37,7 +35,6 @@
 /* Maintenance Paragraph */
 .maintenance_body p {
     color: var(--color);
-    font-size: 1.5rem;
     text-align: center;
     cursor: default;
 }
@@ -65,7 +62,6 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
-    font-size: 0.7rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -74,14 +70,6 @@
 
 /* Media Queries */
 @media screen and (max-width: 500px) {
-    .maintenance_body h1 {
-        font-size: 2.0rem;
-    }
-
-    .maintenance_body p {
-        font-size: 0.9rem;
-    }
-
     .maintenance_body {
         background-image: url("../assets/images/bg/portrait-mode.webp");
     }

@@ -93,7 +93,6 @@ input[type="file"] {
 /* Error Messages */
 #file-error {
     position: relative;
-    font-size: 0.8rem;
     color: rgb(255, 0, 0);
     padding-top: 2px;
     padding-left: 5px;
@@ -104,7 +103,6 @@ input[type="file"] {
 /* Valid Messages */
 #file-valid {
     position: relative;
-    font-size: 0.8rem;
     color: rgb(144, 238, 144);
     padding-top: 2px;
     padding-left: 5px;

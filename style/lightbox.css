@@ -174,7 +174,6 @@ body.lb-disable-scrolling {
 
 /* Caption */
 .lb-data .lb-caption {
-    font-size: 1rem;
     line-height: 1em;
     color: var(--color);
     cursor: default;
@@ -189,7 +188,6 @@ body.lb-disable-scrolling {
     display: block;
     clear: left;
     padding-bottom: 1em;
-    font-size: 0.9rem;
     color: #ffffff;
     cursor: default;
 }

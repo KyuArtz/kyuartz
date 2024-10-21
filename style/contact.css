@@ -30,7 +30,6 @@ form h1 {
 }
 
 .contact-subContent {
-    font-size: 0.8rem;
     cursor: default;
     text-align: center;
     padding: 10px;
@@ -103,7 +102,6 @@ input[type="Submit"] {
 /* Checkbox */
 input[type="checkbox"] {
     cursor: pointer;
-    margin-top: -2px;
 }
 
 /* File Input */
@@ -134,8 +132,9 @@ input[type="file"] {
 .tos-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 2px;
     cursor: default;
-    font-size: small;
 }
 
 /* Terms of Service */
@@ -147,10 +146,11 @@ input[type="file"] {
 
 /* Terms of Service Info Image */
 .tos-info img {
+    display: flex;
+    position: relative;
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    margin-left: 5px;
 }
 
 /* Logo View */
@@ -194,7 +194,6 @@ input[type="file"] {
 #commission-error,
 #file-error {
     position: relative;
-    font-size: 0.8rem;
     color: rgb(255, 0, 0);
     padding-top: 2px;
     padding-left: 5px;
@@ -209,7 +208,6 @@ input[type="file"] {
 #commission-valid,
 #file-valid {
     position: relative;
-    font-size: 0.8rem;
     color: rgb(144, 238, 144);
     padding-top: 2px;
     padding-left: 5px;
@@ -237,9 +235,6 @@ input[type="file"] {
         background-image: url('../assets/images/bg/portrait-mode.webp');
     }
 
-    .popup p {
-        font-size: small;
-    }
     .tos-container {
         justify-content: center;
     }

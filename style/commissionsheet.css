@@ -24,7 +24,6 @@
     padding: 9px;
     letter-spacing: 3px;
     cursor: default;
-    font-size: 1.1rem;
     color: inherit;
     border-radius: 10px;
 }
@@ -35,7 +34,6 @@
     display: inline-block;
     border-radius: 10px;
     cursor: default;
-    font-size: 0.9rem;
     width: inherit;
 }
 
@@ -49,7 +47,6 @@
     margin: 0;
     letter-spacing: 3px;
     text-align: center;
-    font-size: 1rem;
     color: var(--color);
     padding: 9px;
     opacity: 0.9;

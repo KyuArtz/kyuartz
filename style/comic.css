@@ -43,7 +43,6 @@
     padding: 50px 16px;
     color: var(--color);
     font-weight: bold;
-    font-size: 30px;
     transition: 0.6s ease;
     user-select: none;
     opacity: 0.3;
@@ -102,7 +101,6 @@
 
 .comic-title,
 .comic-chapter {
-    font-size: 1.3rem;
     top: 5px;
 }
 
@@ -121,10 +119,6 @@
     width: 100%;
     cursor: default;
     border-radius: 0 0 9px 6px;
-}
-
-.chapter p {
-    font-size: 1.1rem;
 }
 
 /* Button Container */
@@ -163,28 +157,20 @@
 
 /* Responsive Design */
 @media screen and (max-width: 500px) {
-    .next,
-    .prev {
-        font-size: 20px;
-    }
     .mySlides img {
         height: 250px;
         border-radius: 0;
     }
+
     .chapter {
         border-radius: 0;
     }
-    .comic-title,
-    .comic-chapter {
-        font-size: 0.8rem;
-    }
+
     .dot {
         bottom: 45px;
         left: 95px;
     }
-    .dot a {
-        font-size: 0.5rem;
-    }
+    
     .mySlides img:hover {
         border: 0;
         transform: scale(1);
