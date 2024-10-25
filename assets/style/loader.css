@@ -9,6 +9,7 @@
     justify-content: center;
     background: var(--theme-color);
     align-items: center;
+    opacity: 1;
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 300000;
 }

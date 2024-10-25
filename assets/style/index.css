@@ -1,0 +1,285 @@
+.home-container {
+  min-height: 100vh;
+}
+
+/* Slideshow Container */
+.slideshow_container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides.active-slide {
+    display: block;
+}
+
+.mySlides img,
+.mySlides video {
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    background: var(--content-bg);
+}
+
+/* Navigation Buttons */
+.next,
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -32px;
+    padding: 16px;
+    color: var(--color);
+    font-weight: bold;
+    user-select: none;
+    transition: background-color 0.5s ease-in-out;
+    opacity: 0.5;
+}
+
+.next {
+    right: 0;
+    border-radius: 20px 0 0 20px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 20px 20px 0;
+}
+
+.next:hover,
+.prev:hover {
+    opacity: 1;
+    color: var(--color);
+}
+
+/* Captions */
+.caption {
+    position: absolute;
+    width: 100%;
+    color: var(--default-font-color);
+    background-color: var(--overlay);
+    top: 0;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
+    cursor: default;
+}
+
+.caption h1 {
+    text-shadow: 0 0 5px #000;
+    letter-spacing: 3px;
+}
+
+.caption p {
+    text-shadow: 0 0 3px #000;
+}
+
+.caption h1,
+.caption p {
+  color: #ffffff;
+  margin: 15px 20px;
+}
+
+.caption-btn {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    gap: 10px;
+    z-index: 1;
+}
+
+.caption-btn a {
+    padding: 10px;
+    min-width: 15%;
+    border-radius: 50px;
+    border: solid thin;
+    color: #ffffff;
+    box-shadow: 0 0 5px #000;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.caption-btn a:hover {
+    background: var(--color);
+    color: #000000;
+    box-shadow: 0 0 10px var(--color);
+}
+
+/* Dots */
+.home_slider_dot {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.dot {
+    position: relative;
+    bottom: 30px;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 1px;
+    border-radius: 50px;
+    border: solid thin var(--color);
+    transition: background-color 0.5s ease-in-out;
+}
+
+.dot.active-dot,
+.dot:hover {
+    background: var(--color);
+    opacity: 1;
+}
+
+/* Video Container */
+.video_container {
+    display: grid;
+    text-align: center;
+    box-shadow: 0 0 3px #000;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.video_container h1 {
+    cursor: default;
+    color: var(--color);
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel_inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.video {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    padding: 10px;
+}
+
+.video video, iframe {
+    width: 100%;
+    height: 230px;
+    border-radius: 15px;
+    color: inherit;
+    background: var(--content-bg);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.video video:hover,
+iframe:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+/* Carousel Navigation */
+.carousel_nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.carousel_nav button {
+    background: var(--color);
+    border: none;
+    color: inherit;
+    padding: 15px;
+    margin: auto 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0 0 3px #000;
+    transform: translateY(-50%);
+}
+
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
+
+.carousel-prev,
+.carousel-next {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Fade Animation */
+.fade {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+from {
+  opacity: 0.1;
+}
+to {
+  opacity: 1;
+}
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .video {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wn-btn {
+    font-size: small;
+  }
+
+  .mySlides img,
+  .mySlides video {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .caption h1 {
+    font-size: 2rem;
+  }
+
+  .caption p {
+    font-size: 0.6rem;
+  }
+
+  .caption-btn a {
+    font-size: 0.7rem;
+  }
+
+  .caption-btn {
+    flex-direction: column;
+  }
+
+  .caption-btn a {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

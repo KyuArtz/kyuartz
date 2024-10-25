@@ -32,7 +32,7 @@ body {
 /* Custom font style */
 @font-face {
     font-family: myFont;
-    src: url("../assets/fonts/squarefont/Square.ttf");
+    src: url("../fonts/squarefont/Square.ttf");
 }
 
 /* Root Variables */

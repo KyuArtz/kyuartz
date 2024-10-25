@@ -1,0 +1,49 @@
+/* Image Container */
+.image-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Gallery Grid */
+.gallary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr)); /* 273px 5 column : 274px 4 column */
+    margin-top: 100px;
+}
+
+/* Gallery Images */
+.gallary img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect on Gallery Images */
+.gallary img:hover {
+    transform: scale(0.98);
+    border: solid thin var(--color);
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important;
+}  
+
+/* Responsive Styles */
+@media screen and (max-width: 500px) {
+    .gallary,
+    .gallary img {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .gallary img:hover {
+        transform: none;
+        box-shadow: none;
+        border: 0;
+    }
+    .up-container img {
+        left: 0;
+    }
+}
