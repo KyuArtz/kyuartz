@@ -30,15 +30,16 @@ window.onload = function() {
 
 const themeOptions = [
     { name: "Default", value: "default" },
-    { name: "Traditional", value: "traditional"},
     { name: "Darker", value: "darker" },
     { name: "Dark-Red", value: "dark-red"},
-    { name: "White-Red", value: "white-red" },
     { name: "Dark-Purple", value: "dark-purple"},
-    { name: "White-Purple", value: "white-purple"},
     { name: "Dark-Green", value: "dark-green"},
-    { name: "White-Green", value: "white-green"},
     { name: "Dark-Yellow", value: "dark-yellow"},
+    { name: "Modern-White", value: "modern-white"},
+    { name: "White-Blue", value: "white-blue"},    
+    { name: "White-Red", value: "white-red" },
+    { name: "White-Purple", value: "white-purple"},
+    { name: "White-Green", value: "white-green"},
     { name: "White-Yellow", value: "white-yellow"},
 ];
 

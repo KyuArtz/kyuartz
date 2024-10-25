@@ -1,29 +1,87 @@
 {
   "en": {
-    "welcome": "WELCOME TO KYU ARTZ",
-    "caption": "Discover more art created by Kyu Artz",
-    "seeMore": "See More",
-    "inquire": "Inquire Now", 
-    "featuredVideos": "FEATURED VIDEOS",
     "brand": "Kyu",
+    "whatsNew": "",
     "home": "HOME",
     "portfolio": "PORTFOLIO",
     "about": "ABOUT",
     "contact": "CONTACT US",
-    "more": "MORE"
+    "more": "MORE",
+
+    "commissionArt": "",
+    "commissionSheet": "",
+    "commissionInfo": "",
+
+    "explore": "",
+    "myComic": "",
+    "originalCharacter": "",
+    "timeLapseVideo": "",
+    "personalProject": "",
+
+    "serviceInfo": "",
+    "termsOfService": "",
+    "privacyPolicy": "",
+    "faqs": "",
+    "customerSupport": "",
+    "helpCenter": "",
+
+    "welcome": "WELCOME TO KYU ARTZ",
+    "caption": "Discover more art created by Kyu Artz",
+    "caption-2": "",
+    "caption-3": "",
+    "caption-4": "",
+    "caption-5": "",
+    "caption-6": "",
+    "caption-7": "",
+    "caption-8": "",
+    "seeMore": "See More",
+    "inquire": "Inquire Now",
+
+    "featuredVideos": "FEATURED VIDEOS",
+
+    "copyright": ""
   },
   
   "ja": {
-    "welcome": "Kyu Artzへようこそ",
-    "caption": "Kyu Artzによって作られたアートをもっと発見する",
-    "seeMore": "もっと見る",
-    "inquire": "今すぐお問い合わせ",
-    "featuredVideos": "特集動画",
     "brand": "キュウ",
+    "whatsNew": "",
     "home": "ホーム",
     "portfolio": "ポートフォリオ",
     "about": "について",
     "contact": "お問い合わせ",
-    "more": "もっと"
+    "more": "もっと",
+
+    "commissionArt": "",
+    "commissionSheet": "",
+    "commissionInfo": "",
+
+    "explore": "",
+    "myComic": "",
+    "originalCharacter": "",
+    "timeLapseVideo": "",
+    "personalProject": "",
+    
+    "serviceInfo": "",
+    "termsOfService": "",
+    "privacyPolicy": "",
+    "faqs": "",
+    "customerSupport": "",
+    "helpCenter": "",
+
+    "welcome": "Kyu Artzへようこそ",
+    "caption": "Kyu Artzによって作られたアートをもっと発見する",
+    "caption-2": "",
+    "caption-3": "",
+    "caption-4": "",
+    "caption-5": "",
+    "caption-6": "",
+    "caption-7": "",
+    "caption-8": "",
+    "seeMore": "もっと見る",
+    "inquire": "今すぐお問い合わせ",
+    
+    "featuredVideos": "特集動画",
+
+    "copyright": ""
   }
 }

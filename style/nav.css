@@ -58,7 +58,6 @@ header {
     border-radius: 10px;
     right: 0;
     margin: 10px auto;
-    border: solid thin;
     z-index: 1;
 }
 
@@ -94,6 +93,11 @@ header {
     flex-direction: row-reverse;
     align-items: center;
     gap: 5px;
+}
+
+.sbt {
+    margin-top: -1px;
+    color: var(--color);
 }
 
 /* Avatar */
@@ -418,7 +422,6 @@ form.search::after {
 
 .secondary-navigation h1 {
     text-align: center;
-    letter-spacing: 3px;
     color: var(--color);
     cursor: default;
     margin: 0 auto;
