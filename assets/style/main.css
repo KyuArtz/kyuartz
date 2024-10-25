@@ -195,10 +195,6 @@ form.search form.search button, input[type="search"],
     font-family: 'Roboto', sans-serif;
 }
 
-li {
-    list-style-image: url("../assets/images/bullet/n-bullet.png");
-}
-
 a {
     text-decoration: none;
     color: var(--default-font-color);
