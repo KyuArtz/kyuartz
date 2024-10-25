@@ -1,32 +1,32 @@
 // Sample data array (initial commissions)
 const commissions = [
     {
-        commissioner: "Client A",
-        type: "Null",
-        contact: "Null",
-        status: "Null",
-        notes: "Null"
+        commissioner: "NULL",
+        type: "NULL",
+        contact: "NULL",
+        status: "NULL",
+        notes: "NULL"
     },
     {
-        commissioner: "Client B",
-        type: "Null",
-        contact: "Null",
-        status: "Null",
-        notes: "Null"
+        commissioner: "NULL",
+        type: "NULL",
+        contact: "NULL",
+        status: "NULL",
+        notes: "NULL"
     },
     {
-        commissioner: "Client C",
-        type: "Null",
-        contact: "Null",
-        status: "Null",
-        notes: "Null"
+        commissioner: "NULL",
+        type: "NULL",
+        contact: "NULL",
+        status: "NULL",
+        notes: "NULL"
     },
     {
-        commissioner: "Client D",
-        type: "Null",
-        contact: "Null",
-        status: "Null",
-        notes: "Null"
+        commissioner: "NULL",
+        type: "NULL",
+        contact: "NULL",
+        status: "NULL",
+        notes: "NULL"
     }
 ];
 
@@ -54,10 +54,10 @@ renderCommissionList();
 
 const waitlistData = [
     {
-        name: "Client A",
-        commissionType: "Null",
-        contact: "Null",
-        status: "Waiting" 
+        name: "NULL",
+        commissionType: "NULL",
+        contact: "NULL",
+        status: "NULL" 
     }
 ];
 
