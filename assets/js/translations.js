@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch translation data from JSON
-  fetch('../assets/json/translations.json')
+  fetch('assets/json/translations.json')
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
