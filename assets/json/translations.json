@@ -11,7 +11,7 @@
 
     "commissionArt": "COMMISSION ART",
     "commissionSheet": "Commission Sheet",
-    "commissionInfo": "Commission Info",
+    "commissionerInfo": "Commissioner Info",
 
     "explore": "EXPLORE",
     "myComic": "My Comic",
@@ -71,7 +71,7 @@
 
     "commissionArt": "アートの依頼",
     "commissionSheet": "依頼シート",
-    "commissionInfo": "依頼情報",
+    "commissionerInfo": "依頼者情報",
 
     "explore": "探索する",
     "myComic": "私の漫画",
