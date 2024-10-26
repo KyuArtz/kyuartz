@@ -108,7 +108,6 @@
     color: inherit;
     text-align: center;
     position: absolute;
-    font-family: var(--default-font);
     font-size: 0.7rem;
     left: 50%;
     bottom: 5px;
