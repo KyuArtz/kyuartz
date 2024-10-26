@@ -1,3 +1,12 @@
+// Utility function to disable and enable scrolling on the body
+function toggleBodyScroll(disable) {
+  if (disable) {
+      document.body.classList.add('no-scroll');
+  } else {
+      document.body.classList.remove('no-scroll');
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   // Check if the loader has been shown before
   if (localStorage.getItem('loaderDisplayed') === 'true') {
