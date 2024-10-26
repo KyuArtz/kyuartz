@@ -515,8 +515,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = document.createElement('img');
     img.src = image.src;
     img.alt = image.alt;
+    img.setAttribute('draggable', 'false');
+    
     link.appendChild(img);
-
     gallery.appendChild(link);
   });
 
