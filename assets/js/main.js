@@ -5,7 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
       hideLoader();
   } else {
       // Show the loader for the first time
+      document.body.classList.add('no-scroll'); // Disable scroll while loader is active
       localStorage.setItem('loaderDisplayed', 'true');
+      
       window.addEventListener('load', function() {
           // Add a small delay to ensure the page is fully loaded before hiding the loader
           setTimeout(hideLoader, 500); // Adjust the delay as necessary
@@ -14,9 +16,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function hideLoader() {
-  var loader = document.querySelector('.loader');
+  const loader = document.querySelector('.loader');
   if (loader) {
       loader.classList.add('loader-hidden');
+      
+      // Remove scroll restriction when loader is hidden
+      document.body.classList.remove('no-scroll'); 
+      
       // Remove the loader from the DOM once hidden
       setTimeout(function() {
           loader.remove();
@@ -25,23 +31,24 @@ function hideLoader() {
 }
 
 let availableKeywords = [
-  { name: 'Portfolio', url: '../pages/portfolio.html' },
-  { name: 'About', url: '../pages/about.html' },
-  { name: 'Contact Us', url: '../pages/contact.html' },
-  { name: 'Commission Sheet', url: '../pages/commission-sheet.html' },
-  { name: 'Commissioner Information', url: '../pages/commissioner-info.html' },
-  { name: 'Comic', url: '../pages/comic.html' },
-  { name: 'Original Character', url: '../pages/original-character.html' },
-  { name: 'Timelapse Video', url: '../pages/timelapse-video.html' },
-  { name: 'Personal Project', url: '../pages/personal-project.html' },
-  { name: 'Terms of Service', url: '../pages/terms-of-service.html' },
-  { name: 'Privacy Policy', url: '../pages/privacy-policy.html' },
-  { name: 'FAQs', url: '../pages/faq.html' },
-  { name: 'Customer Support', url: '../pages/customer-support.html' },
-  { name: 'Help Center', url: '../pages/help.html' },
-  { name: 'User Guide to KyuArtz', url: '../pages/guide.html' },
-  { name: 'Troubleshooting', url: '../pages/troubleshoot.html' },
-  { name: 'Preferences', url: '../pages/preferences.html' },
+  { name: 'Home', url: '../index.html' },
+  { name: 'Portfolio', url: '../portfolio.html' },
+  { name: 'About', url: '../about.html' },
+  { name: 'Contact Us', url: '../contact.html' },
+  { name: 'Commission Sheet', url: '../commission-sheet.html' },
+  { name: 'Commissioner Information', url: '../commissioner-info.html' },
+  { name: 'Comic', url: '../comic.html' },
+  { name: 'Original Character', url: '../original-character.html' },
+  { name: 'Timelapse Video', url: '../timelapse-video.html' },
+  { name: 'Personal Project', url: '../personal-project.html' },
+  { name: 'Terms of Service', url: '../terms-of-service.html' },
+  { name: 'Privacy Policy', url: '../privacy-policy.html' },
+  { name: 'FAQs', url: '../faq.html' },
+  { name: 'Customer Support', url: '../customer-support.html' },
+  { name: 'Help Center', url: '../help.html' },
+  { name: 'User Guide to KyuArtz', url: '../guide.html' },
+  { name: 'Troubleshooting', url: '../troubleshoot.html' },
+  { name: 'Preferences', url: '../preferences.html' },
   { name: 'Paypal (KyuArtz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },
   { name: 'Facebook (KyuArtz page)', url: 'https://www.facebook.com/KyuArtz' },
   { name: 'Youtube (KyuArtz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
