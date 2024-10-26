@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- SEO Optimization -->
+  <title>KyuArtz | Portfolio</title>
+  <meta name="description" content="Explore the portfolio of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
+  <meta name="keywords" content="KyuArtz">
+  <meta name="author" content="KyuArtz">
+  
+  <!-- Theme color for different platforms -->
+  <meta name="theme-color" content="#1E90FF"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
+  <meta name="msapplication-TileColor" content="#1E90FF"> <!-- For Windows 8 and Windows Phone -->
+
+  <!-- Favicons and Icons -->
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/favicon.ico">
+  <link rel="icon" sizes="32x32" href="assets/images/favicon/favicon.ico">
+  <link rel="icon" sizes="16x16" href="assets/images/favicon/favicon.ico">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/style/main.css" as="style">
+  <link rel="preload" href="assets/style/loader.css" as="style">
+  <link rel="preload" href="assets/style/nav.css" as="style">
+  <link rel="preconnect" href="https://kit.fontawesome.com">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/portfolio.css">
+  <link rel="stylesheet" href="assets/style/nav.css">
+  <link rel="stylesheet" href="assets/style/lightbox.css">
+  <link rel="stylesheet" href="assets/style/loader.css">
+  <link rel="stylesheet" href="assets/style/popup.css">
+
+  <!-- FontAwesome for icons -->
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
+
+  <!-- Defer loading scripts for performance -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/lightbox-plus-jquery.js" defer></script>
+  <script src="assets/js/portfolio-filter.js" defer></script>
+  <script src="assets/js/popup.js" defer></script>
+  <script src="assets/js/translations.js" defer></script>
+  
+
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="KyuArtz | Portfolio">
+  <meta property="og:description" content="Explore the portfolio of KyuArtz, showcasing a collection of artworks, projects, and creative endeavors.">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.jpg">
+  <meta property="og:image:alt" content="KyuArtz logo">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/portfolio">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KyuArtz | Portfolio">
+  <meta name="twitter:description" content="Explore the portfolio of KyuArtz, showcasing a collection of artworks, projects, and creative endeavors.">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.jpg">
+  <meta name="twitter:image:alt" content="KyuArtz logo and branding">
+</head>
+<body>
+
+  <div class="loader" oncontextmenu="return false">
+    <h1 class="loading-text">Loading Webpage...</h1>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
+
+  <div id="overlay"></div>
+  <div id="popup-message">
+    <img src="assets/images/popup/popup-icon.webp" loading="lazy">
+    <h1>Thanks for visiting!</h1>
+    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
+  </div>
+
+  <header>
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+      <!-- Brand and Logo -->
+      <div class="nav-brand" aria-label="KyuArtz Home Page">
+        <p class="sbt">Beta</p>
+        <a href="index.html" class="brand" data-translate="brand">Kyu</a>
+        <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
+      </div>
+  
+      <!-- Search Form -->
+      <form class="search" aria-label="Search KyuArtz">
+        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search" aria-label="Search">
+        <button type="submit" id="search-button" aria-label="Submit search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="search-result" style="display: none;"></div>
+      </form>
+  
+      <!-- Main Navigation Menu -->
+      <ul class="navigation-menu" role="menubar">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
+            <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
+            <i class="fa-regular fa-image"></i> <span data-translate="portfolio">PORTFOLIO</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
+            <i class="fa-regular fa-address-card"></i> <span data-translate="about">ABOUT</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
+            <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
+          </a>
+        </li>
+  
+        <!-- More Dropdown Menu -->
+        <li class="nav-item sideMenu">
+          <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
+            <i class="fa-regular fa-folder"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
+          </a>
+
+          <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
+            <h1 data-translate="commissionArt">Commission Art</h1>
+            <a href="commission-sheet.html" data-page="commission-sheet.html">
+              <i class="fa-regular fa-file"></i> <span data-translate="commissionSheet">Commission Sheet</span>
+            </a>
+            <a href="commissioner-info.html" data-page="commissioner-info.html">
+              <i class="fa-solid fa-table"></i> <span data-translate="commissionInfo">Commissioner info</span>
+            </a>
+            <h1 data-translate="explore">Explore</h1>
+            <a href="comic.html" data-page="comic.html">
+              <i class="fa-solid fa-book"></i> <span data-translate="myComic">My Comic</span>
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-person-rifle"></i> <span data-translate="originalCharacter">Original Character</span>
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-video"></i> <span data-translate="timeLapseVideo">Time lapse video</span>
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-diagram-project"></i> <span data-translate="personalProject">Personal Project</span>
+            </a>
+            <h1 data-translate="serviceInfo">SERVICE INFO</h1>
+            <a href="terms-of-service.html" data-page="terms-of-service.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="termsOfService">Terms of Service</span>
+            </a>
+            <a href="privacy-policy.html" data-page="privacy-policy.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="privacyPolicy">Privacy Policy</span>
+            </a>
+            <a href="faq.html" data-page="faq.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="faqs">FAQs</span>
+            </a>
+            <a href="customer-support.html" data-page="customer-support.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="customerSupport">Customer Support</span>
+            </a>
+            <a href="help.html" data-page="help.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+  
+      <!-- Mobile and Settings Menu -->
+      <div class="subMenu-container">    
+        <div class="settings-menu">
+          <button class="settings-btn" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <div class="dropdown-setting" aria-label="Settings dropdown">
+            <a href="preferences.html">
+              <i class="fa-solid fa-palette"></i> Preferences
+            </a>
+            <a href="privacy-policy.html">
+              <i class="fa-solid fa-user-shield"></i> Privacy
+            </a>
+            <a href="help.html">
+              <i class="fa-regular fa-circle-question"></i> Help Center
+            </a>
+          </div>
+        </div>
+        <div class="hamburger" aria-label="Mobile menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Secondary-Navigation-->
+  <nav class="secondary-navigation">
+    <h1>MY WORK</h1>
+    <div class="category-btn" title="Category">
+      <span class="category-dot"></span>
+      <span class="category-dot"></span>
+      <span class="category-dot"></span>
+    </div>
+    <div class="category-container">
+      <ul class="category-menu">
+        <h2>Category</h2>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="all"><i class="fa-solid fa-filter"></i> All</a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="semi-realism"><i class="fa-solid fa-filter"></i> Semi realism</a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="grayscale"><i class="fa-solid fa-filter"></i> Grayscale</a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="anime-style"><i class="fa-solid fa-filter"></i> Anime style</a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="landscape"><i class="fa-solid fa-filter"></i> Landscape</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="image-container">
+    <div class="gallary" id="gallery">
+      <!-- JavaScript will dynamically insert images here -->
+    </div>
+  </div>
+
+  <button type="button" onclick="topFunction()" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+  <div class="footer">
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> KyuArtz, All rights reserved</p>
+      <div class="footer-container">
+        <a class="detail" href="pages/terms-of-service.html"> Terms of Service</a>
+        <a class="detail" href="pages/privacy-policy.html"> Privacy Policy</a>
+        <a class="detail" href="pages/faq.html"> FAQs</a>
+        <a class="detail" href="pages/customer-support.html"> Customer Support</a>
+        <a class="detail" href="pages/contact.html"> Contact Us</a>
+        <a class="detail" href="pages/help.html"> Help Center</a>
+        <div class="social">
+          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

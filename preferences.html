@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
   <!-- SEO Optimization -->
-  <title>KyuArtz | Customer Support</title>
-  <meta name="description" content="Contact KyuArtz for customer support, inquiries, or assistance with any services.">
+  <title>KyuArtz | Preferences</title>
+  <meta name="description" content="Customize your KyuArtz experience by selecting your preferred theme and other settings.">
   <meta name="keywords" content="KyuArtz">
   <meta name="author" content="KyuArtz">
   
@@ -17,45 +17,44 @@
   <meta name="msapplication-TileColor" content="#1E90FF"> <!-- For Windows 8 and Windows Phone -->
 
   <!-- Favicons and Icons -->
-  <link rel="shortcut icon" type="image/png" href="../assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/favicon.ico">
-  <link rel="icon" sizes="32x32" href="../assets/images/favicon/favicon.ico">
-  <link rel="icon" sizes="16x16" href="../assets/images/favicon/favicon.ico">
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/favicon.ico">
+  <link rel="icon" sizes="32x32" href="assets/images/favicon/favicon.ico">
+  <link rel="icon" sizes="16x16" href="assets/images/favicon/favicon.ico">
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="../assets/style/main.css" as="style">
-  <link rel="preload" href="../assets/style/loader.css" as="style">
-  <link rel="preload" href="../assets/style/nav.css" as="style">
+  <link rel="preload" href="assets/style/main.css" as="style">
+  <link rel="preload" href="assets/style/loader.css" as="style">
+  <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="../assets/style/main.css">
-  <link rel="stylesheet" href="../assets/style/customer-support.css">
-  <link rel="stylesheet" href="../assets/style/nav.css">
-  <link rel="stylesheet" href="../assets/style/popup.css">
-  <link rel="stylesheet" href="../assets/style/loader.css">
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/preferences.css">
+  <link rel="stylesheet" href="assets/style/nav.css">
+  <link rel="stylesheet" href="assets/style/loader.css">
+  <link rel="stylesheet" href="assets/style/popup.css">
 
-  <!-- Font Awesome Icons -->
+  <!-- FontAwesome for icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
 
-  <!-- Defer JavaScript for Faster Load -->
-  <script src="../assets/js/main.js" defer></script>
-  <script src="../assets/js/nav.js" defer></script>
-  <script src="../assets/js/popup.js" defer></script>
-  <script src="../assets/js/translations.js" defer></script>
+  <!-- Scripts deferred for performance -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/popup.js" defer></script>
+  <script src="assets/js/translations.js"></script>
 
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="KyuArtz | Customer Support">
-  <meta property="og:description" content="Get in touch with KyuArtz for customer support, assistance with services, or inquiries.">
+  <!-- Open Graph Tags for Social Sharing -->
+  <meta property="og:title" content="KyuArtz | Preferences">
+  <meta property="og:description" content="Customize your KyuArtz experience by selecting your preferred theme and more.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.jpg">
-  <meta property="og:image:alt" content="KyuArtz logo">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/customer-support">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/preferences">
   <meta property="og:type" content="website">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz | Privacy Policy">
-  <meta name="twitter:description" content="Get in touch with KyuArtz for customer support, assistance with services, or inquiries.">
+  <meta name="twitter:title" content="KyuArtz | Preferences">
+  <meta name="twitter:description" content="Customize your KyuArtz experience by selecting your preferred theme and more.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.jpg">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
 </head>
@@ -70,14 +69,14 @@
 
   <div id="overlay"></div>
   <div id="popup-message">
-    <img src="../assets/images/popup/popup-icon.webp" loading="lazy">
+    <img src="assets/images/popup/popup-icon.webp" loading="lazy">
     <h1>Thanks for visiting!</h1>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="pages/privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies">Got It</button>
   </div>
 
@@ -86,8 +85,8 @@
       <!-- Brand and Logo -->
       <div class="nav-brand" aria-label="KyuArtz Home Page">
         <p class="sbt">Beta</p>
-        <a href="../index.html" class="brand" data-translate="brand">Kyu</a>
-        <img src="../assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
+        <a href="index.html" class="brand" data-translate="brand">Kyu</a>
+        <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
       </div>
   
       <!-- Search Form -->
@@ -102,7 +101,7 @@
       <!-- Main Navigation Menu -->
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
-          <a href="../index.html" class="nav-link" data-page="index.html" role="menuitem">
+          <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
             <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
           </a>
         </li>
@@ -196,100 +195,20 @@
     </nav>
   </header>
 
-  <div class="customer-support-container">
-    <form class="customer" id="supportForm" action="https://api.web3forms.com/submit" method="POST">
-      <h1>CUSTOMER SUPPORT</h1>
-      <input type="hidden" name="access_key" value="19cfb576-ef37-4a40-b621-64caca87bbf1">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      
-      <label for="email">Email Address:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      
-      <label for="reference">Order/Commission Reference (if applicable):</label><br>
-      <input type="text" id="reference" name="reference"><br><br>
-      
-      <label for="issueType">Issue Type:</label><br>
-      <select id="issueType" name="issueType" required>
-        <option value="technical">Technical Issue</option>
-        <option value="payment">Payment Issue</option>
-        <option value="order">Order/Commission Inquiry</option>
-        <option value="general">General Question</option>
-        <option value="other">Other</option>
-      </select><br><br>
-      
-      <label for="description">Description of Issue:</label><br>
-      <textarea id="description" name="description" rows="5" required></textarea><br><br>
+  <div id="preferences-container">
+    <h1>Your Preferences</h1>
+    <p><i class="fa-solid fa-palette"></i> Select Theme :</p>
+    <select id="theme-select" onchange="changeTheme(this.value)">
+        <!-- Theme options will be dynamically populated here -->
+    </select>
 
-      <label for="fileUpload">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span><br>
-      <input type="file" accept="image/jpeg, image/png, image/jpg" id="fileUpload" name="fileUpload" onchange="validateFile()"><br><br>
-      
-      <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: auto;">
-      
-      <button id="remove-btn" style="display:none;" onclick="removeFile()">Remove</button>
-
-      <input type="submit" value="Submit">
-    </form>
-
-    <script>
-      function validateFile() {
-      const fileInput = document.getElementById('fileUpload');
-      const previewImage = document.getElementById('image-preview');
-      const fileError = document.getElementById('file-error');
-      const removeBtn = document.getElementById('remove-btn');
-      const allowedFormats = ['image/jpeg', 'image/png', 'image/jpg']; 
-      const maxFileSize = 2 * 1024 * 1024; // 2MB size limit
-
-      fileError.textContent = '';
-      previewImage.style.display = 'none';
-      removeBtn.style.display = 'none';
-
-      const file = fileInput.files[0];
-      if (file) {
-          const fileType = file.type;
-          const fileSize = file.size;
-
-          if (!allowedFormats.includes(fileType)) {
-              fileError.textContent = 'Invalid format. Only JPEG, PNG, and JPG are supported.';
-              fileInput.value = '';
-              return;
-          }
-
-          if (fileSize > maxFileSize) {
-              fileError.textContent = 'File is too large. Maximum file size is 2MB.';
-              fileInput.value = '';
-              return;
-          }
-
-          // Show image preview
-          const reader = new FileReader();
-          reader.onload = function(e) {
-              previewImage.src = e.target.result;
-              previewImage.style.display = 'block';
-          };
-          reader.readAsDataURL(file);
-
-          removeBtn.style.display = 'inline-block';
-      }
-    }
-
-    function removeFile() {
-      const fileInput = document.getElementById('fileUpload');
-      const previewImage = document.getElementById('image-preview');
-      const removeBtn = document.getElementById('remove-btn');
-
-      fileInput.value = '';
-      previewImage.style.display = 'none';
-      removeBtn.style.display = 'none';
-    }
-    </script>
-    
-    <script>
-      document.getElementById('supportForm').addEventListener('submit', function() {
-        alert('THANK YOU FOR CONTACTING CUSTOMER SUPPORT. WE WILL GET BACK TO YOU SHORTLTY.');
-      });
-    </script>    
+    <!-- Language Switcher -->
+    <p><i class="fa-solid fa-language"></i> Select Language : ( BETA )</p>
+    <select id="languageSwitcher">
+      <option value="en">English</option>
+      <option value="ja">日本語</option> <!-- Japanese -->
+    </select> 
   </div>
-
+    
 </body>
 </html>
