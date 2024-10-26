@@ -1,5 +1,6 @@
 {
   "en": {
+    "loading": "Loading Webpage...",
     "brand": "Kyu",
     "whatsNew": "WHAT'S NEW?",
     "home": "HOME",
@@ -59,6 +60,7 @@
   },
   
   "ja": {
+    "loading": "ウェブページを読み込み中...",
     "brand": "キュウ",
     "whatsNew": "新着情報",
     "home": "ホーム",
