@@ -188,10 +188,11 @@ h1, h2, h3, a, label, span, button, input[type="Submit"],
     font-family: myFont;
 }
 
-form.search form.search button, input[type="search"],
+form.search button, input[type="search"],
 .sideMenu-content a,
 .category-menu a,
-.settings-menu a {
+.settings-menu a,
+.popup a {
     font-family: 'Roboto', sans-serif;
 }
 
