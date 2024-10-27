@@ -25,13 +25,11 @@
     border-style: solid;
     border-width: 0 0 thin 0;
     text-align: center;
-    cursor: default;
 }
 
 /* Maintenance Paragraph */
 .maintenance_body p {
     text-align: center;
-    cursor: default;
 }
 
 /* Maintenance Button Container */

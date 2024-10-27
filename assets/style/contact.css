@@ -26,11 +26,9 @@ form.contact {
 /* Title */
 form h1 {
     text-align: center;
-    cursor: default;
 }
 
 .contact-subContent {
-    cursor: default;
     text-align: center;
     padding: 10px;
     background: var(--theme-overlay);
@@ -134,7 +132,6 @@ input[type="file"] {
     justify-content: flex-end;
     align-items: center;
     gap: 2px;
-    cursor: default;
 }
 
 /* Terms of Service */
@@ -198,7 +195,6 @@ input[type="file"] {
     padding-top: 2px;
     padding-left: 5px;
     transition: 0.3s ease-in-out;
-    cursor: default;
 }
 
 /* Valid Messages */
@@ -212,7 +208,6 @@ input[type="file"] {
     padding-top: 2px;
     padding-left: 5px;
     transition: 0.3s ease-in-out;
-    cursor: default;
 }
 
 /* Responsive Design */

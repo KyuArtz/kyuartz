@@ -59,7 +59,6 @@
     color: inherit;
     border: thin solid;
     border-radius: 50px;
-    cursor: pointer;
 }
 
 /* Popup Container */
@@ -127,7 +126,6 @@
     border: solid thin;
     outline: none;
     border-radius: 50px;
-    cursor: pointer;
     transition: none;
 }
 
@@ -162,7 +160,6 @@
     border-radius: 10px;
     background: var(--color);
     color: inherit;
-    cursor: pointer;
     outline: none;
     aspect-ratio: 1 / 1;
     box-shadow: 0 0 3px #000;
@@ -284,7 +281,6 @@
     color: inherit;
     outline: none;
     border-radius: 50px;
-    cursor: pointer;
     transition: none;
 }
 
@@ -321,7 +317,6 @@
     color: inherit;
     border: solid thin;
     padding: 10px 30px;
-    cursor: pointer;
     border-radius: 50px;
 }
 

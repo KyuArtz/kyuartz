@@ -173,6 +173,10 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
+h1, h2, h3, p {
+    cursor: default;
+}
+
 h1, h2, h3, a, label, span, button, input[type="Submit"],
 .search-result a,
 .search-result p,

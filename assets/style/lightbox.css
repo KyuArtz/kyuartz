@@ -176,7 +176,6 @@ body.lb-disable-scrolling {
 .lb-data .lb-caption {
     line-height: 1em;
     color: var(--color);
-    cursor: default;
 }
 
 .lb-data .lb-caption a {
@@ -189,7 +188,6 @@ body.lb-disable-scrolling {
     clear: left;
     padding-bottom: 1em;
     color: #ffffff;
-    cursor: default;
 }
 
 /* Close Button */

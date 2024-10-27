@@ -20,7 +20,6 @@
     position: absolute;
     bottom: 35%;
     transition: inherit;
-    cursor: default;
     letter-spacing: 3px;
     animation: flicker 1s infinite;
 }

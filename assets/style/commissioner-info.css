@@ -16,10 +16,6 @@ section h1, h2 {
     padding: 10px;
 }
 
-section {
-    cursor: default;
-}
-
 section p {
     padding: 0 10px;
 }

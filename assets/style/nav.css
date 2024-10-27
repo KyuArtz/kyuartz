@@ -40,7 +40,6 @@ header {
     color: inherit;
     padding: 10px 15px;
     border: none;
-    cursor: pointer;
     border-radius: 10px;
     border: solid thin;
     transition: background-color 0.3s ease;
@@ -116,7 +115,6 @@ header {
     color: inherit;
     background: none;
     border: none;
-    cursor: pointer;
     padding: 14px 25px 12px;
     transition: color 0.3s ease-in-out;
 }
@@ -162,7 +160,6 @@ header {
 /* Hamburger Menu */
 .hamburger {
     display: none;
-    cursor: pointer;
 }
 
 .bar {
@@ -196,7 +193,6 @@ form.search button {
     border-radius: 50px 0 0 50px;
     background: var(--color);
     color: var(--default-font-color);
-    cursor: pointer;
 }
 
 form.search input[type="search"],
@@ -268,7 +264,6 @@ form.search::after {
     height: 50px;
     border-radius: 50px;
     background: var(--color);
-    cursor: pointer;
     border: none;
     outline: none;
     aspect-ratio: 1 / 1;
@@ -437,7 +432,6 @@ form.search::after {
     padding: 5px;
     border: thin solid;
     border-radius: 50px;
-    cursor: pointer;
     transition: 0.5s ease-in-out;
 }
 
@@ -448,7 +442,6 @@ form.search::after {
     margin: 1px;
     background: var(--color);
     border-radius: 50%;
-    cursor: pointer;
 }
 
 /* Category Menu */
@@ -508,7 +501,6 @@ form.search::after {
     color: inherit;
     outline: none;
     background: var(--color);
-    cursor: pointer;
 }
 
 @media (max-width: 600px) {
