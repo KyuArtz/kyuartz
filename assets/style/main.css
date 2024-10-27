@@ -204,7 +204,7 @@ form.search button, input[type="search"],
 a {
     text-decoration: none;
     color: var(--default-font-color);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 a.brand,
