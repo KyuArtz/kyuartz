@@ -3,15 +3,12 @@
     width: 100%;
     height: 100%;
     position: fixed;
+    background-image: url("../images/bg/landscape-mode.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 30px 30px;
-    color: var(--color);
-    border-style: solid;
-    border-width: 0 0 thick 0;
     z-index: 1;
-    background-image: url("../images/bg/landscape-mode.webp");
 }
 
 /* Background Overlay */
@@ -25,7 +22,6 @@
 /* Maintenance Header */
 .maintenance_body h1 {
     color: var(--color);
-    margin: 20px 0 25px;
     border-style: solid;
     border-width: 0 0 thin 0;
     text-align: center;
@@ -34,7 +30,6 @@
 
 /* Maintenance Paragraph */
 .maintenance_body p {
-    color: var(--color);
     text-align: center;
     cursor: default;
 }
@@ -76,6 +71,7 @@
 
     .maintenance_button {
         height: 100%;
+        border: 0;
         z-index: -1;
     }
 }
