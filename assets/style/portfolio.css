@@ -2,13 +2,15 @@
 .image-container {
     width: 100%;
     min-height: 100vh;
+    margin-top: 100px;
+    padding: 5px;
 }
 
 /* Gallery Grid */
 .gallary {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(273px, 1fr)); /* 273px 5 column : 274px 4 column */
-    margin-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 5px;
 }
 
 /* Gallery Images */
@@ -16,6 +18,8 @@
     width: 100%;
     height: 100%;
     aspect-ratio: 1/1;
+    background: #ffffff;
+    border-radius: 10px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease-in-out;

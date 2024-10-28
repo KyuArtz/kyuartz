@@ -516,6 +516,7 @@ document.addEventListener("DOMContentLoaded", () => {
     img.src = image.src;
     img.alt = image.alt;
     img.setAttribute('draggable', 'false');
+    img.loading = 'lazy';
     
     link.appendChild(img);
     gallery.appendChild(link);
