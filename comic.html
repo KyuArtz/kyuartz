@@ -53,7 +53,7 @@
   <!-- Open Graph Tags for better sharing -->
   <meta property="og:title" content="KyuArtz | My Comic">
   <meta property="og:description" content="Explore KyuArtz, a creative portfolio featuring comics, art, and projects.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.jpg">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/pages/comic">
   <meta property="og:type" content="website">
@@ -62,7 +62,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Privacy Policy">
   <meta name="twitter:description" content="Explore KyuArtz, a creative portfolio featuring comics, art, and projects.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.jpg">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
 
   <script type="application/ld+json">
@@ -254,10 +254,10 @@
     </ul>    
   </nav>
 
-  <div class="top-spacing">
+  <div class="comic-container">
     <div class="slideshow-container" data-category="sci-fi post-apocalyptic">
       <div class="mySlides fade">
-        <div class="comic-title">WASTELAND
+        <div class="comic-title">Fragments of Decay
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">Prologue</div>
@@ -266,7 +266,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">WASTELAND
+        <div class="comic-title">Fragments of Decay
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">1 / 5</div>
@@ -275,7 +275,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">WASTELAND
+        <div class="comic-title">Fragments of Decay
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">2 / 5</div>
@@ -284,7 +284,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">WASTELAND
+        <div class="comic-title">Fragments of Decay
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">3 / 5</div>
@@ -293,7 +293,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">WASTELAND
+        <div class="comic-title">Fragments of Decay
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">4 / 5</div>
@@ -302,7 +302,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">WASTELAND
+        <div class="comic-title">Fragments of Decay
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">5 / 5</div>
@@ -322,11 +322,15 @@
           <span class="dot"><a href="maintenance.html">4</a></span>
           <span class="dot"><a href="maintenance.html">5</a></span>
         </div>
+        <div class="description">
+          <button type="button" title="Description" data-comic="type1" onclick="showDescription(this)"><i class="fa-solid fa-question"></i></button>
+        </div>
       </div>
     </div>
+    
     <div class="slideshow-container" data-category="fantasy adventure">
       <div class="mySlides fade">
-        <div class="comic-title">LEGEND OF THE CRYSTALIGHT
+        <div class="comic-title">Legend Of The Crystalight
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">Prologue</div>
@@ -335,7 +339,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">LEGEND OF THE CRYSTALIGHT
+        <div class="comic-title">Legend Of The Crystalight
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">1 / 3</div>
@@ -344,7 +348,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">LEGEND OF THE CRYSTALIGHT
+        <div class="comic-title">Legend Of The Crystalight
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">2 / 3</div>
@@ -353,7 +357,7 @@
         </a>
       </div>
       <div class="mySlides fade">
-        <div class="comic-title">LEGEND OF THE CRYSTALIGHT
+        <div class="comic-title">Legend Of The Crystalight
           <span>(Coming Soon)</span>
         </div>
         <div class="comic-chapter">3 / 3</div>
@@ -371,7 +375,20 @@
           <span class="dot"><a href="maintenance.html">2</a></span>
           <span class="dot"><a href="maintenance.html">3</a></span>
         </div>
+        <div class="description">
+          <button type="button" title="Description" data-comic="type2" onclick="showDescription(this)"><i class="fa-solid fa-question"></i></button>
+        </div>
       </div>
+    </div>
+  </div>
+
+  <div id="description-popup" class="description-overlay">
+    <div class="comic-content">
+        <span class="close" onclick="closeDescription()">&times;</span>
+        <h2 id="comic-title"></h2>
+        <div class="text-content">
+          <p id="comic-description"></p>
+        </div>
     </div>
   </div>
 

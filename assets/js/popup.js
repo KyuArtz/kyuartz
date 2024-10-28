@@ -2,7 +2,7 @@
 function toggleWn() {
   const popupWn = document.getElementById("popup-wn");
   const toggleBtn = document.getElementById("toggleWnBtn");
-  
+
   if (popupWn.classList.contains("open-popup-wn")) {
       // Close the popup
       togglePopup("popup-wn", "close", "open-popup-wn");
@@ -15,12 +15,12 @@ function toggleWn() {
 }
 
 // Open and Close Popup Functions for other popups
-function openPopup() {
-  togglePopup("popup", "open", "open-popup");
+function openNotice() {
+  togglePopup("notice", "open", "open-notice");
 }
 
-function closePopup() {
-  togglePopup("popup", "close", "open-popup");
+function closeNotice() {
+  togglePopup("notice", "close", "open-notice");
 }
 
 function openDonate() {
@@ -29,6 +29,12 @@ function openDonate() {
 
 function closeDonate() {
   togglePopup("donate-popup", "close", "open-donate");
+}
+
+// General Toggle Popup Function
+function togglePopup(id, action, openClass) {
+  const popup = document.getElementById(id);
+  popup.classList[action === "open" ? "add" : "remove"](openClass);
 }
 
 // Cookie pop-up logic
@@ -68,6 +74,7 @@ function closePopupMessage() {
   popupMessage.style.display = 'none';
 }
 
+// Utility Functions for Cookies
 function setCookie(name, value, days) {
   var expires = "";
   if (days) {
@@ -92,3 +99,41 @@ function getCookie(name) {
   }
   return null;
 }
+
+// Comic titles and descriptions
+const comicData = {
+  type1: {
+      title: "FRAGMENTS OF DECAY",
+      description: "In a future where humanity has achieved peace and technological advancement, tensions simmer beneath the surface, as minor conflicts arise between the Alliance and Resistance. However, everything changes when fragments of a mysterious meteor crash into Terra. The meteor brings with it an unknown, highly contagious dust that infects living beings, transforming them into terrifying hybrid creatures known as Corruptors. These monstrous beings, mutated with alien traits, come in multiple forms, each more deadly than the last. As the contagion spreads, society crumbles. Once-thriving cities descend into chaos, with governments collapsing and survivors turning rogue. Amid the destruction, groups form factions, each with a different vision for humanity's survival. Some factions work together to restore order and unite people, while others give in to brutality and selfishness, leading to inhumane acts that fracture alliances. With humanity on the brink of extinction, war erupts not only against the Corruptors but also among the survivors themselves. As new enemies emerge and darkness encroaches, humanity’s last hope rests in the resilience of those willing to stand together—or perish apart."
+  },
+  type2: {
+      title: "LEGEND OF THE CRYSTALIGHT",
+      description: ""
+  },
+  // Add more types as needed
+};
+
+function showDescription(button) {
+  // Get the comic type from the data attribute
+  const comicType = button.getAttribute("data-comic");
+  // Get the corresponding title and description
+  const comicInfo = comicData[comicType];
+  // Set the title and description in the popup
+  document.getElementById("comic-title").innerText = comicInfo.title;
+  document.getElementById("comic-description").innerText = comicInfo.description;
+  // Display the popup
+  document.getElementById("description-popup").style.display = "block";
+}
+
+function closeDescription() {
+  // Hide the popup
+  document.getElementById("description-popup").style.display = "none";
+}
+
+// Optional: Close popup when clicking outside of it
+window.onclick = function(event) {
+  const popup = document.getElementById("description-popup");
+  if (event.target == popup) {
+      popup.style.display = "none";
+  }
+};

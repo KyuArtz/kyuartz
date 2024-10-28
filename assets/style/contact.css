@@ -142,12 +142,16 @@ input[type="file"] {
 }
 
 /* Terms of Service Info Image */
-.tos-info img {
+.tos-info button {
     display: flex;
-    position: relative;
-    width: 15px;
-    height: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
+    border: solid thin;
+    color: var(--default-font-color);
+    background-color: var(--color);
 }
 
 /* Logo View */

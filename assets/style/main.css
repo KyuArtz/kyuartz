@@ -66,7 +66,7 @@ body {
 /* White Blue theme */
 .theme-white-blue {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
-    --default-font-color: #1f1f1f;
+    --default-font-color: #333;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
     --hover-light: #1ac3da;
@@ -106,7 +106,7 @@ body {
 /* Red theme */
 .theme-white-red {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
-    --default-font-color: #1f1f1f;
+    --default-font-color: #333;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
     --hover-light: #da1a1a;
@@ -126,7 +126,7 @@ body {
 /* White Purple theme */
 .theme-white-purple {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
-    --default-font-color: #1f1f1f;
+    --default-font-color: #333;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
     --hover-light: #c43cff;
@@ -146,7 +146,7 @@ body {
 /* White Green theme */
 .theme-white-green {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
-    --default-font-color: #1f1f1f;
+    --default-font-color: #333;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
     --hover-light: #3cffc4;
@@ -166,7 +166,7 @@ body {
 /* White Yellow theme */
 .theme-white-yellow {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
-    --default-font-color: #1f1f1f;
+    --default-font-color: #333;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
     --hover-light: #ffc43c;
@@ -201,7 +201,7 @@ form.search button, input[type="search"],
 .sideMenu-content a,
 .category-menu a,
 .settings-menu a,
-.popup a {
+.popup-notice a {
     font-family: 'Roboto', sans-serif;
 }
 
