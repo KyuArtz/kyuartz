@@ -89,17 +89,17 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="overlay"></div>
-  <div id="popup-message">
+  <div id="welcome-overlay"></div>
+  <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
-    <h1>Thanks for visiting!</h1>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+    <h1 data-translate="welcomeTitle">Thanks for visiting!</h1>
+    <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies">Got It</button>
+    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies" data-translate="okay">Okay</button>
   </div>
 
   <header>
@@ -113,7 +113,7 @@
   
       <!-- Search Form -->
       <form class="search" aria-label="Search KyuArtz">
-        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search" aria-label="Search">
+        <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
         <button type="submit" id="search-button" aria-label="Submit search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>

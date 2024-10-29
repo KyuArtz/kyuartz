@@ -1,6 +1,13 @@
 {
   "en": {
     "loading": "Loading Webpage...",
+    "welcomeTitle": "Thanks for visiting!",
+    "welcomeText": "I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.",
+    "cookieText": "KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.",
+    "okay": "Okay",
+    "close": "Close",
+    "remove": "Remove",
+    
     "brand": "Kyu",
     "whatsNew": "WHAT'S NEW?",
     "home": "HOME",
@@ -8,6 +15,41 @@
     "about": "ABOUT",
     "contact": "CONTACT US",
     "more": "MORE",
+
+    "portfolioTitle": "MY WORK",
+    "commissionTitle": "SAMPLES",
+    "comicTitle": "COMIC",
+
+    "summaryTitle": "SUMMARY",
+    "summaryText": "Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm. Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities and gain more experience. Despite being a self-learner, I remain persistent and never give up. After four years of focusing on traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While adapting to the challenges presented by digital art techniques, I eventually became comfortable with the process.",
+    "experienceTitle": "EXPERIENCE",
+    "experience-1": "Self Taught",
+    "experience-2": "Freelance",
+    "programUsed": "PROGRAMS I USE TO DRAW",
+    "myInfo-1": "Digital Illustrator",
+    "myInfo-2": "Character Designer",
+    "myInfo-3": "Concept Artist",
+
+    "contactTitle": "COMMISSION FORM",
+    "name": "Name:",
+    "email": "Email:",
+    "commmissionType": "Commission Type:",
+    "commmissionDetails": "Commmission Details:",
+    "uploadSample": "Upload Sample: (Optional)",
+    "tosCheckbox": "Agree to terms of service",
+    "submit": "Submit",
+
+    "notice": "NOTICE",
+    "noticeText": "By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.",
+
+    "qrCode": "CHOOSE QR CODE",
+    "paypal": "Paypal",
+    "maya": "Maya",
+    "gcash": "Gcash",
+
+    "modePayment": "MODE OF PAYMENT & INFO:",
+    "queue": "After submitting your inquiry, you can",
+    "directEmail": "Direct Email:",
 
     "commissionArt": "COMMISSION ART",
     "commissionSheet": "Commission Sheet",
@@ -21,7 +63,7 @@
 
     "serviceInfo": "SERVICE INFO",
     "termsOfService": "Terms of Service",
-    "preferences": "preferences",
+    "preferences": "Preferences",
     "privacyPolicy": "Privacy Policy",
     "faqs": "FAQS",
     "customerSupport": "Customer Support",
@@ -43,7 +85,7 @@
     "adventure": "Adventure",
 
     "welcome": "WELCOME TO KYU ARTZ",
-    "caption-1": "Discover more art created by Kyu Artz",
+    "caption-1": "Discover more art created by Kyu",
     "caption-2": "Happiness is a journey, not a destination. Allow yourself the freedom to experience life as it comes, and happiness often follows when we least expect it",
     "caption-3": "Cherish every moment that brings you happiness, for one day it will become a fragment of your memories",
     "caption-4": "Everyone cherishes the day over the night, but few realize the hidden beauty the night holds",
@@ -61,6 +103,13 @@
   
   "ja": {
     "loading": "ウェブページを読み込み中...",
+    "welcomeTitle": "ご訪問いただきありがとうございます！",
+    "welcomeText": "お越しいただき嬉しいです！私のポートフォリオで作品をご覧いただければ幸いです。ご依頼に興味がある場合は、ぜひお気軽にお問い合わせください。",
+    "cookieText": "KyuArtzは、ユーザー体験を向上させるためにクッキーを使用しています。当サイトを引き続きご利用いただくことで、クッキーポリシーに同意いただいたものとみなします。",
+    "okay": "OK",
+    "close": "閉じる",
+    "remove": "削除",
+ 
     "brand": "キュウ",
     "whatsNew": "新着情報",
     "home": "ホーム",
@@ -68,6 +117,41 @@
     "about": "概要",
     "contact": "お問い合わせ",
     "more": "もっと見る",
+
+    "portfolioTitle": "私の作品",
+    "commissionTitle": "サンプル",
+    "comicTitle": "コミック",
+
+    "summaryTitle": "概要",
+    "summaryText": "こんにちは、Kyuです。幼少期から絵を描くことに情熱を注いできた独学のフリーランスアーティストです。長年にわたり、技術の向上と自己研鑽に励んできました。描くことは私の人生における常であり、自由時間にはスキルを高めるため、また経験を積むためにアート制作を続けています。独学であるにもかかわらず、私は粘り強く努力を続け、決して諦めません。4年間、伝統的な描画方法に集中した後、自分の作品に明らかな進歩を感じ始めました。ソーシャルメディアでデジタルアートが人気を博していることに興味を持ち、この分野に挑戦することを決めました。最初の作品にはMicrosoft PaintやAdobe Illustratorを使用し、デジタルアートの技術に適応する中で、次第にそのプロセスに慣れていきました。",
+    "experienceTitle": "経験",
+    "experience-1": "独学",
+    "experience-2": "フリーランス",
+    "programUsed": "使用しているプログラム",
+    "myInfo-1": "デジタルイラストレーター",
+    "myInfo-2": "キャラクターデザイナー",
+    "myInfo-3": "コンセプトアーティスト",
+
+    "contactTitle": "依頼フォーム",
+    "name": "名前：",
+    "email": "メールアドレス：",
+    "commissionType": "依頼の種類：",
+    "commissionDetails": "依頼の詳細：",
+    "uploadSample": "サンプルをアップロード：（任意）",
+    "tosCheckbox": "利用規約に同意する",
+    "submit": "送信",
+
+    "notice": "お知らせ",
+    "noticeText": "利用規約をお読みいただくことで、記載されているルールに従うことに同意いただいたものとします。詳細については、利用規約をご確認ください。",
+    
+    "qrCode": "QRコードを選択",
+    "paypal": "ペイパル",
+    "maya": "マヤ",
+    "gcash": "Gcash",
+
+    "modePayment": "支払い方法と情報：",
+    "queue": "お問い合わせの送信後、以下の方法で連絡が可能です。",
+    "directEmail": "直接メール：",
 
     "commissionArt": "アートの依頼",
     "commissionSheet": "依頼シート",
@@ -103,7 +187,7 @@
     "adventure": "アドベンチャー",
 
     "welcome": "Kyu Artzへようこそ",
-    "caption-1": "Kyu Artzによって作られたアートをもっと発見する",
+    "caption-1": "Kyuによって作られたアートをもっと発見する",
     "caption-2": "幸せは旅であり、目的地ではありません。人生をそのまま楽しむ自由を自分に与え、幸せは思いがけず訪れます。",
     "caption-3": "幸せを感じる瞬間を大切に、いつかそれが記憶の一片となるでしょう。",
     "caption-4": "誰もが昼を好むが、夜の隠された美しさに気づく者は少ない。",

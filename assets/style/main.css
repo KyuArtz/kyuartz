@@ -173,7 +173,7 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, label, strong {
     cursor: default;
 }
 

@@ -56,22 +56,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Welcome Message Popup Logic
 document.addEventListener("DOMContentLoaded", function() {
-  if (!getCookie("popup-messageShown")) {
-    var overlay = document.getElementById('overlay');
-    var popupMessage = document.getElementById('popup-message');
+  if (!getCookie("welcome-messageShown")) {
+    var welcomeOverlay = document.getElementById('welcomeoverlay');
+    var welcomeMessage = document.getElementById('welcome-message');
 
-    overlay.style.display = 'block';
-    popupMessage.style.display = 'block';
-    setCookie("popup-messageShown", true, 365); // Cookie expires in 365 days
+    welcomeOverlay.style.display = 'block';
+    welcomeMessage.style.display = 'block';
+    setCookie("welcome-messageShown", true, 365); // Cookie expires in 365 days
   }
 });
 
-function closePopupMessage() {
-  var overlay = document.getElementById('overlay');
-  var popupMessage = document.getElementById('popup-message');
+function closewelcomeMessage() {
+  var welcomeOverlay = document.getElementById('welcomeoverlay');
+  var welcomeMessage = document.getElementById('welcome-message');
 
-  overlay.style.display = 'none';
-  popupMessage.style.display = 'none';
+  welcomeOverlay.style.display = 'none';
+  welcomeMessage.style.display = 'none';
 }
 
 // Utility Functions for Cookies

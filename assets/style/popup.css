@@ -1,5 +1,5 @@
 /* Overlay and Popup */
-#overlay {
+#welcome-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     display: none;
 }
 
-#popup-message {
+#welcome-message {
     position: fixed;
     max-width: 530px;
     min-width: 350px;
@@ -26,11 +26,11 @@
     display: none;
 }
 
-#overlay, #popup-message {
+#welcome-overlay, #welcome-message {
     z-index: 200000;
 }
 
-#popup-message img {
+#welcome-message img {
     position: absolute;
     min-width: 150px;
     height: 150px;
@@ -40,20 +40,20 @@
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
-#popup-message h1 {
+#welcome-message h1 {
     color: var(--color);
     margin: 30px 0 25px;
     border-bottom: thin solid;
     cursor: default;
 }
 
-#popup-message p {
+#welcome-message p {
     color: inherit;
     text-align: justify;
     cursor: default;
 }
 
-#popup-message button {
+#welcome-message button {
     padding: 10px 20px;
     background: var(--color);
     color: inherit;
@@ -62,7 +62,7 @@
 }
 
 .popup-notice {
-    width: 450px;
+    width: 500px;
     border-radius: 10px;
     position: fixed;
     top: 50%;

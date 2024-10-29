@@ -87,17 +87,17 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="overlay"></div>
-  <div id="popup-message">
+  <div id="welcome-overlay"></div>
+  <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
-    <h1>Thanks for visiting!</h1>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+    <h1 data-translate="welcomeTitle">Thanks for visiting!</h1>
+    <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies">Got It</button>
+    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies" data-translate="okay">Okay</button>
   </div>
 
   <header>
@@ -111,7 +111,7 @@
   
       <!-- Search Form -->
       <form class="search" aria-label="Search KyuArtz">
-        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search" aria-label="Search">
+        <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
         <button type="submit" id="search-button" aria-label="Submit search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -217,16 +217,16 @@
 
   <div class="contact-container">
     <form class="contact" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-      <h1 id="form-status">COMMISSION FORM - OPEN</h1> <!-- Change to CLOSED if needed -->
+      <h1 id="form-status" data-translate="contactTitle">COMMISSION FORM - OPEN</h1>
       <input type="hidden" name="access_key" value="8b83998c-019e-46bf-975a-be7797d3fe51">
 
-      <label for="username-field">Client Name:</label><span id="username-error"></span><span id="username-valid"></span>
-      <input type="text" id="username-field" name="Client Name" placeholder="Enter your name.." onkeyup="validateInput('username')" required><br><br>
+      <label for="username-field" data-translate="name">Name:</label><span id="username-error"></span><span id="username-valid"></span>
+      <input type="text" id="username-field" name="Client Name" onkeyup="validateInput('username')" required><br><br>
 
-      <label for="email-field">Email:</label><span id="email-error"></span><span id="email-valid"></span>
-      <input type="email" id="email-field" name="Email" placeholder="Enter your email.." onkeyup="validateInput('email')" required><br><br>
+      <label for="email-field" data-translate="email">Email:</label><span id="email-error"></span><span id="email-valid"></span>
+      <input type="email" id="email-field" name="Email" onkeyup="validateInput('email')" required><br><br>
 
-      <label for="commission-select">Commission Type:</label><span id="commission-error"></span><span id="commission-valid"></span>
+      <label for="commission-select" data-translate="commissionType">Commission Type:</label><span id="commission-error"></span><span id="commission-valid"></span>
       <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
         <option value="" disabled selected hidden></option>
         <option value="Portrait (Semi-realism)">Portrait (Semi-realism)</option>
@@ -250,20 +250,20 @@
         <option value="Others">Others (Clarify your request at the commission details)</option>
       </select><br><br>
 
-      <label for="message-field">Commission Details:</label><span id="message-error"></span><span id="message-valid"></span>
+      <label for="message-field" data-translate="commissionDetails">Commission Details:</label><span id="message-error"></span><span id="message-valid"></span>
       <textarea id="message-field" name="Commssion Details" placeholder="Information regarding your commissioned art request to improve workflow efficiency.." onkeyup="validateInput('message')" required></textarea><br><br>
 
       <div class="uploadimg-container">
-        <label class="upload" for="myFile">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+        <label class="upload" for="myFile" data-translate="uploadSample">Upload Sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()">
         
         <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: auto;">
         
-        <button id="remove-btn" style="display:none;" onclick="removeFile()">Remove</button>
+        <button id="remove-btn" style="display:none;" onclick="removeFile()" data-translate="remove">Remove</button>
       </div>
        
       <div class="tos-container" title="Terms of Service">
-        <input type="checkbox" value="Agreed" name="Terms of Service" required> Agree to terms of service
+        <input type="checkbox" value="Agreed" name="Terms of Service" required> <span data-translate="tosCheckbox"><p>Agree to terms of service</p></span>
         <div class="tos-info">
           <button type="button" title="Info" data-comic="type2" onclick="openNotice()"><i class="fa-solid fa-question"></i></button>
         </div>
@@ -275,9 +275,9 @@
     </form>
 
     <div class="contact-subContent">
-      <h2>MODE OF PAYMENT & INFO:</h2>
-      <p>After submitting your inquiry, you can <a class="dL" href="commissioner-info.html">check your queue status <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-      <p>Direct Email: <a class="dL" href="mailto:kyuushi992@gmail.com">kyuushi992@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+      <h2 data-translate="modePayment">MODE OF PAYMENT & INFO:</h2>
+      <p><span data-translate="queue">After submitting your inquiry, you can</span> <a class="dL" href="commissioner-info.html">check your queue status <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+      <p><span data-translate="directEmail">Direct Email:</span> <a class="dL" href="mailto:kyuushi992@gmail.com">kyuushi992@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
       <div class="payment">
         <a class="logo-view" onclick="openDonate()" href="#" title="Paypal" rel="noopener noreferrer"><img src="assets/images/imgbtn/paypal.webp" loading="lazy"></a>
         <a class="logo-view" onclick="openDonate()" href="#" title="PayMaya"><img src="assets/images/imgbtn/maya.webp" loading="lazy"></a>
@@ -291,29 +291,29 @@
   </div>
 
   <div class="popup-notice" id="notice">
-    <h1>NOTICE <i class="fa-regular fa-circle-question"></i></h1>
-    <p>By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
-    <button type="button" onclick="closeNotice()">Understood</button>
-    <a href="terms-of-service.html">Terms Of Service</a>
+    <h1 data-translate="notice">NOTICE</h1>
+    <p data-translate="noticeText">By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</p>
+    <button type="button" onclick="closeNotice()" data-translate="okay">Okay</button>
+    <a href="terms-of-service.html" data-translate="termsOfService">Terms Of Service</a>
   </div>
 
   <div class="donate-popup" id="donate-popup">
-      <h1>CHOOSE QR CODE</h1>
+      <h1 data-translate="qrCode">CHOOSE QR CODE</h1>
       <div class="qr-content">
         <div class="qr">
           <img src="assets/images/popup/qr-code-paypal.webp">
-          <p>Paypal</p>
+          <p data-translate="paypal">Paypal</p>
         </div>
         <div class="qr">
           <img src="assets/images/popup/qr-code-maya.webp">
-          <p>Maya</p>
+          <p data-translate="maya">Maya</p>
         </div>
         <div class="qr">
           <img src="assets/images/popup/qr-code-gcash.webp">
-          <p>Gcash</p>
+          <p data-translate="gcash">Gcash</p>
         </div>
       </div>
-      <button type="button" onclick="closeDonate()">Close</button>
+      <button type="button" onclick="closeDonate()" data-translate="close">Close</button>
     </div>
 
     <div class="footer">

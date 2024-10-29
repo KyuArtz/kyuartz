@@ -86,17 +86,17 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="overlay"></div>
-  <div id="popup-message">
+  <div id="welcome-overlay"></div>
+  <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
-    <h1>Thanks for visiting!</h1>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closePopupMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+    <h1 data-translate="welcomeTitle">Thanks for visiting!</h1>
+    <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closePopupMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p>This website uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies">Got It</button>
+    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies" data-translate="okay">Okay</button>
   </div>
 
   <header>
@@ -110,7 +110,7 @@
   
       <!-- Search Form -->
       <form class="search" aria-label="Search KyuArtz">
-        <input type="search" id="input-box" autocomplete="off" placeholder="QUICK SEARCH..." name="search" aria-label="Search">
+        <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
         <button type="submit" id="search-button" aria-label="Submit search">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -223,17 +223,35 @@
           </div>
           <div class="my-info">
             <h1>Kyu Artz</h1>
-            <p class="exp"><i class="fa-solid fa-pencil"></i> Digital Illustrator</p>
-            <p class="exp"><i class="fa-solid fa-pencil"></i> Character Designer</p>
-            <p class="exp"><i class="fa-solid fa-pencil"></i> Concept Artist</p>
+            <p class="exp">
+              <i class="fa-solid fa-pencil"></i> <span data-translate="myInfo-1">Digital Illustrator</span>
+            </p>
+            <p class="exp">
+              <i class="fa-solid fa-pencil"></i> <span data-translate="myInfo-2">Character Designer</span>
+            </p>
+            <p class="exp">
+              <i class="fa-solid fa-pencil"></i> <span data-translate="myInfo-3">Concept Artist</span>
+            </p>
             <br>
-            <p class="email"><i class="fa-regular fa-envelope"></i> kyuushi992@gmail.com</p>
+            <p class="email">
+              <i class="fa-regular fa-envelope"></i> <span data-translate="myInfo-4">kyuushi992@gmail.com</span>
+            </p>
             <div class="mysocial">
-            <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
+            <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/imgbtn/fb.webp" loading="lazy">
+            </a>
+            <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/imgbtn/yt.webp" loading="lazy">
+            </a>
+            <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer">
+              <img src="assets/images/imgbtn/X.webp" loading="lazy">
+            </a>
+            <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer">
+              <img src="assets/images/imgbtn/ast.webp" loading="lazy">
+            </a>
+            <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer">
+              <img src="assets/images/imgbtn/cara-logo.webp" loading="lazy">
+            </a>
             </div>
           </div>
         </div>
@@ -241,9 +259,9 @@
   
       <div class="info-container">
         <div class="summary">
-          <h1>SUMMARY</h1>
+          <h1 data-translate="summaryTitle">SUMMARY</h1>
           <div class="summarycontent">
-            <p>
+            <p data-translate="summaryText">
               Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early
               childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm.
               Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities
@@ -260,15 +278,15 @@
   
         <div class="experience">
           <div class="expcontent" style="text-align:center">
-            <h1>EXPERIENCE</h1>
-            <P>Self Taught</P>
-            <p>Freelance</p>
+            <h1 data-translate="experienceTitle">EXPERIENCE</h1>
+            <P data-translate="experience-1">Self Taught</P>
+            <p data-translate="experience-2">Freelance</p>
           </div>
         </div>
   
         <div class="program">
           <div class="program-content" style="text-align:center">
-            <h1>PROGRAMS I USE TO DRAW</h1>
+            <h1 data-translate="programUsed">PROGRAMS I USE TO DRAW</h1>
             <div class="program-logo">
               <img src="assets/images/art-software-logo/ibp.webp" loading="lazy">
               <img src="assets/images/art-software-logo/clip.webp" loading="lazy">
