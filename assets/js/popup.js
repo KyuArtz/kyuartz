@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-function closewelcomeMessage() {
+function closeWelcomeMessage() {
   var welcomeOverlay = document.getElementById('welcome-overlay');
   var welcomeMessage = document.getElementById('welcome-message');
 
