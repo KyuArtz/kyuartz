@@ -265,6 +265,6 @@ p {
     font-size: 0.7rem;
 }
 
-.cs-content span {
+.cs-content p span {
     color: var(--color);
 }
