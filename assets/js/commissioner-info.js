@@ -75,11 +75,12 @@ waitlistData.forEach(wait => {
 });
 
 let slots = {
-    "": 4
+    "January 1, 2025": 0,
+    "February 1, 2025": 0
 };
 
 document.querySelectorAll('#upcoming-slots li').forEach(item => {
     const date = item.querySelector('strong').innerText;
     const remainingText = item.querySelector('.remaining-slots');
-    remainingText.innerText = `(${slots[date]} slots remaining)`;
+    remainingText.innerText = `( ${slots[date]} slots remaining )`;
 });
