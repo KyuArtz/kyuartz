@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Welcome Message Popup Logic
 document.addEventListener("DOMContentLoaded", function() {
   if (!getCookie("welcome-messageShown")) {
-    var welcomeOverlay = document.getElementById('welcomeoverlay');
+    var welcomeOverlay = document.getElementById('welcome-overlay');
     var welcomeMessage = document.getElementById('welcome-message');
 
     welcomeOverlay.style.display = 'block';
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function closewelcomeMessage() {
-  var welcomeOverlay = document.getElementById('welcomeoverlay');
+  var welcomeOverlay = document.getElementById('welcome-overlay');
   var welcomeMessage = document.getElementById('welcome-message');
 
   welcomeOverlay.style.display = 'none';
