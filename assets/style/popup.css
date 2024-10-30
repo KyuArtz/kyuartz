@@ -415,7 +415,7 @@
 }
 
 @media(max-width: 500px) {
-    #popup-message img {
+    #welcome-message img {
         position: unset;
     }
   
