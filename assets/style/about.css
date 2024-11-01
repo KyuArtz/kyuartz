@@ -16,16 +16,12 @@
     -webkit-backdrop-filter: blur(5px);
 }
 
-.summary h1,
-.expcontent h1,
-.program-content h1 {
+.summary h2,
+.expcontent h2,
+.program-content h2 {
     color: var(--color);
     cursor: default;
     margin-top: 50px;
-}
-
-.my-info h1 {
-    cursor: default;
 }
 
 .summary p,

@@ -2,16 +2,20 @@
     margin-top: 60px;
 }
 
-section h1 {
+section h1,
+section h2 {
     text-align: center;
 }
 
-.slots h1,
-.status h1 {
+.slots h3,
+.status h3 {
     text-align: left;
+    padding: 10px;
+    color: var(--color);
 }
 
-section h1, h2 {
+section h1,
+section h2 {
     color: var(--color);
     padding: 10px;
 }

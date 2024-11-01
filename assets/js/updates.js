@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Create date section
                 const updateDate = document.createElement('div');
                 updateDate.classList.add('update');
-                updateDate.innerHTML = `<h2>${update.date}</h2>`;
+                updateDate.innerHTML = `<h4>${update.date}</h4>`;
                 whatsNewContent.appendChild(updateDate);
 
                 // Create section for major updates
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Helper function to create update sections
 function createUpdateSection(title, items) {
     const section = document.createElement('section');
-    const heading = document.createElement('h2');
+    const heading = document.createElement('h3');
     heading.textContent = title;
     section.appendChild(heading);
 

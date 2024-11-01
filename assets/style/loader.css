@@ -15,7 +15,7 @@
 }
 
 /* Loader Title */
-.loader h1 {
+.loader h2 {
     color: var(--default-font-color);
     position: absolute;
     bottom: 35%;
@@ -100,13 +100,13 @@
 
 /* Media Query */
 @media screen and (max-width: 500px) {
-    .loader h1 {
+    .loader h2 {
         display: none;
     }
 }
 
 @media screen and (max-height: 470px) {
-    .loader h1 {
+    .loader h2 {
         opacity: 0;
         visibility: hidden;
     }

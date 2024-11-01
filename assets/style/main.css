@@ -174,11 +174,11 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
-h1, h2, h3, p, label, strong {
+h1, h2, h3, h4, p, label, strong {
     cursor: default;
 }
 
-h1, h2, h3, a, label, span, button, input[type="Submit"],
+h1, h2, h3, h4, a, label, span, button, input[type="Submit"],
 .search-result a,
 .search-result p,
 .main-navigation a,
@@ -222,7 +222,7 @@ p {
     font-size: 0.9rem;
 }
 
-.loader h1 {
+.loader h2 {
     font-size: 1rem;
 }
 

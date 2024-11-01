@@ -18,16 +18,20 @@
 .mySlides img {
     position: relative;
     width: 100%;
-    height: 520px;
+    height: 350px;
     object-fit: cover;
     object-position: center;
     border-radius: 9px;
     background: var(--content-bg);
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .mySlides img:hover {
-    box-shadow: 0 0 10px #000;
+    height: 520px;
+}
+
+.mySlides img:hover {
+    box-shadow: 0 0 15px #000;
 }
 
 /* Navigation Buttons */
@@ -69,13 +73,15 @@
 
 /* Comic Title */
 .comic-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     color: #ffffff;
     width: 50%;
     padding: 8px 12px;
     position: absolute;
     left: 0;
     background: var(--overlay);
-    cursor: default;
     border-radius: 0 15px 15px 0;
     z-index: 1;
 }
@@ -92,7 +98,6 @@
     border-radius: 15px 0 0 15px;
     color: #ffffff;
     background: var(--overlay);
-    cursor: default;
     z-index: 1;
 }
 
@@ -114,7 +119,6 @@
     bottom: 3px;
     left: 0;
     width: 100%;
-    cursor: default;
     border-radius: 0 0 9px 6px;
 }
 

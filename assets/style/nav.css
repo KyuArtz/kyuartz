@@ -42,7 +42,7 @@ header {
     border: none;
     border-radius: 10px;
     border: solid thin;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .dropdown-setting {
@@ -65,7 +65,7 @@ header {
     text-decoration: none;
     color: inherit;
     display: block;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .dropdown-setting a:hover {
@@ -201,7 +201,7 @@ form.search button {
     outline: none;
     margin: 0;
     padding: 12px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 form.search::after {
@@ -237,7 +237,7 @@ form.search::after {
     display: block;
     width: 100%;
     padding: 15px 10px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: inherit;
 }
 
@@ -372,11 +372,12 @@ form.search::after {
     transition: 0.5s ease;
 }
 
-.sideMenu-content h1 {
+.sideMenu-content h2 {
     color: inherit;
     cursor: default;
     margin: 0;
     padding: 15px;
+    border-top: solid thin;
 }
 
 .sideMenu-content a {
@@ -388,7 +389,7 @@ form.search::after {
     border: none;
     border-radius: 0;
     padding: 15px 15px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .sideMenu-content a:hover {
@@ -479,7 +480,7 @@ form.search::after {
     width: 100%;
     color: inherit;
     padding: 15px 15px;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .category-item a:hover {
@@ -544,7 +545,7 @@ form.search::after {
     color: inherit;
     padding: 0 2px;
     text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .detail:hover {
