@@ -48,8 +48,6 @@ let availableKeywords = [
   { name: 'Commissioner Information', url: 'commissioner-info.html' },
   { name: 'Comic', url: 'comic.html' },
   { name: 'Original Character', url: 'original-character.html' },
-  { name: 'Timelapse Video', url: 'timelapse-video.html' },
-  { name: 'Personal Project', url: 'personal-project.html' },
   { name: 'Terms of Service', url: 'terms-of-service.html' },
   { name: 'Privacy Policy', url: 'privacy-policy.html' },
   { name: 'FAQs', url: 'faq.html' },
