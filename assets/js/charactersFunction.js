@@ -178,7 +178,9 @@ function scrollCarousel(direction) {
     updateCarousel();
 }
 
-window.addEventListener("resize", () => {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(updateCarousel, 100);
+let resizeTimeout; // Initialize resizeTimeout at the top of your script
+
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout); // Clear previous timeout
+    resizeTimeout = setTimeout(updateCarousel, 100); // Set a new timeout
 });
