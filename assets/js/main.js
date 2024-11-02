@@ -47,7 +47,7 @@ let availableKeywords = [
   { name: 'Commission Sheet', url: 'commission-sheet.html' },
   { name: 'Commissioner Information', url: 'commissioner-info.html' },
   { name: 'Comic', url: 'comic.html' },
-  { name: 'Original Character', url: 'original-character.html' },
+  { name: 'Original Character', url: 'characters.html' },
   { name: 'Terms of Service', url: 'terms-of-service.html' },
   { name: 'Privacy Policy', url: 'privacy-policy.html' },
   { name: 'FAQs', url: 'faq.html' },

@@ -29,7 +29,6 @@
 /* Navigation Buttons */
 .next,
 .prev {
-    cursor: pointer;
     position: absolute;
     top: 50%;
     margin-top: -32px;
@@ -127,7 +126,6 @@
 .dot {
     position: relative;
     bottom: 30px;
-    cursor: pointer;
     height: 12px;
     width: 12px;
     margin: 0 1px;
@@ -180,7 +178,6 @@
     color: inherit;
     background: var(--content-bg);
     transition: 0.3s ease-in-out;
-    cursor: pointer;
 }
 
 .video video:hover,
@@ -202,7 +199,6 @@ iframe:hover {
     padding: 15px;
     margin: auto 5px;
     border-radius: 50px;
-    cursor: pointer;
     position: absolute;
     box-shadow: 0 0 3px #000;
     transform: translateY(-50%);

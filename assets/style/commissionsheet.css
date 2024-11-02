@@ -69,6 +69,7 @@
 
 /* Content */
 .cs-content {
+    background: var(--content-bg);
     color: inherit;
     text-align: center;
     padding: 5px 11px 10px;

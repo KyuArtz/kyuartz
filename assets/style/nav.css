@@ -251,7 +251,6 @@ form.search::after {
     padding: 15px 10px;
     color: inherit;
     border-radius: 0 0 10px 10px;
-    cursor: default;
 }
 
 /* Scroll Button */
@@ -374,7 +373,6 @@ form.search::after {
 
 .sideMenu-content h2 {
     color: inherit;
-    cursor: default;
     margin: 0;
     padding: 15px;
     border-top: solid thin;
@@ -419,7 +417,6 @@ form.search::after {
 .secondary-navigation h1 {
     text-align: center;
     color: var(--color);
-    cursor: default;
     margin: 0 auto;
 }
 
@@ -467,7 +464,6 @@ form.search::after {
 
 .category-menu h2 {
     color: inherit;
-    cursor: default;
     margin: 0;
     padding: 15px;
 }
@@ -538,7 +534,6 @@ form.search::after {
 .copyright p {
     text-align: center;
     color: var(--color);
-    cursor: default;
 }
 
 .detail {

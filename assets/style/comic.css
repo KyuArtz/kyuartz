@@ -37,7 +37,6 @@
 /* Navigation Buttons */
 .next,
 .prev {
-    cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
@@ -130,7 +129,6 @@
 
 /* Dots */
 .dot {
-    cursor: pointer;
     background: none;
     box-shadow: 0 0 1px;
     border-radius: 5px;
@@ -178,7 +176,6 @@
     background: none;
     border-radius: 50px;
     border: solid thin;
-    cursor: pointer;
 }
 
 /* Responsive Design */

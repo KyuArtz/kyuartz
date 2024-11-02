@@ -83,7 +83,6 @@ input[type="file"] {
     color: inherit;
     background: none;
     border-radius: 50px;
-    cursor: pointer;
     width: 100%;
     margin: 5px auto;
     outline: none;
@@ -114,7 +113,6 @@ input[type="submit"] {
     padding: 10px 30px;
     border: solid thin;
     border-radius: 50px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 

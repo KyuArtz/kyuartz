@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- SEO Optimization -->
+  <title>KyuArtz | Characters</title>
+  <meta name="description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
+  <meta name="keywords" content="KyuArtz">
+  <meta name="author" content="KyuArtz">
+  
+  <!-- Theme color for different platforms -->
+  <meta name="theme-color" content="#1E90FF"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
+  <meta name="msapplication-TileColor" content="#1E90FF"> <!-- For Windows 8 and Windows Phone -->
+
+  <!-- Favicons and Icons -->
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="KyuArtz" />
+  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
+  
+  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/characters">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/style/main.css" as="style">
+  <link rel="preload" href="assets/style/loader.css" as="style">
+  <link rel="preload" href="assets/style/nav.css" as="style">
+  <link rel="preconnect" href="https://kit.fontawesome.com">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/style/main.css">
+  <link rel="stylesheet" href="assets/style/characters.css">
+  <link rel="stylesheet" href="assets/style/loader.css">
+  <link rel="stylesheet" href="assets/style/nav.css">
+  <link rel="stylesheet" href="assets/style/popup.css">
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
+
+  <!-- Defer scripts for performance optimization -->
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+  <script src="assets/js/charactersFunction.js" defer></script>
+  <script src="assets/js/popup.js" defer></script>
+  <script src="assets/js/translations.js" defer></script>
+
+  <!-- Open Graph Tags for Social Media Sharing -->
+  <meta property="og:title" content="KyuArtz | Characters">
+  <meta property="og:description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu." />
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta property="og:image:alt" content="KyuArtz logo and branding">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/characters">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KyuArtz | Characters">
+  <meta name="twitter:description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta name="twitter:image:alt" content="KyuArtz logo and branding">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "KyuArtz",
+      "url": "https://kyuartz.github.io/kyuartz/characters",
+      "description": "Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.",
+      "author": {
+        "@type": "Person",
+        "name": "Kyu"
+      }
+    }
+    </script>
+</head>
+<body>
+
+  <div class="loader" oncontextmenu="return false">
+    <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
+
+  <div id="welcome-overlay"></div>
+  <div id="welcome-message">
+    <img src="assets/images/popup/popup-icon.webp" loading="lazy">
+    <h2 data-translate="welcomeTitle">Thanks for visiting!</h2>
+    <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+  </div>
+
+  <div id="cookie-popup" class="cookie-popup">
+    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies" data-translate="okay">Okay</button>
+  </div>
+
+  <header>
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+      <!-- Brand and Logo -->
+      <div class="nav-brand" aria-label="KyuArtz characters">
+        <p class="sbt">Beta</p>
+        <a href="index.html" class="brand" data-translate="brand">Kyu</a>
+        <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
+      </div>
+  
+      <!-- Search Form -->
+      <form class="search" aria-label="Search KyuArtz">
+        <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
+        <button type="submit" id="search-button" aria-label="Submit search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="search-result" style="display: none;"></div>
+      </form>
+  
+      <!-- Main Navigation Menu -->
+      <ul class="navigation-menu" role="menubar">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
+            <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
+            <i class="fa-regular fa-image"></i> <span data-translate="portfolio">PORTFOLIO</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
+            <i class="fa-regular fa-address-card"></i> <span data-translate="about">ABOUT</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
+            <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
+          </a>
+        </li>
+  
+        <!-- More Dropdown Menu -->
+        <li class="nav-item sideMenu">
+          <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
+            <i class="fa-regular fa-folder"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
+          </a>
+          
+          <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
+            <h2 data-translate="commissionArt">Commission Art</h2>
+            <a href="commission-sheet.html" data-page="commission-sheet.html">
+              <i class="fa-regular fa-file"></i> <span data-translate="commissionSheet">Commission Sheet</span>
+            </a>
+            <a href="commissioner-info.html" data-page="commissioner-info.html">
+              <i class="fa-solid fa-table"></i> <span data-translate="commissionerInfo">Commissioner info</span>
+            </a>
+            <h2 data-translate="explore">Explore</h2>
+            <a href="comic.html" data-page="comic.html">
+              <i class="fa-solid fa-book"></i> <span data-translate="myComic">My Comic</span>
+            </a>
+            <a href="maintenance.html" data-page="maintenance.html">
+              <i class="fa-solid fa-person-rifle"></i> <span data-translate="originalCharacter">Original Character</span>
+            </a>
+            <h2 data-translate="serviceInfo">SERVICE INFO</h2>
+            <a href="terms-of-service.html" data-page="terms-of-service.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="termsOfService">Terms of Service</span>
+            </a>
+            <a href="privacy-policy.html" data-page="privacy-policy.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="privacyPolicy">Privacy Policy</span>
+            </a>
+            <a href="faq.html" data-page="faq.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="faqs">FAQs</span>
+            </a>
+            <a href="customer-support.html" data-page="customer-support.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="customerSupport">Customer Support</span>
+            </a>
+            <a href="help.html" data-page="help.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+  
+      <!-- Mobile and Settings Menu -->
+      <div class="subMenu-container">    
+        <div class="settings-menu">
+          <button class="settings-btn" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <div class="dropdown-setting" aria-label="Settings dropdown">
+            <a href="preferences.html">
+              <i class="fa-solid fa-palette"></i> <span data-translate="preferences">Preferences</span>
+            </a>
+            <a href="privacy-policy.html">
+              <i class="fa-solid fa-user-shield"></i> <span data-translate="privacyPolicy">Privacy</span>
+            </a>
+            <a href="help.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+            </a>
+          </div>
+        </div>
+        <div class="hamburger" aria-label="Mobile menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <div class="character-container">
+    <div class="content">
+      <!-- Character presets with Arrows -->
+      <div class="character-slider">
+          <button class="carousel-btn left-btn" onclick="scrollCarousel(-1)">&#10094;</button>
+  
+          <!-- Carousel View to limit visible items to 5 -->
+          <div class="carousel-view">
+            <h2>SELECT A CHARACTER</h2>
+              <div class="character-cards-wrapper">
+                  <!-- Character Cards -->
+                  <div class="character-card" onclick="showCharacterInfo('elishia')">
+                    <div class="role"><img src="assets/images/character-presets/elements/energy.webp" alt=""></div>
+                      <img src="assets/images/character-presets/gif/elishia.gif" alt="">
+                      <div class="overlay"><p>Elishia Bluestein</p></div>
+                  </div>
+                  <div class="character-card" onclick="showCharacterInfo('coming-soon')">
+                    <div class="role"><img src="" alt=""></div>
+                      <img src="assets/images/character-presets/default.webp" alt="">
+                      <div class="overlay"><p>Coming Soon</p></div>
+                  </div>
+                  <div class="character-card" onclick="showCharacterInfo('coming-soon')">
+                    <div class="role"><img src="" alt=""></div>
+                      <img src="assets/images/character-presets/default.webp" alt="">
+                      <div class="overlay"><p>Coming Soon</p></div>
+                  </div>
+                  <div class="character-card" onclick="showCharacterInfo('coming-soon')">
+                    <div class="role"><img src="" alt=""></div>
+                      <img src="assets/images/character-presets/default.webp" alt="">
+                      <div class="overlay"><p>Coming Soon</p></div>
+                  </div>
+                  <div class="character-card" onclick="showCharacterInfo('coming-soon')">
+                    <div class="role"><img src="" alt=""></div>
+                    <img src="assets/images/character-presets/default.webp" alt="">
+                    <div class="overlay"><p>Coming Soon</p></div>
+                  </div>
+                  
+                  <!-- Add more character cards as needed -->
+              </div>
+          </div>
+  
+          <button class="carousel-btn right-btn" onclick="scrollCarousel(1)">&#10095;</button>
+      </div>
+  
+      <!-- Character Info Modal -->
+      <div class="character-info" id="character-info">
+          <button class="close-btn" onclick="hideCharacterInfo()">Hide Info <i class="fa-solid fa-eye"></i></button>
+          <div id="character-details">
+              <h2>No character have been selected yet</h2>
+
+              <div class="info-section" id="basic-info-scrollable">
+                <p><strong>Role:</strong> NULL</p>
+                <p><strong>Specialty:</strong> NULL</p>
+                <p><strong>Birth Place:</strong> NULL</p>
+                <p><strong>Gender:</strong> NULL</p>
+                <p><strong>Age:</strong> NULL</p>
+                <p><strong>Height:</strong> NULL</p>
+              </div>
+
+              <div class="info-section" id="elementalPower">
+                <h3>Elemental Mastery</h3>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+
+              <div class="info-section" id="Weapon">
+                <h3>Favorite Weapon</h3>
+                <p>NULL</p>
+              </div>
+              
+              <div class="info-section" id="abilities">
+                  <h3>Abilities</h3>
+                  <p>NULL</p>
+              </div>
+              
+              <div class="info-section" id="background">
+                  <h3>Backgound</h3>
+                  <p>NULL</p>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

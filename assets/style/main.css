@@ -178,6 +178,10 @@ h1, h2, h3, h4, p, label, strong {
     cursor: default;
 }
 
+button {
+    cursor: pointer;
+}
+
 h1, h2, h3, h4, a, label, span, button, input[type="Submit"],
 .search-result a,
 .search-result p,

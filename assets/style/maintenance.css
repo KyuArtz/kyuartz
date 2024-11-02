@@ -52,7 +52,6 @@
     color: var(--default-font-color);
     border: solid thin;
     border-radius: 50px;
-    cursor: pointer;
     text-align: center;
     text-decoration: none;
     position: absolute;

@@ -1,0 +1,217 @@
+.character-container {
+    background: url('../images/character-presets/gif/default.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    box-shadow: inset 0px 20px 20px -20px var(--color), /* Top shadow */
+                inset 0px -20px 20px -20px var(--color); /* Bottom shadow */
+    transition: all 0.5s ease-in-out;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    gap: 20px;
+    max-width: 100vw; /* Constrain width */
+    overflow-x: hidden;
+    border-top: solid thin var(--color);
+    border-bottom: solid thick var(--color);
+}
+
+.character-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-view {
+    overflow: hidden;
+    flex: 1;
+    max-width: 100%;
+}
+
+.carousel-view h2 {
+    text-align: center;
+    background: var(--theme-overlay);
+    border-radius: 0 30px 0 30px;
+    padding: 5px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.character-cards-wrapper {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.character-card {
+    flex: 1 1 200px; /* Flex grows, but sets a base width */
+    max-width: 250px; /* Maximum width for larger screens */
+    min-width: 120px; /* Minimum width for smaller screens */
+    height: 320px;
+    background-color: var(--content-bg);
+    position: relative;
+    border: solid thin;
+    border-top: solid 5px;
+    border-bottom: solid 3px;
+    box-shadow: 0 0 3px var(--color);
+    border-radius: 0 30px 0 30px;
+    color: var(--color);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.character-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 5px;
+    background: var(--overlay);
+    color: #5bff29;
+    border-radius: 0 20px 0 0;
+    box-shadow: 0 0 3px #000;
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+}
+
+.character-card:hover .overlay {
+    opacity: 1;
+    backdrop-filter: blur(1px);
+    height: 100%;
+    color: #fff;
+}
+
+.character-card:hover {
+    min-width: 150px;
+}
+
+.carousel-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color);
+    border: solid thin;
+    color: var(--default-font-color);
+    padding: 50px 10px;
+    margin: 0 10px;
+}
+
+.left-btn {
+    border-radius: 15px 0 0 15px;
+}
+
+.right-btn {
+    border-radius: 0 15px 15px 0;
+}
+
+.close-btn {
+    width: 100%;
+    position: relative;
+    background: var(--color);
+    color: var(--default-font-color);
+    border: solid thin;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.character-info {
+    background: var(--theme-overlay);
+    color: var(--default-font-color);
+    border-radius: 10px;
+    border-top: solid thick var(--color);
+    border-bottom: solid thick var(--color);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 3px #000;
+}
+
+.character-info p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.info-section {
+    border-bottom: solid thin;
+}
+
+.role {
+    display: flex;
+}
+
+.role img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid thin var(--color);
+    margin: 5px;
+    background: var(--theme-overlay);
+    z-index: 1;
+}
+
+#elementalPower img {
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    border: solid thin;
+    background: var(--theme-overlay);
+}
+
+#basic-info-scrollable {
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+#abilities p {
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+#background p {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .character-slider {
+        flex: 1;
+        max-width: 60%;
+    }
+
+    .character-info {
+        max-width: 40%;
+    }
+}
