@@ -97,7 +97,6 @@
 
 .character-card:hover .overlay {
     opacity: 1;
-    backdrop-filter: blur(1px);
     height: 100%;
     color: #fff;
 }
@@ -115,6 +114,7 @@
     color: var(--default-font-color);
     padding: 50px 10px;
     margin: 0 10px;
+    transition: all 0.3s ease-in-out;
 }
 
 .left-btn {
@@ -123,6 +123,11 @@
 
 .right-btn {
     border-radius: 0 15px 15px 0;
+}
+
+.left-btn:hover,
+.right-btn:hover {
+    box-shadow: 0 0 10px var(--color);
 }
 
 .close-btn {
