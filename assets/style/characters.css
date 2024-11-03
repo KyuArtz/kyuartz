@@ -181,6 +181,11 @@
     border-radius: 10px;
     border: solid thin;
     background: var(--theme-overlay);
+    transition: scale 0.3s ease-in-out;
+}
+
+#elementalPower img:hover {
+    transform: scale(1.05);
 }
 
 #basic-info-scrollable {
