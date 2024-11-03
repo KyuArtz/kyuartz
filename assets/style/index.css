@@ -107,7 +107,7 @@
 
 .caption-btn a:hover {
     background: var(--color);
-    color: #000000;
+    color: #000;
     box-shadow: 0 0 10px var(--color);
 }
 
