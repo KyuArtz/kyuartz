@@ -177,13 +177,20 @@
 }
 
 /* Close Button */
-.close {
+button.close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
-    right: 10px;
-    font-size: 30px;
-    color: #333;
-    transition: color 0.2s ease-in-out;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    aspect-ratio: 1/1;
+    color: var(--default-font-color);
+    background: var(--color);
+    outline: none;
+    border: solid thin;
+    border-radius: 5px;
 }
 
 /* Popup Title */
@@ -283,7 +290,7 @@
     max-height: 80vh; /* Limits height to 80% of the viewport */
 }
 
-.popup,
+.popup-notice,
 .popup-wn,
 .donate-popup {
     z-index: 50;
