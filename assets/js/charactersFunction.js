@@ -70,7 +70,7 @@ function showCharacterInfo(character) {
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
             birthPlace: "Orag City",
-            affiliation: "Roman Bluestein (Sibling) | Niks (Bestfriend) | Ferdinand (Commander) |",
+            affiliation: "Roman Bluestein (Sibling) | Niks (Bestfriend) | Ferdinand (Commandant) |",
             gender: "Female",
             age: "17 yrs.",
             height: "5'5\"",
