@@ -137,6 +137,8 @@
 
 .character-info {
     background: var(--theme-overlay);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: var(--default-font-color);
     border-radius: 10px;
     border-top: solid thick var(--color);
