@@ -177,7 +177,7 @@
     border-radius: 15px;
     color: inherit;
     background: var(--content-bg);
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .video video:hover,

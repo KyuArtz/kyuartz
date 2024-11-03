@@ -180,6 +180,11 @@ h1, h2, h3, h4, p, label, strong {
 
 button {
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px var(--color);
 }
 
 h1, h2, h3, h4, a, label, span, button, input[type="Submit"],
