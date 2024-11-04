@@ -49,6 +49,7 @@ function showCharacterInfo(character) {
     // Set default character details
     let details = {
         name: "No character has been selected yet",
+        faction:"NULL",
         role:"NULL",
         speciality:"NULL",
         birthPlace: "NULL",
@@ -67,6 +68,7 @@ function showCharacterInfo(character) {
     if (character === 'elishia') {
         details = {
             name: "Elishia Bluestein",
+            faction:"Falcon Company",
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
             birthPlace: "Orag City",
@@ -84,6 +86,7 @@ function showCharacterInfo(character) {
     } else if (character === 'coming-soon') {
         details = {
             name: "Character Coming Soon",
+            faction:"Unknown",
             role:"Unknown",
             speciality:"Unknown",
             birthPlace: "Unknown",
@@ -104,6 +107,7 @@ function showCharacterInfo(character) {
     characterDetails.innerHTML = `
         <h2>${details.name}</h2>
         <div class="info-section" id="basic-info-scrollable">
+            <p><strong>Faction:</strong> ${details.faction}</p>
             <p><strong>Role:</strong> ${details.role}</p>
             <p><strong>Specialty:</strong> ${details.speciality}</p>
             <p><strong>Birth Place:</strong> ${details.birthPlace}</p>
