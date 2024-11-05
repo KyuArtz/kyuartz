@@ -68,16 +68,17 @@
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
-    background: var(--theme-overlay);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--theme-color);
     visibility: hidden;
-    transition: transform 0.4s;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 0 3px #000;
+    line-height: 1.6;
 }
 
 .open-notice {
     visibility: visible;
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -116,7 +117,6 @@
     border: solid thin;
     outline: none;
     border-radius: 50px;
-    transition: none;
 }
 
 .popup-wn {
@@ -280,11 +280,10 @@ button.close {
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 30px;
-    background: var(--theme-overlay);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--theme-color);
     visibility: hidden;
-    transition: transform 0.4s;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 0 3px #000;
     overflow-y: auto; /* Enables scroll when content overflows */
     max-height: 80vh; /* Limits height to 80% of the viewport */
@@ -319,6 +318,7 @@ button.close {
 /* Open Popup Animation */
 .open-donate {
     visibility: visible;
+    opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -341,7 +341,6 @@ button.close {
     color: inherit;
     outline: none;
     border-radius: 50px;
-    transition: none;
 }
 
 .cookie-popup {
@@ -414,7 +413,7 @@ button.close {
     }
   
     .popup-notice {
-        width: 400px;
+        max-width: 340px;
     }
 
     .popup img {
