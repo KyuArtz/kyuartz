@@ -88,7 +88,7 @@
     text-align: center;
     padding: 5px;
     background: var(--overlay);
-    color: #5bff29;
+    color: #fff;
     border-radius: 0 20px 0 0;
     box-shadow: 0 0 3px #000;
     opacity: 0.5;
@@ -98,7 +98,6 @@
 .character-card:hover .overlay {
     opacity: 1;
     height: 100%;
-    color: #fff;
 }
 
 .character-card:hover {

@@ -4,7 +4,11 @@ const characterBackgrounds = {
         landscape: "url('assets/images/character-presets/elishia-cover.webp')",
         portrait: "url('assets/images/character-presets/gif/elishia.gif')"
     },
-    sample: {
+    hexxana: {
+        landscape: "url('assets/images/character-presets/1.png')",
+        portrait: "url('')"
+    },
+    comingSoon: {
         landscape: "url('')",
         portrait: "url('')"
     },
@@ -74,7 +78,7 @@ function showCharacterInfo(character) {
             birthPlace: "Orag City",
             affiliation: "Roman Bluestein (Sibling) | Niks (Bestfriend) | Ferdinand (Commandant) |",
             gender: "Female",
-            age: "17 yrs.",
+            age: "17",
             height: "5'5\"",
             likes: "Lollipop | Cats | Reading | organizing |",
             dislikes: "His big brother",
@@ -82,6 +86,24 @@ function showCharacterInfo(character) {
             weapon: "Falconate Blade | Bolt Sniper",
             abilities: "Holographic Shields | Environmental Manipulation | Multi-Weapon Combat | Decoys and Illusions |",
             background: "Elishia and her mother lived a serene life in her mother's province, nestled outside the bustling city of Orag. For a year, their world was peaceful, filled with laughter and simple joys. However, a year later, her father, a visionary inventor renowned for his groundbreaking contributions to technology, decided it was time for a change. He wanted to move them to the capital city, where the prestigious university offered an educational experience far superior to what their province could provide. He also yearned to be closer to his daughter, balancing his demanding work at NanoFutureTech—a private laboratory he owned that was dedicated to pioneering future technologies for humanity. Upon their arrival in the capital, they settled into her father's old house, a place filled with memories of his past and echoes of his dreams. Elishia, now attending the university, quickly found herself at the center of attention. As the daughter of a famous scientist and a brilliant student in her own right, she was admired by her peers. Yet, despite the spotlight, Elishia craved a simple, quiet existence, far removed from the expectations that came with her lineage. But that peace shattered one fateful day. Without warning, the city descended into chaos. People began to exhibit erratic and violent behavior, transforming into grotesque creatures that emerged from the shadows. The very fabric of her life unraveled as she witnessed her parents bravely defend her, sacrificing their lives in a desperate attempt to protect her from the horrors that had befallen them. In the aftermath, Elishia was rescued by a team of special ops forces, who evacuated her to a designated safe point alongside other survivors. The trauma of losing her parents weighed heavily on her, igniting a fire within her—a determination to protect those who could not protect themselves. With her once peaceful dreams now shattered, she felt a newfound purpose. Driven by this resolve, Elishia enlisted in the military, where she honed her skills and emerged as a tactical specialist. Her intelligence and tenacity propelled her through rigorous training, earning her a coveted position within Falcon Company, a renowned unit known for their strategic operations and bravery. As Elishia now fights to reclaim her world from the clutches of chaos, she carries with her the memory of her parents and the hope of a future where peace can be restored. With every mission, she strives not only to protect lives but to honor the legacy of the family that shaped her into the warrior she has become."
+        };
+    } else if (character === 'hexxana') {
+        details = {
+            name: "Hexxana",
+            faction:"Unknown",
+            role:"Unknown",
+            speciality:"Unknown",
+            birthPlace: "Unknown",
+            affiliation: "Unknown",
+            gender: "Unknown",
+            age: "Unknown",
+            height: "Unknown",
+            likes: "Unknown",
+            dislikes: "Unknown",
+            elementalImages: [""],
+            weapon: "Unknown",
+            abilities: "Unknown",
+            background: "Unknown"
         };
     } else if (character === 'coming-soon') {
         details = {
