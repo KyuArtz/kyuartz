@@ -73,7 +73,7 @@
 
 /* Content */
 .cs-content {
-    background: var(--content-bg);
+    background: var(--theme-overlay);
     color: inherit;
     text-align: center;
     padding: 5px 11px 10px;
@@ -93,6 +93,7 @@
     border-radius: 10px;
     border: solid thin var(--color);
     pointer-events: none;
+    background-color:var(--content-bg);
 }
 
 /* Responsive Image */
