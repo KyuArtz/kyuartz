@@ -5,7 +5,7 @@ const characterBackgrounds = {
         portrait: "url('assets/images/character-presets/gif/elishia.gif')"
     },
     hexxana: {
-        landscape: "url('assets/images/character-presets/1.png')",
+        landscape: "url('')",
         portrait: "url('')"
     },
     comingSoon: {
