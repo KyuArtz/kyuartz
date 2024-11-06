@@ -119,7 +119,6 @@ input[type="file"] {
     outline: none;
 }
 
-/* Terms of Service Container */
 .tos-container {
     display: flex;
     justify-content: flex-end;
@@ -127,13 +126,6 @@ input[type="file"] {
     gap: 2px;
 }
 
-/* Terms of Service */
-.tos,
-.tos-info {
-    display: flex;
-}
-
-/* Terms of Service Info Image */
 .tos-info button {
     display: flex;
     justify-content: center;
@@ -157,7 +149,7 @@ input[type="file"] {
 .payment img {
     padding: 4px;
     margin: 3px;
-    transition: transform 0.7s ease-in-out;
+    transition: all 0.3s ease-in-out;
     border-radius: 50px;
     border: solid thin;
 }
@@ -171,7 +163,7 @@ input[type="file"] {
 .gbm img {
     width: 80%;
     transform: scale(1);
-    transition: transform 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 }
 
