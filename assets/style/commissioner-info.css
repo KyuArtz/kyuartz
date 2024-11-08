@@ -38,7 +38,7 @@ th, td {
 }
 
 th {
-    background: var(--overlay);
+    background: var(--theme-overlay);
     font-weight: bold;
 }
 
@@ -47,7 +47,7 @@ tbody tr:nth-child(even) {
 }
 
 tbody tr:hover {
-    background: var(--overlay);
+    background: var(--theme-overlay);
 }
 
 section ul {
