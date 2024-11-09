@@ -174,7 +174,7 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
-h1, h2, h3, h4, p, label, strong {
+h1, h2, h3, h4, p, label, strong, li {
     cursor: default;
 }
 
@@ -185,6 +185,11 @@ button {
 
 button:hover {
     box-shadow: 0 0 10px var(--color);
+}
+
+button.next,
+button.prev {
+    font-size: 1.5rem;
 }
 
 h1, h2, h3, h4, a, label, span, button, input[type="Submit"],
@@ -221,9 +226,7 @@ a {
     font-size: 0.8rem;
 }
 
-a.brand,
-a.prev,
-a.next {
+a.brand {
     font-size: 1.5rem;
 }
 

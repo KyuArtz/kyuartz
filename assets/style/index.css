@@ -26,7 +26,13 @@
     background: var(--content-bg);
 }
 
-/* Navigation Buttons */
+button.next,
+button.prev {
+    background: none;
+    border-style: none;
+    outline: none;
+}
+
 .next,
 .prev {
     position: absolute;
