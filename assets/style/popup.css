@@ -36,12 +36,11 @@
 }
 
 #welcome-message img {
-    position: absolute;
+    position: relative;
     min-width: 150px;
     height: 150px;
     border-radius: 50%;
-    right: -55px;
-    top: -55px;
+    border: solid thick var(--color);
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
@@ -379,11 +378,7 @@ button.close {
     }
 }
 
-@media(max-width: 500px) {
-    #welcome-message img {
-        position: unset;
-    }
-  
+@media(max-width: 500px) {  
     .popup-notice {
         max-width: 340px;
     }
