@@ -218,33 +218,33 @@
   
           <!-- Carousel View to limit visible items to 5 -->
           <div class="carousel-view">
-            <h2>SELECT A CHARACTER</h2>
+            <h2 data-translate="selectCharacter">SELECT A CHARACTER</h2>
               <div class="character-cards-wrapper">
                   <!-- Character Cards -->
                   <div class="character-card" onclick="showCharacterInfo('elishia')">
                     <div class="role"><img src="" alt=""></div>
                       <img src="assets/images/character-presets/gif/elishia.gif" alt="">
-                      <div class="overlay"><p>Elishia Bluestein</p></div>
+                      <div class="overlay"><p data-translate="elishia">Elishia Bluestein</p></div>
                   </div>
                   <div class="character-card" onclick="showCharacterInfo('coming-soon')">
                     <div class="role"><img src="" alt=""></div>
                       <img src="assets/images/character-presets/default.webp" alt="">
-                      <div class="overlay"><p>Coming Soon</p></div>
+                      <div class="overlay"><p data-translate="comingSoon">Coming Soon</p></div>
                   </div>
                   <div class="character-card" onclick="showCharacterInfo('coming-soon')">
                     <div class="role"><img src="" alt=""></div>
                       <img src="assets/images/character-presets/default.webp" alt="">
-                      <div class="overlay"><p>Coming Soon</p></div>
+                      <div class="overlay"><p data-translate="comingSoon">Coming Soon</p></div>
                   </div>
                   <div class="character-card" onclick="showCharacterInfo('coming-soon')">
                     <div class="role"><img src="" alt=""></div>
                       <img src="assets/images/character-presets/default.webp" alt="">
-                      <div class="overlay"><p>Coming Soon</p></div>
+                      <div class="overlay"><p data-translate="comingSoon">Coming Soon</p></div>
                   </div>
                   <div class="character-card" onclick="showCharacterInfo('coming-soon')">
                     <div class="role"><img src="" alt=""></div>
                     <img src="assets/images/character-presets/default.webp" alt="">
-                    <div class="overlay"><p>Coming Soon</p></div>
+                    <div class="overlay"><p data-translate="comingSoon">Coming Soon</p></div>
                   </div>
                   
                   <!-- Add more character cards as needed -->
@@ -256,7 +256,7 @@
   
       <!-- Character Info Modal -->
       <div class="character-info" id="character-info">
-          <button class="close-btn" onclick="hideCharacterInfo()">Hide Info <i class="fa-solid fa-eye"></i></button>
+          <button class="close-btn" onclick="hideCharacterInfo()" data-translate="hideInfo">Hide Info</button>
           <div id="character-details">
               <h2>No character have been selected yet</h2>
 

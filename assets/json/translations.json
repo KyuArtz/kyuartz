@@ -7,6 +7,8 @@
     "okay": "Okay",
     "close": "Close",
     "remove": "Remove",
+    "hideInfo": "Hide Info",
+    "comingSoon": "(Coming Soon)",
     
     "brand": "Kyu",
     "whatsNew": "WHAT'S NEW?",
@@ -19,6 +21,10 @@
     "portfolioTitle": "MY WORK",
     "commissionTitle": "SAMPLES",
     "comicTitle": "COMIC",
+    "fragmentsOfDecay": "Fragments of Decay",
+    "legendOfTheCrystalight": "Legend Of The Crystalight",
+    "chapter": "Chapter",
+    "prologue": "Prologue",
 
     "summaryTitle": "SUMMARY",
     "summaryText": "Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm. Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities and gain more experience. Despite being a self-learner, I remain persistent and never give up. After four years of focusing on traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While adapting to the challenges presented by digital art techniques, I eventually became comfortable with the process.",
@@ -87,6 +93,8 @@
     "explore": "EXPLORE",
     "myComic": "My Comic",
     "originalCharacter": "Original Character",
+    "selectCharacter": "SELECT A CHARACTER",
+    "elishia": "Elishia Bluestein",
 
     "serviceInfo": "SERVICE INFO",
     "termsOfService": "Terms of Service",
@@ -95,6 +103,10 @@
     "faqs": "FAQS",
     "customerSupport": "Customer Support",
     "helpCenter": "Help Center",
+
+    "yourPreferences": "Your Preferences",
+    "selectTheme": "Select Theme :",
+    "selectLanguage": "Select Language : ( BETA )",
 
     "category": "CATEGORY",
     "all": "All",
@@ -136,6 +148,8 @@
     "okay": "OK",
     "close": "閉じる",
     "remove": "削除",
+    "hideInfo": "情報を非表示",
+    "comingSoon": "(近日公開)",
  
     "brand": "キュウ",
     "whatsNew": "新着情報",
@@ -148,6 +162,10 @@
     "portfolioTitle": "私の作品",
     "commissionTitle": "サンプル",
     "comicTitle": "コミック",
+    "fragmentsOfDecay": "崩壊の断片",
+    "legendOfTheCrystalight": "クリスタライトの伝説",
+    "chapter": "章",
+    "prologue": "プロローグ",
 
     "summaryTitle": "概要",
     "summaryText": "こんにちは、Kyuです。幼少期から絵を描くことに情熱を注いできた独学のフリーランスアーティストです。長年にわたり、技術の向上と自己研鑽に励んできました。描くことは私の人生における常であり、自由時間にはスキルを高めるため、また経験を積むためにアート制作を続けています。独学であるにもかかわらず、私は粘り強く努力を続け、決して諦めません。4年間、伝統的な描画方法に集中した後、自分の作品に明らかな進歩を感じ始めました。ソーシャルメディアでデジタルアートが人気を博していることに興味を持ち、この分野に挑戦することを決めました。最初の作品にはMicrosoft PaintやAdobe Illustratorを使用し、デジタルアートの技術に適応する中で、次第にそのプロセスに慣れていきました。",
@@ -216,7 +234,9 @@
     "explore": "探索する",
     "myComic": "私の漫画",
     "originalCharacter": "オリジナルキャラクター",
-
+    "selectCharacter": "キャラクターを選択",
+    "elishia": "エリシア・ブルースタイン",
+    
     "serviceInfo": "サービス情報",
     "termsOfService": "利用規約",
     "preferences": "設定",
@@ -224,6 +244,10 @@
     "faqs": "よくある質問",
     "customerSupport": "カスタマーサービス",
     "helpCenter": "ヘルプセンター",
+
+    "yourPreferences": "あなたの設定",
+    "selectTheme": "テーマを選択：",
+    "selectLanguage": "言語を選択：（ベータ版）",
 
     "category": "カテゴリー",
     "all": "すべて",
