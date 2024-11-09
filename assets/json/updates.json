@@ -4,6 +4,22 @@
     {
       "date": "11/2/2024",
       "major": [
+        ""
+      ],
+      "minor": [
+        "Fixed some errors."
+      ],
+      "bugfixes": [
+        
+      ],
+      "upcoming": [
+        "New Comic chapters (coming soon)."
+      ]
+    },
+
+    {
+      "date": "11/2/2024",
+      "major": [
         "The character page is now live! Explore character profiles, with more characters and features coming soon."
       ],
       "minor": [
