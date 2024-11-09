@@ -49,13 +49,14 @@
 .character-cards-wrapper {
     display: flex;
     gap: 10px;
-    transition: all 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform; /* Improve performance */
 }
 
 .character-card {
     flex: 1 1 200px; /* Flex grows, but sets a base width */
     max-width: 250px; /* Maximum width for larger screens */
-    min-width: 120px; /* Minimum width for smaller screens */
+    min-width: 130px; /* Minimum width for smaller screens */
     height: 320px;
     background-color: var(--content-bg);
     position: relative;

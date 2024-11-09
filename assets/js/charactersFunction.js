@@ -198,12 +198,16 @@ let currentIndex = 0;
 
 function calculateVisibleCards() {
     const wrapper = document.querySelector(".character-cards-wrapper");
-    return window.innerWidth > 1024 ? 5 : window.innerWidth > 768 ? 4 : window.innerWidth > 576 ? 3 : window.innerWidth > 400 ? 2 : 1;
+    if (window.innerWidth > 1024) return 5;
+    if (window.innerWidth > 768) return 4;
+    if (window.innerWidth > 576) return 3;
+    if (window.innerWidth > 400) return 2;
+    return 1;
 }
 
 function updateCarousel() {
     const wrapper = document.querySelector(".character-cards-wrapper");
-    const cardWidth = wrapper.children[0].offsetWidth;
+    const cardWidth = wrapper.children[0].offsetWidth + 10; // Include gap between cards
     wrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
 }
 
@@ -211,13 +215,20 @@ function scrollCarousel(direction) {
     const visibleCards = calculateVisibleCards();
     const wrapper = document.querySelector(".character-cards-wrapper");
     const totalCards = wrapper.children.length;
-    currentIndex = (currentIndex + direction + totalCards) % totalCards;
+
+    // Adjust current index with wrapping behavior
+    currentIndex = (currentIndex + direction * visibleCards + totalCards) % totalCards;
+
     updateCarousel();
 }
 
-let resizeTimeout; // Initialize resizeTimeout at the top of your script
+// Resize handling for responsive recalculation
+let resizeTimeout;
 
 window.addEventListener('resize', function() {
-    clearTimeout(resizeTimeout); // Clear previous timeout
-    resizeTimeout = setTimeout(updateCarousel, 100); // Set a new timeout
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        currentIndex = 0; // Reset index to prevent issues with partial visibility on resize
+        updateCarousel();
+    }, 100);
 });
