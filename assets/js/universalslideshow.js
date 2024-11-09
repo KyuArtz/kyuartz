@@ -35,7 +35,7 @@ for (i = 0; i < dot.length; i++) {
   }
 }
 //prev/next functionality
-links = document.querySelectorAll('.slideshow-container a');
+links = document.querySelectorAll('.slideshow-container button.prev, button.next');
 
 for (i = 0; i < links.length; i++) {
   links[i].onclick = function() {

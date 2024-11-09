@@ -1,4 +1,9 @@
-/* Overlay and Popup */
+.popup-notice,
+.popup-wn,
+.donate-popup {
+    z-index: 50;
+}
+
 #welcome-overlay {
     position: fixed;
     top: 0;
@@ -71,9 +76,9 @@
     background: var(--theme-color);
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
     box-shadow: 0 0 3px #000;
     line-height: 1.6;
+    transition: all 0.3s ease-in-out;
 }
 
 .open-notice {
@@ -82,12 +87,11 @@
     transform: translate(-50%, -50%) scale(1);
 }
 
-.popup-notice h2 {
-    border-style: solid;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: thin;
+.popup-notice h2,
+.donate-popup h2,
+.popup-wn h2 {
+    color: var(--color);
+    border-bottom: solid thin;
 }
 
 .popup-notice p {
@@ -119,6 +123,61 @@
     border-radius: 50px;
 }
 
+.donate-popup {
+    max-width: 1000px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 30px;
+    background: var(--theme-color);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px #000;
+    overflow-y: auto; /* Enables scroll when content overflows */
+    max-height: 80vh; /* Limits height to 80% of the viewport */
+}
+
+.qr-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows QR codes to wrap on smaller screens */
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.qr {
+    flex: 1 1 30%; /* Ensures that QR codes adapt to smaller screens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr img {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+}
+
+.open-donate {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.donate-popup button {
+    width: 50%;
+    padding: 10px 0;
+    background: var(--color);
+    color: var(--default-font-color);
+    border: solid thin;
+    color: inherit;
+    outline: none;
+    border-radius: 50px;
+}
+
 .popup-wn {
     width: 50%;
     max-width: 600px; /* Set a maximum width for larger screens */
@@ -140,7 +199,6 @@
     overflow-y: auto; /* Add vertical scrolling if content exceeds */
 }
 
-/* Popup Background */
 .description-overlay {
     display: none;
     position: fixed;
@@ -176,7 +234,6 @@
     overflow-y: auto;
 }
 
-/* Close Button */
 button.close {
     display: flex;
     justify-content: center;
@@ -193,20 +250,17 @@ button.close {
     border-radius: 5px;
 }
 
-/* Popup Title */
 #comic-title {
     color: var(--color);
     margin-bottom: 10px;
 }
 
-/* Popup Description */
 #comic-description {
     text-align: justify;
     line-height: 1.6;
     color: var(--default-font-color);
 }
 
-/* Fade-in Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -248,19 +302,9 @@ button.close {
     margin: 10px auto;
 }
 
-/* Open Popup Animation */
 .open-popup-wn {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
-}
-
-/* Popup Title */
-.popup-wn h2 {
-    border-style: solid;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: thin;
 }
 
 .popup-wn h3 {
@@ -269,78 +313,6 @@ button.close {
 
 .update h4 {
     text-align: right;
-}
-
-.donate-popup {
-    max-width: 1000px;
-    border-radius: 10px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    text-align: center;
-    padding: 30px;
-    background: var(--theme-color);
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 3px #000;
-    overflow-y: auto; /* Enables scroll when content overflows */
-    max-height: 80vh; /* Limits height to 80% of the viewport */
-}
-
-.popup-notice,
-.popup-wn,
-.donate-popup {
-    z-index: 50;
-}
-
-.qr-content {
-    display: flex;
-    flex-wrap: wrap; /* Allows QR codes to wrap on smaller screens */
-    justify-content: space-around;
-    gap: 10px;
-}
-
-.qr {
-    flex: 1 1 30%; /* Ensures that QR codes adapt to smaller screens */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.qr img {
-    width: 100%;
-    border-radius: 10px;
-    aspect-ratio: 1/1;
-}
-
-/* Open Popup Animation */
-.open-donate {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-/* Popup Title */
-.donate-popup h2 {
-    border-style: solid;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: thin;
-}
-
-/* Popup Button */
-.donate-popup button {
-    width: 50%;
-    padding: 10px 0;
-    background: var(--color);
-    color: var(--default-font-color);
-    border: solid thin;
-    color: inherit;
-    outline: none;
-    border-radius: 50px;
 }
 
 .cookie-popup {
