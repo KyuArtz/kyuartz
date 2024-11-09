@@ -155,31 +155,31 @@ const themeOptions = [
   { name: "White-Yellow", value: "white-yellow"},
 ];
 
-// Dynamically create the theme options in the dropdown
+// Check if the theme select dropdown exists
 const themeSelect = document.getElementById('theme-select');
 
-themeOptions.forEach(theme => {
-  const option = document.createElement('option');
-  option.innerText = theme.name;
-  option.value = theme.value;
-  themeSelect.appendChild(option);
-});
+if (themeSelect) {
+  // Dynamically create the theme options in the dropdown
+  themeOptions.forEach(theme => {
+    const option = document.createElement('option');
+    option.innerText = theme.name;
+    option.value = theme.value;
+    themeSelect.appendChild(option);
+  });
 
-// Function to change the theme based on selection
-function changeTheme(theme) {
-  // Here you can handle how the theme will be applied.
-  document.body.className = 'theme-' + theme;
+  // Function to change the theme based on selection
+  themeSelect.addEventListener('change', (e) => {
+    const selectedTheme = e.target.value;
+    changeTheme(selectedTheme);
+  });
 
-  // Optionally, save the selected theme in local storage or cookies
-  localStorage.setItem('selectedTheme', theme);
+  // Load the previously selected theme into the dropdown on page load (if saved)
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+    document.body.className = 'theme-' + savedTheme;
+    themeSelect.value = savedTheme; // Set the dropdown value to the saved theme
+  });
 }
-
-// Load the previously selected theme on page load (if saved)
-document.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('selectedTheme') || 'default';
-  document.body.className = 'theme-' + savedTheme;
-  themeSelect.value = savedTheme; // Set the dropdown value to the saved theme
-});
 
 // Utility function for toggling popup classes
 function togglePopup(popupId, action, className) {

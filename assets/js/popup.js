@@ -108,7 +108,7 @@ const comicData = {
   },
   type2: {
       title: "LEGEND OF THE CRYSTALIGHT",
-      description: ""
+      description: "The Legend of the Crystelight is set in Eldoria, a once majestic land overflowing with magic, where diverse races lived in harmony. This peace was shattered by the Great War between the Solarae and the Umbrakith, ignited by a forbidden love between the daughter of the Solarae lord and the son of the Umbrakith. The war left deep scars, not only dividing the land but also fracturing its once-unified races. In the aftermath, Eldoria was forever changed—its peace lost. It wasn’t until the ancient Solarae people, led by the light elven goddess Liliana Solarae, founded the Magelion Empire—now the capital city of the Eldoria continent—that the land began to heal. Yet, the echoes of its troubled past would forever linger."
   },
   // Add more types as needed
 };

@@ -77,25 +77,29 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Scroll-to-top button functionality
-  window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      upBtn.style.display = "block";
-    } else {
-      upBtn.style.display = "none";
-    }
-  };
+  if (upBtn) { // Check if upBtn exists
+    window.onscroll = function() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        upBtn.style.display = "block";
+      } else {
+        upBtn.style.display = "none";
+      }
+    };
 
-  upBtn?.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    upBtn?.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
-  });
+  }
 
   // Update the current year dynamically
-  const year = new Date().getFullYear();
-  document.getElementById('currentyear').textContent = year;
-});
+  const currentYearElement = document.getElementById('currentyear');
+  if (currentYearElement) {
+    const year = new Date().getFullYear();
+    currentYearElement.textContent = year;
+}});
 
 document.addEventListener("DOMContentLoaded", function() {
   // Get the current page's filename
