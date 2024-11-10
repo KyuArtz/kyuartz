@@ -139,7 +139,7 @@ function showCharacterInfo(character) {
             ability7: "<strong>Spectral Sweep</strong> - Hexxana can unleash a wave of dark magic energy from her scythe that extends outward in a powerful arc, damaging enemies in a line or cone.",
             ability8: "<strong>Shadow Reaping</strong> - Hexxana channels dark energy through her scythe, allowing her to strike from a distance by sending arcs of dark magic in the shape of scythe slashes. The ranged attacks could drain vitality or temporarily weaken enemies.",
             ability9: "<strong>Abyssal Mark</strong> - A curse-like ability where her scythe leaves a “mark” on an enemy upon hitting them. Marked enemies are more susceptible to her magic attacks, increasing the damage they take from her dark spells or making them vulnerable to curses.",
-            ability10: "<strong>Void Step</strong> - A demon-form-exclusive ability, this lets her teleport short distances, moving through shadows or dark matter, allowing her to close gaps or evade attacks while disorienting her opponents.",
+            ability10: "<strong>Void Step</strong> - this lets her teleport short distances, moving through shadows or dark matter, allowing her to close gaps or evade attacks while disorienting her opponents.",
             ability11: "<strong>Demonic Form: Reaper’s Wrath</strong> -  In her demon form, her scythe becomes an extension of her power.",
             ability12: "",
             ability13: "",
