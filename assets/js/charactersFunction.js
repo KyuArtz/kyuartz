@@ -5,8 +5,8 @@ const characterBackgrounds = {
         portrait: "url('assets/images/character-presets/gif/elishia.gif')"
     },
     hexxana: {
-        landscape: "url('')",
-        portrait: "url('')"
+        landscape: "url('assets/images/character-presets/hexxana-cover.png')",
+        portrait: "url('assets/images/character-presets/gif/hexxana.gif')"
     },
     comingSoon: {
         landscape: "url('')",
@@ -64,64 +64,120 @@ function showCharacterInfo(character) {
         likes: "NULL",
         elementalImages: ["", ""],
         weapon: "NULL",
-        abilities: "NULL",
+        ability1: "NULL",
+        ability2: "",
+        ability3: "",
+        ability4: "",
+        ability5: "",
+        ability6: "",
+        ability7: "",
+        ability8: "",
+        ability9: "",
+        ability10: "",
+        ability11: "",
+        ability12: "",
+        ability13: "",
+        ability14: "",
+        ability15: "",
         background: "NULL"
     };
 
     // Define character-specific details
     if (character === 'elishia') {
         details = {
-            name: "Elishia Bluestein",
+            name: "Elishia Bluestein - Falcon Elite",
             faction:"Falcon Company",
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
             birthPlace: "Orag City",
-            affiliation: "Roman Bluestein (Sibling) | Niks (Bestfriend) | Ferdinand (Commandant) |",
+            affiliation: "Roman Bluestein (Sibling) | Niks (Bestfriend) | Ferdinand (Commandant)",
             gender: "Female",
             age: "17",
             height: "5'5\"",
-            likes: "Lollipop | Cats | Reading | organizing |",
+            likes: "Lollipop | Cats | Reading | organizing",
             dislikes: "His big brother",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
             weapon: "Falconate Blade | Bolt Sniper",
-            abilities: "Holographic Shields | Environmental Manipulation | Multi-Weapon Combat | Decoys and Illusions |",
+            ability1: "<strong>Holographic Shields</strong> - Create protective barriers during battles to shield herself and allies from attacks.",
+            ability2: "<strong>Weapon Creation</strong> - Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
+            ability3: "<strong>Environmental Manipulation</strong> - Alter the battlefield by moving or reshaping objects, like creating obstacles for enemies or enhancing terrain for tactical advantages.",
+            ability4: "<strong>Multi-Weapon Combat</strong> - Combine multiple weapons into one or create several holographic weapons at once to overwhelm opponents.",
+            ability5: "<strong>Decoys and Illusions</strong> - Generate holographic duplicates of herself or objects to confuse enemies or draw their fire.",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
             background: "Elishia and her mother lived a serene life in her mother's province, nestled outside the bustling city of Orag. For a year, their world was peaceful, filled with laughter and simple joys. However, a year later, her father, a visionary inventor renowned for his groundbreaking contributions to technology, decided it was time for a change. He wanted to move them to the capital city, where the prestigious university offered an educational experience far superior to what their province could provide. He also yearned to be closer to his daughter, balancing his demanding work at NanoFutureTech—a private laboratory he owned that was dedicated to pioneering future technologies for humanity. Upon their arrival in the capital, they settled into her father's old house, a place filled with memories of his past and echoes of his dreams. Elishia, now attending the university, quickly found herself at the center of attention. As the daughter of a famous scientist and a brilliant student in her own right, she was admired by her peers. Yet, despite the spotlight, Elishia craved a simple, quiet existence, far removed from the expectations that came with her lineage. But that peace shattered one fateful day. Without warning, the city descended into chaos. People began to exhibit erratic and violent behavior, transforming into grotesque creatures that emerged from the shadows. The very fabric of her life unraveled as she witnessed her parents bravely defend her, sacrificing their lives in a desperate attempt to protect her from the horrors that had befallen them. In the aftermath, Elishia was rescued by a team of special ops forces, who evacuated her to a designated safe point alongside other survivors. The trauma of losing her parents weighed heavily on her, igniting a fire within her—a determination to protect those who could not protect themselves. With her once peaceful dreams now shattered, she felt a newfound purpose. Driven by this resolve, Elishia enlisted in the military, where she honed her skills and emerged as a tactical specialist. Her intelligence and tenacity propelled her through rigorous training, earning her a coveted position within Falcon Company, a renowned unit known for their strategic operations and bravery. As Elishia now fights to reclaim her world from the clutches of chaos, she carries with her the memory of her parents and the hope of a future where peace can be restored. With every mission, she strives not only to protect lives but to honor the legacy of the family that shaped her into the warrior she has become."
         };
     } else if (character === 'hexxana') {
         details = {
-            name: "Hexxana",
+            name: "Hexxana - Lone Wanderer",
             faction:"Unknown",
-            role:"Unknown",
-            speciality:"Unknown",
+            role:"Dark Vanguard",
+            speciality:"Umbral Enforcer",
             birthPlace: "Unknown",
             affiliation: "Unknown",
-            gender: "Unknown",
+            gender: "Female",
             age: "Unknown",
-            height: "Unknown",
-            likes: "Unknown",
-            dislikes: "Unknown",
-            elementalImages: [""],
-            weapon: "Unknown",
-            abilities: "Unknown",
-            background: "Unknown"
+            height: "5'8\"",
+            likes: "Reading | Hexing | Wondering | Making Potions",
+            dislikes: "Doing chores",
+            elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
+            weapon: "Oblivion’s Edge",
+            ability1: "<strong>Shadow Manipulation</strong> - Hexxana can control shadows, allowing her to create illusions, cloak herself, or even solidify shadows into physical weapons or barriers. This would add stealth and versatility to her abilities.",
+            ability2: "<strong>Ethereal Phasing</strong> - Hexxana can become partially intangible, allowing her to pass through solid objects or evade attacks momentarily. This would fit well as both a defense mechanism and a way to surprise her foes.",
+            ability3: "<strong>Umbral Rift</strong> -  She can summon a portal or dark energy vortex that pulls enemies in or repels them. The rift could deal damage over time, serve as an escape route, or even as a way to trap opponents.",
+            ability4: "<strong>Curse Weaving</strong> - Hexxana can place curses on enemies that have lingering effects, like causing weakness, confusion, or nightmares that haunt them even after the battle ends.",
+            ability5: "<strong>Dark Familiar</strong> - She could summon a dark familiar, like a spectral raven or shadow beast, which fights alongside her or scouts ahead, allowing her to control a minion that aids her in and out of combat.",
+            ability6: "<strong>Void Tendrils</strong> - Hexxana summons dark, otherworldly tendrils that can attack, restrain, or drain the energy of her foes. These could extend from the ground or appear in mid-air, giving her a unique combat advantage.",
+            ability7: "<strong>Spectral Sweep</strong> - Hexxana can unleash a wave of dark magic energy from her scythe that extends outward in a powerful arc, damaging enemies in a line or cone.",
+            ability8: "<strong>Shadow Reaping</strong> - Hexxana channels dark energy through her scythe, allowing her to strike from a distance by sending arcs of dark magic in the shape of scythe slashes. The ranged attacks could drain vitality or temporarily weaken enemies.",
+            ability9: "<strong>Abyssal Mark</strong> - A curse-like ability where her scythe leaves a “mark” on an enemy upon hitting them. Marked enemies are more susceptible to her magic attacks, increasing the damage they take from her dark spells or making them vulnerable to curses.",
+            ability10: "<strong>Void Step</strong> - A demon-form-exclusive ability, this lets her teleport short distances, moving through shadows or dark matter, allowing her to close gaps or evade attacks while disorienting her opponents.",
+            ability11: "<strong>Demonic Form: Reaper’s Wrath</strong> -  In her demon form, her scythe becomes an extension of her power.",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: "Hexxana’s origins are shrouded in mystery; no one knows where she came from, and she shares little about her past. She appears as a spectral figure in the dead of night, often accompanied by an eerie, shimmering aurora. Known to sometimes intervene in dire moments, she aids those in danger but vanishes as quickly as she arrives, leaving only whispers and rumors in her wake. Hexxana is a lone wanderer, loyal to no one but herself. She drifts through cities and forgotten landmarks, guided by her own enigmatic purpose. Her neutrality is unshakable, and she is a silent guardian—though only when it suits her will."
         };
     } else if (character === 'coming-soon') {
         details = {
             name: "Character Coming Soon",
-            faction:"Unknown",
-            role:"Unknown",
-            speciality:"Unknown",
-            birthPlace: "Unknown",
-            affiliation: "Unknown",
-            gender: "Unknown",
-            age: "Unknown",
-            height: "Unknown",
-            likes: "Unknown",
-            dislikes: "Unknown",
+            faction:"",
+            role:"",
+            speciality:"",
+            birthPlace: "",
+            affiliation: "",
+            gender: "",
+            age: "",
+            height: "",
+            likes: "",
+            dislikes: "",
             elementalImages: [""],
-            weapon: "Unknown",
-            abilities: "Unknown",
-            background: "Unknown"
+            weapon: "",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
         };
     }
 
@@ -153,7 +209,23 @@ function showCharacterInfo(character) {
 
         <div class="info-section" id="abilities">
             <h3>Abilities</h3>
-            <p>${details.abilities}</p>
+            <div id="abilities-scrollable">
+            <p>${details.ability1}</p>
+            <p>${details.ability2}</p>
+            <p>${details.ability3}</p>
+            <p>${details.ability4}</p>
+            <p>${details.ability5}</p>
+            <p>${details.ability6}</p>
+            <p>${details.ability7}</p>
+            <p>${details.ability8}</p>
+            <p>${details.ability9}</p>
+            <p>${details.ability10}</p>
+            <p>${details.ability11}</p>
+            <p>${details.ability12}</p>
+            <p>${details.ability13}</p>
+            <p>${details.ability14}</p>
+            <p>${details.ability15}</p>
+            </div>
         </div>
 
         <div class="info-section" id="background">
