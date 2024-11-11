@@ -8,6 +8,10 @@ const characterBackgrounds = {
         landscape: "url('assets/images/character-presets/hexxana-cover.webp')",
         portrait: "url('assets/images/character-presets/gif/hexxana.gif')"
     },
+    rayza: {
+        landscape: "url('assets/images/character-presets/rayza-cover.webp')",
+        portrait: "url('assets/images/character-presets/gif/rayza.gif')"
+    },
     comingSoon: {
         landscape: "url('')",
         portrait: "url('')"
@@ -90,7 +94,7 @@ function showCharacterInfo(character) {
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
             birthPlace: "Orag City",
-            affiliation: "Roman Bluestein (Sibling) | Niks (Bestfriend) | Ferdinand (Commandant)",
+            affiliation: "Roman Bluestein (Older Brother) | Niks (Bestfriend) | Ferdinand (Commandant)",
             gender: "Female",
             age: "17",
             height: "5'5\"",
@@ -146,6 +150,38 @@ function showCharacterInfo(character) {
             ability14: "",
             ability15: "",
             background: "Hexxana’s origins are shrouded in mystery; no one knows where she came from, and she shares little about her past. She appears as a spectral figure in the dead of night, often accompanied by an eerie, shimmering aurora. Known to sometimes intervene in dire moments, she aids those in danger but vanishes as quickly as she arrives, leaving only whispers and rumors in her wake. Hexxana is a lone wanderer, loyal to no one but herself. She drifts through cities and forgotten landmarks, guided by her own enigmatic purpose. Her neutrality is unshakable, and she is a silent guardian—though only when it suits her will."
+        };
+    } else if (character === 'rayza') {
+        details = {
+            name: "Rayza - Blade Master",
+            faction:"Zephyra Vale",
+            role:"Windborne Assassin",
+            speciality:"Mist Dancer",
+            birthPlace: "Hidden Mist Valley",
+            affiliation: "Ren (Older Brother)",
+            gender: "Female",
+            age: "19",
+            height: "5'7\"",
+            likes: "Training | Cute Stuff | Sweets",
+            dislikes: "Lazy People",
+            elementalImages: ["assets/images/character-presets/elements/air.webp"],
+            weapon: "Tempest Bloom",
+            ability1: "<strong>Wind Manipulation</strong> - Using her enchanted fan, she can control and shape the wind around her, creating anything from gentle breezes to fierce gusts that can knock back enemies.",
+            ability2: "<strong>Mist Veil</strong> - Allows her to create a dense fog or mist around her, enhancing her stealth and making her harder to detect or target in battle.",
+            ability3: "<strong>Wind Blades</strong> - She can send sharp, slicing gusts of wind towards her enemies by swinging her fan, turning the air itself into a weapon.",
+            ability4: "<strong>Dance of the Tempest</strong> - A graceful, deadly series of moves that combines her fan with powerful wind attacks, unleashing a storm of slashes in a controlled radius around her.",
+            ability5: "<strong>Petal Storm</strong> - She can summon a flurry of petals carried by the wind to obscure her movements or distract her foes, providing both offense and defense in combat.",
+            ability6: "<strong>Silent Step</strong> - Her movement becomes almost undetectable as the wind silences her steps, making it easier for her to approach targets unseen.",
+            ability7: "<strong>Blood Rage</strong> - Rayza taps into a hidden power, enveloping herself in a red aura that boosts her strength, speed, and resilience. While in this state, she fights with fierce, unpredictable energy, but the power drains her, leaving her exhausted once it fades.",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: "Rayza was born into a prestigious family celebrated for their mastery in combat, especially in the art of swordsmanship. Growing up, she idolized her father and older brother, Ren, both renowned for their skill and strength. She longed to join their ranks, to prove her worth as a warrior. But her father, bound by tradition and protective instincts, refused to train her, believing the path of a swordsman was not meant for her. His decision only fueled her resolve. Determined to show her father that strength was not bound by tradition or gender, Rayza began to train in secret. Her brother, who recognized her passion and potential, became her silent ally, offering tips and guidance away from their father's watchful eyes. When news of a prestigious tournament spread through the land, Rayza saw her chance. She entered the competition in disguise, hiding her face to avoid recognition. Her heart pounded as she faced each opponent, her confidence growing with every victory. One by one, she defeated nine challengers, advancing to the final round. To her shock, her last opponent was none other than Ren. She froze, realizing her secret could be exposed, but her brother’s smirk and knowing glance told her he had recognized her long before. He remained silent, signaling his respect for her determination. Rayza steeled herself for the fight, determined to prove herself not just to her brother but to everyone who doubted her. The duel was fierce and unrelenting, each sibling pushing the other to their limits. Rayza fought with all her heart, but Ren’s experience and skill proved formidable. As she faced the brink of defeat, something deep within her awakened—a latent power passed down through her bloodline. Enveloped in a red aura, Rayza entered a 'blood rage,' her strength and speed heightened to extraordinary levels. In the stands, her father’s face changed from shock to realization as he recognized the aura—and his daughter. His heart warred between pride and fear, but the tournament rules demanded that the match continue. The crowd watched in awe as the siblings clashed in a battle that seemed almost otherworldly, their bond and rivalry displayed in every strike. After an hour of grueling combat, Rayza finally succumbed to exhaustion, defeated by her brother but not broken. She awoke to find herself at home, her father and Ren beside her. Before she could explain herself, her father placed a hand on her shoulder, his expression a mix of pride and sadness. “I was only trying to protect you,” he admitted, his voice heavy with emotion. “You remind me so much of your mother. But watching you fight, I realize now—I was wrong. I won't always be here to shield you, and perhaps that isn’t what you need. Keep growing, Rayza. Become strong, but also wise. And, Ren,” he added, turning to his son, “look after your sister.” In that moment, Rayza felt the acceptance she had longed for. The family shared a tearful embrace, a silent promise binding them closer than ever. From that day on, Rayza’s path was clear—not just to prove her worth but to carry forward the strength and love her family had instilled in her."
         };
     } else if (character === 'coming-soon') {
         details = {

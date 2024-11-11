@@ -91,17 +91,25 @@
     color: #fff;
     border-radius: 0 20px 0 0;
     box-shadow: 0 0 3px #000;
-    opacity: 0.5;
     transition: all 0.3s ease-in-out;
 }
 
 .overlay p {
     margin: 0;
+    opacity: 0.5;
+    transition: inherit;
+}
+
+p.role-text {
+    font-size: 0.7rem;
 }
 
 .character-card:hover .overlay {
-    opacity: 1;
     height: 100%;
+}
+
+.character-card:hover p {
+    opacity: 1;
 }
 
 .character-card:hover {
