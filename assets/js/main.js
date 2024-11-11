@@ -142,7 +142,7 @@ window.onload = function() {
 
 const themeOptions = [
   { name: "Default", value: "default" },
-  { name: "Darker", value: "darker" },
+  { name: "Dark-Blue", value: "dark-blue" },
   { name: "Dark-Red", value: "dark-red"},
   { name: "Dark-Purple", value: "dark-purple"},
   { name: "Dark-Green", value: "dark-green"},

@@ -43,12 +43,12 @@ body {
 
 /* Root Variables */
 :root {
-    --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
-    --default-font-color: #ffffff;
-    --color: #1e90ff;
-    --content-bg: rgba(22, 33, 46, 0.9);
-    --hover-light: #1ac3da;
-    --theme-overlay: rgba(30, 143, 255, 0.500);
+    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+    --default-font-color: #f0f0f0;
+    --color: #8a8a8a;
+    --content-bg: rgba(15, 15, 15, 0.9);
+    --hover-light: #4d4d4d;
+    --theme-overlay: rgba(64, 64, 64, 0.5);
     --overlay: rgba(10, 18, 24, 0.5);
     --scrollbar-track-color: rgba(0, 0, 0, 0);
     --font-style: myFont, 'Roboto', sans-serif;
@@ -56,12 +56,12 @@ body {
 
 /* Default theme */
 .theme-default {
-    --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
-    --default-font-color: #ffffff;
-    --color: #1e90ff;
-    --content-bg: rgba(22, 33, 46, 0.9);
-    --hover-light: #1ac3da;
-    --theme-overlay: rgba(30, 143, 255, 0.500);
+    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+    --default-font-color: #f0f0f0;
+    --color: #8a8a8a;
+    --content-bg: rgba(15, 15, 15, 0.9);
+    --hover-light: #4d4d4d;
+    --theme-overlay: rgba(64, 64, 64, 0.5);
 }
 
 /* White Blue theme */
@@ -74,16 +74,6 @@ body {
     --theme-overlay: rgba(30, 143, 255, 0.500);
 }
 
-/* Dark Black theme */
-.theme-darker {
-    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
-    --default-font-color: #f0f0f0;
-    --color: #8a8a8a;
-    --content-bg: rgba(15, 15, 15, 0.9);
-    --hover-light: #4d4d4d;
-    --theme-overlay: rgba(64, 64, 64, 0.5);
-}
-
 /* Modern White theme */
 .theme-modern-white {
     --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
@@ -92,6 +82,16 @@ body {
     --content-bg: rgba(255, 255, 255, 0.9);
     --hover-light: #808080;
     --theme-overlay: rgba(172, 172, 172, 0.5);
+}
+
+/* Dark Blue theme */
+.theme-dark-blue {
+    --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
+    --default-font-color: #ffffff;
+    --color: #1e90ff;
+    --content-bg: rgba(22, 33, 46, 0.9);
+    --hover-light: #1ac3da;
+    --theme-overlay: rgba(30, 143, 255, 0.500);
 }
 
 /* Dark Red theme */
