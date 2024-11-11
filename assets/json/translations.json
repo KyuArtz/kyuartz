@@ -100,6 +100,11 @@
     "selectCharacter": "SELECT A CHARACTER",
     "elishia": "Elishia Bluestein",
     "hexxana": "Hexxana",
+    "rayza": "Rayza",
+
+    "tacticalSpecialist": "(Tactical Specialist)",
+    "darkVanguard": "(Dark Vanguard)",
+    "WindborneAssassin": "(Windborne Assassin)",
 
     "serviceInfo": "SERVICE INFO",
     "termsOfService": "Terms of Service",
@@ -246,6 +251,11 @@
     "selectCharacter": "キャラクターを選択",
     "elishia": "エリシア・ブルースタイン",
     "hexxana": "ヘクサナ",
+    "rayza": "レイザ",
+
+    "tacticalSpecialist": "（戦術スペシャリスト）",
+    "darkVanguard": "（ダークヴァンガード）",
+    "WindborneAssassin": "（風に乗る暗殺者）",
     
     "serviceInfo": "サービス情報",
     "termsOfService": "利用規約",
