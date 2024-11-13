@@ -81,7 +81,6 @@ input[type="file"] {
     padding: 5px;
     border: solid thin;
     color: inherit;
-    background: none;
     border-radius: 50px;
     width: 100%;
     margin: 5px auto;
@@ -107,7 +106,7 @@ input[type="file"] {
 }
 
 /* Submit Button */
-button[type="submit"] {
+input[type="submit"] {
     color: var(--default-font-color);
     padding: 10px 30px;
     border: solid thin;
@@ -120,7 +119,7 @@ button[type="submit"] {
       padding: 15px;
       border-radius: 0;
     }
-    button[type="submit"] {
+    input[type="submit"] {
       width: 100%;
     }
 }

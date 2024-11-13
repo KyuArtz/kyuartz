@@ -135,7 +135,6 @@ input[type="file"] {
     border-radius: 50%;
     border: solid thin;
     color: var(--color);
-    background: none;
 }
 
 /* Logo View */
