@@ -490,7 +490,7 @@ form.search::after {
     right: 0;
     padding: 5px 20px;
     margin: auto 5px;
-    border: solid thin;
+    border: solid thin var(--default-font-color);
     border-radius: 5px;
     color: var(--color);
     background: none;
