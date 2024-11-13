@@ -57,7 +57,6 @@
 
 #welcome-message button {
     padding: 10px 20px;
-    background: var(--color);
     color: inherit;
     border: thin solid;
     border-radius: 50px;
@@ -108,7 +107,6 @@
 .popup-notice button {
     width: 50%;
     padding: 10px 0;
-    background: var(--color);
     color: var(--defaut-font-color);
     border: solid thin;
     outline: none;
@@ -162,7 +160,6 @@
 .donate-popup button {
     width: 50%;
     padding: 10px 0;
-    background: var(--color);
     color: var(--default-font-color);
     border: solid thin;
     color: inherit;
@@ -234,7 +231,6 @@ button.close {
     padding: 5px;
     aspect-ratio: 1/1;
     color: var(--default-font-color);
-    background: var(--color);
     outline: none;
     border: solid thin;
     border-radius: 5px;
@@ -269,13 +265,10 @@ button.close {
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    background: var(--color);
     color: inherit;
     outline: none;
     aspect-ratio: 1 / 1;
-    box-shadow: 0 0 3px #000;
     border: solid thin;
-    transition: background-color 0.3s ease;
     animation: wiggleAnimation 1s infinite;
     z-index: 50;
 }
@@ -334,7 +327,6 @@ button.close {
 }
 
 .cookie-popup button {
-    background: var(--color);
     color: inherit;
     border: solid thin;
     padding: 10px 30px;

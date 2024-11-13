@@ -21,7 +21,7 @@
 #languageSwitcher {
     max-width: 200px;
     padding: 10px;
-    background: var(--color); 
+    background: none; 
     color: inherit;
     border: solid thin;
     border-radius: 10px;

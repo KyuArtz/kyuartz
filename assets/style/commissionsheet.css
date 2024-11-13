@@ -60,7 +60,7 @@
 .inquire-button a {
     padding: 10px 30px;
     margin: 5px;
-    background: var(--color);
+    background: none;
     border-radius: 50px;
     border: solid thin;
     color: inherit;
@@ -68,7 +68,7 @@
 }
 
 .inquire-button a:hover {
-    box-shadow: 0 0 10px var(--color);
+    text-shadow: 0 0 10px var(--color);
 }
 
 /* Content */

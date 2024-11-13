@@ -36,7 +36,6 @@ header {
 }
 
 .settings-btn {
-    background: var(--color);
     color: inherit;
     padding: 10px 15px;
     border: none;
@@ -181,7 +180,7 @@ form.search input[type="search"] {
     float: right;
     width: 80%;
     border-radius: 0 50px 50px 0;
-    background: var(--theme-overlay);
+    background: none;
     border: thin solid var(--color);
 }
 
@@ -191,7 +190,6 @@ form.search button {
     border: solid thin var(--color);
     border-right: none;
     border-radius: 50px 0 0 50px;
-    background: var(--color);
     color: var(--default-font-color);
 }
 
@@ -299,7 +297,6 @@ form.search::after {
         display: block;
         padding: 5px;
         border: thin solid;
-        background: var(--color);
         border-radius: 10px;
         z-index: 1;
     }
@@ -498,6 +495,13 @@ form.search::after {
     color: inherit;
     outline: none;
     background: var(--color);
+    appearance: none;
+    -webkit-appearance: none; /* For Safari */
+    -moz-appearance: none; /* For Firefox */
+    background-image: url('https://cdn-icons-png.flaticon.com/512/60/60995.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
 }
 
 @media (max-width: 600px) {

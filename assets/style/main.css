@@ -181,10 +181,11 @@ h1, h2, h3, h4, p, label, strong, li {
 button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    background: none;
 }
 
 button:hover {
-    box-shadow: 0 0 10px var(--color);
+    text-shadow: 0 0 10px var(--color);
 }
 
 button.next,
