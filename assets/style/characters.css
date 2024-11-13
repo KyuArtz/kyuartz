@@ -152,7 +152,7 @@ p.role-text {
 }
 
 .character-info {
-    background: var(--theme-color);
+    background: var(--overlay);
     color: var(--default-font-color);
     border-radius: 10px;
     border-top: solid thick var(--color);
