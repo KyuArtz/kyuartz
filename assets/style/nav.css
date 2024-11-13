@@ -492,9 +492,9 @@ form.search::after {
     margin: auto 5px;
     border: solid thin;
     border-radius: 5px;
-    color: inherit;
+    color: var(--color);
+    background: none;
     outline: none;
-    background: var(--color);
     appearance: none;
     -webkit-appearance: none; /* For Safari */
     -moz-appearance: none; /* For Firefox */
@@ -502,6 +502,10 @@ form.search::after {
     background-repeat: no-repeat;
     background-position: right 10px center;
     background-size: 10px;
+}
+
+option {
+    background: none;
 }
 
 @media (max-width: 600px) {

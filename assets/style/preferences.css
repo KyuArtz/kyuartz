@@ -21,9 +21,9 @@
 #languageSwitcher {
     max-width: 200px;
     padding: 10px;
-    background: none; 
-    color: inherit;
-    border: solid thin;
+    color: var(--color);
+    background: none;
+    border: solid thin var(--default-font-color);
     border-radius: 10px;
     appearance: none;
     -webkit-appearance: none; /* For Safari */
@@ -39,8 +39,6 @@
     outline: none;
 }
 
-/* Additional dropdown styling */
 option {
-    background: var(--color); /* Default background color */
-    color: inherit;
+    background: none;
 }
