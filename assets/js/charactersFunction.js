@@ -61,7 +61,7 @@ function showCharacterInfo(character) {
         role:"NULL",
         speciality:"NULL",
         birthPlace: "NULL",
-        affiliation: "NULL",
+        affiliates: "NULL",
         gender: "NULL",
         age: "NULL",
         height: "NULL",
@@ -94,11 +94,11 @@ function showCharacterInfo(character) {
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
             birthPlace: "Orag City",
-            affiliation: "Roman Bluestein (Older Brother) | Niks (Bestfriend) | Ferdinand (Commandant)",
+            affiliates: "Roman Bluestein (Older Brother) | Niks (Bestfriend) | Ferdinand (Commandant)",
             gender: "Female",
-            age: "17",
+            age: "17 yrs.",
             height: "5'5\"",
-            likes: "Lollipop | Cats | Reading | organizing",
+            likes: "Lollipop | Bubblegum | Cats | Reading | Organizing",
             dislikes: "His big brother",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
             weapon: "Falconate Blade | Bolt Sniper",
@@ -126,11 +126,11 @@ function showCharacterInfo(character) {
             role:"Dark Vanguard",
             speciality:"Umbral Enforcer",
             birthPlace: "Unknown",
-            affiliation: "Unknown",
+            affiliates: "Unknown",
             gender: "Female",
             age: "Unknown",
             height: "5'8\"",
-            likes: "Reading | Hexing | Wondering | Making Potions",
+            likes: "Reading | Hexing | Wandering | Making Potions",
             dislikes: "Doing chores",
             elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
             weapon: "Oblivion’s Edge",
@@ -158,9 +158,9 @@ function showCharacterInfo(character) {
             role:"Windborne Assassin",
             speciality:"Mist Dancer",
             birthPlace: "Hidden Mist Valley",
-            affiliation: "Ren (Older Brother)",
+            affiliates: "Ren (Older Brother)",
             gender: "Female",
-            age: "19",
+            age: "19 yrs.",
             height: "5'7\"",
             likes: "Training | Cute Stuff | Sweets",
             dislikes: "Lazy People",
@@ -190,7 +190,7 @@ function showCharacterInfo(character) {
             role:"",
             speciality:"",
             birthPlace: "",
-            affiliation: "",
+            affiliates: "",
             gender: "",
             age: "",
             height: "",
@@ -220,12 +220,12 @@ function showCharacterInfo(character) {
     // Populate character details
     characterDetails.innerHTML = `
         <h2>${details.name}</h2>
+        <div class="character-info-scrollable">
         <div class="info-section" id="basic-info-scrollable">
             <p><strong>Faction:</strong> ${details.faction}</p>
             <p><strong>Role:</strong> ${details.role}</p>
             <p><strong>Specialty:</strong> ${details.speciality}</p>
             <p><strong>Birth Place:</strong> ${details.birthPlace}</p>
-            <p><strong>Affiliation:</strong> ${details.affiliation}</p>
             <p><strong>Gender:</strong> ${details.gender}</p>
             <p><strong>Age:</strong> ${details.age}</p>
             <p><strong>Height:</strong> ${details.height}</p>
@@ -238,7 +238,7 @@ function showCharacterInfo(character) {
             ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
         </div>
 
-        <div class="info-section" id="Weapon">
+        <div class="info-section" id="weapon">
             <h3>Favorite Weapon</h3>
             <p>${details.weapon}</p>
         </div>
@@ -264,9 +264,15 @@ function showCharacterInfo(character) {
             </div>
         </div>
 
+        <div class="info-section" id="affiliates">
+            <h3>Affiliates</h3>
+            <p>${details.affiliates}</p>
+        </div>
+
         <div class="info-section" id="background">
             <h3>Background</h3>
             <p>${details.background}</p>
+        </div>
         </div>
     `;
 

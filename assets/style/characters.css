@@ -57,7 +57,7 @@
     flex: 1 1 200px; /* Flex grows, but sets a base width */
     max-width: 250px; /* Maximum width for larger screens */
     min-width: 130px; /* Minimum width for smaller screens */
-    height: 320px;
+    height: 290px;
     background-color: var(--content-bg);
     position: relative;
     border: solid thin;
@@ -160,12 +160,15 @@ p.role-text {
     padding: 20px;
     width: 100%;
     max-width: 400px;
-    height: 750px;
+}
+
+.character-info-scrollable {
     overflow-y: auto;
+    height: 350px;
+    padding: 0 10px;
 }
 
 .character-info p {
-    text-align: justify;
     line-height: 1.6;
 }
 
@@ -189,8 +192,14 @@ p.role-text {
     z-index: 1;
 }
 
+#elementalPower {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 #elementalPower img {
-    margin: 0 5px;
     width: 50px;
     height: 50px;
     aspect-ratio: 1/1;
@@ -204,22 +213,11 @@ p.role-text {
     transform: scale(1.05);
 }
 
-#basic-info-scrollable {
-    max-height: 150px;
-    overflow-y: auto;
-    padding-right: 15px;
-}
-
-#abilities-scrollable {
-    max-height: 150px;
-    overflow-y: auto;
-    padding-right: 15px;
-}
-
 #background p {
     max-height: 200px;
     overflow-y: auto;
     padding-right: 15px;
+    text-align: justify;
 }
 
 /* Responsive adjustments */
