@@ -180,8 +180,9 @@ form.search input[type="search"] {
     float: right;
     width: 80%;
     border-radius: 0 50px 50px 0;
-    background: none;
     border: thin solid;
+    border-left: none;
+    background: none;
 }
 
 form.search button {
