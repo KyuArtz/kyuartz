@@ -51,7 +51,7 @@ textarea {
     width: 100%;
     padding: 12px;
     border: solid thin;
-    border-radius: 50px;
+    border-radius: 10px;
     outline: none;
     margin: 8px 0;
     resize: vertical;
@@ -64,7 +64,6 @@ input[type="message"],
 textarea {
     max-height: 150px;
     height: 150px;
-    border-radius: 10px 30px 10px 30px;
 }
 
 input[type="email"],
@@ -86,7 +85,6 @@ select:focus {
 
 /* Submit Button */
 input[type="Submit"] {
-    background-color: var(--color);
     color: var(--default-font-color);
     padding: 10px 30px;
     border: solid thin;
@@ -96,7 +94,6 @@ input[type="Submit"] {
 
 /* File Input */
 input[type="file"] {
-    border-radius: 10px 10px 30px 10px;
     width: 100%;
 }
 

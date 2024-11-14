@@ -27,7 +27,7 @@ select {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
-    border-radius: 50px;
+    border-radius: 10px;
     border: solid thin;
     background: none;
     color: inherit;
@@ -39,7 +39,6 @@ input[type="message"],
 textarea {
     max-height: 150px;
     height: 150px;
-    border-radius: 10px 30px 10px 30px;
 }
 
 input[type="email"],
@@ -68,7 +67,6 @@ textarea {
 /* File Input */
 input[type="file"] {
     border: solid thin;
-    border-radius: 10px 10px 30px 10px;
     width: 100%;
 }
 
