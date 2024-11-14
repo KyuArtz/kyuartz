@@ -181,13 +181,13 @@ form.search input[type="search"] {
     width: 80%;
     border-radius: 0 50px 50px 0;
     background: none;
-    border: thin solid var(--color);
+    border: thin solid;
 }
 
 form.search button {
     float: left;
     width: 20%;
-    border: solid thin var(--color);
+    border: solid thin;
     border-right: none;
     border-radius: 50px 0 0 50px;
     color: var(--default-font-color);
