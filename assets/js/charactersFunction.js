@@ -2,15 +2,15 @@
 const characterBackgrounds = {
     elishia: {
         landscape: "url('assets/images/character-presets/elishia-cover.webp')",
-        portrait: "url('assets/images/character-presets/gif/elishia.gif')"
+        portrait: "url('')"
     },
     hexxana: {
         landscape: "url('assets/images/character-presets/hexxana-cover.webp')",
-        portrait: "url('assets/images/character-presets/gif/hexxana.gif')"
+        portrait: "url('')"
     },
     rayza: {
         landscape: "url('assets/images/character-presets/rayza-cover.webp')",
-        portrait: "url('assets/images/character-presets/gif/rayza.gif')"
+        portrait: "url('')"
     },
     comingSoon: {
         landscape: "url('')",
