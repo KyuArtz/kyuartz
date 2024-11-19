@@ -66,6 +66,7 @@ function showCharacterInfo(character) {
         age: "NULL",
         height: "NULL",
         likes: "NULL",
+        dislikes: "NULL",
         elementalImages: ["", ""],
         weapon: "NULL",
         ability1: "NULL",
