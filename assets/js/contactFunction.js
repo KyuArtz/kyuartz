@@ -23,7 +23,7 @@ function validateInput(fieldType) {
 
   if (fieldType === 'username') {
       isValid = field.value.match(/^[A-Za-z\s]{3,25}$/);
-      document.getElementById('username-error').textContent = isValid ? '' : 'Name must be between 3 and 25 characters.';
+      document.getElementById('username-error').textContent = isValid ? '' : 'Must be between 3 and 25 characters & no special char.';
   } else if (fieldType === 'email') {
       isValid = field.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,3}$/);
       document.getElementById('email-error').textContent = isValid ? '' : 'Invalid email format.';
