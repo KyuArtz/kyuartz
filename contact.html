@@ -247,8 +247,8 @@
       <label for="message-field" data-translate="commissionDetails">Commission Details:</label><span id="message-error"></span><span id="message-valid"></span>
       <textarea id="message-field" name="Commssion Details" placeholder="Information regarding your commissioned art request to improve workflow efficiency.." onkeyup="validateInput('message')" required></textarea><br><br>
 
-      <div class="uploadimg-container">
-        <label class="upload" for="myFile" data-translate="uploadSample">Upload Sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+      <label class="upload" for="myFile" data-translate="uploadSample">Upload Sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+      <div class="upload-content">
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()">
         
         <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: auto;">

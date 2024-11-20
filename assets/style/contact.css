@@ -75,6 +75,10 @@ textarea {
     transition: background-color 0.3s ease-in-out;
 }
 
+input[type="file"] {
+    border-style: none;
+}
+
 input[type="text"]:focus, 
 input[type="email"]:focus, 
 textarea:focus, 
@@ -97,10 +101,11 @@ input[type="file"] {
     width: 100%;
 }
 
-#image-preview {
+.upload-content {
     border-radius: 10px;
     border: solid thin;
     color: var(--color);
+    padding: 5px;
 }
 
 img#image-preview {
@@ -126,6 +131,7 @@ img#image-preview {
     justify-content: flex-end;
     align-items: center;
     gap: 2px;
+    padding: 5px;
 }
 
 .tos-info button {

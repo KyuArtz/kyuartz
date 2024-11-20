@@ -66,13 +66,16 @@ textarea {
 
 /* File Input */
 input[type="file"] {
-    border: solid thin;
+    border-style: none;
     width: 100%;
 }
 
-#image-preview {
+.fileUpload-content {
     border-radius: 10px;
     border: solid thin;
+    color: var(--color);
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 img#image-preview {
