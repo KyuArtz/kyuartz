@@ -138,13 +138,11 @@ header {
 .nav-link-sideMenu.activeLink {
     color: var(--color);
     border-bottom: thick solid var(--color);
-    font-weight: bold;
 }
 
 .sideMenu-content a.activeLink {
     color: #1f1f1f;
-    background: var(--hover-light);
-    font-weight: bold;
+    background: var(--theme-overlay);
 }
 
 .nav-link.activeLink:hover {
@@ -366,31 +364,24 @@ form.search::after {
     box-shadow: 1px 0 0;
     padding-bottom: 50px;
     overflow: auto;
-    transition: 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .sideMenu-content h2 {
     color: inherit;
     margin: 0;
     padding: 15px;
-    border-top: solid thin;
 }
 
 .sideMenu-content a {
     color: inherit;
-    background: none;
-    text-decoration: none;
-    box-shadow: none;
-    text-shadow: none;
-    border: none;
-    border-radius: 0;
+    border-radius: 10px;
     padding: 15px 15px;
-    transition: all 0.3s ease-in-out;
+    margin: 5px;
 }
 
 .sideMenu-content a:hover {
-    color: #1f1f1f;
-    background: var(--hover-light);
+    box-shadow: 0 0 1px var(--default-font-color);
 }
 
 .show-sideMenu {
@@ -457,7 +448,7 @@ form.search::after {
     box-shadow: 1px 0 0;
     justify-content: left;
     overflow: auto;
-    transition: 0.5s ease;
+    transition: all 0.5s ease-in-out;
 }
 
 .category-menu h2 {
@@ -473,13 +464,13 @@ form.search::after {
 .category-item a {
     width: 100%;
     color: inherit;
+    border-radius: 10px;
     padding: 15px 15px;
-    transition: all 0.3s ease-in-out;
+    margin: 5px;
 }
 
 .category-item a:hover {
-    background: var(--hover-light);
-    color: #1f1f1f;
+    box-shadow: 0 0 1px var(--default-font-color);
 }
 
 .category-menu.categoryMenu-active {
