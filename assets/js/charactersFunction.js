@@ -230,18 +230,11 @@ function showCharacterInfo(character) {
             <p><strong>Gender:</strong> ${details.gender}</p>
             <p><strong>Age:</strong> ${details.age}</p>
             <p><strong>Height:</strong> ${details.height}</p>
-            <p><strong>Likes:</strong> ${details.likes}</p>
-            <p><strong>Dislikes:</strong> ${details.dislikes}</p>
         </div>
 
         <div class="info-section" id="elementalPower">
             <h3>Elemental Mastery</h3>
             ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
-        </div>
-
-        <div class="info-section" id="weapon">
-            <h3>Favorite Weapon</h3>
-            <p>${details.weapon}</p>
         </div>
 
         <div class="info-section" id="abilities">
@@ -265,9 +258,24 @@ function showCharacterInfo(character) {
             </div>
         </div>
 
+        <div class="info-section" id="weapon">
+            <h3>Favorite Weapon</h3>
+            <p>${details.weapon}</p>
+        </div>
+
         <div class="info-section" id="affiliates">
             <h3>Affiliates</h3>
             <p>${details.affiliates}</p>
+        </div>
+
+        <div class="info-section" id="likes">
+            <h3>Likes</h3>
+            <p>${details.likes}</p>
+        </div>
+
+        <div class="info-section" id="dislikes">
+            <h3>Dislikes</h3>
+            <p>${details.dislikes}</p>
         </div>
 
         <div class="info-section" id="background">
