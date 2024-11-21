@@ -330,14 +330,6 @@ form.search::after {
         z-index: 1;
     }
 
-    .nav-item a,
-    .nav-link-sideMenu {
-        background: none;
-        box-shadow: none;
-        text-shadow: none;
-        border: none;
-    }
-
     .navigation-menu.navMenu-active {
         right: 0;
     }
