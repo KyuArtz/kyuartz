@@ -63,7 +63,7 @@ function showCharacterInfo(character) {
         birthplace: "",
         affiliates: "",
         gender: "",
-        age: "",
+        birthdate: "",
         height: "",
         likes: "",
         dislikes: "",
@@ -97,9 +97,9 @@ function showCharacterInfo(character) {
             birthplace: "Orag City, District 3",
             affiliates: "<strong>Roman Bluestein (Older Brother)</strong> <strong>Niks (Bestfriend)</strong> <strong>Ferdinand (Commandant)</strong>",
             gender: "Female",
-            age: "17 yrs.",
+            birthdate: "Sept. 9",
             height: "5'5\" ft",
-            likes: "<strong>Lollipop</strong> <strong>Bubblegum</strong> <strong>Cats</strong> <strong>Reading</strong> <strong>Organizing</strong>",
+            likes: "<strong>Music</strong> <strong>Lollipop</strong> <strong>Bubblegum</strong> <strong>Cats</strong> <strong>Reading</strong> <strong>Organizing</strong>",
             dislikes: "<strong>His big brother</strong>",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
             weapon: "<strong>Falconate Blade</strong> <strong>Bolt Sniper</strong>",
@@ -129,7 +129,7 @@ function showCharacterInfo(character) {
             birthplace: "Unknown",
             affiliates: "<strong>Unknown</strong>",
             gender: "Female",
-            age: "Unknown",
+            birthdate: "Unknown",
             height: "5'8\" ft",
             likes: "<strong>Reading</strong> <strong>Hexing</strong> <strong>Wandering</strong> <strong>Making Potions</strong>",
             dislikes: "<strong>Doing chores</strong>",
@@ -161,7 +161,7 @@ function showCharacterInfo(character) {
             birthplace: "Hidden Mist Valley",
             affiliates: "Ren (Older Brother)",
             gender: "Female",
-            age: "19 yrs.",
+            birthdate: "Nov. 15",
             height: "5'7\" ft",
             likes: "<strong>Cute Stuff</strong> <strong>Training</strong> <strong>Sweets</strong>",
             dislikes: "<strong>Lazy People</strong>",
@@ -193,7 +193,7 @@ function showCharacterInfo(character) {
             birthplace: "",
             affiliates: "",
             gender: "",
-            age: "",
+            birthdate: "",
             height: "",
             likes: "",
             dislikes: "",
@@ -227,8 +227,8 @@ function showCharacterInfo(character) {
             <p><strong>Role:</strong> ${details.role}</p>
             <p><strong>Specialty:</strong> ${details.speciality}</p>
             <p><strong>Birthplace:</strong> ${details.birthplace}</p>
+            <p><strong>Birthdate:</strong> ${details.birthdate}</p>
             <p><strong>Gender:</strong> ${details.gender}</p>
-            <p><strong>Age:</strong> ${details.age}</p>
             <p><strong>Height:</strong> ${details.height}</p>
         </div>
 
