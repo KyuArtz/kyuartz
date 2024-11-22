@@ -60,7 +60,7 @@ function showCharacterInfo(character) {
         faction:"",
         role:"",
         speciality:"",
-        birthPlace: "",
+        birthplace: "",
         affiliates: "",
         gender: "",
         age: "",
@@ -94,7 +94,7 @@ function showCharacterInfo(character) {
             faction:"Falcon Company",
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
-            birthPlace: "Orag City",
+            birthplace: "Orag City, District 3",
             affiliates: "<strong>Roman Bluestein (Older Brother)</strong> <strong>Niks (Bestfriend)</strong> <strong>Ferdinand (Commandant)</strong>",
             gender: "Female",
             age: "17 yrs.",
@@ -126,7 +126,7 @@ function showCharacterInfo(character) {
             faction:"Unknown",
             role:"Dark Vanguard",
             speciality:"Umbral Enforcer",
-            birthPlace: "Unknown",
+            birthplace: "Unknown",
             affiliates: "<strong>Unknown</strong>",
             gender: "Female",
             age: "Unknown",
@@ -158,7 +158,7 @@ function showCharacterInfo(character) {
             faction:"Zephyra Vale",
             role:"Windborne Assassin",
             speciality:"Mist Dancer",
-            birthPlace: "Hidden Mist Valley",
+            birthplace: "Hidden Mist Valley",
             affiliates: "Ren (Older Brother)",
             gender: "Female",
             age: "19 yrs.",
@@ -190,7 +190,7 @@ function showCharacterInfo(character) {
             faction:"",
             role:"",
             speciality:"",
-            birthPlace: "",
+            birthplace: "",
             affiliates: "",
             gender: "",
             age: "",
@@ -226,7 +226,7 @@ function showCharacterInfo(character) {
             <p><strong>Faction:</strong> ${details.faction}</p>
             <p><strong>Role:</strong> ${details.role}</p>
             <p><strong>Specialty:</strong> ${details.speciality}</p>
-            <p><strong>Birth Place:</strong> ${details.birthPlace}</p>
+            <p><strong>Birthplace:</strong> ${details.birthplace}</p>
             <p><strong>Gender:</strong> ${details.gender}</p>
             <p><strong>Age:</strong> ${details.age}</p>
             <p><strong>Height:</strong> ${details.height}</p>
