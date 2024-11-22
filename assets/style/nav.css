@@ -104,8 +104,7 @@ header {
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    border: thin solid;
-    color: var(--color);
+    border: thin solid var(--default-font-color);
 }
 
 /* Nav Links */
