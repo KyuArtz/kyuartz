@@ -186,7 +186,7 @@ function showCharacterInfo(character) {
         };
     } else if (character === 'coming-soon') {
         details = {
-            name: "Character Coming Soon",
+            name: "Coming Soon",
             faction:"",
             role:"",
             speciality:"",
