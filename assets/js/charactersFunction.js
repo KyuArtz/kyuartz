@@ -95,7 +95,7 @@ function showCharacterInfo(character) {
             role:"Tactical Specialist",
             speciality:"Holo-Engineer",
             birthplace: "Orag City, District 3",
-            affiliates: "<strong>Roman Bluestein (Older Brother)</strong> <strong>Niks (Bestfriend)</strong> <strong>Ferdinand (Commandant)</strong>",
+            affiliates: "<strong>Roman Bluestein (Older Brother)</strong> <strong>Nicks (Bestfriend)</strong> <strong>Zackry (Commandant)</strong> <strong>Eva (Squadmate)</strong> <strong>Hektor (Squadmate)</strong> <strong>Jaze (Squadmate)</strong>",
             gender: "Female",
             birthdate: "Sept. 9",
             height: "5'5\" ft",
