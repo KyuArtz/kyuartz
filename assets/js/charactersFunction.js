@@ -5,11 +5,11 @@ const characterBackgrounds = {
         portrait: "url('')"
     },
     hexxana: {
-        landscape: "url('assets/images/character-presets/hexxana-cover.webp')",
+        landscape: "url('')",
         portrait: "url('')"
     },
     rayza: {
-        landscape: "url('assets/images/character-presets/rayza-cover.webp')",
+        landscape: "url('')",
         portrait: "url('')"
     },
     comingSoon: {
