@@ -187,6 +187,7 @@ p.role-text {
 }
 
 .character-info info {
+    border: solid thin;
     border-radius: 5px;
     padding: 5px;
     background: var(--overlay);
