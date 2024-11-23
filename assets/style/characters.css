@@ -186,6 +186,12 @@ p.role-text {
     background: var(--overlay);
 }
 
+.character-info info {
+    border-radius: 5px;
+    padding: 5px;
+    background: var(--overlay);
+}
+
 .character-info-scrollable {
     overflow-y: auto;
     height: 350px;
