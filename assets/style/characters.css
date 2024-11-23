@@ -190,7 +190,7 @@ p.role-text {
     border: solid thin var(--color);
     border-radius: 5px;
     padding: 5px;
-    background: var(--overlay);
+    background: var(--theme-overlay);
 }
 
 .character-info-scrollable {
