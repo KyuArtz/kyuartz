@@ -102,7 +102,7 @@ function showCharacterInfo(character) {
             likes: "<strong>Music</strong> <strong>Lollipop</strong> <strong>Bubblegum</strong> <strong>Cats</strong> <strong>Reading</strong> <strong>Organizing</strong>",
             dislikes: "<strong>His big brother</strong>",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
-            weapon: "<strong>Falconate Blade</strong> <strong>Bolt Sniper</strong>",
+            weapon: "<strong>Falconate Blade</strong> <strong>Dual Gun</strong>",
             ability1: "<strong>Holographic Shields</strong> - Create protective barriers during battles to shield herself and allies from attacks.",
             ability2: "<strong>Weapon Creation</strong> - Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
             ability3: "<strong>Environmental Manipulation</strong> - Alter the battlefield by moving or reshaping objects, like creating obstacles for enemies or enhancing terrain for tactical advantages.",
