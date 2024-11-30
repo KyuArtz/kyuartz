@@ -103,20 +103,20 @@
 
 .overlay p {
     margin: 0;
-    opacity: 0.5;
     transition: inherit;
 }
 
-p.role-text {
+h5.name-tag {
+    margin: 0;
+}
+
+p.role-type {
     font-size: 0.7rem;
+    color: #ff841f;
 }
 
 .character-card:hover .overlay {
     height: 100%;
-}
-
-.character-card:hover p {
-    opacity: 1;
 }
 
 .character-card:hover {
@@ -194,7 +194,7 @@ p.role-text {
 
 .character-info-scrollable {
     overflow-y: auto;
-    height: 350px;
+    height: 370px;
     padding: 0 10px;
 }
 

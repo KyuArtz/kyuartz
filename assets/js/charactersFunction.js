@@ -1,14 +1,22 @@
 // Map character names to landscape and portrait background images
 const characterBackgrounds = {
     elishia: {
-        landscape: "url('assets/images/character-presets/elishia-cover.webp')",
+        landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')",
         portrait: "url('')"
     },
-    hexxana: {
+    evalete: {
         landscape: "url('')",
         portrait: "url('')"
     },
-    rayza: {
+    zackry: {
+        landscape: "url('')",
+        portrait: "url('')"
+    },
+    jaze: {
+        landscape: "url('')",
+        portrait: "url('')"
+    },
+    zenki: {
         landscape: "url('')",
         portrait: "url('')"
     },
@@ -90,12 +98,12 @@ function showCharacterInfo(character) {
     // Define character-specific details
     if (character === 'elishia') {
         details = {
-            name: "Elishia Bluestein - Falcon Elite",
+            name: "Elishia Bluestein - F-01A",
             faction:"<info>Falcon Company</info>",
-            role:"<info>Tactical Specialist</info>",
-            speciality:"<info>Holo-Engineer</info>",
+            role:"<info>Versitile</info>",
+            speciality:"<info>Tactical Specialist</info>",
             birthplace: "<info>Orag City, District 3</info>",
-            affiliates: "<info>Roman Bluestein (Older Brother)</info> <info>Nicks (Bestfriend)</info> <info>Zackry (Commandant)</info> <info>Eva (Squadmate)</info> <info>Hektor (Squadmate)</info> <info>Jaze (Squadmate)</info>",
+            affiliates: "<info>Roman Bluestein (Older Brother)</info> <info>Nicks (Bestfriend)</info> <info>Zackry (Commandant)</info> <info>Evalete (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info>",
             gender: "<info>Female</info>",
             birthdate: "<info>Sept. 9</info>",
             height: "<info>5'5\" ft</info>",
@@ -119,6 +127,134 @@ function showCharacterInfo(character) {
             ability14: "",
             ability15: "",
             background: "Elishia and her mother lived a serene life in her mother's province, nestled outside the bustling city of Orag. For a year, their world was peaceful, filled with laughter and simple joys. However, a year later, her father, a visionary inventor renowned for his groundbreaking contributions to technology, decided it was time for a change. He wanted to move them to the capital city, where the prestigious university offered an educational experience far superior to what their province could provide. He also yearned to be closer to his daughter, balancing his demanding work at NanoFutureTech—a private laboratory he owned that was dedicated to pioneering future technologies for humanity. Upon their arrival in the capital, they settled into her father's old house, a place filled with memories of his past and echoes of his dreams. Elishia, now attending the university, quickly found herself at the center of attention. As the daughter of a famous scientist and a brilliant student in her own right, she was admired by her peers. Yet, despite the spotlight, Elishia craved a simple, quiet existence, far removed from the expectations that came with her lineage. But that peace shattered one fateful day. Without warning, the city descended into chaos. People began to exhibit erratic and violent behavior, transforming into grotesque creatures that emerged from the shadows. The very fabric of her life unraveled as she witnessed her parents bravely defend her, sacrificing their lives in a desperate attempt to protect her from the horrors that had befallen them. In the aftermath, Elishia was rescued by a team of special ops forces, who evacuated her to a designated safe point alongside other survivors. The trauma of losing her parents weighed heavily on her, igniting a fire within her—a determination to protect those who could not protect themselves. With her once peaceful dreams now shattered, she felt a newfound purpose. Driven by this resolve, Elishia enlisted in the military, where she honed her skills and emerged as a tactical specialist. Her intelligence and tenacity propelled her through rigorous training, earning her a coveted position within Falcon Company, a renowned unit known for their strategic operations and bravery. As Elishia now fights to reclaim her world from the clutches of chaos, she carries with her the memory of her parents and the hope of a future where peace can be restored. With every mission, she strives not only to protect lives but to honor the legacy of the family that shaped her into the warrior she has become."
+        };
+    } else if (character === 'evalete') {
+        details = {
+            name: "Evalete - F-01A",
+            faction:"<info>Falcon Company</info>",
+            role:"<info>Biotech Specialist</info>",
+            speciality:"<info>Support</info>",
+            birthplace: "<info></info>",
+            affiliates: "<info>Zackry (Commandant)</info> <info>Elishia (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info>",
+            gender: "<info>Female</info>",
+            birthdate: "<info></info>",
+            height: "<info></info>",
+            elementalImages: [""],
+            likes: "<info></info> <info></info> <info></info> <info></info>",
+            dislikes: "<info></info>",
+            weapon: "<info></info>",
+            ability1: "<strong></strong> - ",
+            ability2: "<strong></strong> - ",
+            ability3: "<strong></strong> -  ",
+            ability4: "<strong></strong> - ",
+            ability5: "<strong></strong> - ",
+            ability6: "<strong></strong> - ",
+            ability7: "<strong></strong> - ",
+            ability8: "<strong></strong> - ",
+            ability9: "<strong></strong> - ",
+            ability10: "<strong></strong> - ",
+            ability11: "<strong></strong> - ",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === 'zackry') {
+        details = {
+            name: "Zackry - F-01A",
+            faction:"<info>Falcon Company</info>",
+            role:"<info>Commandant</info>",
+            speciality:"<info>Versitile</info>",
+            birthplace: "<info></info>",
+            affiliates: "<info>Elishia (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info></info>",
+            gender: "<info>Male</info>",
+            birthdate: "<info></info>",
+            height: "<info></info>",
+            elementalImages: [""],
+            likes: "<info></info> <info></info> <info></info> <info></info>",
+            dislikes: "<info></info>",
+            weapon: "<info></info>",
+            ability1: "<strong></strong> - ",
+            ability2: "<strong></strong> - ",
+            ability3: "<strong></strong> -  ",
+            ability4: "<strong></strong> - ",
+            ability5: "<strong></strong> - ",
+            ability6: "<strong></strong> - ",
+            ability7: "<strong></strong> - ",
+            ability8: "<strong></strong> - ",
+            ability9: "<strong></strong> - ",
+            ability10: "<strong></strong> - ",
+            ability11: "<strong></strong> - ",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === 'jaze') {
+        details = {
+            name: "Jaze - F-01A",
+            faction:"<info>Falcon Company</info>",
+            role:"<info>Jagguernaut</info>",
+            speciality:"<info>Guardian</info>",
+            birthplace: "<info></info>",
+            affiliates: "<info>Zackry (Commandant)</info> <info>Elishia (Squadmate)</info> <info>Zenki (Squadmate)</info>",
+            gender: "<info>Male</info>",
+            birthdate: "<info></info>",
+            height: "<info></info>",
+            elementalImages: [""],
+            likes: "<info></info> <info></info> <info></info> <info></info>",
+            dislikes: "<info></info>",
+            weapon: "<info></info>",
+            ability1: "<strong></strong> - ",
+            ability2: "<strong></strong> - ",
+            ability3: "<strong></strong> - ",
+            ability4: "<strong></strong> - ",
+            ability5: "<strong></strong> - ",
+            ability6: "<strong></strong> - ",
+            ability7: "<strong></strong> - ",
+            ability8: "<strong></strong> - ",
+            ability9: "<strong></strong> - ",
+            ability10: "<strong></strong> - ",
+            ability11: "<strong></strong> - ",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === 'zenki') {
+        details = {
+            name: "Zenki - F-01A",
+            faction:"<info>Falcon Company</info>",
+            role:"<info>Assassin</info>",
+            speciality:"<info></info>",
+            birthplace: "<info></info>",
+            affiliates: "<info></info>",
+            gender: "<info></info>",
+            birthdate: "<info></info>",
+            height: "<info></info>",
+            elementalImages: [""],
+            likes: "<info></info> <info></info> <info></info> <info></info>",
+            dislikes: "<info></info>",
+            weapon: "<info></info>",
+            ability1: "<strong></strong> - ",
+            ability2: "<strong></strong> - ",
+            ability3: "<strong></strong> - ",
+            ability4: "<strong></strong> - ",
+            ability5: "<strong></strong> - ",
+            ability6: "<strong></strong> - ",
+            ability7: "<strong></strong> - ",
+            ability8: "<strong></strong> - ",
+            ability9: "<strong></strong> - ",
+            ability10: "<strong></strong> - ",
+            ability11: "<strong></strong> - ",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
         };
     } else if (character === 'hexxana') {
         details = {
