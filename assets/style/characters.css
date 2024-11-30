@@ -112,7 +112,7 @@ h5.name-tag {
 
 p.role-type {
     font-size: 0.7rem;
-    color: #ff841f;
+    color: #ff9239;
 }
 
 .character-card:hover .overlay {
@@ -175,6 +175,10 @@ p.role-type {
 
 .character-info h3 {
     color: var(--color);
+}
+
+.character-info squad {
+    color: #ff9239;
 }
 
 .character-info strong {

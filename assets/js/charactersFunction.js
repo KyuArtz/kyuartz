@@ -98,7 +98,7 @@ function showCharacterInfo(character) {
     // Define character-specific details
     if (character === 'elishia') {
         details = {
-            name: "Elishia Bluestein - F-01A",
+            name: "Elishia Bluestein <squad>(F-01A)</squad>",
             faction:"<info>Falcon Company</info>",
             role:"<info>Versatile</info>",
             speciality:"<info>Tactical Specialist</info>",
