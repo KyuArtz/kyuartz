@@ -100,7 +100,7 @@ function showCharacterInfo(character) {
         details = {
             name: "Elishia Bluestein - F-01A",
             faction:"<info>Falcon Company</info>",
-            role:"<info>Versitile</info>",
+            role:"<info>Versatile</info>",
             speciality:"<info>Tactical Specialist</info>",
             birthplace: "<info>Orag City, District 3</info>",
             affiliates: "<info>Roman Bluestein (Older Brother)</info> <info>Nicks (Bestfriend)</info> <info>Zackry (Commandant)</info> <info>Evalete (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info>",
