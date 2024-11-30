@@ -67,7 +67,7 @@
     max-width: 250px; /* Maximum width for larger screens */
     min-width: 130px; /* Minimum width for smaller screens */
     height: 290px;
-    background-color: var(--content-bg);
+    background: var(--content-bg);
     position: relative;
     border: solid thin;
     border-top: solid 5px;
