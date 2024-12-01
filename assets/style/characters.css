@@ -41,7 +41,11 @@
 }
 
 #characterOverlay {
-    background: var(--overlay);
+    background: url('../images/gif/lighting.gif'), var(--overlay);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -188,7 +192,7 @@ p.role-type {
 }
 
 .character-info {
-    background: url('../images/gif/2RNb.gif'), var(--overlay);
+    background: url('../images/gif/2rnb.gif'), var(--overlay);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
