@@ -1,3 +1,29 @@
+.secondary-navigation {
+    background: none !important;
+    box-shadow: none !important;
+    justify-content: left !important;
+}
+
+.filter-character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid thin var(--color);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background: var(--overlay);
+}
+
+.filter-character a {
+    padding: 5px;
+    border: solid thin var(--color);
+    border-radius: 5px;
+    margin: auto 5px;
+    color: var(--color);
+    background: var(--theme-overlay);
+}
+
 .character-container {
     background: url('../images/character-presets/gif/default.gif');
     background-size: cover;
