@@ -93,7 +93,10 @@
     max-width: 250px; /* Maximum width for larger screens */
     min-width: 130px; /* Minimum width for smaller screens */
     height: 290px;
-    background: var(--content-bg);
+    background: url('../images/character-presets/profile/default.webp'), var(--overlay);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
     border: solid thin;
     border-top: solid 5px;
