@@ -26,6 +26,8 @@ header {
 }
 
 .subMenu-container {
+    border: solid thin;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -39,9 +41,7 @@ header {
     color: inherit;
     padding: 10px 15px;
     border: none;
-    border-radius: 10px;
-    border: solid thin;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .dropdown-setting {
