@@ -10,7 +10,7 @@
     align-items: center;
     border: solid thin var(--color);
     padding: 5px;
-    margin: 5px;
+    margin: 0 5px;
     border-radius: 10px;
     background: var(--overlay);
 }
