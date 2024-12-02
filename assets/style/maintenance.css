@@ -48,7 +48,6 @@
 /* Maintenance Link */
 .maintenance_body button {
     padding: 10px 50px;
-    background-color: var(--color);
     color: var(--default-font-color);
     border: solid thin;
     border-radius: 50px;
