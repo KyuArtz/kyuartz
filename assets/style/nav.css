@@ -59,7 +59,7 @@ header {
     z-index: 1;
 }
 
-.dropdown-setting a {
+.dropdown-setting a.setting {
     padding: 12px 16px;
     text-decoration: none;
     color: inherit;
@@ -73,6 +73,23 @@ header {
 
 .settings-menu.show-settings .dropdown-setting {
     display: block;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: solid thin;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.account img {
+    width: 35px;
+    height: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: solid thin;
 }
 
 /* Main Navigation */
@@ -534,7 +551,6 @@ option {
 
 .detail:hover {
     color: var(--color);
-    text-decoration: underline;
 }
 
 .social {
