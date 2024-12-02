@@ -26,10 +26,6 @@
     text-decoration: none;
 }
 
-.faq-item a:hover {
-    text-decoration: underline;
-}
-
 .faq-container ul {
     max-width: 1000px;
     padding: 0;
