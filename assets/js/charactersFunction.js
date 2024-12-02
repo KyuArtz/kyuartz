@@ -5,7 +5,7 @@ const characterBackgrounds = {
         portrait: "url('')"
     },
     evalete: {
-        landscape: "url('')",
+        landscape: "url('assets/images/character-presets/cover/evalete-cover.png')",
         portrait: "url('')"
     },
     zackry: {
@@ -130,10 +130,10 @@ function showCharacterInfo(character) {
         };
     } else if (character === 'evalete') {
         details = {
-            name: "Evalete - F-01A",
+            name: "Evalete <squad>(F-01A)</squad>",
             faction:"<info>Falcon Company</info>",
-            role:"<info>Biotech Specialist</info>",
-            speciality:"<info>Support</info>",
+            role:"<info>Healer</info>",
+            speciality:"<info>Biotech Specialist</info>",
             birthplace: "<info></info>",
             affiliates: "<info>Zackry (Commandant)</info> <info>Elishia (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info>",
             gender: "<info>Female</info>",
