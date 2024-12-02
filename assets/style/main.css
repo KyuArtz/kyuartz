@@ -1,7 +1,8 @@
 /* Universal Styles */
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'myFont', sans-serif;
+    cursor: default;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -22,8 +23,8 @@ body {
 
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -51,7 +52,7 @@ body {
     --theme-overlay: rgba(64, 64, 64, 0.5);
     --overlay: rgba(10, 18, 24, 0.5);
     --scrollbar-track-color: rgba(0, 0, 0, 0);
-    --font-style: myFont, 'Roboto', sans-serif;
+    --font-style: 'myFont', sans-serif;
 }
 
 /* Default theme */
@@ -174,11 +175,31 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
-h1, h2, h3, h4, h5, p, label, strong, li {
-    cursor: default;
+.summaryContent p,
+.expcontent p,
+input,
+.cs-content strong,
+.cs-content p,
+.comic-content p,
+#abilities-scrollable p,
+#background p,
+.character-card p,
+.tos-container p,
+.pp-container p,
+.faq-container p,
+.help-card p,
+.popup-wn li
+{
+    font-family: 'Roboto', sans-serif;
 }
 
 button,
+button i,
+a,
+a i,
+a p,
+a span,
+.settings-btn i,
 input[type="Submit"] {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -193,34 +214,6 @@ input[type="Submit"]:hover {
 button.next,
 button.prev {
     font-size: 1.5rem;
-}
-
-h1, h2, h3, h4, h5, a, label, span, button, input[type="Submit"],
-.search-result a,
-.search-result p,
-.main-navigation a,
-.caption p,
-.lb-data .lb-number,
-.contact-subContent p,
-.donate-popup p,
-.contact-subContent a,
-.tos-container,
-.comic-title,
-.comic-chapter,
-.chapter p,
-.footer a,
-.footer p,
-.footer span,
-.maintenance_body p {
-    font-family: myFont;
-}
-
-form.search button, input[type="search"],
-.sideMenu-content a,
-.category-menu a,
-.settings-menu a,
-.popup-notice a {
-    font-family: 'Roboto', sans-serif;
 }
 
 a {
