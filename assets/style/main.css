@@ -177,7 +177,9 @@ body {
 
 .summaryContent p,
 .expcontent p,
-input,
+.contact-container input,
+.customer-support-container input,
+textarea,
 .cs-content strong,
 .cs-content p,
 .comic-content p,
