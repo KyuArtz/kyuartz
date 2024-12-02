@@ -100,10 +100,6 @@
     color: var(--color);
 }
 
-.popup-notice a:hover {
-    text-decoration: underline;
-}
-
 .popup-notice button {
     width: 50%;
     padding: 10px 0;
@@ -320,10 +316,6 @@ button.close {
 .cookie-popup a {
     color: var(--color);
     transition: 0.5s ease-in-out;
-}
-
-.cookie-popup a:hover{
-    text-decoration: underline;
 }
 
 .cookie-popup button {
