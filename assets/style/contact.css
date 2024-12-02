@@ -38,10 +38,6 @@ form h1 {
     color: var(--color);
 }
 
-.dL:hover {
-    text-decoration: underline;
-}
-
 /* Input Fields */
 input[type="email"],
 input[type="text"],
