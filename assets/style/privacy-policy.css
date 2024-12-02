@@ -58,10 +58,6 @@
     color: var(--color);
 }
 
-.pp-container ul a:hover {
-    text-decoration: underline;
-}
-
 /* Hide Scrollbar for WebKit Browsers */
 .pp-container ul::-webkit-scrollbar {
     display: none;
