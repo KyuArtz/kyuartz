@@ -1,8 +1,24 @@
 {
   "updates": [
+    
+    {
+      "date": "2024/12/2/",
+      "major": [
+        "Addition of an account profile to the settings tab"
+      ],
+      "minor": [
+        "Minor changes and optimizations"
+      ],
+      "bugfixes": [
+        "Minor bug fixes"
+      ],
+      "upcoming": [
+        "New Comic chapters (coming soon)."
+      ]
+    },
 
     {
-      "date": "11/14/2024",
+      "date": "2024/11/14/",
       "major": [
  
       ],
@@ -18,7 +34,7 @@
     },
 
     {
-      "date": "11/9/2024",
+      "date": "2024/11/9/",
       "major": [
  
       ],
@@ -34,7 +50,7 @@
     },
 
     {
-      "date": "11/2/2024",
+      "date": "2024/11/2/",
       "major": [
         "The character page is now live! Explore character profiles, with more characters and features coming soon."
       ],
@@ -50,7 +66,7 @@
     },
 
     {
-      "date": "10/28/2024",
+      "date": "2024/10/28/",
       "major": [
         "Addition of a description popup to the comic page."
       ],
@@ -67,7 +83,7 @@
     },
 
     {
-      "date": "10/21/2024",
+      "date": "2024/10/21/",
       "major": [
         "A language selection dropdown has been added to the preferences page. This feature is still under development, and additional languages and options will be implemented in future updates."
       ],
@@ -84,7 +100,7 @@
     },
 
     {
-      "date": "10/20/2024",
+      "date": "2024/10/20/",
       "major": [
     
       ],
@@ -102,7 +118,7 @@
     },
 
     {
-      "date": "10/19/2024",
+      "date": "2024/10/19/",
       "major": [
         "Replaced the old theme toggle system with a dedicated Preferences page, allowing users to customize their desired theme. More features will be added soon!"
       ],
@@ -119,7 +135,7 @@
     },
 
     {
-      "date": "10/18/2024",
+      "date": "2024/10/18/",
       "major": [
   
       ],
@@ -139,7 +155,7 @@
     },
 
     {
-      "date": "10/16/2024",
+      "date": "2024/10/16/",
       "major": [
   
       ],
@@ -156,7 +172,7 @@
     },
 
     {
-      "date": "10/15/2024",
+      "date": "2024/10/15/",
       "major": [
   
       ],
@@ -173,7 +189,7 @@
     },
 
     {
-      "date": "10/11/2024",
+      "date": "2024/10/11/",
       "major": [
         "Enhanced the contact us page with improved validation status and file preview image."
       ],
@@ -190,7 +206,7 @@
     },
 
     {
-      "date": "10/9/2024",
+      "date": "2024/10/9/",
       "major": [
         "Introduced a waitlist table on the commissioner information page for better transparency."
       ],
@@ -207,7 +223,7 @@
     },
 
     {
-      "date": "10/8/2024",
+      "date": "2024/10/8/",
       "major": [
 
       ],
@@ -226,7 +242,7 @@
     },
 
     {
-      "date": "10/7/2024",
+      "date": "2024/10/7/",
       "major": [
 
       ],
@@ -244,7 +260,7 @@
     },
 
     {
-      "date": "10/6/2024",
+      "date": "2024/10/6/",
       "major": [
         "Added a help page for further assistance or questions."
       ],
@@ -261,7 +277,7 @@
     },
     
     {
-      "date": "10/5/2024",
+      "date": "2024/10/5/",
       "major": [
         "Added a settings button for a more streamlined and organized navigation."
       ],
@@ -279,7 +295,7 @@
     },
 
     {
-      "date": "10/4/2024",
+      "date": "2024/10/4/",
       "major": [
         "Introduced a customer support page.",
         "commissioner information page, in now available to view."
@@ -297,7 +313,7 @@
     },  
 
     {
-      "date": "10/2/2024",
+      "date": "2024/10/2/",
       "major": [
         "Resolved the issue with the welcome popup icon not appearing on certain pages."
       ],
@@ -316,7 +332,7 @@
     },    
 
     {
-      "date": "10/1/2024",
+      "date": "2024/10/1/",
       "major": [
         "Added a cookie popup to improve user experience and compliance.",
         "Refined and optimized the code for popup functionality.",
@@ -343,7 +359,7 @@
     },    
 
     {
-      "date": "09/30/2024",
+      "date": "2024/09/30/",
       "major": [
         "Added the 'What's New' section on the homepage for updates.",
         "Added a currency converter to the commission sheet page.",
