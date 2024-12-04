@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: 'myFont', sans-serif;
     cursor: default;
+    font-weight: 500;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -206,6 +207,10 @@ input[type="Submit"] {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     background: none;
+}
+
+input[type="Submit"] {
+    font-family: inherit;
 }
 
 button:hover,
