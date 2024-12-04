@@ -96,7 +96,7 @@
 
   <div id="cookie-popup" class="cookie-popup">
     <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies" data-translate="okay">Okay</button>
+    <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
 
   <header>
@@ -216,18 +216,18 @@
 
   <div class="customer-support-container">
     <form class="customer" id="supportForm" action="https://api.web3forms.com/submit" method="POST">
-      <h1>CUSTOMER SUPPORT</h1>
+      <h1 data-translate="customerSupport">CUSTOMER SUPPORT</h1>
       <input type="hidden" name="access_key" value="19cfb576-ef37-4a40-b621-64caca87bbf1">
-      <label for="name">Name:</label><br>
+      <label for="name" data-translate="name">Name:</label><br>
       <input type="text" id="name" name="name" required><br><br>
       
-      <label for="email">Email Address:</label><br>
+      <label for="email" data-translate="email">Email:</label><br>
       <input type="email" id="email" name="email" required><br><br>
       
-      <label for="reference">Order/Commission Reference (if applicable):</label><br>
+      <label for="reference" data-translate="orderCommissionRef">Order/Commission Reference (if applicable):</label><br>
       <input type="text" id="reference" name="reference"><br><br>
       
-      <label for="issueType">Issue Type:</label><br>
+      <label for="issueType" data-translate="issueType">Issue Type:</label><br>
       <select id="issueType" name="issueType" required>
         <option value="technical">Technical Issue</option>
         <option value="payment">Payment Issue</option>
@@ -236,10 +236,10 @@
         <option value="other">Other</option>
       </select><br><br>
       
-      <label for="description">Description of Issue:</label><br>
+      <label for="description" data-translate="descriptionOfIssue">Description of Issue:</label><br>
       <textarea id="description" name="description" rows="5" required></textarea><br><br>
 
-      <label for="fileUpload">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+      <label for="fileUpload" data-translate="uploadSample">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
       <div class="fileUpload-content">
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="fileUpload" name="fileUpload" onchange="validateFile()">
       
