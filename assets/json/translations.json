@@ -5,6 +5,8 @@
     "welcomeText": "I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.",
     "cookieText": "KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.",
     "okay": "Okay",
+    "gotIt": "Got It",
+    "agree": "Agree",
     "close": "Close",
     "remove": "Remove",
     "hideInfo": "Hide Info",
@@ -44,6 +46,10 @@
     "uploadSample": "Upload Sample: (Optional)",
     "tosCheckbox": "Agree to terms of service",
     "submit": "Submit",
+
+    "orderCommissionRef": "Order/Commission Reference (if applicable):",
+    "issueType": "Issue Type:",
+    "descriptionOfIssue": "Description of Issue:",
 
     "notice": "NOTICE",
     "noticeText": "By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.",
@@ -114,6 +120,17 @@
     "customerSupport": "Customer Support",
     "helpCenter": "Help Center",
 
+    "contactSupport": "Contact Support",
+    "userGuide": "User Guide",
+    "troubleshooting": "Troubleshooting",
+
+    "help1": "Find answers to frequently asked questions about commissions, projects, and more.",
+    "help2": "Discover the rules and regulations that govern your experience. Click here to learn more!",
+    "help3": "Your privacy is important to us. Learn how we handle your data and protect your personal information.",
+    "help4": "Need help? Contact us through the customer support form for assistance.",
+    "help5": "Learn how to navigate the site, request commissions, or explore our features.",
+    "help6": "Having technical issues? Find solutions to common problems.",
+
     "yourPreferences": "Your Preferences",
     "selectTheme": "Select Theme :",
     "selectLanguage": "Select Language : ( BETA )",
@@ -157,6 +174,8 @@
     "welcomeText": "お越しいただき嬉しいです！私のポートフォリオで作品をご覧いただければ幸いです。ご依頼に興味がある場合は、ぜひお気軽にお問い合わせください。",
     "cookieText": "KyuArtzは、ユーザー体験を向上させるためにクッキーを使用しています。当サイトを引き続きご利用いただくことで、クッキーポリシーに同意いただいたものとみなします。",
     "okay": "OK",
+    "gotIt": "了解しました",
+    "agree": "同意する",
     "close": "閉じる",
     "remove": "削除",
     "hideInfo": "情報を非表示",
@@ -196,6 +215,10 @@
     "uploadSample": "サンプルをアップロード：（任意）",
     "tosCheckbox": "利用規約に同意する",
     "submit": "送信",
+
+    "orderCommissionRef": "注文/依頼の参照 (該当する場合)：",
+    "issueType": "問題の種類：",
+    "descriptionOfIssue": "問題の詳細：",
 
     "notice": "お知らせ",
     "noticeText": "利用規約をお読みいただくことで、記載されているルールに従うことに同意いただいたものとします。詳細については、利用規約をご確認ください。",
@@ -265,6 +288,17 @@
     "faqs": "よくある質問",
     "customerSupport": "カスタマーサービス",
     "helpCenter": "ヘルプセンター",
+
+    "contactSupport": "サポートに連絡",
+    "userGuide": "ユーザーガイド",
+    "troubleshooting": "トラブルシューティング",
+
+    "help1": "コミッションやプロジェクトに関するよくある質問の回答を見つけてください。",
+    "help2": "ご利用に関するルールと規則をご確認ください。詳しくはこちらをクリック！",
+    "help3": "お客様のプライバシーは私たちにとって重要です。データの取り扱いや個人情報の保護方法をご確認ください。",
+    "help4": "お困りですか？カスタマーサポートフォームからお問い合わせください。",
+    "help5": "サイトの操作方法、コミッションのリクエスト、または機能の探索方法を学びましょう。",
+    "help6": "技術的な問題がありますか？よくある問題の解決策をご確認ください。",
 
     "yourPreferences": "あなたの設定",
     "selectTheme": "テーマを選択：",
