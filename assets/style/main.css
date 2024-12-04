@@ -191,7 +191,11 @@ textarea,
 .pp-container p,
 .faq-container p,
 .help-card p,
-.popup-wn li
+.popup-wn li,
+.user-guide p,
+.user-guide li,
+.troubleshooting p,
+.troubleshooting li
 {
     font-family: 'Roboto', sans-serif;
 }
