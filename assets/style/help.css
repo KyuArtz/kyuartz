@@ -3,6 +3,7 @@
     padding: 10px;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .help-section {
@@ -28,17 +29,15 @@
 
 .help-link {
     display: block;
-    color: inherit;
     text-decoration: none;
-}
-
-.card-content {
+    height: 100%;
     padding: 20px;
 }
 
 .help-section h2 {
     margin-bottom: 10px;
     color: var(--color);
+    border-bottom: solid thin;
 }
 
 .help-section p {
