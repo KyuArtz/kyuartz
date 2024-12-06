@@ -98,7 +98,7 @@ function showCharacterInfo(character) {
     // Define character-specific details
     if (character === 'elishia') {
         details = {
-            name: "Elishia Bluestein <squad>(F-01A)</squad>",
+            name: "Elishia Bluestein <squad>(F01-A)</squad>",
             faction:"<info>Falcon Company</info>",
             role:"<info>Versatile</info>",
             speciality:"<info>Tactical Specialist</info>",
@@ -108,8 +108,8 @@ function showCharacterInfo(character) {
             birthdate: "<info>Sept. 9</info>",
             height: "<info>5'5\" ft</info>",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
-            likes: "<info>Music</info> <info>Lollipop</info> <info>Bubblegum</info> <info>Cats</info> <info>Reading</info> <info>Organizing</info>",
-            dislikes: "<info>His big brother</info>",
+            likes: "<info>Music</info> <info>Lollipop</info> <info>Bubblegum</info> <info>Cats</info> <info>Reading</info> <info>Organizing</info> <info>Hover Bike</info>",
+            dislikes: "<info>Corruptors</info> <info>His big brother</info>",
             weapon: "<info>Falconate Blade</info> <info>Dual Gun</info>",
             ability1: "<strong>Holographic Shields</strong> - Create protective barriers during battles to shield herself and allies from attacks.",
             ability2: "<strong>Weapon Creation</strong> - Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
