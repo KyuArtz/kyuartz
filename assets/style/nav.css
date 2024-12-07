@@ -7,6 +7,7 @@ header {
     color: inherit;
     top: 0;
     z-index: 100000;
+    overflow: hidden;
 }
 
 /* Navigation Links */
@@ -408,6 +409,7 @@ form.search::after {
     color: inherit;
     top: 50px;
     z-index: 99;
+    overflow: hidden;
 }
 
 .secondary-navigation h1 {
