@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = [
     {
+      src: "assets/images/artgallary/Forbidden_love_1 (2024).webp",
+      alt: "Forbidden_Love_1",
+      title: "Forbidden_Love_1",
+      category: "semi-realism"
+    },
+    {
       src: "assets/images/artgallary/Forbidden_love (2024).webp",
       alt: "Forbidden_Love",
       title: "Forbidden_Love",
