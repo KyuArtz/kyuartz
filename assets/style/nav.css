@@ -384,11 +384,19 @@ form.search::after {
     color: inherit;
     border-radius: 10px;
     padding: 15px 15px;
+    margin: 3px;
+}
+
+.span-btn {
+    display: flex;
+    flex-direction: column;
+    border: solid thin;
+    border-radius: 10px;
     margin: 5px;
 }
 
 .sideMenu-content a:hover {
-    box-shadow: 0 0 1px var(--default-font-color);
+    background: var(--color);
 }
 
 .show-sideMenu {
@@ -476,7 +484,7 @@ form.search::after {
 }
 
 .category-item a:hover {
-    box-shadow: 0 0 1px var(--default-font-color);
+    background: var(--color);
 }
 
 .category-menu.categoryMenu-active {
