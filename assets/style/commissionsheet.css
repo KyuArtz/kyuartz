@@ -55,6 +55,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    border-top: solid thin var(--color);
 }
 
 .inquire-button a {
@@ -93,7 +94,6 @@
     border-radius: 10px;
     border: solid thin var(--color);
     pointer-events: none;
-    background-color:var(--content-bg);
 }
 
 /* Responsive Image */
