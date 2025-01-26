@@ -1,7 +1,6 @@
-/* Container */
 .cs-container {
-    padding: 10px;
-    margin-top: 90px;
+    margin-top: 110px;
+    min-height: 100vh;
 }
 
 .cs-flex {
@@ -13,6 +12,13 @@
     width: 100%;
     height: 350px;
     overflow: auto;
+}
+
+span.price-amount,
+span.percent {
+    padding: 5px;
+    border-radius: 10px;
+    background: var(--theme-overlay);
 }
 
 .price, .img-container {
@@ -27,14 +33,15 @@
 }
 
 .cs-container p {
-    text-align: left;
     padding: 9px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    gap: 5px;
     border-radius: 10px;
-    width: inherit;
 }
 
-/* Price */
 .price h3 {
     border-style: solid;
     border-top-width: 0;
@@ -44,18 +51,17 @@
     margin: 0;
     letter-spacing: 3px;
     text-align: center;
-    color: var(--color);
+    color: var(--default-font-color);
     padding: 9px;
     opacity: 0.9;
 }
 
-/* Inquire Button */
 .inquire-button {
     text-align: right;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    border-top: solid thin var(--color);
+    border-top: solid thin var(--default-font-color);
 }
 
 .inquire-button a {
@@ -64,7 +70,7 @@
     background: none;
     border-radius: 50px;
     border: solid thin;
-    color: inherit;
+    color: var(--default-font-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -72,7 +78,6 @@
     text-shadow: 0 0 10px var(--color);
 }
 
-/* Content */
 .cs-content {
     background: var(--theme-overlay);
     color: inherit;
@@ -84,7 +89,6 @@
     margin: 10px auto;
 }
 
-/* Image */
 .cs-container img {
     position: relative;
     width: 350px;
@@ -92,11 +96,10 @@
     object-position: center;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
-    border: solid thin var(--color);
+    border: solid thin var(--default-font-color);
     pointer-events: none;
 }
 
-/* Responsive Image */
 @media screen and (max-width: 500px) {
     .cs-flex {
         flex-direction: column;
