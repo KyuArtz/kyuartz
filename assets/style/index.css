@@ -2,7 +2,6 @@
   min-height: 100vh;
 }
 
-/* Slideshow Container */
 .slideshow_container {
     position: relative;
     margin: 0 auto;
@@ -62,7 +61,6 @@ button.prev {
     color: var(--color);
 }
 
-/* Captions */
 .caption {
     position: absolute;
     width: 100%;
@@ -114,7 +112,6 @@ button.prev {
     text-shadow: 0 0 10px var(--color);
 }
 
-/* Dots */
 .home_slider_dot {
     position: absolute;
     display: flex;
@@ -143,7 +140,6 @@ button.prev {
     opacity: 1;
 }
 
-/* Video Container */
 .video_container {
     display: grid;
     text-align: center;
@@ -156,7 +152,6 @@ button.prev {
     color: var(--color);
 }
 
-/* Carousel */
 .carousel {
     position: relative;
     width: 100%;
@@ -188,7 +183,6 @@ iframe:hover {
     box-shadow: 0 0 10px #000;
 }
 
-/* Carousel Navigation */
 .carousel_nav {
     position: absolute;
     top: 50%;
@@ -220,7 +214,6 @@ iframe:hover {
   transition: all 0.3s ease-in-out;
 }
 
-/* Fade Animation */
 .fade {
   animation: fade 1.5s;
 }
@@ -234,7 +227,6 @@ to {
 }
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .video {
     flex: 0 0 50%;
