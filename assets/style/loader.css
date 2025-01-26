@@ -1,4 +1,3 @@
-/* Loader Container */
 .loader {
     position: fixed;
     top: 0;
@@ -14,7 +13,6 @@
     z-index: 300000;
 }
 
-/* Loader Title */
 .loader h2 {
     color: var(--default-font-color);
     position: absolute;
@@ -24,20 +22,17 @@
     animation: flicker 1s infinite;
 }
 
-/* Loader Hidden */
 .loader-hidden {
     opacity: 0;
     visibility: hidden;
 }
 
-/* Spinner Styles */
 .spinner {
     border-radius: 50%;
     position: absolute;
     animation-timing-function: ease;
 }
 
-/* Small Spinner */
 .small-spinner {
     width: 50px;
     height: 50px;
@@ -47,7 +42,6 @@
     animation: rotateCounterclockwise 0.75s infinite;
 }
 
-/* Medium Spinner */
 .medium-spinner {
     width: 75px;
     height: 75px;
@@ -56,7 +50,6 @@
     animation: pulse 0.75s infinite;
 }
 
-/* Large Spinner */
 .large-spinner {
     width: 85px;
     height: 85px;
@@ -65,7 +58,6 @@
     animation: rotateClockwise 0.75s infinite;
 }
 
-/* Keyframe Animations */
 @keyframes pulse {
     from {
         transform: scale(0);
@@ -98,7 +90,6 @@
     50% { opacity: 0; }
 }
 
-/* Media Query */
 @media screen and (max-width: 500px) {
     .loader h2 {
         display: none;
