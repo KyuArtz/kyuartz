@@ -6,7 +6,7 @@
   max-width: 800px;
   margin: 5px auto;
   padding: 20px;
-  background: inherit;
+  background: var(--theme-overlay);
   border-radius: 10px;
   box-shadow: 0 0 3px #000;
 }
@@ -34,10 +34,4 @@
 
 .troubleshooting li {
   margin-bottom: 10px;
-}
-
-@media screen and (max-width: 500px) {
-    .troubleshooting {
-      border-radius: 0;
-  }
 }
