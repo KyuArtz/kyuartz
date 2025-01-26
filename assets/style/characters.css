@@ -255,8 +255,8 @@ p.role-type {
 }
 
 .role img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: solid thin var(--color);
     background: var(--theme-overlay);
@@ -291,7 +291,6 @@ p.role-type {
     text-align: justify;
 }
 
-/* Responsive adjustments */
 @media screen and (min-width: 768px) {
     .content {
         flex-direction: row;
