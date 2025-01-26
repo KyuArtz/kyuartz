@@ -1,4 +1,3 @@
-/* Maintenance Body */
 .maintenance_body {
     width: 100%;
     height: 100%;
@@ -11,7 +10,6 @@
     z-index: 1;
 }
 
-/* Background Overlay */
 .bg {
     width: 100%;
     height: 100%;
@@ -19,7 +17,6 @@
     background: inherit;
 }
 
-/* Maintenance Header */
 .maintenance_body h1 {
     color: var(--color);
     border-style: solid;
@@ -27,12 +24,10 @@
     text-align: center;
 }
 
-/* Maintenance Paragraph */
 .maintenance_body p {
     text-align: center;
 }
 
-/* Maintenance Button Container */
 .maintenance_button {
     width: 100%;
     padding: 30px;
@@ -45,7 +40,6 @@
     color: var(--color);
 }
 
-/* Maintenance Link */
 .maintenance_body button {
     padding: 10px 50px;
     color: var(--default-font-color);
@@ -59,7 +53,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* Media Queries */
 @media screen and (max-width: 500px) {
     .maintenance_body {
         background-image: url("../images/bg/portrait-mode.webp");
