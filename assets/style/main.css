@@ -1,4 +1,3 @@
-/* Universal Styles */
 * {
     box-sizing: border-box;
     font-family: 'myFont', sans-serif;
@@ -24,8 +23,8 @@ body {
 
 /* Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-track {
@@ -37,15 +36,14 @@ body {
     border-radius: 9px;
 }
 
-/* Custom font style */
 @font-face {
     font-family: myFont;
     src: url("../fonts/squarefont/Square.ttf");
 }
 
-/* Root Variables */
 :root {
-    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+    /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
+    --theme-color: rgb(10, 10, 10);
     --default-font-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: rgba(15, 15, 15, 0.9);
@@ -56,9 +54,9 @@ body {
     --font-style: 'myFont', sans-serif;
 }
 
-/* Default theme */
 .theme-default {
-    --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30));
+    /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
+    --theme-color: rgb(10, 10, 10);
     --default-font-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: rgba(15, 15, 15, 0.9);
@@ -66,9 +64,8 @@ body {
     --theme-overlay: rgba(64, 64, 64, 0.5);
 }
 
-/* White Blue theme */
 .theme-white-blue {
-    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --theme-color: rgba(255, 255, 255);
     --default-font-color: #333;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
@@ -76,9 +73,8 @@ body {
     --theme-overlay: rgba(30, 143, 255, 0.500);
 }
 
-/* Modern White theme */
 .theme-modern-white {
-    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --theme-color: rgb(255, 255, 255);
     --default-font-color: #2e2e2e;
     --color: #969696;
     --content-bg: rgba(255, 255, 255, 0.9);
@@ -86,29 +82,28 @@ body {
     --theme-overlay: rgba(172, 172, 172, 0.5);
 }
 
-/* Dark Blue theme */
 .theme-dark-blue {
-    --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61));
-    --default-font-color: #ffffff;
+    /* --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61)); */
+    --theme-color: rgb(28, 31, 39);
+    --default-font-color: #f0f0f0;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
     --hover-light: #1ac3da;
     --theme-overlay: rgba(30, 143, 255, 0.500);
 }
 
-/* Dark Red theme */
 .theme-dark-red {
-    --theme-color: linear-gradient(to right, rgb(22, 15, 15), rgb(39, 28, 28), rgb(61, 45, 45));
-    --default-font-color: #ffffff;
+    /* --theme-color: linear-gradient(to right, rgb(22, 15, 15), rgb(39, 28, 28), rgb(61, 45, 45)); */
+    --theme-color: rgb(22, 15, 15);
+    --default-font-color: #f0f0f0;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
     --hover-light: #da1a1a;
     --theme-overlay: rgba(255, 30, 30, 0.5);
 }
 
-/* Red theme */
 .theme-white-red {
-    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --theme-color: rgba(255, 255, 255);
     --default-font-color: #333;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
@@ -116,19 +111,18 @@ body {
     --theme-overlay: rgba(255, 30, 30, 0.5);
 }
 
-/* Dark Purple theme */
 .theme-dark-purple {
-    --theme-color: linear-gradient(to right, rgb(35, 0, 61), rgb(55, 0, 85), rgb(85, 0, 115));
-    --default-font-color: #ffffff;
+    /* --theme-color: linear-gradient(to right, rgb(35, 0, 61), rgb(55, 0, 85), rgb(85, 0, 115)); */
+    --theme-color: rgb(35, 0, 61);
+    --default-font-color: #f0f0f0;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
     --hover-light: #c43cff;
     --theme-overlay: rgba(168, 50, 255, 0.5);
 }
 
-/* White Purple theme */
 .theme-white-purple {
-    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --theme-color: rgba(255, 255, 255);
     --default-font-color: #333;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
@@ -136,19 +130,18 @@ body {
     --theme-overlay: rgba(168, 50, 255, 0.5);
 }
 
-/* Dark Green theme */
 .theme-dark-green {
-    --theme-color: linear-gradient(to right, rgb(0, 61, 35), rgb(0, 85, 55), rgb(0, 115, 85));
-    --default-font-color: #ffffff;
+    /* --theme-color: linear-gradient(to right, rgb(0, 61, 35), rgb(0, 85, 55), rgb(0, 115, 85)); */
+    --theme-color: rgb(0, 61, 35);
+    --default-font-color: #f0f0f0;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
     --hover-light: #3cffc4;
     --theme-overlay: rgba(50, 255, 168, 0.5);
 }
 
-/* White Green theme */
 .theme-white-green {
-    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --theme-color: rgba(255, 255, 255);
     --default-font-color: #333;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
@@ -156,19 +149,18 @@ body {
     --theme-overlay: rgba(50, 255, 168, 0.5);
 }
 
-/* Dark Yellow theme */
 .theme-dark-yellow {
-    --theme-color: linear-gradient(to right, rgb(61, 61, 0), rgb(85, 85, 0), rgb(115, 115, 0));
-    --default-font-color: #ffffff;
+    /* --theme-color: linear-gradient(to right, rgb(61, 61, 0), rgb(85, 85, 0), rgb(115, 115, 0)); */
+    --theme-color: rgb(61, 61, 0);
+    --default-font-color: #f0f0f0;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
     --hover-light: #ffc43c;
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
-/* White Yellow theme */
 .theme-white-yellow {
-    --theme-color: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(245, 247, 250, 1), rgba(255, 255, 255, 1));
+    --theme-color: rgba(255, 255, 255);
     --default-font-color: #333;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
@@ -283,8 +275,4 @@ p {
 
 .footer a {
     font-size: 0.7rem;
-}
-
-.cs-content p span {
-    color: var(--color);
 }
