@@ -1,5 +1,22 @@
 {
   "updates": [
+
+    {
+      "date": "2025/26/1/",
+      "major": [
+
+      ],
+      "minor": [
+        "Made some changes to the theme colors, now it's solid rather than linear gradient for a more clean and modern look",
+        "UI enhancement in some parts of the site"
+      ],
+      "bugfixes": [
+
+      ],
+      "upcoming": [
+        "New Comic chapters (coming soon)."
+      ]
+    },
     
     {
       "date": "2024/12/2/",
