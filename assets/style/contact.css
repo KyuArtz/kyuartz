@@ -1,4 +1,3 @@
-/* Contact Overlay */
 .contact-container {
     margin-top: 50px;
     min-height: 100vh;
@@ -23,7 +22,6 @@ form.contact {
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Title */
 form h1 {
     text-align: center;
 }
@@ -38,7 +36,6 @@ form h1 {
     color: var(--color);
 }
 
-/* Input Fields */
 input[type="email"],
 input[type="text"],
 input[type="file"],
@@ -55,7 +52,6 @@ textarea {
     color: var(--color);
 }
 
-/* Message Input */
 input[type="message"],
 textarea {
     max-height: 150px;
@@ -83,16 +79,14 @@ select:focus {
   outline: none;
 }
 
-/* Submit Button */
 input[type="Submit"] {
-    color: var(--default-font-color);
+    color: var(--color);
     padding: 10px 30px;
     border: solid thin;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
 
-/* File Input */
 input[type="file"] {
     width: 100%;
 }
@@ -108,6 +102,7 @@ img#image-preview {
     object-fit: contain;
     object-position: center;
     width: 100%;
+    border-radius: 5px;
 }
 
 #remove-btn {
@@ -142,7 +137,6 @@ img#image-preview {
     color: var(--color);
 }
 
-/* Logo View */
 .logo-view img {
     position: relative;
     width: 40px;
@@ -163,7 +157,6 @@ img#image-preview {
     box-shadow: var(--color) 0px 0px 50px 0.5px;
 }
 
-/* GBM Image */
 .gbm img {
     width: 80%;
     transform: scale(1);
@@ -176,7 +169,6 @@ img#image-preview {
     filter: drop-shadow(0 0 3px var(--color));
 }
 
-/* Error Messages */
 #email-error,
 #message-error,
 #username-error,
@@ -189,7 +181,6 @@ img#image-preview {
     transition: 0.3s ease-in-out;
 }
 
-/* Valid Messages */
 #email-valid,
 #message-valid,
 #username-valid,
@@ -202,7 +193,6 @@ img#image-preview {
     transition: 0.3s ease-in-out;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 995px) {
     input[type="Submit"] {
         margin: 15px 0;
