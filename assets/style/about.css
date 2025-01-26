@@ -1,4 +1,3 @@
-/* Overlay Classes */
 .card-container {
     margin-top: 50px;
     background-image: url('../images/bg/wasteland.webp');
@@ -30,7 +29,6 @@
     line-height: 1.6;
 }
 
-/* Summary Section */
 .summary {
     text-align: center;
 
@@ -51,7 +49,6 @@
     padding: 20px;
 }
 
-/* Experience Section */
 .experience {
     display: flex;
     justify-content: center;
@@ -66,7 +63,6 @@
     width: 175px;
 }
 
-/* Program Section */
 .program {
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +81,6 @@
     border: solid 3px var(--hover-light);
 }
 
-/* Card Section */
 .me {
     flex: 1;
 }
@@ -116,7 +111,6 @@
     pointer-events: none;
 }
 
-/* Info Section */
 .my-info {
     padding: 10px 16px;
     border-radius: 50px 50px 5px 5px;
@@ -158,7 +152,6 @@
     border-radius: 10px;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 750px) {
     .overlay {
         display: block;
