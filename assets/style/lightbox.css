@@ -3,7 +3,6 @@ body.lb-disable-scrolling {
     overflow: hidden;
 }
 
-/* Lightbox Overlay */
 .lightboxOverlay {
     position: fixed;
     top: 0;
@@ -17,7 +16,6 @@ body.lb-disable-scrolling {
     display: none;
 }
 
-/* Lightbox */
 .lightbox {
     position: absolute;
     left: 0;
@@ -29,7 +27,6 @@ body.lb-disable-scrolling {
     outline: none;
 }
 
-/* Lightbox Image */
 .lightbox .lb-image {
     display: block;
     height: auto;
@@ -40,12 +37,10 @@ body.lb-disable-scrolling {
     border: 5px solid #ffffff;
 }
 
-/* Remove Border from Linked Images */
 .lightbox a img {
     border: none;
 }
 
-/* Outer Container */
 .lb-outerContainer {
     position: relative;
     zoom: 1;
@@ -65,7 +60,6 @@ body.lb-disable-scrolling {
     clear: both;
 }
 
-/* Loader */
 .lb-loader {
     position: absolute;
     top: 43%;
@@ -84,7 +78,6 @@ body.lb-disable-scrolling {
     background: url("../images/gif/loading.gif") no-repeat;
 }
 
-/* Navigation */
 .lb-nav {
     position: absolute;
     top: 0;
@@ -109,7 +102,6 @@ body.lb-disable-scrolling {
     display: block;
 }
 
-/* Previous Button */
 .lb-nav a.lb-prev {
     width: 50%;
     left: 0;
@@ -125,7 +117,6 @@ body.lb-disable-scrolling {
     opacity: 1;
 }
 
-/* Next Button */
 .lb-nav a.lb-next {
     width: 50%;
     right: 0;
@@ -141,7 +132,6 @@ body.lb-disable-scrolling {
     opacity: 1;
 }
 
-/* Data Container */
 .lb-dataContainer {
     margin: 0 auto;
     padding-top: 5px;
@@ -157,13 +147,11 @@ body.lb-disable-scrolling {
     clear: both;
 }
 
-/* Data */
 .lb-data {
     padding: 0 4px;
     color: #ccc;
 }
 
-/* Details */
 .lb-data .lb-details {
     width: 85%;
     float: left;
@@ -171,7 +159,6 @@ body.lb-disable-scrolling {
     line-height: 1.1em;
 }
 
-/* Caption */
 .lb-data .lb-caption {
     line-height: 1em;
     color: var(--color);
@@ -181,7 +168,6 @@ body.lb-disable-scrolling {
     color: var(--color);
 }
 
-/* Number */
 .lb-data .lb-number {
     display: block;
     clear: left;
@@ -189,7 +175,6 @@ body.lb-disable-scrolling {
     color: #ffffff;
 }
 
-/* Close Button */
 .lb-data .lb-close {
     display: block;
     float: right;
