@@ -6,7 +6,7 @@
     max-width: 800px;
     margin: 5px auto;
     padding: 20px;
-    background: inherit;
+    background: var(--theme-overlay);
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
 }
@@ -40,10 +40,4 @@
 .user-guide ul ul {
     margin-left: 20px;
     list-style-type: circle;
-}
-
-@media screen and (max-width: 500px) {
-    .user-guide {
-        border-radius: 0;
-    }
 }
