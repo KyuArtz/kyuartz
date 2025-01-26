@@ -44,7 +44,6 @@
     color: var(--defaul-font-color);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .help-card {
       width: calc(100% - 10px); /* Single card per row for tablet and below */
