@@ -79,11 +79,12 @@ span.percent {
 }
 
 .cs-content {
-    background: var(--theme-overlay);
+    background: var(--theme-color);
     color: inherit;
     text-align: center;
     padding: 5px 11px 10px;
     box-shadow: 0 0 3px #000;
+    border: solid thin var(--default-font-color);
     border-radius: 10px;
     max-width: 1000px;
     margin: 10px auto;
