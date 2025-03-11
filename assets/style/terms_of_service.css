@@ -26,11 +26,12 @@
 }
 
 .tos-item {
-    background: var(--theme-overlay);
+    background: var(--theme-color);
     padding: 12px;
     margin: 5px;
     border-radius: 10px;
     box-shadow: 0 0 3px #000;
+    border: solid thin var(--default-font-color);
 }
 
 .tos-item p {
