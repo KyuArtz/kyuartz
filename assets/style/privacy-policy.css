@@ -40,10 +40,11 @@
 }
 
 .pp-item {
-    background: var(--theme-overlay);
+    background: var(--theme-color);
     border-radius: 10px;
     margin: 5px;
     box-shadow: 0 0 3px #000;
+    border: solid thin var(--default-font-color);
 }
 
 .pp-item ul {
