@@ -22,18 +22,18 @@ span.percent {
 }
 
 .price, .img-container {
-    margin: 1px;
+    margin: 5px;
 }
 
 .cs-container h2 {
-    background: var(--color);
     padding: 9px;
+    margin: 0;
     color: var(--default-font-color);
-    border-radius: 10px;
+    border-bottom: solid thin;
 }
 
 .cs-container p {
-    padding: 9px;
+    padding: 5px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -43,11 +43,6 @@ span.percent {
 }
 
 .price h3 {
-    border-style: solid;
-    border-top-width: 0;
-    border-left-width: 0;
-    border-right-width: 0;
-    border-bottom-width: thin;
     margin: 0;
     letter-spacing: 3px;
     text-align: center;
@@ -82,7 +77,6 @@ span.percent {
     background: var(--theme-color);
     color: inherit;
     text-align: center;
-    padding: 5px 11px 10px;
     box-shadow: 0 0 3px #000;
     border: solid thin var(--default-font-color);
     border-radius: 10px;
