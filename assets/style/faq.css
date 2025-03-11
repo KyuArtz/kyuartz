@@ -38,9 +38,10 @@
 .faq-item {
     padding: 20px;
     border-radius: 10px;
-    background: var(--theme-overlay);
+    background: var(--theme-color);
     margin: 5px;
     box-shadow: 0 0 3px #000;
+    border: solid thin var(--default-font-color);
 }
 
 .faq-container ul {
