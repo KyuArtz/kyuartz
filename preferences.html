@@ -100,14 +100,12 @@
 
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
-      <!-- Brand and Logo -->
       <div class="nav-brand" aria-label="KyuArtz Home Page">
         <p class="sbt">Beta</p>
         <a href="index.html" class="brand" data-translate="brand">Kyu</a>
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
       </div>
   
-      <!-- Search Form -->
       <form class="search" aria-label="Search KyuArtz">
         <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
         <button type="submit" id="search-button" aria-label="Submit search">
@@ -116,7 +114,6 @@
         <div class="search-result" style="display: none;"></div>
       </form>
   
-      <!-- Main Navigation Menu -->
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
@@ -139,7 +136,6 @@
           </a>
         </li>
   
-        <!-- More Dropdown Menu -->
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
             <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
@@ -186,7 +182,6 @@
         </li>
       </ul>
   
-      <!-- Mobile and Settings Menu -->
       <div class="subMenu-container">    
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
@@ -223,14 +218,13 @@
     <h1 data-translate="yourPreferences">Your Preferences</h1>
     <p data-translate="selectTheme">Select Theme :</p>
     <select id="theme-select" onchange="changeTheme(this.value)">
-        <!-- Theme options will be dynamically populated here -->
+
     </select>
 
-    <!-- Language Switcher -->
     <p data-translate="selectLanguage">Select Language : ( BETA )</p>
     <select id="languageSwitcher">
       <option value="en">English</option>
-      <option value="ja">日本語</option> <!-- Japanese -->
+      <option value="ja">日本語</option>
     </select> 
   </div>
     
