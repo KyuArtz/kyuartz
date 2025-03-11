@@ -15,9 +15,10 @@
 
 .help-card {
     width: calc(50% - 10px); /* Two cards per row on larger screens */
-    background: var(--theme-overlay);
+    background: var(--theme-color);
     border-radius: 8px;
     box-shadow: 0 0 3px #000;
+    border: solid thin var(--default-font-color);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
