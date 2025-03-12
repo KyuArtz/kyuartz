@@ -22,7 +22,7 @@ span.percent {
 }
 
 .price, .img-container {
-    margin: 5px;
+    padding: 5px;
 }
 
 .cs-container h2 {
