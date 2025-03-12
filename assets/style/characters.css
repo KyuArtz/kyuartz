@@ -94,7 +94,7 @@
     flex: 1 1 200px; /* Flex grows, but sets a base width */
     max-width: 250px; /* Maximum width for larger screens */
     min-width: 130px; /* Minimum width for smaller screens */
-    height: 290px;
+    height: 270px;
     background: url('../images/character-presets/profile/default.webp'), var(--overlay);
     background-position: center;
     background-size: cover;
