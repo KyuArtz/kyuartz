@@ -15,15 +15,16 @@ form.contact,
 }
 
 form.contact {
-    color: var(--color);
+    color: #ffffff;
     padding: 30px 40px 20px;
     flex: 1.3;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 form h1 {
     text-align: center;
+    color: var(--color);
 }
 
 .contact-subContent {
@@ -39,6 +40,7 @@ form h1 {
 input[type="email"],
 input[type="text"],
 input[type="file"],
+input[type="message"],
 select,
 textarea {
     width: 100%;
@@ -49,7 +51,7 @@ textarea {
     margin: 8px 0;
     resize: vertical;
     background: none;
-    color: var(--color);
+    color: #ffffff;
 }
 
 input[type="message"],
@@ -80,7 +82,7 @@ select:focus {
 }
 
 input[type="Submit"] {
-    color: var(--color);
+    color: #ffffff;
     padding: 10px 30px;
     border: solid thin;
     border-radius: 50px;
@@ -94,7 +96,7 @@ input[type="file"] {
 .upload-content {
     border-radius: 10px;
     border: solid thin;
-    color: var(--color);
+    color: #ffffff;
     padding: 5px;
 }
 
@@ -108,7 +110,7 @@ img#image-preview {
 #remove-btn {
     padding: 5px;
     border: solid thin;
-    color: var(--color);
+    color: #ffffff;
     background: none;
     border-radius: 50px;
     width: 100%;
@@ -134,7 +136,7 @@ img#image-preview {
     height: 15px;
     border-radius: 50%;
     border: solid thin;
-    color: var(--color);
+    color: #ffffff;
 }
 
 .logo-view img {
@@ -175,7 +177,7 @@ img#image-preview {
 #commission-error,
 #file-error {
     position: relative;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 94, 0);
     padding-top: 2px;
     padding-left: 5px;
     transition: 0.3s ease-in-out;
