@@ -314,7 +314,7 @@ p.title {
 @media screen and (max-width: 500px) {
     .character-card {
         min-width: 100%;
-        height: 50%;
+        height: 350px;
     }
     .character-card:hover {
         min-width: 100%;
