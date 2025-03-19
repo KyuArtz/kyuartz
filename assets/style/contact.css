@@ -15,22 +15,26 @@ form.contact,
 }
 
 form.contact {
-    color: #ffffff;
     padding: 30px 40px 20px;
     flex: 1.3;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    color: #ffffff;
 }
 
 form h1 {
     text-align: center;
-    color: var(--color);
 }
 
 .contact-subContent {
     text-align: center;
     padding: 10px;
     background: var(--theme-color);
+}
+
+.moreInfo {
+    border: solid thin;
+    border-radius: 10px;
 }
 
 .dL {
@@ -51,7 +55,7 @@ textarea {
     margin: 8px 0;
     resize: vertical;
     background: none;
-    color: #ffffff;
+    color: var(--color);
 }
 
 input[type="message"],
@@ -82,7 +86,6 @@ select:focus {
 }
 
 input[type="Submit"] {
-    color: #ffffff;
     padding: 10px 30px;
     border: solid thin;
     border-radius: 50px;
@@ -95,8 +98,7 @@ input[type="file"] {
 
 .upload-content {
     border-radius: 10px;
-    border: solid thin;
-    color: #ffffff;
+    border: solid thin var(--color);
     padding: 5px;
 }
 
@@ -110,12 +112,12 @@ img#image-preview {
 #remove-btn {
     padding: 5px;
     border: solid thin;
-    color: #ffffff;
     background: none;
     border-radius: 50px;
     width: 100%;
     margin: 5px auto;
     outline: none;
+    color: var(--color);
 }
 
 .tos-container {
@@ -136,7 +138,7 @@ img#image-preview {
     height: 15px;
     border-radius: 50%;
     border: solid thin;
-    color: #ffffff;
+    color: var(--color);
 }
 
 .logo-view img {
