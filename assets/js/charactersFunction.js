@@ -43,16 +43,15 @@ function showCharacterInfo(character) {
 
     // Set default character details
     let details = {
-        name: "No character has been selected yet",
+        name: "Info Not Available Yet",
         faction:"",
         role:"",
         speciality:"",
         birthplace: "",
         affiliates: "",
         gender: "",
-        birthdate: "",
         height: "",
-        elementalImages: ["", ""],
+        elementalImages: ["assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp"],
         likes: "",
         dislikes: "",
         weapon: "",
@@ -78,13 +77,12 @@ function showCharacterInfo(character) {
     if (character === 'elishia') {
         details = {
             name: "Elishia Bluestein <squad>(F01-A)</squad>",
-            faction:"<info>Falcon Company</info>",
+            faction:"<info>Falconite</info>",
             role:"<info>Versatile</info>",
             speciality:"<info>Tactical Specialist</info>",
             birthplace: "<info>Orag City, District 3</info>",
             affiliates: "<info>Roman Bluestein (Older Brother)</info> <info>Nicks (Bestfriend)</info> <info>Zackry (Commandant)</info> <info>Evalete (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info>",
             gender: "<info>Female</info>",
-            birthdate: "<info>Sept. 9</info>",
             height: "<info>5'5\" ft</info>",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
             likes: "<info>Music</info> <info>Lollipop</info> <info>Bubblegum</info> <info>Cats</info> <info>Reading</info> <info>Organizing</info> <info>Hover Bike</info>",
@@ -107,17 +105,109 @@ function showCharacterInfo(character) {
             ability15: "",
             background: "Elishia and her mother lived a serene life in her mother's province, nestled outside the bustling city of Orag. For a year, their world was peaceful, filled with laughter and simple joys. However, a year later, her father, a visionary inventor renowned for his groundbreaking contributions to technology, decided it was time for a change. He wanted to move them to the capital city, where the prestigious university offered an educational experience far superior to what their province could provide. He also yearned to be closer to his daughter, balancing his demanding work at NanoFutureTech—a private laboratory he owned that was dedicated to pioneering future technologies for humanity. Upon their arrival in the capital, they settled into her father's old house, a place filled with memories of his past and echoes of his dreams. Elishia, now attending the university, quickly found herself at the center of attention. As the daughter of a famous scientist and a brilliant student in her own right, she was admired by her peers. Yet, despite the spotlight, Elishia craved a simple, quiet existence, far removed from the expectations that came with her lineage. But that peace shattered one fateful day. Without warning, the city descended into chaos. People began to exhibit erratic and violent behavior, transforming into grotesque creatures that emerged from the shadows. The very fabric of her life unraveled as she witnessed her parents bravely defend her, sacrificing their lives in a desperate attempt to protect her from the horrors that had befallen them. In the aftermath, Elishia was rescued by a team of special ops forces, who evacuated her to a designated safe point alongside other survivors. The trauma of losing her parents weighed heavily on her, igniting a fire within her—a determination to protect those who could not protect themselves. With her once peaceful dreams now shattered, she felt a newfound purpose. Driven by this resolve, Elishia enlisted in the military, where she honed her skills and emerged as a tactical specialist. Her intelligence and tenacity propelled her through rigorous training, earning her a coveted position within Falcon Company, a renowned unit known for their strategic operations and bravery. As Elishia now fights to reclaim her world from the clutches of chaos, she carries with her the memory of her parents and the hope of a future where peace can be restored. With every mission, she strives not only to protect lives but to honor the legacy of the family that shaped her into the warrior she has become."
         };
+    } else if (character === '') {
+        details = {
+            name: "Liliana Solarae",
+            faction:"<info>Light Harbingers</info>",
+            role:"<info>Mage</info> <info>Healer</info>",
+            speciality:"<info>Light Priestess</info>",
+            birthplace: "<info>Magelion Empire</info>",
+            affiliates: "<info>Zion (Lover)</info> <info>Blessica (Daughter)</info>",
+            gender: "<info>Female</info>",
+            height: "<info>5'7\" ft</info>",
+            elementalImages: ["assets/images/character-presets/elements/light.webp", "assets/images/character-presets/elements/frost.webp"],
+            likes: "<info>Reading</info> <info>Helping People</info> <info>Singing</info> <info>dancing</info>",
+            dislikes: "<info>None</info>",
+            weapon: "<info>Staff of Solarae</info>",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === '') {
+        details = {
+            name: "Feya Ashey",
+            faction:"<info>Light Harbingers</info>",
+            role:"<info>Mage</info>",
+            speciality:"<info>Fiery Fox</info>",
+            birthplace: "<info>Enchanted Forest</info>",
+            affiliates: "<info>Liliana (Step Mother)</info>",
+            gender: "<info>Female</info>",
+            height: "<info>5'6\" ft</info>",
+            elementalImages: ["assets/images/character-presets/elements/fire.webp", "assets/images/character-presets/elements/light.webp"],
+            likes: "<info>Playing</info> <info>Sleeping</info> <info>Food</info>",
+            dislikes: "<info>Dark Legion</info>",
+            weapon: "<info>None</info>",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === '') {
+        details = {
+            name: "Floribeth Solarae",
+            faction:"<info>Order of Seekers</info>",
+            role:"<info>Mage</info>",
+            speciality:"<info>Queen of Darkness</info>",
+            birthplace: "<info>Magelion Empire</info>",
+            affiliates: "<info>Liliana (Daughter)</info>",
+            gender: "<info>Female</info>",
+            height: "<info>5'8\" ft</info>",
+            elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
+            likes: "<info>Playing</info> <info>Sleeping</info> <info>Food</info>",
+            dislikes: "<info></info>",
+            weapon: "<info>None</info>",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
     } else if (character === 'hexxana') {
         details = {
-            name: "Hexxana - Lone Wanderer",
+            name: "Hexxana",
             faction:"<info>Unknown</info>",
-            role:"<info>Dark Vanguard</info>",
-            speciality:"<info>Umbral Enforcer</info>",
+            role:"<info>Mage</info> <info>Warrior</info>",
+            speciality:"<info>Umbral Vanguard</info>",
             birthplace: "<info>Unknown</info>",
             affiliates: "<info>Unknown</info>",
             gender: "<info>Female</info>",
-            birthdate: "<info>Unknown</info>",
-            height: "<info>5'8\" ft</info>",
+            height: "<info>5'7\" ft</info>",
             elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
             likes: "<info>Reading</info> <info>Hexing</info> <info>Wandering</info> <info>Making Potions</info>",
             dislikes: "<info>Doing chores</info>",
@@ -141,15 +231,14 @@ function showCharacterInfo(character) {
         };
     } else if (character === 'rayza') {
         details = {
-            name: "Rayza - Blade Master",
+            name: "Rayza Huǒ",
             faction:"<info>Zephyra Vale</info>",
-            role:"<info>Windborne Assassin</info>",
+            role:"<info>Assassin</info>",
             speciality:"<info>Mist Dancer</info>",
             birthplace: "<info>Hidden Mist Valley</info>",
             affiliates: "<info>Ren (Older Brother)</info>",
             gender: "<info>Female</info>",
-            birthdate: "<info>Nov. 15</info>",
-            height: "<info>5'7\" ft</info>",
+            height: "<info>5'5\" ft</info>",
             elementalImages: ["assets/images/character-presets/elements/air.webp"],
             likes: "<info>Cute Stuff</info> <info>Training</info> <info>Sweets</info>",
             dislikes: "<info>Lazy People</info>",
@@ -180,11 +269,10 @@ function showCharacterInfo(character) {
             birthplace: "",
             affiliates: "",
             gender: "",
-            birthdate: "",
             height: "",
             likes: "",
             dislikes: "",
-            elementalImages: [""],
+            elementalImages: ["assets/images/character-presets/roles/question.webp"],
             weapon: "",
             ability1: "",
             ability2: "",
@@ -208,67 +296,67 @@ function showCharacterInfo(character) {
     // Populate character details
     characterDetails.innerHTML = `
         <h2>${details.name}</h2>
+
         <div class="character-info-scrollable">
-        <div class="info-section" id="basic-info-scrollable">
-            <p><strong>Faction:</strong> ${details.faction}</p>
-            <p><strong>Role:</strong> ${details.role}</p>
-            <p><strong>Specialty:</strong> ${details.speciality}</p>
-            <p><strong>Birthplace:</strong> ${details.birthplace}</p>
-            <p><strong>Birthdate:</strong> ${details.birthdate}</p>
-            <p><strong>Gender:</strong> ${details.gender}</p>
-            <p><strong>Height:</strong> ${details.height}</p>
-        </div>
-
-        <div class="info-section" id="elementalPower">
-            <h3>Elemental Mastery</h3>
-            ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
-        </div>
-
-        <div class="info-section" id="abilities">
-            <h3>Abilities</h3>
-            <div id="abilities-scrollable">
-            <p>${details.ability1}</p>
-            <p>${details.ability2}</p>
-            <p>${details.ability3}</p>
-            <p>${details.ability4}</p>
-            <p>${details.ability5}</p>
-            <p>${details.ability6}</p>
-            <p>${details.ability7}</p>
-            <p>${details.ability8}</p>
-            <p>${details.ability9}</p>
-            <p>${details.ability10}</p>
-            <p>${details.ability11}</p>
-            <p>${details.ability12}</p>
-            <p>${details.ability13}</p>
-            <p>${details.ability14}</p>
-            <p>${details.ability15}</p>
+            <div class="info-section" id="elementalPower">
+                <h3>Elemental Mastery</h3>
+                ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
             </div>
-        </div>
 
-        <div class="info-section" id="weapon">
-            <h3>Favorite Weapon</h3>
-            <p>${details.weapon}</p>
-        </div>
+            <div class="info-section" id="basic-info-scrollable">
+                <p><strong>Faction:</strong> ${details.faction}</p>
+                <p><strong>Role:</strong> ${details.role}</p>
+                <p><strong>Specialty:</strong> ${details.speciality}</p>
+                <p><strong>Birthplace:</strong> ${details.birthplace}</p>
+                <p><strong>Gender:</strong> ${details.gender}</p>
+                <p><strong>Height:</strong> ${details.height}</p>
+            </div>
 
-        <div class="info-section" id="affiliates">
-            <h3>Affiliates</h3>
-            <p>${details.affiliates}</p>
-        </div>
+            <div class="info-section" id="abilities">
+                <h3>Abilities</h3>
+                <div id="abilities-scrollable">
+                <p>${details.ability1}</p>
+                <p>${details.ability2}</p>
+                <p>${details.ability3}</p>
+                <p>${details.ability4}</p>
+                <p>${details.ability5}</p>
+                <p>${details.ability6}</p>
+                <p>${details.ability7}</p>
+                <p>${details.ability8}</p>
+                <p>${details.ability9}</p>
+                <p>${details.ability10}</p>
+                <p>${details.ability11}</p>
+                <p>${details.ability12}</p>
+                <p>${details.ability13}</p>
+                <p>${details.ability14}</p>
+                <p>${details.ability15}</p>
+                </div>
+            </div>
 
-        <div class="info-section" id="likes">
-            <h3>Likes</h3>
-            <p>${details.likes}</p>
-        </div>
+            <div class="info-section" id="weapon">
+                <h3>Favorite Weapon</h3>
+                <p>${details.weapon}</p>
+            </div>
 
-        <div class="info-section" id="dislikes">
-            <h3>Dislikes</h3>
-            <p>${details.dislikes}</p>
-        </div>
+            <div class="info-section" id="affiliates">
+                <h3>Affiliates</h3>
+                <p>${details.affiliates}</p>
+            </div>
 
-        <div class="info-section" id="background">
-            <h3>Background</h3>
-            <p>${details.background}</p>
-        </div>
+            <div class="info-section" id="likes">
+                <h3>Likes</h3>
+                <p>${details.likes}</p>
+            </div>
+
+            <div class="info-section" id="dislikes">
+                <h3>Dislikes</h3>
+                <p>${details.dislikes}</p>
+            </div>
+
+            <div class="info-section" id="background">
+                <h3>Background</h3>
+                <p>${details.background}</p>
+            </div>
         </div>
     `;
 
