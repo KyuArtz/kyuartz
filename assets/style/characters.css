@@ -94,7 +94,7 @@
     max-width: 250px; /* Maximum width for larger screens */
     min-width: 130px; /* Minimum width for smaller screens */
     height: 270px;
-    background: url('../images/character-presets/profile/default.webp'), var(--overlay);
+    background: var(--overlay);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ p.title {
 
 .character-info-scrollable {
     overflow-y: auto;
-    height: 370px;
+    height: 390px;
     padding: 0 10px;
 }
 
@@ -314,9 +314,7 @@ p.title {
 @media screen and (max-width: 500px) {
     .character-card {
         min-width: 100%;
-        height: 50%;
-    }
-    .character-card:hover {
-        min-width: 100%;
+        max-width: 100%;
+        height: 370px;
     }
 }
