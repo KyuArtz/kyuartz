@@ -4,6 +4,18 @@ const characterBackgrounds = {
         landscape: "url('')",
         portrait: "url('')"
     },
+    elishia: {
+        landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')",
+        portrait: "url('')"
+    },
+    hexxana: {
+        landscape: "url('assets/images/character-presets/cover/hexxana-cover.webp')",
+        portrait: "url('')"
+    },
+    rayza: {
+        landscape: "url('assets/images/character-presets/cover/rayza-cover.webp')",
+        portrait: "url('')"
+    },
 };
 
 // Track the currently selected character
@@ -76,23 +88,23 @@ function showCharacterInfo(character) {
     // Define character-specific details
     if (character === 'elishia') {
         details = {
-            name: "Elishia Bluestein <squad>(F01-A)</squad>",
-            faction:"<info>Falconite</info>",
-            role:"<info>Versatile</info>",
-            speciality:"<info>Tactical Specialist</info>",
-            birthplace: "<info>Orag City, District 3</info>",
-            affiliates: "<info>Roman Bluestein (Older Brother)</info> <info>Nicks (Bestfriend)</info> <info>Zackry (Commandant)</info> <info>Evalete (Squadmate)</info> <info>Zenki (Squadmate)</info> <info>Jaze (Squadmate)</info>",
-            gender: "<info>Female</info>",
-            height: "<info>5'5\" ft</info>",
+            name: "<blue>Elishia Bluestein<blue>",
+            faction:"<info><blue>Falconite</blue></info>",
+            role:"<info><blue>Versatile</blue></info>",
+            speciality:"<info><blue>Tactical Specialist</blue></info>",
+            birthplace: "<info><blue>Orag City, District 3</blue></info>",
+            affiliates: "<info><blue>Roman Bluestein (Older Brother)</blue></info> <info><blue>Nicks (Bestfriend)</blue></info> <info><blue>Zackry (Commandant)</blue></info> <info><blue>Evalete (Squadmate)</blue></info> <info><blue>Zenki (Squadmate)</blue></info> <info><blue>Jaze (Squadmate)</blue></info>",
+            gender: "<info><blue>Female</blue></info>",
+            height: "<info><blue>5'5\" ft</blue></info>",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
-            likes: "<info>Music</info> <info>Lollipop</info> <info>Bubblegum</info> <info>Cats</info> <info>Reading</info> <info>Organizing</info> <info>Hover Bike</info>",
-            dislikes: "<info>Corruptors</info> <info>His big brother</info>",
-            weapon: "<info>Falconate Blade</info> <info>Dual Gun</info>",
-            ability1: "<strong>Holographic Shields</strong> - Create protective barriers during battles to shield herself and allies from attacks.",
-            ability2: "<strong>Weapon Creation</strong> - Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
-            ability3: "<strong>Environmental Manipulation</strong> - Alter the battlefield by moving or reshaping objects, like creating obstacles for enemies or enhancing terrain for tactical advantages.",
-            ability4: "<strong>Multi-Weapon Combat</strong> - Combine multiple weapons into one or create several holographic weapons at once to overwhelm opponents.",
-            ability5: "<strong>Decoys and Illusions</strong> - Generate holographic duplicates of herself or objects to confuse enemies or draw their fire.",
+            likes: "<info><blue>Music</blue></info> <info><blue>Lollipop</blue></info> <info><blue>Bubblegum</blue></info> <info><blue>Cats</blue></info> <info><blue>Reading</blue></info> <info><blue>Organizing</blue></info> <info><blue>Hover Bike</blue></info>",
+            dislikes: "<info><blue>Corruptors</blue></info> <info><blue>His big brother</blue></info>",
+            weapon: "<info><blue>Falconate Blade</blue></info> <info><blue>Dual Gun</blue></info>",
+            ability1: "<strong><blue>Holographic Shields</blue></strong> Create protective barriers during battles to shield herself and allies from attacks.",
+            ability2: "<strong><blue>Weapon Creation</blue></strong> Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
+            ability3: "<strong><blue>Environmental Manipulation</blue></strong> Alter the battlefield by moving or reshaping objects, like creating obstacles for enemies or enhancing terrain for tactical advantages.",
+            ability4: "<strong><blue>Multi-Weapon Combat</blue></strong> Combine multiple weapons into one or create several holographic weapons at once to overwhelm opponents.",
+            ability5: "<strong><blue>Decoys and Illusions</blue></strong> Generate holographic duplicates of herself or objects to confuse enemies or draw their fire.",
             ability6: "",
             ability7: "",
             ability8: "",
@@ -108,17 +120,17 @@ function showCharacterInfo(character) {
     } else if (character === '') {
         details = {
             name: "Liliana Solarae",
-            faction:"<info>Light Harbingers</info>",
-            role:"<info>Mage</info> <info>Healer</info>",
-            speciality:"<info>Light Priestess</info>",
-            birthplace: "<info>Magelion Empire</info>",
-            affiliates: "<info>Zion (Lover)</info> <info>Blessica (Daughter)</info>",
-            gender: "<info>Female</info>",
-            height: "<info>5'7\" ft</info>",
+            faction:"<info><purple>Light Harbingers</purple></info>",
+            role:"<info><purple>Mage</purple></info> <info><purple>Healer</purple></info>",
+            speciality:"<info><purple>Light Priestess</purple></info>",
+            birthplace: "<info><purple>Magelion Empire</purple></info>",
+            affiliates: "<info><purple>Zion (Lover)</purple></info> <info><purple>Blessica (Daughter)</purple></info>",
+            gender: "<info><purple>Female</purple></info>",
+            height: "<info><purple>5'7\" ft</purple></info>",
             elementalImages: ["assets/images/character-presets/elements/light.webp", "assets/images/character-presets/elements/frost.webp"],
-            likes: "<info>Reading</info> <info>Helping People</info> <info>Singing</info> <info>dancing</info>",
-            dislikes: "<info>None</info>",
-            weapon: "<info>Staff of Solarae</info>",
+            likes: "<info><purple>Reading</purple></info> <info><purple>Helping People</purple></info> <info><purple>Singing</purple></info> <info><purple>dancing</purple></info>",
+            dislikes: "<info><purple>None</purple></info>",
+            weapon: "<info><purple>Staff of Solarae</purple></info>",
             ability1: "",
             ability2: "",
             ability3: "",
@@ -139,17 +151,17 @@ function showCharacterInfo(character) {
     } else if (character === '') {
         details = {
             name: "Feya Ashey",
-            faction:"<info>Light Harbingers</info>",
-            role:"<info>Mage</info>",
-            speciality:"<info>Fiery Fox</info>",
-            birthplace: "<info>Enchanted Forest</info>",
-            affiliates: "<info>Liliana (Step Mother)</info>",
-            gender: "<info>Female</info>",
-            height: "<info>5'6\" ft</info>",
+            faction:"<info><purple>Light Harbingers</purple></info>",
+            role:"<info><purple>Mage</purple></info>",
+            speciality:"<info><purple>Fiery Fox</purple></info>",
+            birthplace: "<info><purple>Enchanted Forest</purple></info>",
+            affiliates: "<info><purple>Liliana (Step Mother)</purple></info>",
+            gender: "<info><purple>Female</purple></info>",
+            height: "<info><purple>5'6\" ft</purple></info>",
             elementalImages: ["assets/images/character-presets/elements/fire.webp", "assets/images/character-presets/elements/light.webp"],
-            likes: "<info>Playing</info> <info>Sleeping</info> <info>Food</info>",
-            dislikes: "<info>Dark Legion</info>",
-            weapon: "<info>None</info>",
+            likes: "<info><purple>Playing</purple></info> <info><purple>Sleeping</purple></info> <info><purple>Food</purple></info>",
+            dislikes: "<info><purple>Dark Legion</purple></info>",
+            weapon: "<info><purple>None</purple></info>",
             ability1: "",
             ability2: "",
             ability3: "",
@@ -170,17 +182,17 @@ function showCharacterInfo(character) {
     } else if (character === '') {
         details = {
             name: "Floribeth Solarae",
-            faction:"<info>Order of Seekers</info>",
-            role:"<info>Mage</info>",
-            speciality:"<info>Queen of Darkness</info>",
-            birthplace: "<info>Magelion Empire</info>",
-            affiliates: "<info>Liliana (Daughter)</info>",
-            gender: "<info>Female</info>",
-            height: "<info>5'8\" ft</info>",
+            faction:"<info><purple>Order of Seekers</purple></info>",
+            role:"<info><purple>Mage</purple></info>",
+            speciality:"<info><purple>Queen of Darkness</purple></info>",
+            birthplace: "<info><purple>Magelion Empire</purple></info>",
+            affiliates: "<info><purple>Liliana (Daughter)</purple></info>",
+            gender: "<info><purple>Female</purple></info>",
+            height: "<info><purple>5'8\" ft</purple></info>",
             elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
-            likes: "<info>Playing</info> <info>Sleeping</info> <info>Food</info>",
-            dislikes: "<info></info>",
-            weapon: "<info>None</info>",
+            likes: "<info><purple>Playing</purple></info> <info><purple>Sleeping</purple></info> <info><purple>Food</purple></info>",
+            dislikes: "<info><purple></purple></info>",
+            weapon: "<info><purple>None</purple></info>",
             ability1: "",
             ability2: "",
             ability3: "",
@@ -200,29 +212,29 @@ function showCharacterInfo(character) {
         };
     } else if (character === 'hexxana') {
         details = {
-            name: "Hexxana",
-            faction:"<info>Unknown</info>",
-            role:"<info>Mage</info> <info>Warrior</info>",
-            speciality:"<info>Umbral Vanguard</info>",
-            birthplace: "<info>Unknown</info>",
-            affiliates: "<info>Unknown</info>",
-            gender: "<info>Female</info>",
-            height: "<info>5'7\" ft</info>",
+            name: "<purple>Hexxana</purple>",
+            faction:"<info><purple>Unknown</purple></info>",
+            role:"<info><purple>Mage</purple></info> <info><purple>Warrior</purple></info>",
+            speciality:"<info><purple>Umbral Vanguard</purple></info>",
+            birthplace: "<info><purple>Unknown</purple></info>",
+            affiliates: "<info><purple>Unknown</purple></info>",
+            gender: "<info><purple>Female</purple></info>",
+            height: "<info><purple>5'7\" ft</purple></info>",
             elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
-            likes: "<info>Reading</info> <info>Hexing</info> <info>Wandering</info> <info>Making Potions</info>",
-            dislikes: "<info>Doing chores</info>",
-            weapon: "<info>Oblivion’s Edge</info>",
-            ability1: "<strong>Shadow Manipulation</strong> - Hexxana can control shadows, allowing her to create illusions, cloak herself, or even solidify shadows into physical weapons or barriers. This would add stealth and versatility to her abilities.",
-            ability2: "<strong>Ethereal Phasing</strong> - Hexxana can become partially intangible, allowing her to pass through solid objects or evade attacks momentarily. This would fit well as both a defense mechanism and a way to surprise her foes.",
-            ability3: "<strong>Umbral Rift</strong> -  She can summon a portal or dark energy vortex that pulls enemies in or repels them. The rift could deal damage over time, serve as an escape route, or even as a way to trap opponents.",
-            ability4: "<strong>Curse Weaving</strong> - Hexxana can place curses on enemies that have lingering effects, like causing weakness, confusion, or nightmares that haunt them even after the battle ends.",
-            ability5: "<strong>Dark Familiar</strong> - She could summon a dark familiar, like a spectral raven or shadow beast, which fights alongside her or scouts ahead, allowing her to control a minion that aids her in and out of combat.",
-            ability6: "<strong>Void Tendrils</strong> - Hexxana summons dark, otherworldly tendrils that can attack, restrain, or drain the energy of her foes. These could extend from the ground or appear in mid-air, giving her a unique combat advantage.",
-            ability7: "<strong>Spectral Sweep</strong> - Hexxana can unleash a wave of dark magic energy from her scythe that extends outward in a powerful arc, damaging enemies in a line or cone.",
-            ability8: "<strong>Shadow Reaping</strong> - Hexxana channels dark energy through her scythe, allowing her to strike from a distance by sending arcs of dark magic in the shape of scythe slashes. The ranged attacks could drain vitality or temporarily weaken enemies.",
-            ability9: "<strong>Abyssal Mark</strong> - A curse-like ability where her scythe leaves a “mark” on an enemy upon hitting them. Marked enemies are more susceptible to her magic attacks, increasing the damage they take from her dark spells or making them vulnerable to curses.",
-            ability10: "<strong>Void Step</strong> - this lets her teleport short distances, moving through shadows or dark matter, allowing her to close gaps or evade attacks while disorienting her opponents.",
-            ability11: "<strong>Demonic Form: Reaper’s Wrath</strong> -  In her demon form, her scythe becomes an extension of her power.",
+            likes: "<info><purple>Reading</purple></info> <info><purple>Hexing</purple></info> <info><purple>Wandering</purple></info> <info><purple>Making Potions</purple></info>",
+            dislikes: "<info><purple>Doing chores</purple></info>",
+            weapon: "<info><purple>Oblivion’s Edge</purple></info>",
+            ability1: "<strong><purple>Shadow Manipulation</purple></strong> Hexxana can control shadows, allowing her to create illusions, cloak herself, or even solidify shadows into physical weapons or barriers. This would add stealth and versatility to her abilities.",
+            ability2: "<strong><purple>Ethereal Phasing</purple></strong> Hexxana can become partially intangible, allowing her to pass through solid objects or evade attacks momentarily. This would fit well as both a defense mechanism and a way to surprise her foes.",
+            ability3: "<strong><purple>Umbral Rift</purple></strong> She can summon a portal or dark energy vortex that pulls enemies in or repels them. The rift could deal damage over time, serve as an escape route, or even as a way to trap opponents.",
+            ability4: "<strong><purple>Curse Weaving</purple></strong> Hexxana can place curses on enemies that have lingering effects, like causing weakness, confusion, or nightmares that haunt them even after the battle ends.",
+            ability5: "<strong><purple>Dark Familiar</purple></strong> She could summon a dark familiar, like a spectral raven or shadow beast, which fights alongside her or scouts ahead, allowing her to control a minion that aids her in and out of combat.",
+            ability6: "<strong><purple>Void Tendrils</purple></strong> Hexxana summons dark, otherworldly tendrils that can attack, restrain, or drain the energy of her foes. These could extend from the ground or appear in mid-air, giving her a unique combat advantage.",
+            ability7: "<strong><purple>Spectral Sweep</purple></strong> Hexxana can unleash a wave of dark magic energy from her scythe that extends outward in a powerful arc, damaging enemies in a line or cone.",
+            ability8: "<strong><purple>Shadow Reaping</purple></strong> Hexxana channels dark energy through her scythe, allowing her to strike from a distance by sending arcs of dark magic in the shape of scythe slashes. The ranged attacks could drain vitality or temporarily weaken enemies.",
+            ability9: "<strong><purple>Abyssal Mark</purple></strong> A curse-like ability where her scythe leaves a “mark” on an enemy upon hitting them. Marked enemies are more susceptible to her magic attacks, increasing the damage they take from her dark spells or making them vulnerable to curses.",
+            ability10: "<strong><purple>Void Step</purple></strong> this lets her teleport short distances, moving through shadows or dark matter, allowing her to close gaps or evade attacks while disorienting her opponents.",
+            ability11: "<strong><purple>Demonic Form: Reaper’s Wrath</purple></strong> In her demon form, her scythe becomes an extension of her power.",
             ability12: "",
             ability13: "",
             ability14: "",
@@ -231,25 +243,25 @@ function showCharacterInfo(character) {
         };
     } else if (character === 'rayza') {
         details = {
-            name: "Rayza Huǒ",
-            faction:"<info>Zephyra Vale</info>",
-            role:"<info>Assassin</info>",
-            speciality:"<info>Mist Dancer</info>",
-            birthplace: "<info>Hidden Mist Valley</info>",
-            affiliates: "<info>Ren (Older Brother)</info>",
-            gender: "<info>Female</info>",
-            height: "<info>5'5\" ft</info>",
+            name: "<red>Rayza Huǒ</red>",
+            faction:"<info><red>Zephyra Vale</red></info>",
+            role:"<info><red>Assassin</red></info>",
+            speciality:"<info><red>Mist Dancer</red></info>",
+            birthplace: "<info><red>Hidden Mist Valley</red></info>",
+            affiliates: "<info><red>Ren (Older Brother)</red></info>",
+            gender: "<info><red>Female</red></info>",
+            height: "<info><red>5'5\" ft</red></info>",
             elementalImages: ["assets/images/character-presets/elements/air.webp"],
-            likes: "<info>Cute Stuff</info> <info>Training</info> <info>Sweets</info>",
-            dislikes: "<info>Lazy People</info>",
-            weapon: "<info>Tempest Bloom</info>",
-            ability1: "<strong>Wind Manipulation</strong> - Using her enchanted fan, she can control and shape the wind around her, creating anything from gentle breezes to fierce gusts that can knock back enemies.",
-            ability2: "<strong>Mist Veil</strong> - Allows her to create a dense fog or mist around her, enhancing her stealth and making her harder to detect or target in battle.",
-            ability3: "<strong>Wind Blades</strong> - She can send sharp, slicing gusts of wind towards her enemies by swinging her fan, turning the air itself into a weapon.",
-            ability4: "<strong>Dance of the Tempest</strong> - A graceful, deadly series of moves that combines her fan with powerful wind attacks, unleashing a storm of slashes in a controlled radius around her.",
-            ability5: "<strong>Petal Storm</strong> - She can summon a flurry of petals carried by the wind to obscure her movements or distract her foes, providing both offense and defense in combat.",
-            ability6: "<strong>Silent Step</strong> - Her movement becomes almost undetectable as the wind silences her steps, making it easier for her to approach targets unseen.",
-            ability7: "<strong>Blood Rage</strong> - Rayza taps into a hidden power, enveloping herself in a red aura that boosts her strength, speed, and resilience. While in this state, she fights with fierce, unpredictable energy, but the power drains her, leaving her exhausted once it fades.",
+            likes: "<info><red>Cute Stuff</red></info> <info><red>Training</red></info> <info><red>Sweets</red></info>",
+            dislikes: "<info><red>Lazy People</red></info>",
+            weapon: "<info><red>Tempest Bloom</red></info>",
+            ability1: "<strong><red>Wind Manipulation</red></strong> Using her enchanted fan, she can control and shape the wind around her, creating anything from gentle breezes to fierce gusts that can knock back enemies.",
+            ability2: "<strong><red>Mist Veil</red></strong> Allows her to create a dense fog or mist around her, enhancing her stealth and making her harder to detect or target in battle.",
+            ability3: "<strong><red>Wind Blades</red></strong> She can send sharp, slicing gusts of wind towards her enemies by swinging her fan, turning the air itself into a weapon.",
+            ability4: "<strong><red>Dance of the Tempest</red></strong> A graceful, deadly series of moves that combines her fan with powerful wind attacks, unleashing a storm of slashes in a controlled radius around her.",
+            ability5: "<strong><red>Petal Storm</red></strong> She can summon a flurry of petals carried by the wind to obscure her movements or distract her foes, providing both offense and defense in combat.",
+            ability6: "<strong><red>Silent Step</red></strong> Her movement becomes almost undetectable as the wind silences her steps, making it easier for her to approach targets unseen.",
+            ability7: "<strong><red>Blood Rage</red></strong> Rayza taps into a hidden power, enveloping herself in a red aura that boosts her strength, speed, and resilience. While in this state, she fights with fierce, unpredictable energy, but the power drains her, leaving her exhausted once it fades.",
             ability8: "",
             ability9: "",
             ability10: "",
@@ -304,12 +316,12 @@ function showCharacterInfo(character) {
             </div>
 
             <div class="info-section" id="basic-info-scrollable">
-                <p><strong>Faction:</strong> ${details.faction}</p>
-                <p><strong>Role:</strong> ${details.role}</p>
-                <p><strong>Specialty:</strong> ${details.speciality}</p>
-                <p><strong>Birthplace:</strong> ${details.birthplace}</p>
-                <p><strong>Gender:</strong> ${details.gender}</p>
-                <p><strong>Height:</strong> ${details.height}</p>
+                <p><strong>Faction</strong> ${details.faction}</p>
+                <p><strong>Role</strong> ${details.role}</p>
+                <p><strong>Specialty</strong> ${details.speciality}</p>
+                <p><strong>Birthplace</strong> ${details.birthplace}</p>
+                <p><strong>Gender</strong> ${details.gender}</p>
+                <p><strong>Height</strong> ${details.height}</p>
             </div>
 
             <div class="info-section" id="abilities">
