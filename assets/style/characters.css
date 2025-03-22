@@ -209,30 +209,37 @@ p.title {
 
 .character-info h2 {
     text-align: center;
-    color: var(--color);
+    color: #ffffff;
 }
 
 .character-info h3 {
-    color: var(--color);
-}
-
-.character-info squad {
-    color: #ff9239;
+    color: #ffffff;
 }
 
 .character-info strong {
-    color: var(--color);
-    border: solid thin;
+    color: #ffffff;
+    box-shadow: 0 0 3px #ffffff;
     border-radius: 5px;
     padding: 5px;
     background: var(--overlay);
 }
 
 .character-info info {
-    border: solid thin var(--color);
+    box-shadow: 0 0 3px #ffffff;
     border-radius: 5px;
     padding: 5px;
-    background: var(--theme-overlay);
+}
+
+.character-info purple {
+    color: rgb(189, 0, 189);
+}
+
+.character-info blue {
+    color: rgb(30, 144, 255);
+}
+
+.character-info red {
+    color: rgb(255, 0, 0);
 }
 
 .character-info-scrollable {
