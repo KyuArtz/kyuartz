@@ -63,7 +63,7 @@ function showCharacterInfo(character) {
         affiliates: "",
         gender: "",
         height: "",
-        elementalImages: ["assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp"],
+        elementalImages: ["assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp"],
         likes: "",
         dislikes: "",
         weapon: "",
@@ -85,7 +85,6 @@ function showCharacterInfo(character) {
         background: ""
     };
 
-    // Define character-specific details
     if (character === 'elishia') {
         details = {
             name: "<blue>Elishia Bluestein<blue>",
@@ -116,99 +115,6 @@ function showCharacterInfo(character) {
             ability14: "",
             ability15: "",
             background: "Elishia and her mother lived a serene life in her mother's province, nestled outside the bustling city of Orag. For a year, their world was peaceful, filled with laughter and simple joys. However, a year later, her father, a visionary inventor renowned for his groundbreaking contributions to technology, decided it was time for a change. He wanted to move them to the capital city, where the prestigious university offered an educational experience far superior to what their province could provide. He also yearned to be closer to his daughter, balancing his demanding work at NanoFutureTech—a private laboratory he owned that was dedicated to pioneering future technologies for humanity. Upon their arrival in the capital, they settled into her father's old house, a place filled with memories of his past and echoes of his dreams. Elishia, now attending the university, quickly found herself at the center of attention. As the daughter of a famous scientist and a brilliant student in her own right, she was admired by her peers. Yet, despite the spotlight, Elishia craved a simple, quiet existence, far removed from the expectations that came with her lineage. But that peace shattered one fateful day. Without warning, the city descended into chaos. People began to exhibit erratic and violent behavior, transforming into grotesque creatures that emerged from the shadows. The very fabric of her life unraveled as she witnessed her parents bravely defend her, sacrificing their lives in a desperate attempt to protect her from the horrors that had befallen them. In the aftermath, Elishia was rescued by a team of special ops forces, who evacuated her to a designated safe point alongside other survivors. The trauma of losing her parents weighed heavily on her, igniting a fire within her—a determination to protect those who could not protect themselves. With her once peaceful dreams now shattered, she felt a newfound purpose. Driven by this resolve, Elishia enlisted in the military, where she honed her skills and emerged as a tactical specialist. Her intelligence and tenacity propelled her through rigorous training, earning her a coveted position within Falcon Company, a renowned unit known for their strategic operations and bravery. As Elishia now fights to reclaim her world from the clutches of chaos, she carries with her the memory of her parents and the hope of a future where peace can be restored. With every mission, she strives not only to protect lives but to honor the legacy of the family that shaped her into the warrior she has become."
-        };
-    } else if (character === '') {
-        details = {
-            name: "Liliana Solarae",
-            faction:"<info><purple>Light Harbingers</purple></info>",
-            role:"<info><purple>Mage</purple></info> <info><purple>Healer</purple></info>",
-            speciality:"<info><purple>Light Priestess</purple></info>",
-            birthplace: "<info><purple>Magelion Empire</purple></info>",
-            affiliates: "<info><purple>Zion (Lover)</purple></info> <info><purple>Blessica (Daughter)</purple></info>",
-            gender: "<info><purple>Female</purple></info>",
-            height: "<info><purple>5'7\" ft</purple></info>",
-            elementalImages: ["assets/images/character-presets/elements/light.webp", "assets/images/character-presets/elements/frost.webp"],
-            likes: "<info><purple>Reading</purple></info> <info><purple>Helping People</purple></info> <info><purple>Singing</purple></info> <info><purple>dancing</purple></info>",
-            dislikes: "<info><purple>None</purple></info>",
-            weapon: "<info><purple>Staff of Solarae</purple></info>",
-            ability1: "",
-            ability2: "",
-            ability3: "",
-            ability4: "",
-            ability5: "",
-            ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
-            background: ""
-        };
-    } else if (character === '') {
-        details = {
-            name: "Feya Ashey",
-            faction:"<info><purple>Light Harbingers</purple></info>",
-            role:"<info><purple>Mage</purple></info>",
-            speciality:"<info><purple>Fiery Fox</purple></info>",
-            birthplace: "<info><purple>Enchanted Forest</purple></info>",
-            affiliates: "<info><purple>Liliana (Step Mother)</purple></info>",
-            gender: "<info><purple>Female</purple></info>",
-            height: "<info><purple>5'6\" ft</purple></info>",
-            elementalImages: ["assets/images/character-presets/elements/fire.webp", "assets/images/character-presets/elements/light.webp"],
-            likes: "<info><purple>Playing</purple></info> <info><purple>Sleeping</purple></info> <info><purple>Food</purple></info>",
-            dislikes: "<info><purple>Dark Legion</purple></info>",
-            weapon: "<info><purple>None</purple></info>",
-            ability1: "",
-            ability2: "",
-            ability3: "",
-            ability4: "",
-            ability5: "",
-            ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
-            background: ""
-        };
-    } else if (character === '') {
-        details = {
-            name: "Floribeth Solarae",
-            faction:"<info><purple>Order of Seekers</purple></info>",
-            role:"<info><purple>Mage</purple></info>",
-            speciality:"<info><purple>Queen of Darkness</purple></info>",
-            birthplace: "<info><purple>Magelion Empire</purple></info>",
-            affiliates: "<info><purple>Liliana (Daughter)</purple></info>",
-            gender: "<info><purple>Female</purple></info>",
-            height: "<info><purple>5'8\" ft</purple></info>",
-            elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
-            likes: "<info><purple>Playing</purple></info> <info><purple>Sleeping</purple></info> <info><purple>Food</purple></info>",
-            dislikes: "<info><purple></purple></info>",
-            weapon: "<info><purple>None</purple></info>",
-            ability1: "",
-            ability2: "",
-            ability3: "",
-            ability4: "",
-            ability5: "",
-            ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
-            background: ""
         };
     } else if (character === 'hexxana') {
         details = {
@@ -272,6 +178,99 @@ function showCharacterInfo(character) {
             ability15: "",
             background: "Rayza was born into a prestigious family celebrated for their mastery in combat, especially in the art of swordsmanship. Growing up, she idolized her father and older brother, Ren, both renowned for their skill and strength. She longed to join their ranks, to prove her worth as a warrior. But her father, bound by tradition and protective instincts, refused to train her, believing the path of a swordsman was not meant for her. His decision only fueled her resolve. Determined to show her father that strength was not bound by tradition or gender, Rayza began to train in secret. Her brother, who recognized her passion and potential, became her silent ally, offering tips and guidance away from their father's watchful eyes. When news of a prestigious tournament spread through the land, Rayza saw her chance. She entered the competition in disguise, hiding her face to avoid recognition. Her heart pounded as she faced each opponent, her confidence growing with every victory. One by one, she defeated nine challengers, advancing to the final round. To her shock, her last opponent was none other than Ren. She froze, realizing her secret could be exposed, but her brother’s smirk and knowing glance told her he had recognized her long before. He remained silent, signaling his respect for her determination. Rayza steeled herself for the fight, determined to prove herself not just to her brother but to everyone who doubted her. The duel was fierce and unrelenting, each sibling pushing the other to their limits. Rayza fought with all her heart, but Ren’s experience and skill proved formidable. As she faced the brink of defeat, something deep within her awakened—a latent power passed down through her bloodline. Enveloped in a red aura, Rayza entered a 'blood rage,' her strength and speed heightened to extraordinary levels. In the stands, her father’s face changed from shock to realization as he recognized the aura—and his daughter. His heart warred between pride and fear, but the tournament rules demanded that the match continue. The crowd watched in awe as the siblings clashed in a battle that seemed almost otherworldly, their bond and rivalry displayed in every strike. After an hour of grueling combat, Rayza finally succumbed to exhaustion, defeated by her brother but not broken. She awoke to find herself at home, her father and Ren beside her. Before she could explain herself, her father placed a hand on her shoulder, his expression a mix of pride and sadness. “I was only trying to protect you,” he admitted, his voice heavy with emotion. “You remind me so much of your mother. But watching you fight, I realize now—I was wrong. I won't always be here to shield you, and perhaps that isn’t what you need. Keep growing, Rayza. Become strong, but also wise. And, Ren,” he added, turning to his son, “look after your sister.” In that moment, Rayza felt the acceptance she had longed for. The family shared a tearful embrace, a silent promise binding them closer than ever. From that day on, Rayza’s path was clear—not just to prove her worth but to carry forward the strength and love her family had instilled in her."
         };
+    } else if (character === '') {
+        details = {
+            name: "<yellow>Liliana Solarae</yellow>",
+            faction:"<info><yellow>Light Harbingers</yellow></info>",
+            role:"<info><yellow>Mage</yellow></info> <info><yellow>Healer</yellow></info>",
+            speciality:"<info><yellow>Light Priestess</yellow></info>",
+            birthplace: "<info><yellow>Magelion Empire</yellow></info>",
+            affiliates: "<info><yellow>Zion (Lover)</yellow></info> <info><yellow>Blessica (Daughter)</yellow></info>",
+            gender: "<info><yellow>Female</yellow></info>",
+            height: "<info><yellow>5'7\" ft</yellow></info>",
+            elementalImages: ["assets/images/character-presets/elements/light.webp", "assets/images/character-presets/elements/frost.webp"],
+            likes: "<info><yellow>Reading</yellow></info> <info><yellow>Helping People</yellow></info> <info><yellow>Singing</yellow></info> <info><yellow>dancing</yellow></info>",
+            dislikes: "<info><yellow>None</yellow></info>",
+            weapon: "<info><yellow>Staff of Solarae</yellow></info>",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === '') {
+        details = {
+            name: "Floribeth Solarae",
+            faction:"<info><purple>Order of Seekers</purple></info>",
+            role:"<info><purple>Mage</purple></info>",
+            speciality:"<info><purple>Queen of Darkness</purple></info>",
+            birthplace: "<info><purple>Magelion Empire</purple></info>",
+            affiliates: "<info><purple>Liliana (Daughter)</purple></info>",
+            gender: "<info><purple>Female</purple></info>",
+            height: "<info><purple>5'8\" ft</purple></info>",
+            elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
+            likes: "<info><purple>Playing</purple></info> <info><purple>Sleeping</purple></info> <info><purple>Food</purple></info>",
+            dislikes: "<info><purple></purple></info>",
+            weapon: "<info><purple>None</purple></info>",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
+    } else if (character === '') {
+        details = {
+            name: "<orange>Feya Ashey</orange>",
+            faction:"<info><orange>Light Harbingers</orange></info>",
+            role:"<info><orange>Mage</orange></info>",
+            speciality:"<info><orange>Fiery Fox</orange></info>",
+            birthplace: "<info><orange>Enchanted Forest</orange></info>",
+            affiliates: "<info><orange>Liliana (Step Mother)</orange></info>",
+            gender: "<info><orange>Female</orange></info>",
+            height: "<info><orange>5'6\" ft</orange></info>",
+            elementalImages: ["assets/images/character-presets/elements/fire.webp", "assets/images/character-presets/elements/light.webp"],
+            likes: "<info><orange>Playing</orange></info> <info><orange>Sleeping</orange></info> <info><orange>Food</orange></info>",
+            dislikes: "<info><orange>Monsters</orange></info> <info><orange>Water</orange></info>",
+            weapon: "<info><orange>None</orange></info>",
+            ability1: "",
+            ability2: "",
+            ability3: "",
+            ability4: "",
+            ability5: "",
+            ability6: "",
+            ability7: "",
+            ability8: "",
+            ability9: "",
+            ability10: "",
+            ability11: "",
+            ability12: "",
+            ability13: "",
+            ability14: "",
+            ability15: "",
+            background: ""
+        };
     } else if (character === 'coming-soon') {
         details = {
             name: "Coming Soon",
@@ -305,7 +304,6 @@ function showCharacterInfo(character) {
         };
     }
 
-    // Populate character details
     characterDetails.innerHTML = `
         <h2>${details.name}</h2>
 
