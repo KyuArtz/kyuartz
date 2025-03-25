@@ -51,7 +51,6 @@
     line-height: 1.6;
 }
 
-/* Hide Scrollbar for WebKit Browsers */
 .tos-container ul::-webkit-scrollbar {
     display: none;
 }
