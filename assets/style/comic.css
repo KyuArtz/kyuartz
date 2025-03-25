@@ -76,7 +76,7 @@ button.next {
     flex-wrap: wrap;
     align-items: center;
     gap: 5px;
-    color: var(--color);
+    color: #f0f0f0;
     width: 50%;
     padding: 8px 12px;
     position: absolute;
@@ -100,7 +100,7 @@ button.next {
     right: 5px;
     padding: 8px 12px;
     border-radius: 10px;
-    color: var(--color);
+    color: #f0f0f0;
     background: var(--overlay);
     z-index: 1;
 }
