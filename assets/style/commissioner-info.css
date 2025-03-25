@@ -122,15 +122,15 @@ strong {
 }
 
 #upcoming-slots ul {
-    list-style-type: none; /* Remove default list bullets */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 #upcoming-slots li {
-    margin: 10px 0; /* Space between items */
+    margin: 10px 0;
 }
 
 .remaining-slots {
     font-weight: bold;
-    color: #FF6347; /* Different color for remaining slots */
+    color: #FF6347;
 }
