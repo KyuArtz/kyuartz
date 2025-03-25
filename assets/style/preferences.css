@@ -14,7 +14,7 @@
 }
 
 #preferences-container h2 {
-    color: var(--default-font-color); /* Use theme font color */
+    color: var(--default-font-color);
 }
 
 #theme-select,
