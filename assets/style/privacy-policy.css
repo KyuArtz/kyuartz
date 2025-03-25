@@ -60,7 +60,6 @@
     color: var(--color);
 }
 
-/* Hide Scrollbar for WebKit Browsers */
 .pp-container ul::-webkit-scrollbar {
     display: none;
 }
