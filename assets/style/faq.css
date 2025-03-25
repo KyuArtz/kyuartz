@@ -52,7 +52,6 @@
     color: var(--color);
 }
 
-/* Hide Scrollbar for WebKit Browsers */
 .faq-container ul::-webkit-scrollbar {
     display: none;
 }
