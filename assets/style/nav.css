@@ -159,7 +159,7 @@ header {
 
 .nav-link-sideMenu.activeLink:hover,
 .sideMenu-content a.activeLink:hover {
-    color: #ffffff;
+    color: #f0f0f0;
 }
 
 .hamburger {
@@ -298,8 +298,6 @@ form.search::after {
     .hamburger {
         display: block;
         padding: 5px;
-        border: thin solid;
-        border-radius: 10px;
         z-index: 1;
     }
 
