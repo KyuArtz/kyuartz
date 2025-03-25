@@ -308,7 +308,7 @@ button.close {
     box-shadow: 0 0 3px #000;
     text-align: center;
     z-index: 100;
-    display: none; /* Initially hidden */
+    display: none;
 }
 
 .cookie-popup p {
