@@ -51,7 +51,7 @@ function showCharacterInfo(character) {
         affiliates: "",
         gender: "",
         height: "",
-        elementalImages: ["assets/images/character-presets/roles/question.webp","assets/images/character-presets/roles/question.webp"],
+        elementalImages: ["assets/images/character-presets/roles/question.webp"],
         likes: "",
         dislikes: "",
         weapon: "",
@@ -61,15 +61,6 @@ function showCharacterInfo(character) {
         ability4: "",
         ability5: "",
         ability6: "",
-        ability7: "",
-        ability8: "",
-        ability9: "",
-        ability10: "",
-        ability11: "",
-        ability12: "",
-        ability13: "",
-        ability14: "",
-        ability15: "",
         background: ""
     };
 
@@ -84,24 +75,15 @@ function showCharacterInfo(character) {
             gender: "<info><blue>Female</blue></info>",
             height: "<info><blue>5'5\" ft</blue></info>",
             elementalImages: ["assets/images/character-presets/elements/energy.webp"],
-            likes: "<info><blue>Music</blue></info> <info><blue>Lollipop</blue></info> <info><blue>Bubblegum</blue></info> <info><blue>Cats</blue></info> <info><blue>Reading</blue></info> <info><blue>Organizing</blue></info> <info><blue>Hover Bike</blue></info>",
-            dislikes: "<info><blue>Corruptors</blue></info> <info><blue>His big brother</blue></info>",
+            likes: "<info><blue>Music</blue></info> <info><blue>Lollipops & Bubblegum</blue></info> <info><blue>Cats</blue></info> <info><blue>Reading</blue></info> <info><blue>Organizing</blue></info> <info><blue>Hover Bikes</blue></info> <info><blue>Tinkering with Tech</blue></info>",
+            dislikes: "<info><blue>Corrupt Officials</blue></info> <info><blue>Her Older Brother (Complicated Relationship)</blue></info> <info><blue>Disorder & Chaos</blue></info> <info><blue>Wasting Time</blue></info> <info><blue>Arrogant People</blue></info>",
             weapon: "<info><blue>Falconate Blade</blue></info> <info><blue>Dual Gun</blue></info>",
-            ability1: "<strong><blue>Holographic Shields</blue></strong> Create protective barriers during battles to shield herself and allies from attacks.",
-            ability2: "<strong><blue>Weapon Creation</blue></strong> Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
-            ability3: "<strong><blue>Environmental Manipulation</blue></strong> Alter the battlefield by moving or reshaping objects, like creating obstacles for enemies or enhancing terrain for tactical advantages.",
-            ability4: "<strong><blue>Multi-Weapon Combat</blue></strong> Combine multiple weapons into one or create several holographic weapons at once to overwhelm opponents.",
-            ability5: "<strong><blue>Decoys and Illusions</blue></strong> Generate holographic duplicates of herself or objects to confuse enemies or draw their fire.",
+            ability1: "<strong><blue>Holographic Shields</blue></strong> – Create protective barriers during battles to shield herself and allies from attacks.",
+            ability2: "<strong><blue>Weapon Creation</blue></strong> – Form weapons on the fly, adapting to different combat situations or combining elements for unique effects.",
+            ability3: "<strong><blue>Environmental Manipulation</blue></strong> – Alter the battlefield by moving or reshaping objects, like creating obstacles for enemies or enhancing terrain for tactical advantages.",
+            ability4: "<strong><blue>Multi-Weapon Combat</blue></strong> – Combine multiple weapons into one or create several holographic weapons at once to overwhelm opponents.",
+            ability5: "<strong><blue>Decoys and Illusions</blue></strong> – Generate holographic duplicates of herself or objects to confuse enemies or draw their fire.",
             ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
             background: "Elishia and her mother lived a serene life in her mother's province, nestled outside the bustling city of Orag. For a year, their world was peaceful, filled with laughter and simple joys. However, a year later, her father, a visionary inventor renowned for his groundbreaking contributions to technology, decided it was time for a change. He wanted to move them to the capital city, where the prestigious university offered an educational experience far superior to what their province could provide. He also yearned to be closer to his daughter, balancing his demanding work at NanoFutureTech—a private laboratory he owned that was dedicated to pioneering future technologies for humanity. Upon their arrival in the capital, they settled into her father's old house, a place filled with memories of his past and echoes of his dreams. Elishia, now attending the university, quickly found herself at the center of attention. As the daughter of a famous scientist and a brilliant student in her own right, she was admired by her peers. Yet, despite the spotlight, Elishia craved a simple, quiet existence, far removed from the expectations that came with her lineage. But that peace shattered one fateful day. Without warning, the city descended into chaos. People began to exhibit erratic and violent behavior, transforming into grotesque creatures that emerged from the shadows. The very fabric of her life unraveled as she witnessed her parents bravely defend her, sacrificing their lives in a desperate attempt to protect her from the horrors that had befallen them. In the aftermath, Elishia was rescued by a team of special ops forces, who evacuated her to a designated safe point alongside other survivors. The trauma of losing her parents weighed heavily on her, igniting a fire within her—a determination to protect those who could not protect themselves. With her once peaceful dreams now shattered, she felt a newfound purpose. Driven by this resolve, Elishia enlisted in the military, where she honed her skills and emerged as a tactical specialist. Her intelligence and tenacity propelled her through rigorous training, earning her a coveted position within Falcon Company, a renowned unit known for their strategic operations and bravery. As Elishia now fights to reclaim her world from the clutches of chaos, she carries with her the memory of her parents and the hope of a future where peace can be restored. With every mission, she strives not only to protect lives but to honor the legacy of the family that shaped her into the warrior she has become."
         };
     } else if (character === 'hexxana') {
@@ -115,24 +97,15 @@ function showCharacterInfo(character) {
             gender: "<info><purple>Female</purple></info>",
             height: "<info><purple>5'7\" ft</purple></info>",
             elementalImages: ["assets/images/character-presets/elements/shadow.webp"],
-            likes: "<info><purple>Reading</purple></info> <info><purple>Hexing</purple></info> <info><purple>Wandering</purple></info> <info><purple>Making Potions</purple></info>",
-            dislikes: "<info><purple>Doing chores</purple></info>",
+            likes: "<info><purple>Reading</purple></info> <info><purple>Hexing</purple></info> <info><purple>Wandering</purple></info> <info><purple>Making Potions</purple></info> <info><purple>Silence & Solitud</purple></info> <info><purple>Eclipses & Starry Nights</purple></info> <info><purple>Rare Artifacts</purple></info>",
+            dislikes: "<info><purple>Doing Chores</purple></info> <info><purple>Loud, Noisy Places</purple></info> <info><purple>Being Controlled</purple></info> <info><purple>Weak-willed People</purple></info> <info><purple>Uninvited Company</purple></info>",
             weapon: "<info><purple>Oblivion’s Edge</purple></info>",
-            ability1: "<strong><purple>Shadow Manipulation</purple></strong> Hexxana can control shadows, allowing her to create illusions, cloak herself, or even solidify shadows into physical weapons or barriers. This would add stealth and versatility to her abilities.",
-            ability2: "<strong><purple>Ethereal Phasing</purple></strong> Hexxana can become partially intangible, allowing her to pass through solid objects or evade attacks momentarily. This would fit well as both a defense mechanism and a way to surprise her foes.",
-            ability3: "<strong><purple>Umbral Rift</purple></strong> She can summon a portal or dark energy vortex that pulls enemies in or repels them. The rift could deal damage over time, serve as an escape route, or even as a way to trap opponents.",
-            ability4: "<strong><purple>Curse Weaving</purple></strong> Hexxana can place curses on enemies that have lingering effects, like causing weakness, confusion, or nightmares that haunt them even after the battle ends.",
-            ability5: "<strong><purple>Dark Familiar</purple></strong> She could summon a dark familiar, like a spectral raven or shadow beast, which fights alongside her or scouts ahead, allowing her to control a minion that aids her in and out of combat.",
-            ability6: "<strong><purple>Void Tendrils</purple></strong> Hexxana summons dark, otherworldly tendrils that can attack, restrain, or drain the energy of her foes. These could extend from the ground or appear in mid-air, giving her a unique combat advantage.",
-            ability7: "<strong><purple>Spectral Sweep</purple></strong> Hexxana can unleash a wave of dark magic energy from her scythe that extends outward in a powerful arc, damaging enemies in a line or cone.",
-            ability8: "<strong><purple>Shadow Reaping</purple></strong> Hexxana channels dark energy through her scythe, allowing her to strike from a distance by sending arcs of dark magic in the shape of scythe slashes. The ranged attacks could drain vitality or temporarily weaken enemies.",
-            ability9: "<strong><purple>Abyssal Mark</purple></strong> A curse-like ability where her scythe leaves a “mark” on an enemy upon hitting them. Marked enemies are more susceptible to her magic attacks, increasing the damage they take from her dark spells or making them vulnerable to curses.",
-            ability10: "<strong><purple>Void Step</purple></strong> this lets her teleport short distances, moving through shadows or dark matter, allowing her to close gaps or evade attacks while disorienting her opponents.",
-            ability11: "<strong><purple>Demonic Form: Reaper’s Wrath</purple></strong> In her demon form, her scythe becomes an extension of her power.",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
+            ability1: "<strong><purple>Shadow Manipulation</purple></strong> – Hexxana can shape and control shadows at will, creating illusions, forming shadow weapons, or vanishing into darkness for stealth or defense. This ability grants her high adaptability in both offense and escape.",
+            ability2: "<strong><purple>Umbral Rift</purple></strong> – She summons a swirling vortex of dark energy that pulls in enemies, dealing continuous damage while distorting space. She can also use it to reposition herself or allies, making it a mix of offense and mobility.",
+            ability3: "<strong><purple>Curse Weaving</purple></strong> – Hexxana places sinister hexes on her enemies, causing effects such as slowed movement, weakened attacks, or hallucinations. Some curses linger even after battle, haunting her foes.",
+            ability4: "<strong><purple>Void Tendrils</purple></strong> – She summons otherworldly tendrils from the void, which lash out to attack, restrain, or drain energy from enemies. These eerie manifestations enhance her battlefield control.",
+            ability5: "<strong><purple>Shadow Reaping</purple></strong> – With each scythe swing, she sends out slashes of dark energy that extend her reach and can steal vitality from enemies. This ability allows her to fight at both melee and ranged distances.",
+            ability6: "<strong><purple>Demonic Form: Reaper’s Wrath</purple></strong> – Hexxana unleashes her true power, temporarily transforming into a demon-like entity. In this state, her attacks become faster and more devastating, her scythe radiates abyssal energy, and her abilities are enhanced.",
             background: "Hexxana’s origins are shrouded in mystery; no one knows where she came from, and she shares little about her past. She appears as a spectral figure in the dead of night, often accompanied by an eerie, shimmering aurora. Known to sometimes intervene in dire moments, she aids those in danger but vanishes as quickly as she arrives, leaving only whispers and rumors in her wake. Hexxana is a lone wanderer, loyal to no one but herself. She drifts through cities and forgotten landmarks, guided by her own enigmatic purpose. Her neutrality is unshakable, and she is a silent guardian—though only when it suits her will."
         };
     } else if (character === 'rayza') {
@@ -146,24 +119,15 @@ function showCharacterInfo(character) {
             gender: "<info><red>Female</red></info>",
             height: "<info><red>5'5\" ft</red></info>",
             elementalImages: ["assets/images/character-presets/elements/air.webp"],
-            likes: "<info><red>Cute Stuff</red></info> <info><red>Training</red></info> <info><red>Sweets</red></info>",
-            dislikes: "<info><red>Lazy People</red></info>",
+            likes: "<info><red>Cute Stuff</red></info> <info><red>Training & Combat</red></info> <info><red>Flying or Gliding</red></info> <info><red>Freedom</red></info> <info><red>Sweets</red></info>",
+            dislikes: "<info><red>Lazy People</red></info> <info><red>Loud or Arrogant People</red></info> <info><red>Crowded Places</red></info> <info><red>Extreme Heat</red></info> <info><red>Losing Control</red></info>",
             weapon: "<info><red>Tempest Bloom</red></info>",
-            ability1: "<strong><red>Wind Manipulation</red></strong> Using her enchanted fan, she can control and shape the wind around her, creating anything from gentle breezes to fierce gusts that can knock back enemies.",
-            ability2: "<strong><red>Mist Veil</red></strong> Allows her to create a dense fog or mist around her, enhancing her stealth and making her harder to detect or target in battle.",
-            ability3: "<strong><red>Wind Blades</red></strong> She can send sharp, slicing gusts of wind towards her enemies by swinging her fan, turning the air itself into a weapon.",
-            ability4: "<strong><red>Dance of the Tempest</red></strong> A graceful, deadly series of moves that combines her fan with powerful wind attacks, unleashing a storm of slashes in a controlled radius around her.",
-            ability5: "<strong><red>Petal Storm</red></strong> She can summon a flurry of petals carried by the wind to obscure her movements or distract her foes, providing both offense and defense in combat.",
-            ability6: "<strong><red>Silent Step</red></strong> Her movement becomes almost undetectable as the wind silences her steps, making it easier for her to approach targets unseen.",
-            ability7: "<strong><red>Blood Rage</red></strong> Rayza taps into a hidden power, enveloping herself in a red aura that boosts her strength, speed, and resilience. While in this state, she fights with fierce, unpredictable energy, but the power drains her, leaving her exhausted once it fades.",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
+            ability1: "<strong><red>Mist Veil</red></strong> – Rayza can summon a thick mist that cloaks her movements, making her harder to detect and allowing her to reposition stealthily. This ability is perfect for ambushing or retreating.",
+            ability2: "<strong><red>Wind Blades</red></strong> – With a flick of her fan, Rayza sends razor-sharp wind slashes at her enemies. These cutting gusts can hit multiple targets in a straight line or curve unpredictably for precise strikes.",
+            ability3: "<strong><red>Dance of the Tempest </red></strong> – A rapid, fluid series of strikes combined with wind-enhanced slashes, striking enemies in a controlled area. This attack allows Rayza to fight gracefully while maintaining mobility.",
+            ability4: "<strong><red>Silent Step</red></strong> – By manipulating the wind around her feet, Rayza moves with absolute silence. This ability increases her speed, allows her to bypass enemy detection, and helps her strike from unexpected angles.",
+            ability5: "<strong><red>Petal Storm</red></strong> – Summoning a vortex of wind and petals, Rayza disorients enemies while enhancing her evasiveness. The petals act as both a distraction and a cutting force against anyone who gets too close.",
+            ability6: "<strong><red>Blood Rage</red></strong> – In dire situations, Rayza taps into her bloodline’s hidden power, entering a frenzied state. Her strength and speed increase drastically, and her attacks become relentless, but once the effect fades, she is left fatigued.",
             background: "Rayza was born into a prestigious family celebrated for their mastery in combat, especially in the art of swordsmanship. Growing up, she idolized her father and older brother, Ren, both renowned for their skill and strength. She longed to join their ranks, to prove her worth as a warrior. But her father, bound by tradition and protective instincts, refused to train her, believing the path of a swordsman was not meant for her. His decision only fueled her resolve. Determined to show her father that strength was not bound by tradition or gender, Rayza began to train in secret. Her brother, who recognized her passion and potential, became her silent ally, offering tips and guidance away from their father's watchful eyes. When news of a prestigious tournament spread through the land, Rayza saw her chance. She entered the competition in disguise, hiding her face to avoid recognition. Her heart pounded as she faced each opponent, her confidence growing with every victory. One by one, she defeated nine challengers, advancing to the final round. To her shock, her last opponent was none other than Ren. She froze, realizing her secret could be exposed, but her brother’s smirk and knowing glance told her he had recognized her long before. He remained silent, signaling his respect for her determination. Rayza steeled herself for the fight, determined to prove herself not just to her brother but to everyone who doubted her. The duel was fierce and unrelenting, each sibling pushing the other to their limits. Rayza fought with all her heart, but Ren’s experience and skill proved formidable. As she faced the brink of defeat, something deep within her awakened—a latent power passed down through her bloodline. Enveloped in a red aura, Rayza entered a 'blood rage,' her strength and speed heightened to extraordinary levels. In the stands, her father’s face changed from shock to realization as he recognized the aura—and his daughter. His heart warred between pride and fear, but the tournament rules demanded that the match continue. The crowd watched in awe as the siblings clashed in a battle that seemed almost otherworldly, their bond and rivalry displayed in every strike. After an hour of grueling combat, Rayza finally succumbed to exhaustion, defeated by her brother but not broken. She awoke to find herself at home, her father and Ren beside her. Before she could explain herself, her father placed a hand on her shoulder, his expression a mix of pride and sadness. “I was only trying to protect you,” he admitted, his voice heavy with emotion. “You remind me so much of your mother. But watching you fight, I realize now—I was wrong. I won't always be here to shield you, and perhaps that isn’t what you need. Keep growing, Rayza. Become strong, but also wise. And, Ren,” he added, turning to his son, “look after your sister.” In that moment, Rayza felt the acceptance she had longed for. The family shared a tearful embrace, a silent promise binding them closer than ever. From that day on, Rayza’s path was clear—not just to prove her worth but to carry forward the strength and love her family had instilled in her."
         };
     } else if (character === '') {
@@ -186,20 +150,11 @@ function showCharacterInfo(character) {
             ability4: "",
             ability5: "",
             ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
             background: ""
         };
     } else if (character === '') {
         details = {
-            name: "Floribeth Solarae",
+            name: "Floribeth Umbrakith",
             faction:"<info><purple>Order of Seekers</purple></info>",
             role:"<info><purple>Mage</purple></info>",
             speciality:"<info><purple>Queen of Darkness</purple></info>",
@@ -217,18 +172,9 @@ function showCharacterInfo(character) {
             ability4: "",
             ability5: "",
             ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
             background: ""
         };
-    } else if (character === '') {
+    } else if (character === 'feya') {
         details = {
             name: "<orange>Feya Ashey</orange>",
             faction:"<info><orange>Light Harbingers</orange></info>",
@@ -239,25 +185,16 @@ function showCharacterInfo(character) {
             gender: "<info><orange>Female</orange></info>",
             height: "<info><orange>5'6\" ft</orange></info>",
             elementalImages: ["assets/images/character-presets/elements/fire.webp", "assets/images/character-presets/elements/light.webp"],
-            likes: "<info><orange>Playing</orange></info> <info><orange>Sleeping</orange></info> <info><orange>Food</orange></info>",
-            dislikes: "<info><orange>Monsters</orange></info> <info><orange>Water</orange></info>",
+            likes: "<info><orange>Warmth & Sunlight</orange></info> <info><orange>Foxes & Small Creatures</orange></info> <info><orange>Dawn & Dusk</orange></info> <info><orange>Melodic Sounds</orange></info> <info><orange>Fire Magic</orange></info>",
+            dislikes: "<info><orange>Cold & Rainy Weather</orange></info> <info><orange>Large Bodies of Water</orange></info> <info><orange>Being Watched</orange></info> <info><orange>Dark Legion</orange></info> <info><orange>Strict Rules</orange></info>",
             weapon: "<info><orange>None</orange></info>",
-            ability1: "",
-            ability2: "",
-            ability3: "",
-            ability4: "",
-            ability5: "",
+            ability1: "<strong><orange>Foxfire Embers</orange></strong> – Feya summons floating orbs of foxfire around her, which automatically seek out enemies, dealing fire damage over time. Holding the ability charges them into a powerful burst.",
+            ability2: "<strong><orange>Spirit Rush</orange></strong> – Dashes forward in a swift fox-like movement, leaving behind an afterimage of flames. Can be used to evade or pass through enemies while burning them.",
+            ability3: "<strong><orange>Eclipse Flare</orange></strong> – Unleashes a powerful burst of light-infused flames, dealing AoE damage and blinding enemies caught in the center for a few seconds.",
+            ability4: "<strong><orange>Infernal Vulpes</orange></strong> – Feya transforms into a fox spirit, enhancing her fire magic and movement speed for a short duration. Her basic attacks leave lingering flames, and her abilities become stronger.",
+            ability5: "<strong><orange>Radiant Safeguard</orange></strong> – A defensive ability where Feya creates a shield of light, reducing incoming damage and reflecting a portion of it back as searing fire.",
             ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
-            background: ""
+            background: "Feya was once a carefree child, growing up in the mystical Enchanted Forest, nestled near the mountains of the Magelion Empire. Her people, deeply attuned to nature and magic, lived in peaceful harmony, untouched by the conflicts of the outside world. With an adventurous spirit and an ever-burning curiosity, Feya spent her days exploring the vast woodland, her innate magic strengthening with each passing day. But peace is never eternal. The rise of the Dark Legion shattered the tranquility of her homeland. The Legion's forces swept through the land like a merciless storm, leaving destruction in their wake. Her people fought valiantly to defend their sacred home, her parents among the bravest warriors, but the enemy's power was overwhelming. One by one, the enchanted forests burned, and her entire race was driven to extinction. Feya, the last survivor, refused to go down without a fight. In a desperate stand, she unleashed her full power, incinerating the remaining Legion troops in a fiery explosion of magic. But her victory was fleeting. Drained and gravely wounded, she found herself face to face with the Dark Legion’s ruthless general—Drakeon. Overwhelmed, she fell in battle, her strength fading as the dark forces prepared to end her existence. Just as all hope seemed lost, the royal army of the Magelion Empire arrived, forcing the Dark Legion into retreat. Yet, the damage had already been done—the once-thriving Enchanted Forest lay in ruins, its beauty forever tainted by corruption. Hours later, Feya was found unconscious by the Empire’s scouts. Among them was Queen Liliana, a compassionate ruler renowned for her wisdom and healing powers. Moved by the sight of the broken girl and the devastation of her homeland, Liliana personally nursed Feya back to health. Recognizing the immense power within her, the queen adopted her as her own daughter, offering her a new life within the Empire. Under Liliana’s guidance, Feya trained to become one of the Light Harbingers, an elite order sworn to protect the Crystalight, the heart of the Empire’s power. Though the wounds of her past still linger, Feya has found a new purpose—to ensure that no one else suffers the fate of her people. As the Fiery Fox of the Light Harbingers, she fights with relentless passion, wielding her magic to defend the Empire and those she holds dear. But with Drakeon still at large and the Dark Legion looming in the shadows, she knows that her battle is far from over. Her past may have been forged in tragedy, but her future burns brighter than ever."
         };
     } else if (character === 'coming-soon') {
         details = {
@@ -279,15 +216,6 @@ function showCharacterInfo(character) {
             ability4: "",
             ability5: "",
             ability6: "",
-            ability7: "",
-            ability8: "",
-            ability9: "",
-            ability10: "",
-            ability11: "",
-            ability12: "",
-            ability13: "",
-            ability14: "",
-            ability15: "",
             background: ""
         };
     }
@@ -319,15 +247,6 @@ function showCharacterInfo(character) {
                 <p>${details.ability4}</p>
                 <p>${details.ability5}</p>
                 <p>${details.ability6}</p>
-                <p>${details.ability7}</p>
-                <p>${details.ability8}</p>
-                <p>${details.ability9}</p>
-                <p>${details.ability10}</p>
-                <p>${details.ability11}</p>
-                <p>${details.ability12}</p>
-                <p>${details.ability13}</p>
-                <p>${details.ability14}</p>
-                <p>${details.ability15}</p>
                 </div>
             </div>
 
