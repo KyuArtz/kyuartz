@@ -4,18 +4,6 @@ const characterBackgrounds = {
         landscape: "url('')",
         portrait: "url('')"
     },
-    elishia: {
-        landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')",
-        portrait: "url('')"
-    },
-    hexxana: {
-        landscape: "url('assets/images/character-presets/cover/hexxana-cover.webp')",
-        portrait: "url('')"
-    },
-    rayza: {
-        landscape: "url('assets/images/character-presets/cover/rayza-cover.webp')",
-        portrait: "url('')"
-    },
 };
 
 // Track the currently selected character
