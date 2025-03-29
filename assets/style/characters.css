@@ -215,14 +215,14 @@ p.title {
 
 .character-info strong {
     color: #f0f0f0;
-    box-shadow: 0 0 3px #f0f0f0;
+    box-shadow: 0 0 2px #f0f0f0;
     border-radius: 5px;
     padding: 5px;
     background: var(--overlay);
 }
 
 .character-info info {
-    box-shadow: 0 0 3px #f0f0f0;
+    box-shadow: 0 0 2px #f0f0f0;
     border-radius: 5px;
     padding: 5px;
 }
