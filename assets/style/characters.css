@@ -130,7 +130,6 @@
     bottom: 0;
     width: 100%;
     height: 20%;
-    opacity: 0.8;
     text-align: center;
     padding: 5px;
     background: var(--overlay);
@@ -155,7 +154,6 @@ p.title {
 
 .character-card:hover .overlay {
     height: 25%;
-    opacity: 1;
 }
 
 .carousel-btn {
@@ -193,7 +191,7 @@ p.title {
 }
 
 .character-info {
-    background: url('../images/gif/2rnb.gif'), var(--overlay);
+    background: var(--overlay);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -204,7 +202,6 @@ p.title {
     padding: 20px;
     width: 100%;
     max-width: 400px;
-    opacity: 0.7;
 }
 
 .character-info h2 {
@@ -247,11 +244,11 @@ p.title {
 }
 
 .character-info orange {
-    color: rgb(255, 136, 0);
+    color: rgb(255, 165, 0);
 }
 
 .character-info green {
-    color: rgb(30, 255, 0);
+    color: rgb(144, 238, 144);
 }
 
 .character-info-scrollable {
@@ -300,7 +297,7 @@ p.title {
     width: 40px;
     height: 40px;
     aspect-ratio: 1/1;
-    border-radius: 50%;
+    border-radius: 10px;
     border: solid thin;
     background: var(--theme-overlay);
     transition: scale 0.3s ease-in-out;
