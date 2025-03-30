@@ -4,6 +4,26 @@ const characterBackgrounds = {
         landscape: "url('')",
         portrait: "url('')"
     },
+    elishia: {
+        landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')",
+        portrait: "url('')"
+    },
+    hexxana: {
+        landscape: "url('assets/images/character-presets/cover/hexxana-cover.jpg')",
+        portrait: "url('')"
+    },
+    liliana: {
+        landscape: "url('assets/images/character-presets/cover/liliana-cover.jpg')",
+        portrait: "url('')"
+    },
+    floribeth: {
+        landscape: "url('assets/images/character-presets/cover/floribeth-cover.jpg')",
+        portrait: "url('')"
+    },
+    feya: {
+        landscape: "url('assets/images/character-presets/cover/feya-cover.jpg')",
+        portrait: "url('')"
+    },
 };
 
 // Track the currently selected character
@@ -157,7 +177,7 @@ function showCharacterInfo(character) {
             name: "Floribeth Umbrakith",
             faction:"<info><purple>Order of Seekers</purple></info>",
             role:"<info><purple>Mage</purple></info>",
-            speciality:"<info><purple>Queen of Darkness</purple></info>",
+            speciality:"<info><purple>Fallen Celestial</purple></info>",
             birthplace: "<info><purple>Magelion Empire</purple></info>",
             affiliates: "<info><purple>Liliana (Daughter)</purple></info>",
             gender: "<info><purple>Female</purple></info>",
@@ -179,7 +199,7 @@ function showCharacterInfo(character) {
             name: "<orange>Feya Ashey</orange>",
             faction:"<info><orange>Light Harbingers</orange></info>",
             role:"<info><orange>Mage</orange></info>",
-            speciality:"<info><orange>Fiery Fox</orange></info>",
+            speciality:"<info><orange>Pyromancer</orange></info>",
             birthplace: "<info><orange>Enchanted Forest</orange></info>",
             affiliates: "<info><orange>Liliana (Step Mother)</orange></info>",
             gender: "<info><orange>Female</orange></info>",
