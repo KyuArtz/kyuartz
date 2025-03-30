@@ -12,6 +12,10 @@ const characterBackgrounds = {
         landscape: "url('assets/images/character-presets/cover/hexxana-cover.jpg')",
         portrait: "url('')"
     },
+    rayza: {
+        landscape: "url('assets/images/character-presets/cover/rayza-cover.jpg')",
+        portrait: "url('')"
+    },
     liliana: {
         landscape: "url('assets/images/character-presets/cover/liliana-cover.jpg')",
         portrait: "url('')"
