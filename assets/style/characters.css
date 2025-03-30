@@ -223,7 +223,6 @@ p.title {
 
 .character-info info {
     background: var(--overlay);
-    font-family: 'poppins' sans-serif;
     box-shadow: 0 0 2px #f0f0f0;
     border-radius: 5px;
     padding: 5px;
