@@ -70,8 +70,7 @@ function showCharacterInfo(character) {
         name: "Info Not Available Yet",
         faction:"",
         role:"",
-        speciality:"",
-        birthplace: "",
+        homeland: "",
         affiliates: "",
         gender: "",
         height: "",
@@ -93,8 +92,7 @@ function showCharacterInfo(character) {
             name: "<blue>Elishia Bluestein<blue>",
             faction:"<info><blue>Falconite</blue></info>",
             role:"<info><blue>Versatile</blue></info>",
-            speciality:"<info><blue>Tactical Specialist</blue></info>",
-            birthplace: "<info><blue>Orag City, District 3</blue></info>",
+            homeland: "<info><blue>Orag City, District 3</blue></info>",
             affiliates: "<info><blue>Roman Bluestein (Older Brother)</blue></info> <info><blue>Nicks (Bestfriend)</blue></info> <info><blue>Zackry (Commandant)</blue></info> <info><blue>Evalete (Squadmate)</blue></info> <info><blue>Zenki (Squadmate)</blue></info> <info><blue>Jaze (Squadmate)</blue></info>",
             gender: "<info><blue>Female</blue></info>",
             height: "<info><blue>5'5\" ft</blue></info>",
@@ -115,8 +113,7 @@ function showCharacterInfo(character) {
             name: "<purple>Hexxana</purple>",
             faction:"<info><purple>Unknown</purple></info>",
             role:"<info><purple>Mage</purple></info> <info><purple>Warrior</purple></info>",
-            speciality:"<info><purple>Umbral Vanguard</purple></info>",
-            birthplace: "<info><purple>Unknown</purple></info>",
+            homeland: "<info><purple>Unknown</purple></info>",
             affiliates: "<info><purple>Unknown</purple></info>",
             gender: "<info><purple>Female</purple></info>",
             height: "<info><purple>5'7\" ft</purple></info>",
@@ -137,8 +134,7 @@ function showCharacterInfo(character) {
             name: "<red>Rayza Huǒ</red>",
             faction:"<info><red>Zephyra Vale</red></info>",
             role:"<info><red>Assassin</red></info>",
-            speciality:"<info><red>Mist Dancer</red></info>",
-            birthplace: "<info><red>Hidden Mist Valley</red></info>",
+            homeland: "<info><red>Hidden Mist Valley</red></info>",
             affiliates: "<info><red>Ren (Older Brother)</red></info>",
             gender: "<info><red>Female</red></info>",
             height: "<info><red>5'5\" ft</red></info>",
@@ -159,8 +155,7 @@ function showCharacterInfo(character) {
             name: "<yellow>Liliana Solarae</yellow>",
             faction:"<info><yellow>Light Harbingers</yellow></info>",
             role:"<info><yellow>Mage</yellow></info> <info><yellow>Healer</yellow></info>",
-            speciality:"<info><yellow>Light Priestess</yellow></info>",
-            birthplace: "<info><yellow>Magelion Empire</yellow></info>",
+            homeland: "<info><yellow>Magelion Empire</yellow></info>",
             affiliates: "<info><yellow>Zion (Lover)</yellow></info> <info><yellow>Blessica (Daughter)</yellow></info>",
             gender: "<info><yellow>Female</yellow></info>",
             height: "<info><yellow>5'7\" ft</yellow></info>",
@@ -181,8 +176,7 @@ function showCharacterInfo(character) {
             name: "Floribeth Umbrakith",
             faction:"<info><purple>Order of Seekers</purple></info>",
             role:"<info><purple>Mage</purple></info>",
-            speciality:"<info><purple>Fallen Celestial</purple></info>",
-            birthplace: "<info><purple>Magelion Empire</purple></info>",
+            homeland: "<info><purple>Magelion Empire</purple></info>",
             affiliates: "<info><purple>Liliana (Daughter)</purple></info>",
             gender: "<info><purple>Female</purple></info>",
             height: "<info><purple>5'8\" ft</purple></info>",
@@ -203,8 +197,7 @@ function showCharacterInfo(character) {
             name: "<orange>Feya Ashey</orange>",
             faction:"<info><orange>Light Harbingers</orange></info>",
             role:"<info><orange>Mage</orange></info>",
-            speciality:"<info><orange>Pyromancer</orange></info>",
-            birthplace: "<info><orange>Enchanted Forest</orange></info>",
+            homeland: "<info><orange>Enchanted Forest</orange></info>",
             affiliates: "<info><orange>Liliana (Step Mother)</orange></info>",
             gender: "<info><orange>Female</orange></info>",
             height: "<info><orange>5'6\" ft</orange></info>",
@@ -225,8 +218,7 @@ function showCharacterInfo(character) {
             name: "Coming Soon",
             faction:"",
             role:"",
-            speciality:"",
-            birthplace: "",
+            homeland: "",
             affiliates: "",
             gender: "",
             height: "",
@@ -256,8 +248,7 @@ function showCharacterInfo(character) {
             <div class="info-section" id="basic-info-scrollable">
                 <p><strong>Faction</strong> ${details.faction}</p>
                 <p><strong>Role</strong> ${details.role}</p>
-                <p><strong>Specialty</strong> ${details.speciality}</p>
-                <p><strong>Birthplace</strong> ${details.birthplace}</p>
+                <p><strong>Homeland</strong> ${details.homeland}</p>
                 <p><strong>Gender</strong> ${details.gender}</p>
                 <p><strong>Height</strong> ${details.height}</p>
             </div>
