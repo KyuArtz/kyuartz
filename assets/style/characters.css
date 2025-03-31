@@ -191,7 +191,7 @@ p.title {
 }
 
 .character-info {
-    background: var(--overlay);
+    background: url('../images/gif/tumblr_o7w2veChcr1runoqyo4_540.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -202,6 +202,7 @@ p.title {
     padding: 20px;
     width: 100%;
     max-width: 400px;
+    opacity: 0.8;
 }
 
 .character-info h2 {
@@ -237,7 +238,7 @@ p.title {
 }
 
 .character-info red {
-    color: rgb(255, 0, 0);
+    color: rgb(224, 38, 38);
 }
 
 .character-info yellow {
