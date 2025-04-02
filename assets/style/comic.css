@@ -87,9 +87,9 @@ button.next {
 }
 
 .comic-title span {
-    color: var(--default-font-color);
+    color: var(--text-color);
     background: var(--color);
-    border: solid thin;
+    border: solid 1px;
     border-radius: 50px;
     padding: 10px;
     font-size: x-small;
@@ -125,7 +125,7 @@ button.next {
 }
 
 .chapter p {
-    border: solid thin;
+    border: solid 1px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -135,7 +135,7 @@ button.next {
     gap: 5px;
     width: 100%;
     overflow: auto;
-    border: solid thin;
+    border: solid 1px;
     border-radius: 10px;
     padding: 5px;
 }
@@ -153,14 +153,14 @@ button.next {
     align-items: center;
     width: 25px;
     height: 25px;
-    color: inherit;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 .active,
 .dot:hover {
     background: var(--color);
-    color: var(--default-font-color);
+    color: var(--text-color);
 }
 
 .btnlink:hover {
@@ -184,7 +184,7 @@ button.next {
     color: #f0f0f0;
     background: none;
     border-radius: 50px;
-    border: solid thin;
+    border: solid 1px;
 }
 
 @media screen and (max-width: 500px) {
