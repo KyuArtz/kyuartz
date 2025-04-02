@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background: var(--theme-color);
+    background: url('../images/bg/Legend_of_the_crystalight.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +22,6 @@
 }
 
 .faq-item a {
-    color: inherit;
     text-decoration: none;
 }
 
@@ -40,16 +39,11 @@
     border-radius: 10px;
     background: var(--theme-color);
     margin: 5px;
-    box-shadow: 0 0 3px #000;
-    border: solid thin var(--default-font-color);
+    box-shadow: 0 0 2px;
 }
 
 .faq-container ul {
-    color: var(--default-font-color);
-}
-
-.faq-container a {
-    color: var(--color);
+    color: var(--text-color);
 }
 
 .faq-container ul::-webkit-scrollbar {
