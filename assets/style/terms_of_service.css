@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: var(--theme-color);
-    background: cover;
+    background: url('../images/bg/Legend_of_the_crystalight.webp');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: auto;
@@ -30,8 +30,7 @@
     padding: 12px;
     margin: 5px;
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
-    border: solid thin var(--default-font-color);
+    box-shadow: 0 0 2px;;
 }
 
 .tos-item p {
@@ -39,11 +38,7 @@
 }
 
 .tos-container ul {
-    color: var(--default-font-color);
-}
-
-.tos-container a {
-    color: var(--color);
+    color: var(--text-color);
 }
 
 .tos-container ul,
