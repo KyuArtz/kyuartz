@@ -97,7 +97,7 @@
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
 
@@ -192,7 +192,7 @@
           </button>
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
-              <div class="account">
+              <div class="profile">
                 <img src="assets/images/about-presets/myprofile/me.webp" alt="Profile">
                 <p class="username"><span data-translate="userName">Kyu Shi</span></p>
               </div>
@@ -381,39 +381,39 @@
       </div>
     </div>
 
-    <div class="footer">
-      <div class="copyright">
-        <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
-        <div class="footer-container">
-          <a class="detail" href="terms-of-service.html" data-translate="termsOfService"> Terms of Service</a>
-          <a class="detail" href="privacy-policy.html" data-translate="privacyPolicy"> Privacy Policy</a>
-          <a class="detail" href="faq.html" data-translate="faqs"> FAQs</a>
-          <a class="detail" href="customer-support.html" data-translate="customerSupport"> Customer Support</a>
-          <a class="detail" href="contact.html" data-translate="contact"> Contact Us</a>
-          <a class="detail" href="help.html" data-translate="helpCenter"> Help Center</a>
-          <div class="social">
-            <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
+    <div id="description-popup" class="description-overlay">
+      <div class="comic-content">
+          <button type="button" class="close" onclick="closeDescription()">X</button>
+          <h2 id="comic-title"></h2>
+          <div class="text-content">
+            <p id="comic-description"></p>
           </div>
-        </div>
       </div>
     </div>
   </div>
 
-  <div id="description-popup" class="description-overlay">
-    <div class="comic-content">
-        <button type="button" class="close" onclick="closeDescription()">X</button>
-        <h2 id="comic-title"></h2>
-        <div class="text-content">
-          <p id="comic-description"></p>
+  <button type="button" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+  <div class="footer">
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
+      <div class="footer-container">
+        <a class="detail" href="terms-of-service.html" data-translate="termsOfService"> Terms of Service</a>
+        <a class="detail" href="privacy-policy.html" data-translate="privacyPolicy"> Privacy Policy</a>
+        <a class="detail" href="faq.html" data-translate="faqs"> FAQs</a>
+        <a class="detail" href="customer-support.html" data-translate="customerSupport"> Customer Support</a>
+        <a class="detail" href="contact.html" data-translate="contact"> Contact Us</a>
+        <a class="detail" href="help.html" data-translate="helpCenter"> Help Center</a>
+        <div class="social">
+          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://cara.app/kyuu" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
         </div>
+      </div>
     </div>
   </div>
-
-  <button type="button" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
 
 </body>
 </html>
