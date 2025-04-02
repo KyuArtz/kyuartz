@@ -1,12 +1,15 @@
 .card-container {
+    min-height: 100vh;
     margin-top: 50px;
-    background-image: url('../images/bg/wasteland.webp');
+    background-image: url('../images/bg/lbg_main4.webp');
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat
 }
 
 .overlay {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     padding: 5px 5px;
@@ -18,14 +21,14 @@
 .summary h2,
 .expcontent h2,
 .program-content h2 {
-    color: var(--color);
+    color: #f0f0f0;
     margin-top: 50px;
 }
 
 .summary p,
 .expcontent p,
 .my-info p {
-    color: var(--default-font-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
@@ -38,8 +41,8 @@
 .summaryContent,
 .expcontent p,
 .program-logo img {
-    box-shadow: 0 0 3px #000;
     background: var(--theme-color);
+    box-shadow: 0 0 2px var(--text-color);
 }
 
 .summaryContent {
@@ -78,7 +81,6 @@
 
 .program-logo img:hover {
     transform: scale(0.90);
-    border: solid 3px var(--hover-light);
 }
 
 .me {
@@ -113,23 +115,22 @@
 
 .my-info {
     padding: 10px 16px;
-    border-radius: 50px 50px 5px 5px;
-    box-shadow: 0 0 1px;
+    border-radius: 50px 50px 10px 10px;
+    box-shadow: 0 0 2px;
 }
 
 .my-info h1 {
     border-bottom: 2px solid;
     margin-top: 70px;
-    color: var(--default-font-color);
+    color: var(--text-color);
 }
 
 .my-info p {
     padding: 5px;
     text-align: left;
-    color: var(--default-font-color);
+    color: var(--text-color);
     border-radius: 30px 50px 50px 30px;
-    border: solid thin;
-    transition: background-color 0.3s ease-in;
+    border: solid 1px;
 }
 
 .my-info p:hover,
@@ -147,15 +148,15 @@
     height: 35px;
     aspect-ratio: 1/1;
     margin: 3px;
-    border: solid thin;
+    border: solid 1px var(--text-color);
+    background: var(--overlay);
     object-fit: cover;
     border-radius: 10px;
 }
 
 @media screen and (max-width: 750px) {
-    .overlay {
-        display: block;
-        background-image: url('../images/bg/portrait-mode.webp');
+    .card-container {
+        background-image: none;
     }
 
     .card img.pfp {
