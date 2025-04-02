@@ -3,7 +3,7 @@
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background-image: url('../images/bg/wasteland.webp');
+    background-image: url('../images/bg/lbg_main2.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,12 +33,10 @@ form h1 {
 }
 
 .moreInfo {
-    border: solid thin;
+    box-shadow: 0 0 2px;
     border-radius: 10px;
-}
-
-.dL {
-    color: var(--color);
+    padding: 5px;
+    color: var(--text-color);
 }
 
 input[type="email"],
@@ -49,7 +47,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: solid thin;
+    border: solid 1px;
     border-radius: 10px;
     outline: none;
     margin: 8px 0;
@@ -81,13 +79,13 @@ input[type="text"]:focus,
 input[type="email"]:focus, 
 textarea:focus, 
 select:focus {
-  border-color: #6C63FF; /* Accent color (e.g., light purple) */
+  border-color: #6C63FF;
   outline: none;
 }
 
 input[type="Submit"] {
     padding: 10px 30px;
-    border: solid thin;
+    border: solid 1px;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
@@ -98,7 +96,7 @@ input[type="file"] {
 
 .upload-content {
     border-radius: 10px;
-    border: solid thin var(--color);
+    border: solid 1px var(--color);
     padding: 5px;
 }
 
@@ -111,7 +109,7 @@ img#image-preview {
 
 #remove-btn {
     padding: 5px;
-    border: solid thin;
+    border: solid 1px;
     background: none;
     border-radius: 50px;
     width: 100%;
@@ -137,7 +135,7 @@ img#image-preview {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: solid thin;
+    border: solid 1px;
     color: var(--color);
 }
 
@@ -151,9 +149,9 @@ img#image-preview {
 .payment img {
     padding: 4px;
     margin: 3px;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     border-radius: 50px;
-    border: solid thin;
+    border: solid 1px;
 }
 
 .payment img:hover {
@@ -164,7 +162,7 @@ img#image-preview {
 .gbm img {
     width: 80%;
     transform: scale(1);
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 }
 
@@ -179,7 +177,7 @@ img#image-preview {
 #commission-error,
 #file-error {
     position: relative;
-    color: rgb(255, 94, 0);
+    color: rgb(255, 123, 0);
     padding-top: 2px;
     padding-left: 5px;
     transition: 0.3s ease-in-out;
@@ -213,7 +211,7 @@ img#image-preview {
 @media screen and (max-width: 500px) {
     .contact-container {
         flex-direction: column;
-        background-image: url('../images/bg/portrait-mode.webp');
+        background-image: url('../images/bg/pbg_main1.webp');
     }
 
     .tos-container {
