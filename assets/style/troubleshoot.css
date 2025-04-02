@@ -7,9 +7,8 @@
   margin: 5px auto;
   padding: 20px;
   background: var(--theme-color);
-  border: solid thin var(--default-font-color);
   border-radius: 10px;
-  box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px;
 }
 
 .troubleshooting h1,
@@ -22,10 +21,6 @@
 .troubleshooting li {
   color: inherit;
   line-height: 1.6;
-}
-
-.troubleshooting a {
-  color: var(--color);
 }
 
 .troubleshooting ul {
