@@ -7,18 +7,14 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
+
 }
 
 body {
     background: var(--theme-color);
-    color: var(--default-font-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
-}
-
-/* Disable scrolling */
-.no-scroll {
-    overflow: hidden;
 }
 
 /* Scrollbar Styles */
@@ -44,7 +40,7 @@ body {
 :root {
     /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
     --theme-color: rgb(10, 10, 10);
-    --default-font-color: #f0f0f0;
+    --text-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: rgba(15, 15, 15, 0.9);
     --hover-light: #4d4d4d;
@@ -57,7 +53,7 @@ body {
 .theme-default {
     /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
     --theme-color: rgb(10, 10, 10);
-    --default-font-color: #f0f0f0;
+    --text-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: rgba(15, 15, 15, 0.9);
     --hover-light: #4d4d4d;
@@ -66,7 +62,7 @@ body {
 
 .theme-white-blue {
     --theme-color: rgba(255, 255, 255);
-    --default-font-color: #333;
+    --text-color: #333;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
     --hover-light: #1ac3da;
@@ -75,7 +71,7 @@ body {
 
 .theme-modern-white {
     --theme-color: rgb(255, 255, 255);
-    --default-font-color: #2e2e2e;
+    --text-color: #2e2e2e;
     --color: #969696;
     --content-bg: rgba(255, 255, 255, 0.9);
     --hover-light: #808080;
@@ -85,7 +81,7 @@ body {
 .theme-dark-blue {
     /* --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61)); */
     --theme-color: rgb(28, 31, 39);
-    --default-font-color: #f0f0f0;
+    --text-color: #f0f0f0;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
     --hover-light: #1ac3da;
@@ -95,7 +91,7 @@ body {
 .theme-dark-red {
     /* --theme-color: linear-gradient(to right, rgb(22, 15, 15), rgb(39, 28, 28), rgb(61, 45, 45)); */
     --theme-color: rgb(22, 15, 15);
-    --default-font-color: #f0f0f0;
+    --text-color: #f0f0f0;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
     --hover-light: #da1a1a;
@@ -104,7 +100,7 @@ body {
 
 .theme-white-red {
     --theme-color: rgba(255, 255, 255);
-    --default-font-color: #333;
+    --text-color: #333;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
     --hover-light: #da1a1a;
@@ -113,8 +109,8 @@ body {
 
 .theme-dark-purple {
     /* --theme-color: linear-gradient(to right, rgb(35, 0, 61), rgb(55, 0, 85), rgb(85, 0, 115)); */
-    --theme-color: rgb(35, 0, 61);
-    --default-font-color: #f0f0f0;
+    --theme-color: rgb(17, 5, 26);
+    --text-color: #f0f0f0;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
     --hover-light: #c43cff;
@@ -123,7 +119,7 @@ body {
 
 .theme-white-purple {
     --theme-color: rgba(255, 255, 255);
-    --default-font-color: #333;
+    --text-color: #333;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
     --hover-light: #c43cff;
@@ -132,8 +128,8 @@ body {
 
 .theme-dark-green {
     /* --theme-color: linear-gradient(to right, rgb(0, 61, 35), rgb(0, 85, 55), rgb(0, 115, 85)); */
-    --theme-color: rgb(0, 61, 35);
-    --default-font-color: #f0f0f0;
+    --theme-color: rgb(5, 26, 8);
+    --text-color: #f0f0f0;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
     --hover-light: #3cffc4;
@@ -142,7 +138,7 @@ body {
 
 .theme-white-green {
     --theme-color: rgba(255, 255, 255);
-    --default-font-color: #333;
+    --text-color: #333;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
     --hover-light: #3cffc4;
@@ -151,8 +147,8 @@ body {
 
 .theme-dark-yellow {
     /* --theme-color: linear-gradient(to right, rgb(61, 61, 0), rgb(85, 85, 0), rgb(115, 115, 0)); */
-    --theme-color: rgb(61, 61, 0);
-    --default-font-color: #f0f0f0;
+    --theme-color: rgb(26, 26, 5);
+    --text-color: #f0f0f0;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
     --hover-light: #ffc43c;
@@ -161,7 +157,7 @@ body {
 
 .theme-white-yellow {
     --theme-color: rgba(255, 255, 255);
-    --default-font-color: #333;
+    --text-color: #333;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
     --hover-light: #ffc43c;
@@ -181,13 +177,17 @@ textarea,
 .character-card p,
 .tos-container p,
 .pp-container p,
+.pp-item li,
 .faq-container p,
 .help-card p,
 .popup-wn li,
 .user-guide p,
 .user-guide li,
 .troubleshooting p,
-.troubleshooting li
+.troubleshooting li,
+form.search input[type="search"],
+form.search button,
+.search-result a
 {
     font-family: 'Roboto', sans-serif;
 }
@@ -198,11 +198,15 @@ a,
 a i,
 a p,
 a span,
+.caption-btn a,
 .settings-btn i,
 input[type="Submit"] {
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
     background: none;
+}
+
+.dL {
+    color: #28adff;
 }
 
 input[type="Submit"] {
@@ -210,7 +214,8 @@ input[type="Submit"] {
 }
 
 button:hover,
-input[type="Submit"]:hover {
+input[type="Submit"]:hover,
+.caption-btn a:hover {
     text-shadow: 0 0 10px var(--color);
 }
 
@@ -221,7 +226,7 @@ button.prev {
 
 a {
     text-decoration: none;
-    color: var(--default-font-color);
+    color: var(--text-color);
     font-size: 0.8rem;
 }
 
