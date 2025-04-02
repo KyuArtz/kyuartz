@@ -4,15 +4,14 @@
 
 form h1 {
     text-align: center;
-    color: var(--color);
 }
 
 form.customer {
     background: var(--theme-color);
-    color: var(--default-font-color);
+    color: var(--text-color);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 2px;
     max-width: 600px;
     margin: 20px auto;
 }
@@ -26,7 +25,7 @@ select {
     padding: 12px;
     margin: 8px 0;
     border-radius: 10px;
-    border: solid thin;
+    border: solid 1px;
     background: none;
     color: inherit;
     transition: border-color 0.3s ease;
@@ -67,8 +66,8 @@ input[type="file"] {
 
 .fileUpload-content {
     border-radius: 10px;
-    border: solid thin;
-    color: var(--default-font-color);
+    border: solid 1px;
+    color: var(--text-color);
     padding: 5px;
     margin-bottom: 5px;
 }
@@ -82,7 +81,7 @@ img#image-preview {
 
 #remove-btn {
     padding: 5px;
-    border: solid thin;
+    border: solid 1px;
     color: inherit;
     border-radius: 50px;
     width: 100%;
@@ -107,9 +106,9 @@ img#image-preview {
 }
 
 input[type="submit"] {
-    color: var(--default-font-color);
+    color: var(--text-color);
     padding: 10px 30px;
-    border: solid thin;
+    border: solid 1px;
     border-radius: 50px;
 }
 
