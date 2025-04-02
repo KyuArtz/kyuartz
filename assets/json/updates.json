@@ -2,35 +2,54 @@
   "updates": [
 
     {
-      "date": "2025/26/1/",
+      "date": "2025/2/4/",
       "major": [
-
+        "Overall improvement and optimizations to the site"
       ],
       "minor": [
-        "Made some changes to the theme colors, now it's solid rather than linear gradient for a more clean and modern look",
-        "UI enhancement in some parts of the site"
+
       ],
       "bugfixes": [
 
       ],
       "upcoming": [
-        "New Comic chapters (coming soon)."
+        "New characters (coming soon).",
+        "Improved language localization (coming soon)",
+        "Creating a desktop or website shortcut button (coming soon)",
+        "New comic chapters (coming soon)."
+      ]
+    },
+
+    {
+      "date": "2025/26/1/",
+      "major": [
+
+      ],
+      "minor": [
+        "Made some changes to the theme colors, now it's solid rather than linear gradient for a more clean and modern look.",
+        "UI enhancement in some parts of the site."
+      ],
+      "bugfixes": [
+
+      ],
+      "upcoming": [
+        "New comic chapters (coming soon)."
       ]
     },
     
     {
       "date": "2024/12/2/",
       "major": [
-        "Addition of an account profile to the settings menu"
+        "Addition of an account profile to the settings menu."
       ],
       "minor": [
-        "UI changes and optimizations"
+        "UI changes and optimizations."
       ],
       "bugfixes": [
-        "Minor bug fixes"
+        "Minor bug fixes."
       ],
       "upcoming": [
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -46,7 +65,7 @@
         
       ],
       "upcoming": [
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -62,7 +81,7 @@
         "Fixed some bugs."
       ],
       "upcoming": [
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -78,7 +97,7 @@
         
       ],
       "upcoming": [
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -95,7 +114,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -112,7 +131,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -130,7 +149,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -147,7 +166,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -167,7 +186,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -184,7 +203,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -201,7 +220,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -218,7 +237,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -235,7 +254,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -254,7 +273,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -272,7 +291,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -289,7 +308,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
     
@@ -307,7 +326,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },
 
@@ -325,7 +344,7 @@
       ],
       "upcoming": [
         "Launch of a Character page (coming soon).",
-        "New Comic chapters (coming soon)."
+        "New comic chapters (coming soon)."
       ]
     },  
 
