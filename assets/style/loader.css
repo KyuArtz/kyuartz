@@ -1,3 +1,8 @@
+/* Disable scrolling */
+.no-scroll {
+    overflow: hidden;
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -14,7 +19,7 @@
 }
 
 .loader h2 {
-    color: var(--default-font-color);
+    color: var(--text-color);
     position: absolute;
     bottom: 35%;
     transition: inherit;
@@ -45,7 +50,7 @@
 .medium-spinner {
     width: 75px;
     height: 75px;
-    border: thin solid;
+    border: thin solid var(--color);
     /*box-shadow: 0 1px 5000px 30px var(--color);*/
     animation: pulse 0.75s infinite;
 }
@@ -54,7 +59,7 @@
     width: 85px;
     height: 85px;
     border: thick solid var(--color);
-    border-top-color: inherit;
+    border-top-color: rgba(0, 0, 0, 0);
     animation: rotateClockwise 0.75s infinite;
 }
 
