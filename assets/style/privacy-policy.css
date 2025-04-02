@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background: var(--theme-color);
+    background: url('../images/bg/Legend_of_the_crystalight.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,8 +43,7 @@
     background: var(--theme-color);
     border-radius: 10px;
     margin: 5px;
-    box-shadow: 0 0 3px #000;
-    border: solid thin var(--default-font-color);
+    box-shadow: 0 0 2px;
 }
 
 .pp-item ul {
@@ -53,11 +52,6 @@
 
 .pp-item p {
     text-align: justify;
-}
-
-
-.pp-container ul a {
-    color: var(--color);
 }
 
 .pp-container ul::-webkit-scrollbar {
