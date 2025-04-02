@@ -26,7 +26,7 @@
     background: var(--theme-color);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 2px var(--text-color);
     text-align: center;
     display: none;
 }
@@ -51,13 +51,13 @@
 }
 
 #welcome-message p {
-    color: inherit;
+    color: var(--text-color);
     text-align: justify;
 }
 
 #welcome-message button {
     padding: 10px 20px;
-    color: inherit;
+    color: var(--text-color);
     border: thin solid;
     border-radius: 50px;
 }
@@ -71,12 +71,13 @@
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
+    color: var(--text-color);
     background: var(--theme-color);
     visibility: hidden;
     opacity: 0;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 2px var(--text-color);
     line-height: 1.6;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .open-notice {
@@ -89,22 +90,18 @@
 .donate-popup h2,
 .popup-wn h2 {
     color: var(--color);
-    border-bottom: solid thin;
+    border-bottom: solid thin var(--text-color);
 }
 
 .popup-notice p {
     text-align: justify;
 }
 
-.popup-notice a {
-    color: var(--color);
-}
-
 .popup-notice button {
     width: 50%;
     padding: 10px 0;
-    color: var(--defaut-font-color);
-    border: solid thin;
+    color: var(--text-color);
+    border: solid 1px var(--text-color);
     outline: none;
     border-radius: 50px;
 }
@@ -121,8 +118,8 @@
     background: var(--theme-color);
     visibility: hidden;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 0 3px #000;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 2px var(--text-color);
     overflow-y: auto; 
     max-height: 80vh;
 }
@@ -140,7 +137,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid thin;
+    color: var(--text-color);
+    border: solid 1px var(--text-color);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -160,9 +158,8 @@
 .donate-popup button {
     width: 50%;
     padding: 10px 0;
-    color: var(--default-font-color);
-    border: solid thin;
-    color: inherit;
+    color: var(--text-color);
+    border: solid 1px var(--text-color);
     outline: none;
     border-radius: 50px;
 }
@@ -178,10 +175,11 @@
     text-align: center;
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 20px 30px;
+    color: var(--text-color);
     background: var(--theme-color);
     visibility: hidden;
     transition: transform 0.4s;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 2px var(--text-color);
     max-height: 80%;
     overflow-y: auto; 
 }
@@ -205,17 +203,17 @@
     padding: 10px;
     width: 80%;
     max-width: 500px;
-    height: 500px;
+    height: 90%;
     background: var(--theme-color);
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 2px var(--text-color);
     animation: fadeIn 0.3s ease-in-out;
 }
 
 .text-content {
-    height: 400px;
-    max-height: 400px;
+    height: 90%;
+    max-height: 90%;
     padding: 15px;
     overflow-y: auto;
 }
@@ -229,10 +227,9 @@ button.close {
     right: 5px;
     padding: 5px;
     aspect-ratio: 1/1;
-    color: var(--default-font-color);
+    color: var(--text-color);
     outline: none;
-    border: solid thin;
-    border-radius: 5px;
+    border: none;
 }
 
 #comic-title {
@@ -243,7 +240,7 @@ button.close {
 #comic-description {
     text-align: justify;
     line-height: 1.6;
-    color: var(--default-font-color);
+    color: var(--text-color);
 }
 
 @keyframes fadeIn {
@@ -264,11 +261,11 @@ button.close {
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    color: inherit;
+    color: var(--color);
     background: var(--theme-color);
     outline: none;
     aspect-ratio: 1 / 1;
-    border: solid thin;
+    border: solid 1px var(--text-color);
     animation: wiggleAnimation 1s infinite;
     z-index: 50;
 }
@@ -303,9 +300,9 @@ button.close {
     bottom: 0;
     width: 100%;
     background: var(--theme-color);
-    color: inherit;
+    color: var(--text-color);
     padding: 20px;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 2px var(--text-color);
     text-align: center;
     z-index: 100;
     display: none;
@@ -318,13 +315,12 @@ button.close {
 }
 
 .cookie-popup a {
-    color: var(--color);
     transition: 0.5s ease-in-out;
 }
 
 .cookie-popup button {
-    color: inherit;
-    border: solid thin;
+    color: var(--text-color);
+    border: solid 1px var(--text-color);
     padding: 10px 30px;
     border-radius: 50px;
 }
