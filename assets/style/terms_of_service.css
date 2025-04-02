@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background: url('../images/bg/Legend_of_the_crystalight.webp');
+    background: url('../images/bg/lbg_main1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,4 +48,13 @@
 
 .tos-container ul::-webkit-scrollbar {
     display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .tos-overlay {
+        background: url('../images/bg/pbg_main1.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
