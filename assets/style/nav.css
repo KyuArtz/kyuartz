@@ -2,8 +2,8 @@ header {
     position: fixed;
     width: 100%;
     background: var(--theme-color);
-    box-shadow: 0 0 1px;
-    color: var(--default-font-color);
+    box-shadow: 0 0 2px;
+    color: var(--text-color);
     top: 0;
     z-index: 100000;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 .subMenu-container {
-    border: solid thin;
+    border: solid 1px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -35,16 +35,15 @@ header {
 }
 
 .settings-btn {
-    color: inherit;
+    color: var(--text-color);
     padding: 10px 15px;
     border: none;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .dropdown-setting {
     display: none;
     position: absolute;
-    background: inherit;
     min-width: 160px;
     background: var(--theme-overlay);
     backdrop-filter: blur(10px);
@@ -59,9 +58,9 @@ header {
 .dropdown-setting a.setting {
     padding: 12px 16px;
     text-decoration: none;
-    color: inherit;
+    color: var(--text-color);
     display: block;
-    transition: all 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .dropdown-setting a:hover {
@@ -72,21 +71,21 @@ header {
     display: block;
 }
 
-.account {
+.profile {
     display: flex;
     align-items: center;
     gap: 5px;
-    border-bottom: solid thin;
+    border-bottom: solid thin var(--text-color);
     margin: 0 5px;
     padding: 5px;
 }
 
-.account img {
+.profile img {
     width: 35px;
     height: 35px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: solid thin;
+    border: solid 1px;
 }
 
 .main-navigation {
@@ -99,7 +98,7 @@ header {
 
 .nav-brand {
     font-weight: bold;
-    color: inherit;
+    color: var(--text-color);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -116,12 +115,12 @@ header {
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    border: thin solid var(--default-font-color);
+    border: thin solid var(--text-color);
 }
 
 .nav-link,
 .nav-link-sideMenu {
-    color: inherit;
+    color: var(--text-color);
     background: none;
     border: none;
     padding: 14px 25px 12px;
@@ -171,7 +170,7 @@ header {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background: var(--default-font-color);
+    background: var(--text-color);
     transition: 0.3s ease-in-out;
 }
 
@@ -192,19 +191,18 @@ form.search input[type="search"] {
 form.search button {
     float: left;
     width: 20%;
-    border: solid thin;
+    border: solid 1px;
     border-right: none;
     border-radius: 50px 0 0 50px;
-    color: var(--default-font-color);
+    color: var(--text-color);
 }
 
 form.search input[type="search"],
 form.search button {
-    color: inherit;
+    color: var(--text-color);
     outline: none;
     margin: 0;
     padding: 12px;
-    transition: all 0.3s ease-in-out;
 }
 
 form.search::after {
@@ -221,8 +219,8 @@ form.search::after {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
-    box-shadow: 0 0 1px;
-    color: inherit;
+    box-shadow: 0 0 2px;
+    color: var(--text-color);
 }
 
 .search-result ul {
@@ -239,8 +237,7 @@ form.search::after {
     display: block;
     width: 100%;
     padding: 15px 10px;
-    transition: all 0.3s ease-in-out;
-    color: inherit;
+    color: var(--text-color);
 }
 
 .search-result a:hover {
@@ -251,7 +248,7 @@ form.search::after {
 .search-result p {
     text-align: center;
     padding: 15px 10px;
-    color: inherit;
+    color: var(--text-color);
     border-radius: 0 0 10px 10px;
 }
 
@@ -268,7 +265,7 @@ form.search::after {
     outline: none;
     aspect-ratio: 1 / 1;
     box-shadow: 0 0 3px #000;
-    color: inherit;
+    color: var(--text-color);
     z-index: 1;
 }
 
@@ -342,6 +339,19 @@ form.search::after {
     }
 }
 
+.sideMenu-content::-webkit-scrollbar,
+.category-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.sideMenu-content,
+.category-menu {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    box-shadow: 2px 0 5px -5px;
+    transition: 0.3s ease-in-out;
+}
+
 .sideMenu-content {
     position: fixed;
     top: 50px;
@@ -351,20 +361,18 @@ form.search::after {
     min-width: 200px;
     height: 100vh;
     background: var(--theme-color);
-    box-shadow: 1px 0 5px -5px;
     padding-bottom: 50px;
     overflow: auto;
-    transition: all 0.3s ease-in-out;
 }
 
 .sideMenu-content h2 {
-    color: inherit;
+    color: var(--text-color);
     margin: 0;
     padding: 15px;
 }
 
 .sideMenu-content a {
-    color: inherit;
+    color: var(--text-color);
     border-radius: 10px;
     padding: 15px 15px;
     margin: 3px;
@@ -373,7 +381,7 @@ form.search::after {
 .span-btn {
     display: flex;
     flex-direction: column;
-    border: solid thin var(--color);
+    box-shadow: 0 0 2px;
     border-radius: 10px;
     margin: 5px;
 }
@@ -394,8 +402,8 @@ form.search::after {
     width: 100%;
     min-height: 50px;
     background: var(--theme-color);
-    box-shadow: 0 0 1px;
-    color: var(--default-font-color);
+    box-shadow: 0 0 2px;
+    color: var(--text-color);
     top: 50px;
     z-index: 99;
 }
@@ -436,16 +444,14 @@ form.search::after {
     min-width: 150px;
     height: 100vh;
     background: var(--theme-color);
-    box-shadow: 1px 0 5px -5px;
     padding: 0 0 50px 0;
     margin: 0;
     justify-content: left;
     overflow: auto;
-    transition: all 0.3s ease-in-out;
 }
 
 .category-menu h2 {
-    color: inherit;
+    color: var(--text-color);
     margin: 0;
     padding: 15px;
 }
@@ -456,7 +462,7 @@ form.search::after {
 
 .category-item a {
     width: 100%;
-    color: inherit;
+    color: var(--text-color);
     border-radius: 10px;
     padding: 15px 15px;
     margin: 5px;
@@ -475,7 +481,7 @@ form.search::after {
     right: 0;
     padding: 5px 20px;
     margin: auto 5px;
-    border: solid thin var(--default-font-color);
+    border: solid 1px var(--text-color);
     border-radius: 5px;
     color: var(--color);
     background: none;
@@ -517,9 +523,9 @@ option {
     justify-content: center;
     position: relative;
     padding: 10px;
-    background-image: inherit;
-    box-shadow: 0 -1px 0;
-    color: inherit;
+    background: var(--theme-color);
+    box-shadow: 0 0 2px var(--text-color);
+    color: var(--color);
     text-align: center;
 }
 
@@ -530,10 +536,10 @@ option {
 }
 
 .detail {
-    color: inherit;
+    color: var(--text-color);
     padding: 0 2px;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .detail:hover {
@@ -549,7 +555,7 @@ option {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: thin solid var(--default-font-color);
+    border: thin solid var(--text-color);
     background: var(--color);
     margin: 0 3px;
     object-fit: cover;
