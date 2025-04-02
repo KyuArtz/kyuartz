@@ -7,9 +7,9 @@
     margin: 5px auto;
     padding: 20px;
     background: var(--theme-color);
-    border: solid thin var(--default-font-color);
+    box-shadow: 0 0 3px;
     border-radius: 10px;
-    box-shadow: 0 0 3px #000;
+    box-shadow: 0 0 3px;
 }
 
 .user-guide h1,
@@ -22,11 +22,6 @@
 .user-guide li {
     color: inherit;
     line-height: 1.6;
-}
-
-.user-guide a {
-    color: var(--color);
-    text-decoration: none;
 }
 
 .user-guide ul {
