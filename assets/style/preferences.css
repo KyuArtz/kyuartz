@@ -4,17 +4,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    cursor: default;
 }
 
 #preferences-container h1 {
     text-align: center;
-    border-bottom: solid thin;
     color: var(--color);
 }
 
 #preferences-container h2 {
-    color: var(--default-font-color);
+    color: var(--text-color);
 }
 
 #theme-select,
@@ -23,7 +21,7 @@
     padding: 10px;
     color: var(--color);
     background: none;
-    border: solid thin var(--default-font-color);
+    border: solid 1px var(--text-color);
     border-radius: 10px;
     appearance: none;
     -webkit-appearance: none; /* For Safari */
