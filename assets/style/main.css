@@ -39,7 +39,7 @@ body {
 
 :root {
     /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
-    --theme-color: rgb(10, 10, 10);
+    --theme-color: #0a0a0a;
     --text-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: rgba(15, 15, 15, 0.9);
@@ -52,7 +52,7 @@ body {
 
 .theme-default {
     /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
-    --theme-color: rgb(10, 10, 10);
+    --theme-color: #0a0a0a;
     --text-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: rgba(15, 15, 15, 0.9);
@@ -61,7 +61,7 @@ body {
 }
 
 .theme-white-blue {
-    --theme-color: rgba(255, 255, 255);
+    --theme-color: #ffffff;
     --text-color: #333;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
@@ -70,7 +70,7 @@ body {
 }
 
 .theme-modern-white {
-    --theme-color: rgb(255, 255, 255);
+    --theme-color: #ffffff;
     --text-color: #2e2e2e;
     --color: #969696;
     --content-bg: rgba(255, 255, 255, 0.9);
@@ -80,7 +80,7 @@ body {
 
 .theme-dark-blue {
     /* --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61)); */
-    --theme-color: rgb(28, 31, 39);
+    --theme-color: #1c1f27;
     --text-color: #f0f0f0;
     --color: #1e90ff;
     --content-bg: rgba(22, 33, 46, 0.9);
@@ -90,7 +90,7 @@ body {
 
 .theme-dark-red {
     /* --theme-color: linear-gradient(to right, rgb(22, 15, 15), rgb(39, 28, 28), rgb(61, 45, 45)); */
-    --theme-color: rgb(22, 15, 15);
+    --theme-color: #160f0f;
     --text-color: #f0f0f0;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
@@ -99,7 +99,7 @@ body {
 }
 
 .theme-white-red {
-    --theme-color: rgba(255, 255, 255);
+    --theme-color: #ffffff;
     --text-color: #333;
     --color: #ff1e1e;
     --content-bg: rgba(46, 22, 22, 0.9);
@@ -109,7 +109,7 @@ body {
 
 .theme-dark-purple {
     /* --theme-color: linear-gradient(to right, rgb(35, 0, 61), rgb(55, 0, 85), rgb(85, 0, 115)); */
-    --theme-color: rgb(17, 5, 26);
+    --theme-color: #11051a;
     --text-color: #f0f0f0;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
@@ -118,7 +118,7 @@ body {
 }
 
 .theme-white-purple {
-    --theme-color: rgba(255, 255, 255);
+    --theme-color: #ffffff;
     --text-color: #333;
     --color: #a832ff;
     --content-bg: rgba(70, 30, 90, 0.9); 
@@ -128,7 +128,7 @@ body {
 
 .theme-dark-green {
     /* --theme-color: linear-gradient(to right, rgb(0, 61, 35), rgb(0, 85, 55), rgb(0, 115, 85)); */
-    --theme-color: rgb(5, 26, 8);
+    --theme-color: #051a08;
     --text-color: #f0f0f0;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
@@ -137,7 +137,7 @@ body {
 }
 
 .theme-white-green {
-    --theme-color: rgba(255, 255, 255);
+    --theme-color: #ffffff;
     --text-color: #333;
     --color: #32ffa8;
     --content-bg: rgba(30, 90, 70, 0.9);
@@ -147,7 +147,7 @@ body {
 
 .theme-dark-yellow {
     /* --theme-color: linear-gradient(to right, rgb(61, 61, 0), rgb(85, 85, 0), rgb(115, 115, 0)); */
-    --theme-color: rgb(26, 26, 5);
+    --theme-color: #1a1a05;
     --text-color: #f0f0f0;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
@@ -156,7 +156,7 @@ body {
 }
 
 .theme-white-yellow {
-    --theme-color: rgba(255, 255, 255);
+    --theme-color: #ffffff;
     --text-color: #333;
     --color: #ffa832;
     --content-bg: rgba(90, 90, 30, 0.9);
