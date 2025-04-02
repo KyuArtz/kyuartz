@@ -96,7 +96,7 @@
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
-    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
 
@@ -191,7 +191,7 @@
           </button>
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
-              <div class="account">
+              <div class="profile">
                 <img src="assets/images/about-presets/myprofile/me.webp" alt="Profile">
                 <p class="username"><span data-translate="userName">Kyu Shi</span></p>
               </div>
@@ -258,7 +258,7 @@
       <div class="upload-content">
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()">
         
-        <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: auto;">
+        <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: 200px;">
         
         <button id="remove-btn" style="display:none;" onclick="removeFile()" data-translate="remove">Remove</button>
       </div>
@@ -290,32 +290,32 @@
         <a onclick="openDonate()" href="#" title="Mode of Payment"><img src="assets/images/imgbtn/gbm.webp" loading="lazy" alt=""></a>
       </div>
     </div>
-  </div>
 
-  <div class="popup-notice" id="notice">
-    <h2 data-translate="notice">NOTICE</h2>
-    <p><span data-translate="noticeText">By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the terms of service.</span> <a class="dL" href="terms-of-service.html"><span data-translate="termsOfService">Terms of Service</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button type="button" onclick="closeNotice()" data-translate="okay">Okay</button>
-  </div>
-
-  <div class="donate-popup" id="donate-popup">
-      <h2 data-translate="qrCode">CHOOSE QR CODE</h2>
-      <div class="qr-content">
-        <div class="qr">
-          <img src="assets/images/popup/qr-code-paypal.webp">
-          <p data-translate="paypal">Paypal</p>
-        </div>
-        <div class="qr">
-          <img src="assets/images/popup/qr-code-maya.webp">
-          <p data-translate="maya">Maya</p>
-        </div>
-        <div class="qr">
-          <img src="assets/images/popup/qr-code-gcash.webp">
-          <p data-translate="gcash">Gcash</p>
-        </div>
-      </div>
-      <button type="button" onclick="closeDonate()" data-translate="close">Close</button>
+    <div class="popup-notice" id="notice">
+      <h2 data-translate="notice">NOTICE</h2>
+      <p><span data-translate="noticeText">By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the.</span> <a class="dL" href="terms-of-service.html"><span data-translate="termsOfService">Terms of Service</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+      <button type="button" onclick="closeNotice()" data-translate="okay">Okay</button>
     </div>
+  
+    <div class="donate-popup" id="donate-popup">
+        <h2 data-translate="qrCode">CHOOSE QR CODE</h2>
+        <div class="qr-content">
+          <div class="qr">
+            <img src="assets/images/popup/qr-code-paypal.webp">
+            <p data-translate="paypal">Paypal</p>
+          </div>
+          <div class="qr">
+            <img src="assets/images/popup/qr-code-maya.webp">
+            <p data-translate="maya">Maya</p>
+          </div>
+          <div class="qr">
+            <img src="assets/images/popup/qr-code-gcash.webp">
+            <p data-translate="gcash">Gcash</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeDonate()" data-translate="close">Close</button>
+      </div>
+  </div>
 
     <div class="footer">
       <div class="copyright">
