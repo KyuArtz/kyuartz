@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid thin var(--text-color);
+    border: solid 1px var(--text-color);
     padding: 5px;
     margin: 0 5px;
     border-radius: 10px;
@@ -18,13 +18,13 @@
 
 .filter-character a {
     padding: 5px;
-    border: solid thin;
+    border: solid 1px;
     border-radius: 5px;
     color: var(--text-color);
 }
 
 .character-container {
-    background: url('../images/character-presets/gif/default.gif');
+    background: url('../images/character-presets/cover/default.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,16 +90,16 @@
 
 .character-card {
     flex: 1 1 200px; /* Flex grows, but sets a base width */
-    max-width: 250px; /* Maximum width for larger screens */
-    min-width: 130px; /* Minimum width for smaller screens */
+    max-width: 250px;
+    min-width: 130px;
     height: 270px;
     background: var(--overlay);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    border: solid thin;
-    border-top: solid 5px;
+    border: solid 1px;
+    border-top: solid 4px;
     border-bottom: solid 3px;
     border-radius: 5px 5px 30px 30px;
     color: var(--theme-color);
@@ -158,7 +158,7 @@ p.title {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid thin var(--theme-color);
+    border: solid 1px var(--theme-color);
     background: var(--overlay);
     color: var(--color);
     padding: 55px 10px;
@@ -178,7 +178,7 @@ p.title {
     width: 100%;
     position: relative;
     color: var(--text-color);
-    border: solid thin;
+    border: solid 1px;
     border-radius: 50px;
     padding: 5px;
 }
@@ -186,8 +186,8 @@ p.title {
 .character-info {
     color: var(--text-color);
     border-radius: 10px;
-    border-top: solid thick var(--theme-color);
-    border-bottom: solid thick var(--theme-color);
+    border-top: solid 5px var(--theme-color);
+    border-bottom: solid 5px var(--theme-color);
     padding: 20px;
     width: 100%;
     max-width: 400px;
@@ -218,27 +218,27 @@ p.title {
 }
 
 .character-info purple {
-    color: rgb(189, 0, 189);
+    color: #bd00bd;
 }
 
 .character-info blue {
-    color: rgb(30, 144, 255);
+    color: #1e90ff;
 }
 
 .character-info red {
-    color: rgb(224, 38, 38);
+    color: #e02626;
 }
 
 .character-info yellow {
-    color: rgb(255, 255, 0);
+    color: #ffe23b;
 }
 
 .character-info orange {
-    color: rgb(255, 165, 0);
+    color: #ffac11;
 }
 
 .character-info green {
-    color: rgb(144, 238, 144);
+    color: #90ee90;
 }
 
 .character-info-scrollable {
@@ -267,7 +267,7 @@ p.title {
     width: 37px;
     height: 37px;
     border-radius: 50%;
-    border: solid thin var(--color);
+    border: solid 1px var(--color);
     background: var(--theme-overlay);
     z-index: 1;
     opacity: 0.8;
@@ -288,7 +288,7 @@ p.title {
     height: 40px;
     aspect-ratio: 1/1;
     border-radius: 10px;
-    border: solid thin;
+    border: solid 1px;
     background: var(--theme-overlay);
     transition: scale 0.3s ease-in-out;
 }
