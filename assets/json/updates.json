@@ -2,6 +2,24 @@
   "updates": [
 
     {
+      "date": "2025/4/4/",
+      "major": [
+        "Newly Added characters, to the character page with refined information (Floribeth, Feya, Hexxana, Liliana, Evany, Liliana, Rayza, Elishia)."
+      ],
+      "minor": [
+
+      ],
+      "bugfixes": [
+
+      ],
+      "upcoming": [
+        "New characters.",
+        "Improved language localization",
+        "New comic chapters."
+      ]
+    },
+
+    {
       "date": "2025/2/4/",
       "major": [
         "Overall improvement and optimizations to the site"
