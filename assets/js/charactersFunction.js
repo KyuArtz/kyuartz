@@ -132,7 +132,7 @@ function showCharacterInfo(character) {
             faction:"<info><yellow>Light Harbingers</yellow></info>",
             role:"<info><yellow>Mage</yellow></info> <info><yellow>Healer</yellow></info>",
             homeland: "<info><yellow>Magelion Empire</yellow></info>",
-            affiliates: "<info><yellow>Zion (Father)</yellow></info> </info> </info> <info><yellow>Floribeth (Mother)</yellow></info> <info><yellow>Blessica (Aunt)</yellow></info>",
+            affiliates: "<info><yellow>Zion (Father)</yellow></info> <info><yellow>Feya (Companion)</yellow></info> <info><yellow>Floribeth (Mother)</yellow></info> <info><yellow>Blessica (Aunt)</yellow></info>",
             gender: "<info><yellow>Female</yellow></info>",
             height: "<info><yellow>5'7\" ft</yellow></info>",
             elementalImages: ["assets/images/character-presets/elements/light.webp", "assets/images/character-presets/elements/frost.webp"],
