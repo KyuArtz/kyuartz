@@ -39,7 +39,7 @@ span.percent {
     padding: 9px;
     margin: 0;
     color: var(--text-color);
-    border-bottom: solid thin;
+    box-shadow: 0 0 3px var(--text-color);
 }
 
 .cs-container p {
@@ -67,7 +67,7 @@ span.percent {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    border-top: solid thin var(--text-color);
+    box-shadow: 0 0 3px;
 }
 
 .inquire-button a {
@@ -91,6 +91,7 @@ span.percent {
     border-radius: 10px;
     max-width: 1000px;
     margin: 10px auto;
+    overflow: hidden;
 }
 
 .cs-container img {
@@ -103,7 +104,7 @@ span.percent {
     object-position: center;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
-    border: solid 1px var(--text-color);
+    box-shadow: 0 0 3px var(--text-color);
     pointer-events: none;
 }
 
