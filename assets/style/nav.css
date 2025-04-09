@@ -174,32 +174,29 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-form.search {
+.search-container {
     margin: 0 5px;
     padding: 0;
+    box-shadow: 0 0 2px inset var(--text-color);
+    border-radius: 50px;
 }
 
 form.search input[type="search"] {
     float: right;
     width: 80%;
-    border-radius: 0 50px 50px 0;
-    border: thin solid;
-    border-left: none;
     background: none;
 }
 
 form.search button {
     float: left;
     width: 20%;
-    border: solid 1px;
-    border-right: none;
-    border-radius: 50px 0 0 50px;
     color: var(--text-color);
 }
 
 form.search input[type="search"],
 form.search button {
     color: var(--text-color);
+    border: none;
     outline: none;
     margin: 0;
     padding: 12px;
