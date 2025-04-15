@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px var(--text-color);
+    box-shadow: 0 0 2px var(--text-color);
     padding: 5px;
     margin: 0 5px;
     border-radius: 10px;
@@ -18,7 +18,7 @@
 
 .filter-character a {
     padding: 5px;
-    border: solid 1px;
+    box-shadow: 0 0 2px var(--text-color);
     border-radius: 5px;
     color: var(--text-color);
 }
@@ -217,6 +217,10 @@ p.title {
     padding: 5px;
 }
 
+.character-info gray {
+    color: #808080;
+}
+
 .character-info purple {
     color: #bd00bd;
 }
@@ -227,6 +231,10 @@ p.title {
 
 .character-info red {
     color: #e02626;
+}
+
+.character-info pink {
+    color: #ff2c4f;
 }
 
 .character-info yellow {
