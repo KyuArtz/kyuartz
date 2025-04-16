@@ -34,7 +34,7 @@ function updateBackground() {
 
 // Set CSS for the transition effect on `.character-container`
 const characterContainer = document.querySelector('.character-container');
-characterContainer.style.transition = "opacity 0.5s ease-in-out";
+characterContainer.style.transition = "opacity 0.5s ease";
 
 // Show character information and update the main background
 function showCharacterInfo(character) {
