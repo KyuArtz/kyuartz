@@ -396,6 +396,16 @@ function showCharacterInfo(character) {
     updateBackground();
 }
 
+document.querySelectorAll('.character-card').forEach(card => {
+    card.addEventListener('click', function() {
+        // Remove 'clicked' class from all cards
+        document.querySelectorAll('.character-card').forEach(c => c.classList.remove('clicked'));
+
+        // Add 'clicked' class only to the selected card
+        this.classList.add('clicked');
+    });
+});
+
 // Event listener for each card
 document.querySelectorAll('.character-card').forEach(card => {
     card.addEventListener('click', (e) => {
@@ -457,14 +467,4 @@ window.addEventListener('resize', function() {
         currentIndex = 0; // Reset index to prevent issues with partial visibility on resize
         updateCarousel();
     }, 100);
-});
-
-document.querySelectorAll('.character-card').forEach(card => {
-    card.addEventListener('click', function() {
-        // Remove 'clicked' class from all cards
-        document.querySelectorAll('.character-card').forEach(c => c.classList.remove('clicked'));
-
-        // Add 'clicked' class only to the selected card
-        this.classList.add('clicked');
-    });
 });
