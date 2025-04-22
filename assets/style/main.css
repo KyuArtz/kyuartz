@@ -10,6 +10,11 @@
 
 }
 
+#version-info {
+    color: #ff9239;
+    text-align: center;
+}
+
 body {
     background: var(--theme-color);
     color: var(--text-color);
