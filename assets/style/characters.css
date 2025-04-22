@@ -112,11 +112,12 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: grayscale(50%);
+    filter: grayscale(100%);
     transition: 0.3s ease-in-out;
 }
 
-.character-card img:hover {
+.character-card:hover img,
+.character-card.clicked img {
     filter: grayscale(0%);
 }
 
@@ -150,7 +151,8 @@ p.title {
     color: #ff9239;
 }
 
-.character-card:hover .overlay {
+.character-card:hover .overlay,
+.character-card.clicked .overlay {
     height: 25%;
     box-shadow: inset 0px -50px 50px -50px #ff9239;
 }
