@@ -5,7 +5,47 @@ const characterBackgrounds = {
         portrait: "url('')"
     },
     elishia: {
-        landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')",
+        landscape: "url('assets/images/bg/lbg_main2.webp')",
+        portrait: "url('')"
+    },
+    hexxana: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    ren: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    rayza: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    liliana: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    blessica: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    floribeth: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    evany: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    shelain: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    arzhel: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
+        portrait: "url('')"
+    },
+    feya: {
+        landscape: "url('assets/images/bg/lbg_main3.webp')",
         portrait: "url('')"
     },
 };
