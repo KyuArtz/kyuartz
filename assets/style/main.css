@@ -4,15 +4,8 @@
     cursor: default;
     font-weight: 500;
     -webkit-tap-highlight-color: transparent;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
 
-}
-
-#version-info {
-    color: #ff9239;
-    text-align: center;
 }
 
 body {

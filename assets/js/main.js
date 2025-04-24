@@ -190,14 +190,3 @@ function togglePopup(popupId, action, className) {
       popup.classList.remove(className);
   }
 }
-
-console.log("App Version:", APP_VERSION_INFO.VERSION);
-document.getElementById("version-info").innerText = `Current Version: ${APP_VERSION_INFO.VERSION}`;
-
-fetch("https://api.github.com/repos/kyuartz.github.io/kyuartz/commits/main")
-    .then(response => response.json())
-    .then(data => {
-        let commitHash = data[0].sha.substring(0, 7); // Shorten commit hash
-        document.getElementById("version-info").innerText = `Latest Commit: ${commitHash}`;
-    })
-    .catch(error => console.error("Error fetching version:", error));
