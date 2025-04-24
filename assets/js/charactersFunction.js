@@ -1,53 +1,17 @@
 // Map character names to landscape and portrait background images
 const characterBackgrounds = {
-    comingSoon: {
-        landscape: "url('')",
-        portrait: "url('')"
-    },
-    elishia: {
-        landscape: "url('assets/images/bg/lbg_main2.webp')",
-        portrait: "url('')"
-    },
-    hexxana: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    ren: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    rayza: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    liliana: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    blessica: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    floribeth: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    evany: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    shelain: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    arzhel: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
-    feya: {
-        landscape: "url('assets/images/bg/lbg_main3.webp')",
-        portrait: "url('')"
-    },
+    comingSoon: { landscape: "url('')", portrait: "url('')" },
+    elishia: { landscape: "url('assets/images/bg/lbg_main2.webp')", portrait: "url('')" },
+    hexxana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    ren: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    rayza: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    liliana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    blessica: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    floribeth: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    evany: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    shelain: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    arzhel: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    feya: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
 };
 
 // Track the currently selected character
