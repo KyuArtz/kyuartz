@@ -135,7 +135,7 @@ function showCharacterInfo(character) {
             faction: "<info><pink>Zephyra Vale</pink></info>",
             role: "<info><pink>Assassin</pink></info>",
             occupation: "<info><pink>Hidden Mist Guardian<pink></info>",
-            affiliates: "<info><pink><i class='fas fa-users'></i> Ren (Older Brother)</pink></info> <info><pink><i class='fas fa-users'></i> Feya (Friend)</pink></info>",
+            affiliates: "<info><pink><i class='fas fa-users'></i> Ren (Older Brother)</pink></info> <info><pink><i class='fas fa-users'></i> Liliana (Ally)</pink></info> <info><pink><i class='fas fa-users'></i> Feya (Friend)</pink></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/air.webp" 
             ],
@@ -159,14 +159,14 @@ function showCharacterInfo(character) {
             homeland: "<info><yellow>Magelion Empire</yellow></info>",
             faction: "<info><yellow>Light Harbingers</yellow></info>",
             role: "<info><yellow>Mage</yellow></info> <info><yellow>Healer</yellow></info>",
-            occupation: "<info><yellow>Queen<yellow></info>",
+            occupation: "<info><yellow>Queen of Magelion Empire<yellow></info>",
             affiliates: "<info><yellow><i class='fas fa-users'></i> Zion (Father)</yellow></info> <info><yellow><i class='fas fa-users'></i> Feya (Companion)</yellow></info> <info><yellow><i class='fas fa-users'></i> Floribeth (Mother)</yellow></info> <info><yellow><i class='fas fa-users'></i> Blessica (Aunt)</yellow></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/light.webp", 
                 "assets/images/character-presets/elements/frost.webp"
             ],
-            likes: "<info><i class='fas fa-check'></i> <yellow>Reading</yellow></info> <info><i class='fas fa-check'></i> <yellow>Helping People</yellow></info> <info><i class='fas fa-check'></i> <yellow>Singing</yellow></info> <info><i class='fas fa-check'></i> <yellow>Dancing</yellow></info> <info><i class='fas fa-check'></i> <yellow>Peaceful Gardens</yellow></info> <info><i class='fas fa-check'></i> <yellow>Teaching Young Mages</yellow></info>",
-            dislikes: "<info><i class='fas fa-times'></i> <yellow>War and Senseless Bloodshed</yellow></info> <info><i class='fas fa-times'></i> <yellow>Betrayal</yellow></info> <info><i class='fas fa-times'></i> <yellow>Abuse of Magic</yellow></info> <info><i class='fas fa-times'></i> <yellow>Being Seen Only as a Symbol</yellow></info>",
+            likes: "<info><yellow><i class='fas fa-check'></i> Reading</yellow></info> <info><yellow><i class='fas fa-check'></i> Helping People</yellow></info> <info><yellow><i class='fas fa-check'></i> Singing</yellow></info> <info><yellow><i class='fas fa-check'></i> Dancing</yellow></info> <info><yellow><i class='fas fa-check'></i> Peaceful Gardens</yellow></info> <info><yellow><i class='fas fa-check'></i> Teaching Young Mages</yellow></info>",
+            dislikes: "<info><yellow><i class='fas fa-times'></i> Nethersteel Pact</yellow></info> <info><yellow><i class='fas fa-times'></i> War and Senseless Bloodshed</yellow></info> <info><yellow><i class='fas fa-times'></i> Betrayal</yellow></info> <info><yellow><i class='fas fa-times'></i> Abuse of Magic</yellow></info> <info><yellow><i class='fas fa-times'></i> Being Seen Only as a Symbol</yellow></info>",
             weapon: "<info><yellow><i class='fas fa-heart'></i> Solaraenia Staff</yellow></info>",
             ability1: "<info><yellow><i class='fas fa-sun'></i> Radiant Blessing</yellow></info> – Heals allies in an area with a burst of warm, holy light, gradually restoring health and cleansing minor ailments.",
             ability2: "<info><yellow><i class='fas fa-snowflake'></i> Frostbound Aegis</yellow></info> – Conjures a shimmering barrier of frost and light, absorbing damage and slowing enemies who strike it.",
@@ -186,7 +186,7 @@ function showCharacterInfo(character) {
             faction: "<info><red>Order of Seekers</red></info>",
             role: "<info><red>Mage</red></info>",
             occupation: "<info><red>Unknown<red></info>",
-            affiliates: "<info><red><i class='fas fa-users'></i> Liliana (Daughter)</red></info> <info><red><i class='fas fa-users'></i> Zion (Lover)</red></info> <info><red><i class='fas fa-users'></i> Blessica (Sister)</red></info>",
+            affiliates: "<info><red><i class='fas fa-users'></i> Zion (Lover)</red></info> <info><red><i class='fas fa-users'></i> Liliana (Daughter)</red></info> <info><red><i class='fas fa-users'></i> Blessica (Sister)</red></info> <info><red><i class='fas fa-users'></i> Evany (Former Ally)</red></info> <info><red><i class='fas fa-users'></i> Shelain (Former Ally)</red></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/shadow.webp"
             ],
@@ -210,7 +210,7 @@ function showCharacterInfo(character) {
             homeland: "<info><orange>Frostfire Timberland</orange></info>",
             faction: "<info><orange>Light Harbingers</orange></info>",
             role: "<info><orange>Mage</orange></info>",
-            occupation: "<info><orange>Elite Member<orange></info>",
+            occupation: "<info><orange>1st Class Mage<orange></info>",
             affiliates: "<info><orange><i class='fas fa-users'></i> Liliana (Mentor)</orange></info> <info><orange><i class='fas fa-users'></i> Ren (Friend)</orange></info> <info><orange><i class='fas fa-users'></i> Rayza (Friend)</orange></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/fire.webp", 
@@ -236,14 +236,14 @@ function showCharacterInfo(character) {
             homeland: "<info><green>Luminwood Expanse</green></info>",
             faction: "<info><green>Bloomforge Order</green></info>",
             role: "<info><green>Healer</green></info>",
-            occupation: "<info><green>Queen<green></info>",
-            affiliates: "<info><green><i class='fas fa-users'></i> Floribeth (Former Ally)</green></info> <info><green><i class='fas fa-users'></i> Liliana (Current Ally)</green></info> <info><green><i class='fas fa-users'></i> Arzhel (Companion)</green></info>",
+            occupation: "<info><green>Guardian of Nature<green></info>",
+            affiliates: "<info><green><i class='fas fa-users'></i> Floribeth (Former Ally)</green></info> <info><green><i class='fas fa-users'></i> Shelain (Ally)</green></info> <info><green><i class='fas fa-users'></i> Liliana (Ally)</green></info> <info><green><i class='fas fa-users'></i> Arzhel (Companion)</green></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/nature.webp", 
                 "assets/images/character-presets/elements/earth.webp"
             ],
             likes: "<info><green><i class='fas fa-check'></i> Gardening</green></info> <info><green><i class='fas fa-check'></i> Rainy Days</green></info> <info><green><i class='fas fa-check'></i> Singing to Trees</green></info> <info><green><i class='fas fa-check'></i> Ancient Lore</green></info>",
-            dislikes: "<info><green><i class='fas fa-times'></i> Corruption</green></info> <info><green><i class='fas fa-times'></i> Industrial Expansion</green></info> <info><green><i class='fas fa-times'></i> Fire Magic</green></info>",
+            dislikes: "<info><green><i class='fas fa-times'></i> Nethersteel Pact</green></info> <info><green><i class='fas fa-times'></i> Corruption</green></info> <info><green><i class='fas fa-times'></i> Industrial Expansion</green></info> <info><green><i class='fas fa-times'></i> Fire Magic</green></info>",
             weapon: "<info><green><i class='fas fa-heart'></i> Thornweaver Staff</green></info>",
             ability1: "<info><green><i class='fas fa-seedling'></i> Verdant Embrace</green></info> – Heals allies over time by channeling life energy through roots and vines.",
             ability2: "<info><green><i class='fas fa-leaf'></i> Briarwall</green></info> – Summons a thick wall of thorns to block enemy movement or projectiles.",
@@ -267,8 +267,8 @@ function showCharacterInfo(character) {
             elementalImages: [
             "assets/images/character-presets/elements/light.webp"
             ],
-            likes: "<info><i class='fas fa-check'></i> <yellow>Stargazing</yellow></info> <info><i class='fas fa-check'></i> <yellow>Ancient Texts</yellow></info> <info><i class='fas fa-check'></i> <yellow>Gardens</yellow></info>",
-            dislikes: "<info><i class='fas fa-times'></i> <yellow>Bloodshed</yellow></info> <info><i class='fas fa-times'></i> <yellow>Secrets</yellow></info>",
+            likes: "<info><yellow><i class='fas fa-check'></i> Stargazing</yellow></info> <info><yellow><i class='fas fa-check'></i> Ancient Texts</yellow></info> <info><yellow><i class='fas fa-check'></i> Gardens</yellow></info>",
+            dislikes: "<info><yellow><i class='fas fa-times'></i> Bloodshed</yellow></info> <info><yellow><i class='fas fa-times'></i> Secrets</yellow></info>",
             weapon: "<info><yellow><i class='fas fa-heart'></i> Staff of Celestial Bloom</yellow></info>",
             ability1: "<info><i class='fas fa-hand-holding-heart'></i> <yellow>Sanctuary Ward</yellow></info> – Summons a radiant zone that heals allies over time and purifies minor curses or afflictions.",
             ability2: "<info><i class='fas fa-dove'></i> <yellow>Celestial Grace</yellow></info> – Channels divine energy to shield a single ally, absorbing incoming damage and briefly granting immunity to status effects.",
@@ -323,7 +323,6 @@ function showCharacterInfo(character) {
                 <p><strong><i class='fas fa-crown'></i> Role</strong> ${details.role}</p>
                 <p><strong><i class='fas fa-briefcase'></i> Occupation</strong> ${details.occupation}</p>
             </div>
-
 
             <div class="info-section" id="abilities">
                 <h3>Abilities</h3>
