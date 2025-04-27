@@ -75,9 +75,10 @@ body.lb-disable-scrolling {
     width: 42px;
     height: 42px;
     margin: 0 auto;
-    background: url("../images/gif/loading.gif") no-repeat;
+    background: url("../images/gif/loading.gif"), var(--overlay) no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 10px;
 }
 
 .lb-nav {
