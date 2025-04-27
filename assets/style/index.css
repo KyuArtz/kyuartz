@@ -104,7 +104,8 @@ button.prev {
     min-width: 15%;
     border-radius: 50px;
     border: solid 1px;
-    color: #f0f0f0;
+    color: var(--color);
+    background: var(--theme-color);
 }
 
 .home_slider_dot {
