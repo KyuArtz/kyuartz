@@ -164,7 +164,6 @@ body {
 
 .summaryContent p,
 .expcontent p,
-.contact-container input,
 .customer-support-container input,
 textarea,
 .cs-content strong,
@@ -182,10 +181,7 @@ textarea,
 .user-guide p,
 .user-guide li,
 .troubleshooting p,
-.troubleshooting li,
-form.search input[type="search"],
-form.search button,
-.search-result a
+.troubleshooting li
 {
     font-family: 'Roboto', sans-serif;
 }
