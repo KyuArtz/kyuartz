@@ -45,9 +45,7 @@ header {
     display: none;
     position: absolute;
     min-width: 160px;
-    background: var(--theme-overlay);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--theme-color);
     box-shadow: 0 0 2px var(--text-color);
     border-radius: 10px;
     right: 0;
@@ -60,7 +58,6 @@ header {
     text-decoration: none;
     color: var(--text-color);
     display: block;
-    transition: 0.3s ease;
 }
 
 .dropdown-setting a:hover {
@@ -75,7 +72,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-    border-bottom: solid thin var(--text-color);
+    border-bottom: solid 1px var(--text-color);
     margin: 0 5px;
     padding: 5px;
 }
@@ -130,22 +127,22 @@ header {
 .nav-link:hover,
 .nav-link-sideMenu:hover {
     color: var(--color);
-    border-bottom: thin solid var(--color);
+    border-bottom: 0px solid var(--color);
 }
 
 .activeLink a {
     color: var(--color);
-    border-bottom: thick solid var(--color);
+    border-bottom: 2px solid var(--color);
 }
 
 .nav-link.activeLink {
     color: var(--color);
-    border-bottom: thick solid var(--color);
+    border-bottom: 2px solid var(--color);
 }
 
 .nav-link-sideMenu.activeLink {
     color: var(--color);
-    border-bottom: thick solid var(--color);
+    border-bottom: 2px solid var(--color);
 }
 
 .sideMenu-content a.activeLink {
@@ -153,7 +150,7 @@ header {
 }
 
 .nav-link.activeLink:hover {
-    border-bottom: thin solid var(--color);
+    border-bottom: 1px solid var(--color);
 }
 
 .nav-link-sideMenu.activeLink:hover,
@@ -190,16 +187,15 @@ form.search input[type="search"] {
 form.search button {
     float: left;
     width: 20%;
-    color: var(--text-color);
 }
 
 form.search input[type="search"],
 form.search button {
-    color: var(--text-color);
     border: none;
     outline: none;
     margin: 0;
     padding: 12px;
+    color: var(--text-color);
 }
 
 form.search::after {
@@ -212,9 +208,7 @@ form.search::after {
     position: absolute;
     top: 55px;
     min-width: 50%;
-    background: var(--theme-overlay);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--theme-color);
     border-radius: 10px;
     box-shadow: 0 0 2px;
     color: var(--text-color);
@@ -343,6 +337,7 @@ form.search::after {
 
 .sideMenu-content,
 .category-menu {
+    background: var(--theme-color);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     box-shadow: 2px 0 5px -5px;
@@ -357,7 +352,6 @@ form.search::after {
     flex-direction: column;
     min-width: 200px;
     height: 100vh;
-    background: var(--theme-color);
     padding-bottom: 50px;
     overflow: auto;
 }
@@ -369,7 +363,7 @@ form.search::after {
 }
 
 .sideMenu-content a {
-    color: var(--text-color);
+    color: var(--color);
     border-radius: 10px;
     padding: 15px 15px;
     margin: 3px;
@@ -384,7 +378,7 @@ form.search::after {
 }
 
 .sideMenu-content a:hover {
-    background: var(--color);
+    background: var(--text-color);
 }
 
 .show-sideMenu {
@@ -418,7 +412,7 @@ form.search::after {
     display: flex;
     align-items: center;
     padding: 5px;
-    border: thin solid;
+    border: 1px solid;
     border-radius: 50px;
     transition: 0.5s ease-in-out;
 }
@@ -440,7 +434,6 @@ form.search::after {
     flex-direction: column;
     min-width: 150px;
     height: 100vh;
-    background: var(--theme-color);
     padding: 0 0 50px 0;
     margin: 0;
     justify-content: left;
@@ -459,14 +452,14 @@ form.search::after {
 
 .category-item a {
     width: 100%;
-    color: var(--text-color);
+    color: var(--color);
     border-radius: 10px;
     padding: 15px 15px;
     margin: 5px;
 }
 
 .category-item a:hover {
-    background: var(--color);
+    background: var(--text-color);
 }
 
 .category-menu.categoryMenu-active {
@@ -497,6 +490,10 @@ option {
 }
 
 @media (max-width: 600px) {
+    .search-result {
+        left: 0;
+        width: 100%;
+    }
     .currency-conversion-btn {
         width: 90px;
     }
@@ -552,7 +549,7 @@ option {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: thin solid var(--text-color);
+    border: 1px solid var(--text-color);
     background: var(--color);
     margin: 0 3px;
     object-fit: cover;
