@@ -65,7 +65,7 @@
 
     "commissionArt": "COMMISSION ART",
     "commissionSheet": "Commission Sheet",
-    "commissionerInfo": "Client Queue",
+    "clientQueue": "Client Queue",
 
     "comms-1": "PORTRAIT / Bust-UP (SEMI-REALISM)",
     "comms-2": "FULL BODY (SEMI-REALISM)",
@@ -80,8 +80,8 @@
     "orderNow": "Order Now",
     "viewQueue": "View Queue",
 
-    "commissionerInfoTitle": "Commissioner - Public View",
-    "th-1": "Commissioner Name",
+    "clientInfoTitle": "Client - Public View",
+    "th-1": "Client Name",
     "th-2": "Commission Type",
     "th-3": "Contact",
     "th-4": "Status",

@@ -40,12 +40,12 @@ function hideLoader() {
 }
 
 let availableKeywords = [
-  { name: 'Home', url: 'index.html' },
+  { name: 'Home Page', url: 'index.html' },
   { name: 'Portfolio', url: 'portfolio.html' },
   { name: 'About', url: 'about.html' },
   { name: 'Contact Us', url: 'contact.html' },
   { name: 'Commission Sheet', url: 'commission-sheet.html' },
-  { name: 'Commissioner Information', url: 'commissioner-info.html' },
+  { name: 'Client Queue', url: 'client-queue.html' },
   { name: 'Comic', url: 'comic.html' },
   { name: 'Original Character', url: 'characters.html' },
   { name: 'Terms of Service', url: 'terms-of-service.html' },
@@ -61,7 +61,7 @@ let availableKeywords = [
   { name: 'Youtube (KyuArtz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },
   { name: 'X-Twitter (KyuArtz page)', url: 'https://x.com/KyuArtz_992' },
   { name: 'Artstation (KyuArtz page)', url: 'https://KyuArtz.artstation.com/' },
-  { name: 'Cara (KyuArtz page)', url: 'https://cara.app/kyuu' },
+  { name: 'Cara (KyuArtz page)', url: 'https://cara.app/kyuartz' },
 ];
 
 const resultBox = document.querySelector(".search-result");
