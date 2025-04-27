@@ -65,7 +65,7 @@
 
     "commissionArt": "COMMISSION ART",
     "commissionSheet": "Commission Sheet",
-    "commissionerInfo": "Commissioner Info",
+    "commissionerInfo": "Client Queue",
 
     "comms-1": "PORTRAIT / Bust-UP (SEMI-REALISM)",
     "comms-2": "FULL BODY (SEMI-REALISM)",
@@ -135,6 +135,8 @@
     "help4": "Need help? Contact us through the customer support form for assistance.",
     "help5": "Learn how to navigate the site, request commissions, or explore our features.",
     "help6": "Having technical issues? Find solutions to common problems.",
+
+    "userName": "Kyu Shi",
 
     "yourPreferences": "Your Preferences",
     "selectTheme": "Select Theme :",
