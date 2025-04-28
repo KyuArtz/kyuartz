@@ -1,8 +1,8 @@
 // Map character names to landscape and portrait background images
 const characterBackgrounds = {
     comingSoon: { landscape: "url('')", portrait: "url('')" },
-    elishia: { landscape: "url('assets/images/bg/lbg_main2.webp')", portrait: "url('')" },
-    hexxana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    elishia: { landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')", portrait: "url('')" },
+    hexxana: { landscape: "url('assets/images/character-presets/cover/hexxana-cover.webp')", portrait: "url('')" },
     ren: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     rayza: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     liliana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
@@ -260,7 +260,7 @@ function showCharacterInfo(character) {
             gender: "<info><yellow>Female</yellow></info>",
             height: "<info><yellow>5'8\" ft</yellow></info>",
             homeland: "<info><yellow>Solaraenia</yellow></info>",
-            faction: "<info><yellow>Order of Seekers</yellow></info>",
+            faction: "<info><yellow>Light Harbingers</yellow></info>",
             role: "<info><yellow>Healer</yellow></info>",
             occupation: "<info><yellow>Royal Councelor<yellow></info>",
             affiliates: "<info><yellow><i class='fas fa-users'></i> Floribeth (Sister)</yellow></info> <info><yellow><i class='fas fa-users'></i> Liliana (Niece)</yellow></info>",
@@ -272,10 +272,10 @@ function showCharacterInfo(character) {
             weapon: "<info><yellow><i class='fas fa-heart'></i> Staff of Celestial Bloom</yellow></info>",
             ability1: "<info><i class='fas fa-hand-holding-heart'></i> <yellow>Sanctuary Ward</yellow></info> – Summons a radiant zone that heals allies over time and purifies minor curses or afflictions.",
             ability2: "<info><i class='fas fa-dove'></i> <yellow>Celestial Grace</yellow></info> – Channels divine energy to shield a single ally, absorbing incoming damage and briefly granting immunity to status effects.",
-            ability3: "<info><i class='fas fa-sparkles'></i> <yellow>Echo of Solarae</yellow></info> – Revives a fallen ally with a surge of light, restoring them to fighting condition with temporary enhanced stats.",
+            ability3: "<info><i class='fas fa-praying-hands'></i> <yellow>Echo of Solarae</yellow></info> – Revives a fallen ally with a surge of light, restoring them to fighting condition with temporary enhanced stats.",
             ability4: "<info><i class='fas fa-feather-alt'></i> <yellow>Guiding Feather</yellow></info> – Sends a magical feather to seek out an ally, instantly transporting Blessica to their side and restoring a portion of their health.",
             ability5: "<info><i class='fas fa-star-of-life'></i> <yellow>Lumina Pulse</yellow></info> – Releases a burst of holy light around her that heals nearby allies and damages nearby enemies of dark origin.",
-            ability6: "<info><i class='fas fa-moon'></i> <yellow>Twin's Oath</yellow></info> – Channels the spirit of her sister Floribeth for a short time, empowering all healing spells and briefly gaining access to a shadowlight ability fusion.",
+            ability6: "<info><i class='fas fa-sun'></i> <yellow>Luminous Salvation</yellow></info> – Summons a radiant beam of holy light from above, scorching enemies within its range while simultaneously restoring the vitality of nearby allies.",
             background: "Blessica, the second daughter of the Solaraenian King, was born in the celestial realm of Solaraenia—a majestic and radiant homeland of the Solaraenian beings. Gifted with powerful healing magic, she was known not only for her grace and talent, but for the love she held for her older sister, Floribeth.<br><br>But something changed.<br><br>Floribeth had begun slipping away during the nights, venturing into other realms—most often, the mortal world of Eldoria. She sought adventure, purpose, and secretly helped those in need while in her mortal form. She was destined to inherit the throne, yet Blessica could see her sister’s heart drifting further from royal duty.<br><br>Years passed. Then came the day that shattered everything: a rumor echoed through the palace—Floribeth was to be banished. The king had discovered her love for an Umbrakith prince, the very enemy of their kind. Betrayal, he called it. A crime against their people. Blessica pleaded with her father before the trial, but he would not listen.<br><br>Floribeth was exiled.<br><br>But Blessica could not bear it. She followed her sister into the mortal realm, through the veils between worlds, and found her—together with Zion. In the moment of confrontation, Floribeth stopped her. In her arms was a child.<br><br>Their child.<br><br>Blessica stood frozen, confused and overwhelmed by what she saw. But Floribeth's voice was calm and sure. She placed her daughter in Blessica's arms and whispered, “Take her. Keep her safe. I trust you. I’ve foreseen the future—this is the only timeline that can save the world. She is the future of our people.”<br><br>Floribeth confessed there were truths hidden by their father—secrets buried deep, ones that even they, as daughters of the throne, were never meant to know.<br><br>Though torn and afraid, Blessica agreed. She took the child and vanished into the mortal world, just as war erupted between gods and mortals. She tried to convince Floribeth to come with her, but her sister refused—determined to finish what she had started.<br><br>That was the last time Blessica ever saw her."
         };
     } else if (character === 'coming-soon') {
