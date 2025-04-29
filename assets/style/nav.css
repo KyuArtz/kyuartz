@@ -155,7 +155,7 @@ header {
 
 .nav-link-sideMenu.activeLink:hover,
 .sideMenu-content a.activeLink:hover {
-    color: #f0f0f0;
+    color: var(--color);
 }
 
 .hamburger {
@@ -232,14 +232,14 @@ form.search::after {
 }
 
 .search-result a:hover {
-    background: var(--hover-light);
-    color: #1f1f1f;
+    background: var(--text-color);
+    color: var(--color);
 }
 
 .search-result p {
     text-align: center;
     padding: 15px 10px;
-    color: var(--text-color);
+    color: var(--color);
     border-radius: 0 0 10px 10px;
 }
 
@@ -476,13 +476,6 @@ form.search::after {
     color: var(--color);
     background: none;
     outline: none;
-    appearance: none;
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
-    background-image: url('https://cdn-icons-png.flaticon.com/512/60/60995.png');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 10px;
 }
 
 option {
