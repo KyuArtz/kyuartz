@@ -2,6 +2,24 @@
   "updates": [
 
     {
+      "date": "2025/4/29/",
+      "major": [
+        "Added author and genre tags to comic cards for better content categorization."
+      ],
+      "minor": [
+        "General UI improvements for a smoother and more intuitive experience."
+      ],
+      "bugfixes": [
+
+      ],
+      "upcoming": [
+        "New characters.",
+        "Improved language localization",
+        "New comic chapters."
+      ]
+    },
+
+    {
       "date": "2025/4/4/",
       "major": [
         "Newly Added characters, to the character page with refined information (Floribeth, Feya, Hexxana, Liliana, Evany, Rayza, Elishia)."
