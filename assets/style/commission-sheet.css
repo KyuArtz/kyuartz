@@ -19,7 +19,7 @@ span.percent {
     color: #13d813;
     padding: 5px;
     border-radius: 10px;
-    background: var(--theme-overlay);
+    background: var(--text-color);
 }
 
 .price, .img-container {
