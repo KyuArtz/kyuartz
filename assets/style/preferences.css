@@ -23,13 +23,6 @@
     background: none;
     border: solid 1px var(--text-color);
     border-radius: 10px;
-    appearance: none;
-    -webkit-appearance: none; /* For Safari */
-    -moz-appearance: none; /* For Firefox */
-    background-image: url('https://cdn-icons-png.flaticon.com/512/60/60995.png');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 10px;
 }
 
 #theme-select:focus,
