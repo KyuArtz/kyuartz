@@ -1,28 +1,28 @@
 // Sample data array (initial commissions)
 const commissions = [
     {
-        commissioner: "NULL",
+        client: "NULL",
         type: "NULL",
         contact: "NULL",
         status: "NULL",
         notes: "NULL"
     },
     {
-        commissioner: "NULL",
+        client: "NULL",
         type: "NULL",
         contact: "NULL",
         status: "NULL",
         notes: "NULL"
     },
     {
-        commissioner: "NULL",
+        client: "NULL",
         type: "NULL",
         contact: "NULL",
         status: "NULL",
         notes: "NULL"
     },
     {
-        commissioner: "NULL",
+        client: "NULL",
         type: "NULL",
         contact: "NULL",
         status: "NULL",
@@ -39,7 +39,7 @@ function renderCommissionList() {
     commissions.forEach(commission => {
         const commissionRow = document.createElement('tr');
         commissionRow.innerHTML = `
-            <td>${commission.commissioner}</td>
+            <td>${commission.client}</td>
             <td>${commission.type}</td>
             <td>${commission.contact}</td>
             <td>${commission.status}</td>
