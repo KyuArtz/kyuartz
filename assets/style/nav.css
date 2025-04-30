@@ -105,6 +105,7 @@ header {
 .sbt {
     margin-top: -1px;
     color: var(--color);
+    font-family: 'Roboto', sans-serif;
 }
 
 .my-avatar {

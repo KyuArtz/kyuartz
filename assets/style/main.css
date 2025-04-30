@@ -2,10 +2,8 @@
     box-sizing: border-box;
     font-family: 'myFont', sans-serif;
     cursor: default;
-    font-weight: 500;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
-
 }
 
 body {
@@ -201,10 +199,6 @@ input[type="Submit"] {
     color: #28adff;
 }
 
-input[type="Submit"] {
-    font-family: inherit;
-}
-
 button:hover,
 input[type="Submit"]:hover,
 .caption-btn a:hover {
@@ -228,6 +222,10 @@ a.brand {
 
 p {
     font-size: 0.9rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
 }
 
 .loader h2 {
