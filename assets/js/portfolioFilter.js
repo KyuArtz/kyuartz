@@ -517,7 +517,6 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "anime-style"
     },
     
-    // Add more images here
   ];
 
   const gallery = document.getElementById('gallery');

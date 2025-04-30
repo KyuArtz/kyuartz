@@ -70,7 +70,7 @@ body {
 .theme-modern-white {
     --theme-color: #ffffff;
     --text-color: #2e2e2e;
-    --color: #5e5e5e;
+    --color: #808080;
     --content-bg: rgba(255, 255, 255, 0.9);
     --hover-light: #808080;
     --theme-overlay: rgba(172, 172, 172, 0.5);

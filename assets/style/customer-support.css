@@ -106,7 +106,8 @@ img#image-preview {
 }
 
 input[type="submit"] {
-    color: var(--text-color);
+    color: var(--color);
+    background: var(--theme-color);
     padding: 10px 30px;
     border: solid 1px;
     border-radius: 50px;

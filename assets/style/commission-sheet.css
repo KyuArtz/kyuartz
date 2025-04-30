@@ -39,7 +39,12 @@ span.percent {
     padding: 9px;
     margin: 0;
     color: var(--text-color);
-    box-shadow: 0 0 3px var(--text-color);
+    box-shadow: 0 0 2px var(--text-color);
+}
+
+.cs-container h2,
+.inquire-button {
+    background: var(--theme-overlay);
 }
 
 .cs-container p {
@@ -67,16 +72,16 @@ span.percent {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0 0 3px;
+    box-shadow: 0 0 2px var(--text-color);
 }
 
 .inquire-button a {
     padding: 10px 30px;
     margin: 5px;
-    background: none;
+    background: var(--theme-color);
     border-radius: 50px;
     border: solid 1px;
-    color: var(--text-color);
+    color: var(--color);
     transition: 0.3s ease-in-out;
 }
 
@@ -85,7 +90,7 @@ span.percent {
 }
 
 .cs-content {
-    color: inherit;
+    color: var(--text-color);
     text-align: center;
     box-shadow: 0 0 3px var(--text-color);
     border-radius: 10px;
@@ -104,7 +109,7 @@ span.percent {
     object-position: center;
     aspect-ratio: 1 / 1;
     border-radius: 10px;
-    box-shadow: 0 0 3px var(--text-color);
+    box-shadow: 0 0 2px var(--text-color);
     pointer-events: none;
 }
 

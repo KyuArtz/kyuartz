@@ -108,7 +108,7 @@ function updateFormStatus() {
     if (availableSlots === 0) {
         formStatus.textContent = "COMMISSION FORM - CLOSED";
         submitBtn.disabled = true; // Disable the submit button
-        submitBtn.style.backgroundColor = "#d3d3d3"; // Indicate the form is disabled
+        submitBtn.style.backgroundColor = ""; // Indicate the form is disabled
     } else {
         formStatus.textContent = "COMMISSION FORM - OPEN";
         submitBtn.disabled = false;
