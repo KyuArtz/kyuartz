@@ -205,9 +205,10 @@ button.next {
 
     .comic-overlay,
     .coming-soon,
-    .author {
+    .author,
+    .chapter p,
+    .chapter a {
         font-size: x-small;
-        overflow: hidden;
     }
 
     .author {
