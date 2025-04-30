@@ -74,7 +74,8 @@
     "comms-5": "CHIBI",
     "comms-6": "EMOTE",
     "comms-7": "LANDSCAPE",
-    "comms-8": "BUNDLES & PROMOTIONS",
+    "newBundlesDeals": "NEW BUNDLE DEALS",
+    "promotionsEngagements": "PROMOTIONS & ENGAGEMENTS",
     "priceInfo": "PRICE INFO",
 
     "orderNow": "Order Now",
@@ -150,6 +151,7 @@
     "emote": "Emote",
     "animeStyle": "Anime Style",
     "landscape": "Landscape",
+    "bundlePromo": "Bundles & Promo",
 
     "genre": "TYPE OF GENRE",
     "postApocalyptic": "Post-Apocalyptic",
