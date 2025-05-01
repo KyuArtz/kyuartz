@@ -159,7 +159,7 @@ function showCharacterInfo(character) {
             homeland: "<info><yellow>Magelion Empire</yellow></info>",
             faction: "<info><yellow>Light Harbingers</yellow></info>",
             role: "<info><yellow>Mage</yellow></info> <info><yellow>Healer</yellow></info>",
-            occupation: "<info><yellow>Queen of Magelion Empire<yellow></info>",
+            occupation: "<info><yellow>Grand Priestess<yellow></info>",
             affiliates: "<info><yellow><i class='fas fa-users'></i> Zion (Father)</yellow></info> <info><yellow><i class='fas fa-users'></i> Feya (Companion)</yellow></info> <info><yellow><i class='fas fa-users'></i> Floribeth (Mother)</yellow></info> <info><yellow><i class='fas fa-users'></i> Blessica (Aunt)</yellow></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/light.webp", 
