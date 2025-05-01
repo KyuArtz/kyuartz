@@ -219,17 +219,17 @@
 }
 
 button.close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     top: 5px;
     right: 5px;
     padding: 5px;
+    width: 30px;
+    height: 30px;
     aspect-ratio: 1/1;
     color: var(--text-color);
     outline: none;
-    border: none;
+    border: solid 1px var(--text-color);
+    border-radius: 50px;
 }
 
 #comic-title {
