@@ -39,15 +39,14 @@
     transition: 0.3s ease-in-out;
 }
 
-#characterOverlay {
-    background: url('../images/gif/dust.gif');
+.characterOverlay {
+    background: var(--overlay);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: fixed;
-    opacity: 0.6;
 }
 
 .content {
@@ -165,7 +164,6 @@ p.title {
     color: var(--color);
     padding: 55px 10px;
     margin: 0 10px;
-    transition: 0.3s ease-in-out;
 }
 
 .left-btn {
