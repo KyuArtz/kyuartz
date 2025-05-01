@@ -210,7 +210,7 @@ function showCharacterInfo(character) {
             homeland: "<info><orange>Frostfire Timberland</orange></info>",
             faction: "<info><orange>Light Harbingers</orange></info>",
             role: "<info><orange>Mage</orange></info>",
-            occupation: "<info><orange>1st Class Mage<orange></info>",
+            occupation: "<info><orange>Arch Harbinger<orange></info>",
             affiliates: "<info><orange><i class='fas fa-users'></i> Liliana (Mentor)</orange></info> <info><orange><i class='fas fa-users'></i> Ren (Friend)</orange></info> <info><orange><i class='fas fa-users'></i> Rayza (Friend)</orange></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/fire.webp", 
