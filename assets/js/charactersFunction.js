@@ -236,7 +236,7 @@ function showCharacterInfo(character) {
             homeland: "<info><green>Luminwood Expanse</green></info>",
             faction: "<info><green>Bloomforge Order</green></info>",
             role: "<info><green>Healer</green></info>",
-            occupation: "<info><green>Guardian of Nature<green></info>",
+            occupation: "<info><green>Eldertree Warden<green></info>",
             affiliates: "<info><green><i class='fas fa-users'></i> Floribeth (Former Ally)</green></info> <info><green><i class='fas fa-users'></i> Shelain (Ally)</green></info> <info><green><i class='fas fa-users'></i> Liliana (Ally)</green></info> <info><green><i class='fas fa-users'></i> Arzhel (Companion)</green></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/nature.webp", 
