@@ -174,14 +174,28 @@ p.title {
     border-radius: 0 15px 15px 0;
 }
 
-.close-btn {
+.close-btn-container {
     width: 100%;
-    position: relative;
+    background: var(--theme-color);
+    border-radius: 50px;
+    text-align: right;
+    transition: 0.3s ease-in-out;
+}
+
+.close-btn {
+    width: 80px;
     color: var(--text-color);
     background: var(--theme-color);
     border: solid 1px;
     border-radius: 50px;
     padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.close-btn-container:hover,
+.close-btn:hover {
+    background: var(--theme-overlay);
+    width: 100%;
 }
 
 .character-info {
@@ -296,7 +310,7 @@ p.title {
     aspect-ratio: 1/1;
     border-radius: 10px;
     border: solid 1px;
-    background: var(--theme-overlay);
+    background: var(--content-bg);
     transition: scale 0.3s ease-in-out;
 }
 

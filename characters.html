@@ -414,9 +414,11 @@
       </div>
   
       <div class="character-info" id="character-info">
-          <button class="close-btn" onclick="hideCharacterInfo()" data-translate="hideInfo">Hide Info</button>
+        <div class="close-btn-container">
+          <button class="close-btn" onclick="hideCharacterInfo()" data-translate="hideInfo"><i class='fas fa-times'></i></button>
+        </div>    
           <div id="character-details">
-            <h2>No character have been selected yet</h2>
+            <h2>No character have been selected</h2>
 
             <div class="character-info-scrollable">
               <div class="info-section" id="elementalPower">
