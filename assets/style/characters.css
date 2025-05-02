@@ -49,6 +49,10 @@
     position: fixed;
 }
 
+.character-container h2 {
+    margin-top: 0;
+}
+
 .content {
     display: flex;
     flex-direction: column;
