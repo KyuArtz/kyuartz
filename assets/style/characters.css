@@ -51,6 +51,13 @@
 
 .character-container h2 {
     margin-top: 0;
+    text-shadow: 0 0 5px #0a0a0a;
+}
+
+.character-container h3,
+.character-container h5,
+.character-container p {
+    text-shadow: 0 0 3px #0a0a0a;
 }
 
 .content {
