@@ -24,3 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.img-container').forEach(img => {
+      img.addEventListener('click', function() {
+          // Toggle the 'clicked' class
+          this.classList.toggle('clicked');
+          console.log('Toggled:', this.classList);
+      });
+  });
+});
