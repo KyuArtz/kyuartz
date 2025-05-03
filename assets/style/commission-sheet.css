@@ -16,10 +16,7 @@
 
 span.price-amount,
 span.percent {
-    color: #13d813;
-    padding: 5px;
-    border-radius: 10px;
-    background: var(--text-color);
+    color: #008600;
 }
 
 .price, .img-container {
@@ -31,7 +28,7 @@ span.percent {
     transition: 0.3s ease-in-out;
 }
 
-.img-container:hover {
+.img-container.clicked {
     filter: grayscale(100%);
 }
 
