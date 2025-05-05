@@ -109,6 +109,11 @@ img#image-preview {
     color: inherit;
 }
 
+input[type="checkbox"] {
+    background: var(--theme-color);
+    color: var(--color);
+}
+
 input[type="Submit"] {
     color: var(--color);
     background: var(--theme-color);
