@@ -43,7 +43,7 @@
 .maintenance_body button {
     padding: 10px 50px;
     color: var(--text-color);
-    border: solid 1px;
+    border: 1px solid;
     border-radius: 50px;
     text-align: center;
     text-decoration: none;

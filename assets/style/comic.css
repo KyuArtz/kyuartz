@@ -131,7 +131,7 @@ button.next {
 }
 
 .chapter p {
-    border: solid 1px;
+    border: 1px solid;
     border-radius: 10px;
     padding: 10px;
     background: var(--theme-color);
@@ -142,7 +142,7 @@ button.next {
     gap: 5px;
     width: 100%;
     overflow: auto;
-    border: solid 1px;
+    border: 1px solid;
     border-radius: 10px;
     padding: 5px;
     background: var(--theme-color);
@@ -190,7 +190,7 @@ button.next {
     background: var(--theme-color);
     color: var(--text-color);
     border-radius: 50px;
-    border: solid 1px;
+    border: 1px solid;
 }
 
 @media screen and (max-width: 500px) {

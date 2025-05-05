@@ -3,13 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       src: "assets/images/artgallary/Forbidden_love_1 (2024).webp",
       alt: "Forbidden_Love_1",
-      title: "Forbidden_Love_1",
+      title: "Forbidden_Love",
       category: "semi-realism"
     },
     {
       src: "assets/images/artgallary/Forbidden_love (2024).webp",
       alt: "Forbidden_Love",
-      title: "Forbidden_Love",
+      title: "Lunara X Zion",
       category: "semi-realism"
     },
     {
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Evany_portrait (2024).webp",
-      alt: "Evany_portrait",
-      title: "Evany_portrait",
+      src: "assets/images/artgallary/Floribeth_portrait (2024).webp",
+      alt: "Floribeth_portrait",
+      title: "Floribeth_portrait",
       category: "semi-realism"
     },
     {

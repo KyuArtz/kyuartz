@@ -2,9 +2,10 @@
   min-height: 100vh;
 }
 
-.slideshow_container {
+.slideshow-container {
     position: relative;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .mySlides {
@@ -43,6 +44,7 @@ button.prev {
     user-select: none;
     transition: 0.3s ease-in-out;
     opacity: 0.5;
+    z-index: 2;
 }
 
 .next {
@@ -61,34 +63,46 @@ button.prev {
     color: var(--color);
 }
 
-.caption {
+.caption-overlay {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     color: var(--text-color);
     background-color: var(--overlay);
-    top: 0;
-    text-align: center;
-    align-content: center;
     height: 100vh;
+    z-index: 1;
 }
 
-.caption h1 {
+.caption-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.2s ease-out;
+    transform-style: preserve-3d;
+}
+
+.caption-overlay h1 {
     text-shadow: 0 0 5px #000;
     letter-spacing: 3px;
 }
 
-.caption p {
+.caption-overlay p {
     text-shadow: 0 0 3px #000;
 }
 
-.caption h1,
-.caption p {
-  color: #f0f0f0;
-  margin: 15px 20px;
+.caption-overlay h1,
+.caption-overlay p {
+    color: #f0f0f0;
+    margin: 15px 20px;
 }
 
 .caption-btn {
-    position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -96,7 +110,6 @@ button.prev {
     text-align: center;
     padding: 20px 20px;
     gap: 10px;
-    z-index: 1;
 }
 
 .caption-btn a {
@@ -117,6 +130,7 @@ button.prev {
     width: 100%;
     gap: 5px;
     transition: opacity 0.5s ease-in-out;
+    z-index: 2;
 }
 
 .dot {
@@ -147,66 +161,57 @@ button.prev {
 }
 
 .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .carousel_inner {
-    display: flex;
-    transition: 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .video {
-    flex: 0 0 33.3333%;
-    max-width: 33.3333%;
-    padding: 10px;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding: 10px;
 }
 
 .video video, iframe {
-    width: 100%;
-    height: 230px;
-    border-radius: 15px;
-    color: var(--color);
-    background: var(--content-bg);
-    transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 230px;
+  border-radius: 15px;
+  color: var(--color);
+  background: var(--content-bg);
+  transition: 0.3s ease-in-out;
 }
 
-.video video:hover,
-iframe:hover {
-    box-shadow: 0 0 5px var(--color);
+.video video:hover, iframe:hover {
+  box-shadow: 0 0 5px var(--color);
 }
 
+/* Navigation Controls */
 .carousel_nav {
-    position: absolute;
-    top: 50%;
-    width: 100%;
+  position: absolute;
+  top: 50%;
+  width: 100%;
 }
 
 .carousel_nav button {
-    background: var(--color);
-    border: none;
-    color: var(--text-color);
-    padding: 15px;
-    margin: auto 5px;
-    border-radius: 50px;
-    position: absolute;
-    box-shadow: 0 0 3px #000;
-    transform: translateY(-50%);
-}
-
-.carousel-prev {
-  left: 0;
-}
-
-.carousel-next {
-  right: 0;
-}
-
-.carousel-prev,
-.carousel-next {
+  background: var(--color);
+  border: none;
+  color: var(--text-color);
+  padding: 15px;
+  margin: auto 5px;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: 0 0 3px #000;
+  transform: translateY(-50%);
   transition: 0.3s ease-in-out;
 }
+
+.carousel-prev { left: 0; }
+.carousel-next { right: 0; }
 
 .fade {
   animation: fade 1.5s;
@@ -223,12 +228,17 @@ to {
 
 @media (max-width: 768px) {
   .video {
-    flex: 0 0 50%;
-    max-width: 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
   }
 }
 
 @media (max-width: 500px) {
+  .video {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .wn-btn {
     font-size: small;
   }
@@ -239,11 +249,11 @@ to {
     object-fit: cover;
   }
 
-  .caption h1 {
+  .caption-overlay h1 {
     font-size: 2rem;
   }
 
-  .caption p {
+  .caption-overlay p {
     font-size: 0.6rem;
   }
 
@@ -257,12 +267,5 @@ to {
 
   .caption-btn a {
     min-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .video {
-    flex: 0 0 100%;
-    max-width: 100%;
   }
 }

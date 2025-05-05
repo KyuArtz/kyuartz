@@ -23,7 +23,7 @@ header {
 }
 
 .subMenu-container {
-    border: solid 1px var(--text-color);
+    border: 1px solid var(--text-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -38,7 +38,6 @@ header {
     color: var(--text-color);
     padding: 10px 15px;
     border: none;
-    transition: 0.3s ease-in-out;
 }
 
 .dropdown-setting {
@@ -72,7 +71,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-    border-bottom: solid 1px var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     margin: 0 5px;
     padding: 5px;
 }
@@ -82,7 +81,7 @@ header {
     height: 35px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: solid 1px;
+    border: 1px solid;
 }
 
 .main-navigation {
@@ -113,7 +112,7 @@ header {
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    border: solid 1px var(--text-color);
+    border: 1px solid var(--text-color);
 }
 
 .nav-link,
@@ -175,7 +174,7 @@ header {
 .search-container {
     margin: 0 5px;
     padding: 0;
-    border: solid 1px var(--text-color);
+    border: 1px solid var(--text-color);
     border-radius: 50px;
 }
 
@@ -472,7 +471,7 @@ form.search::after {
     right: 0;
     padding: 5px 20px;
     margin: auto 5px;
-    border: solid 1px var(--text-color);
+    border: 1px solid var(--text-color);
     border-radius: 5px;
     color: var(--color);
     background: none;
@@ -491,10 +490,6 @@ option {
 
     .currency-conversion-btn {
         width: 90px;
-    }
-
-    .sbt {
-        display: none;
     }
 
 @media screen and (max-width: 500px) {

@@ -23,7 +23,6 @@
     position: absolute;
     bottom: 35%;
     transition: inherit;
-    letter-spacing: 3px;
     animation: flicker 1s infinite;
 }
 
@@ -50,15 +49,14 @@
 .medium-spinner {
     width: 75px;
     height: 75px;
-    border: thin solid var(--color);
-    /*box-shadow: 0 1px 5000px 30px var(--color);*/
+    border: 2px solid var(--color);
     animation: pulse 0.75s infinite;
 }
 
 .large-spinner {
     width: 85px;
     height: 85px;
-    border: thick solid var(--color);
+    border: 5px solid var(--color);
     border-top-color: rgba(0, 0, 0, 0);
     animation: rotateClockwise 0.75s infinite;
 }

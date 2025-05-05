@@ -77,9 +77,8 @@ span.percent {
     margin: 5px;
     background: var(--theme-color);
     border-radius: 50px;
-    border: solid 1px;
+    border: 1px solid;
     color: var(--color);
-    transition: 0.3s ease-in-out;
 }
 
 .inquire-button a:hover {

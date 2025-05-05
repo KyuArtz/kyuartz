@@ -232,26 +232,25 @@
     </div>
   </nav>
 
-  <div class="characterOverlay"></div>
-  <div class="character-container">
-    <div class="content">
+  <div class="character-wrapper">
+    <div class="character-container">
       <div class="character-slider">
           <button type="button" class="carousel-btn left-btn" onclick="scrollCarousel(-1)"></button>
   
           <div class="carousel-view">
             <h2 data-translate="selectCharacter">SELECT A CHARACTER</h2>
               <div class="character-cards-wrapper">
-                  <div class="character-card" data-category="" onclick="showCharacterInfo('floribeth')">
+                  <div class="character-card" data-category="" onclick="showCharacterInfo('lunara')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/mage.webp" alt="">
                     </div>
-                      <img src="assets/images/character-presets/profile/floribeth.gif" alt="">
+                      <img src="assets/images/character-presets/profile/lunara.gif" alt="">
                       <div class="overlay">
-                        <h5 class="name-tag" data-translate="">Floribeth</h5>
+                        <h5 class="name-tag" data-translate="">Lunara</h5>
                         <p class="title" data-translate="">Scarlet Phantom</p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('feya')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/mage.webp" alt="">
@@ -262,7 +261,7 @@
                         <p class="title" data-translate="">Fiery Fox</p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('hexxana')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/mage.webp" alt="">
@@ -274,18 +273,18 @@
                         <p class="title" data-translate="">Lone Wanderer</p>
                       </div>
                   </div> 
-
-                  <div class="character-card" data-category="" onclick="showCharacterInfo('evany')">
+  
+                  <div class="character-card" data-category="" onclick="showCharacterInfo('floribeth')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/healer.webp" alt="">
                     </div>
-                      <img src="assets/images/character-presets/profile/evany.gif" alt="">
+                      <img src="assets/images/character-presets/profile/floribeth.gif" alt="">
                       <div class="overlay">
-                        <h5 class="name-tag" data-translate="">Evany</h5>
+                        <h5 class="name-tag" data-translate="">Floribeth</h5>
                         <p class="title" data-translate="">Warden of the Bloom</p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('liliana')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/mage.webp" alt="">
@@ -297,7 +296,7 @@
                         <p class="title" data-translate="">Beacon of Eldoria</p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('rayza')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/assassin.webp" alt="">
@@ -308,7 +307,7 @@
                         <p class="title" data-translate="">Windborne Tempest</p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('elishia')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/versatile.webp" alt="">
@@ -319,7 +318,7 @@
                         <p class="title" data-translate="">Tactician</p>
                       </div>
                   </div>
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -330,7 +329,7 @@
                         <p class="title" data-translate="title"></p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -352,7 +351,7 @@
                         <p class="title" data-translate="title"></p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -363,7 +362,7 @@
                         <p class="title" data-translate="title"></p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -374,7 +373,7 @@
                         <p class="title" data-translate="title"></p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -385,7 +384,7 @@
                         <p class="title" data-translate="title"></p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -396,7 +395,7 @@
                         <p class="title" data-translate="title"></p>
                       </div>
                   </div> 
-
+  
                   <div class="character-card" data-category="" onclick="showCharacterInfo('coming-soon')">
                     <div class="role">
                       <img src="assets/images/character-presets/roles/question.webp" alt="">
@@ -419,7 +418,7 @@
         </div>    
           <div id="character-details">
             <h2>No character have been selected</h2>
-
+  
             <div class="character-info-scrollable">
               <div class="info-section" id="elementalPower">
                 <h3>Elemental Mastery</h3>
@@ -440,17 +439,17 @@
                 <h3>Abilities</h3>
                 <p></p>
               </div>
-
+  
               <div class="info-section" id="Weapon">
                 <h3>Favorite Weapon</h3>
                 <p></p>
               </div>
-
+  
               <div class="info-section" id="affiliates">
                 <h3>Affiliates</h3>
                 <p></p>
               </div>
-
+  
               <div class="info-section" id="likes">
                 <h3>Likes</h3>
                 <p></p>
@@ -469,6 +468,8 @@
         </div>
       </div>
     </div>
+    <div class="character-overlay"></div>
+    <div class="character-background"></div>
   </div>
 
 </body>

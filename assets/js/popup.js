@@ -1,3 +1,49 @@
+// Welcome Message Popup Logic
+document.addEventListener("DOMContentLoaded", function() {
+  if (!getCookie("welcome-messageShown")) {
+    var welcomeOverlay = document.getElementById('welcome-overlay');
+    var welcomeMessage = document.getElementById('welcome-message');
+
+    welcomeOverlay.style.display = 'block';
+    welcomeMessage.style.display = 'block';
+    setCookie("welcome-messageShown", true, 365); // Cookie expires in 365 days
+  }
+});
+
+function closeWelcomeMessage() {
+  var welcomeOverlay = document.getElementById('welcome-overlay');
+  var welcomeMessage = document.getElementById('welcome-message');
+
+  welcomeOverlay.style.display = 'none';
+  welcomeMessage.style.display = 'none';
+}
+
+// Utility Functions for Cookies
+function setCookie(name, value, days) {
+  var expires = "";
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1, c.length);
+    }
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length, c.length);
+    }
+  }
+  return null;
+}
+
 // Toggle function for "What's New" popup
 function toggleWn() {
   const popupWn = document.getElementById("popup-wn");
@@ -53,49 +99,3 @@ document.addEventListener("DOMContentLoaded", function() {
       cookiePopup.style.display = "none"; // Hide the pop-up
   });
 });
-
-// Welcome Message Popup Logic
-document.addEventListener("DOMContentLoaded", function() {
-  if (!getCookie("welcome-messageShown")) {
-    var welcomeOverlay = document.getElementById('welcome-overlay');
-    var welcomeMessage = document.getElementById('welcome-message');
-
-    welcomeOverlay.style.display = 'block';
-    welcomeMessage.style.display = 'block';
-    setCookie("welcome-messageShown", true, 365); // Cookie expires in 365 days
-  }
-});
-
-function closeWelcomeMessage() {
-  var welcomeOverlay = document.getElementById('welcome-overlay');
-  var welcomeMessage = document.getElementById('welcome-message');
-
-  welcomeOverlay.style.display = 'none';
-  welcomeMessage.style.display = 'none';
-}
-
-// Utility Functions for Cookies
-function setCookie(name, value, days) {
-  var expires = "";
-  if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    expires = "; expires=" + date.toUTCString();
-  }
-  document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
-
-function getCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1, c.length);
-    }
-    if (c.indexOf(nameEQ) == 0) {
-      return c.substring(nameEQ.length, c.length);
-    }
-  }
-  return null;
-}

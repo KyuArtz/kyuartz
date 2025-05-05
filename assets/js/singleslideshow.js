@@ -71,7 +71,7 @@ class Slideshow {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const slideshowContainers = document.querySelectorAll('.slideshow_container');
+  const slideshowContainers = document.querySelectorAll('.slideshow-container');
   slideshowContainers.forEach(container => new Slideshow(container));
 });
 /*
@@ -121,7 +121,7 @@ class Slideshow {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const slideshowContainers = document.querySelectorAll('.slideshow_container');
+  const slideshowContainers = document.querySelectorAll('.slideshow-container');
   slideshowContainers.forEach(container => new Slideshow(container));
 });
 */

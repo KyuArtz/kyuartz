@@ -164,7 +164,7 @@ body.lb-disable-scrolling {
 
 .lb-data .lb-caption {
     line-height: 1em;
-    color: var(--color);
+    color: #f0f0f0;
 }
 
 .lb-data .lb-caption a {
@@ -175,7 +175,7 @@ body.lb-disable-scrolling {
     display: block;
     clear: left;
     padding-bottom: 1em;
-    color: #f0f0f0;
+    color: var(--color);
 }
 
 .lb-data .lb-close {

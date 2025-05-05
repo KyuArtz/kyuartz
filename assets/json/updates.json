@@ -2,6 +2,27 @@
   "updates": [
 
     {
+      "date": "2025/05/5",
+      "major": [
+        "Optimized carousel logic and added swipe gesture support on the homepage."
+      ],
+      "minor": [
+        "Enhanced character page UI with a tilt hover effect for the character slider and information display.",
+        "Applied tilt hover effect to the homepage slider for improved interactivity.",
+        "Updated character names: Floribeth renamed to Lunara, Evany renamed to Floribeth on the character page.",
+        "Added click function to commission sample images—clicking turns them grayscale, clicking again restores the original colors."
+      ],
+      "bugfixes": [
+        "Resolved various bugs for better stability."
+      ],
+      "upcoming": [
+        "New characters.",
+        "Improved language localization",
+        "New comic chapters."
+      ]
+    },
+
+    {
       "date": "2025/4/29/",
       "major": [
         "Added author and genre tags to comic cards for better content categorization."

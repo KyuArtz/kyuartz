@@ -130,7 +130,7 @@
     text-align: left;
     color: var(--text-color);
     border-radius: 30px 50px 50px 30px;
-    border: solid 1px;
+    border: 1px solid;
 }
 
 .my-info p:hover,
@@ -148,7 +148,7 @@
     height: 35px;
     aspect-ratio: 1/1;
     margin: 3px;
-    border: solid 1px var(--text-color);
+    border: 1px solid var(--text-color);
     background: var(--overlay);
     object-fit: cover;
     border-radius: 10px;

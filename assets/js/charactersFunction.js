@@ -7,8 +7,8 @@ const characterBackgrounds = {
     rayza: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     liliana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     blessica: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    lunara: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     floribeth: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    evany: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     shelain: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
     arzhel: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },   
     feya: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
@@ -22,9 +22,10 @@ function updateBackground() {
 
     const isMobile = window.innerWidth <= 768;
     const backgroundType = isMobile ? 'portrait' : 'landscape';
-    const characterContainer = document.querySelector('.character-container');
+    const characterContainer = document.querySelector('.character-background');
 
-    // Set initial opacity to create a fade-out effect
+    // Apply fade-out effect before changing the background
+    characterContainer.style.transition = "opacity 0.3s ease-out";
     characterContainer.style.opacity = 0;
 
     // After a short delay, change the background image and fade back in
@@ -35,13 +36,14 @@ function updateBackground() {
             characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";
         }
 
-        // Fade-in effect
+        // Fade back in
+        characterContainer.style.transition = "opacity 0.5s ease-in";
         characterContainer.style.opacity = 1;
-    }, 200); // Adjust this timing for the fade-out duration
+    }, 300); // Adjust timing for smoother effect
 }
 
 // Set CSS for the transition effect on `.character-container`
-const characterContainer = document.querySelector('.character-container');
+const characterContainer = document.querySelector('.character-background');
 characterContainer.style.transition = "opacity 0.5s ease";
 
 // Show character information and update the main background
@@ -160,7 +162,7 @@ function showCharacterInfo(character) {
             faction: "<info><yellow>Light Harbingers</yellow></info>",
             role: "<info><yellow>Mage</yellow></info> <info><yellow>Healer</yellow></info>",
             occupation: "<info><yellow>Grand Priestess<yellow></info>",
-            affiliates: "<info><yellow><i class='fas fa-users'></i> Zion (Father)</yellow></info> <info><yellow><i class='fas fa-users'></i> Feya (Companion)</yellow></info> <info><yellow><i class='fas fa-users'></i> Floribeth (Mother)</yellow></info> <info><yellow><i class='fas fa-users'></i> Blessica (Aunt)</yellow></info>",
+            affiliates: "<info><yellow><i class='fas fa-users'></i> Zion (Father)</yellow></info> <info><yellow><i class='fas fa-users'></i> Feya (Companion)</yellow></info> <info><yellow><i class='fas fa-users'></i> Lunara (Mother)</yellow></info> <info><yellow><i class='fas fa-users'></i> Blessica (Aunt)</yellow></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/light.webp", 
                 "assets/images/character-presets/elements/frost.webp"
@@ -174,11 +176,11 @@ function showCharacterInfo(character) {
             ability4: "<info><yellow><i class='fas fa-icicles'></i> Glacial Lance</yellow></info> – Forms a sharp spear of frozen light and hurls it with deadly precision, piercing through enemies and freezing them on impact.",
             ability5: "<info><yellow><i class='fas fa-star-of-life'></i> Aurora Ascension</yellow></info> – Enters a transcendent state, amplifying all her abilities for a short duration and radiating waves of healing energy.",
             ability6: "<yellow><info><i class='fas fa-praying-hands'></i> Celestial Oath</yellow></info> – Liliana binds her soul to her allies, making them temporarily invulnerable to death for several seconds. If she falls during this time, she is revived in a burst of healing light that restores nearby allies.",
-            background: "Liliana Solarae, the radiant founder of the Magelion Empire, rose from the ashes of a fallen world. After the death of the Solaraenia King and the mysterious disappearance of her mother, Floribeth, during the catastrophic Great War, Liliana—still a child—was swept into the chaos of a land torn apart. Their celestial homeland was obliterated, and the Umbrakiths were driven to near extinction.<br><br>Eldoria, once vibrant, was on the brink of annihilation. In the shadows of destruction, Liliana was taken in by her aunt, Blessica—Floribeth’s twin sister—who concealed Liliana’s true lineage to protect her from enemies still thirsting for blood. Under Blessica’s watchful eye, Liliana was trained in secret, groomed not just as a survivor—but as a beacon of hope. Her mother’s final words echoed in her soul: 'You are the future of our people.' When she came of age, Blessica stepped aside, entrusting Liliana with the crown and the burden of a fractured world. Refusing to let history repeat itself, Liliana rose with wisdom far beyond her years.<br><br>She sought unity where there was only division. Strength where there was only sorrow. Summoning the leaders of every race across Eldoria, Liliana called for a grand council—a final chance to end the cycle of violence. Though not all agreed, many saw truth in her words. Her voice, steady and unwavering, ignited something ancient and pure in their hearts. To safeguard this fragile new peace, she formed the Light Harbingers—a legendary order of warriors and guardians drawn from every corner of Eldoria.<br><br>Not all who wished to join succeeded, for Liliana herself forged the trials: tests not of strength, but of compassion, discipline, and resolve. In time, peace returned. Races once divided sang her name in reverence. Eldoria flourished under her guidance. Liliana became a living symbol—not just of survival, but of unity, love, and light. Yet, amid celebration, Liliana stood watchful. For in her dreams, she saw glimpses of what’s to come: a shrouded figure, a dying sky, a second darkness waiting to devour the light. Peace had come… but for how long?"
+            background: "Liliana Solarae, the radiant founder of the Magelion Empire, rose from the ashes of a fallen world. After the death of the Solaraenia King and the mysterious disappearance of her mother, Lunara, during the catastrophic Great War, Liliana—still a child—was swept into the chaos of a land torn apart. Their celestial homeland was obliterated, and the Umbrakiths were driven to near extinction.<br><br>Eldoria, once vibrant, was on the brink of annihilation. In the shadows of destruction, Liliana was taken in by her aunt, Blessica—Lunara’s twin sister—who concealed Liliana’s true lineage to protect her from enemies still thirsting for blood. Under Blessica’s watchful eye, Liliana was trained in secret, groomed not just as a survivor—but as a beacon of hope. Her mother’s final words echoed in her soul: 'You are the future of our people.' When she came of age, Blessica stepped aside, entrusting Liliana with the crown and the burden of a fractured world. Refusing to let history repeat itself, Liliana rose with wisdom far beyond her years.<br><br>She sought unity where there was only division. Strength where there was only sorrow. Summoning the leaders of every race across Eldoria, Liliana called for a grand council—a final chance to end the cycle of violence. Though not all agreed, many saw truth in her words. Her voice, steady and unwavering, ignited something ancient and pure in their hearts. To safeguard this fragile new peace, she formed the Light Harbingers—a legendary order of warriors and guardians drawn from every corner of Eldoria.<br><br>Not all who wished to join succeeded, for Liliana herself forged the trials: tests not of strength, but of compassion, discipline, and resolve. In time, peace returned. Races once divided sang her name in reverence. Eldoria flourished under her guidance. Liliana became a living symbol—not just of survival, but of unity, love, and light. Yet, amid celebration, Liliana stood watchful. For in her dreams, she saw glimpses of what’s to come: a shrouded figure, a dying sky, a second darkness waiting to devour the light. Peace had come… but for how long?"
         };
-    } else if (character === 'floribeth') {
+    } else if (character === 'lunara') {
         details = {
-            name: "<red>Floribeth</red>",
+            name: "<red>Lunara</red>",
             race: "<info><red>Celestial</red></info>",
             gender: "<info><red>Female</red></info>",
             height: "<info><red>5'9\" ft / 175.3 cm</red></info>",
@@ -186,7 +188,7 @@ function showCharacterInfo(character) {
             faction: "<info><red>Order of Seekers</red></info>",
             role: "<info><red>Mage</red></info>",
             occupation: "<info><red>Unknown<red></info>",
-            affiliates: "<info><red><i class='fas fa-users'></i> Zion (Lover)</red></info> <info><red><i class='fas fa-users'></i> Liliana (Daughter)</red></info> <info><red><i class='fas fa-users'></i> Blessica (Sister)</red></info> <info><red><i class='fas fa-users'></i> Evany (Former Ally)</red></info> <info><red><i class='fas fa-users'></i> Shelain (Former Ally)</red></info>",
+            affiliates: "<info><red><i class='fas fa-users'></i> Zion (Lover)</red></info> <info><red><i class='fas fa-users'></i> Liliana (Daughter)</red></info> <info><red><i class='fas fa-users'></i> Blessica (Sister)</red></info> <info><red><i class='fas fa-users'></i> Floribeth (Former Ally)</red></info> <info><red><i class='fas fa-users'></i> Shelain (Former Ally)</red></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/shadow.webp"
             ],
@@ -199,7 +201,7 @@ function showCharacterInfo(character) {
             ability4: "<info><red><i class='fas fa-volume-mute'></i> Wail of the Forsaken</red></info> – Her sorrowful cry weakens the minds of those who hear it, driving them to madness.",
             ability5: "<info><red><i class='fas fa-brain'></i> Umbral Requiem</red></info> – Summons a spectral vision of Zion, causing enemies to relive their most painful memories, paralyzing them in fear.",
             ability6: "<info><red><i class='fas fa-explosion'></i> Final Embrace</red></info> – If she is mortally wounded, she can unleash a devastating explosion of cursed energy, consuming everything around her.",
-            background: "Floribeth was once a celestial being—pure, radiant, and beloved. She was the selfless and compassionate princess of Solaraenia, destined to inherit the throne and bring eternal light to her people. She embodied everything a ruler should be—kind yet strong, wise yet humble. But love, the most beautiful and dangerous force, would become her ruin.<br><br>In secret, she fell for Zion, the prince of the Umbrakiths, the sworn enemies of the Solaraenians for millennia. Their love was a forbidden flame, burning against the tides of history and war. They met not as enemies, but as two wandering souls, lost in the vastness of the realms. In Zion, Floribeth saw not a monster, not an enemy, but a heart that beat in harmony with hers. And for him, she was not just a celestial heir but a light he had never known in his shadowed world.<br><br>But love is not enough to break the chains of destiny. When their secret was unveiled, the Solarae King’s fury shook the heavens. He accused Floribeth of treason, of falling victim to the dark magic of the Umbrakiths. Her people turned against her, branding her a traitor to their divine bloodline.<br><br>In the eyes of the Solaraenians, she was no longer their princess—she was tainted, lost, a disgrace. And so, she was cast down, banished from Solaraenia, and exiled into the mortal land of Eldoria. But her fall was only the beginning of the tragedy. The Umbrakiths were stunned by the revelation. They had not conspired to claim the celestial princess, yet their hands were now forced into war. The Solaraenians, blinded by their wrath, saw no redemption for Floribeth. They saw only war.<br><br>And so, the Great War of Eldoria began—a conflict forged not by hatred, but by love that the world refused to accept. Amidst the bloodshed, Floribeth and Zion fought together—not as leaders of warring nations, but as lovers desperate to stop the slaughter. They pleaded, they struggled, they tried to hold back the tides of fate itself. But fate is cruel. On the battlefield, Zion fell. Floribeth watched as the blade that should have struck her instead pierced through the heart of the man she loved.<br><br>His blood stained her hands, warm, real, slipping through her trembling fingers. The battlefield faded. Time itself seemed to shatter. She saw every moment they had shared—His laughter, the whispered promises, the stolen touches beneath forbidden skies. His voice, calling her name, fading into silence. His warmth, now nothing but a lifeless embrace. And something inside her broke. A whisper left her lips, a prayer, a curse, an agony too great for words.<br><br>The sky darkened, the winds howled, and a blood moon rose. Those who dared look into her eyes saw only death. An aurora, dark and unholy, erupted around her as her tears of sorrow turned into rivers of blood. And then, the slaughter began. She bent the blood of those around her, twisting them into lifeless husks, consuming their very essence in an unrelenting storm of carnage. The battlefield became a graveyard. Soldiers—Solaraenians, Umbrakiths, all—fell before her wrath. She was no longer the celestial princess, nor the traitor in exile. She was something else. A phantom. A reaper. A queen of death.<br><br>That day, the Scarlet Phantom was born. And the war ended. But not in victory, nor in peace. Only in silence.<br><br>Now, Floribeth Umbrakith wanders the lands of Eldoria, her heart long turned to ice, her soul shackled by the blood of those she loved and those she loathed. She no longer fights for light, nor darkness. She seeks something beyond the reach of gods and mortals alike. Perhaps redemption. Perhaps revenge. Or perhaps, she simply searches for the one thing she lost—the love that once made her whole.<br><br>For in the end, Floribeth never wished to be queen. She only wished to be with him. And that… was the one wish the universe would never grant."
+            background: "Lunara was once a celestial being—pure, radiant, and beloved. She was the selfless and compassionate princess of Solaraenia, destined to inherit the throne and bring eternal light to her people. She embodied everything a ruler should be—kind yet strong, wise yet humble. But love, the most beautiful and dangerous force, would become her ruin.<br><br>In secret, she fell for Zion, the prince of the Umbrakiths, the sworn enemies of the Solaraenians for millennia. Their love was a forbidden flame, burning against the tides of history and war. They met not as enemies, but as two wandering souls, lost in the vastness of the realms. In Zion, Lunara saw not a monster, not an enemy, but a heart that beat in harmony with hers. And for him, she was not just a celestial heir but a light he had never known in his shadowed world.<br><br>But love is not enough to break the chains of destiny. When their secret was unveiled, the Solarae King’s fury shook the heavens. He accused Lunara of treason, of falling victim to the dark magic of the Umbrakiths. Her people turned against her, branding her a traitor to their divine bloodline.<br><br>In the eyes of the Solaraenians, she was no longer their princess—she was tainted, lost, a disgrace. And so, she was cast down, banished from Solaraenia, and exiled into the mortal land of Eldoria. But her fall was only the beginning of the tragedy. The Umbrakiths were stunned by the revelation. They had not conspired to claim the celestial princess, yet their hands were now forced into war. The Solaraenians, blinded by their wrath, saw no redemption for Lunara. They saw only war.<br><br>And so, the Great War of Eldoria began—a conflict forged not by hatred, but by love that the world refused to accept. Amidst the bloodshed, Lunara and Zion fought together—not as leaders of warring nations, but as lovers desperate to stop the slaughter. They pleaded, they struggled, they tried to hold back the tides of fate itself. But fate is cruel. On the battlefield, Zion fell. Lunara watched as the blade that should have struck her instead pierced through the heart of the man she loved.<br><br>His blood stained her hands, warm, real, slipping through her trembling fingers. The battlefield faded. Time itself seemed to shatter. She saw every moment they had shared—His laughter, the whispered promises, the stolen touches beneath forbidden skies. His voice, calling her name, fading into silence. His warmth, now nothing but a lifeless embrace. And something inside her broke. A whisper left her lips, a prayer, a curse, an agony too great for words.<br><br>The sky darkened, the winds howled, and a blood moon rose. Those who dared look into her eyes saw only death. An aurora, dark and unholy, erupted around her as her tears of sorrow turned into rivers of blood. And then, the slaughter began. She bent the blood of those around her, twisting them into lifeless husks, consuming their very essence in an unrelenting storm of carnage. The battlefield became a graveyard. Soldiers—Solaraenians, Umbrakiths, all—fell before her wrath. She was no longer the celestial princess, nor the traitor in exile. She was something else. A phantom. A reaper. A queen of death.<br><br>That day, the Scarlet Phantom was born. And the war ended. But not in victory, nor in peace. Only in silence.<br><br>Now, Lunara Umbrakith wanders the lands of Eldoria, her heart long turned to ice, her soul shackled by the blood of those she loved and those she loathed. She no longer fights for light, nor darkness. She seeks something beyond the reach of gods and mortals alike. Perhaps redemption. Perhaps revenge. Or perhaps, she simply searches for the one thing she lost—the love that once made her whole.<br><br>For in the end, Lunara never wished to be queen. She only wished to be with him. And that… was the one wish the universe would never grant."
         };
     } else if (character === 'feya') {
         details = {
@@ -227,9 +229,9 @@ function showCharacterInfo(character) {
             ability6: "<info><orange><i class='fas fa-star'></i> Celestial Afterglow</orange></info> – Feya channels her inner radiance, creating a glowing sigil beneath her and her allies. It heals nearby allies over time and grants brief invulnerability to fatal damage once. Enemies that enter the sigil's edge are burned by radiant flames.",
             background: "Feya was once a carefree child, growing up in the mystical Frostfire Timberland, nestled near the northern mountains of the Magelion Empire. Her people, deeply attuned to nature and magic, lived in peaceful harmony, untouched by the conflicts of the outside world. With an adventurous spirit and an ever-burning curiosity, Feya spent her days exploring the vast Frostfire Timberland, her innate magic strengthening with each passing day.<br><br>But peace is never eternal. The rise of the Nethersteel Pact shattered the tranquility of her homeland. The Legion's forces swept through the land like a merciless storm, leaving destruction in their wake. Her people fought valiantly to defend their sacred home, her parents among the bravest warriors, but the enemy's power was overwhelming. One by one, the Frostfire Timberlands burned, and her entire race was driven to extinction.<br><br>Feya, the last survivor, refused to go down without a fight. In a desperate stand, she unleashed her full power, incinerating the remaining Legion troops in a fiery explosion of magic. But her victory was fleeting. Drained and gravely wounded, she found herself face to face with the Nethersteel Pact’s ruthless general—Drakeon. Overwhelmed, she fell in battle, her strength fading as the dark forces prepared to end her existence.<br><br>Just as all hope seemed lost, the royal army of the Magelion Empire arrived, forcing the Nethersteel Pact into retreat. Yet, the damage had already been done—the once-thriving Frostfire Timberland lay in ruins, its beauty forever tainted by corruption. Hours later, Feya was found unconscious by the Empire’s scouts. Among them was Queen Liliana, a compassionate ruler renowned for her wisdom and healing powers. Moved by the sight of the broken girl and the devastation of her homeland, Liliana personally nursed Feya back to health. Recognizing the immense power within her, the queen adopted her as her own daughter, offering her a new life within the Empire.<br><br>Under Liliana’s guidance, Feya trained to become one of the Light Harbingers, an elite order sworn to protect the Crystalight, the heart of the Empire’s power. Though the wounds of her past still linger, Feya has found a new purpose—to ensure that no one else suffers the fate of her people. As the Fiery Fox of the Light Harbingers, she fights with relentless passion, wielding her magic to defend the Empire and those she holds dear. But with Drakeon still at large and the Nethersteel Pact looming in the shadows, she knows that her battle is far from over. Her past may have been forged in tragedy, but her future burns brighter than ever."
         };
-    } else if (character === 'evany') {
+    } else if (character === 'floribeth') {
         details = {
-            name: "<green>Evany Eldeblossom</green>",
+            name: "<green>Floribeth Eldeblossom</green>",
             race: "<info><green>Elf</green></info>",
             gender: "<info><green>Female</green></info>",
             height: "<info><green>5'6\" ft / 167.6 cm</green></info>",
@@ -237,7 +239,7 @@ function showCharacterInfo(character) {
             faction: "<info><green>Bloomforge Order</green></info>",
             role: "<info><green>Healer</green></info>",
             occupation: "<info><green>Eldertree Warden<green></info>",
-            affiliates: "<info><green><i class='fas fa-users'></i> Floribeth (Former Ally)</green></info> <info><green><i class='fas fa-users'></i> Shelain (Ally)</green></info> <info><green><i class='fas fa-users'></i> Liliana (Ally)</green></info> <info><green><i class='fas fa-users'></i> Arzhel (Companion)</green></info>",
+            affiliates: "<info><green><i class='fas fa-users'></i> Lunara (Former Ally)</green></info> <info><green><i class='fas fa-users'></i> Shelain (Ally)</green></info> <info><green><i class='fas fa-users'></i> Liliana (Ally)</green></info> <info><green><i class='fas fa-users'></i> Arzhel (Companion)</green></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/nature.webp", 
                 "assets/images/character-presets/elements/earth.webp"
@@ -251,7 +253,7 @@ function showCharacterInfo(character) {
             ability4: "<info><green><i class='fas fa-tree'></i> Nature’s Wrath</green></info> – Unleashes the fury of the forest in a massive AoE of erupting roots and vines.",
             ability5: "<info><green><i class='fas fa-vial'></i> Thornbind</green></info> – Immobilizes a target by entwining them in magical vines, silencing spellcasters.",
             ability6: "<info><green><i class='fas fa-pagelines'></i> Groveheart Ascension</green></info> – Temporarily enters an awakened state, enhancing all nature spells, summoning dryad spirits to fight alongside her.",
-            background: "Evany, guardian of nature and master of floramancy, once ruled the vast and vibrant Luminwood Expanse—a realm where flora and fauna danced in perfect harmony. A former elite of the ancient faction led by Princess Floribeth, Evany eventually stepped away from her old ties, seeking a deeper purpose. With a heart rooted in healing and preservation, she founded her own faction: the Bloomforge Order, sworn to protect the Tree of Life, the sacred heart of Eldoria itself—its roots stretching through generations of time.<br><br>Her homeland was once a breathtaking expanse of lush valleys, mystical groves, and ancient trees that whispered tales of old. Diverse in culture and wild in spirit also home to the elves, it was paradise. But after the devastating Great War, the land was left wounded—its spirit dimmed, its beauty scarred. Still, Evany remained unwavering. Her mission: to restore Luminwood to its former glory and protect it from any threat that dared approach. Peace, however, was fleeting<br><br>Not long after the war’s end, a mysterious corruption began to seep into the lands—spreading through the Elderhaven Wilds like rot beneath the surface. Dark magic, twisted and unnatural, corrupted creatures and poisoned the soil. The source? Unknown. The danger? Imminent. Evany acted swiftly. She reinforced borders, empowered her Bloomforge guardians, and sent urgent reports to the elite members of the Light Harbingers. Her warning proved timely. One fateful night, under a moon veiled in mist, a shadowy faction launched a full-scale assault on Luminwood Expanse.<br><br>But Evany, ever the strategist, was ready. Joined by her trusted companion Arzhel, she activated the ancient Solaraenian portal, summoning reinforcements just in time. Liliana Solarae and her forces arrived, rallying to Luminwood’s defense. The battle raged for hours under the canopy of burning leaves and flickering starlight. Though blood was shed and wounds were deep, they emerged victorious—with fewer casualties than feared. But Evany did not rejoice.<br><br> She knew this was only the beginning. Refusing to let her people fall again, she began fortifying Springvale, the heart of her realm, transforming it into a sanctuary and stronghold. With the unwavering aid of her allies, she prepares—not just to defend—but to reclaim what was once pure. For as long as she breathes, Evany will stand between corruption and creation."
+            background: "Floribeth, guardian of nature and master of floramancy, once ruled the vast and vibrant Luminwood Expanse—a realm where flora and fauna danced in perfect harmony. A former elite of the ancient faction led by Princess Lunara, Floribeth eventually stepped away from her old ties, seeking a deeper purpose. With a heart rooted in healing and preservation, she founded her own faction: the Bloomforge Order, sworn to protect the Tree of Life, the sacred heart of Eldoria itself—its roots stretching through generations of time.<br><br>Her homeland was once a breathtaking expanse of lush valleys, mystical groves, and ancient trees that whispered tales of old. Diverse in culture and wild in spirit also home to the elves, it was paradise. But after the devastating Great War, the land was left wounded—its spirit dimmed, its beauty scarred. Still, Floribeth remained unwavering. Her mission: to restore Luminwood to its former glory and protect it from any threat that dared approach. Peace, however, was fleeting<br><br>Not long after the war’s end, a mysterious corruption began to seep into the lands—spreading through the Elderhaven Wilds like rot beneath the surface. Dark magic, twisted and unnatural, corrupted creatures and poisoned the soil. The source? Unknown. The danger? Imminent. Floribeth acted swiftly. She reinforced borders, empowered her Bloomforge guardians, and sent urgent reports to the elite members of the Light Harbingers. Her warning proved timely. One fateful night, under a moon veiled in mist, a shadowy faction launched a full-scale assault on Luminwood Expanse.<br><br>But Floribeth, ever the strategist, was ready. Joined by her trusted companion Arzhel, she activated the ancient Solaraenian portal, summoning reinforcements just in time. Liliana Solarae and her forces arrived, rallying to Luminwood’s defense. The battle raged for hours under the canopy of burning leaves and flickering starlight. Though blood was shed and wounds were deep, they emerged victorious—with fewer casualties than feared. But Floribeth did not rejoice.<br><br> She knew this was only the beginning. Refusing to let her people fall again, she began fortifying Springvale, the heart of her realm, transforming it into a sanctuary and stronghold. With the unwavering aid of her allies, she prepares—not just to defend—but to reclaim what was once pure. For as long as she breathes, Floribeth will stand between corruption and creation."
         };
     } else if (character === 'blessica') {
         details = {
@@ -263,7 +265,7 @@ function showCharacterInfo(character) {
             faction: "<info><yellow>Light Harbingers</yellow></info>",
             role: "<info><yellow>Healer</yellow></info>",
             occupation: "<info><yellow>High Cleric<yellow></info>",
-            affiliates: "<info><yellow><i class='fas fa-users'></i> Floribeth (Sister)</yellow></info> <info><yellow><i class='fas fa-users'></i> Liliana (Niece)</yellow></info>",
+            affiliates: "<info><yellow><i class='fas fa-users'></i> Lunara (Sister)</yellow></info> <info><yellow><i class='fas fa-users'></i> Liliana (Niece)</yellow></info>",
             elementalImages: [
             "assets/images/character-presets/elements/light.webp"
             ],
@@ -276,7 +278,7 @@ function showCharacterInfo(character) {
             ability4: "<info><i class='fas fa-feather-alt'></i> <yellow>Guiding Feather</yellow></info> – Sends a magical feather to seek out an ally, instantly transporting Blessica to their side and restoring a portion of their health.",
             ability5: "<info><i class='fas fa-star-of-life'></i> <yellow>Lumina Pulse</yellow></info> – Releases a burst of holy light around her that heals nearby allies and damages nearby enemies of dark origin.",
             ability6: "<info><i class='fas fa-sun'></i> <yellow>Luminous Salvation</yellow></info> – Summons a radiant beam of holy light from above, scorching enemies within its range while simultaneously restoring the vitality of nearby allies.",
-            background: "Blessica, the second daughter of the Solaraenian King, was born in the celestial realm of Solaraenia—a majestic and radiant homeland of the Solaraenian beings. Gifted with powerful healing magic, she was known not only for her grace and talent, but also for the deep love she held for her older sister, Floribeth. But something began to change.<br><br>Floribeth had started slipping away during the nights, venturing into other realms—most often to the mortal world of Eldoria. She sought adventure, meaning, and secretly helped those in need while in her mortal form. Though destined to inherit the throne, Floribeth's heart was drifting from royal duty, and Blessica could see it clearly.<br><br>Years passed. Then came the day that shattered everything: a rumor spread through the palace—Floribeth was to be banished. The king had discovered her love for an Umbrakith prince, the very enemy of their kind. He called it betrayal. A crime against their people. Blessica pleaded with their father before the trial, but he would not listen. Floribeth was exiled.<br><br>Unable to bear the thought of losing her sister, Blessica followed her into the mortal realm, through the veils between worlds. She found her—together with Zion. And in her arms… a child. Their child. Blessica stood frozen, stunned by the revelation. But Floribeth's voice was calm and steady. She placed the baby in Blessica’s arms and whispered, “Take her. Keep her safe. I trust you. I’ve seen the future—this is the only timeline that can save the world. She is the future of our people.”<br><br>Floribeth then revealed there were truths their father had hidden—ancient secrets buried so deep that not even royal blood was meant to uncover them. Though torn and afraid, Blessica agreed. She took the child and vanished into the mortal world—just as a war erupted between gods and mortals. She tried to convince Floribeth to come with her, but her sister refused, determined to see her mission through to the end.<br><br>When Blessica returned to her homeland, the surviving members of the Order of Seekers were waiting. They informed her, with heavy hearts, that Floribeth had named her as the new leader before disappearing. As the war escalated, Blessica ordered one of the members to lead the people to safety—along with Floribeth’s child—while she and an elite warrior returned to aid her sister and stop the destruction. What they found was devastation—a battlefield drenched in chaos. Celestials, humans, elves, dwarves, sirens, dragons, and the relentless Umbrakith army all fought with desperation. Then the blood moon rose, and a wave of mysterious, overwhelming energy swept across the field. Thousands fell instantly.<br><br>In the heart of it all, they saw Floribeth—no longer herself—consumed by a dark force and mercilessly slaying both friend and foe, including the Solarae King. Horrified, Blessica and her companion confronted her. But Floribeth’s power had grown beyond anything they could have imagined. Blessica ordered a retreat, but her ally refused. Left with no other choice, she initiated a powerful sealing spell. With the aid of her elite comrades, loyal friends, and the last of the battlefield’s surviving warriors, they managed to imprison Floribeth.<br><br>The war ended in silence—but the cost was immeasurable. The world would never be the same again."
+            background: "Blessica, the second daughter of the Solaraenian King, was born in the celestial realm of Solaraenia—a majestic and radiant homeland of the Solaraenian beings. Gifted with powerful healing magic, she was known not only for her grace and talent, but also for the deep love she held for her older sister, Lunara. But something began to change.<br><br>Lunara had started slipping away during the nights, venturing into other realms—most often to the mortal world of Eldoria. She sought adventure, meaning, and secretly helped those in need while in her mortal form. Though destined to inherit the throne, Lunara's heart was drifting from royal duty, and Blessica could see it clearly.<br><br>Years passed. Then came the day that shattered everything: a rumor spread through the palace—Lunara was to be banished. The king had discovered her love for an Umbrakith prince, the very enemy of their kind. He called it betrayal. A crime against their people. Blessica pleaded with their father before the trial, but he would not listen. Lunara was exiled.<br><br>Unable to bear the thought of losing her sister, Blessica followed her into the mortal realm, through the veils between worlds. She found her—together with Zion. And in her arms… a child. Their child. Blessica stood frozen, stunned by the revelation. But Lunara's voice was calm and steady. She placed the baby in Blessica’s arms and whispered, “Take her. Keep her safe. I trust you. I’ve seen the future—this is the only timeline that can save the world. She is the future of our people.”<br><br>Lunara then revealed there were truths their father had hidden—ancient secrets buried so deep that not even royal blood was meant to uncover them. Though torn and afraid, Blessica agreed. She took the child and vanished into the mortal world—just as a war erupted between gods and mortals. She tried to convince Lunara to come with her, but her sister refused, determined to see her mission through to the end.<br><br>When Blessica returned to her homeland, the surviving members of the Order of Seekers were waiting. They informed her, with heavy hearts, that Lunara had named her as the new leader before disappearing. As the war escalated, Blessica ordered one of the members to lead the people to safety—along with Lunara’s child—while she and an elite warrior returned to aid her sister and stop the destruction. What they found was devastation—a battlefield drenched in chaos. Celestials, humans, elves, dwarves, sirens, dragons, and the relentless Umbrakith army all fought with desperation. Then the blood moon rose, and a wave of mysterious, overwhelming energy swept across the field. Thousands fell instantly.<br><br>In the heart of it all, they saw Lunara—no longer herself—consumed by a dark force and mercilessly slaying both friend and foe, including the Solarae King. Horrified, Blessica and her companion confronted her. But Lunara’s power had grown beyond anything they could have imagined. Blessica ordered a retreat, but her ally refused. Left with no other choice, she initiated a powerful sealing spell. With the aid of her elite comrades, loyal friends, and the last of the battlefield’s surviving warriors, they managed to imprison Lunara.<br><br>The war ended in silence—but the cost was immeasurable. The world would never be the same again."
         };
     } else if (character === 'coming-soon') {
         details = {
@@ -399,47 +401,71 @@ function hideCharacterInfo() {
     characterInfo.style.display = "none";
     
     // Optionally reset to default background when closed
-    const characterContainer = document.querySelector('.character-container');
+    const characterContainer = document.querySelector('.character-background');
     characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";
     currentCharacter = null; // Clear the current character when info is hidden
 }
 
-// Carousel functionality
-let currentIndex = 0;
+(() => {
+  // Local variables for the carousel
+  let currentIndex = 0;
+  let wrapper = null;
+  const GAP = 10; // Constant gap value (in pixels) between cards
 
-function calculateVisibleCards() {
-    const wrapper = document.querySelector(".character-cards-wrapper");
-    if (window.innerWidth > 1024) return 5;
-    if (window.innerWidth > 768) return 4;
-    if (window.innerWidth > 576) return 3;
-    if (window.innerWidth > 400) return 2;
-    return 1;
-}
-
-function updateCarousel() {
-    const wrapper = document.querySelector(".character-cards-wrapper");
-    const cardWidth = wrapper.children[0].offsetWidth + 10; // Include gap between cards
-    wrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
-}
-
-function scrollCarousel(direction) {
-    const visibleCards = calculateVisibleCards();
-    const wrapper = document.querySelector(".character-cards-wrapper");
-    const totalCards = wrapper.children.length;
-
-    // Adjust current index with wrapping behavior
-    currentIndex = (currentIndex + direction * visibleCards + totalCards) % totalCards;
-
+  // Initialize the carousel once DOM is ready
+  function initCarousel() {
+    wrapper = document.querySelector(".character-cards-wrapper");
+    if (!wrapper || !wrapper.children.length) return;
     updateCarousel();
-}
+    window.addEventListener("resize", handleResize);
+  }
 
-// Resize handling for responsive recalculation
-let resizeTimeout;
+  // Calculate how many cards are visible based on the current window width.
+  function calculateVisibleCards() {
+    const width = window.innerWidth;
+    if (width > 1024) return 5;
+    if (width > 768) return 4;
+    if (width > 576) return 3;
+    if (width > 400) return 2;
+    return 1;
+  }
 
-window.addEventListener('resize', function() {
+  // Update the carousel's transform to slide to the current index.
+  function updateCarousel() {
+    if (!wrapper || !wrapper.children.length) return;
+    // Get the first card's width plus the fixed gap.
+    const cardWidth = wrapper.children[0].offsetWidth + GAP;
+    wrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+  }
+
+  // Scroll the carousel in the provided direction.
+  // direction: 1 for forward, -1 for backward.
+  function scrollCarousel(direction) {
+    if (!wrapper) return;
+    const visibleCards = calculateVisibleCards();
+    const totalCards = wrapper.children.length;
+    
+    // If the total cards are less than or equal to visible cards, no need to scroll.
+    if (totalCards <= visibleCards) return;
+    
+    // Adjust the current index with wrapping behavior.
+    currentIndex = (currentIndex + direction * visibleCards + totalCards) % totalCards;
+    updateCarousel();
+  }
+
+  // Resize handling: wait until resizing stops, reset the index, and re-calculate.
+  let resizeTimeout;
+  function handleResize() {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
-        currentIndex = 0; // Reset index to prevent issues with partial visibility on resize
-        updateCarousel();
+      currentIndex = 0; // Reset index to prevent partial visibility on resize.
+      updateCarousel();
     }, 100);
-});
+  }
+
+  // Expose the scrollCarousel function globally to allow control from buttons, etc.
+  window.scrollCarousel = scrollCarousel;
+
+  // Initialize the carousel once the DOM content is loaded.
+  document.addEventListener("DOMContentLoaded", initCarousel);
+})();

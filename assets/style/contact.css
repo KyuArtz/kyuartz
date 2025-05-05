@@ -49,7 +49,7 @@ textarea,
 .upload-content {
     width: 100%;
     padding: 12px;
-    border: solid 1px;
+    border: 1px solid;
     border-radius: 10px;
     outline: none;
     margin: 8px 0;
@@ -100,7 +100,7 @@ img#image-preview {
 
 #remove-btn {
     padding: 5px;
-    border: solid 1px;
+    border: 1px solid;
     background: none;
     border-radius: 50px;
     width: 100%;
@@ -113,7 +113,7 @@ input[type="Submit"] {
     color: var(--color);
     background: var(--theme-color);
     padding: 10px 30px;
-    border: solid 1px;
+    border: 1px solid;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
@@ -135,7 +135,7 @@ input[type="Submit"] {
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    border: solid 1px;
+    border: 1px solid;
     color: var(--color);
     background: var(--theme-color);
 }
@@ -152,7 +152,7 @@ input[type="Submit"] {
     margin: 3px;
     transition: 0.3s ease-in-out;
     border-radius: 50px;
-    border: solid 1px;
+    border: 1px solid;
 }
 
 .payment img:hover {
