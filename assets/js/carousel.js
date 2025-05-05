@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         carouselInner.style.transform = `translateX(-${currentIndex * width}px)`;
     }
 
-    // 🏆 Auto-scroll feature
+    //Auto-scroll feature
     let autoScroll = setInterval(() => {
         currentIndex = (currentIndex + 1) % itemCount;
         updateCarousel();
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000);
     });
 
-    // 🖐 Swipe gesture support (mobile)
+    //Swipe gesture support (mobile)
     let startX = 0;
     carouselInner.addEventListener('touchstart', (event) => {
         startX = event.touches[0].clientX;
