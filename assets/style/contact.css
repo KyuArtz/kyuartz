@@ -160,7 +160,7 @@ input[type="Submit"] {
     border-radius: 50px;
     border: 1px solid;
     color: var(--color);
-    background: var(--content-bg);
+    background: var(--theme-overlay);
 }
 
 .payment img:hover {
