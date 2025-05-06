@@ -55,19 +55,11 @@ body {
     --theme-overlay: rgba(64, 64, 64, 0.5);
 }
 
-.theme-white-blue {
-    --theme-color: #ffffff;
-    --text-color: #333;
-    --color: #1e90ff;
-    --content-bg: #16212e;
-    --theme-overlay: rgba(30, 143, 255, 0.500);
-}
-
 .theme-modern-white {
     --theme-color: #ffffff;
     --text-color: #2e2e2e;
     --color: #808080;
-    --content-bg: #e6e6e6;
+    --content-bg: #dbdbdb;
     --theme-overlay: rgba(172, 172, 172, 0.5);
 }
 
@@ -77,6 +69,14 @@ body {
     --text-color: #f0f0f0;
     --color: #1e90ff;
     --content-bg: #16212e;
+    --theme-overlay: rgba(30, 143, 255, 0.500);
+}
+
+.theme-white-blue {
+    --theme-color: #ffffff;
+    --text-color: #333;
+    --color: #1e90ff;
+    --content-bg: #ccd5e0;
     --theme-overlay: rgba(30, 143, 255, 0.500);
 }
 
@@ -93,7 +93,7 @@ body {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #ff1e1e;
-    --content-bg: #2e1616;
+    --content-bg: #e0cccc;
     --theme-overlay: rgba(255, 30, 30, 0.5);
 }
 
@@ -102,7 +102,7 @@ body {
     --theme-color: #11051a;
     --text-color: #f0f0f0;
     --color: #a832ff;
-    --content-bg: #461e5a; 
+    --content-bg: #2c162e; 
     --theme-overlay: rgba(168, 50, 255, 0.5);
 }
 
@@ -110,7 +110,7 @@ body {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #a832ff;
-    --content-bg: #461e5a; 
+    --content-bg: #ddcce0; 
     --theme-overlay: rgba(168, 50, 255, 0.5);
 }
 
@@ -119,7 +119,7 @@ body {
     --theme-color: #051a08;
     --text-color: #f0f0f0;
     --color: #32ffa8;
-    --content-bg: #1e5a46;
+    --content-bg: #162e17; 
     --theme-overlay: rgba(50, 255, 168, 0.5);
 }
 
@@ -127,7 +127,7 @@ body {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #32ffa8;
-    --content-bg: #1e5a46;
+    --content-bg: #cce0cd;
     --theme-overlay: rgba(50, 255, 168, 0.5);
 }
 
@@ -136,7 +136,7 @@ body {
     --theme-color: #1a1a05;
     --text-color: #f0f0f0;
     --color: #ffa832;
-    --content-bg: #5a5a1e;
+    --content-bg: #2e2e16;
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
@@ -144,7 +144,7 @@ body {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #ffa832;
-    --content-bg: #5a5a1e;
+    --content-bg: #e0e0cc;
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
