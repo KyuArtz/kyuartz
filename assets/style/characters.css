@@ -215,7 +215,7 @@ p.title {
     border-bottom: solid 5px var(--theme-color);
     box-shadow: inset 0px 15px 15px -15px var(--color), 
                 inset 0px -15px 15px -15px var(--color);
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     max-width: 400px;
 }
