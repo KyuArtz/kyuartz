@@ -73,8 +73,8 @@
 
 .character-wrapper h3,
 .character-wrapper h5,
-.character-wrapper p {
-    text-shadow: 0 0 3px #0a0a0a;
+.character-wrapper p.title  {
+    text-shadow: 0 0 2px #0a0a0a;
 }
 
 .character-slider {
@@ -93,7 +93,7 @@
 .carousel-view h2 {
     color: #ff9239;
     text-align: center;
-    border-bottom: solid 1px var(--theme-color);
+    border-bottom: 1px solid var(--theme-color);
     padding: 5px;
 }
 
@@ -169,7 +169,7 @@ p.title {
 .character-card:hover .overlay,
 .character-card.clicked .overlay {
     height: 25%;
-    box-shadow: inset 0px -30px 30px -30px #ff9239;
+    box-shadow: inset 0px -20px 20px -20px #ff9239;
 }
 
 .carousel-btn {
@@ -177,8 +177,9 @@ p.title {
     justify-content: center;
     align-items: center;
     border: 1px solid #f0f0f0;
+    box-shadow: 0 0 2px var(--color);
     background: var(--theme-color);
-    color: var(--color);
+    color: var(--text-color);
     padding: 65px 10px;
     margin: 0 10px;
 }
@@ -212,6 +213,8 @@ p.title {
     border-radius: 10px;
     border-top: solid 5px var(--theme-color);
     border-bottom: solid 5px var(--theme-color);
+    box-shadow: inset 0px 15px 15px -15px var(--color), 
+                inset 0px -15px 15px -15px var(--color);
     padding: 20px;
     width: 100%;
     max-width: 400px;
@@ -244,9 +247,9 @@ p.title {
 .character-info blue { color: #1e90ff; }
 .character-info red { color: #e02626; }
 .character-info pink { color: #ff2c4f; }
-.character-info yellow { color: #ffe23b; }
-.character-info orange { color: #ffac11; }
-.character-info green { color: #90ee90; }
+.character-info yellow { color: #ffd900; }
+.character-info orange { color: #e79b0d; }
+.character-info green { color: #2ccc2c; }
 
 .character-info-scrollable {
     overflow-y: auto;
@@ -260,7 +263,7 @@ p.title {
 }
 
 .info-section {
-    border-bottom: solid 1px;
+    border-bottom: 1px solid;
 }
 
 .role {
