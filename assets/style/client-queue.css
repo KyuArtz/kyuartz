@@ -27,7 +27,7 @@ section p {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: var(--theme-color);
+    background: var(--content-bg);
     box-shadow: 0 0 3px #000;
 }
 
@@ -76,6 +76,7 @@ strong {
     box-shadow: 0 0 2px;
     margin: 30px 5px 5px;
     border-radius: 10px;
+    background: var(--content-bg);
 }
 
 @media (max-width: 768px) {

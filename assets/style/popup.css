@@ -57,7 +57,7 @@
 
 #welcome-message button {
     padding: 10px 20px;
-    color: var(--text-color);
+    color: var(--color);
     border: thin solid;
     border-radius: 50px;
 }
@@ -90,7 +90,7 @@
 .donate-popup h2,
 .popup-wn h2 {
     color: var(--color);
-    border-bottom: solid thin var(--text-color);
+    border-bottom: solid thin;
 }
 
 .popup-notice p {
@@ -100,8 +100,8 @@
 .popup-notice button {
     width: 50%;
     padding: 10px 0;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
+    color: var(--color);
+    border: 1px solid;
     outline: none;
     border-radius: 50px;
 }
@@ -158,8 +158,8 @@
 .donate-popup button {
     width: 50%;
     padding: 10px 0;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
+    color: var(--color);
+    border: 1px solid;
     outline: none;
     border-radius: 50px;
 }
@@ -226,9 +226,9 @@ button.close {
     width: 30px;
     height: 30px;
     aspect-ratio: 1/1;
-    color: var(--text-color);
+    color: var(--color);
     outline: none;
-    border: 1px solid var(--text-color);
+    border: 1px solid;
     border-radius: 50px;
 }
 
@@ -265,7 +265,7 @@ button.close {
     background: var(--theme-color);
     outline: none;
     aspect-ratio: 1 / 1;
-    border: 1px solid var(--text-color);
+    border: 1px solid;
     animation: wiggleAnimation 1s infinite;
     z-index: 50;
 }
@@ -316,8 +316,8 @@ button.close {
 }
 
 .cookie-popup button {
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
+    color: var(--color);
+    border: 1px solid;
     padding: 10px 30px;
     border-radius: 50px;
 }

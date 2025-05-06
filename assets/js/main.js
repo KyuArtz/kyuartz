@@ -37,77 +37,75 @@ function hideLoader() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  function changeTheme(themeName) {
-    // Remove any previously set theme class
-    document.body.classList.remove(...document.body.classList);
-    
-    // Apply the selected theme as a class to the body
-    document.body.classList.add(`theme-${themeName}`);
-    
-    // Save the selected theme in localStorage
-    localStorage.setItem('selectedTheme', themeName);
+function changeTheme(themeName) {
+  // Remove any previously set theme class
+  document.body.classList.remove(...document.body.classList);
+  
+  // Apply the selected theme as a class to the body
+  document.body.classList.add(`theme-${themeName}`);
+  
+  // Save the selected theme in localStorage
+  localStorage.setItem('selectedTheme', themeName);
+}
+
+// Function to load the saved theme from localStorage when the page loads
+function loadThemeFromStorage() {
+  const savedTheme = localStorage.getItem('selectedTheme');
+  
+  // If a theme was saved, apply it
+  if (savedTheme) {
+      changeTheme(savedTheme);
+  } else {
+      // Default theme if none is saved
+      changeTheme('default');
   }
+}
 
-  // Function to load the saved theme from localStorage when the page loads
-  function loadThemeFromStorage() {
-    const savedTheme = localStorage.getItem('selectedTheme');
-    
-    // If a theme was saved, apply it
-    if (savedTheme) {
-        changeTheme(savedTheme);
-    } else {
-        // Default theme if none is saved
-        changeTheme('default');
-    }
-  }
+// Execute theme load on page load
+window.onload = function() {
+  loadThemeFromStorage();
+};
 
-  // Execute theme load on page load
-  window.onload = function() {
-    loadThemeFromStorage();
-  };
+const themeOptions = [
+  { name: "Default", value: "default" },
+  { name: "Dark-Blue", value: "dark-blue" },
+  { name: "Dark-Red", value: "dark-red"},
+  { name: "Dark-Purple", value: "dark-purple"},
+  { name: "Dark-Green", value: "dark-green"},
+  { name: "Dark-Yellow", value: "dark-yellow"},
+  { name: "Modern-White", value: "modern-white"},
+  { name: "White-Blue", value: "white-blue"},    
+  { name: "White-Red", value: "white-red" },
+  { name: "White-Purple", value: "white-purple"},
+  { name: "White-Green", value: "white-green"},
+  { name: "White-Yellow", value: "white-yellow"},
+];
 
-  const themeOptions = [
-    { name: "Default", value: "default" },
-    { name: "Dark-Blue", value: "dark-blue" },
-    { name: "Dark-Red", value: "dark-red"},
-    { name: "Dark-Purple", value: "dark-purple"},
-    { name: "Dark-Green", value: "dark-green"},
-    { name: "Dark-Yellow", value: "dark-yellow"},
-    { name: "Modern-White", value: "modern-white"},
-    { name: "White-Blue", value: "white-blue"},    
-    { name: "White-Red", value: "white-red" },
-    { name: "White-Purple", value: "white-purple"},
-    { name: "White-Green", value: "white-green"},
-    { name: "White-Yellow", value: "white-yellow"},
-  ];
+// Check if the theme select dropdown exists
+const themeSelect = document.getElementById('theme-select');
 
-  // Check if the theme select dropdown exists
-  const themeSelect = document.getElementById('theme-select');
+if (themeSelect) {
+  // Dynamically create the theme options in the dropdown
+  themeOptions.forEach(theme => {
+    const option = document.createElement('option');
+    option.innerText = theme.name;
+    option.value = theme.value;
+    themeSelect.appendChild(option);
+  });
 
-  if (themeSelect) {
-    // Dynamically create the theme options in the dropdown
-    themeOptions.forEach(theme => {
-      const option = document.createElement('option');
-      option.innerText = theme.name;
-      option.value = theme.value;
-      themeSelect.appendChild(option);
-    });
+  // Function to change the theme based on selection
+  themeSelect.addEventListener('change', (e) => {
+    const selectedTheme = e.target.value;
+    changeTheme(selectedTheme);
+  });
 
-    // Function to change the theme based on selection
-    themeSelect.addEventListener('change', (e) => {
-      const selectedTheme = e.target.value;
-      changeTheme(selectedTheme);
-    });
-
-    // Load the previously selected theme into the dropdown on page load (if saved)
-    document.addEventListener('DOMContentLoaded', () => {
-      const savedTheme = localStorage.getItem('selectedTheme') || 'default';
-      document.body.className = 'theme-' + savedTheme;
-      themeSelect.value = savedTheme; // Set the dropdown value to the saved theme
-    });
-  }
-});
+  // Load the previously selected theme into the dropdown on page load (if saved)
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('selectedTheme') || 'default';
+    document.body.className = 'theme-' + savedTheme;
+    themeSelect.value = savedTheme; // Set the dropdown value to the saved theme
+  });
+};
 
 document.addEventListener('DOMContentLoaded', () => {
   /**

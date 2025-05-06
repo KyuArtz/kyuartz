@@ -76,6 +76,7 @@
     width: 55px;
     height: 55px;
     border-radius: 6px;
+    background: var(--content-bg);
     transform: scale(1);
 }
 
@@ -99,6 +100,7 @@
     flex-direction: column;
     padding: 10px;
     border-radius: 10px;
+    background: var(--theme-color);
 }
 
 .pfp-container {
@@ -117,6 +119,7 @@
     padding: 10px 16px;
     border-radius: 50px 50px 10px 10px;
     box-shadow: 0 0 2px;
+    background: var(--content-bg);
 }
 
 .my-info h1 {
@@ -131,6 +134,7 @@
     color: var(--text-color);
     border-radius: 30px 50px 50px 30px;
     border: 1px solid;
+    background: var(--theme-color);
 }
 
 .my-info p:hover,
@@ -149,7 +153,7 @@
     aspect-ratio: 1/1;
     margin: 3px;
     border: 1px solid var(--text-color);
-    background: var(--overlay);
+    background: var(--theme-color);
     object-fit: cover;
     border-radius: 10px;
 }

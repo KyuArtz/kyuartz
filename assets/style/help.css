@@ -15,7 +15,7 @@
 
 .help-card {
     width: calc(50% - 10px); /* Two cards per row on larger screens */
-    background: var(--theme-overlay);
+    background: var(--content-bg);
     border-radius: 8px;
     box-shadow: 0 0 3px #000;
     overflow: hidden;

@@ -176,6 +176,7 @@ header {
     padding: 0;
     border: 1px solid var(--text-color);
     border-radius: 50px;
+    overflow: hidden;
 }
 
 form.search input[type="search"] {

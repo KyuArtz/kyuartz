@@ -41,7 +41,7 @@ span.percent {
 
 .cs-container h2,
 .inquire-button {
-    background: var(--theme-overlay);
+    background: var(--content-bg);
 }
 
 .cs-container p {
