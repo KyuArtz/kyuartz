@@ -45,14 +45,11 @@ span.percent {
 }
 
 .cs-container p {
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    padding: 10px;
     text-align: left;
     color: var(--text-color);
-    gap: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
+    background: var(--content-bg);
 }
 
 .price h3 {
@@ -65,7 +62,6 @@ span.percent {
 }
 
 .inquire-button {
-    text-align: right;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -95,6 +91,26 @@ span.percent {
     overflow: hidden;
 }
 
+.cs-content2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: var(--text-color);
+    text-align: left;
+    padding: 10px;
+}
+
+.cs-content2 section {
+    border-radius: 10px;
+    box-shadow: 0 0 2px var(--text-color);
+    overflow: hidden;
+}
+
+.cs-content2 p {
+    background: none;
+    border-radius: 0;
+}
+
 .cs-container img {
     position: relative;
     width: 350px;
@@ -113,11 +129,17 @@ span.percent {
     .cs-flex {
         flex-direction: column;
     }
+
     .inquire-button {
         text-align: center;
         flex-direction: column;
     }
+
     .cs-container img {
         width: 100%;
+    }
+
+    .cs-content2 {
+        flex-direction: column;
     }
 }
