@@ -341,7 +341,6 @@ form.search::after {
     background: var(--theme-color);
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-    box-shadow: 0 0 1px var(--text-color);
     transition: 0.3s ease-in-out;
 }
 
