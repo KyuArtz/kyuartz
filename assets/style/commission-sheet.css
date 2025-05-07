@@ -33,10 +33,12 @@ span.percent {
 }
 
 .cs-container h2 {
+    position: relative;
     padding: 9px;
     margin: 0;
     color: var(--text-color);
     box-shadow: 0 0 2px var(--text-color);
+    z-index: 1;
 }
 
 .cs-container h2,
