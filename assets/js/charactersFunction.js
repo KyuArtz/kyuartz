@@ -111,7 +111,7 @@ function showCharacterInfo(character) {
             homeland: "<info><purple>Unknown</purple></info>",
             faction: "<info><purple>None</purple></info>",
             role: "<info><purple>Mage</purple></info> <info><purple>Warrior</purple></info>",
-            occupation: "<info><purple>Unknown<purple></info>",
+            occupation: "<info><purple>None<purple></info>",
             affiliates: "<info><purple><i class='fas fa-users'></i> Unknown</purple></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/shadow.webp"
@@ -185,9 +185,9 @@ function showCharacterInfo(character) {
             gender: "<info><red>Female</red></info>",
             height: "<info><red>5'9\" ft / 175.3 cm</red></info>",
             homeland: "<info><red>Solaraenia</red></info>",
-            faction: "<info><red>Order of Seekers</red></info>",
+            faction: "<info><red>None</red></info>",
             role: "<info><red>Mage</red></info>",
-            occupation: "<info><red>Unknown<red></info>",
+            occupation: "<info><red>None<red></info>",
             affiliates: "<info><red><i class='fas fa-users'></i> Zion (Lover)</red></info> <info><red><i class='fas fa-users'></i> Liliana (Daughter)</red></info> <info><red><i class='fas fa-users'></i> Blessica (Sister)</red></info> <info><red><i class='fas fa-users'></i> Floribeth (Former Ally)</red></info> <info><red><i class='fas fa-users'></i> Shelain (Former Ally)</red></info>",
             elementalImages: [
                 "assets/images/character-presets/elements/shadow.webp"
