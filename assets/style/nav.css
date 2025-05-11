@@ -511,7 +511,7 @@ option {
     justify-content: center;
     position: relative;
     padding: 10px;
-    background: var(--color);
+    background: var(--theme-color);
     box-shadow: 0 0 2px var(--text-color);
     color: var(--color);
     text-align: center;
@@ -544,7 +544,7 @@ option {
     height: 30px;
     border-radius: 50%;
     border: 1px solid var(--text-color);
-    background: var(--theme-overlay);
+    background: var(--color);
     margin: 0 3px;
     object-fit: cover;
 }
