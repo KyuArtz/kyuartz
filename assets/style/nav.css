@@ -336,23 +336,21 @@ form.search::after {
     display: none;
 }
 
-.sideMenu-content,
-.category-menu {
-    background: var(--theme-color);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-    transition: 0.3s ease-in-out;
-}
-
 .sideMenu-content {
     position: fixed;
     top: 50px;
-    left: -100%;
+    left: 0;
+    background: var(--theme-color);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     display: flex;
     flex-direction: column;
     min-width: 200px;
     height: 100vh;
     padding-bottom: 50px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
     overflow: auto;
 }
 
@@ -382,7 +380,20 @@ form.search::after {
 }
 
 .show-sideMenu {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    background: var(--overlay);
+    z-index: 1000;
+    display: none;
 }
 
 .secondary-navigation {
@@ -429,7 +440,10 @@ form.search::after {
 .category-menu {
     position: fixed;
     top: 100px;
-    left: -100%;
+    left: 0;
+    background: var(--theme-color);
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     display: flex;
     flex-direction: column;
     min-width: 150px;
@@ -437,6 +451,10 @@ form.search::after {
     padding: 0 0 50px 0;
     margin: 0;
     justify-content: left;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    backdrop-filter: blur(8px); /* Blur effect */
+    opacity: 0;
     overflow: auto;
 }
 
@@ -462,8 +480,10 @@ form.search::after {
     background: var(--text-color);
 }
 
-.category-menu.categoryMenu-active {
-    left: 0;
+.category-menu.categoryMenu-show {
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 1;
 }
 
 .currency-conversion-btn {

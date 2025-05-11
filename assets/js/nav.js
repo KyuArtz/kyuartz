@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Cache DOM elements
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".navigation-menu");
   const navLinks = document.querySelectorAll(".nav-link");
   const sideMenuLinks = document.querySelectorAll(".nav-link-sideMenu");
   const sideMenuContents = document.querySelectorAll(".sideMenu-content");
+  const blurOverlay = document.querySelector(".blur-overlay");
   const btn = document.querySelector(".category-btn");
   const categoryMenu = document.querySelector(".category-menu");
   const settingsBtn = document.querySelector(".settings-btn");
@@ -31,17 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
       event.stopPropagation(); // Prevents window click handler from closing the side menu
       const sideMenuContent = event.currentTarget.nextElementSibling;
       sideMenuContent.classList.toggle("show-sideMenu");
+      blurOverlay.style.display = sideMenuContent.classList.contains("show-sideMenu") ? "block" : "none";
     });
   });
 
   // Toggle category menu visibility
   btn?.addEventListener("click", () => {
-    categoryMenu.classList.toggle("categoryMenu-active");
+    categoryMenu.classList.toggle("categoryMenu-show");
   });
 
   document.querySelectorAll(".category-link").forEach(n => 
     n.addEventListener("click", () => {
-      categoryMenu.classList.remove("categoryMenu-active");
+      categoryMenu.classList.remove("categoryMenu-show");
     })
   );
 
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Close side menu if clicked outside
     if (!clickedInsideSideMenu && !clickedInsideContent) {
       sideMenuContents.forEach(content => content.classList.remove("show-sideMenu"));
+      blurOverlay.style.display = "none";
     }
 
     // Close nav menu if clicked outside

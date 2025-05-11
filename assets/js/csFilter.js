@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.img-container').forEach(img => {
+  document.querySelectorAll('.sample-img').forEach(img => {
       img.addEventListener('click', function() {
           // Toggle the 'clicked' class
           this.classList.toggle('clicked');
