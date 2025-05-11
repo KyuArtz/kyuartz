@@ -170,7 +170,6 @@ input[type="Submit"] {
 
 .gbm img {
     width: 80%;
-    transform: scale(1);
     transition: 0.3s ease-in-out;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 }
