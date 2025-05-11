@@ -83,7 +83,7 @@ function showCharacterInfo(character) {
             race: "<info><blue>Human</blue></info>",
             gender: "<info><blue>Female</blue></info>",
             height: "<info><blue>5'5\" ft / 165.1 cm</blue></info>",
-            homeland: "<info><blue>Orag City, District 3</blue></info>",
+            homeland: "<info><blue>Orag City, Zone 3</blue></info>",
             faction: "<info><blue>Falconite</blue></info>",
             role: "<info><blue>Versatile</blue></info>",
             occupation: "<info><blue>Tactical Specialist<blue></info>",
