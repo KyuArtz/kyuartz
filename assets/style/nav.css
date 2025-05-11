@@ -511,7 +511,7 @@ option {
     justify-content: center;
     position: relative;
     padding: 10px;
-    background: var(--theme-color);
+    background: var(--color);
     box-shadow: 0 0 2px var(--text-color);
     color: var(--color);
     text-align: center;
