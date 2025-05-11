@@ -23,7 +23,7 @@ header {
 }
 
 .subMenu-container {
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ header {
 }
 
 .settings-btn {
-    color: var(--text-color);
+    color: var(--color);
     padding: 10px 15px;
     border: none;
 }
@@ -112,7 +112,7 @@ header {
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color);
 }
 
 .nav-link,
@@ -167,14 +167,14 @@ header {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background: var(--text-color);
+    background: var(--color);
     transition: 0.3s ease-in-out;
 }
 
 .search-container {
     margin: 0 5px;
     padding: 0;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color);
     border-radius: 50px;
     overflow: hidden;
 }
@@ -412,7 +412,7 @@ form.search::after {
     display: flex;
     align-items: center;
     padding: 5px;
-    border: 1px solid;
+    border: 1px solid var(--color);
     border-radius: 50px;
     transition: 0.5s ease-in-out;
 }
@@ -471,7 +471,7 @@ form.search::after {
     right: 0;
     padding: 5px 20px;
     margin: auto 5px;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--color);
     border-radius: 5px;
     color: var(--color);
     background: none;

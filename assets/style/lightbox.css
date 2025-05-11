@@ -51,7 +51,7 @@ body.lb-disable-scrolling {
     border-radius: 5px;
     color: var(--color);
     background: var(--theme-color);
-    box-shadow: 0 0 3px;
+    box-shadow: 0 0 5px;
 }
 
 .lb-outerContainer:after {
