@@ -7,7 +7,7 @@ body.lb-disable-scrolling {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
+    z-index: 100;
     background-color: var(--overlay);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -20,7 +20,7 @@ body.lb-disable-scrolling {
     position: absolute;
     left: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 100;
     text-align: center;
     line-height: 0;
     font-weight: normal;
