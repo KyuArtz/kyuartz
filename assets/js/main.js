@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Apply the tilt effect to elements with the "caption-content" class.
   // To use it on other content, simply change the selector instead.
-  applyTiltEffect('.caption-content', { maxTilt: 10, perspective: 500 });
+  applyTiltEffect('.caption-content', { maxTilt: 5, perspective: 500 });
   applyTiltEffect('.character-card', { maxTilt: 7, perspective: 500 });
   applyTiltEffect('.character-info', { maxTilt: 3, perspective: 500 });
   applyTiltEffect('.character-slider', { maxTilt: 1, perspective: 500 });

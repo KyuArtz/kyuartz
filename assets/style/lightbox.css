@@ -152,7 +152,8 @@ body.lb-disable-scrolling {
 
 .lb-data {
     padding: 0 4px;
-    color: #ccc;
+    color: #f0f0f0;
+    text-shadow: 0 0 3px #0a0a0a;
 }
 
 .lb-data .lb-details {
@@ -164,7 +165,6 @@ body.lb-disable-scrolling {
 
 .lb-data .lb-caption {
     line-height: 1em;
-    color: #f0f0f0;
 }
 
 .lb-data .lb-caption a {
