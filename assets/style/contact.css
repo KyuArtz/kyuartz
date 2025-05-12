@@ -115,7 +115,7 @@ input[type="checkbox"] {
     color: var(--color);
 }
 
-input[type="Submit"] {
+button[type="Submit"] {
     color: var(--color);
     background: var(--theme-color);
     padding: 10px 30px;
@@ -204,7 +204,7 @@ input[type="Submit"] {
 }
 
 @media screen and (max-width: 995px) {
-    input[type="Submit"] {
+    button[type="Submit"] {
         margin: 15px 0;
         width: 100%;
     }

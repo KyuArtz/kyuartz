@@ -105,7 +105,7 @@ img#image-preview {
     transition: 0.3s ease-in-out;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     color: var(--color);
     background: var(--theme-color);
     padding: 10px 30px;
@@ -117,7 +117,7 @@ input[type="submit"] {
     form.customer {
       padding: 15px;
     }
-    input[type="submit"] {
+    button[type="submit"] {
       width: 100%;
     }
 }
