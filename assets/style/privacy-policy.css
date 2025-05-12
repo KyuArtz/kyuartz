@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background: url('../images/bg/lbg_main1.webp');
+    background: url('../images/bg/lbg_main1.webp'), var(--overlay);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

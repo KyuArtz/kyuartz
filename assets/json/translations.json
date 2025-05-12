@@ -139,7 +139,6 @@
     "help6": "Having technical issues? Find solutions to common problems.",
 
     "userName": "Kyu Shi",
-
     "yourPreferences": "Your Preferences",
     "selectTheme": "Select Theme :",
     "selectLanguage": "Select Language : ( BETA )",
@@ -300,6 +299,13 @@
   "contactSupport": "サポートへ連絡",
   "userGuide": "ユーザーガイド",
   "troubleshooting": "トラブルシューティング",
+
+  "help1": "コミッション、プロジェクトなどに関するよくある質問の回答を見つけてください。",
+  "help2": "あなたの体験を管理する規則や規制を確認してください。詳しくはこちら！",
+  "help3": "あなたのプライバシーは私たちにとって重要です。私たちがデータをどのように扱い、個人情報を保護するかをご確認ください。",
+  "help4": "お困りですか？カスタマーサポートフォームからお問い合わせください。",
+  "help5": "サイトの操作方法、コミッションのリクエスト、機能の探索方法を学んでください。",
+  "help6": "技術的な問題が発生していますか？よくある問題の解決策を見つけてください。",
   
   "userName": "Kyu Shi",
   "yourPreferences": "あなたの設定",
