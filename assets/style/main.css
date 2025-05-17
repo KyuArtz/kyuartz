@@ -35,7 +35,6 @@ body {
 }
 
 :root {
-    /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
     --theme-color: #0a0a0a;
     --text-color: #f0f0f0;
     --color: #8a8a8a;
@@ -47,7 +46,6 @@ body {
 }
 
 .theme-default {
-    /* --theme-color: linear-gradient(to right, rgb(10, 10, 10), rgb(20, 20, 20), rgb(30, 30, 30)); */
     --theme-color: #0a0a0a;
     --text-color: #f0f0f0;
     --color: #8a8a8a;
@@ -64,7 +62,6 @@ body {
 }
 
 .theme-dark-blue {
-    /* --theme-color: linear-gradient(to right, rgb(15, 17, 22), rgb(28, 31, 39), rgb(45, 50, 61)); */
     --theme-color: #1c1f27;
     --text-color: #f0f0f0;
     --color: #1e90ff;
@@ -81,7 +78,6 @@ body {
 }
 
 .theme-dark-red {
-    /* --theme-color: linear-gradient(to right, rgb(22, 15, 15), rgb(39, 28, 28), rgb(61, 45, 45)); */
     --theme-color: #160f0f;
     --text-color: #f0f0f0;
     --color: #ff1e1e;
@@ -98,7 +94,6 @@ body {
 }
 
 .theme-dark-purple {
-    /* --theme-color: linear-gradient(to right, rgb(35, 0, 61), rgb(55, 0, 85), rgb(85, 0, 115)); */
     --theme-color: #11051a;
     --text-color: #f0f0f0;
     --color: #a832ff;
@@ -115,7 +110,6 @@ body {
 }
 
 .theme-dark-green {
-    /* --theme-color: linear-gradient(to right, rgb(0, 61, 35), rgb(0, 85, 55), rgb(0, 115, 85)); */
     --theme-color: #051a08;
     --text-color: #f0f0f0;
     --color: #32ffa8;
@@ -132,7 +126,6 @@ body {
 }
 
 .theme-dark-yellow {
-    /* --theme-color: linear-gradient(to right, rgb(61, 61, 0), rgb(85, 85, 0), rgb(115, 115, 0)); */
     --theme-color: #1a1a05;
     --text-color: #f0f0f0;
     --color: #ffa832;
