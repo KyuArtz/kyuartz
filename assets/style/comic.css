@@ -48,17 +48,15 @@ button.next {
     font-weight: bold;
     transition: 0.3s ease-in-out;
     user-select: none;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .next {
     right: 0;
-    border-radius: 20px 0 0 20px;
 }
 
 .prev {
     left: 0;
-    border-radius: 0 20px 20px 0;
 }
 
 .next:hover,
@@ -107,18 +105,14 @@ button.next {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: var(--content-bg);
     position: absolute;
     color: var(--color);
     padding: 8px 12px;
 }
 
 .chapter {
-    background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    background: var(--content-bg);
     padding: 5px 10px;
     position: absolute;
     display: flex;

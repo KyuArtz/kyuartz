@@ -35,10 +35,10 @@ button.prev {
 
 .next,
 .prev {
+    height: 100vh;
     position: absolute;
-    top: 50%;
-    margin-top: -32px;
-    padding: 16px;
+    top: 0;
+    padding: 15px;
     color: var(--color);
     font-weight: bold;
     user-select: none;
@@ -49,12 +49,10 @@ button.prev {
 
 .next {
     right: 0;
-    border-radius: 20px 0 0 20px;
 }
 
 .prev {
     left: 0;
-    border-radius: 0 20px 20px 0;
 }
 
 .next:hover,
@@ -85,6 +83,7 @@ button.prev {
     height: 100%;
     transition: transform 0.2s ease-out;
     transform-style: preserve-3d;
+    backface-visibility: visible;
 }
 
 .caption-overlay h1 {
