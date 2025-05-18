@@ -1,17 +1,17 @@
 // Map character names to landscape and portrait background images
 const characterBackgrounds = {
-    comingSoon: { landscape: "url('')", portrait: "url('')" },
-    elishia: { landscape: "url('assets/images/bg/lbg_main2.webp')", portrait: "url('')" },
-    hexxana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    ren: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    rayza: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    liliana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    blessica: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    lunara: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    floribeth: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    shelain: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
-    arzhel: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },   
-    feya: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('')" },
+    comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
+    elishia: { landscape: "url('assets/images/bg/lbg_main2.webp')", portrait: "url('assets/images/bg/lbg_main2.webp')" },
+    hexxana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    ren: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    rayza: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    liliana: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    blessica: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    lunara: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    floribeth: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    shelain: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
+    arzhel: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },   
+    feya: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
 };
 
 // Track the currently selected character
