@@ -53,28 +53,28 @@ function showCharacterInfo(character) {
 
     // Set default character details
     let details = {
-        name: "Info Not Available Yet",
-        race: "",
-        gender: "",
-        height: "",
-        homeland: "",
-        faction:"",
-        role:"",
-        occupation: "",
-        affiliates: "",
+        name: "<gray>Info Not Available Yet</gray>",
+        race: "<info><gray>Unknown</gray></info>",
+        gender: "<info><gray>Unknown</gray></info>",
+        height: "<info><gray>Unknown</gray></info>",
+        homeland: "<info><gray>Unknown</gray></info>",
+        faction: "<info><gray>Unknown</gray></info>",
+        role: "<info><gray>Unknown</gray></info>",
+        occupation: "<info><gray>Unknown<gray></info>",
+        affiliates: "<info><i class='fas fa-users'></i> <gray>Unknown</gray></info>",
         elementalImages: [
             "assets/images/character-presets/roles/question.webp"
         ],
-        likes: "",
-        dislikes: "",
-        weapon: "",
-        ability1: "",
-        ability2: "",
-        ability3: "",
-        ability4: "",
-        ability5: "",
-        ability6: "",
-        background: ""
+        likes: "<info><i class='fas fa-check'></i> <gray>Unknown</gray></info>",
+        dislikes: "<info><i class='fas fa-times'></i> <gray>Unknown</gray></info>",
+        weapon: "<info><i class='fas fa-heart'></i> <gray>Unknown</gray></info>",
+        ability1: "<info><i class='fas fa-star'></i> <gray>Ability 1</gray></info> – Description coming soon.",
+        ability2: "<info><i class='fas fa-star'></i> <gray>Ability 2</gray></info> – Description coming soon.",
+        ability3: "<info><i class='fas fa-star'></i> <gray>Ability 3</gray></info> – Description coming soon.",
+        ability4: "<info><i class='fas fa-star'></i> <gray>Ability 4</gray></info> – Description coming soon.",
+        ability5: "<info><i class='fas fa-star'></i> <gray>Ability 5</gray></info> – Description coming soon.",
+        ability6: "<info><i class='fas fa-star'></i> <gray>Ability 6</gray></info> – Description coming soon.",
+        background: "<info><i class='fas fa-book'></i> <gray>Background details coming soon.</gray></info>"
     };
 
     if (character === 'elishia') {
@@ -176,7 +176,7 @@ function showCharacterInfo(character) {
             ability4: "<info><yellow><i class='fas fa-icicles'></i> Glacial Lance</yellow></info> – Forms a sharp spear of frozen light and hurls it with deadly precision, piercing through enemies and freezing them on impact.",
             ability5: "<info><yellow><i class='fas fa-star-of-life'></i> Aurora Ascension</yellow></info> – Enters a transcendent state, amplifying all her abilities for a short duration and radiating waves of healing energy.",
             ability6: "<info><yellow><i class='fas fa-praying-hands'></i> Celestial Oath</yellow></info> – Liliana binds her soul to her allies, making them temporarily invulnerable to death for several seconds. If she falls during this time, she is revived in a burst of healing light that restores nearby allies.",
-            background: "Liliana Solarae, the radiant founder of the Magelion Empire, rose from the ashes of a fallen world. After the death of the Solaraenia King and the mysterious disappearance of her mother, Lunara, during the catastrophic Great War, Liliana—still a child—was swept into the chaos of a land torn apart. Their celestial homeland was obliterated, and the Umbrakiths were driven to near extinction.<br><br>Eldoria, once vibrant, was on the brink of annihilation. In the shadows of destruction, Liliana was taken in by her aunt, Blessica—Lunara’s twin sister—who concealed Liliana’s true lineage to protect her from enemies still thirsting for blood. Under Blessica’s watchful eye, Liliana was trained in secret, groomed not just as a survivor—but as a beacon of hope. Her mother’s final words echoed in her soul: 'You are the future of our people.' When she came of age, Blessica stepped aside, entrusting Liliana with the crown and the burden of a fractured world. Refusing to let history repeat itself, Liliana rose with wisdom far beyond her years.<br><br>She sought unity where there was only division. Strength where there was only sorrow. Summoning the leaders of every race across Eldoria, Liliana called for a grand council—a final chance to end the cycle of violence. Though not all agreed, many saw truth in her words. Her voice, steady and unwavering, ignited something ancient and pure in their hearts. To safeguard this fragile new peace, she formed the Light Harbingers—a legendary order of warriors and guardians drawn from every corner of Eldoria.<br><br>Not all who wished to join succeeded, for Liliana herself forged the trials: tests not of strength, but of compassion, discipline, and resolve. In time, peace returned. Races once divided sang her name in reverence. Eldoria flourished under her guidance. Liliana became a living symbol—not just of survival, but of unity, love, and light. Yet, amid celebration, Liliana stood watchful. For in her dreams, she saw glimpses of what’s to come: a shrouded figure, a dying sky, a second darkness waiting to devour the light. Peace had come… but for how long?"
+            background: "Liliana Solarae the current ruler of the magelion empire, rose from the ashes of a fallen world. After the death of the Solaraenia King and her mother Lunara’s sealing during the catastrophic Great War, Liliana—still young—was swept into the chaos of a land torn apart. Their celestial homeland was obliterated, and the Umbrakiths were driven to near extinction.<br><br>Eldoria, once vibrant, was on the brink of annihilation. In the shadows of destruction, Liliana was taken in by her aunt, Blessica—Lunara’s twin sister—who concealed Liliana’s true lineage to protect her from enemies still thirsting for blood. Under Blessica’s watchful eye, Liliana was trained in secret, groomed not just as a survivor—but as a beacon of hope. Her mother’s final words echoed in her soul: 'You are the future of our people.' When she came of age, Blessica stepped aside, entrusting Liliana with the crown and the burden of a fractured world. Refusing to let history repeat itself, Liliana rose with wisdom far beyond her years.<br><br>She sought unity where there was only division. Strength where there was only sorrow. Summoning the leaders of every race across Eldoria, Liliana called for a grand council—a final chance to end the cycle of violence. Though not all agreed, many saw truth in her words. Her voice, steady and unwavering, ignited something ancient and pure in their hearts. To safeguard this fragile new peace, she formed the Light Harbingers—a legendary order of warriors and guardians drawn from every corner of Eldoria.<br><br>Not all who wished to join succeeded, for Liliana herself forged the trials: tests not of strength, but of compassion, discipline, and resolve. In time, peace returned. Races once divided sang her name in reverence. Eldoria flourished under her guidance. Liliana became a living symbol—not just of survival, but of unity, love, and light. Yet, amid celebration, Liliana stood watchful. For in her dreams, she saw glimpses of what’s to come: a shrouded figure, a dying sky, a second darkness waiting to devour the light. Peace had come… but for how long?"        
         };
     } else if (character === 'lunara') {
         details = {
