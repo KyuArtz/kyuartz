@@ -1,15 +1,11 @@
 header {
     position: fixed;
     width: 100%;
-    background: var(--theme-color);
+    background: var(--content-bg);
     box-shadow: 0 0 2px;
     color: var(--text-color);
     top: 0;
     z-index: 100000;
-}
-
-.navigation-menu li {
-    list-style: none;
 }
 
 .navigation-menu {
@@ -22,6 +18,10 @@ header {
     padding: 0;
 }
 
+.navigation-menu li {
+    list-style: none;
+}
+
 .subMenu-container {
     border: 1px solid var(--color);
     border-radius: 50px;
@@ -29,6 +29,7 @@ header {
     align-items: center;
     gap: 5px;
     padding: 0 5px;
+    background: var(--theme-color);
 }
 
 .settings-menu {
@@ -45,7 +46,7 @@ header {
     display: none;
     position: absolute;
     min-width: 160px;
-    background: var(--theme-color);
+    background: var(--content-bg);
     box-shadow: 0 0 2px var(--text-color);
     border-radius: 10px;
     right: 0;
@@ -179,18 +180,21 @@ header {
     padding: 0;
     border: 1px solid var(--color);
     border-radius: 50px;
+    background: var(--theme-color);
     overflow: hidden;
 }
 
 form.search input[type="search"] {
     float: right;
     width: 80%;
-    background: none;
+    background: var(--theme-color);
+    cursor: text;
 }
 
 form.search button {
     float: left;
     width: 20%;
+    background: none;
 }
 
 form.search input[type="search"],
@@ -212,7 +216,7 @@ form.search::after {
     position: absolute;
     top: 55px;
     min-width: 50%;
-    background: var(--theme-color);
+    background: var(--content-bg);
     border-radius: 10px;
     box-shadow: 0 0 2px;
     color: var(--text-color);
@@ -270,19 +274,19 @@ form.search::after {
 
 @keyframes wiggleAnimation {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     25% {
-      transform: rotate(5deg);
+        transform: rotate(5deg);
     }
     50% {
-      transform: rotate(-5deg);
+        transform: rotate(-5deg);
     }
     75% {
-      transform: rotate(5deg);
+        transform: rotate(5deg);
     }
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -292,19 +296,15 @@ form.search::after {
         padding: 5px;
         z-index: 1;
     }
-
     .hamburger.hamburger-active .bar:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.hamburger-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
     .hamburger.hamburger-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
     .navigation-menu {
         position: fixed;
         flex-direction: column;
@@ -314,7 +314,7 @@ form.search::after {
         top: 0;
         width: 100%;
         height: 100%;
-        background: var(--theme-color);
+        background: var(--content-bg);
         gap: 50px;
         padding: 0;
         box-shadow: 0 0 1px #000;
@@ -322,11 +322,9 @@ form.search::after {
         transition: 0.3s ease-in-out;
         z-index: 1;
     }
-
     .navigation-menu.navMenu-active {
         right: 0;
     }
-
     .sideMenu-content {
         width: 100%;
         padding: 0 !important;
@@ -343,9 +341,9 @@ form.search::after {
     position: fixed;
     top: 50px;
     left: 0;
-    background: var(--theme-color);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    background: var(--content-bg);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -373,7 +371,7 @@ form.search::after {
 .span-btn {
     display: flex;
     flex-direction: column;
-    background: var(--content-bg);
+    background: var(--theme-color);
     border-radius: 10px;
     margin: 5px;
 }
@@ -406,7 +404,7 @@ form.search::after {
     align-items: center;
     width: 100%;
     min-height: 50px;
-    background: var(--theme-color);
+    background: var(--content-bg);
     box-shadow: 0 0 2px;
     color: var(--text-color);
     top: 50px;
@@ -428,7 +426,7 @@ form.search::after {
     padding: 5px;
     border: 1px solid var(--color);
     border-radius: 50px;
-    transition: 0.5s ease-in-out;
+    background: var(--theme-color);
 }
 
 .category-dot {
@@ -444,9 +442,9 @@ form.search::after {
     position: fixed;
     top: 100px;
     left: 0;
-    background: var(--theme-color);
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    background: var(--content-bg);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     display: flex;
     flex-direction: column;
     min-width: 150px;
@@ -489,20 +487,8 @@ form.search::after {
     opacity: 1;
 }
 
-.currency-conversion-btn {
-    position: absolute;
-    right: 0;
-    padding: 5px 20px;
-    margin: auto 5px;
-    border: 1px solid var(--color);
-    border-radius: 5px;
-    color: var(--color);
-    background: none;
-    outline: none;
-}
-
 option {
-    background: var(--theme-color);
+    background: var(--content-bg);
 }
 
 @media (max-width: 600px) {
@@ -510,31 +496,28 @@ option {
         left: 0;
         width: 100%;
     }
-
     .currency-conversion-btn {
         width: 90px;
     }
-
-@media screen and (max-width: 500px) {
-    .brand a {
-        display: none;
+    @media screen and (max-width: 500px) {
+        .brand a {
+            display: none;
+        }
+        .category-menu h2 {
+            text-align: left;
+        }
+        .category-menu {
+            width: 100%;
+        }
     }
-
-    .category-menu h2 {
-        text-align: left;
-    }
-
-    .category-menu {
-        width: 100%;
-    }
-}}
+}
 
 .footer {
     display: flex;
     justify-content: center;
     position: relative;
     padding: 10px;
-    background: var(--theme-color);
+    background: var(--content-bg);
     box-shadow: 0 0 2px var(--text-color);
     color: var(--color);
     text-align: center;
@@ -570,4 +553,5 @@ option {
     background: var(--color);
     margin: 0 3px;
     object-fit: cover;
+    cursor: pointer;
 }

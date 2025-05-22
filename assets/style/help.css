@@ -13,8 +13,18 @@
     gap: 20px;
 }
 
+.help-section h2 {
+    margin-bottom: 10px;
+    color: var(--color);
+    border-bottom: solid 1px;
+}
+
+.help-section p {
+    color: var(--text-color);
+}
+
 .help-card {
-    width: calc(50% - 10px); /* Two cards per row on larger screens */
+    width: calc(50% - 10px);
     background: var(--content-bg);
     border-radius: 8px;
     box-shadow: 0 0 3px #000;
@@ -34,30 +44,19 @@
     padding: 20px;
 }
 
-.help-section h2 {
-    margin-bottom: 10px;
-    color: var(--color);
-    border-bottom: solid 1px;
-}
-
-.help-section p {
-    color: var(--text-color);
-}
-
 @media (max-width: 768px) {
     .help-card {
-      width: calc(100% - 10px); /* Single card per row for tablet and below */
+        width: calc(100% - 10px);
     }
 }
 
 @media (max-width: 480px) {
     .help-section {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-
     .help-card {
-      width: 100%;
-      margin-bottom: 15px;
+        width: 100%;
+        margin-bottom: 15px;
     }
 }

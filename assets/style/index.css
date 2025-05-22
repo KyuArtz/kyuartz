@@ -3,160 +3,160 @@
 }
 
 .slideshow-container {
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .mySlides {
-    display: none;
+  display: none;
 }
 
 .mySlides.active-slide {
-    display: block;
+  display: block;
 }
 
 .mySlides img,
 .mySlides video {
-    width: 100%;
-    max-height: 100vh;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-    background: var(--content-bg);
+  width: 100%;
+  max-height: 100vh;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  background: var(--content-bg);
 }
 
 button.next,
 button.prev {
-    background: none;
-    border-style: none;
-    outline: none;
+  background: none;
+  border-style: none;
+  outline: none;
 }
 
 .next,
 .prev {
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    padding: 15px;
-    color: var(--color);
-    font-weight: bold;
-    user-select: none;
-    transition: 0.3s ease-in-out;
-    opacity: 0.5;
-    z-index: 2;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  padding: 15px;
+  color: var(--color);
+  font-weight: bold;
+  user-select: none;
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+  z-index: 2;
 }
 
 .next {
-    right: 0;
+  right: 0;
 }
 
 .prev {
-    left: 0;
+  left: 0;
 }
 
 .next:hover,
 .prev:hover {
-    opacity: 1;
-    color: var(--color);
+  opacity: 1;
+  color: var(--color);
 }
 
 .caption-overlay {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: var(--text-color);
-    background-color: var(--overlay);
-    height: 100vh;
-    z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: var(--text-color);
+  background-color: var(--overlay);
+  height: 100vh;
+  z-index: 1;
 }
 
 .caption-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.2s ease-out;
-    transform-style: preserve-3d;
-    backface-visibility: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
 }
 
 .caption-overlay h1 {
-    text-shadow: 0 0 5px #000;
-    letter-spacing: 3px;
+  text-shadow: 0 0 5px #000;
+  letter-spacing: 3px;
 }
 
 .caption-overlay p {
-    text-shadow: 0 0 3px #000;
+  text-shadow: 0 0 3px #000;
 }
 
 .caption-overlay h1,
 .caption-overlay p {
-    color: #f0f0f0;
-    margin: 15px 20px;
+  color: #f0f0f0;
+  margin: 15px 20px;
 }
 
 .caption-btn {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px 20px;
-    gap: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px;
+  gap: 10px;
 }
 
 .caption-btn a {
-    padding: 10px;
-    min-width: 15%;
-    border-radius: 50px;
-    border: solid 1px;
-    color: var(--color);
-    background: var(--theme-color);
+  padding: 10px;
+  min-width: 15%;
+  border-radius: 50px;
+  border: solid 1px;
+  color: var(--color);
+  background: var(--theme-color);
 }
 
 .home_slider_dot {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 5px;
-    transition: opacity 0.5s ease-in-out;
-    z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 2;
 }
 
 .dot {
-    position: relative;
-    bottom: 30px;
-    height: 12px;
-    width: 12px;
-    margin: 0 1px;
-    border-radius: 50px;
-    border: solid 1px var(--color);
-    transition: 0.3s ease-in-out;
+  position: relative;
+  bottom: 30px;
+  height: 12px;
+  width: 12px;
+  margin: 0 1px;
+  border-radius: 50px;
+  border: solid 1px var(--color);
+  transition: 0.3s ease-in-out;
 }
 
 .dot.active-dot,
 .dot:hover {
-    background: var(--color);
-    opacity: 1;
+  background: var(--color);
+  opacity: 1;
 }
 
 .video_container {
-    display: grid;
-    text-align: center;
-    margin: 10px;
+  display: grid;
+  text-align: center;
+  margin: 10px;
 }
 
 .video_container h2 {
-    color: var(--color);
+  color: var(--color);
 }
 
 .carousel {
@@ -176,7 +176,8 @@ button.prev {
   padding: 10px;
 }
 
-.video video, iframe {
+.video video,
+iframe {
   width: 100%;
   height: 230px;
   border-radius: 15px;
@@ -185,11 +186,11 @@ button.prev {
   transition: 0.3s ease-in-out;
 }
 
-.video video:hover, iframe:hover {
+.video video:hover,
+iframe:hover {
   box-shadow: 0 0 5px var(--color);
 }
 
-/* Navigation Controls */
 .carousel_nav {
   position: absolute;
   top: 50%;
@@ -209,26 +210,31 @@ button.prev {
   transition: 0.3s ease-in-out;
 }
 
-.carousel-prev { left: 0; }
-.carousel-next { right: 0; }
+.carousel-prev {
+  left: 0;
+}
+
+.carousel-next {
+  right: 0;
+}
 
 .fade {
   animation: fade 1.5s;
 }
 
 @keyframes fade {
-from {
-  opacity: 0.05;
-}
-to {
-  opacity: 1;
-}
+  from {
+    opacity: 0.05;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
   .video {
-      flex: 0 0 50%;
-      max-width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
@@ -237,33 +243,26 @@ to {
     flex: 0 0 100%;
     max-width: 100%;
   }
-
   .wn-btn {
     font-size: small;
   }
-
   .mySlides img,
   .mySlides video {
     height: 100vh;
     object-fit: cover;
   }
-
   .caption-overlay h1 {
     font-size: 2rem;
   }
-
   .caption-overlay p {
     font-size: 0.6rem;
   }
-
   .caption-btn a {
     font-size: 0.7rem;
   }
-
   .caption-btn {
     flex-direction: column;
   }
-
   .caption-btn a {
     min-width: 250px;
   }

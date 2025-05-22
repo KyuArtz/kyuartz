@@ -3,46 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- SEO Optimization -->
   <title>KyuArtz | Commission Sheet</title>
   <meta name="description" content="Check out KyuArtz's commission sheet for pricing and details on various art styles and projects.">
   <meta name="keywords" content="KyuArtz">
   <meta name="author" content="KyuArtz">
-  
-  <!-- Theme color for different platforms -->
-  <meta name="theme-color" content="var(--color)"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
-  <meta name="msapplication-TileColor" content="var(--color)"> <!-- For Windows 8 and Windows Phone -->
-
-  <!-- Favicons and Icons -->
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="KyuArtz" />
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
-
+  <meta name="theme-color" content="var(--color)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="var(--color)">
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="KyuArtz">
+  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/commission-sheet">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preload" href="assets/style/loader.css" as="style">
   <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/commission-sheet.css">
   <link rel="stylesheet" href="assets/style/loader.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/popup.css">
-
-  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-
-  <!-- Defer JavaScript for faster loading -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/popup.js" defer></script>
@@ -50,22 +35,17 @@
   <script src="assets/js/currencyConversion.js" defer></script>
   <script src="assets/js/translations.js" defer></script>
   <script src="assets/js/search.js" defer></script>
-
-  <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="KyuArtz | Commission Sheet">
   <meta property="og:description" content="Check out KyuArtz's commission sheet for pricing and details on various art styles and projects.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/commission-sheet">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Commission Sheet">
   <meta name="twitter:description" content="Check out KyuArtz's commission sheet for pricing and details on various art styles and projects.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -78,17 +58,15 @@
         "name": "Kyu"
       }
     }
-    </script>
+  </script>
 </head>
 <body>
-
   <div class="loader" oncontextmenu="return false">
     <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
@@ -96,20 +74,17 @@
     <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
-
   <div id="cookie-popup" class="cookie-popup">
     <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
-
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-        <a href="index.html" data-translate="brand">Kyu</a>  
-        <p class="sbt">Beta</p>  
+        <a href="index.html" data-translate="brand">Kyu</a>
+        <p class="sbt">Beta</p>
       </div>
-  
       <div class="search-container">
         <form class="search" aria-label="Search KyuArtz">
           <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
@@ -119,7 +94,6 @@
           <div class="search-result" style="display: none;"></div>
         </form>
       </div>
-  
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
@@ -141,12 +115,10 @@
             <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
-  
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
             <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
-
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="span-btn">
               <h2><span data-translate="commissionArt">Commission Art</span> <i class="fa-solid fa-angle-right"></i></h2>
@@ -187,8 +159,7 @@
           </div>
         </li>
       </ul>
-  
-      <div class="subMenu-container">    
+      <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -220,7 +191,6 @@
     </nav>
   </header>
   <div class="blur-overlay"></div>
-
   <nav class="secondary-navigation">
     <h1 data-translate="commissionTitle">Samples</h1>
     <div class="category-btn" title="Category">
@@ -228,85 +198,76 @@
       <span class="category-dot"></span>
       <span class="category-dot"></span>
     </div>
-      <div class="category-container">
-        <ul class="category-menu">
-          <h2 data-translate="category">Category</h2>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="all">
-              <i class="fa-solid fa-filter"></i> <span data-translate="all">All</span>
-            </a>
-          </li>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="semi-realism">
-              <i class="fa-solid fa-filter"></i> <span data-translate="semiRealism">Semi Realism</span>
-            </a>
-          </li>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="anime">
-              <i class="fa-solid fa-filter"></i> <span data-translate="animeStyle">Anime Style</span>
-            </a>
-          </li>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="chibi">
-              <i class="fa-solid fa-filter"></i> <span data-translate="chibi">Chibi</span>
-            </a>
-          </li>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="emote">
-              <i class="fa-solid fa-filter"></i> <span data-translate="emote">Emote</span>
-            </a>
-          </li>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="landscape">
-              <i class="fa-solid fa-filter"></i> <span data-translate="landscape">Landscape</span>
-            </a>
-          </li>
-          <li class="category-item">
-            <a href="#" class="category-link" data-category="bundlePromotions">
-              <i class="fa-solid fa-filter"></i> <span data-translate="bundlePromo">Bundles & Promo</span>
-            </a>
-          </li>
-        </ul>      
-      </div>
-    
-      <select class="currency-conversion-btn" id="currency-selector">
-        <!-- Most Popular Currencies -->
-        <option value="USD">USD - United States Dollar</option>
-        <option value="EUR">EUR - Euro</option>
-        <option value="JPY">JPY - Japanese Yen</option>
-        <option value="GBP">GBP - British Pound</option>
-        <option value="AUD">AUD - Australian Dollar</option>
-        <option value="CAD">CAD - Canadian Dollar</option>
-        <option value="CHF">CHF - Swiss Franc</option>
-        <option value="CNY">CNY - Chinese Yuan</option>
-        <option value="HKD">HKD - Hong Kong Dollar</option>
-    
-        <!-- Other Popular Currencies -->
-        <option value="SGD">SGD - Singapore Dollar</option>
-        <option value="KRW">KRW - South Korean Won</option>
-        <option value="INR">INR - Indian Rupee</option>
-        <option value="NZD">NZD - New Zealand Dollar</option>
-        <option value="MXN">MXN - Mexican Peso</option>
-        <option value="ZAR">ZAR - South African Rand</option>
-        <option value="BRL">BRL - Brazilian Real</option>
-        
-        <!-- Regional Currencies -->
-        <option value="PHP">PHP - Philippine Peso</option>
-        <option value="THB">THB - Thai Baht</option>
-        <option value="MYR">MYR - Malaysian Ringgit</option>
-        <option value="VND">VND - Vietnamese Dong</option>
-        <option value="IDR">IDR - Indonesian Rupiah</option>
-    
-        <!-- Less Common but Important -->
-        <option value="SEK">SEK - Swedish Krona</option>
-        <option value="NOK">NOK - Norwegian Krone</option>
-        <option value="DKK">DKK - Danish Krone</option>
-        <option value="RUB">RUB - Russian Ruble</option>
-        <option value="TRY">TRY - Turkish Lira</option>
-        <option value="PLN">PLN - Polish Zloty</option>
-    </select>  
+    <div class="category-container">
+      <ul class="category-menu">
+        <h2 data-translate="category">Category</h2>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="all">
+            <i class="fa-solid fa-filter"></i> <span data-translate="all">All</span>
+          </a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="semi-realism">
+            <i class="fa-solid fa-filter"></i> <span data-translate="semiRealism">Semi Realism</span>
+          </a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="anime">
+            <i class="fa-solid fa-filter"></i> <span data-translate="animeStyle">Anime Style</span>
+          </a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="chibi">
+            <i class="fa-solid fa-filter"></i> <span data-translate="chibi">Chibi</span>
+          </a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="emote">
+            <i class="fa-solid fa-filter"></i> <span data-translate="emote">Emote</span>
+          </a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="landscape">
+            <i class="fa-solid fa-filter"></i> <span data-translate="landscape">Landscape</span>
+          </a>
+        </li>
+        <li class="category-item">
+          <a href="#" class="category-link" data-category="bundlePromotions">
+            <i class="fa-solid fa-filter"></i> <span data-translate="bundlePromo">Bundles & Promo</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <select class="currency-conversion-btn" id="currency-selector">
+      <option value="USD">USD - United States Dollar</option>
+      <option value="EUR">EUR - Euro</option>
+      <option value="JPY">JPY - Japanese Yen</option>
+      <option value="GBP">GBP - British Pound</option>
+      <option value="AUD">AUD - Australian Dollar</option>
+      <option value="CAD">CAD - Canadian Dollar</option>
+      <option value="CHF">CHF - Swiss Franc</option>
+      <option value="CNY">CNY - Chinese Yuan</option>
+      <option value="HKD">HKD - Hong Kong Dollar</option>
+      <option value="SGD">SGD - Singapore Dollar</option>
+      <option value="KRW">KRW - South Korean Won</option>
+      <option value="INR">INR - Indian Rupee</option>
+      <option value="NZD">NZD - New Zealand Dollar</option>
+      <option value="MXN">MXN - Mexican Peso</option>
+      <option value="ZAR">ZAR - South African Rand</option>
+      <option value="BRL">BRL - Brazilian Real</option>
+      <option value="PHP">PHP - Philippine Peso</option>
+      <option value="THB">THB - Thai Baht</option>
+      <option value="MYR">MYR - Malaysian Ringgit</option>
+      <option value="VND">VND - Vietnamese Dong</option>
+      <option value="IDR">IDR - Indonesian Rupiah</option>
+      <option value="SEK">SEK - Swedish Krona</option>
+      <option value="NOK">NOK - Norwegian Krone</option>
+      <option value="DKK">DKK - Danish Krone</option>
+      <option value="RUB">RUB - Russian Ruble</option>
+      <option value="TRY">TRY - Turkish Lira</option>
+      <option value="PLN">PLN - Polish Zloty</option>
+    </select>
   </nav>
-
   <div class="cs-container">
     <div class="cs-content" data-category="semi-realism">
       <div class="cs-wrapper">
@@ -327,11 +288,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content" data-category="semi-realism">
       <div class="cs-wrapper">
         <div class="sample-img">
@@ -351,11 +311,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content" data-category="anime">
       <div class="cs-wrapper">
         <div class="sample-img">
@@ -375,11 +334,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content" data-category="anime">
       <div class="cs-wrapper">
         <div class="sample-img">
@@ -399,11 +357,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content" data-category="chibi">
       <div class="cs-wrapper">
         <div class="sample-img">
@@ -423,11 +380,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content" data-category="emote">
       <div class="cs-wrapper">
         <div class="sample-img">
@@ -447,11 +403,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content" data-category="landscape">
       <div class="cs-wrapper">
         <div class="sample-img">
@@ -471,11 +426,10 @@
         </div>
       </div>
       <div class="inquire-button">
-        <a href="contact.html"> <span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"> <span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+        <a href="contact.html"><span data-translate="orderNow">Order Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
       </div>
     </div>
-  
     <div class="cs-content2" data-category="bundlePromotions">
       <section>
         <h2 data-translate="newBundleDeals">NEW BUNDLE DEALS</h2>
@@ -490,11 +444,9 @@
         <p><strong><i class="fa-solid fa-calendar-day"></i> **Flash Sales**:</strong> Follow our social media for random 24-hour discount announcements!</p>
         <p><strong><i class="fa-solid fa-hourglass-half"></i> **Priority Slot Option**:</strong> Need your artwork sooner? Opt for our rush commission tier at an extra fee.</p>
       </section>
-    </div>  
+    </div>
   </div>
-
   <button type="button" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
-  
   <div class="footer">
     <div class="copyright">
       <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
@@ -506,15 +458,14 @@
         <a class="detail" href="contact.html" data-translate="contact"> Contact Us</a>
         <a class="detail" href="help.html" data-translate="helpCenter"> Help Center</a>
         <div class="social">
-          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://cara.app/kyuartz" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://kyuartz.artstation.com/" target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://cara.app/kyuartz" target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
         </div>
       </div>
     </div>
   </div>
-
 </body>
 </html>

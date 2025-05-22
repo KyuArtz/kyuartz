@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Cache DOM elements
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".navigation-menu");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -10,108 +11,92 @@ document.addEventListener("DOMContentLoaded", () => {
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
   const upBtn = document.getElementById("upBtn");
+  const currentYearElement = document.getElementById('currentyear');
 
-  // Toggle hamburger and nav menu
+  // Hamburger menu toggle
   hamburger?.addEventListener("click", () => {
     hamburger.classList.toggle("hamburger-active");
-    navMenu.classList.toggle("navMenu-active");
+    navMenu?.classList.toggle("navMenu-active");
   });
 
-  // Close nav menu when a nav link is clicked
+  // Close nav menu on nav link click
   navLinks.forEach(navLink => {
     navLink.addEventListener("click", () => {
-      hamburger.classList.remove("hamburger-active");
-      navMenu.classList.remove("navMenu-active");
+      hamburger?.classList.remove("hamburger-active");
+      navMenu?.classList.remove("navMenu-active");
     });
   });
 
-  // Toggle side menu visibility
+  // Side menu toggle
   sideMenuLinks.forEach(sideMenuLink => {
     sideMenuLink.addEventListener("click", (event) => {
-      event.stopPropagation(); // Prevents window click handler from closing the side menu
-      const sideMenuContent = event.currentTarget.nextElementSibling;
-      sideMenuContent.classList.toggle("show-sideMenu");
-      blurOverlay.style.display = sideMenuContent.classList.contains("show-sideMenu") ? "block" : "none";
+      event.stopPropagation();
+      const sideMenuContent = sideMenuLink.nextElementSibling;
+      if (sideMenuContent) {
+        const isShown = sideMenuContent.classList.toggle("show-sideMenu");
+        blurOverlay && (blurOverlay.style.display = isShown ? "block" : "none");
+      }
     });
   });
 
-  // Toggle category menu visibility
-  btn?.addEventListener("click", () => {
-    categoryMenu.classList.toggle("categoryMenu-show");
+  // Category menu toggle
+  btn?.addEventListener("click", (e) => {
+    e.stopPropagation();
+    categoryMenu?.classList.toggle("categoryMenu-show");
   });
 
-  document.querySelectorAll(".category-link").forEach(n => 
-    n.addEventListener("click", () => {
-      categoryMenu.classList.remove("categoryMenu-show");
+  document.querySelectorAll(".category-link").forEach(link =>
+    link.addEventListener("click", () => {
+      categoryMenu?.classList.remove("categoryMenu-show");
     })
   );
 
-  // Close side menu and nav menu when clicking outside
-  window.addEventListener("click", (event) => {
-    // Check if the click was inside side menu or content
-    const clickedInsideSideMenu = [...sideMenuLinks].some(link => link.contains(event.target));
-    const clickedInsideContent = [...sideMenuContents].some(content => content.contains(event.target));
-    
-    // Close side menu if clicked outside
-    if (!clickedInsideSideMenu && !clickedInsideContent) {
-      sideMenuContents.forEach(content => content.classList.remove("show-sideMenu"));
-      blurOverlay.style.display = "none";
-    }
-
-    // Close nav menu if clicked outside
-    if (!event.target.closest('.hamburger') && !event.target.closest('.navigation-menu')) {
-      hamburger.classList.remove("hamburger-active");
-      navMenu.classList.remove("navMenu-active");
-    }
-  });
-
-  // Toggle settings menu
+  // Settings menu toggle
   settingsBtn?.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevents window click from closing it immediately
-    settingsMenu.classList.toggle("show-settings");
+    event.stopPropagation();
+    settingsMenu?.classList.toggle("show-settings");
   });
 
-  // Close settings menu when clicking outside
+  // Global click handler for closing menus
   window.addEventListener("click", (event) => {
+    // Side menu
+    if (![...sideMenuLinks, ...sideMenuContents].some(el => el.contains(event.target))) {
+      sideMenuContents.forEach(content => content.classList.remove("show-sideMenu"));
+      if (blurOverlay) blurOverlay.style.display = "none";
+    }
+    // Nav menu
+    if (!event.target.closest('.hamburger') && !event.target.closest('.navigation-menu')) {
+      hamburger?.classList.remove("hamburger-active");
+      navMenu?.classList.remove("navMenu-active");
+    }
+    // Settings menu
     if (!event.target.closest('.settings-btn') && !event.target.closest('.settings-menu')) {
-      settingsMenu.classList.remove("show-settings");
+      settingsMenu?.classList.remove("show-settings");
+    }
+    // Category menu
+    if (!event.target.closest('.category-btn') && !event.target.closest('.category-menu')) {
+      categoryMenu?.classList.remove("categoryMenu-show");
     }
   });
 
-  // Scroll-to-top button functionality
-  if (upBtn) { // Check if upBtn exists
-    window.onscroll = function() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        upBtn.style.display = "block";
-      } else {
-        upBtn.style.display = "none";
-      }
-    };
-
-    upBtn?.addEventListener("click", () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+  // Scroll-to-top button
+  if (upBtn) {
+    window.addEventListener("scroll", () => {
+      upBtn.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
+    });
+    upBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   }
 
-  // Update the current year dynamically
-  const currentYearElement = document.getElementById('currentyear');
+  // Set current year
   if (currentYearElement) {
-    const year = new Date().getFullYear();
-    currentYearElement.textContent = year;
-}});
+    currentYearElement.textContent = new Date().getFullYear();
+  }
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the current page's filename
+  // Highlight active nav link
   const currentPage = window.location.pathname.split('/').pop();
-
-  // Get all nav links
-  const navLinks = document.querySelectorAll('.nav-link, .nav-link-sideMenu, .sideMenu-content a');
-
-  // Loop through links and add 'activeLink' class to the matching link
-  navLinks.forEach(link => {
+  document.querySelectorAll('.nav-link, .nav-link-sideMenu, .sideMenu-content a').forEach(link => {
     if (link.getAttribute('data-page') === currentPage) {
       link.classList.add('activeLink');
     }

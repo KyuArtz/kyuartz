@@ -1,3 +1,14 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .popup-notice,
 .popup-wn,
 .donate-popup {
@@ -14,6 +25,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     display: none;
+    z-index: 200000;
 }
 
 #welcome-message {
@@ -23,15 +35,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--theme-color);
+    background: var(--content-bg);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 2px var(--text-color);
     text-align: center;
     display: none;
-}
-
-#welcome-overlay, #welcome-message {
     z-index: 200000;
 }
 
@@ -72,7 +81,7 @@
     text-align: center;
     padding: 0 30px 30px;
     color: var(--text-color);
-    background: var(--theme-color);
+    background: var(--content-bg);
     visibility: hidden;
     opacity: 0;
     box-shadow: 0 0 2px var(--text-color);
@@ -115,38 +124,13 @@
     transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 30px;
-    background: var(--theme-color);
+    background: var(--content-bg);
     visibility: hidden;
     opacity: 0;
     transition: 0.3s ease-in-out;
     box-shadow: 0 0 2px var(--text-color);
-    overflow-y: auto; 
+    overflow-y: auto;
     max-height: 80vh;
-}
-
-.qr-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 10px;
-    gap: 10px;
-}
-
-.qr {
-    flex: 1 1 30%; /* Ensures that QR codes adapt to smaller screens */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.qr img {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
 }
 
 .open-donate {
@@ -164,6 +148,31 @@
     border-radius: 50px;
 }
 
+.qr-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+}
+
+.qr {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.qr img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
 .popup-wn {
     width: 50%;
     max-width: 600px;
@@ -176,12 +185,50 @@
     transform: translate(-50%, -50%) scale(0.1);
     padding: 0 20px 30px;
     color: var(--text-color);
-    background: var(--theme-color);
+    background: var(--content-bg);
     visibility: hidden;
     transition: transform 0.4s;
     box-shadow: 0 0 2px var(--text-color);
     max-height: 80%;
-    overflow-y: auto; 
+    overflow-y: auto;
+}
+
+.open-popup-wn {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-wn ul {
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.popup-wn li {
+    margin: 10px auto;
+}
+
+.popup-wn h3 {
+    text-align: left;
+}
+
+.update h4 {
+    text-align: right;
+}
+
+.wn-btn {
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: var(--color);
+    background: var(--content-bg);
+    outline: none;
+    aspect-ratio: 1 / 1;
+    border: 1px solid;
+    animation: wiggleAnimation 1s infinite;
+    z-index: 50;
 }
 
 .description-overlay {
@@ -204,7 +251,7 @@
     width: 80%;
     max-width: 500px;
     height: 90%;
-    background: var(--theme-color);
+    background: var(--content-bg);
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 0 2px var(--text-color);
@@ -243,60 +290,11 @@ button.close {
     color: var(--text-color);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.wn-btn {
-    position: fixed;
-    top: 60px;
-    right: 10px;
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    color: var(--color);
-    background: var(--theme-color);
-    outline: none;
-    aspect-ratio: 1 / 1;
-    border: 1px solid;
-    animation: wiggleAnimation 1s infinite;
-    z-index: 50;
-}
-
-.popup-wn ul {
-    text-align: justify;
-    padding-right: 20px;
-}
-
-.popup-wn li {
-    margin: 10px auto;
-}
-
-.open-popup-wn {
-    visibility: visible;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.popup-wn h3 {
-    text-align: left;
-}
-
-.update h4 {
-    text-align: right;
-}
-
 .cookie-popup {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: var(--theme-color);
+    background: var(--content-bg);
     color: var(--text-color);
     padding: 20px;
     box-shadow: 0 0 2px var(--text-color);
@@ -326,48 +324,39 @@ button.close {
     .qr-content {
         flex-direction: column;
     }
-
     .qr {
         width: 100%;
     }
-
     .donate-popup {
         width: 90%;
         max-width: 100%;
     }
-
     .popup-wn {
         width: 80%;
         padding: 0 15px 20px;
     }
-
     .popup-wn ol {
         max-height: 150px;
     }
-
     .popup-wn button {
         width: 70%;
     }
 }
 
-@media(max-width: 500px) {  
+@media (max-width: 500px) {
     .popup-notice {
         max-width: 340px;
     }
-
     .popup img {
         position: unset;
     }
-
     .popup-wn {
         width: 90%;
         padding: 0 10px 15px;
     }
-
     .popup-wn ol {
         max-height: 120px;
     }
-
     .popup-wn button {
         width: 80%;
     }

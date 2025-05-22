@@ -1,6 +1,44 @@
+.currency-conversion-btn {
+    position: absolute;
+    right: 0;
+    padding: 5px 20px;
+    margin: auto 5px;
+    border: 1px solid var(--color);
+    border-radius: 10px;
+    color: var(--color);
+    background: var(--theme-color);
+    outline: none;
+    cursor: pointer;
+}
+
 .cs-container {
     margin-top: 110px;
     min-height: 100vh;
+}
+
+.cs-container h2 {
+    position: relative;
+    color: var(--text-color);
+    border-radius: 10px;
+}
+
+.cs-container p {
+    padding: 5px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.cs-container img {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    object-position: center;
+    aspect-ratio: 1 / 1;
+    background: var(--theme-color);
+    box-shadow: 0 0 2px var(--text-color);
+    border-radius: 10px;
+    pointer-events: none;
 }
 
 .cs-wrapper {
@@ -19,40 +57,14 @@
     overflow: hidden;
 }
 
-.price {
-    overflow: auto;
-    height: 405px;
-}
-
-span.price-amount, span.percent {
-    color: #008600;
-}
-
-.sample-img {
-    border-radius: 10px;
-    background: var(--content-bg);
-    padding: 10px;
-    transition: 0.3s ease-in-out;
-}
-
-.price-wrapper:hover, .sample-img:hover {
+.price-wrapper:hover,
+.sample-img:hover {
     transform: scale(0.99);
 }
 
-.sample-img.clicked {
-    filter: grayscale(100%);
-}
-
-.cs-container h2 {
-    position: relative;
-    color: var(--text-color);
-    border-radius: 10px;
-}
-
-.cs-container p {
-    padding: 5px;
-    text-align: left;
-    color: var(--text-color);
+.price {
+    overflow: auto;
+    height: 405px;
 }
 
 .price h3 {
@@ -61,6 +73,23 @@ span.price-amount, span.percent {
     color: var(--text-color);
     padding: 10px;
     border-bottom: 1px solid var(--text-color);
+}
+
+span.price-amount,
+span.percent {
+    color: #008600;
+}
+
+.sample-img {
+    border-radius: 10px;
+    background: var(--content-bg);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.sample-img.clicked {
+    filter: grayscale(100%);
 }
 
 .inquire-button {
@@ -88,7 +117,7 @@ span.price-amount, span.percent {
 .cs-content {
     color: var(--text-color);
     text-align: center;
-    box-shadow: 0 0 3px var(--text-color);
+    border: 2px solid var(--theme-overlay);
     border-radius: 10px;
     max-width: 1000px;
     margin: 10px auto;
@@ -98,6 +127,7 @@ span.price-amount, span.percent {
 .cs-content2 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
     color: var(--text-color);
     text-align: left;
@@ -106,9 +136,14 @@ span.price-amount, span.percent {
 
 .cs-content2 section {
     border-radius: 10px;
-    box-shadow: 0 0 2px var(--text-color);
+    border: 2px solid var(--theme-overlay);
     padding: 10px;
     overflow: hidden;
+}
+
+.cs-content2 p {
+    background: none;
+    border-radius: 0;
 }
 
 section h2 {
@@ -118,38 +153,17 @@ section h2 {
     margin: 0;
 }
 
-.cs-content2 p {
-    background: none;
-    border-radius: 0;
-}
-
-.cs-container img {
-    position: relative;
-    width: 350px;
-    height: 350px;
-    object-fit: contain;
-    object-position: center;
-    aspect-ratio: 1 / 1;
-    background: var(--theme-color);
-    box-shadow: 0 0 2px var(--text-color);
-    border-radius: 10px;
-    pointer-events: none;
-}
-
 @media screen and (max-width: 500px) {
     .cs-wrapper {
         flex-direction: column;
     }
-
     .inquire-button {
         text-align: center;
         flex-direction: column;
     }
-
     .cs-container img {
         width: 100%;
     }
-
     .cs-content2 {
         flex-direction: column;
     }

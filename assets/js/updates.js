@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('assets/json/updates.json')
+    fetch('assets/json/updateLog.json')
         .then(response => response.json())
         .then(data => {
             const updates = data.updates;

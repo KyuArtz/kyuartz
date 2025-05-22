@@ -23,9 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
+  // Add click event to each sample image
   document.querySelectorAll('.sample-img').forEach(img => {
       img.addEventListener('click', function() {
           // Toggle the 'clicked' class

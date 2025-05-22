@@ -3,67 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- SEO Optimization -->
   <title>KyuArtz | About Me</title>
   <meta name="description" content="Learn more about me, KyuArtz, my creative journey, and the art projects I undertake.">
   <meta name="keywords" content="KyuArtz">
   <meta name="author" content="KyuArtz">
-  
-  <!-- Theme color for different platforms -->
-  <meta name="theme-color" content="var(--color)"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
-  <meta name="msapplication-TileColor" content="var(--color)"> <!-- For Windows 8 and Windows Phone -->
-
-  <!-- Favicons and Icons -->
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="KyuArtz" />
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
-
+  <meta name="theme-color" content="var(--color)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="var(--color)">
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="KyuArtz">
+  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/about">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preload" href="assets/style/loader.css" as="style">
   <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/about.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/loader.css">
   <link rel="stylesheet" href="assets/style/popup.css">
-
-  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-  
-  <!-- Defer scripts for better performance -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/popup.js" defer></script>
   <script src="assets/js/translations.js" defer></script>
   <script src="assets/js/search.js" defer></script>
-
-  <!-- Open Graph Tags for better sharing -->
   <meta property="og:title" content="KyuArtz | About Me">
   <meta property="og:description" content="Learn more about me, KyuArtz, my creative journey, and the art projects I undertake.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/about">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | About Me">
   <meta name="twitter:description" content="Learn more about me, KyuArtz, my creative journey, and the art projects I undertake.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -76,17 +56,15 @@
         "name": "Kyu"
       }
     }
-    </script>
+  </script>
 </head>
 <body>
-
   <div class="loader" oncontextmenu="return false">
     <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
@@ -94,20 +72,17 @@
     <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
-
   <div id="cookie-popup" class="cookie-popup">
     <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
-
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-        <a href="index.html" data-translate="brand">Kyu</a>  
-        <p class="sbt">Beta</p>  
+        <a href="index.html" data-translate="brand">Kyu</a>
+        <p class="sbt">Beta</p>
       </div>
-  
       <div class="search-container">
         <form class="search" aria-label="Search KyuArtz">
           <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
@@ -117,7 +92,6 @@
           <div class="search-result" style="display: none;"></div>
         </form>
       </div>
-  
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
@@ -139,12 +113,10 @@
             <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
-  
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
             <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
-
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="span-btn">
               <h2><span data-translate="commissionArt">Commission Art</span> <i class="fa-solid fa-angle-right"></i></h2>
@@ -185,8 +157,7 @@
           </div>
         </li>
       </ul>
-  
-      <div class="subMenu-container">    
+      <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -218,7 +189,6 @@
     </nav>
   </header>
   <div class="blur-overlay"></div>
-
   <div class="card-container">
     <div class="overlay">
       <div class="me">
@@ -242,54 +212,42 @@
               <i class="fa-regular fa-envelope"></i> <span data-translate="myInfo-4">kyuushi992@gmail.com</span>
             </p>
             <div class="mysocial">
-            <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/imgbtn/fb.webp" loading="lazy">
-            </a>
-            <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/imgbtn/yt.webp" loading="lazy">
-            </a>
-            <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer">
-              <img src="assets/images/imgbtn/X.webp" loading="lazy">
-            </a>
-            <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer">
-              <img src="assets/images/imgbtn/ast.webp" loading="lazy">
-            </a>
-            <a class="logo-view" href="https://cara.app/kyuartz" view target="_blank" title="Cara" rel="noopener noreferrer">
-              <img src="assets/images/imgbtn/cara-logo.webp" loading="lazy">
-            </a>
+              <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/imgbtn/fb.webp" loading="lazy">
+              </a>
+              <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/imgbtn/yt.webp" loading="lazy">
+              </a>
+              <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/imgbtn/X.webp" loading="lazy">
+              </a>
+              <a class="logo-view" href="https://kyuartz.artstation.com/" target="_blank" title="Artstation" rel="noopener noreferrer">
+                <img src="assets/images/imgbtn/ast.webp" loading="lazy">
+              </a>
+              <a class="logo-view" href="https://cara.app/kyuartz" target="_blank" title="Cara" rel="noopener noreferrer">
+                <img src="assets/images/imgbtn/cara-logo.webp" loading="lazy">
+              </a>
             </div>
           </div>
         </div>
       </div>
-  
       <div class="info-container">
-        <div class="summary">
+        <div class="summary-container">
           <h2 data-translate="summaryTitle">SUMMARY</h2>
-          <div class="summaryContent">
+          <div class="summary-content">
             <p data-translate="summaryText">
-              Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early
-              childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm.
-              Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities
-              and gain more experience.
-              Despite being a self-learner, I remain persistent and never give up. After four years of focusing on
-              traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the
-              popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into
-              digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While
-              adapting to the challenges presented by digital art techniques, I eventually became comfortable with the
-              process.
+              Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm. Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities and gain more experience. Despite being a self-learner, I remain persistent and never give up. After four years of focusing on traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While adapting to the challenges presented by digital art techniques, I eventually became comfortable with the process.
             </p>
           </div>
         </div>
-  
-        <div class="experience">
-          <div class="expcontent" style="text-align:center">
+        <div class="experience-container">
+          <div class="experience-content" style="text-align:center">
             <h2 data-translate="experienceTitle">EXPERIENCE</h2>
-            <P data-translate="experience-1">Self Taught</P>
+            <p data-translate="experience-1">Self Taught</p>
             <p data-translate="experience-2">Freelance</p>
           </div>
         </div>
-  
-        <div class="program">
+        <div class="program-used-container">
           <div class="program-content" style="text-align:center">
             <h2 data-translate="programUsed">PROGRAMS I USE TO DRAW</h2>
             <div class="program-logo">
@@ -303,6 +261,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

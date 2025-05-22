@@ -1,86 +1,63 @@
-// Sample data array (initial commissions)
+// Data for commissions and waitlist
 const commissions = [
-    {
-        client: "NULL",
-        type: "NULL",
-        contact: "NULL",
-        status: "NULL",
-        notes: "NULL"
-    },
-    {
-        client: "NULL",
-        type: "NULL",
-        contact: "NULL",
-        status: "NULL",
-        notes: "NULL"
-    },
-    {
-        client: "NULL",
-        type: "NULL",
-        contact: "NULL",
-        status: "NULL",
-        notes: "NULL"
-    },
-    {
-        client: "NULL",
-        type: "NULL",
-        contact: "NULL",
-        status: "NULL",
-        notes: "NULL"
-    }
+    { client: "_", type: "_", contact: "_", status: "_", notes: "_" },
+    { client: "_", type: "_", contact: "_", status: "_", notes: "_" },
+    { client: "_", type: "_", contact: "_", status: "_", notes: "_" },
+    { client: "_", type: "_", contact: "_", status: "_", notes: "_" }
 ];
 
-// Function to render the commission list
+const waitlistData = [
+    { name: "_", commissionType: "_", contact: "_", status: "_" }
+];
+
+const slots = {
+    "January 1, 2025": 0,
+    "February 1, 2025": 0
+};
+
+// Utility to create table rows from data
+function createTableRow(data, keys) {
+    const row = document.createElement('tr');
+    row.innerHTML = keys.map(key => `<td>${data[key] ?? ""}</td>`).join('');
+    return row;
+}
+
+// Render commission list
 function renderCommissionList() {
     const commissionList = document.getElementById('commission-list');
-    commissionList.innerHTML = ''; // Clear existing content
-
-    // Create rows for each commission
+    if (!commissionList) return;
+    commissionList.innerHTML = '';
     commissions.forEach(commission => {
-        const commissionRow = document.createElement('tr');
-        commissionRow.innerHTML = `
-            <td>${commission.client}</td>
-            <td>${commission.type}</td>
-            <td>${commission.contact}</td>
-            <td>${commission.status}</td>
-            <td>${commission.notes}</td>
-        `;
-        commissionList.appendChild(commissionRow);
+        commissionList.appendChild(
+            createTableRow(commission, ['client', 'type', 'contact', 'status', 'notes'])
+        );
+    });
+}
+
+// Render waitlist
+function renderWaitlist() {
+    const waitlistTableBody = document.querySelector('#waitlist-table tbody');
+    if (!waitlistTableBody) return;
+    waitlistTableBody.innerHTML = '';
+    waitlistData.forEach(wait => {
+        waitlistTableBody.appendChild(
+            createTableRow(wait, ['name', 'commissionType', 'contact', 'status'])
+        );
+    });
+}
+
+// Render slots
+function renderSlots() {
+    document.querySelectorAll('#upcoming-slots li').forEach(item => {
+        const dateElem = item.querySelector('strong');
+        const remainingText = item.querySelector('.remaining-slots');
+        if (!dateElem || !remainingText) return;
+        const date = dateElem.innerText;
+        remainingText.innerText = `( ${slots[date] ?? 0} slots remaining )`;
     });
 }
 
 // Initial render
 renderCommissionList();
-
-const waitlistData = [
-    {
-        name: "NULL",
-        commissionType: "NULL",
-        contact: "NULL",
-        status: "NULL" 
-    }
-];
-
-const waitlistTableBody = document.querySelector('#waitlist-table tbody');
-
-waitlistData.forEach(wait => {
-    const waitListRow = document.createElement('tr');
-    waitListRow.innerHTML = `
-        <td>${wait.name}</td>
-        <td>${wait.commissionType}</td>
-        <td>${wait.contact}</td>
-        <td>${wait.status}</td>
-    `;
-    waitlistTableBody.appendChild(waitListRow);
-});
-
-let slots = {
-    "January 1, 2025": 0,
-    "February 1, 2025": 0
-};
-
-document.querySelectorAll('#upcoming-slots li').forEach(item => {
-    const date = item.querySelector('strong').innerText;
-    const remainingText = item.querySelector('.remaining-slots');
-    remainingText.innerText = `( ${slots[date]} slots remaining )`;
-});
+renderWaitlist();
+renderSlots();

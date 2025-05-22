@@ -1,4 +1,3 @@
-/* Disable scrolling */
 .no-scroll {
     overflow: hidden;
 }
@@ -11,8 +10,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: var(--theme-color);
     align-items: center;
+    background: var(--theme-color);
     opacity: 1;
     transition: opacity 0.75s, visibility 0.75s;
     z-index: 300000;
@@ -32,8 +31,8 @@
 }
 
 .spinner {
-    border-radius: 50%;
     position: absolute;
+    border-radius: 50%;
     animation-timing-function: ease;
 }
 
@@ -89,8 +88,12 @@
 }
 
 @keyframes flicker {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {

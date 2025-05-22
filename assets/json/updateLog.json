@@ -1,8 +1,33 @@
 {
   "updates": [
-
     {
-      "date": "2025/05/5",
+      "date": "2025-05-23",
+      "major": [
+        "Optimized carousel functionality for smoother transitions and performance.",
+        "Improved character selection logic for better responsiveness and accuracy.",
+        "Streamlined commission sheet filter for enhanced usability.",
+        "Refined contact form interactions and validation logic.",
+        "Enhanced navigation logic for a more intuitive user experience.",
+        "Polished popup behavior to ensure consistent display and performance.",
+        "Optimized portfolio filtering for faster and more accurate results.",
+        "Improved search functionality for better relevance and speed.",
+        "Streamlined slideshow transitions and control logic.",
+        "Refined theme selection and multilingual translation handling."
+      ],
+      "minor": [
+        "Overall UI/UX design adjustments."
+      ],
+      "bugfixes": [
+        "Fixed some bugs."
+      ],
+      "upcoming": [
+        "New characters.",
+        "Improved language localization.",
+        "New comic chapters."
+      ]
+    },
+    {
+      "date": "2025-05-05",
       "major": [
         "Optimized carousel logic on the homepage featured videos.",
         "Added click function to commission sample images—clicking turns them grayscale, clicking again restores the original colors."
@@ -17,86 +42,67 @@
       ],
       "upcoming": [
         "New characters.",
-        "Improved language localization",
+        "Improved language localization.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2025/4/29/",
+      "date": "2025-04-29",
       "major": [
         "Added author and genre tags to comic cards for better content categorization."
       ],
       "minor": [
         "General UI improvements for a smoother and more intuitive experience."
       ],
-      "bugfixes": [
-
-      ],
+      "bugfixes": [],
       "upcoming": [
         "New characters.",
-        "Improved language localization",
+        "Improved language localization.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2025/4/4/",
+      "date": "2025-04-04",
       "major": [
-        "Newly Added characters, to the character page with refined information (Floribeth, Feya, Hexxana, Liliana, Evany, Rayza, Elishia)."
+        "Added new characters to the character page with refined information (Floribeth, Feya, Hexxana, Liliana, Evany, Rayza, Elishia)."
       ],
-      "minor": [
-
-      ],
-      "bugfixes": [
-
-      ],
+      "minor": [],
+      "bugfixes": [],
       "upcoming": [
         "New characters.",
-        "Improved language localization",
+        "Improved language localization.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2025/2/4/",
+      "date": "2025-02-04",
       "major": [
-        "Overall improvement and optimizations to the site"
+        "Overall improvements and optimizations to the site."
       ],
-      "minor": [
-
-      ],
-      "bugfixes": [
-
-      ],
+      "minor": [],
+      "bugfixes": [],
       "upcoming": [
         "New characters.",
-        "Improved language localization",
+        "Improved language localization.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2025/26/1/",
-      "major": [
-
-      ],
+      "date": "2025-01-26",
+      "major": [],
       "minor": [
-        "Made some changes to the theme colors, now it's solid rather than linear gradient for a more clean and modern look.",
-        "UI enhancement in some parts of the site."
+        "Changed theme colors to solid for a cleaner, modern look.",
+        "UI enhancements in some parts of the site."
       ],
-      "bugfixes": [
-
-      ],
+      "bugfixes": [],
       "upcoming": [
         "New comic chapters."
       ]
     },
-    
     {
-      "date": "2024/12/2/",
+      "date": "2024-12-02",
       "major": [
-        "Addition of an account profile to the settings menu."
+        "Added account profile to the settings menu."
       ],
       "minor": [
         "UI changes and optimizations."
@@ -108,31 +114,21 @@
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/11/14/",
-      "major": [
- 
-      ],
+      "date": "2024-11-14",
+      "major": [],
       "minor": [
-        "Interface changes and optimizations"
+        "Interface changes and optimizations."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/11/9/",
-      "major": [
- 
-      ],
-      "minor": [
-        
-      ],
+      "date": "2024-11-09",
+      "major": [],
+      "minor": [],
       "bugfixes": [
         "Fixed some bugs."
       ],
@@ -140,236 +136,183 @@
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/11/2/",
+      "date": "2024-11-02",
       "major": [
         "The character page is now live! Explore character profiles, with more characters and features coming soon."
       ],
       "minor": [
         "Overall adjustments."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/28/",
+      "date": "2024-10-28",
       "major": [
-        "Addition of a description popup to the comic page."
+        "Added a description popup to the comic page."
       ],
       "minor": [
         "Overall adjustments."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/21/",
+      "date": "2024-10-21",
       "major": [
-        "A language selection dropdown has been added to the preferences page. This feature is still under development, and additional languages and options will be implemented in future updates."
+        "Added a language selection dropdown to the preferences page. This feature is under development; more languages and options coming soon."
       ],
-      "minor": [
-        
-      ],
-      "bugfixes": [
-        
-      ],
+      "minor": [],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/20/",
-      "major": [
-    
-      ],
+      "date": "2024-10-20",
+      "major": [],
       "minor": [
-        "Improvements and optimizations to the overall interface design",
-        "Enhanced the active link logic"
+        "Improvements and optimizations to the overall interface design.",
+        "Enhanced the active link logic."
       ],
       "bugfixes": [
         "Overall adjustments and fixes."
       ],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/19/",
+      "date": "2024-10-19",
       "major": [
-        "Replaced the old theme toggle system with a dedicated Preferences page, allowing users to customize their desired theme. More features will be added soon!"
+        "Replaced the old theme toggle system with a dedicated Preferences page, allowing users to customize their desired theme. More features coming soon!"
       ],
       "minor": [
-        "Applied various minor adjustments and performance improvements."
+        "Various minor adjustments and performance improvements."
       ],
       "bugfixes": [
         "Optimized the code for enhanced performance and faster load times."
       ],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/18/",
-      "major": [
-  
-      ],
+      "date": "2024-10-18",
+      "major": [],
       "minor": [
         "Applied the theme color to the popup, side menu, and dropdown, matching the blue accent of the website.",
-        "Made a small adjustments to the comic page.",
+        "Made small adjustments to the comic page.",
         "Enhanced the responsiveness of the navigation menu."
-
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/16/",
-      "major": [
-  
-      ],
+      "date": "2024-10-16",
+      "major": [],
       "minor": [
-        "Updated the featured videos section, now embedding videos directly from YouTube."
+        "Updated the featured videos section to embed videos directly from YouTube."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/15/",
-      "major": [
-  
-      ],
+      "date": "2024-10-15",
+      "major": [],
       "minor": [
         "Reinstated the background on the About and Contact pages with minor adjustments."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/11/",
+      "date": "2024-10-11",
       "major": [
         "Enhanced the contact us page with improved validation status and file preview image."
       ],
-      "minor": [
-
-      ],
-      "bugfixes": [
-        
-      ],
+      "minor": [],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/9/",
+      "date": "2024-10-09",
       "major": [
         "Introduced a waitlist table on the commissioner information page for better transparency."
       ],
       "minor": [
-        "Updated the Terms of Service (TOS) and Frequently asked questions (FAQs)."
+        "Updated the Terms of Service (TOS) and Frequently Asked Questions (FAQs)."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/8/",
-      "major": [
-
-      ],
+      "date": "2024-10-08",
+      "major": [],
       "minor": [
         "Enhanced the currency dropdown for better usability and added additional information for clearer user guidance.",
         "Made the direct email on the contact page interactable, allowing users to initiate commission requests easily.",
         "Added a direct link to the contact page for easy access to the commissioner info page, allowing you to view your queue status."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/7/",
-      "major": [
-
-      ],
+      "date": "2024-10-07",
+      "major": [],
       "minor": [
         "Enhanced the layout and responsiveness of the contact page.",
         "Removed the footer on certain pages."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/6/",
+      "date": "2024-10-06",
       "major": [
         "Added a help page for further assistance or questions."
       ],
       "minor": [
         "Overall adjustments."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-    
     {
-      "date": "2024/10/5/",
+      "date": "2024-10-05",
       "major": [
         "Added a settings button for a more streamlined and organized navigation."
       ],
@@ -377,54 +320,45 @@
         "Added a queue button on the commission sheet for quick access to the commissioner info page during inquiries.",
         "Enhanced the categorization in the sidebar menu for better user experience."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
     },
-
     {
-      "date": "2024/10/4/",
+      "date": "2024-10-04",
       "major": [
         "Introduced a customer support page.",
-        "commissioner information page, in now available to view."
+        "Commissioner information page is now available to view."
       ],
       "minor": [
-        "Made general minor adjustments and optimizations."
+        "General minor adjustments and optimizations."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Launch of a Character page.",
+        "Launch of a character page.",
         "New comic chapters."
       ]
-    },  
-
+    },
     {
-      "date": "2024/10/2/",
+      "date": "2024-10-02",
       "major": [
         "Resolved the issue with the welcome popup icon not appearing on certain pages."
       ],
       "minor": [
-        "Made general minor adjustments."
+        "General minor adjustments."
       ],
-      "bugfixes": [
-        
-      ],
+      "bugfixes": [],
       "upcoming": [
-        "Introduction of a Character page.",
-        "Addition of Comic chapters.",
+        "Introduction of a character page.",
+        "Addition of comic chapters.",
         "Commissioner info page.",
         "Timelapse video page."
       ]
-    },    
-
+    },
     {
-      "date": "2024/10/1/",
+      "date": "2024-10-01",
       "major": [
         "Added a cookie popup to improve user experience and compliance.",
         "Refined and optimized the code for popup functionality.",
@@ -443,15 +377,14 @@
         "Cleaned up unused code and reorganized it for better performance."
       ],
       "upcoming": [
-        "Introduction of a Character page.",
-        "Addition of Comic chapters.",
+        "Introduction of a character page.",
+        "Addition of comic chapters.",
         "Commissioner info page.",
         "Timelapse video page."
       ]
-    },    
-
+    },
     {
-      "date": "2024/09/30/",
+      "date": "2024-09-30",
       "major": [
         "Added the 'What's New' section on the homepage for updates.",
         "Added a currency converter to the commission sheet page.",
@@ -466,7 +399,7 @@
         "Streamlined code for improved performance and applied various fixes."
       ],
       "upcoming": [
-        "Introduction of a Character page.",
+        "Introduction of a character page.",
         "Comic chapters.",
         "Commissioner info page.",
         "Timelapse video page."
