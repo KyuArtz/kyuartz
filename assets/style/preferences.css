@@ -1,14 +1,15 @@
 #preferences-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-top: 30px;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    gap: 10px;
 }
 
 #preferences-container h1 {
-    text-align: center;
     color: var(--color);
+    text-align: center;
 }
 
 #preferences-container h2 {
@@ -17,19 +18,16 @@
 
 #theme-select,
 #languageSwitcher {
-    max-width: 200px;
-    padding: 10px;
-    color: var(--color);
     background: none;
     border: 1px solid;
     border-radius: 10px;
+    color: var(--color);
+    max-width: 200px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 #theme-select:focus,
 #languageSwitcher:focus {
     outline: none;
-}
-
-option {
-    background: none;
 }

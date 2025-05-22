@@ -1,10 +1,49 @@
-.commission-section {
+.commission-container {
     margin-top: 60px;
+    padding: 0 10px;
+}
+
+.commission-section,
+.waitlist-section {
+    background: var(--content-bg);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+#client-table,
+#waitlist-table {
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    background: var(--theme-overlay);
+    overflow: hidden;
+}
+
+.slots-container {
+    display: flex;
+    color: var(--text-color);
+}
+
+.slots-container h3 {
+    border-bottom: 1px solid var(--text-color);
+}
+
+.slots-container section {
+    flex: 1;
+    margin: 30px 5px 5px;
+    border-radius: 10px;
+    background: var(--content-bg);
+}   
+
+.remaining-slots {
+    color: #FF6347;
 }
 
 section h1,
 section h2 {
     text-align: center;
+    color: var(--color);
+    padding: 10px;
 }
 
 .slots h3,
@@ -14,24 +53,39 @@ section h2 {
     color: var(--color);
 }
 
-section h1,
-section h2 {
-    color: var(--color);
-    padding: 10px;
+strong {
+    color: #4CAF50;
 }
 
 section p {
     padding: 0 10px;
 }
 
+section ul,
+#upcoming-slots ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li,
+#upcoming-slots li {
+    margin: 10px 0;
+}
+
+section ul li {
+    padding: 10px;
+    border-left: 4px solid #4CAF50;
+    list-style: none;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     background: var(--content-bg);
-    box-shadow: 0 0 3px #000;
 }
 
-th, td {
+th,
+td {
     padding: 12px 15px;
     border: 1px solid;
     text-align: left;
@@ -50,57 +104,33 @@ tbody tr:hover {
     background: var(--theme-overlay);
 }
 
-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-section ul li {
-    margin: 10px 0;
-    padding: 10px;
-    border-left: 4px solid #4CAF50;
-    list-style: none;
-}
-
-strong {
-    color: var(--color);
-}
-
-.csc {
-    display: flex;
-    color: var(--text-color);
-}
-
-.csc section {
-    flex: 1;
-    box-shadow: 0 0 2px;
-    margin: 30px 5px 5px;
-    border-radius: 10px;
-    background: var(--content-bg);
-}
-
 @media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
         display: block;
     }
-    
+
     th {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
-    
+
     tr {
         margin-bottom: 15px;
     }
-    
+
     td {
         position: relative;
         padding-left: 50%;
         text-align: left;
         border: none;
     }
-    
+
     td:before {
         position: absolute;
         left: 0;
@@ -108,30 +138,30 @@ strong {
         padding-left: 10px;
         white-space: nowrap;
     }
-    
-    td:nth-of-type(1):before { content: "Commissioner Name"; }
-    td:nth-of-type(2):before { content: "Commission Type"; }
-    td:nth-of-type(3):before { content: "Contact"; }
-    td:nth-of-type(4):before { content: "Status"; }
-    td:nth-of-type(5):before { content: "Notes"; }
-}
 
-@media (max-width: 500px) { 
-    .csc {
-        flex-direction: column;
+    td:nth-of-type(1):before {
+        content: "Commissioner Name";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Commission Type";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Contact";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Status";
+    }
+
+    td:nth-of-type(5):before {
+        content: "Notes";
     }
 }
 
-#upcoming-slots ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#upcoming-slots li {
-    margin: 10px 0;
-}
-
-.remaining-slots {
-    font-weight: bold;
-    color: #FF6347;
+@media (max-width: 500px) {
+    .slots-container {
+        flex-direction: column;
+    }
 }

@@ -1,13 +1,13 @@
 .guide-container {
     margin-top: 60px;
+    padding: 0 5px;
 }
 
 .user-guide {
     max-width: 800px;
     margin: 5px auto;
     padding: 20px;
-    background: var(--theme-color);
-    box-shadow: 0 0 3px;
+    background: var(--content-bg);
     border-radius: 10px;
     box-shadow: 0 0 3px;
 }

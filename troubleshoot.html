@@ -3,68 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- SEO Optimization -->
   <title>KyuArtz | Troubleshooting</title>
   <meta name="description" content="Welcome to the KyuArtz Troubleshooting page. Find solutions to common issues, FAQs, and tips to enhance your experience on our platform.">
   <meta name="keywords" content="KyuArtz">
   <meta name="author" content="KyuArtz">
-  
-  <!-- Theme color for different platforms -->
-  <meta name="theme-color" content="var(--color)"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
-  <meta name="msapplication-TileColor" content="var(--color)"> <!-- For Windows 8 and Windows Phone -->
-
-  <!-- Favicons and Icons -->
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="KyuArtz" />
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
-
+  <meta name="theme-color" content="var(--color)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="var(--color)">
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="KyuArtz">
+  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/troubleshoot">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preload" href="assets/style/loader.css" as="style">
   <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/troubleshoot.css">
   <link rel="stylesheet" href="assets/style/loader.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/popup.css">
-
-  <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-
-  <!-- Defer scripts for performance optimization -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/singleslideshow.js" defer></script>
   <script src="assets/js/popup.js" defer></script>
   <script src="assets/js/translations.js" defer></script>
   <script src="assets/js/search.js" defer></script>
-
-  <!-- Open Graph Tags for Social Media Sharing -->
   <meta property="og:title" content="KyuArtz | Troubleshooting">
   <meta property="og:description" content="Welcome to the KyuArtz Troubleshooting page. Find solutions to common issues, FAQs, and tips to enhance your experience on our platform.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo and branding">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/troubleshoot">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Troubleshooting">
   <meta name="twitter:description" content="Welcome to the KyuArtz Troubleshooting page. Find solutions to common issues, FAQs, and tips to enhance your experience on our platform.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -77,17 +57,15 @@
         "name": "Kyu"
       }
     }
-    </script>
+  </script>
 </head>
 <body>
-
   <div class="loader" oncontextmenu="return false">
     <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
@@ -95,20 +73,17 @@
     <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
-
   <div id="cookie-popup" class="cookie-popup">
     <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
-
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-        <a href="index.html" data-translate="brand">Kyu</a>  
-        <p class="sbt">Beta</p>  
+        <a href="index.html" data-translate="brand">Kyu</a>
+        <p class="sbt">Beta</p>
       </div>
-  
       <div class="search-container">
         <form class="search" aria-label="Search KyuArtz">
           <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
@@ -118,7 +93,6 @@
           <div class="search-result" style="display: none;"></div>
         </form>
       </div>
-  
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
@@ -140,12 +114,10 @@
             <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
-  
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
             <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
-
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="span-btn">
               <h2><span data-translate="commissionArt">Commission Art</span> <i class="fa-solid fa-angle-right"></i></h2>
@@ -186,8 +158,7 @@
           </div>
         </li>
       </ul>
-  
-      <div class="subMenu-container">    
+      <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -219,12 +190,10 @@
     </nav>
   </header>
   <div class="blur-overlay"></div>
-
   <div class="troubleshoot-container">
     <div class="troubleshooting">
       <h1>Troubleshooting Guide</h1>
       <p>If you’re experiencing issues while using KyuArtz, this guide will help you troubleshoot and resolve common problems. If your issue persists, feel free to <a class="dL" href="customer-support.html">contact support <i class="fa-solid fa-arrow-up-right-from-square"></i></a> directly for assistance.</p>
-    
       <h2>1. Website Loading Issues</h2>
       <p>Sometimes the website may not load correctly or parts of the site may not function as expected. Try the following solutions:</p>
       <ul>
@@ -233,7 +202,6 @@
         <li><strong>Disable browser extensions:</strong> Certain extensions (like ad blockers or script blockers) may interfere with the functionality of the website. Try disabling them and reloading the page.</li>
         <li><strong>Try a different browser:</strong> If the issue persists, test the website in a different browser (e.g., Chrome, Firefox, Safari) to see if the problem is browser-specific.</li>
       </ul>
-    
       <h2>2. Contact Form Issues</h2>
       <p>If the contact form isn’t working or you’re unable to submit a request, follow these steps:</p>
       <ul>
@@ -242,7 +210,6 @@
         <li><strong>Reload the page:</strong> Sometimes refreshing the page can solve temporary glitches. After refreshing, try submitting the form again.</li>
         <li><strong>Use the direct email:</strong> If the form still doesn’t work, you can always email us at <a class="dL" href="mailto:kyuushi992@gmail.com">kyuushi992@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a> with your inquiries or commission requests.</li>
       </ul>
-    
       <h2>3. Commission Form or Currency Converter Not Working</h2>
       <p>If you are having issues with the commission form or the currency converter, try these solutions:</p>
       <ul>
@@ -250,7 +217,6 @@
         <li><strong>Ensure JavaScript is enabled:</strong> Both the commission form and currency converter rely on JavaScript. Make sure JavaScript is enabled in your browser’s settings.</li>
         <li><strong>Try using a different device:</strong> If the form isn’t working on your current device, try submitting it using another device (e.g., mobile or tablet).</li>
       </ul>
-    
       <h2>4. Image or Portfolio Page Not Loading</h2>
       <p>If images or portfolio pages are not loading correctly, here are a few potential fixes:</p>
       <ul>
@@ -258,7 +224,6 @@
         <li><strong>Turn off ad blockers:</strong> In some cases, ad blockers may block images or content from being displayed. Disable the blocker temporarily to see if that resolves the issue.</li>
         <li><strong>Clear your cache:</strong> Cached images may fail to load if they’re outdated. Clear your browser cache and reload the page.</li>
       </ul>
-    
       <h2>5. Mobile View Issues</h2>
       <p>Having trouble viewing the site on mobile devices? Here are some tips:</p>
       <ul>
@@ -266,7 +231,6 @@
         <li><strong>Try a different browser:</strong> If the mobile browser you’re using doesn’t support some features, try switching to another one, like Chrome or Safari.</li>
         <li><strong>Zooming issues:</strong> If you are having trouble with zoom, ensure that your mobile browser settings allow you to zoom in or out properly.</li>
       </ul>
-    
       <h2>6. Payment Processing Issues</h2>
       <p>If you're having trouble with making payments or encountering errors during the checkout process, follow these steps:</p>
       <ul>
@@ -274,11 +238,9 @@
         <li><strong>Use a different payment method:</strong> If one method isn't working, try using an alternate method (if available).</li>
         <li><strong>Contact your bank:</strong> If your payment is being declined, your bank might be blocking the transaction. Reach out to your bank to resolve the issue.</li>
       </ul>
-    
       <h2>7. Other Technical Issues</h2>
       <p>If you’re facing other technical difficulties not listed here, please don’t hesitate to <a class="dL" href="customer-support.html">contact support <i class="fa-solid fa-arrow-up-right-from-square"></i></a> with details about the issue. We’ll get back to you as soon as possible to help resolve the problem.</p>
-    </div>    
+    </div>
   </div>
-  
 </body>
 </html>

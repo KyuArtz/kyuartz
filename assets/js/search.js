@@ -1,4 +1,4 @@
-let availableKeywords = [
+const availableKeywords = [
   { name: 'Home Page', url: 'index.html' },
   { name: 'Portfolio', url: 'portfolio.html' },
   { name: 'About', url: 'about.html' },
@@ -23,48 +23,60 @@ let availableKeywords = [
   { name: 'Cara (KyuArtz page)', url: 'https://cara.app/kyuartz' },
 ];
 
-const resultBox = document.querySelector(".search-result");
-const inputBox = document.getElementById("input-box");
-const searchButton = document.getElementById("search-button");
+const resultBox = document.querySelector('.search-result');
+const inputBox = document.getElementById('input-box');
+const searchButton = document.getElementById('search-button');
 
-inputBox.onkeyup = function() {
-  search();
-}
+let debounceTimer = null;
 
-searchButton.onclick = function(event) {
-  event.preventDefault(); // Prevent the form from submitting
+inputBox.addEventListener('keyup', () => {
+  clearTimeout(debounceTimer);
+  debounceTimer = setTimeout(search, 200);
+});
+
+searchButton.addEventListener('click', (event) => {
+  event.preventDefault();
   search();
-}
+});
 
 function search() {
-  let result = [];
-  let input = inputBox.value;
-  if (input.length) {
-      result = availableKeywords.filter((keyword) => {
-          return keyword.name.toLowerCase().includes(input.toLowerCase());
-      });
-      display(result);
-  } else {
-      resultBox.style.display = 'none';
+  const input = inputBox.value.trim();
+  if (!input) {
+    resultBox.style.display = 'none';
+    return;
   }
+  const result = availableKeywords.filter(keyword =>
+    keyword.name.toLowerCase().includes(input.toLowerCase())
+  );
+  display(result);
 }
 
 function display(result) {
   if (result.length === 0) {
-      resultBox.innerHTML = "<p>No matching results were found.</p>";
+    resultBox.innerHTML = '';
+    const p = document.createElement('p');
+    p.textContent = 'No matching results were found.';
+    resultBox.appendChild(p);
   } else {
-      const content = result.map((list) => {
-          return `<li><a href="${list.url}"><i class="fa-solid fa-magnifying-glass"></i> ${list.name}</a></li>`;
-      }).join(""); // join the array into a single string
-
-      resultBox.innerHTML = `<ul>${content}</ul>`;
+    const ul = document.createElement('ul');
+    result.forEach(item => {
+      const li = document.createElement('li');
+      li.innerHTML = `<a href="${item.url}"><i class="fa-solid fa-magnifying-glass"></i> ${item.name}</a>`;
+      ul.appendChild(li);
+    });
+    resultBox.innerHTML = '';
+    resultBox.appendChild(ul);
   }
-  resultBox.style.display = 'block'; // show the result box
+  resultBox.style.display = 'block';
 }
 
 // Hide the search results when clicking outside
 document.addEventListener('click', function(event) {
-  if (!resultBox.contains(event.target) && !inputBox.contains(event.target) && !searchButton.contains(event.target)) {
-      resultBox.style.display = 'none';
+  if (
+    !resultBox.contains(event.target) &&
+    !inputBox.contains(event.target) &&
+    !searchButton.contains(event.target)
+  ) {
+    resultBox.style.display = 'none';
   }
 });

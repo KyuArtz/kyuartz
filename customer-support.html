@@ -3,68 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- SEO Optimization -->
   <title>KyuArtz | Customer Support</title>
   <meta name="description" content="Contact KyuArtz for customer support, inquiries, or assistance with any services.">
   <meta name="keywords" content="KyuArtz">
   <meta name="author" content="KyuArtz">
-  
-  <!-- Theme color for different platforms -->
-  <meta name="theme-color" content="var(--color)"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
-  <meta name="msapplication-TileColor" content="var(--color)"> <!-- For Windows 8 and Windows Phone -->
-
-  <!-- Favicons and Icons -->
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="KyuArtz" />
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
-
+  <meta name="theme-color" content="var(--color)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="var(--color)">
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="KyuArtz">
+  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/customer-support">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preload" href="assets/style/loader.css" as="style">
   <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/customer-support.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/popup.css">
   <link rel="stylesheet" href="assets/style/loader.css">
-
-  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-
-  <!-- Defer JavaScript for Faster Load -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/popup.js" defer></script>
   <script src="assets/js/customerSuppFunction.js" defer></script>
   <script src="assets/js/translations.js" defer></script>
   <script src="assets/js/search.js" defer></script>
-
-  <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="KyuArtz | Customer Support">
   <meta property="og:description" content="Contact KyuArtz for customer support, inquiries, or assistance with any services.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/customer-support">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Customer Support">
   <meta name="twitter:description" content="Contact KyuArtz for customer support, inquiries, or assistance with any services.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -77,17 +57,15 @@
         "name": "Kyu"
       }
     }
-    </script>
+  </script>
 </head>
 <body>
-
   <div class="loader" oncontextmenu="return false">
     <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
@@ -95,20 +73,17 @@
     <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
-
   <div id="cookie-popup" class="cookie-popup">
     <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
-
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-        <a href="index.html" data-translate="brand">Kyu</a>  
-        <p class="sbt">Beta</p>  
+        <a href="index.html" data-translate="brand">Kyu</a>
+        <p class="sbt">Beta</p>
       </div>
-  
       <div class="search-container">
         <form class="search" aria-label="Search KyuArtz">
           <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
@@ -118,7 +93,6 @@
           <div class="search-result" style="display: none;"></div>
         </form>
       </div>
-  
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
@@ -140,12 +114,10 @@
             <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
-  
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
             <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
-
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="span-btn">
               <h2><span data-translate="commissionArt">Commission Art</span> <i class="fa-solid fa-angle-right"></i></h2>
@@ -186,8 +158,7 @@
           </div>
         </li>
       </ul>
-  
-      <div class="subMenu-container">    
+      <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -219,44 +190,35 @@
     </nav>
   </header>
   <div class="blur-overlay"></div>
-
   <div class="customer-support-container">
-    <form class="customer" id="supportForm" action="https://api.web3forms.com/submit" method="POST">
+    <form class="customer" id="supportForm" action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
       <h1 data-translate="customerSupport">CUSTOMER SUPPORT</h1>
       <input type="hidden" name="access_key" value="19cfb576-ef37-4a40-b621-64caca87bbf1">
-      <label for="name" data-translate="name">Name</label><br>
-      <input type="text" id="name" name="name" required><br><br>
-      
-      <label for="email" data-translate="email">Email</label><br>
-      <input type="email" id="email" name="email" required><br><br>
-      
-      <label for="reference" data-translate="orderCommissionRef">Order/Commission Reference (if applicable)</label><br>
-      <input type="text" id="reference" name="reference"><br><br>
-      
-      <label for="issueType" data-translate="issueType">Issue Type</label><br>
+      <label for="name" data-translate="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email" data-translate="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="reference" data-translate="orderCommissionRef">Order/Commission Reference (if applicable)</label>
+      <input type="text" id="reference" name="reference">
+      <label for="issueType" data-translate="issueType">Issue Type</label>
       <select id="issueType" name="issueType" required>
         <option value="technical">Technical Issue</option>
         <option value="payment">Payment Issue</option>
         <option value="order">Order/Commission Inquiry</option>
         <option value="general">General Question</option>
         <option value="other">Other</option>
-      </select><br><br>
-      
-      <label for="description" data-translate="descriptionOfIssue">Description of Issue</label><br>
-      <textarea id="description" name="description" rows="5" required></textarea><br><br>
-
-      <label for="fileUpload" data-translate="uploadSample">Upload sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
+      </select>
+      <label for="description" data-translate="descriptionOfIssue">Description of Issue</label>
+      <textarea id="description" name="description" rows="5" required></textarea>
+      <label for="fileUpload" data-translate="uploadSample">Upload sample: (Optional)</label>
+      <span id="file-error"></span><span id="file-valid"></span>
       <div class="fileUpload-content">
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="fileUpload" name="fileUpload" onchange="validateFile()">
-      
         <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: 200px;">
-      
         <button id="remove-btn" style="display:none;" data-translate="remove" onclick="removeFile()">Remove</button>
       </div>
-
       <button type="submit" data-translate="submit">Submit</button>
     </form>
   </div>
-
 </body>
 </html>

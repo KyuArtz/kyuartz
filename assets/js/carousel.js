@@ -38,22 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
             updateCarousel();
         }, 5000);
     });
-
-    //Swipe gesture support (mobile)
-    let startX = 0;
-    carouselInner.addEventListener('touchstart', (event) => {
-        startX = event.touches[0].clientX;
-    });
-
-    carouselInner.addEventListener('touchend', (event) => {
-        const endX = event.changedTouches[0].clientX;
-        const diffX = startX - endX;
-
-        if (diffX > 50) { // Swipe left (next)
-            currentIndex = (currentIndex + 1) % itemCount;
-        } else if (diffX < -50) { // Swipe right (previous)
-            currentIndex = (currentIndex - 1 + itemCount) % itemCount;
-        }
-        updateCarousel();
-    });
 });

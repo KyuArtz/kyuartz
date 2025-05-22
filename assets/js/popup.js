@@ -1,101 +1,70 @@
-// Welcome Message Popup Logic
-document.addEventListener("DOMContentLoaded", function() {
-  if (!getCookie("welcome-messageShown")) {
-    var welcomeOverlay = document.getElementById('welcome-overlay');
-    var welcomeMessage = document.getElementById('welcome-message');
-
-    welcomeOverlay.style.display = 'block';
-    welcomeMessage.style.display = 'block';
-    setCookie("welcome-messageShown", true, 365); // Cookie expires in 365 days
-  }
-});
-
-function closeWelcomeMessage() {
-  var welcomeOverlay = document.getElementById('welcome-overlay');
-  var welcomeMessage = document.getElementById('welcome-message');
-
-  welcomeOverlay.style.display = 'none';
-  welcomeMessage.style.display = 'none';
-}
-
 // Utility Functions for Cookies
-function setCookie(name, value, days) {
-  var expires = "";
+const setCookie = (name, value, days) => {
+  let expires = "";
   if (days) {
-    var date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
     expires = "; expires=" + date.toUTCString();
   }
-  document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
+  document.cookie = `${name}=${value || ""}${expires}; path=/`;
+};
 
-function getCookie(name) {
-  var nameEQ = name + "=";
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1, c.length);
-    }
-    if (c.indexOf(nameEQ) == 0) {
-      return c.substring(nameEQ.length, c.length);
-    }
+const getCookie = (name) => {
+  const nameEQ = name + "=";
+  const ca = document.cookie.split(';');
+  for (let c of ca) {
+    c = c.trim();
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
   }
   return null;
-}
-
-// Toggle function for "What's New" popup
-function toggleWn() {
-  const popupWn = document.getElementById("popup-wn");
-  const toggleBtn = document.getElementById("toggleWnBtn");
-
-  if (popupWn.classList.contains("open-popup-wn")) {
-      // Close the popup
-      togglePopup("popup-wn", "close", "open-popup-wn");
-      toggleBtn.textContent = "What's New?";
-  } else {
-      // Open the popup
-      togglePopup("popup-wn", "open", "open-popup-wn");
-      toggleBtn.textContent = "Close";
-  }
-}
-
-// Open and Close Popup Functions for other popups
-function openNotice() {
-  togglePopup("notice", "open", "open-notice");
-}
-
-function closeNotice() {
-  togglePopup("notice", "close", "open-notice");
-}
-
-function openDonate() {
-  togglePopup("donate-popup", "open", "open-donate");
-}
-
-function closeDonate() {
-  togglePopup("donate-popup", "close", "open-donate");
-}
+};
 
 // General Toggle Popup Function
-function togglePopup(id, action, openClass) {
+const togglePopup = (id, action, openClass) => {
   const popup = document.getElementById(id);
-  popup.classList[action === "open" ? "add" : "remove"](openClass);
-}
+  if (popup) popup.classList[action === "open" ? "add" : "remove"](openClass);
+};
 
-// Cookie pop-up logic
-document.addEventListener("DOMContentLoaded", function() {
-  const cookiePopup = document.getElementById("cookie-popup");
-  const acceptButton = document.getElementById("accept-cookies");
+// Close Welcome Message
+const closeWelcomeMessage = () => {
+  document.getElementById('welcome-overlay')?.style.setProperty('display', 'none');
+  document.getElementById('welcome-message')?.style.setProperty('display', 'none');
+};
 
-  // Check if the user has already accepted cookies
-  if (!localStorage.getItem("cookiesAccepted")) {
-      cookiePopup.style.display = "block"; // Show the pop-up
+// Toggle "What's New" popup
+const toggleWn = () => {
+  const popupWn = document.getElementById("popup-wn");
+  const toggleBtn = document.getElementById("toggleWnBtn");
+  if (!popupWn || !toggleBtn) return;
+
+  const isOpen = popupWn.classList.contains("open-popup-wn");
+  togglePopup("popup-wn", isOpen ? "close" : "open", "open-popup-wn");
+  toggleBtn.textContent = isOpen ? "What's New?" : "Close";
+};
+
+// Open/Close Notice and Donate popups
+const openNotice = () => togglePopup("notice", "open", "open-notice");
+const closeNotice = () => togglePopup("notice", "close", "open-notice");
+const openDonate = () => togglePopup("donate-popup", "open", "open-donate");
+const closeDonate = () => togglePopup("donate-popup", "close", "open-donate");
+
+// DOMContentLoaded logic
+document.addEventListener("DOMContentLoaded", () => {
+  // Welcome Message Popup Logic
+  if (!getCookie("welcome-messageShown")) {
+    document.getElementById('welcome-overlay')?.style.setProperty('display', 'block');
+    document.getElementById('welcome-message')?.style.setProperty('display', 'block');
+    setCookie("welcome-messageShown", true, 365);
   }
 
-  // Add click event to the accept button
-  acceptButton.addEventListener("click", function() {
-      localStorage.setItem("cookiesAccepted", "true"); // Save acceptance
-      cookiePopup.style.display = "none"; // Hide the pop-up
-  });
+  // Cookie pop-up logic
+  const cookiePopup = document.getElementById("cookie-popup");
+  const acceptButton = document.getElementById("accept-cookies");
+  if (cookiePopup && acceptButton && !localStorage.getItem("cookiesAccepted")) {
+    cookiePopup.style.display = "block";
+    acceptButton.addEventListener("click", () => {
+      localStorage.setItem("cookiesAccepted", "true");
+      cookiePopup.style.display = "none";
+    });
+  }
 });

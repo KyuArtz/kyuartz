@@ -2,14 +2,36 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    background: url('../images/bg/lbg_main1.webp'), var(--overlay);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     margin: auto;
     width: 100%;
     height: 100vh;
     padding-top: 90px;
+    background: url('../images/bg/lbg_main1.webp'), var(--overlay);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.faq-container ul {
+    max-width: 1000px;
+    padding: 0;
+    overflow-x: scroll;
+    list-style: none;
+    color: var(--text-color);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.faq-container ul::-webkit-scrollbar {
+    display: none;
+}
+
+.faq-item {
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background: var(--theme-color);
+    box-shadow: 0 0 2px;
 }
 
 .faq-item h2 {
@@ -23,31 +45,6 @@
 
 .faq-item a {
     text-decoration: none;
-}
-
-.faq-container ul {
-    max-width: 1000px;
-    padding: 0;
-    overflow-x: scroll;
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-    list-style: none;
-}
-
-.faq-item {
-    padding: 20px;
-    border-radius: 10px;
-    background: var(--theme-color);
-    margin: 5px;
-    box-shadow: 0 0 2px;
-}
-
-.faq-container ul {
-    color: var(--text-color);
-}
-
-.faq-container ul::-webkit-scrollbar {
-    display: none;
 }
 
 @media screen and (max-width: 500px) {

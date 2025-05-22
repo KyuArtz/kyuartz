@@ -14,7 +14,6 @@ body {
     padding: 0;
 }
 
-/* Scrollbar Styles */
 ::-webkit-scrollbar {
     width: 4px;
     height: 4px;
@@ -97,7 +96,7 @@ body {
     --theme-color: #11051a;
     --text-color: #f0f0f0;
     --color: #a832ff;
-    --content-bg: #2c162e; 
+    --content-bg: #2c162e;
     --theme-overlay: rgba(168, 50, 255, 0.5);
 }
 
@@ -105,7 +104,7 @@ body {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #a832ff;
-    --content-bg: #ddcce0; 
+    --content-bg: #ddcce0;
     --theme-overlay: rgba(168, 50, 255, 0.5);
 }
 
@@ -113,7 +112,7 @@ body {
     --theme-color: #051a08;
     --text-color: #f0f0f0;
     --color: #32ffa8;
-    --content-bg: #162e17; 
+    --content-bg: #162e17;
     --theme-overlay: rgba(50, 255, 168, 0.5);
 }
 
@@ -141,8 +140,8 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.5);
 }
 
-.summaryContent p,
-.expcontent p,
+.summary-content p,
+.experience-content p,
 .cs-content p,
 .cs-content2 p,
 .comic-content p,
@@ -158,9 +157,14 @@ body {
 .user-guide p,
 .user-guide li,
 .troubleshooting p,
-.troubleshooting li
-{
+.troubleshooting li {
     font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 0.8rem;
 }
 
 button,
@@ -173,11 +177,7 @@ a span,
 .settings-btn i,
 input[type="Submit"] {
     cursor: pointer;
-    background: none;
-}
-
-.dL {
-    color: #28adff;
+    background: none; 
 }
 
 button:hover,
@@ -191,23 +191,28 @@ button.prev {
     font-size: 1.5rem;
 }
 
-a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 0.8rem;
+.card-container h1 {
+    font-size: 1.5rem;
 }
 
-p {
-    font-size: 0.9rem;
+.caption-overlay h1 {
+    font-size: 4.5rem;
+}
+
+.cs-content h2 {
+    font-size: 1.3rem;
+}
+
+.dL {
+    color: #28adff;
+}
+
+.footer a {
+    font-size: 0.7rem;
 }
 
 .loader h2 {
     font-size: 1rem;
-}
-
-#commissioner-info h1,
-.waitlist-section h1 {
-    font-size: 1.5rem;
 }
 
 .maintenance_body h1 {
@@ -218,6 +223,10 @@ p {
     font-size: 1rem;
 }
 
+.p {
+    font-size: 0.9rem;
+}
+
 .sideMenu-content h1,
 .sideMenu-content h2,
 .category-menu h1,
@@ -225,22 +234,20 @@ p {
     font-size: 1rem;
 }
 
-.caption-overlay h1 {
-    font-size: 4.5rem;
-}
-
 .video_container h1 {
     font-size: 1.5rem;
 }
 
-.card-container h1 {
+#commissioner-info h1,
+.waitlist-section h1 {
     font-size: 1.5rem;
 }
 
-.cs-content h2 {
-    font-size: 1.3rem;
-}
-
-.footer a {
-    font-size: 0.7rem;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus,
+.slideshow-container:focus{
+    border-color: var(--theme-overlay);
+    outline: 2px solid var(--theme-overlay);
 }

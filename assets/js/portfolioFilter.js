@@ -516,45 +516,55 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "Hexxana_first_digital_portrait",
       category: "anime-style"
     },
-    
   ];
 
   const gallery = document.getElementById('gallery');
+  if (!gallery) return;
 
+  // Render gallery
+  const fragment = document.createDocumentFragment();
   images.forEach(image => {
     const link = document.createElement('a');
     link.href = image.src;
-    link.setAttribute('data-lightbox', 'Art');
-    link.setAttribute('data-title', image.title);
-    link.setAttribute('data-category', image.category);
-    link.oncontextmenu = () => false;
+    link.dataset.lightbox = 'Art';
+    link.dataset.title = image.title;
+    link.dataset.category = image.category;
+    link.addEventListener('contextmenu', e => e.preventDefault());
 
     const img = document.createElement('img');
     img.src = image.src;
     img.alt = image.alt;
-    img.setAttribute('draggable', 'false');
+    img.draggable = false;
     img.loading = 'lazy';
-    
-    link.appendChild(img);
-    gallery.appendChild(link);
-  });
 
-  document.querySelectorAll('.category-link').forEach(link => {
-    link.addEventListener('click', (event) => {
+    link.appendChild(img);
+    fragment.appendChild(link);
+  });
+  gallery.appendChild(fragment);
+
+  // Event delegation for category filtering
+  const categoryContainer = document.querySelector('.category-links');
+  if (categoryContainer) {
+    categoryContainer.addEventListener('click', (event) => {
+      const link = event.target.closest('.category-link');
+      if (!link) return;
       event.preventDefault();
-      const category = event.target.getAttribute('data-category');
+      const category = link.dataset.category;
       filterImages(category);
     });
-  });
+  } else {
+    // fallback for direct .category-link elements
+    document.querySelectorAll('.category-link').forEach(link => {
+      link.addEventListener('click', (event) => {
+        event.preventDefault();
+        filterImages(link.dataset.category);
+      });
+    });
+  }
 
   function filterImages(category) {
-    const links = document.querySelectorAll('#gallery a');
-    links.forEach(link => {
-      if (category === 'all' || link.getAttribute('data-category') === category) {
-        link.style.display = '';
-      } else {
-        link.style.display = 'none';
-      }
+    document.querySelectorAll('#gallery a').forEach(link => {
+      link.style.display = (category === 'all' || link.dataset.category === category) ? '' : 'none';
     });
   }
 

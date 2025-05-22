@@ -14,43 +14,39 @@ const characterBackgrounds = {
     feya: { landscape: "url('assets/images/bg/lbg_main3.webp')", portrait: "url('assets/images/bg/lbg_main3.webp')" },
 };
 
-// Track the currently selected character
 let currentCharacter = null;
 
 function updateBackground() {
     if (!currentCharacter) return;
-
     const isMobile = window.innerWidth <= 768;
     const backgroundType = isMobile ? 'portrait' : 'landscape';
     const characterContainer = document.querySelector('.character-background');
+    if (!characterContainer) return;
 
-    // Apply fade-out effect before changing the background
     characterContainer.style.transition = "opacity 0.3s ease-out";
     characterContainer.style.opacity = 0;
 
-    // After a short delay, change the background image and fade back in
     setTimeout(() => {
-        if (characterBackgrounds[currentCharacter]) {
-            characterContainer.style.backgroundImage = characterBackgrounds[currentCharacter][backgroundType];
-        } else {
-            characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";
-        }
-
-        // Fade back in
+        const bg = characterBackgrounds[currentCharacter]?.[backgroundType] 
+            ?? "url('assets/images/character-presets/cover/default.gif')";
+        characterContainer.style.backgroundImage = bg;
         characterContainer.style.transition = "opacity 0.5s ease-in";
         characterContainer.style.opacity = 1;
-    }, 300); // Adjust timing for smoother effect
+    }, 300);
 }
 
-// Set CSS for the transition effect on `.character-container`
+// Set CSS for the transition effect on `.character-background`
 const characterContainer = document.querySelector('.character-background');
-characterContainer.style.transition = "opacity 0.5s ease";
+if (characterContainer) {
+    characterContainer.style.transition = "opacity 0.5s ease";
+}
 
-// Show character information and update the main background
 function showCharacterInfo(character) {
     const characterInfo = document.getElementById("character-info");
     const characterDetails = document.getElementById("character-details");
+    if (!characterInfo || !characterDetails) return;
 
+    // ... (keep your details logic as is, or move to a separate data file for maintainability)
     // Set default character details
     let details = {
         name: "<gray>Info Not Available Yet</gray>",
@@ -309,13 +305,11 @@ function showCharacterInfo(character) {
 
     characterDetails.innerHTML = `
         <h2>${details.name}</h2>
-
         <div class="character-info-scrollable">
             <div class="info-section" id="elementalPower">
                 <h3>Elemental Mastery</h3>
                 ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
             </div>
-
             <div class="info-section" id="basic-info-scrollable">
                 <p><strong><i class='fas fa-user'></i> Race</strong> ${details.race}</p>
                 <p><strong><i class='fas fa-venus-mars'></i> Gender</strong> ${details.gender}</p>
@@ -325,39 +319,33 @@ function showCharacterInfo(character) {
                 <p><strong><i class='fas fa-crown'></i> Role</strong> ${details.role}</p>
                 <p><strong><i class='fas fa-briefcase'></i> Occupation</strong> ${details.occupation}</p>
             </div>
-
             <div class="info-section" id="abilities">
                 <h3>Abilities</h3>
                 <div id="abilities-scrollable">
-                <p>${details.ability1}</p>
-                <p>${details.ability2}</p>
-                <p>${details.ability3}</p>
-                <p>${details.ability4}</p>
-                <p>${details.ability5}</p>
-                <p>${details.ability6}</p>
+                    <p>${details.ability1}</p>
+                    <p>${details.ability2}</p>
+                    <p>${details.ability3}</p>
+                    <p>${details.ability4}</p>
+                    <p>${details.ability5}</p>
+                    <p>${details.ability6}</p>
                 </div>
             </div>
-
             <div class="info-section" id="weapon">
                 <h3>Favorite Weapon</h3>
                 <p>${details.weapon}</p>
             </div>
-
             <div class="info-section" id="affiliates">
                 <h3>Affiliates</h3>
                 <p>${details.affiliates}</p>
             </div>
-
             <div class="info-section" id="likes">
                 <h3>Likes</h3>
                 <p>${details.likes}</p>
             </div>
-
             <div class="info-section" id="dislikes">
                 <h3>Dislikes</h3>
                 <p>${details.dislikes}</p>
             </div>
-
             <div class="info-section" id="background">
                 <h3>Background</h3>
                 <p>${details.background}</p>
@@ -365,107 +353,138 @@ function showCharacterInfo(character) {
         </div>
     `;
 
-    // Show the character-info section
     characterInfo.style.display = "block";
-
-    // Set the current character and update the background
     currentCharacter = character;
     updateBackground();
 }
 
-document.querySelectorAll('.character-card').forEach(card => {
-    card.addEventListener('click', function() {
-        // Remove 'clicked' class from all cards
-        document.querySelectorAll('.character-card').forEach(c => c.classList.remove('clicked'));
+// Combine card click logic into one listener
+function attachCharacterCardListeners() {
+    document.querySelectorAll('.character-card').forEach(card => {
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-pressed', 'false');
+        if (card.dataset.character) {
+            card.setAttribute('aria-label', `Select ${card.dataset.character}`);
+        }
 
-        // Add 'clicked' class only to the selected card
-        this.classList.add('clicked');
+        // Remove previous listeners to avoid duplicates
+        card.replaceWith(card.cloneNode(true));
     });
-});
 
-// Event listener for each card
-document.querySelectorAll('.character-card').forEach(card => {
-    card.addEventListener('click', (e) => {
-        // Extract the character ID from the card and update currentCharacter
-        const characterId = card.getAttribute('onclick').match(/'(\w+)'/)[1];
-        showCharacterInfo(characterId);
+    // Re-select after cloning
+    document.querySelectorAll('.character-card').forEach(card => {
+        card.addEventListener('click', function() {
+            document.querySelectorAll('.character-card').forEach(c => {
+                c.classList.remove('clicked');
+                c.setAttribute('aria-pressed', 'false');
+            });
+            this.classList.add('clicked');
+            this.setAttribute('aria-pressed', 'true');
+            const characterId = this.dataset.character;
+            showCharacterInfo(characterId);
+        });
+
+        card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
     });
-});
 
-// Update background when resizing
-window.addEventListener('resize', updateBackground); // Calls updateBackground on resize
+    document.querySelectorAll('.filter-character a').forEach(filterBtn => {
+        filterBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const category = this.dataset.category;
+            document.querySelectorAll('.character-card').forEach(card => {
+                const cardCategories = (card.dataset.category || '').split(',').map(cat => cat.trim());
+                if (category === 'all' || cardCategories.includes(category)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+}
+
+// Initial call
+attachCharacterCardListeners();
+// ...whenever you update the DOM with new character cards, call:
+attachCharacterCardListeners();
+
+// Update background on resize
+window.addEventListener('resize', updateBackground);
 
 // Hide character info function
 function hideCharacterInfo() {
     const characterInfo = document.getElementById("character-info");
-    characterInfo.style.display = "none";
-    
-    // Optionally reset to default background when closed
+    if (characterInfo) characterInfo.style.display = "none";
     const characterContainer = document.querySelector('.character-background');
-    characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";
-    currentCharacter = null; // Clear the current character when info is hidden
+    if (characterContainer) {
+        characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";
+    }
+    // Deselect any selected character card
+    document.querySelectorAll('.character-card.clicked').forEach(card => {
+        card.classList.remove('clicked');
+        card.setAttribute('aria-pressed', 'false');
+    });
+    currentCharacter = null;
 }
 
+// Carousel logic (updated to scroll only one card per next/previous click, with looping at ends)
 (() => {
-  // Local variables for the carousel
-  let currentIndex = 0;
-  let wrapper = null;
-  const GAP = 10; // Constant gap value (in pixels) between cards
+    let currentIndex = 0;
+    let wrapper = null;
+    const GAP = 10;
 
-  // Initialize the carousel once DOM is ready
-  function initCarousel() {
-    wrapper = document.querySelector(".character-cards-wrapper");
-    if (!wrapper || !wrapper.children.length) return;
-    updateCarousel();
-    window.addEventListener("resize", handleResize);
-  }
+    function initCarousel() {
+        wrapper = document.querySelector(".character-cards-wrapper");
+        if (!wrapper || !wrapper.children.length) return;
+        updateCarousel();
+        window.addEventListener("resize", handleResize);
+    }
 
-  // Calculate how many cards are visible based on the current window width.
-  function calculateVisibleCards() {
-    const width = window.innerWidth;
-    if (width > 1024) return 5;
-    if (width > 768) return 4;
-    if (width > 576) return 3;
-    if (width > 400) return 2;
-    return 1;
-  }
+    function calculateVisibleCards() {
+        const width = window.innerWidth;
+        if (width > 1024) return 5;
+        if (width > 768) return 4;
+        if (width > 576) return 3;
+        if (width > 400) return 2;
+        return 1;
+    }
 
-  // Update the carousel's transform to slide to the current index.
-  function updateCarousel() {
-    if (!wrapper || !wrapper.children.length) return;
-    // Get the first card's width plus the fixed gap.
-    const cardWidth = wrapper.children[0].offsetWidth + GAP;
-    wrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
-  }
+    function updateCarousel() {
+        if (!wrapper || !wrapper.children.length) return;
+        const cardWidth = wrapper.children[0].offsetWidth + GAP;
+        wrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+    }
 
-  // Scroll the carousel in the provided direction.
-  // direction: 1 for forward, -1 for backward.
-  function scrollCarousel(direction) {
-    if (!wrapper) return;
-    const visibleCards = calculateVisibleCards();
-    const totalCards = wrapper.children.length;
-    
-    // If the total cards are less than or equal to visible cards, no need to scroll.
-    if (totalCards <= visibleCards) return;
-    
-    // Adjust the current index with wrapping behavior.
-    currentIndex = (currentIndex + direction * visibleCards + totalCards) % totalCards;
-    updateCarousel();
-  }
+    function scrollCarousel(direction) {
+        if (!wrapper) return;
+        const visibleCards = calculateVisibleCards();
+        const totalCards = wrapper.children.length;
+        if (totalCards <= visibleCards) return;
+        // Scroll only one card per click, loop at ends
+        currentIndex += direction;
+        if (currentIndex < 0) {
+            currentIndex = totalCards - visibleCards;
+        } else if (currentIndex > totalCards - visibleCards) {
+            currentIndex = 0;
+        }
+        updateCarousel();
+    }
 
-  // Resize handling: wait until resizing stops, reset the index, and re-calculate.
-  let resizeTimeout;
-  function handleResize() {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      currentIndex = 0; // Reset index to prevent partial visibility on resize.
-      updateCarousel();
-    }, 100);
-  }
+    let resizeTimeout;
+    function handleResize() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(() => {
+            currentIndex = 0;
+            updateCarousel();
+        }, 100);
+    }
 
-  // Expose the scrollCarousel function globally to allow control from buttons, etc.
-  window.scrollCarousel = scrollCarousel;
-
-  // Initialize the carousel once the DOM content is loaded.
-  document.addEventListener("DOMContentLoaded", initCarousel);
+    window.scrollCarousel = scrollCarousel;
+    document.addEventListener("DOMContentLoaded", initCarousel);
 })();

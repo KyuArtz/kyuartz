@@ -2,226 +2,228 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- SEO Optimization -->
-  <title>KyuArtz | </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="KyuArtz">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KyuArtz | Preview Comic</title>
+  <meta name="description" content="Preview chapters of KyuArtz's comic.">
+  <meta name="keywords" content="KyuArtz, comic, chapters, art, portfolio">
   <meta name="author" content="KyuArtz">
-  
-  <!-- Theme color for different platforms -->
-  <meta name="theme-color" content="var(--color)"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
-  <meta name="msapplication-TileColor" content="var(--color)"> <!-- For Windows 8 and Windows Phone -->
-
-  <!-- Favicons and Icons -->
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="KyuArtz" />
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
-  
+  <meta name="theme-color" content="var(--color)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="var(--color)">
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="KyuArtz">
+  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preload" href="assets/style/loader.css" as="style">
   <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/style/main.css">
-  <link rel="stylesheet" href="assets/style/chapter-1.css">
   <link rel="stylesheet" href="assets/style/loader.css">
   <link rel="stylesheet" href="assets/style/nav.css">
+  <link rel="stylesheet" href="assets/style/preview-chapter.css">
   <link rel="stylesheet" href="assets/style/popup.css">
-
-  <!-- FontAwesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-
-  <!-- Defer scripts for performance optimization -->
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/loader.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/singleslideshow.js" defer></script>
-  <script src="assets/js/carousel.js" defer></script>
+  <script src="assets/js/comicPreview.js" defer></script>
   <script src="assets/js/popup.js" defer></script>
   <script src="assets/js/translations.js" defer></script>
-  <script src="assets/js/updates.js" defer></script>
-  <script src="assets/js/search.js" defer></script>
-
-  <!-- Open Graph Tags for Social Media Sharing -->
-  <meta property="og:title" content="KyuArtz | ">
-  <meta property="og:description" content="">
+  <meta property="og:title" content="KyuArtz | Preview Chapters">
+  <meta property="og:description" content="Preview chapters of KyuArtz's comic.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo and branding">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz |">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="KyuArtz | Preview Chapters">
+  <meta name="twitter:description" content="Preview chapters of KyuArtz's comic.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "KyuArtz",
       "url": "https://kyuartz.github.io/kyuartz/",
-      "description": "",
+      "description": "Preview chapters of KyuArtz's comic.",
       "author": {
         "@type": "Person",
         "name": "Kyu"
       }
     }
-    </script>
+  </script>
 </head>
-
 <body>
-
   <div class="loader" oncontextmenu="return false">
     <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-
   <div id="welcome-overlay"></div>
-  <div id="welcome-message">
-    <img src="assets/images/popup/popup-icon.webp" loading="lazy">
-    <h2 data-translate="welcomeTitle">Thanks for visiting!</h2>
+  <div id="welcome-message" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle">
+    <img src="assets/images/popup/popup-icon.webp" loading="lazy" alt="Welcome Icon">
+    <h2 id="welcomeTitle" data-translate="welcomeTitle">Thanks for visiting!</h2>
     <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+    <button onclick="closeWelcomeMessage()" data-translate="okay" aria-label="Okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
-
-  <div id="cookie-popup" class="cookie-popup">
-    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies" data-translate="gotIt">Got It</button>
+  <div id="cookie-popup" class="cookie-popup" role="alertdialog" aria-modal="true">
+    <p>
+      <span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span>
+      <a class="dL" href="privacy-policy.html" target="_blank" rel="noopener">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </p>
+    <button id="accept-cookies" data-translate="gotIt" aria-label="Accept Cookies">Got It</button>
   </div>
-
   <header>
-    <nav class="navbar">
-      <div class="chapter-indicator"></div>
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <div class="dropdown">
-            <button href="#" class="nav-link-dropdown" onclick="myFunction()" title="Chapters">&#10094;</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="">1</a>
-              <a href="">2</a>
-              <a href="">3</a>
-              <a href="">4</a>
-              <a href="">5</a>
+    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
+      <button id="toggle-nav-btn" class="nav-link" title="Hide Navigation" aria-label="Hide Navigation">
+        <i class="fa-solid fa-eye-slash"></i>
+      </button>
+      <div class="comic-wrapper">
+        <ul class="comic-nav">
+          <li class="nav-item">
+            <div class="comic-dropdown-container">
+              <button class="nav-link-dropdown" onclick="showChapters()" title="Chapters" aria-haspopup="true" aria-expanded="false">Chapters</button>
+              <div id="comicChapter" class="comic-dropdown" role="menu">
+                <a href="chapter-1.html" role="menuitem">Chapter 1 - Coming Soon</a>
+                <a href="chapter-2.html" role="menuitem">Chapter 2 - Coming Soon</a>
+                <a href="chapter-3.html" role="menuitem">Chapter 3 - Coming Soon</a>
+                <a href="chapter-4.html" role="menuitem">Chapter 4 - Coming Soon</a>
+                <a href="chapter-5.html" role="menuitem">Chapter 5 - Coming Soon</a>
+              </div>
             </div>
+          <li class="nav-item">
+            <button onclick="window.history.back()" class="nav-link" title="Back" aria-label="Back">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link" onclick="openFullscreen();" title="Full Screen" aria-label="Full Screen">
+              <i class="fa-solid fa-expand"></i>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link" onclick="closeFullscreen();" title="Minimize Screen" aria-label="Minimize Screen">
+              <i class="fa-solid fa-compress"></i>
+            </button>
+          </li>
+          <div class="subMenu-container">
+        <div class="settings-menu">
+          <button class="settings-btn" aria-label="Settings">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <div class="dropdown-setting" aria-label="Settings dropdown">
+            <a class="setting" href="preferences.html">
+              <i class="fa-solid fa-palette"></i> <span data-translate="preferences">Preferences</span>
+            </a>
+            <a class="setting" href="privacy-policy.html">
+              <i class="fa-solid fa-user-shield"></i> <span data-translate="privacyPolicy">Privacy</span>
+            </a>
+            <a class="setting" href="help.html">
+              <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+            </a>
           </div>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="nav-link" onclick="openFullscreen();" title="Full Screen">+</button>
-        </li>
-        <li class="nav-item">
-          <button type="button" class="nav-link" onclick="closeFullscreen();" title="Minimize Screen">-</button>
-        </li>
-        <li class="nav-item">
-          <button onclick="window.history.back()" class="nav-link" title="Back">X</button>
-        </li>
-      </ul>
+        </div>
+      </div>
+        </ul>
+      </div>
     </nav>
   </header>
-
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">DEMO</div>
-      <img src="assets/images/comic-presets/wasteland.webp" style="object-fit: cover;" , style="object-position: center;">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">1/19</div>
-      <img src="images/comic/1.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">2/19</div>
-      <img src="images/comic/2.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">3/19</div>
-      <img src="images/comic/3.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">4/19</div>
-      <img src="images/comic/4.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">5/19</div>
-      <img src="images/comic/5.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">6/19</div>
-      <img src="images/comic/6.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">7/19</div>
-      <img src="images/comic/7.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">8/19</div>
-      <img src="images/comic/8.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">9/19</div>
-      <img src="images/comic/9.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">10/19</div>
-      <img src="images/comic/10.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">11/19</div>
-      <img src="images/comic/11.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">12/19</div>
-      <img src="images/comic/12.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">13/19</div>
-      <img src="images/comic/13.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">14/19</div>
-      <img src="images/comic/14.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">15/19</div>
-      <img src="images/comic/15.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">16/19</div>
-      <img src="images/comic/16.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">17/19</div>
-      <img src="images/comic/17.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">18/19</div>
-      <img src="images/comic/18.png">
-    </div>
-    <div class="mySlides fade">
-      <div class="numbertext">19/19</div>
-      <img src="images/comic/19.png">
-    </div>
-    <div class="botnav">
-      <div class="btn">
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
+  <main class="comic-container">
+    <div class="slideshow-container" aria-label="Comic Slideshow">
+      <div class="comicSlide fade">
+        <div class="numbertext">CHAPTER 1 (DEMO)</div>
+        <img src="assets/images/comic-presets/wasteland.webp" style="object-fit: cover; object-position: center;" alt="Demo Slide">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 1/19</div>
+        <img src="assets/images/comic-presets/chapters/1.png" alt="Comic Page 1">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 2/19</div>
+        <img src="assets/images/comic-presets/chapters/2.png" alt="Comic Page 2">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 3/19</div>
+        <img src="assets/images/comic-presets/chapters/3.png" alt="Comic Page 3">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 4/19</div>
+        <img src="assets/images/comic-presets/chapters/4.png" alt="Comic Page 4">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 5/19</div>
+        <img src="assets/images/comic-presets/chapters/5.png" alt="Comic Page 5">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 6/19</div>
+        <img src="assets/images/comic-presets/chapters/6.png" alt="Comic Page 6">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 7/19</div>
+        <img src="assets/images/comic-presets/chapters/7.png" alt="Comic Page 7">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 8/19</div>
+        <img src="assets/images/comic-presets/chapters/8.png" alt="Comic Page 8">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 9/19</div>
+        <img src="assets/images/comic-presets/chapters/9.png" alt="Comic Page 9">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 10/19</div>
+        <img src="assets/images/comic-presets/chapters/10.png" alt="Comic Page 10">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 11/19</div>
+        <img src="assets/images/comic-presets/chapters/11.png" alt="Comic Page 11">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 12/19</div>
+        <img src="assets/images/comic-presets/chapters/12.png" alt="Comic Page 12">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 13/19</div>
+        <img src="assets/images/comic-presets/chapters/13.png" alt="Comic Page 13">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 14/19</div>
+        <img src="assets/images/comic-presets/chapters/14.png" alt="Comic Page 14">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 15/19</div>
+        <img src="assets/images/comic-presets/chapters/15.png" alt="Comic Page 15">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 16/19</div>
+        <img src="assets/images/comic-presets/chapters/16.png" alt="Comic Page 16">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 17/19</div>
+        <img src="assets/images/comic-presets/chapters/17.png" alt="Comic Page 17">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 18/19</div>
+        <img src="assets/images/comic-presets/chapters/18.png" alt="Comic Page 18">
+      </div>
+      <div class="comicSlide fade">
+        <div class="numbertext">P 19/19</div>
+        <img src="assets/images/comic-presets/chapters/19.png" alt="Comic Page 19">
+      </div>
+      <div class="bottom-nav">
+        <div class="btn">
+          <button class="prev" aria-label="Previous Slide">&#10094;</button>
+          <button class="next" aria-label="Next Slide">&#10095;</button>
+        </div>
       </div>
     </div>
-  </div>
-
+  </main>
 </body>
-
 </html>

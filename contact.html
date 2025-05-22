@@ -3,68 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- SEO Optimization -->
   <title>KyuArtz | Contact Us</title>
   <meta name="description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
   <meta name="keywords" content="KyuArtz">
   <meta name="author" content="KyuArtz">
-  
-  <!-- Theme color for different platforms -->
-  <meta name="theme-color" content="var(--color)"> <!-- For Chrome, Firefox OS, Opera, Vivaldi -->
-  <meta name="mobile-web-app-capable" content="yes"> <!-- For Safari iOS -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> <!-- Status bar color -->
-  <meta name="msapplication-TileColor" content="var(--color)"> <!-- For Windows 8 and Windows Phone -->
-
-  <!-- Favicons and Icons -->
+  <meta name="theme-color" content="var(--color)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-TileColor" content="var(--color)">
   <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48" />
   <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg" />
   <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="KyuArtz" />
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest" />
-
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/contact">
-
-  <!-- Preload critical resources -->
   <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preload" href="assets/style/loader.css" as="style">
   <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
-
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/contact.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/popup.css">
   <link rel="stylesheet" href="assets/style/loader.css">
-
-  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-
-  <!-- Defer JavaScript for Faster Page Load -->
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/contactFunction.js" defer></script>
   <script src="assets/js/popup.js" defer></script>
   <script src="assets/js/translations.js" defer></script>
   <script src="assets/js/search.js" defer></script>
-
-  <!-- Open Graph Meta Tags for Social Sharing -->
   <meta property="og:title" content="KyuArtz | Contact Us">
   <meta property="og:description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/contact">
   <meta property="og:type" content="website">
-
-  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Contact Us">
   <meta name="twitter:description" content="Get in touch with KyuArtz. For inquiries, feedback, or commissions, feel free to contact us through the form.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -77,17 +57,15 @@
         "name": "Kyu"
       }
     }
-    </script>
+  </script>
 </head>
 <body>
-
   <div class="loader" oncontextmenu="return false">
     <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
     <img src="assets/images/popup/popup-icon.webp" loading="lazy">
@@ -95,20 +73,17 @@
     <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
-
   <div id="cookie-popup" class="cookie-popup">
     <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
     <button id="accept-cookies" data-translate="gotIt">Got It</button>
   </div>
-
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
         <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-        <a href="index.html" data-translate="brand">Kyu</a>  
-        <p class="sbt">Beta</p>  
+        <a href="index.html" data-translate="brand">Kyu</a>
+        <p class="sbt">Beta</p>
       </div>
-  
       <div class="search-container">
         <form class="search" aria-label="Search KyuArtz">
           <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
@@ -118,7 +93,6 @@
           <div class="search-result" style="display: none;"></div>
         </form>
       </div>
-  
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
@@ -140,12 +114,10 @@
             <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
           </a>
         </li>
-  
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
             <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
           </a>
-
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="span-btn">
               <h2><span data-translate="commissionArt">Commission Art</span> <i class="fa-solid fa-angle-right"></i></h2>
@@ -186,8 +158,7 @@
           </div>
         </li>
       </ul>
-  
-      <div class="subMenu-container">    
+      <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
             <i class="fa-solid fa-gear"></i>
@@ -219,18 +190,14 @@
     </nav>
   </header>
   <div class="blur-overlay"></div>
-
   <div class="contact-container">
     <form class="contact" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
       <h1 id="form-status" data-translate="">COMMISSION FORM</h1>
       <input type="hidden" name="access_key" value="8b83998c-019e-46bf-975a-be7797d3fe51">
-
       <label for="username-field" data-translate="name">Name</label><span id="username-error"></span><span id="username-valid"></span>
       <input type="text" id="username-field" name="Client Name" onkeyup="validateInput('username')" required><br><br>
-
       <label for="email-field" data-translate="email">Email</label><span id="email-error"></span><span id="email-valid"></span>
       <input type="email" id="email-field" name="Email" onkeyup="validateInput('email')" required><br><br>
-
       <label for="commission-select" data-translate="commissionType">Commission Type</label><span id="commission-error"></span><span id="commission-valid"></span>
       <select id="commission-select" name="Commission Type" onchange="validateCommissionType()" required>
         <option value="" disabled selected hidden></option>
@@ -254,39 +221,32 @@
         <option value="Landscape (Grayscale)">Landscape (Grayscale)</option>
         <option value="Others">Others (Clarify your request at the commission details)</option>
       </select><br><br>
-
       <label for="message-field" data-translate="commissionDetails">Commission Details</label><span id="message-error"></span><span id="message-valid"></span>
       <textarea id="message-field" name="Commssion Details" onkeyup="validateInput('message')" required></textarea><br><br>
-
       <label class="upload" for="myFile" data-translate="uploadSample">Upload Sample: (Optional)</label><span id="file-error"></span><span id="file-valid"></span>
       <div class="upload-content">
         <input type="file" accept="image/jpeg, image/png, image/jpg" id="myFile" name="Image" onchange="validateFile()">
-        
         <img id="image-preview" src="#" alt="Uploaded Image Preview" style="display: none; max-width: 100%; height: 200px;">
-        
         <button id="remove-btn" style="display:none;" onclick="removeFile()" data-translate="remove">Remove</button>
       </div>
-       
       <div class="tos-container" title="Terms of Service">
         <input type="checkbox" value="Agreed" name="Terms of Service" required> <span data-translate="tosCheckbox"><p>Agree to terms of service</p></span>
         <div class="tos-info">
           <button type="button" title="Info" data-comic="type2" onclick="openNotice()"><i class="fa-solid fa-info"></i></button>
         </div>
       </div>
-
       <div class="submit-container">
         <button type="submit" id="submit-btn" data-translate="submit">Submit</button>
       </div>
     </form>
-
     <div class="contact-subContent">
-      <div class="moreInfo">
+      <div class="more-info">
         <h2 data-translate="modePayment">MODE OF PAYMENT & INFO:</h2>
         <div class="payment">
           <a class="logo-view" href="https://www.paypal.com/ncp/payment/AEBUL7UHLYERA" target="_blank" title="Paypal" rel="noopener noreferrer"><img src="assets/images/imgbtn/paypal.webp" loading="lazy"></a>
           <a class="logo-view" onclick="openDonate()" href="#" title="PayMaya"><img src="assets/images/imgbtn/maya.webp" loading="lazy"></a>
           <a class="logo-view" onclick="openDonate()" href="#" title="Gcash"><img src="assets/images/imgbtn/gcash.webp" loading="lazy"></a>
-        </div>  
+        </div>
         <p><span data-translate="queue">After submitting your inquiry, you can</span> <a class="dL" href="client-queue.html">check your queue status <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
         <p><span data-translate="directEmail">Direct Email:</span> <a class="dL" href="mailto:kyuushi992@gmail.com">kyuushi992@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
       </div>
@@ -294,53 +254,49 @@
         <a onclick="openDonate()" href="#" title="Mode of Payment"><img src="assets/images/imgbtn/gbm.webp" loading="lazy" alt=""></a>
       </div>
     </div>
-
     <div class="popup-notice" id="notice">
       <h2 data-translate="notice">NOTICE</h2>
       <p><span data-translate="noticeText">By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the.</span> <a class="dL" href="terms-of-service.html"><span data-translate="termsOfService">Terms of Service</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
       <button type="button" onclick="closeNotice()" data-translate="okay">Okay</button>
     </div>
-  
     <div class="donate-popup" id="donate-popup">
-        <h2 data-translate="qrCode">CHOOSE QR CODE</h2>
-        <div class="qr-content">
-          <div class="qr">
-            <img src="assets/images/popup/qr-code-paypal.webp">
-            <p data-translate="paypal">Paypal</p>
-          </div>
-          <div class="qr">
-            <img src="assets/images/popup/qr-code-maya.webp">
-            <p data-translate="maya">Maya</p>
-          </div>
-          <div class="qr">
-            <img src="assets/images/popup/qr-code-gcash.webp">
-            <p data-translate="gcash">Gcash</p>
-          </div>
+      <h2 data-translate="qrCode">CHOOSE QR CODE</h2>
+      <div class="qr-content">
+        <div class="qr">
+          <img src="assets/images/popup/qr-code-paypal.webp">
+          <p data-translate="paypal">Paypal</p>
         </div>
-        <button type="button" onclick="closeDonate()" data-translate="close">Close</button>
+        <div class="qr">
+          <img src="assets/images/popup/qr-code-maya.webp">
+          <p data-translate="maya">Maya</p>
+        </div>
+        <div class="qr">
+          <img src="assets/images/popup/qr-code-gcash.webp">
+          <p data-translate="gcash">Gcash</p>
+        </div>
       </div>
+      <button type="button" onclick="closeDonate()" data-translate="close">Close</button>
+    </div>
   </div>
-
-    <div class="footer">
-      <div class="copyright">
-        <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
-        <div class="footer-container">
-          <a class="detail" href="terms-of-service.html" data-translate="termsOfService"> Terms of Service</a>
-          <a class="detail" href="privacy-policy.html" data-translate="privacyPolicy"> Privacy Policy</a>
-          <a class="detail" href="faq.html" data-translate="faqs"> FAQs</a>
-          <a class="detail" href="customer-support.html" data-translate="customerSupport"> Customer Support</a>
-          <a class="detail" href="contact.html" data-translate="contact"> Contact Us</a>
-          <a class="detail" href="help.html" data-translate="helpCenter"> Help Center</a>
-          <div class="social">
-            <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" view target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://kyuartz.artstation.com/" view target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
-            <a class="logo-view" href="https://cara.app/kyuartz" view target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
-          </div>
+  <div class="footer">
+    <div class="copyright">
+      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
+      <div class="footer-container">
+        <a class="detail" href="terms-of-service.html" data-translate="termsOfService"> Terms of Service</a>
+        <a class="detail" href="privacy-policy.html" data-translate="privacyPolicy"> Privacy Policy</a>
+        <a class="detail" href="faq.html" data-translate="faqs"> FAQs</a>
+        <a class="detail" href="customer-support.html" data-translate="customerSupport"> Customer Support</a>
+        <a class="detail" href="contact.html" data-translate="contact"> Contact Us</a>
+        <a class="detail" href="help.html" data-translate="helpCenter"> Help Center</a>
+        <div class="social">
+          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://kyuartz.artstation.com/" target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
+          <a class="logo-view" href="https://cara.app/kyuartz" target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
         </div>
       </div>
     </div>
-
+  </div>
 </body>
 </html>

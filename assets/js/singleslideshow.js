@@ -1,78 +1,103 @@
 class Slideshow {
   constructor(container) {
     this.container = container;
-    this.slides = container.querySelectorAll('.mySlides');
-    this.dots = document.querySelectorAll('.dot');
+    this.slides = Array.from(container.querySelectorAll('.mySlides'));
+    this.dots = Array.from(container.querySelectorAll('.dot'));
     this.prevButton = container.querySelector('.prev');
     this.nextButton = container.querySelector('.next');
     this.slideIndex = 1;
-    this.autoSlideInterval = 20000; // 20 seconds
+    this.autoSlideInterval = 10000; // 10 seconds
     this.autoSlideTimer = null;
 
     this.showSlides(this.slideIndex);
     this.addEventListeners();
-    this.startAutoSlide(); // Start auto slide when the slideshow initializes
+    this.startAutoSlide();
   }
 
   addEventListeners() {
-    this.prevButton.addEventListener('click', () => {
-      this.plusSlides(-1);
-      this.resetAutoSlide(); // Reset timer after manual navigation
-    });
-
-    this.nextButton.addEventListener('click', () => {
-      this.plusSlides(1);
-      this.resetAutoSlide(); // Reset timer after manual navigation
-    });
-
+    if (this.prevButton) {
+      this.prevButton.addEventListener('click', () => {
+        this.plusSlides(-1);
+        this.resetAutoSlide();
+      });
+    }
+    if (this.nextButton) {
+      this.nextButton.addEventListener('click', () => {
+        this.plusSlides(1);
+        this.resetAutoSlide();
+      });
+    }
     this.dots.forEach((dot, index) => {
       dot.addEventListener('click', () => {
         this.currentSlide(index + 1);
-        this.resetAutoSlide(); // Reset timer after manual navigation
+        this.resetAutoSlide();
       });
+    });
+    // Pause auto-slide on mouse enter, resume on mouse leave
+    this.container.addEventListener('mouseenter', () => this.pauseAutoSlide());
+    this.container.addEventListener('mouseleave', () => this.startAutoSlide());
+    
+    // Keyboard navigation for left/right arrows
+    this.container.setAttribute('tabindex', '0'); // Make container focusable
+    this.container.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') {
+        this.plusSlides(-1);
+        this.resetAutoSlide();
+      } else if (e.key === 'ArrowRight') {
+        this.plusSlides(1);
+        this.resetAutoSlide();
+      }
     });
   }
 
   plusSlides(n) {
-    this.showSlides(this.slideIndex += n);
+    this.showSlides(this.slideIndex + n);
   }
 
   currentSlide(n) {
-    this.showSlides(this.slideIndex = n);
+    this.showSlides(n);
   }
 
   showSlides(n) {
-    if (n > this.slides.length) {
-      this.slideIndex = 1;
-    }
-    if (n < 1) {
-      this.slideIndex = this.slides.length;
-    }
+    if (this.slides.length === 0) return;
+    if (n > this.slides.length) this.slideIndex = 1;
+    else if (n < 1) this.slideIndex = this.slides.length;
+    else this.slideIndex = n;
 
     this.slides.forEach(slide => slide.classList.remove('active-slide'));
     this.dots.forEach(dot => dot.classList.remove('active-dot'));
 
-    this.slides[this.slideIndex - 1].classList.add('active-slide');
-    this.dots[this.slideIndex - 1].classList.add('active-dot');
+    if (this.slides[this.slideIndex - 1]) {
+      this.slides[this.slideIndex - 1].classList.add('active-slide');
+    }
+    if (this.dots[this.slideIndex - 1]) {
+      this.dots[this.slideIndex - 1].classList.add('active-dot');
+    }
   }
 
-  // Start auto slide with a set interval
   startAutoSlide() {
+    this.pauseAutoSlide();
     this.autoSlideTimer = setInterval(() => {
       this.plusSlides(1);
     }, this.autoSlideInterval);
   }
 
-  // Reset the auto-slide timer when user interacts
+  pauseAutoSlide() {
+    if (this.autoSlideTimer) {
+      clearInterval(this.autoSlideTimer);
+      this.autoSlideTimer = null;
+    }
+  }
+
   resetAutoSlide() {
-    clearInterval(this.autoSlideTimer); // Stop the previous timer
-    this.startAutoSlide(); // Restart the auto slide
+    this.startAutoSlide();
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const slideshowContainers = document.querySelectorAll('.slideshow-container');
-  slideshowContainers.forEach(container => new Slideshow(container));
+  document.querySelectorAll('.slideshow-container').forEach(container => {
+    new Slideshow(container);
+  });
 });
 /*
 class Slideshow {
