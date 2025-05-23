@@ -121,8 +121,8 @@
     border-radius: 5px 5px 30px 30px;
     border-top: 4px solid;
     color: var(--theme-color);
-    flex: 1 1 200px;
-    height: 270px;
+    flex: 1 1 220px;
+    height: 250px;
     max-width: 250px;
     min-width: 130px;
     overflow: hidden;
@@ -358,6 +358,9 @@ p.title {
     .character-container {
         flex-direction: column-reverse;
     }
+    .character-info {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -371,6 +374,10 @@ p.title {
     .character-card {
         max-width: 100%;
         min-height: 370px;
+        min-width: 100%;
+    }
+    .character-info {
+        max-width: 100%;
         min-width: 100%;
     }
     .role img {
