@@ -256,7 +256,7 @@ function showCharacterInfo(character) {
             name: "<yellow>Blessica Solarae</yellow>",
             race: "<info><yellow>Celestial</yellow></info>",
             gender: "<info><yellow>Female</yellow></info>",
-            height: "<info><yellow>5'8\" ft</yellow></info>",
+            height: "<info><yellow>5'9\" ft / 175.3 cm</yellow></info>",
             homeland: "<info><yellow>Solaraenia</yellow></info>",
             faction: "<info><yellow>Light Harbingers</yellow></info>",
             role: "<info><yellow>Healer</yellow></info>",
