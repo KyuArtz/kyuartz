@@ -88,6 +88,6 @@ function applyTiltEffect(selector, { maxTilt = 10, perspective = 500 } = {}) {
 document.addEventListener('DOMContentLoaded', () => {
   applyTiltEffect('.caption-content', { maxTilt: 5, perspective: 500 });
   applyTiltEffect('.character-card', { maxTilt: 3, perspective: 500 });
-  applyTiltEffect('.character-info', { maxTilt: 3, perspective: 500 });
+  applyTiltEffect('.character-info', { maxTilt: 1, perspective: 500 });
   applyTiltEffect('.character-slider', { maxTilt: 1, perspective: 500 });
 });
