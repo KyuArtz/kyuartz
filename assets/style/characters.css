@@ -121,7 +121,7 @@
     border-radius: 5px 5px 30px 30px;
     border-top: 4px solid;
     color: var(--theme-color);
-    flex: 1 1 220px;
+    flex: 0 0 100px;
     height: 250px;
     max-width: 250px;
     min-width: 130px;
@@ -262,6 +262,15 @@ p.title {
     border: 1px solid var(--theme-color);
     border-radius: 10px;
     padding: 5px;
+}
+
+.character-info {
+    transition: opacity 0.4s cubic-bezier(.4,2,.6,1);
+    opacity: 1;
+}
+
+.character-info.fading {
+    opacity: 0.3;
 }
 
 .character-info gray {
