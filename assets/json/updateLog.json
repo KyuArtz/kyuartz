@@ -4,7 +4,8 @@
       "date": "2025-05-23",
       "major": [
         "Optimized carousel functionality for smoother transitions and performance.",
-        "Improved character selection logic for better responsiveness, accuracy and functional filter.",
+        "Improved character selection logic for better responsiveness, accuracy.",
+        "Character filter is now fully functional. Further enhancements are planned.",
         "Streamlined commission sheet filter for enhanced usability.",
         "Refined contact form interactions and validation logic.",
         "Enhanced navigation logic for a more intuitive user experience.",
