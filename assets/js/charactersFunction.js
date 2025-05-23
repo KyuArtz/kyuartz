@@ -46,7 +46,12 @@ function showCharacterInfo(character) {
     const characterDetails = document.getElementById("character-details");
     if (!characterInfo || !characterDetails) return;
 
-    // ... (keep your details logic as is, or move to a separate data file for maintainability)
+    characterInfo.classList.add('fading');
+
+    setTimeout(() => {
+        characterInfo.classList.remove('fading');
+    }, 300);
+
     // Set default character details
     let details = {
         name: "<gray>Info Not Available Yet</gray>",
