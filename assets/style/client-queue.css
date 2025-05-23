@@ -33,7 +33,7 @@
     margin: 30px 5px 5px;
     border-radius: 10px;
     background: var(--content-bg);
-}   
+}
 
 .remaining-slots {
     color: #FF6347;
@@ -42,7 +42,7 @@
 section h1,
 section h2 {
     text-align: center;
-    color: var(--color);
+    color: var(--text-color);
     padding: 10px;
 }
 
@@ -50,7 +50,7 @@ section h2 {
 .status h3 {
     text-align: left;
     padding: 10px;
-    color: var(--color);
+    color: var(--text-color);
 }
 
 strong {
