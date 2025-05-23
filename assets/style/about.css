@@ -19,11 +19,8 @@
     -webkit-backdrop-filter: blur(5px);
 }
 
-.summary-content h2,
-.experience-content h2,
-.program-content h2 {
-    color: #f0f0f0;
-    margin-top: 50px;
+.info-container H2 {
+    color: var(--color);
 }
 
 .summary-content p,
@@ -170,7 +167,7 @@
         border-radius: 50px;
     }
 
-    .summary-content .summary-content p {
+    .summary-content p {
         text-align: justify;
     }
 }
