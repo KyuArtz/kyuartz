@@ -437,42 +437,49 @@ function hideCharacterInfo() {
 (() => {
     let currentIndex = 0;
     let wrapper = null;
+    let container = null;
     const GAP = 10;
 
-    function initCarousel() {
-        wrapper = document.querySelector(".character-cards-wrapper");
-        if (!wrapper || !wrapper.children.length) return;
-        updateCarousel();
-        window.addEventListener("resize", handleResize);
+    function getVisibleCards() {
+        return Array.from(wrapper.children).filter(card => card.style.display !== 'none');
     }
 
     function calculateVisibleCards() {
-        const width = window.innerWidth;
-        if (width > 1024) return 5;
-        if (width > 768) return 4;
-        if (width > 576) return 3;
-        if (width > 400) return 2;
-        return 1;
+        if (!container || !wrapper) return 1;
+        const containerWidth = container.offsetWidth;
+        const visibleCards = getVisibleCards();
+        if (!visibleCards.length) return 1;
+        const cardWidth = visibleCards[0].offsetWidth + GAP;
+        return Math.max(1, Math.floor(containerWidth / cardWidth));
     }
 
     function updateCarousel() {
-        if (!wrapper || !wrapper.children.length) return;
-        const cardWidth = wrapper.children[0].offsetWidth + GAP;
-        wrapper.style.transform = `translateX(-${cardWidth * currentIndex}px)`;
+        if (!wrapper) return;
+        const visibleCards = getVisibleCards();
+        if (!visibleCards.length) return;
+        const visibleCount = calculateVisibleCards();
+        const maxIndex = Math.max(0, visibleCards.length - visibleCount);
+
+        // Clamp currentIndex
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        const cardWidth = visibleCards[0].offsetWidth + GAP;
+        const offset = cardWidth * currentIndex;
+        wrapper.style.transform = `translateX(-${offset}px)`;
     }
 
     function scrollCarousel(direction) {
         if (!wrapper) return;
-        const visibleCards = calculateVisibleCards();
-        const totalCards = wrapper.children.length;
-        if (totalCards <= visibleCards) return;
-        // Scroll only one card per click, loop at ends
-        currentIndex += direction;
-        if (currentIndex < 0) {
-            currentIndex = totalCards - visibleCards;
-        } else if (currentIndex > totalCards - visibleCards) {
-            currentIndex = 0;
-        }
+        const visibleCards = getVisibleCards();
+        const visibleCount = calculateVisibleCards();
+        const maxIndex = Math.max(0, visibleCards.length - visibleCount);
+
+        if (visibleCards.length <= visibleCount) return;
+
+        currentIndex += direction * visibleCount;
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
         updateCarousel();
     }
 
@@ -486,5 +493,37 @@ function hideCharacterInfo() {
     }
 
     window.scrollCarousel = scrollCarousel;
-    document.addEventListener("DOMContentLoaded", initCarousel);
+
+    function initCarousel() {
+        wrapper = document.querySelector(".character-cards-wrapper");
+        container = wrapper?.parentElement;
+        if (!wrapper || !wrapper.children.length) return;
+        updateCarousel();
+        window.addEventListener("resize", handleResize);
+    }
+
+    // When filtering, reset carousel to first visible card
+    function patchFilterButtons() {
+        document.querySelectorAll('.filter-character a').forEach(filterBtn => {
+            filterBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const category = this.dataset.category;
+                document.querySelectorAll('.character-card').forEach(card => {
+                    const cardCategories = (card.dataset.category || '').split(',').map(cat => cat.trim());
+                    if (category === 'all' || cardCategories.includes(category)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+                currentIndex = 0;
+                updateCarousel();
+            });
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        initCarousel();
+        patchFilterButtons();
+    });
 })();
