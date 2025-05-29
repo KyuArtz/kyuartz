@@ -56,7 +56,7 @@ body {
     --theme-color: #ffffff;
     --text-color: #2e2e2e;
     --color: #808080;
-    --content-bg: #ececec;
+    --content-bg: #f0f0f0;
     --theme-overlay: rgba(172, 172, 172, 0.5);
 }
 
@@ -148,6 +148,7 @@ body {
 #abilities-scrollable p,
 #background p,
 .character-card p,
+.character-info p,
 .tos-container p,
 .pp-container p,
 .pp-item li,
@@ -180,6 +181,7 @@ input[type="Submit"] {
     background: none; 
 }
 
+.filter-character a:hover,
 button:hover,
 input[type="Submit"]:hover,
 .caption-btn a:hover {
