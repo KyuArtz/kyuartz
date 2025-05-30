@@ -348,7 +348,7 @@ p.title {
 }
 
 .character-info h2 {
-    color: var(--accent);
+    color: var(--accent, #ffab4c);
     text-align: center;
 }
 
@@ -364,7 +364,7 @@ p.title {
 .character-info strong,
 .character-info info {
     background: var(--overlay);
-    color: var(--accent);
+    color: var(--accent, #ffab4c);
     border: 1px solid var(--accent, #ffab4c);
     border-radius: 10px;
     padding: 5px;
