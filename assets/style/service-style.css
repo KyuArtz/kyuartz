@@ -62,6 +62,11 @@
     list-style: none;
 }
 
+li.pp-item li {
+    list-style: disc inside;
+    font-weight: bold;
+}
+
 .tos-item,
 .pp-item,
 .faq-item {
@@ -82,12 +87,14 @@
     text-align: justify;
     line-height: 1.5;
     color: var(--text-color);
+    margin: 0;
 }
 
 .pp-container h2,
 .pp-container h3 {
     color: inherit;
     padding: 12px;
+    margin: 0;
 }
 
 .pp-container h2 {
@@ -99,8 +106,7 @@
 .pp-container li,
 .pp-container p {
     color: inherit;
-    list-style-image: url("../assets/images/bullet/n-bullet.png");
-    padding: 12px;
+    padding: 10px;
 }
 
 .pp-item ul {
