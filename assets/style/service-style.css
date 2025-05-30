@@ -20,7 +20,7 @@
     width: var(--container-width);
     height: var(--container-height);
     padding-top: var(--container-padding-top);
-    background: url('../images/bg/lbg_main1.webp'), var(--overlay);
+    background: var(--theme-color), var(--overlay);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -30,7 +30,7 @@
     .tos-overlay,
     .pp-overlay,
     .faq-overlay {
-        background: url('../images/bg/pbg_main1.webp');
+        background: var(--theme-color);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
