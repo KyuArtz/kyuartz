@@ -77,7 +77,7 @@
 }
 
 .character-wrapper h3,
-.character-wrapper h5,
+.character-wrapper.name-tag,
 .character-wrapper p.title {
     text-shadow: 0 0 2px #0a0a0a;
 }
@@ -235,7 +235,11 @@
     cursor: pointer;
 }
 
-.overlay h5,
+.name-tag {
+    font-size: 0.9rem;
+}
+
+.name-tag,
 .overlay p {
     cursor: pointer;
 }
@@ -481,7 +485,6 @@ p.title {
         width: 50px;
         height: 50px;
     }
-    .overlay h5,
     .overlay p {
         font-size: medium;
     }
