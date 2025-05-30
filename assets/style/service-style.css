@@ -1,0 +1,116 @@
+:root {
+    --container-max-width: 1000px;
+    --container-padding: 0;
+    --container-scroll: scroll;
+    --container-radius: 10px;
+    --container-shadow: 0 0 2px;
+    --container-margin: 5px;
+    --container-padding-top: 100px;
+    --container-width: 100%;
+    --container-height: 100vh;
+}
+
+.tos-overlay,
+.pp-overlay,
+.faq-overlay {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+    width: var(--container-width);
+    height: var(--container-height);
+    padding-top: var(--container-padding-top);
+    background: url('../images/bg/lbg_main1.webp'), var(--overlay);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+    .tos-overlay,
+    .pp-overlay,
+    .faq-overlay {
+        background: url('../images/bg/pbg_main1.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.tos-container ul,
+.pp-container ul,
+.faq-container ul {
+    max-width: var(--container-max-width);
+    padding: var(--container-padding);
+    margin: 0;
+    overflow-x: var(--container-scroll);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    color: var(--container-text);
+    list-style: none;
+}
+
+.tos-container ul::-webkit-scrollbar,
+.pp-container ul::-webkit-scrollbar,
+.faq-container ul::-webkit-scrollbar {
+    display: none;
+}
+
+.tos-container li,
+.faq-container li {
+    color: inherit;
+    list-style: none;
+}
+
+.tos-item,
+.pp-item,
+.faq-item {
+    background: var(--theme-color);
+    border-radius: var(--container-radius);
+    margin: var(--container-margin);
+    box-shadow: var(--container-shadow);
+    padding: 10px;
+}
+
+.faq-item {
+    padding: 20px;
+}
+
+.tos-item p,
+.pp-item p,
+.faq-item p {
+    text-align: justify;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.pp-container h2,
+.pp-container h3 {
+    color: inherit;
+    padding: 12px;
+}
+
+.pp-container h2 {
+    background: inherit;
+    border-radius: var(--container-radius);
+    margin: 0;
+}
+
+.pp-container li,
+.pp-container p {
+    color: inherit;
+    list-style-image: url("../assets/images/bullet/n-bullet.png");
+    padding: 12px;
+}
+
+.pp-item ul {
+    text-align: justify;
+}
+
+.faq-item h2 {
+    color: var(--container-text);
+}
+
+.faq-item a {
+    text-decoration: none;
+}
