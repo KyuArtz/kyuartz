@@ -16,7 +16,7 @@
     aspect-ratio: 1/1;
     background: var(--content-bg);
     border-radius: 10px;
-    box-shadow: 0 0 3px var(--text-color);
+    box-shadow: 0 0 2px var(--text-color);
 }
 
 .gallary img {
