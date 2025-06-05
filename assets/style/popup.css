@@ -259,8 +259,8 @@
 }
 
 .text-content {
-    height: 90%;
-    max-height: 90%;
+    height: inherit;
+    max-height: inherit;
     padding: 15px;
     overflow-y: auto;
 }
