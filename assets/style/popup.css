@@ -9,7 +9,7 @@
     }
 }
 
-.welcome-overlay,
+#welcome-overlay,
 .whats-new-overlay,
 .notice-overlay,
 .donate-overlay,
@@ -26,7 +26,7 @@
     display: none;
 }
 
-.welcome-overlay { z-index: 200000; }
+#welcome-overlay { z-index: 200000; }
 .comic-description-overlay { z-index: 100; }
 .whats-new-overlay,
 .notice-overlay,
