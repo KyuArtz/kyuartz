@@ -194,9 +194,12 @@
   </header>
   <div class="blur-overlay"></div>
   <div class="home-container">
-    <div class="popup-wn" id="popup-wn" aria-hidden="true" role="dialog">
+    <div class="whats-new-overlay" id="whats-new-overlay"></div>
+    <div class="whats-new-popup" id="whats-new-popup" aria-hidden="true" role="dialog">
       <h2 data-translate="whatsNew">What's New?</h2>
-      <div id="whats-new-content"></div>
+      <div class="whats-new-content">
+        <div id="whats-new-content"></div>
+      </div>
     </div>
     <div class="slideshow-container">
       <div class="mySlides fade">
@@ -324,7 +327,7 @@
       </div>
     </div>
   </div>
-  <button type="button" class="wn-btn" id="toggleWnBtn" onclick="toggleWn()" title="What's New" aria-label="Toggle what's new section">What's New?</button>
+  <button type="button" class="whats-new-btn" id="toggle-whats-new-btn" onclick="toggleWn()" title="What's New" aria-label="Toggle what's new section">What's New?</button>
   <div class="footer">
     <div class="copyright">
       <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>

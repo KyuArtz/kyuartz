@@ -1,6 +1,20 @@
 {
   "updates": [
     {
+      "date": "2025-06-08",
+      "major": [],
+      "minor": [
+        "Overall UI/UX design adjustments.",
+        "Adjustments and refinements to the white theme related colors.",
+        "Refined popup UI and UX for a more cohesive and intuitive experience.",
+        "Standardized rounded corners and visual styles across all popups for improved consistency.",
+        "Enhanced popup animations for smoother transitions and ensured consistent use of blur overlays.",
+        "Improved character selection UI with additional adjustments and refinements."
+      ],
+      "bugfixes": [],
+      "upcoming": []
+    },
+    {
       "date": "2025-05-29",
       "major": [
         "Enhanced character selection logic with new features: toggle hide/show for character selection and information, minimize/maximize character selection panel, and improved display of character information.",

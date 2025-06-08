@@ -33,20 +33,38 @@ const closeWelcomeMessage = () => {
 
 // Toggle "What's New" popup
 const toggleWn = () => {
-  const popupWn = document.getElementById("popup-wn");
-  const toggleBtn = document.getElementById("toggleWnBtn");
-  if (!popupWn || !toggleBtn) return;
+  const wnPopup = document.getElementById("whats-new-popup");
+  const toggleBtn = document.getElementById("toggle-whats-new-btn");
+  const wnOverlay = document.getElementById("whats-new-overlay");
+  if (!wnPopup || !toggleBtn || !wnOverlay) return;
 
-  const isOpen = popupWn.classList.contains("open-popup-wn");
-  togglePopup("popup-wn", isOpen ? "close" : "open", "open-popup-wn");
+  const isOpen = wnPopup.classList.contains("open-whats-new-popup");
+  togglePopup("whats-new-popup", isOpen ? "close" : "open", "open-whats-new-popup");
   toggleBtn.textContent = isOpen ? "What's New?" : "Close";
+  wnOverlay.style.display = isOpen ? "none" : "block";
 };
 
 // Open/Close Notice and Donate popups
-const openNotice = () => togglePopup("notice", "open", "open-notice");
-const closeNotice = () => togglePopup("notice", "close", "open-notice");
-const openDonate = () => togglePopup("donate-popup", "open", "open-donate");
-const closeDonate = () => togglePopup("donate-popup", "close", "open-donate");
+const openNotice = () => {
+  togglePopup("notice-popup", "open", "open-notice");
+  const overlay = document.getElementById("notice-overlay");
+  if (overlay) overlay.style.display = "block";
+};
+const closeNotice = () => {
+  togglePopup("notice-popup", "close", "open-notice");
+  const overlay = document.getElementById("notice-overlay");
+  if (overlay) overlay.style.display = "none";
+};
+const openDonate = () => {
+  togglePopup("donate-popup", "open", "open-donate");
+  const overlay = document.getElementById("donate-overlay");
+  if (overlay) overlay.style.display = "block";
+};
+const closeDonate = () => {
+  togglePopup("donate-popup", "close", "open-donate");
+  const overlay = document.getElementById("donate-overlay");
+  if (overlay) overlay.style.display = "none";
+};
 
 // DOMContentLoaded logic
 document.addEventListener("DOMContentLoaded", () => {

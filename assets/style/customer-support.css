@@ -12,8 +12,8 @@ form.customer {
     background: var(--content-bg);
     color: var(--text-color);
     padding: 20px;
-    border-radius: 10px;
-   border: 2px solid var(--theme-overlay);
+    border-radius: 18px;
+    border: 2px solid var(--theme-overlay);
     max-width: 600px;
     margin: 20px auto;
 }
@@ -26,7 +26,7 @@ select {
     width: 100%;
     padding: 12px;
     margin: 8px 0;
-    border-radius: 10px;
+    border-radius: 18px;
     border: 2px solid var(--color);
     background: none;
     color: inherit;
@@ -51,7 +51,7 @@ input[type="file"] {
 }
 
 .fileUpload-content {
-    border-radius: 10px;
+    border-radius: 18px;
     border: 2px solid var(--color);
     color: var(--text-color);
     padding: 5px;
@@ -94,7 +94,7 @@ img#image-preview {
 button[type="submit"] {
     color: var(--color);
     background: var(--theme-color);
-    padding: 10px 30px;
+    padding: 12px 30px;
     border: 1px solid;
     border-radius: 50px;
 }

@@ -6,7 +6,7 @@
 .commission-section,
 .waitlist-section {
     background: var(--content-bg);
-    border-radius: 10px;
+    border-radius: 18px;
     padding: 10px;
     margin: 5px 0;
 }
@@ -25,13 +25,13 @@
 }
 
 .slots-container h3 {
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--color);
 }
 
 .slots-container section {
     flex: 1;
     margin: 30px 5px 5px;
-    border-radius: 10px;
+    border-radius: 18px;
     background: var(--content-bg);
 }
 
@@ -87,7 +87,7 @@ table {
 th,
 td {
     padding: 12px 15px;
-    border: 1px solid;
+    border: 2px solid var(--color);
     text-align: left;
     color: var(--text-color);
 }

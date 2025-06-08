@@ -37,8 +37,7 @@ form h1 {
 
 .more-info {
     padding: 5px;
-    border-radius: 10px;
-    border: 2px solid var(--theme-overlay);
+    border-radius: 18px;
     color: var(--text-color);
     background: var(--content-bg);
 }
@@ -54,7 +53,7 @@ textarea,
     padding: 12px;
     margin: 8px 0;
     border: 2px solid var(--color);
-    border-radius: 10px;
+    border-radius: 18px;
     outline: none;
     resize: vertical;
     background: none;
@@ -97,12 +96,16 @@ input[type="checkbox"] {
 }
 
 button[type="Submit"] {
-    padding: 10px 30px;
+    padding: 12px 30px;
     border: 1px solid;
     border-radius: 50px;
     color: var(--color);
     background: var(--theme-color);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="Submit"]:hover {
+    background: var(--theme-overlay);
 }
 
 .tos-container {

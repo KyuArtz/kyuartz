@@ -254,11 +254,15 @@
         <a onclick="openDonate()" href="#" title="Mode of Payment"><img src="assets/images/imgbtn/gbm.webp" loading="lazy" alt=""></a>
       </div>
     </div>
-    <div class="popup-notice" id="notice">
+    <div class="notice-overlay" id="notice-overlay"></div>
+    <div class="notice-popup" id="notice-popup">
       <h2 data-translate="notice">NOTICE</h2>
-      <p><span data-translate="noticeText">By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the.</span> <a class="dL" href="terms-of-service.html"><span data-translate="termsOfService">Terms of Service</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+      <div class="notice-content">
+        <p><span data-translate="noticeText">By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the.</span> <a class="dL" href="terms-of-service.html"><span data-translate="termsOfService">Terms of Service</span> <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+      </div>
       <button type="button" onclick="closeNotice()" data-translate="okay">Okay</button>
     </div>
+    <div class="donate-overlay" id="donate-overlay"></div>
     <div class="donate-popup" id="donate-popup">
       <h2 data-translate="qrCode">CHOOSE QR CODE</h2>
       <div class="qr-content">

@@ -3,8 +3,8 @@
     right: 0;
     padding: 5px 20px;
     margin: auto 5px;
-    border: 1px solid var(--color);
-    border-radius: 10px;
+    border: 2px solid var(--color);
+    border-radius: 50px;
     color: var(--color);
     background: var(--theme-color);
     outline: none;
@@ -37,7 +37,7 @@
     object-position: center;
     aspect-ratio: 1 / 1;
     background: var(--theme-color);
-    box-shadow: 0 0 2px var(--text-color);
+    box-shadow: 0 0 2px var(--color);
     border-radius: 10px;
     pointer-events: none;
 }
@@ -71,9 +71,9 @@
 .price h3 {
     margin: 0;
     text-align: center;
-    color: var(--text-color);
+    color: var(--color);
     padding: 10px;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 2px solid var(--color);
 }
 
 span.price-amount,
@@ -98,28 +98,29 @@ span.percent {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    box-shadow: 0 0 2px var(--text-color);
+    box-shadow: 0 0 2px var(--color);
     padding: 5px;
 }
 
 .inquire-button a {
-    padding: 10px 30px;
+    padding: 12px 30px;
     margin: 5px;
     background: var(--theme-color);
     border-radius: 50px;
     border: 1px solid;
     color: var(--color);
+    transition: background 0.3s ease-in-out;
 }
 
 .inquire-button a:hover {
-    text-shadow: 0 0 10px var(--color);
+    background: var(--theme-overlay);
 }
 
 .cs-content {
     color: var(--text-color);
     text-align: center;
-    border: 2px solid var(--theme-overlay);
-    border-radius: 10px;
+    border: 2px solid var(--color);
+    border-radius: 18px;
     max-width: 1000px;
     margin: 10px auto;
     overflow: hidden;
@@ -136,8 +137,8 @@ span.percent {
 }
 
 .cs-content2 section {
-    border-radius: 10px;
-    border: 2px solid var(--theme-overlay);
+    border-radius: 18px;
+    border: 2px solid var(--color);
     padding: 10px;
     overflow: hidden;
 }

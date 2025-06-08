@@ -19,8 +19,8 @@
 #theme-select,
 #languageSwitcher {
     background: none;
-    border: 1px solid;
-    border-radius: 10px;
+    border: 2px solid var(--color);
+    border-radius: 50px;
     color: var(--color);
     max-width: 200px;
     padding: 10px;
@@ -29,5 +29,6 @@
 
 #theme-select:focus,
 #languageSwitcher:focus {
-    outline: none;
+    border-color: var(--theme-overlay);
+    outline: 2px solid var(--theme-overlay);
 }

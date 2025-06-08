@@ -87,18 +87,18 @@ button.prev {
 }
 
 .caption-overlay h1 {
-  text-shadow: 0 0 5px #000;
+  color: var(--color);
   letter-spacing: 3px;
 }
 
 .caption-overlay p {
-  text-shadow: 0 0 3px #000;
+  color:#f0f0f0;
 }
 
 .caption-overlay h1,
 .caption-overlay p {
-  color: #f0f0f0;
   margin: 15px 20px;
+  text-shadow: 0 0 3px #000;
 }
 
 .caption-btn {
@@ -112,12 +112,17 @@ button.prev {
 }
 
 .caption-btn a {
-  padding: 10px;
+  padding: 12px 30px;
   min-width: 15%;
   border-radius: 50px;
   border: solid 1px;
   color: var(--color);
   background: var(--theme-color);
+  transition: background 0.3s ease-in-out;
+}
+
+.caption-btn a:hover {
+  background: var(--theme-overlay);
 }
 
 .home_slider_dot {

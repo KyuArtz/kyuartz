@@ -27,7 +27,7 @@
 .experience-content p,
 .my-info p {
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .summary-container {
@@ -36,11 +36,11 @@
 
 .summary-content {
     display: flex;
-    border-radius: 10px;
+    border-radius: 18px;
     text-align: justify;
     padding: 20px;
     background: var(--theme-color);
-    border: 2px solid var(--theme-overlay);
+    border: 1px solid var(--color);
 }
 
 .experience {
@@ -53,10 +53,10 @@
 .experience-content p {
     padding: 10px;
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 18px;
     width: 175px;
     background: var(--theme-color);
-    border: 2px solid var(--theme-overlay);
+    border: 1px solid var(--color);
 }
 
 .program-used-container {
@@ -71,7 +71,7 @@
     border-radius: 6px;
     background: var(--content-bg);
     transform: scale(1);
-    border: 2px solid var(--theme-overlay);
+    border: 1px solid var(--color);
     transition: transform 0.2s;
 }
 
@@ -86,9 +86,9 @@
     text-align: center;
     flex-direction: column;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 18px;
     background: var(--theme-color);
-    border: 2px solid var(--theme-overlay);
+    border: 1px solid var(--color);
 }
 
 .pfp-container {
@@ -116,14 +116,14 @@
 .my-info {
     padding: 10px 16px;
     border-radius: 50px 50px 10px 10px;
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 2px var(--color);
     background: var(--content-bg);
 }
 
 .my-info h1 {
     border-bottom: 2px solid;
     margin-top: 70px;
-    color: var(--text-color);
+    color: var(--color);
 }
 
 .my-info p {
@@ -150,7 +150,7 @@
     border: 1px solid var(--text-color);
     background: var(--theme-overlay);
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 18px;
     transition: background 0.2s, transform 0.2s;
 }
 

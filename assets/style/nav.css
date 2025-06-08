@@ -2,7 +2,7 @@ header {
     position: fixed;
     width: 100%;
     background: var(--content-bg);
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 2px var(--color);
     color: var(--text-color);
     top: 0;
     z-index: 100000;
@@ -23,7 +23,7 @@ header {
 }
 
 .subMenu-container {
-    border: 1px solid var(--color);
+    border: 2px solid var(--color);
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -47,22 +47,26 @@ header {
     position: absolute;
     min-width: 160px;
     background: var(--content-bg);
-    box-shadow: 0 0 2px var(--text-color);
-    border-radius: 10px;
+    box-shadow: 0 0 3px var(--color);
+    border-radius: 18px;
     right: 0;
     margin: 10px auto;
+    padding: 10px 0;
+    overflow: hidden;
     z-index: 1;
 }
 
 .dropdown-setting a.setting {
     padding: 12px 16px;
-    text-decoration: none;
+    margin: 5px;
+    border-radius: 50px;
     color: var(--text-color);
     display: block;
 }
 
 .dropdown-setting a:hover {
     color: var(--color);
+    background: var(--theme-overlay);
 }
 
 .settings-menu.show-settings .dropdown-setting {
@@ -73,17 +77,26 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-    border-bottom: 1px solid var(--text-color);
-    margin: 0 5px;
-    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid var(--color);
+    padding: 10px;
+    cursor: pointer;
 }
 
 .profile img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 1px solid;
+    object-fit: cover;
+    object-position: center;
+    background: var(--color);
+    cursor: pointer;
+}
+
+.profile img:hover {
+    animation: wiggleAnimation 0.3s ease-in-out;
 }
 
 .main-navigation {
@@ -109,7 +122,7 @@ header {
 .sbt {
     margin-top: -1px;
     color: var(--color);
-    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
 }
 
 .my-avatar {
@@ -117,7 +130,8 @@ header {
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    border: 1px solid var(--color);
+    border: 2px solid var(--color);
+    background: var(--color);
 }
 
 .nav-link,
@@ -179,7 +193,7 @@ header {
 .search-container {
     margin: 0 5px;
     padding: 0;
-    border: 1px solid var(--color);
+    border: 2px solid var(--color);
     border-radius: 50px;
     background: var(--theme-color);
     overflow: hidden;
@@ -218,15 +232,16 @@ form.search::after {
     top: 55px;
     min-width: 50%;
     background: var(--content-bg);
-    border-radius: 10px;
-    box-shadow: 0 0 2px;
+    border-radius: 18px;
+    box-shadow: 0 0 3px var(--color);
     color: var(--text-color);
+    padding: 5px;
 }
 
 .search-result ul {
     max-height: 250px;
     overflow: auto;
-    padding-left: 0;
+    padding: 0;
 }
 
 .search-result ul li {
@@ -238,10 +253,11 @@ form.search::after {
     width: 100%;
     padding: 15px 10px;
     color: var(--text-color);
+    border-radius: 50px;
 }
 
 .search-result a:hover {
-    background: var(--text-color);
+    background: var(--theme-overlay);
     color: var(--color);
 }
 
@@ -271,24 +287,6 @@ form.search::after {
 
 #upBtn:hover {
     color: #000;
-}
-
-@keyframes wiggleAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(5deg);
-    }
-    50% {
-        transform: rotate(-5deg);
-    }
-    75% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
 }
 
 @media screen and (max-width: 978px) {
@@ -343,8 +341,6 @@ form.search::after {
     top: 50px;
     left: 0;
     background: var(--content-bg);
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -364,7 +360,7 @@ form.search::after {
 
 .sideMenu-content a {
     color: var(--color);
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 15px 15px;
     margin: 3px;
 }
@@ -373,12 +369,13 @@ form.search::after {
     display: flex;
     flex-direction: column;
     background: var(--theme-color);
-    border-radius: 10px;
+    border-radius: 18px;
     margin: 5px;
+    padding: 5px;
 }
 
 .sideMenu-content a:hover {
-    background: var(--text-color);
+    background: var(--theme-overlay);
 }
 
 .show-sideMenu {
@@ -392,7 +389,7 @@ form.search::after {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
     background: var(--overlay);
     z-index: 10000;
     display: none;
@@ -406,7 +403,7 @@ form.search::after {
     width: 100%;
     min-height: 50px;
     background: var(--content-bg);
-    box-shadow: 0 0 2px;
+    box-shadow: 0 0 2px var(--color);
     color: var(--text-color);
     top: 50px;
     z-index: 99;
@@ -425,7 +422,7 @@ form.search::after {
     display: flex;
     align-items: center;
     padding: 5px;
-    border: 1px solid var(--color);
+    border: 2px solid var(--color);
     border-radius: 50px;
     background: var(--theme-color);
 }
@@ -473,13 +470,13 @@ form.search::after {
 .category-item a {
     width: 100%;
     color: var(--color);
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 15px 15px;
     margin: 5px;
 }
 
 .category-item a:hover {
-    background: var(--text-color);
+    background: var(--theme-overlay);
 }
 
 .category-menu.categoryMenu-show {
@@ -519,7 +516,7 @@ option {
     position: relative;
     padding: 10px;
     background: var(--content-bg);
-    box-shadow: 0 0 2px var(--text-color);
+    box-shadow: 0 0 2px var(--color);
     color: var(--color);
     text-align: center;
 }
@@ -533,7 +530,6 @@ option {
 .detail {
     color: var(--text-color);
     padding: 0 2px;
-    text-decoration: none;
     transition: 0.3s ease-in-out;
 }
 
@@ -551,7 +547,7 @@ option {
     height: 30px;
     border-radius: 50%;
     border: 1px solid var(--text-color);
-    background: var(--color);
+    background: var(--content-bg);
     margin: 0 3px;
     object-fit: cover;
     cursor: pointer;

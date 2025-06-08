@@ -2,8 +2,6 @@
     --container-max-width: 1000px;
     --container-padding: 0;
     --container-scroll: scroll;
-    --container-radius: 10px;
-    --container-shadow: 0 0 2px;
     --container-margin: 5px;
     --container-padding-top: 100px;
     --container-width: 100%;
@@ -70,24 +68,19 @@ li.pp-item li {
 .tos-item,
 .pp-item,
 .faq-item {
-    background: var(--theme-color);
-    border-radius: var(--container-radius);
+    background: var(--content-bg);
+    border-radius: 18px;
     margin: var(--container-margin);
-    box-shadow: var(--container-shadow);
+    box-shadow: 0 0 2px var(--color);
     padding: 10px;
-}
-
-.faq-item {
-    padding: 20px;
+    line-height: 1.7;
 }
 
 .tos-item p,
 .pp-item p,
 .faq-item p {
     text-align: justify;
-    line-height: 1.5;
     color: var(--text-color);
-    margin: 0;
 }
 
 .pp-container h2,

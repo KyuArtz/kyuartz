@@ -34,6 +34,7 @@ body.lb-disable-scrolling {
     border-radius: 5px;
     pointer-events: none;
     border: 5px solid var(--theme-color);
+    border-radius: 10px;
 }
 
 .lightbox a img {
@@ -47,10 +48,10 @@ body.lb-disable-scrolling {
     height: 250px;
     margin: 0 auto;
     margin-top: 15px;
-    border-radius: 5px;
+    border-radius: 10px;
     color: var(--color);
     background: var(--theme-color);
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 3px var(--color);
 }
 
 .lb-outerContainer:after {

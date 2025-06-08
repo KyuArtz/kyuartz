@@ -8,8 +8,8 @@
   margin: 5px auto;
   padding: 20px;
   background: var(--content-bg);
-  border-radius: 10px;
-  box-shadow: 0 0 3px;
+  border-radius: 18px;
+  box-shadow: 0 0 3px var(--color);
 }
 
 .troubleshooting h1,

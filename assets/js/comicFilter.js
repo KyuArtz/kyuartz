@@ -51,7 +51,7 @@ function showDescription(button) {
 
   const titleElem = document.getElementById("comic-title");
   const descElem = document.getElementById("comic-description");
-  const popup = document.getElementById("description-popup");
+  const popup = document.getElementById("comic-description-popup");
 
   if (titleElem && descElem && popup) {
     titleElem.innerHTML = comicInfo.title;
@@ -61,13 +61,13 @@ function showDescription(button) {
 }
 
 function closeDescription() {
-  const popup = document.getElementById("description-popup");
+  const popup = document.getElementById("comic-description-popup");
   if (popup) popup.style.display = "none";
 }
 
 // Optional: Close popup when clicking outside of it
 window.onclick = function(event) {
-  const popup = document.getElementById("description-popup");
+  const popup = document.getElementById("comic-description-popup");
   if (popup && event.target === popup) {
     popup.style.display = "none";
   }

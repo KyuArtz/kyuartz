@@ -4,6 +4,8 @@
     cursor: default;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color) var(--scrollbar-track-color);
 }
 
 body {
@@ -14,17 +16,30 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+    width: 10px;
+    height: 10px;
 }
 
 ::-webkit-scrollbar-track {
     background: var(--scrollbar-track-color);
+    border-radius: 10px;
+    margin: 2px 0;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color);
-    border-radius: 9px;
+    background: linear-gradient(135deg, var(--color) 60%, var(--theme-overlay) 100%);
+    border-radius: 10px;
+    border: 2px solid var(--scrollbar-track-color);
+    min-height: 30px;
+    transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, var(--theme-overlay) 60%, var(--color) 100%);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--scrollbar-track-color);
 }
 
 @font-face {
@@ -37,7 +52,7 @@ body {
     --text-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: #141414;
-    --theme-overlay: rgba(64, 64, 64, 0.5);
+    --theme-overlay: rgba(64, 64, 64, 0.3);
     --overlay: rgba(10, 18, 24, 0.5);
     --scrollbar-track-color: rgba(0, 0, 0, 0);
     --font-style: 'myFont', sans-serif;
@@ -48,7 +63,7 @@ body {
     --text-color: #f0f0f0;
     --color: #8a8a8a;
     --content-bg: #141414;
-    --theme-overlay: rgba(64, 64, 64, 0.5);
+    --theme-overlay: rgba(64, 64, 64, 0.3);
 }
 
 .theme-modern-white {
@@ -56,7 +71,7 @@ body {
     --text-color: #2e2e2e;
     --color: #808080;
     --content-bg: #f0f0f0;
-    --theme-overlay: rgba(172, 172, 172, 0.5);
+    --theme-overlay: rgba(172, 172, 172, 0.3);
 }
 
 .theme-dark-blue {
@@ -64,15 +79,15 @@ body {
     --text-color: #f0f0f0;
     --color: #1e90ff;
     --content-bg: #1a2635;
-    --theme-overlay: rgba(30, 143, 255, 0.500);
+    --theme-overlay: rgba(30, 143, 255, 0.3);
 }
 
 .theme-white-blue {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #1e90ff;
-    --content-bg: #ccd5e0;
-    --theme-overlay: rgba(30, 143, 255, 0.500);
+    --content-bg: #e8f5ff;
+    --theme-overlay: rgba(30, 143, 255, 0.3);
 }
 
 .theme-dark-red {
@@ -80,15 +95,15 @@ body {
     --text-color: #f0f0f0;
     --color: #ff1e1e;
     --content-bg: #2e1616;
-    --theme-overlay: rgba(255, 30, 30, 0.5);
+    --theme-overlay: rgba(255, 30, 30, 0.3);
 }
 
 .theme-white-red {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #ff1e1e;
-    --content-bg: #e0cccc;
-    --theme-overlay: rgba(255, 30, 30, 0.5);
+    --content-bg: #ffe8e8;
+    --theme-overlay: rgba(255, 30, 30, 0.3);
 }
 
 .theme-dark-purple {
@@ -96,15 +111,15 @@ body {
     --text-color: #f0f0f0;
     --color: #a832ff;
     --content-bg: #2c162e;
-    --theme-overlay: rgba(168, 50, 255, 0.5);
+    --theme-overlay: rgba(168, 50, 255, 0.3);
 }
 
 .theme-white-purple {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #a832ff;
-    --content-bg: #ddcce0;
-    --theme-overlay: rgba(168, 50, 255, 0.5);
+    --content-bg: #fbe6ff;
+    --theme-overlay: rgba(168, 50, 255, 0.3);
 }
 
 .theme-dark-green {
@@ -112,15 +127,15 @@ body {
     --text-color: #f0f0f0;
     --color: #32ffa8;
     --content-bg: #162e17;
-    --theme-overlay: rgba(50, 255, 168, 0.5);
+    --theme-overlay: rgba(50, 255, 168, 0.3);
 }
 
 .theme-white-green {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #32ffa8;
-    --content-bg: #cce0cd;
-    --theme-overlay: rgba(50, 255, 168, 0.5);
+    --content-bg: #e9ffea;
+    --theme-overlay: rgba(50, 255, 168, 0.3);
 }
 
 .theme-dark-yellow {
@@ -128,35 +143,36 @@ body {
     --text-color: #f0f0f0;
     --color: #ffa832;
     --content-bg: #2e2e16;
-    --theme-overlay: rgba(255, 168, 50, 0.5);
+    --theme-overlay: rgba(255, 168, 50, 0.3);
 }
 
 .theme-white-yellow {
     --theme-color: #ffffff;
     --text-color: #333;
     --color: #ffa832;
-    --content-bg: #e0e0cc;
-    --theme-overlay: rgba(255, 168, 50, 0.5);
+    --content-bg: #ffffe8;
+    --theme-overlay: rgba(255, 168, 50, 0.3);
 }
 
+#abilities-scrollable p,
+#background p,
 .summary-content p,
 .experience-content p,
 .cs-content p,
 .cs-content2 p,
-.comic-content p,
-#abilities-scrollable p,
-#background p,
+.comic-popup p,
 .character-card p,
 .character-info p,
 .tos-container p,
 .pp-container p,
-.pp-item li,
 .faq-container p,
 .help-card p,
-.popup-wn li,
 .user-guide p,
-.user-guide li,
 .troubleshooting p,
+.pp-item li,
+.whats-new-popup li,
+.notice-content span,
+.user-guide li,
 .troubleshooting li {
     font-family: 'Roboto', sans-serif;
 }
@@ -168,23 +184,16 @@ a {
 }
 
 button,
-button i,
 a,
 a i,
 a p,
 a span,
+button i,
 .caption-btn a,
 .settings-btn i,
 input[type="Submit"] {
     cursor: pointer;
     background: none; 
-}
-
-.filter-character a:hover,
-button:hover,
-input[type="Submit"]:hover,
-.caption-btn a:hover {
-    text-shadow: 0 0 10px var(--color);
 }
 
 button.next,
