@@ -53,7 +53,7 @@ body {
     --color: #8a8a8a;
     --content-bg: #141414;
     --theme-overlay: rgba(64, 64, 64, 0.3);
-    --overlay: rgba(10, 18, 24, 0.5);
+    --overlay: rgba(10, 10, 10, 0.5);
     --scrollbar-track-color: rgba(0, 0, 0, 0);
     --font-style: 'myFont', sans-serif;
 }

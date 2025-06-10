@@ -13,7 +13,7 @@ form.customer {
     color: var(--text-color);
     padding: 20px;
     border-radius: 18px;
-    border: 2px solid var(--theme-overlay);
+    box-shadow: 0 0 3px var(--color);
     max-width: 600px;
     margin: 20px auto;
 }
@@ -97,6 +97,11 @@ button[type="submit"] {
     padding: 12px 30px;
     border: 1px solid;
     border-radius: 50px;
+    transition: 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background: var(--theme-overlay);
 }
 
 @media (max-width: 768px) {

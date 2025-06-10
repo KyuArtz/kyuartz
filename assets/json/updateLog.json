@@ -1,6 +1,22 @@
 {
   "updates": [
     {
+      "date": "2025-06-10",
+      "major": [
+        "Enhanced character selection logic for improved usability and performance.",
+        "Applied the specific character's accent color to both the character selection panel overlay and the info panel for visual consistency.",
+        "Added active state indication for filter role buttons when selected."
+      ],
+      "minor": [
+        "Refined the profile layout and styling on the settings menu."
+      ],
+      "bugfixes": [],
+      "upcoming": [
+        "Refined character informations.",
+        "New character \"Blessica\" will be added to the character selection."
+      ]
+    },
+    {
       "date": "2025-06-09",
       "major": [],
       "minor": [

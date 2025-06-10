@@ -55,8 +55,13 @@ function getCharacterDetails(character) {
     const card = document.querySelector(`.character-card[data-character="${character}"]`);
     const accent = card ? card.dataset.accent : null;
     const characterInfo = document.getElementById("character-info");
-    if (accent && characterInfo) {
-        characterInfo.style.setProperty('--accent', accent);
+    // Add this: select your overlay element
+    const characterOverlay = document.querySelector('.character-overlay'); // <-- update selector if needed
+
+    if (accent) {
+        if (characterInfo) characterInfo.style.setProperty('--accent', accent);
+        // Set accent on overlay as well
+        if (characterOverlay) characterOverlay.style.setProperty('--accent', accent);
     }
 
     const characterDetails = document.getElementById("character-details");
@@ -479,13 +484,17 @@ function attachFilterListeners() {
     document.querySelectorAll('.filter-character a').forEach(filterBtn => {
         filterBtn.addEventListener('click', function (e) {
             e.preventDefault();
+            // --- Active indicator logic ---
+            document.querySelectorAll('.filter-character a').forEach(btn => btn.classList.remove('active-filter'));
+            this.classList.add('active-filter');
+            // --- End active indicator logic ---
+
             const category = this.dataset.category;
             document.querySelectorAll('.character-card').forEach(card => {
                 const cardCategories = (card.dataset.category || '').split(',').map(cat => cat.trim());
                 const shouldShow = (category === 'all' || cardCategories.includes(category));
                 if (shouldShow) {
                     card.style.display = ''; // Show immediately
-                    // Use requestAnimationFrame to ensure the browser registers the display change
                     requestAnimationFrame(() => {
                         card.classList.remove('card-hidden');
                     });
@@ -496,6 +505,10 @@ function attachFilterListeners() {
             });
         });
     });
+
+    // Optionally, set the first filter as active on load
+    const firstFilter = document.querySelector('.filter-character a[data-category="all"]');
+    if (firstFilter) firstFilter.classList.add('active-filter');
 }
 
 // Initial setup
@@ -521,7 +534,18 @@ window.addEventListener('resize', updateBackground);
 // =====================
 function hideCharacterInfo() {
     const characterInfo = document.getElementById("character-info");
-    if (characterInfo) characterInfo.style.display = "none";
+    const characterDetails = document.getElementById("character-details");
+    const characterOverlay = document.querySelector('.character-overlay');
+    if (characterInfo) {
+        characterInfo.style.display = "none";
+        characterInfo.style.removeProperty('--accent');
+    }
+    if (characterDetails) {
+        characterDetails.innerHTML = "";
+    }
+    if (characterOverlay) {
+        characterOverlay.style.removeProperty('--accent');
+    }
     const characterContainer = document.querySelector('.character-background');
     if (characterContainer) {
         characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";

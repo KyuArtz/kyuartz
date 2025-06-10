@@ -76,11 +76,14 @@ header {
 .profile {
     display: flex;
     align-items: center;
-    gap: 5px;
-    width: 100%;
+    gap: 10px;
     border-bottom: 1px solid var(--color);
     padding: 10px;
     cursor: pointer;
+}
+
+.profile:hover {
+    background: var(--theme-overlay);
 }
 
 .profile img {
@@ -88,7 +91,7 @@ header {
     height: 40px;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: 1px solid;
+    border: 2px solid var(--color);
     object-fit: cover;
     object-position: center;
     background: var(--color);
@@ -97,6 +100,36 @@ header {
 
 .profile img:hover {
     animation: wiggleAnimation 0.3s ease-in-out;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile p.username {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.profile p.userrole {
+    font-size: 0.7rem;
+    color: var(--color);
+}
+
+.profile p {
+    margin: 0;
+}
+
+.profile i {
+    color: var(--color);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.profile i:hover {
+    transform: scale(1.2);
 }
 
 .main-navigation {
@@ -546,8 +579,8 @@ option {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 1px solid var(--text-color);
-    background: var(--content-bg);
+    border: 2px solid var(--text-color);
+    background: var(--overlay);
     margin: 0 3px;
     object-fit: cover;
     cursor: pointer;
