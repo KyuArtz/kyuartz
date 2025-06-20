@@ -3,17 +3,17 @@
 // =====================
 const characterBackgrounds = {
     comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
-    elishia: { landscape: "url('assets/images/character-presets/cover/elishia-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    hexxana: { landscape: "url('assets/images/character-presets/cover/hexxana-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    ren: { landscape: "url('assets/images/character-presets/cover/ren-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    rayza: { landscape: "url('assets/images/character-presets/cover/rayza-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    liliana: { landscape: "url('assets/images/character-presets/cover/liliana-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    blessica: { landscape: "url('assets/images/character-presets/cover/blessica-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    lunara: { landscape: "url('assets/images/character-presets/cover/lunara-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    floribeth: { landscape: "url('assets/images/character-presets/cover/floribeth-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    shelain: { landscape: "url('assets/images/character-presets/cover/shelain-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    arzhel: { landscape: "url('assets/images/character-presets/cover/arzhel-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
-    feya: { landscape: "url('assets/images/character-presets/cover/feya-cover.jpg')", portrait: "url('assets/images/character-presets/cover/sample.jpg')" },
+    elishia: { landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    hexxana: { landscape: "url('assets/images/character-presets/cover/hexxana-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    ren: { landscape: "url('assets/images/character-presets/cover/ren-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    rayza: { landscape: "url('assets/images/character-presets/cover/rayza-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    liliana: { landscape: "url('assets/images/character-presets/cover/liliana-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    blessica: { landscape: "url('assets/images/character-presets/cover/blessica-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    lunara: { landscape: "url('assets/images/character-presets/cover/lunara-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    floribeth: { landscape: "url('assets/images/character-presets/cover/floribeth-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    shelain: { landscape: "url('assets/images/character-presets/cover/shelain-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    arzhel: { landscape: "url('assets/images/character-presets/cover/arzhel-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
+    feya: { landscape: "url('assets/images/character-presets/cover/feya-cover.webp')", portrait: "url('assets/images/character-presets/cover/sample.webp')" },
 };
 
 let currentCharacter = null;
