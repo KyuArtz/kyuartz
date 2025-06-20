@@ -55,12 +55,10 @@ function getCharacterDetails(character) {
     const card = document.querySelector(`.character-card[data-character="${character}"]`);
     const accent = card ? card.dataset.accent : null;
     const characterInfo = document.getElementById("character-info");
-    // Add this: select your overlay element
-    const characterOverlay = document.querySelector('.character-overlay'); // <-- update selector if needed
+    const characterOverlay = document.querySelector('.character-overlay');
 
     if (accent) {
         if (characterInfo) characterInfo.style.setProperty('--accent', accent);
-        // Set accent on overlay as well
         if (characterOverlay) characterOverlay.style.setProperty('--accent', accent);
     }
 
