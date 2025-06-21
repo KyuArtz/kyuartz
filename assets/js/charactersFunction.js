@@ -114,7 +114,7 @@ function getCharacterDetails(character) {
             ability2: "<info><i class='fas fa-radiation'></i> Viral Sweep</info><p>Deploys a tech-plasma burst that neutralizes organic plague entities. Deals damage over time and halts regeneration in infected targets.</p>",
             ability3: "<info><i class='fas fa-eye'></i> Tactical Scan</info><p>Reveals enemies through walls and weak points in armor. Grants temporary critical chance bonus to allies who attack scanned targets.</p>",
             ability4: "<info><i class='fas fa-shield-alt'></i> Adaptive Barrier</info><p>Deploys a reactive energy shield that shifts to counter incoming damage types. Can protect a wide area or follow a single target.</p>",
-            ability5: "<info><i class='fas fa-robot'></i> Falcon Drone: ARZ-9</info><p>Deploys her custom support drone “Arzee.” It provides cover fire, revives nearby allies once per deployment, and emits a brief EMP pulse on destruction.</p>",
+            ability5: "<info><i class='fas fa-robot'></i> Falcon Drone: EB-9</info><p>Deploys her custom support drone “EB-9.” It provides cover fire, revives nearby allies once per deployment, and emits a brief EMP pulse on destruction.</p>",
             ability6: "<info><i class='fas fa-biohazard'></i> Redline Protocol</info><p>Activates Elishia’s failsafe mode—sacrificing defensive functions to maximize speed, firepower, and aggression. All cooldowns are reduced, but damage taken is increased. Ends with a powerful anti-plague discharge blast.</p>",
             background: [
             "Elishia spent the early years of her life in a peaceful province outside the bustling city of **Orag**, where she lived with her mother—a renowned biotech expert researching a mysterious disease quietly spreading across the region.<br><br>",
@@ -126,7 +126,7 @@ function getCharacterDetails(character) {
             "Elishia was rescued by **Falcon Company**, an elite special operations unit. From that moment on, her fire changed.<br><br>",
             "No longer the quiet girl from the woods, she trained. She fought. She rose—becoming a **Falconite Agent**, specializing in tech, tactics, and plague zone combat.<br><br>",
             "Now she stands as one of Falcon Company’s elite. Hardened. Focused. Driven by purpose, not fame. For her parents. For the lost. For those who still cling to hope.<br><br>",
-            "**Elishia is proof that even in a crumbling world... something bright can still rise from the ashes.**"
+            "**She is proof that even in a crumbling world… something bright can still rise from the ashes.**"
             ].join("")
         };
     } else if (character === 'hexxana') {
@@ -223,11 +223,11 @@ function getCharacterDetails(character) {
             "There, to her shock, stood her final opponent: her brother, Ren.<br><br>",
             "She hesitated, fearing her secret would be revealed. But Ren’s smirk and knowing glance told her he had recognized her all along. He remained silent, respecting her resolve. Rayza steeled herself and fought fiercely. The duel was intense, with both siblings pushing each other to their limits.<br><br>",
             "Near defeat, something deep within her awakened—a dormant power passed down through their bloodline. A red aura enveloped her, and she entered a heightened state known as 'Blood Rage.' Her strength and speed surged beyond normal limits. The crowd watched in awe as the siblings clashed with near-mythical intensity.<br><br>",
-            "In the stands, their father watched in silence. Shock turned to realization as he recognized the aura—the same one their mother once unleashed in battle. Though torn between fear and pride, he allowed the match to continue.<br><br>",
+            "In the stands, their father watched in silence. Shock turned to realization as he recognized the aura—the same one their mother once unleashed in battle. Torn between fear and pride, he made no move to stop them.<br><br>",
             "After nearly an hour of fierce combat, Rayza collapsed from exhaustion. Though she lost the match, she had proven herself.<br><br>",
             "She awoke at home, with Ren and her father at her side. Before she could speak, her father placed a hand on her shoulder, his voice heavy with emotion:<br><br>",
             "'I was only trying to protect you. You remind me so much of your mother before I watched her fall. But I see now—I was wrong. I won’t always be here to shield you. Maybe you don’t need me to. Keep growing, Rayza. Become strong… and wise. And Ren,' he said, turning to his son, 'look after your sister.'<br><br>",
-            "In that moment, Rayza received the acceptance she had long yearned for. Their family shared a quiet embrace—a promise unspoken, but deeply understood. From that day on, Rayza's path was clear: not just to prove her worth, but to carry forward the strength, legacy, and love that shaped her.",
+            "In that moment, Rayza received the acceptance she had long yearned for. Their family shared a quiet embrace—a promise unspoken, but deeply understood. From that day on, Rayza's path became clear—not just to prove her worth, but to carry forward the strength, legacy, and love that shaped her.",
             ].join("")
         };
     } else if (character === 'liliana') {
@@ -240,7 +240,7 @@ function getCharacterDetails(character) {
             faction: "<info>Light Harbingers</info>",
             role: "<info>Mage</info> <info>Healer</info>",
             occupation: "<info>Empress of the Magelion Empire</info>",
-            affiliates: "<info><i class='fas fa-users'></i> Blessica (Mother Figure)</info> <info><i class='fas fa-users'></i> Feya (Adopted Daughter)</info> <info><i class='fas fa-users'></i> Ren & Rayza (Allies)</info></info> <info><i class='fas fa-users'></i> Floribeth (Ally)</info></info>",
+            affiliates: "<info><i class='fas fa-users'></i> Blessica (Mother Figure)</info> <info><i class='fas fa-users'></i> Feya (Adopted Daughter)</info> <info><i class='fas fa-users'></i> Ren & Rayza (Allies)</info> <info><i class='fas fa-users'></i> Floribeth (Ally)</info>",
             elementalImages: [
             "assets/images/character-presets/elements/light.webp", 
             "assets/images/character-presets/elements/frost.webp"
@@ -262,12 +262,12 @@ function getCharacterDetails(character) {
             "Liliana nodded through tears. As Blessica ascended in radiant light, mortals and celestials alike knelt before the child of divine and umbrakith blood—her aura glowing with purpose.<br><br>",
             "With a steady breath and unwavering heart, Liliana summoned a great beam of light from the heavens. It poured over her like a divine blessing. As Eldoria crumbled around her, she lifted her hands—and in them, a crystal formed, pulsing with pure, radiant energy.<br><br>",
             "This 'Beacon Surge' resonated with the very soul of Eldoria. In a single, luminous wave, the light rippled outward. Darkness recoiled. Corruption melted into air. Hope was reborn.<br><br>",
-            "From that moment, Liliana was no longer a child of tragedy—she became the dawn itself.<br><br>",
+            "From that moment, Liliana was no longer a child of tragedy—She became the dawn reborn—the light after ruin.<br><br>",
             "As the years passed, she matured under the weight of destiny. While others clung to division, she envisioned unity. Where despair lingered, she brought hope. Determined to break the cycle of endless war, she summoned the remaining leaders of Eldoria and proposed a Grand Council—a final plea for peace.<br><br>",
             "Not all agreed, but many were moved by the clarity and grace in her voice. Her words awakened something ancient and true in their hearts.<br><br>",
             "To safeguard this fragile peace, Liliana founded the Light Harbingers—an elite order drawn from every race and realm. Membership was not given lightly. She forged the Trials herself: not tests of strength, but of compassion, resolve, and unwavering heart.<br><br>",
             "Through her leadership, Eldoria slowly began to heal. The once-divided nations began to sing her name. She became a living beacon—not only of survival, but of unity, light, and love.<br><br>",
-            "And yet... behind her serene gaze lies vigilance. In her quiet dreams, Liliana sees it—a veiled figure beneath a dying sky. A devouring silence. A second darkness.",
+            "And yet... behind her serene gaze lies vigilance. In her quiet dreams, Liliana sees it—A veiled figure beneath a dying sky… a second darkness… and silence that devours light itself.",
             ].join("")
         };
     } else if (character === 'lunara') {
@@ -304,7 +304,7 @@ function getCharacterDetails(character) {
             "His blood clung to her trembling hands like a vow undone. Warm. Real. Fading. Her scream never came—it was swallowed by the silence of a shattered world. The battlefield blurred. Time itself shattered. She saw every moment they had shared—his laughter, the whispered promises, the stolen touches beneath forbidden skies. His voice, calling her name, fading into silence. His warmth, now only a lifeless embrace.<br><br>",           
             "And something inside her broke. A whisper left her lips—a prayer, a curse, an agony too great for words.<br><br>",           
             "The sky darkened. The winds howled. A blood moon rose.<br><br>", 
-            "Those who dared to look into her eyes saw only death. An aurora, dark and unholy, erupted around her as her tears turned into rivers of blood. And then—the slaughter began. She bent the blood of those around her, twisting it into lifeless husks, consuming their essence in an unrelenting storm of carnage. The battlefield became a graveyard. Solaraenians, Umbrakiths, all races fell before her wrath.<br><br>", 
+            "Those who dared to look into her eyes saw only death. An aurora, dark and unholy, erupted around her as her tears turned into rivers of blood. And then… the slaughter began. She bent the blood of those around her, twisting it into lifeless husks, consuming their essence in an unrelenting storm of carnage. The battlefield became a graveyard. Solaraenians, Umbrakiths, all races fell before her wrath.<br><br>", 
             "She was no longer the celestial princess. No longer the exile. She became something else—a phantom, a reaper, a queen of death.<br><br>",  
             "That day, the Scarlet Phantom was born. The war ended—not in peace, not in victory, but in silence.<br><br>",
             "Now, Lunara lies sealed by her own sister in the very heart of Eldoria. Her heart turned to ice, her soul shackled by the blood of those she loved—and those she loathed.<br><br>",
@@ -341,7 +341,7 @@ function getCharacterDetails(character) {
             background: [
             "Feya Ashey was once a carefree child, raised in the mystical Frostfire Timberland among her fox spirit kin. Playful, mischievous, and endlessly curious, she roamed the northern mountains of the Magelion Empire, her heart unburdened and her magic growing stronger with each adventure.<br><br>",
             "Her people lived in peaceful harmony—deeply attuned to nature and elemental magic, untouched by the chaos of the outside world. But peace, like snow under fire, never lasts.<br><br>",
-            "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and shadow. The Frostfire Timberland, once vibrant with life, was scorched in battle. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
+            "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and shadow. The Frostfire Timberland—once vibrant with spirit and song—was reduced to smoldering ash. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
             "One by one, her kin fell. Her home burned. And Feya—young and unprepared—was left alone.<br><br>",
             "In a final act of desperation, she unleashed her latent power in a fiery, uncontrolled surge. The resulting explosion consumed the remaining enemy forces, but left Feya gravely wounded and drained.<br><br>",
             "As she collapsed, the Nethersteel general, Drakeon, stood over her. She had no strength left to resist. But before the final blow could fall, salvation arrived—the royal army of the Magelion Empire, led by Empress Liliana herself. The enemy fled. The damage, however, was done.<br><br>",
@@ -361,12 +361,12 @@ function getCharacterDetails(character) {
             height: "<info>6'0\" ft / 182.8 cm</info>",
             homeland: "<info>Luminwood Expanse</info>",
             faction: "<info>Bloomforge Order</info>",
-            role: "<info>healer</info> <info>Guardian</info>",
-            occupation: "<info>Warden of the Bloom</info>",
+            role: "<info>Healer</info> <info>Guardian</info>",
+            occupation: "<info>Ruler of luminwood</info>",
             affiliates: "<info><i class='fas fa-users'></i> Liliana (Ally)</info> <info><i class='fas fa-users'></i> Arzhel (Companion)</info>",
             elementalImages: [
             "assets/images/character-presets/elements/earth.webp",
-            "assets/images/character-presets/elements/nature.webp",
+            "assets/images/character-presets/elements/nature.webp"
             ],
             likes: "<info><i class='fas fa-check'></i> Harmony</info> <info><i class='fas fa-check'></i> Ancient Lore</info> <info><i class='fas fa-check'></i> Elven Traditions</info> <info><i class='fas fa-check'></i> Wildflowers</info>",
             dislikes: "<info><i class='fas fa-times'></i> Corruption</info> <info><i class='fas fa-times'></i> Senseless War</info> <info><i class='fas fa-times'></i> Burned Forests</info> <info><i class='fas fa-times'></i> Arrogance</info>",
@@ -385,7 +385,7 @@ function getCharacterDetails(character) {
             "Floribeth did not waver.<br><br>",
             "Her mission became clear: to **restore Luminwood to its former glory** and defend it from any force that dared threaten its sacred balance.<br><br>",
             "But peace was fleeting.<br><br>",
-            "Not long after the war’s end, a mysterious corruption began creeping through the Elderhaven Wilds—twisted magic poisoning the land, warping creatures, and draining life from the soil. The source was unknown. The threat, undeniable.<br><br>",
+            "Not long after the war’s end, corruption crept through the Elderhaven Wilds…twisted magic poisoning the land, warping creatures, and draining life from the soil. The source was unknown. The threat, undeniable.<br><br>",
             "Floribeth acted swiftly. She reinforced Luminwood’s borders, empowered her **Bloomforge Guardians**, and sent urgent warnings to the Light Harbingers.<br><br>",
             "Her call was not in vain.<br><br>",
             "One fateful night, under a moon veiled in mist, a shadowy faction launched a full-scale assault on the Luminwood Expanse. But Floribeth—ever the strategist—was ready. Alongside her trusted companion **Arzhel**, she activated an ancient Solaraenian portal beneath the Tree of Life.<br><br>",
