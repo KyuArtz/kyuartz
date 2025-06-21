@@ -292,10 +292,12 @@ p.title {
 
 .left-btn {
     border-radius: 15px 5px 5px 15px;
+    border-right: 3px solid #ffab4c;
 }
 
 .right-btn {
     border-radius: 5px 15px 15px 5px;
+    border-left: 3px solid #ffab4c;
 }
 
 .left-btn,
@@ -303,17 +305,16 @@ p.title {
     background: var(--theme-color);
     color: var(--theme-color);
     box-shadow: none;
-    border: 1px solid #ffab4c;
     transition: 
-        background-color 0.3s ease-in-out, 
-        color 0.3s ease-in-out, 
-        box-shadow 0.3s ease-in-out,
-        border-color 0.3s ease-in-out;
+        background-color 0.3s ease, 
+        color 0.3s ease, 
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
 }
 
 .left-btn:hover,
 .right-btn:hover {
-    background: var(--text-color);
+    background: var(--overlay);
     color: var(--text-color);
     box-shadow: 0 0 10px #ffab4c;
     border-color: #ffab4c;
@@ -333,6 +334,8 @@ p.title {
     background: var(--theme-color);
     color: var(--accent, #ffab4c);
     border: 2px solid var(--accent, #ffab4c);
+    border-right: 5px solid var(--accent, #ffab4c);
+    border-left: 3px solid var(--accent, #ffab4c);
     border-radius: 50px 50px 20px 50px;
     padding: 5px;
     transition: 0.3s ease;
@@ -402,11 +405,11 @@ p.title {
     background: var(--overlay);
     color: var(--accent, #ffab4c);
     border: 1px solid var(--accent, #ffab4c);
+    border-left: 5px solid var(--theme-color);
+    border-right: 3px solid var(--theme-color);
     border-radius: 20px 50px 50px 50px;
     padding: 10px;
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out, 
-                background-color 0.2s ease,
+    transition: background-color 0.2s ease,
                 padding 0.2s ease;
 }
 
@@ -415,7 +418,8 @@ p.title {
     background: var(--theme-color);
     color: var(--text-color);
     border: 1px solid var(--text-color);
-    transform: scale(1.02);
+    border-left: 5px solid var(--theme-color);
+    border-right: 3px solid var(--theme-color);
 }
 
 .character-info p {

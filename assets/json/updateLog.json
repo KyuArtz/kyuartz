@@ -1,6 +1,17 @@
 {
   "updates": [
     {
+      "date": "2025-06-21",
+      "major": [],
+      "minor": [
+        "Refined the UI of the character panel and improved character information display."
+      ],
+      "bugfixes": [],
+      "upcoming": [
+        "New character (\"Ren\", \"Blessica\") will be added to the character selection."
+      ]
+    },
+    {
       "date": "2025-06-10",
       "major": [
         "Enhanced character selection logic for improved usability and performance.",
