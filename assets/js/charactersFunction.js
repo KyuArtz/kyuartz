@@ -175,7 +175,7 @@ function getCharacterDetails(character) {
             "assets/images/character-presets/elements/fire.webp"
             ],
             likes: "<info><i class='fas fa-check'></i> Having Fun</info> <info><i class='fas fa-check'></i> Training & Combat</info> <info><i class='fas fa-check'></i> Discipline</info> <info><i class='fas fa-check'></i> Spicy Food</info>",
-            dislikes: "<info><i class='fas fa-times'></i> Nethersteel Pact</info> <info><i class='fas fa-times'></i> Arrogant People</info> <info><i class='fas fa-times'></i> Crowds</info> <info><i class='fas fa-times'></i> Cooking</info> <info><i class='fas fa-times'></i> Losing Control</info>",
+            dislikes: "<info><i class='fas fa-times'></i> Nethersteel Pact</info> <info><i class='fas fa-times'></i> Arrogant People</info> <info><i class='fas fa-times'></i> Crowds</info> <info><i class='fas fa-times'></i> Cooking</info>",
             weapon: "<info><i class='fas fa-heart'></i> Dual Fang Blades / Dragonforged Broadsword</info>",
             ability1: "<info><i class='fas fa-fire'></i> Blazing Fang</info><p>Strikes with his twin blades, igniting the target with fire-enhanced slashes. Each successful hit increases burn duration and stacks toward combo finishers.</p>",
             ability2: "<info><i class='fas fa-tornado'></i> Whirlwind Edge</info><p>Spins forward in a sweeping circular strike. Deals AoE damage around him and knocks enemies back. If used during Bloodheat, adds a fire shockwave.</p>",
@@ -189,7 +189,7 @@ function getCharacterDetails(character) {
             "After the war, everything changed. Ren’s father became cold and harsh, pushing him into relentless training. Though bruised and scarred, Ren never resisted. He endured—for his father, for Rayza, and to protect what remained of their family. Rayza, still young and afraid, would secretly tend to his wounds in the quiet of night.<br><br>",
             "Determined to prove himself, Ren grew stronger through discipline and hardship. He led expeditions, helped rebuild their clan, and eventually earned his father’s respect. For his final trial, he ascended the thousand-step path to the highest peak of the Hidden Mist Valley. There, within an ancient temple, he challenged one of the Three Elder Dragons.<br><br>",
             "After hours of battle, Ren unlocked his dormant bloodline—becoming Dragonkin. The dragon bowed to him in recognition, and he returned home transformed.<br><br>",
-            "Years later, a letter arrived from the Magelion Empire—a call for peace and diplomacy. Ren’s father accepted. Ren volunteered to represent his people. Before leaving, he embraced Rayza and whispered: “Don’t worry, I’ll be back.” Then he set out, a warrior of flame and honor, to shape the future with the fire of the past.",
+            "Years later, a letter arrived from the Magellion Empire—a call for peace and diplomacy. Ren’s father accepted. Ren volunteered to represent his people. Before leaving, he embraced Rayza and whispered: “Don’t worry, I’ll be back.” Then he set out, a warrior of flame and honor, to shape the future with the fire of the past.",
             ].join("")
         };
     } else if (character === 'rayza') {
@@ -236,10 +236,10 @@ function getCharacterDetails(character) {
             race: "<info>Half-Celestial / Umbrakith</info>",
             gender: "<info>Female</info>",
             height: "<info>5'7\" ft / 170.2 cm</info>",
-            homeland: "<info>Magelion Empire</info>",
+            homeland: "<info>Magellion Empire</info>",
             faction: "<info>Light Harbingers</info>",
             role: "<info>Mage</info> <info>Healer</info>",
-            occupation: "<info>Empress of the Magelion Empire</info>",
+            occupation: "<info>Empress of the Magellion Empire</info>",
             affiliates: "<info><i class='fas fa-users'></i> Blessica (Mother Figure)</info> <info><i class='fas fa-users'></i> Feya (Adopted Daughter)</info> <info><i class='fas fa-users'></i> Ren & Rayza (Allies)</info> <info><i class='fas fa-users'></i> Floribeth (Ally)</info>",
             elementalImages: [
             "assets/images/character-presets/elements/light.webp", 
@@ -255,7 +255,7 @@ function getCharacterDetails(character) {
             ability5: "<info><i class='fas fa-hand-holding-heart'></i> Radiant Safeguard</info><p>Projects a divine ward on all nearby allies, granting immunity to lethal damage for a brief time. When triggered, leaves behind a soothing trail of light.</p>",
             ability6: "<info><i class='fas fa-sun'></i> Ascendant Blessing</info><p>Liliana enters a divine trance, glowing with Solaraenian power. All healing is amplified, light abilities deal extra radiant damage, and fallen allies within her aura are revived with partial health. Lasts for a short duration.</p>",
             background: [
-            "Liliana Solarae, the Radiant Empress, is the revered founder and current ruler of the Magelion Empire—an empire born from ruin and risen from the ashes of a shattered world.<br><br>",
+            "Liliana Solarae, the Radiant Empress, is the revered founder and current ruler of the Magellion Empire—an empire born from ruin and risen from the ashes of a shattered world.<br><br>",
             "After the death of the Solaraenian God and the tragic sealing of her mother, Lunara, during the Great War, young Liliana was thrust into chaos. The celestial homeland of Solaraenia was obliterated. The proud Umbrakith were nearly wiped from existence. And Eldoria, once vibrant and united, teetered on the brink of collapse.<br><br>",
             "At the center of this devastation, Liliana witnessed the unthinkable: her beloved aunt, Blessica, sacrificing herself to seal the corrupted Lunara and prevent further destruction. As the sealing spell drained her strength, Blessica placed her hands on Liliana’s shoulders and gave her a sacred vow.<br><br>",
             "'Restore what we’ve lost. Protect the future. Lead them home.'<br><br>",
@@ -339,12 +339,12 @@ function getCharacterDetails(character) {
             ability5: "<info><i class='fas fa-seedling'></i> Radiant Safeguard</info><p>Surrounds allies in a barrier of nature-infused fire that absorbs damage and burns attackers. Strength increases if Feya is under half HP.</p>",
             ability6: "<info><i class='fas fa-star'></i> Vulpine Ascension</info><p>Feya awakens her true form—a celestial fox spirit wreathed in infernal fire. During this state, all abilities are empowered, and attacks gain burn and lifesteal effects. Her eyes glow, her tails flare, and the battlefield bends to her will.</p>",
             background: [
-            "Feya Ashey was once a carefree child, raised in the mystical Frostfire Timberland among her fox spirit kin. Playful, mischievous, and endlessly curious, she roamed the northern mountains of the Magelion Empire, her heart unburdened and her magic growing stronger with each adventure.<br><br>",
+            "Feya Ashey was once a carefree child, raised in the mystical Frostfire Timberland among her fox spirit kin. Playful, mischievous, and endlessly curious, she roamed the northern mountains of the Magellion Empire, her heart unburdened and her magic growing stronger with each adventure.<br><br>",
             "Her people lived in peaceful harmony—deeply attuned to nature and elemental magic, untouched by the chaos of the outside world. But peace, like snow under fire, never lasts.<br><br>",
             "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and shadow. The Frostfire Timberland—once vibrant with spirit and song—was reduced to smoldering ash. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
             "One by one, her kin fell. Her home burned. And Feya—young and unprepared—was left alone.<br><br>",
             "In a final act of desperation, she unleashed her latent power in a fiery, uncontrolled surge. The resulting explosion consumed the remaining enemy forces, but left Feya gravely wounded and drained.<br><br>",
-            "As she collapsed, the Nethersteel general, Drakeon, stood over her. She had no strength left to resist. But before the final blow could fall, salvation arrived—the royal army of the Magelion Empire, led by Empress Liliana herself. The enemy fled. The damage, however, was done.<br><br>",
+            "As she collapsed, the Nethersteel general, Drakeon, stood over her. She had no strength left to resist. But before the final blow could fall, salvation arrived—the royal army of the Magellion Empire, led by Empress Liliana herself. The enemy fled. The damage, however, was done.<br><br>",
             "The once-beautiful Frostfire Timberland was reduced to ashes, its magic corrupted, its people gone.<br><br>",
             "Hours later, the scouts found Feya unconscious in the ruins. Empress Liliana, moved by the sight of the broken girl and the loss of her entire race, personally healed her. Seeing the fire still burning inside her, Liliana adopted Feya as her daughter, offering her sanctuary and a new path.<br><br>",
             "Under the Empress’s care, Feya trained as a Light Harbinger—sworn to defend the Crystalight and preserve Eldoria’s fragile peace. Though her heart still carries the scars of her past, she now fights with renewed purpose.<br><br>",
@@ -362,7 +362,7 @@ function getCharacterDetails(character) {
             homeland: "<info>Luminwood Expanse</info>",
             faction: "<info>Bloomforge Order</info>",
             role: "<info>Healer</info> <info>Guardian</info>",
-            occupation: "<info>Ruler of luminwood</info>",
+            occupation: "<info>Sovereign of luminwood</info>",
             affiliates: "<info><i class='fas fa-users'></i> Liliana (Ally)</info> <info><i class='fas fa-users'></i> Arzhel (Companion)</info>",
             elementalImages: [
             "assets/images/character-presets/elements/earth.webp",
@@ -378,7 +378,7 @@ function getCharacterDetails(character) {
             ability5: "<info><i class='fas fa-globe'></i> Sanctuary Bloom</info><p>Creates a sanctuary zone of glowing flora that lasts several seconds. Allies inside are shielded over time and gradually regenerate health while inside the bloom radius.</p>",
             ability6: "<info><i class='fas fa-star-of-life'></i> Blooming Ascension</info><p>Floribeth invokes the essence of the Tree of Life, ascending into a radiant spirit form. While active, healing effects are doubled, enemies nearby are pacified, and all allies regenerate mana and stamina steadily. Her presence revives fallen allies with partial health if cast at the center of Springvale.</p>",
             background: [
-            "Floribeth, guardian of nature and master of floramancy and earth, once ruled over the vast and vibrant **Luminwood Expanse**—a realm where flora and fauna danced in perfect harmony far northwest of the Magelion Empire.<br><br>",
+            "Floribeth, guardian of nature and master of floramancy and earth, once ruled over the vast and vibrant **Luminwood Expanse**—a realm where flora and fauna danced in perfect harmony far northwest of the Magellion Empire.<br><br>",
             "Once an elite of the ancient faction led by Princess Lunara, Floribeth eventually stepped away from her former ties, seeking a deeper purpose. With a heart rooted in healing and preservation, she founded her own faction: the **Bloomforge Order**, sworn to protect the **Tree of Life**—the sacred heart of Eldoria, whose roots stretch through generations of time.<br><br>",
             "Her homeland was once a breathtaking tapestry of lush valleys, mystical groves, and ancient whispering trees. Home to elves, spiritfolk, and rare creatures, Luminwood was a paradise—wild, diverse, and deeply connected to the world’s natural soul.<br><br>",
             "But after the devastation of the Great War, the land was wounded. Corruption seeped into its roots. Its spirit dimmed. Its beauty scarred.<br><br>",
@@ -395,19 +395,86 @@ function getCharacterDetails(character) {
             "For as long as she breathes, Floribeth will stand as the **Warden of the Bloom**—a shield between corruption and creation.<br><br>"
             ].join("")
         };
+    } else if (character === 'arzhel') {
+        details = {
+            name: "Arzhel",
+            race: "<info>Elf</info>",
+            gender: "<info>Male</info>",
+            height: "<info>5'10\" ft / 177.8 cm</info>",
+            homeland: "<info>Luminwood Expanse</info>",
+            faction: "<info>Bloomforge Order</info>",
+            role: "<info>Marksman</info>",
+            occupation: "<info>Elite Guardian of the Bloom</info>",
+            affiliates: "<info><i class='fas fa-users'></i> Liliana (Ally)</info> <info><i class='fas fa-users'></i> Floribeth (Mentor)</info>",
+            elementalImages: [
+            "assets/images/character-presets/elements/nature.webp"
+            ],
+            likes: "<info><i class='fas fa-check'></i> Harmony</info> <info><i class='fas fa-check'></i> Archery</info> <info><i class='fas fa-check'></i> Nature</info> <info><i class='fas fa-check'></i> Meditation</info> <info><i class='fas fa-check'></i> Poetry</info>",
+            dislikes: "<info><i class='fas fa-times'></i> Corruption</info> <info><i class='fas fa-times'></i> Senseless War</info> <info><i class='fas fa-times'></i> Burned Forests</info> <info><i class='fas fa-times'></i> Arrogance</info>",
+            weapon: "<info><i class='fas fa-heart'></i> Bloomforge Bow</info>",
+            ability1: "<info><i class='fas fa-leaf'></i> Verdant Volley</info><p>Fires a rapid volley of arrows imbued with nature magic. Each hit has a chance to root the enemy in place with entwining vines.</p>",
+            ability2: "<info><i class='fas fa-wind'></i> Whisperstep</info><p>Arzhel moves silently through terrain, gaining invisibility near natural cover. His next shot from stealth deals critical damage and applies a slow.</p>",
+            ability3: "<info><i class='fas fa-bullseye'></i> Bloomshot</info><p>Channels power into a single arrow that explodes into petals upon impact. Deals area damage and briefly blinds enemies hit by the bloom flash.</p>",
+            ability4: "<info><i class='fas fa-shield-alt'></i> Guardian’s Watch</info><p>Places a warding seed on the ground that blooms into a protective dome, shielding allies and revealing invisible enemies within its range.</p>",
+            ability5: "<info><i class='fas fa-seedling'></i> Wildroot Trap</info><p>Plants a trap that activates when stepped on, entangling enemies with thorned vines and applying nature damage over time.</p>",
+            ability6: "<info><i class='fas fa-tree'></i> Bloomshaper’s Mark</info><p>Marks a target with an ancient sigil. All of Arzhel’s attacks against the marked enemy are empowered, and allies gain increased accuracy against the target.</p>",
+            background: [
+            "Arzhel was just a child when the Great War of Eldoria erupted. During the brutal siege of the Luminwood Expanse by the Nethersteel Pact—a rogue faction of the Umbrakith—his parents, both skilled defenders, fell while protecting their homeland.<br><br>",
+            "Orphaned and alone, Arzhel survived in the wilds of Elderhaven, sustained only by instinct and an unyielding will to live. Even as a youth, he demonstrated exceptional skill with the bow—swift, focused, and precise, much like his father before him.<br><br>",
+            "One day, while patrolling the forest outskirts, Floribeth—Warden of the Bloom—noticed the boy practicing with makeshift arrows. She recognized in him the rare harmony between nature and discipline.<br><br>",
+            "Moved by his determination, she took him under her wing. Under her mentorship, Arzhel was trained in the ancient art of nature-bound archery and Bloomforge discipline.<br><br>",
+            "Years passed. Through perseverance and growth, Arzhel rose through the ranks and earned the title of **Elite Guardian of the Bloom**. Now he stands as one of Luminwood’s finest marksmen—a silent sentinel watching over the sacred groves, vowing to protect what his parents once died defending.<br><br>",
+            "They say his arrows strike before the wind whispers. And when shadows fall upon the forest… Arzhel is already watching."
+            ].join("")
+        };
+    } else if (character === 'shelain') {
+        details = {
+            name: "Shelain Azure",
+            race: "<info>Siren</info>",
+            gender: "<info>Female</info>",
+            height: "<info>5'8\" ft / 176.78 cm</info>",
+            homeland: "<info>Azure Coast</info>",
+            faction: "<info>Order of the Tides</info>",
+            role: "<info>Mage</info>",
+            occupation: "<info>Sovereign of the Southern Seas</info>",
+            affiliates: "<info><i class='fas fa-users'></i> Liliana (Ally)</info> <info><i class='fas fa-users'></i> Floribeth (Ally)</info>",
+            elementalImages: [
+            "assets/images/character-presets/elements/water.webp",
+            "assets/images/character-presets/elements/energy.webp",
+            ],
+            likes: "<info><i class='fas fa-check'></i> Ocean Waves</info> <info><i class='fas fa-check'></i> Singing</info> <info><i class='fas fa-check'></i> Coral Reefs</info> <info><i class='fas fa-check'></i> Mysteries of the Deep</info>",
+            dislikes: "<info><i class='fas fa-times'></i> Pollution</info> <info><i class='fas fa-times'></i> Drought</info> <info><i class='fas fa-times'></i> War</info> <info><i class='fas fa-times'></i> Naga & Abyssal Order</info>",
+            weapon: "<info><i class='fas fa-heart'></i> Trident of Azure</info>",
+            ability1: "<info><i class='fas fa-water'></i> Tidecall</info><p>Summons a surge of high-pressure water to knock back enemies in front of her. The wave slows targets and cleanses ally debuffs in its path.</p>",
+            ability2: "<info><i class='fas fa-music'></i> Siren’s Hymn</info><p>Releases a haunting song that calms aggressive foes and bolsters allies’ regeneration and magic resistance.</p>",
+            ability3: "<info><i class='fas fa-bullseye'></i> Deep Pierce</info><p>Throws a water-forged harpoon imbued with magic. Pierces through multiple enemies and reduces defense on hit.</p>",
+            ability4: "<info><i class='fas fa-shield-alt'></i> Abyssal Veil</info><p>Surrounds herself in a watery shield that absorbs damage and reflects a portion of it as magical backlash.</p>",
+            ability5: "<info><i class='fas fa-seedling'></i> Coral Sanctuary</info><p>Creates a sanctuary zone of blooming coral. Allies within are healed over time and gain resistance to crowd control effects.</p>",
+            ability6: "<info><i class='fas fa-tree'></i> Ocean’s Wrath</info><p>Shelain calls upon the ancient power of the seas, conjuring a massive whirlpool beneath her foes. Deals AoE damage over time and pulls enemies to the center.</p>",
+            background: [
+            "Shelain, graceful queen of the Southern Seas, once lived in peace beneath the azure waves of the **Azure Coast**, homeland of the sirens. There, aquatic life thrived, and her people swam freely, guided by the traditions of the **Order of the Tides**, a neutral and ancient oceanic faction.<br><br>",
+            "But neutrality was not enough to shield them from the chaos of the **Great War of Eldoria**. One dark tide, their realm was attacked by a joint force led by the **Nagas**—a draconic, warlike cousin race of the sirens and allies of the **Abyssal Order**. Their aim: to overthrow **King Azure**, Shelain’s beloved husband.<br><br>",
+            "Shelain had urged him to request aid from the **Magellion Empire**, but King Azure believed they could repel the enemy alone. His pride cost them dearly. During the battle, both the king and their only son fell. One by one, the defenders were overwhelmed.<br><br>",
+            "With her home in flames beneath the sea and her forces dwindling, Shelain activated the **Ancient Solaraenian Portal**—a sacred relic guarded for generations. Through it came **Empress Liliana** and her Light Harbingers. Together, they drove back the invaders. But the cost was already too great.<br><br>",
+            "The once-vibrant reefs were corrupted. The waters, tainted. Liliana’s magic helped cleanse the land, but the damage could not be fully undone.<br><br>",
+            "Shelain blamed herself for not acting sooner. For trusting peace. For hesitating.<br><br>",
+            "Now, with her crown heavy and her heart scarred, she stands beside the Magellion Empire as a proud ally. Determined to rebuild the ocean’s serenity and safeguard her people, she has vowed vengeance against the Nagas and the Abyssal Order.<br><br>",
+            "**She fights not only as a queen, but as a mother, a guardian, and a tide that will never be silenced again.**"
+            ].join("")
+        };
     } else if (character === 'blessica') {
         details = {
             name: "Blessica Solarae",
             race: "<info>Celestial</info>",
             gender: "<info>Female</info>",
             height: "<info>6'0\" ft / 182.88 cm</info>",
-            homeland: "<info>Solaraenia</info>",
+            homeland: "<info>Former Solaraenian Kingdom</info>",
             faction: "<info>Light Harbingers</info>",
             role: "<info>Guardian</info> <info>Warrior</info>",
-            occupation: "<info>High Cleric</info>",
+            occupation: "<info>Cleric</info>",
             affiliates: "<info><i class='fas fa-users'></i> Lunara (Sister)</info> <info><i class='fas fa-users'></i> Liliana (Niece)</info>",
             elementalImages: [
-                "assets/images/character-presets/elements/light.webp"
+            "assets/images/character-presets/elements/light.webp"
             ],
             likes: "<info><i class='fas fa-check'></i> Stargazing</info> <info><i class='fas fa-check'></i> Ancient Texts</info> <info><i class='fas fa-check'></i> Singing</info>",
             dislikes: "<info><i class='fas fa-times'></i> Bloodshed</info> <info><i class='fas fa-times'></i> Secrets</info>",
@@ -419,19 +486,19 @@ function getCharacterDetails(character) {
             ability5: "<info><i class='fas fa-cross'></i> Dawnbreaker Oath</info><p>Blessica plants her spear into the ground, creating a protective field. Allies inside take reduced damage and regenerate stamina. Enemies that enter are briefly blinded.</p>",
             ability6: "<info><i class='fas fa-sun'></i> Final Benediction</info><p>Blessica ascends briefly in a halo of divine light. During this state, she gains flight, her attacks pierce defenses, and all allies nearby receive constant healing. Ends in a radiant burst that revives one fallen ally with enhanced resistance.</p>",
             background: [
-            "Blessica, the second daughter of the Solaraenian God, was born in the celestial realm of <b>Solaraenia</b>—a land of radiant light and divine order, home to the ethereal Solaraenian beings. Gifted with potent light magic, she rose as an elite guardian and warrior, known not only for her grace and power, but for her unwavering devotion to her elder sister, <b>Lunara</b>.<br><br>",
-            "Over time, Blessica noticed a change in Lunara. Her sister vanished into the night, venturing to forbidden realms—most often to the mortal world of <b>Eldoria</b>. Disguised in mortal form, Lunara quietly aided the weak and sought purpose beyond her divine duties. Though heir to the throne, her heart strayed from the royal path. Blessica watched, silently sensing the storm that brewed.<br><br>",
-            "Eventually, that storm broke. Whispers echoed through the palace: Lunara had fallen for <b>Zion</b>, a prince of the Umbrakith—their sworn enemies. Their father deemed it treason. Desperate, Blessica pleaded for mercy, but the verdict remained. Lunara was to be exiled.<br><br>",
+            "Blessica, the second daughter of the Solaraenian God, was born in the celestial realm of Solaraenia—a land of radiant light and divine order, home to the ethereal Solaraenian beings. Gifted with potent light magic, she rose as an elite guardian and warrior, known not only for her grace and power, but for her unwavering devotion to her elder sister, Lunara.<br><br>",
+            "Over time, Blessica noticed a change in Lunara. Her sister vanished into the night, venturing to forbidden realms—most often to the mortal world of Eldoria. Disguised in mortal form, Lunara quietly aided the weak and sought purpose beyond her divine duties. Though heir to the throne, her heart strayed from the royal path. Blessica watched, silently sensing the storm that brewed.<br><br>",
+            "Eventually, that storm broke. Whispers echoed through the palace: Lunara had fallen for Zion, a prince of the Umbrakith—their sworn enemies. Their father deemed it treason. Desperate, Blessica pleaded for mercy, but the verdict remained. Lunara was to be exiled.<br><br>",
             "Heartbroken, Blessica defied the divine decree and followed her sister into Eldoria. There, she found Lunara with Zion—and with them, a child. Their daughter. Lunara placed the girl in Blessica’s arms and whispered:<br><br>",
-            "<i>“Take her. Keep her safe. I trust you. She is the future of our people.”</i><br><br>",
-            "Lunara revealed truths their father had hidden—ancient secrets buried so deep that even royal blood dared not speak of them. Though torn with sorrow, Blessica agreed. She took the child, <b>Liliana</b>, and vanished—just as the war ignited between gods and mortals.<br><br>",
-            "When she returned to Solaraenia, the <b>Order of Light</b> greeted her with grave news: Lunara had vanished into chaos, and named Blessica her successor. As the war escalated, Blessica sent her people and Liliana into hiding, while she and her most loyal warrior returned to the battlefield to search for her sister.<br><br>",
+            "“Take her. Keep her safe. I trust you. She is the future of our people.<br><br>",
+            "Lunara revealed truths their father had hidden—ancient secrets buried so deep that even royal blood dared not speak of them. Though torn with sorrow, Blessica agreed. She took the child, Liliana, and vanished—just as the war ignited between gods and mortals.<br><br>",
+            "When she returned to Solaraenia, the Order of Light greeted her with grave news: Lunara had vanished into chaos, and named Blessica her successor. As the war escalated, Blessica sent her people and Liliana into hiding, while she and her most loyal warrior returned to the battlefield to search for her sister.<br><br>",
             "What they found was devastation. Under a blood moon, an abyssal force swept across the land, annihilating millions. At its center stood Lunara—consumed by darkness. She slew all who stood before her, even their father.<br><br>",
             "Blessica confronted her corrupted sister, but Lunara’s power had grown beyond reckoning. As she began casting a catastrophic spell, Blessica invoked a forbidden seal with help from Solaraenian elders, loyal warriors, and her companion. Together, they imprisoned Lunara.<br><br>",
             "The sealing came at a terrible cost. Blessica’s form began to glow and fade. As she collapsed, the young Liliana rushed to her side. With her final breath, Blessica whispered:<br><br>",
-            "<i>“Lead our people… protect her. She is the light of our future… and the hope of this world.”</i><br><br>",
-            "In a burst of radiant light, Blessica ascended—her soul returning to the heavens. Mortals, celestials, and warriors knelt before <b>Liliana</b>. In that moment, a child became a leader.<br><br>",
-            "From the ruins of war, Liliana rose to fulfill her aunt’s vow—founding the <b>Magelion Empire</b> upon the sacred grounds where it all began.<br><br>",
+            "“Lead our people… protect her. She is the light of our future… and the hope of this world.<br><br>",
+            "In a burst of radiant light, Blessica ascended—her soul returning to the heavens. Mortals, celestials, and warriors knelt before Liliana. In that moment, a child became a leader.<br><br>",
+            "From the ruins of war, Liliana rose to fulfill her aunt’s vow—founding the Magellion Empire upon the sacred grounds where it all began.<br><br>",
             "The war ended in silence… but the cost would echo throughout Eldoria for generations to come."
             ].join("")
         };
