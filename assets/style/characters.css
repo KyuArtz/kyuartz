@@ -470,6 +470,7 @@ p.title {
     }
     .character-info {
         max-width: 100%;
+        min-width: 100%;
     }
 }
 
