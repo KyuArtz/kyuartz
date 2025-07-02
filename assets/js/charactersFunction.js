@@ -3,17 +3,17 @@
 // =====================
 const characterBackgrounds = {
     comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
-    elishia: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    hexxana: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    ren: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    rayza: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    liliana: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    blessica: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    lunara: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    floribeth: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    shelain: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    arzhel: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
-    feya: { landscape: "url('assets/images/gif/lighting.gif')", portrait: "url('assets/images/gif/lighting.gif')" },
+    elishia: { landscape: "url('')", portrait: "url('')" },
+    hexxana: { landscape: "url('')", portrait: "url('')" },
+    ren: { landscape: "url('')", portrait: "url('')" },
+    rayza: { landscape: "url('')", portrait: "url('')" },
+    liliana: { landscape: "url('')", portrait: "url('')" },
+    blessica: { landscape: "url('')", portrait: "url('')" },
+    lunara: { landscape: "url('')", portrait: "url('')" },
+    floribeth: { landscape: "url('')", portrait: "url('')" },
+    shelain: { landscape: "url('')", portrait: "url('')" },
+    arzhel: { landscape: "url('')", portrait: "url('')" },
+    feya: { landscape: "url('')", portrait: "url('')" },
 };
 
 let currentCharacter = null;
@@ -488,7 +488,7 @@ function getCharacterDetails(character) {
             background: [
             "Blessica, the second daughter of the Solaraenian God, was born in the celestial realm of Solaraenia—a land of radiant light and divine order, home to the ethereal Solaraenian beings. Gifted with potent light magic, she rose as an elite guardian and warrior, known not only for her grace and power, but for her unwavering devotion to her elder sister, Lunara.<br><br>",
             "Over time, Blessica noticed a change in Lunara. Her sister vanished into the night, venturing to forbidden realms—most often to the mortal world of Eldoria. Disguised in mortal form, Lunara quietly aided the weak and sought purpose beyond her divine duties. Though heir to the throne, her heart strayed from the royal path. Blessica watched, silently sensing the storm that brewed.<br><br>",
-            "Eventually, that storm broke. Whispers echoed through the palace: Lunara had fallen for Zion, a prince of the Umbrakith—their sworn enemies. Their father deemed it treason. Desperate, Blessica pleaded for mercy, but the verdict remained. Lunara was to be exiled.<br><br>",
+            "Eventually, that storm broke. Whispers echoed through the palace: Lunara had fallen for Zion, a prince of the Umbrakith—their sworn enemies. Their love was deemed treason. Desperate, Blessica pleaded for mercy, but the verdict remained. Lunara was to be exiled.<br><br>",
             "Heartbroken, Blessica defied the divine decree and followed her sister into Eldoria. There, she found Lunara with Zion—and with them, a child. Their daughter. Lunara placed the girl in Blessica’s arms and whispered:<br><br>",
             "“Take her. Keep her safe. I trust you. She is the future of our people.<br><br>",
             "Lunara revealed truths their father had hidden—ancient secrets buried so deep that even royal blood dared not speak of them. Though torn with sorrow, Blessica agreed. She took the child, Liliana, and vanished—just as the war ignited between gods and mortals.<br><br>",
@@ -531,11 +531,11 @@ function getCharacterDetails(character) {
 
     characterDetails.innerHTML = `
         <h2>${details.name}</h2>
+        <div class="elemental-section" id="elemental">
+            <h3>Elemental Mastery</h3>
+            ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
+        </div>
         <div class="character-info-scrollable">
-            <div class="info-section" id="elementalPower">
-                <h3>Elemental Mastery</h3>
-                ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
-            </div>
             <div class="info-section" id="basic-info-scrollable">
                 <p><strong><i class='fas fa-user'></i> Race</strong> ${details.race}</p>
                 <p><strong><i class='fas fa-venus-mars'></i> Gender</strong> ${details.gender}</p>
