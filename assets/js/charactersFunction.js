@@ -3,17 +3,17 @@
 // =====================
 const characterBackgrounds = {
     comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
-    elishia: { landscape: "url('')", portrait: "url('')" },
-    hexxana: { landscape: "url('')", portrait: "url('')" },
-    ren: { landscape: "url('')", portrait: "url('')" },
-    rayza: { landscape: "url('')", portrait: "url('')" },
-    liliana: { landscape: "url('')", portrait: "url('')" },
-    blessica: { landscape: "url('')", portrait: "url('')" },
-    lunara: { landscape: "url('')", portrait: "url('')" },
-    floribeth: { landscape: "url('')", portrait: "url('')" },
-    shelain: { landscape: "url('')", portrait: "url('')" },
-    arzhel: { landscape: "url('')", portrait: "url('')" },
-    feya: { landscape: "url('')", portrait: "url('')" },
+    elishia: { landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')", portrait: "url('')" },
+    hexxana: { landscape: "url('assets/images/character-presets/cover/hexxana-cover.webp')", portrait: "url('')" },
+    ren: { landscape: "url('assets/images/character-presets/cover/ren-cover.webp')", portrait: "url('')" },
+    rayza: { landscape: "url('assets/images/character-presets/cover/rayza-cover.webp')", portrait: "url('')" },
+    liliana: { landscape: "url('assets/images/character-presets/cover/liliana-cover.webp')", portrait: "url('')" },
+    blessica: { landscape: "url('assets/images/character-presets/cover/blessica-cover.webp')", portrait: "url('')" },
+    lunara: { landscape: "url('assets/images/character-presets/cover/lunara-cover.webp')", portrait: "url('')" },
+    floribeth: { landscape: "url('assets/images/character-presets/cover/floribeth-cover.webp')", portrait: "url('')" },
+    shelain: { landscape: "url('assets/images/character-presets/cover/shelain-cover.webp')", portrait: "url('')" },
+    arzhel: { landscape: "url('assets/images/character-presets/cover/arzhel-cover.webp')", portrait: "url('')" },
+    feya: { landscape: "url('assets/images/character-presets/cover/feya-cover.webp')", portrait: "url('')" },
 };
 
 let currentCharacter = null;
