@@ -114,6 +114,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    filter: grayscale(100%);
 }
 .character-overlay {
     background: var(--accent, #0a0a0a);
@@ -332,6 +333,8 @@ p.title {
     transform-style: preserve-3d;
     transition: opacity 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s ease-in-out;
     opacity: 1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     overflow: hidden;
 }
 .info-bg {
