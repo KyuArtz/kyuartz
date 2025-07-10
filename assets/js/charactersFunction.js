@@ -278,7 +278,7 @@ function getCharacterDetails(character) {
             height: "<info>6'1\" ft / 185.4 cm</info>",
             homeland: "<info>Solaraenia</info>",
             faction: "<info>Former Solaraenian Kingdom</info>",
-            role: "<info>Mage</info> <info>Witch</info>",
+            role: "<info>Mage</info>",
             occupation: "<info>Sealed Entity</info>",
             affiliates: "<info><i class='fas fa-users'></i> Zion (Lover)</info> <info><i class='fas fa-users'></i> Blessica (Sister)</info> <info><i class='fas fa-users'></i> Liliana (Daughter)</info>",
             elementalImages: [
