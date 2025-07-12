@@ -471,7 +471,7 @@ function getCharacterDetails(character) {
             homeland: "<info>Former Solaraenian Kingdom</info>",
             faction: "<info>Light Harbingers</info>",
             role: "<info>Guardian</info> <info>Warrior</info>",
-            occupation: "<info>Cleric</info>",
+            occupation: "<info>High Cleric</info>",
             affiliates: "<info><i class='fas fa-users'></i> Lunara (Sister)</info> <info><i class='fas fa-users'></i> Liliana (Niece)</info>",
             elementalImages: [
                 "assets/images/character-presets/elements/light.webp"
