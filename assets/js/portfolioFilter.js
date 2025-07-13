@@ -1,255 +1,261 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = [
     {
-      src: "assets/images/artgallary/Forbidden_love_1 (2024).webp",
-      alt: "Forbidden_Love_1",
-      title: "Forbidden_Love",
+      src: "assets/images/artgallary/blessica portrait (2025).webp",
+      alt: "Blessica Portrait",
+      title: "Blessica Portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Forbidden_love (2024).webp",
-      alt: "Forbidden_Love",
+      src: "assets/images/artgallary/last moment (2024).webp",
+      alt: "Last Moment",
+      title: "Last Moment",
+      category: "semi-realism"
+    },
+    {
+      src: "assets/images/artgallary/forbidden love (2024).webp",
+      alt: "Forbidden Love",
       title: "Lunara X Zion",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/E_illustration (2024).webp",
-      alt: "E_illustration",
-      title: "E_illustration",
+      src: "assets/images/artgallary/elishia cozy scene (2024).webp",
+      alt: "elishia cozy scene",
+      title: "elishia cozy scene",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Floribeth_portrait (2024).webp",
-      alt: "Floribeth_portrait",
-      title: "Floribeth_portrait",
+      src: "assets/images/artgallary/floribeth portrait (2024).webp",
+      alt: "floribeth portrait",
+      title: "floribeth portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Legend_of_the_crystalight (2024).webp",
-      alt: "Legend_of_the_crystalight",
-      title: "Legend_of_the_crystalight",
+      src: "assets/images/artgallary/legend of the crystalight (2024).webp",
+      alt: "legend of the crystalight",
+      title: "legend of the crystalight",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Bday_Art(2024).webp",
-      alt: "Bday_Art",
-      title: "Bday_Art",
+      src: "assets/images/artgallary/bday art (2024).webp",
+      alt: "bday art",
+      title: "bday art",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Elishia_avatar.webp",
-      alt: "Elishia_avatar",
-      title: "Elishia_avatar",
+      src: "assets/images/artgallary/elishia avatar.webp",
+      alt: "elishia avatar",
+      title: "elishia avatar",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Wasteland.webp",
-      alt: "Wasteland",
-      title: "Wasteland",
+      src: "assets/images/artgallary/wasteland.webp",
+      alt: "wasteland",
+      title: "wasteland",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Rayza_character_design.webp",
-      alt: "Rayza_character_design",
-      title: "Rayza_character_design",
+      src: "assets/images/artgallary/rayza portrait (2025).webp",
+      alt: "rayza portrait",
+      title: "rayza portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Undawn_character.webp",
-      alt: "Undawn_character",
-      title: "Undawn_character",
+      src: "assets/images/artgallary/undawn character.webp",
+      alt: "undawn character",
+      title: "undawn character",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Feya_bust_up.webp",
-      alt: "Feya_bust_up",
-      title: "Feya_bust_up",
+      src: "assets/images/artgallary/feya bust up.webp",
+      alt: "feya bust up",
+      title: "feya bust up",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_full_body (grayscale).webp",
-      alt: "Elishia_full_body",
-      title: "Elishia_full_body",
+      src: "assets/images/artgallary/elishia full body (grayscale).webp",
+      alt: "elishia full body",
+      title: "elishia full body",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Awakened_from_a_deep_slumber (2024).webp",
-      alt: "Awakened_from_a_deep_slumber",
-      title: "Awakened_from_a_deep_slumber",
+      src: "assets/images/artgallary/awakened from a deep slumber (2024).webp",
+      alt: "awakened from a deep slumber",
+      title: "awakened from a deep slumber",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_portrait (2023).webp",
-      alt: "Elishia_portrait",
-      title: "Elishia_portrait",
+      src: "assets/images/artgallary/elishia portrait (2023).webp",
+      alt: "elishia portrait",
+      title: "elishia portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Liliana_portrait (2023).webp",
-      alt: "Liliana_portrait",
-      title: "Liliana_portrait",
+      src: "assets/images/artgallary/liliana portrait (2023).webp",
+      alt: "liliana portrait",
+      title: "liliana portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Tekushiki (2023).webp",
-      alt: "Tekushiki",
-      title: "Tekushiki",
+      src: "assets/images/artgallary/tekushiki (2023).webp",
+      alt: "tekushiki",
+      title: "tekushiki",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Feya_landscape (2023).webp",
-      alt: "Feya_landscape",
-      title: "Feya_landscape",
+      src: "assets/images/artgallary/feya landscape (2023).webp",
+      alt: "feya landscape",
+      title: "feya landscape",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Feya_portrait (2023).webp",
-      alt: "Feya_portrait",
-      title: "Feya_portrait",
+      src: "assets/images/artgallary/feya portrait (2023).webp",
+      alt: "feya portrait",
+      title: "feya portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_chibi_grayscale (2023).webp",
-      alt: "Elishia_chibi_grayscale",
-      title: "Elishia_chibi_grayscale",
+      src: "assets/images/artgallary/elishia chibi grayscale (2023).webp",
+      alt: "elishia chibi grayscale",
+      title: "elishia chibi grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Tragic_past_grayscale (2023).webp",
-      alt: "Tragic_past_grayscale",
-      title: "Tragic_past_grayscale",
+      src: "assets/images/artgallary/tragic past grayscale (2023).webp",
+      alt: "tragic past grayscale",
+      title: "tragic past grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Former_falcon_squad (2023).webp",
-      alt: "Former_falcon_squad",
-      title: "Former_falcon_squad",
+      src: "assets/images/artgallary/former falcon squad (2023).webp",
+      alt: "former falcon squad",
+      title: "former falcon squad",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Old_rivals_grayscale (2023).webp",
-      alt: "Old_rivals_grayscale",
-      title: "Old_rivals_grayscale",
+      src: "assets/images/artgallary/old rivals grayscale (2023).webp",
+      alt: "old rivals grayscale",
+      title: "old rivals grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Until_we_meet_again (2022).webp",
-      alt: "Until_we_meet_again",
-      title: "Until_we_meet_again",
+      src: "assets/images/artgallary/until we meet again (2022).webp",
+      alt: "until we meet again",
+      title: "until we meet again",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Elishia_portrait (2022).webp",
-      alt: "Elishia_portrait",
-      title: "Elishia_portrait",
+      src: "assets/images/artgallary/elishia portrait (2022).webp",
+      alt: "elishia portrait",
+      title: "elishia portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Fall_into_despair (2022).webp",
-      alt: "Fall_into_despair",
-      title: "Fall_into_despair",
+      src: "assets/images/artgallary/fell into despair (2022).webp",
+      alt: "fell into despair",
+      title: "fell into despair",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Wednesday_Fanart (2022).webp",
-      alt: "Wednesday_Fanart",
-      title: "Wednesday_Fanart",
+      src: "assets/images/artgallary/wednesday fanart (2022).webp",
+      alt: "wednesday fanart",
+      title: "wednesday fanart",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Rebecca_portrait_fanart (2022).webp",
-      alt: "Rebecca_portrait_fanart",
-      title: "Rebecca_portrait_fanart",
+      src: "assets/images/artgallary/rebecca portrait fanart (2022).webp",
+      alt: "rebecca portrait fanart",
+      title: "rebecca portrait fanart",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/A_mothers_love_grayscale (2022).webp",
-      alt: "A_mothers_love_grayscale",
-      title: "A_mothers_love_grayscale",
+      src: "assets/images/artgallary/a mothers love grayscale (2022).webp",
+      alt: "a mothers love grayscale",
+      title: "a mothers love grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Fallen_angel (2022).webp",
-      alt: "Fallen_angel",
-      title: "Fallen_angel",
+      src: "assets/images/artgallary/fallen angel (2022).webp",
+      alt: "fallen angel",
+      title: "fallen angel",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Raging_blood_of_the_past (2022).webp",
-      alt: "Raging_blood_of_the_past",
-      title: "Raging_blood_of_the_past",
+      src: "assets/images/artgallary/raging blood of the past (2022).webp",
+      alt: "raging blood of the past",
+      title: "raging blood of the past",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/The_return (2022).webp",
-      alt: "The_return",
-      title: "The_return",
+      src: "assets/images/artgallary/the return (2022).webp",
+      alt: "the return",
+      title: "the return",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Silent_killer (2022).webp",
-      alt: "Silent_killer",
-      title: "Silent_killer",
+      src: "assets/images/artgallary/phantom nightwalker (2022).webp",
+      alt: "phantom nightwalker",
+      title: "phantom nightwalker",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Hidden_truth (2022).webp",
-      alt: "Hidden_truth",
-      title: "Hidden_truth",
+      src: "assets/images/artgallary/hidden truth (2022).webp",
+      alt: "hidden truth",
+      title: "hidden truth",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Mission_one (2022).webp",
-      alt: "DescriMission_oneption",
-      title: "Mission_one",
+      src: "assets/images/artgallary/mission one (2022).webp",
+      alt: "mission one",
+      title: "mission one",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/R9 (2022).webp",
-      alt: "R9",
-      title: "R9",
+      src: "assets/images/artgallary/ren portrait (2022).webp",
+      alt: "ren portrait",
+      title: "ren portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_Summer_grayscale (2022).webp",
-      alt: "Elishia_Summer_grayscale",
-      title: "Elishia_Summer_grayscale",
+      src: "assets/images/artgallary/elishia summer grayscale (2022).webp",
+      alt: "elishia summer grayscale",
+      title: "elishia summer grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Bday_art (2022).webp",
-      alt: "Bday_art",
-      title: "Bday_art",
+      src: "assets/images/artgallary/bday art (2022).webp",
+      alt: "bday art",
+      title: "bday art",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_padoru (2022).webp",
-      alt: "Elishia_padoru",
-      title: "Elishia_padoru",
+      src: "assets/images/artgallary/elishia padoru (2022).webp",
+      alt: "elishia padoru",
+      title: "elishia padoru",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Teku_padoru (2022).webp",
-      alt: "Teku_padoru",
-      title: "Teku_padoru",
+      src: "assets/images/artgallary/teku padoru (2022).webp",
+      alt: "teku padoru",
+      title: "teku padoru",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Restricted_zone (2022).webp",
-      alt: "Restricted_zone",
-      title: "Restricted_zone",
+      src: "assets/images/artgallary/restricted zone (2022).webp",
+      alt: "restricted zone",
+      title: "restricted zone",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_younger_self (2022).webp",
-      alt: "Elishia_younger_self",
-      title: "Elishia_younger_self",
+      src: "assets/images/artgallary/elishia younger self (2022).webp",
+      alt: "elishia younger self",
+      title: "elishia younger self",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Childhood_bestfriend (2022).webp",
-      alt: "Childhood_bestfriend",
-      title: "Childhood_bestfriend",
+      src: "assets/images/artgallary/childhood bestfriend (2022).webp",
+      alt: "childhood bestfriend",
+      title: "childhood bestfriend",
       category: "anime-style"
     },
     {
@@ -259,231 +265,231 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/The_twin_dragon_blade (2022).webp",
-      alt: "The_twin_dragon_blade",
-      title: "The_twin_dragon_blade",
+      src: "assets/images/artgallary/the twin dragon blade (2022).webp",
+      alt: "the twin dragon blade",
+      title: "the twin dragon blade",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Ren_Rayza (2022).webp",
-      alt: "Ren_Rayza",
-      title: "Ren_Rayza",
+      src: "assets/images/artgallary/ren & rayza (2022).webp",
+      alt: "ren & rayza",
+      title: "ren & rayza",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Hexxana_bust_up_graycale (2022).webp",
-      alt: "Hexxana_bust_up_graycale",
-      title: "Hexxana_bust_up_graycale",
+      src: "assets/images/artgallary/hexxana portrait grayscale (2022).webp",
+      alt: "hexxana portrait grayscale",
+      title: "hexxana portrait grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Hexx_emote.webp",
-      alt: "Hexx_emote",
-      title: "Hexx_emote",
+      src: "assets/images/artgallary/hexx emote.webp",
+      alt: "hexx emote",
+      title: "hexx emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/dark_legion_elite_grayscale (2022).webp",
-      alt: "dark_legion_elite_grayscale",
-      title: "dark_legion_elite_grayscale",
+      src: "assets/images/artgallary/hexaana close up grayscale (2022).webp",
+      alt: "hexaana close up grayscale",
+      title: "hexaana close up grayscale",
       category: "grayscale"
     },
     {
-      src: "assets/images/artgallary/Inner_demon (2022).webp",
-      alt: "Inner_demon",
-      title: "Inner_demon",
+      src: "assets/images/artgallary/inner demon (2022).webp",
+      alt: "inner demon",
+      title: "inner demon",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Hexxana_star_dust_witch (2022).webp",
-      alt: "Hexxana_star_dust_witch",
-      title: "Hexxana_star_dust_witch",
+      src: "assets/images/artgallary/hexxana star dust witch (2022).webp",
+      alt: "hexxana star dust witch",
+      title: "hexxana star dust witch",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Enemy_territory (2021).webp",
-      alt: "Enemy_territory",
-      title: "Enemy_territory",
+      src: "assets/images/artgallary/enemy territory (2021).webp",
+      alt: "enemy territory",
+      title: "enemy territory",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Elishia_cute_emote.webp",
-      alt: "Elishia_cute_emote",
-      title: "Elishia_cute_emote",
+      src: "assets/images/artgallary/elishia cute emote.webp",
+      alt: "elishia cute emote",
+      title: "elishia cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Hexxana_cute_emote.webp",
-      alt: "Hexxana_cute_emote",
-      title: "Hexxana_cute_emote",
+      src: "assets/images/artgallary/hexxana cute emote.webp",
+      alt: "hexxana cute emote",
+      title: "hexxana cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Ren_cute_emote.webp",
-      alt: "Ren_cute_emote",
-      title: "Ren_cute_emote",
+      src: "assets/images/artgallary/ren cute emote.webp",
+      alt: "ren cute emote",
+      title: "ren cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Rayza_cute_emote.webp",
-      alt: "Rayza_cute_emote",
-      title: "Rayza_cute_emote",
+      src: "assets/images/artgallary/rayza cute emote.webp",
+      alt: "rayza cute emote",
+      title: "rayza cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Drakion_cute_emote.webp",
-      alt: "Drakion_cute_emote",
-      title: "Drakion_cute_emote",
+      src: "assets/images/artgallary/drakeon cute emote.webp",
+      alt: "drakeon cute emote",
+      title: "drakeon cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Arzhel_cute_emote.webp",
-      alt: "Arzhel_cute_emote",
-      title: "Arzhel_cute_emote",
+      src: "assets/images/artgallary/arzhel cute emote.webp",
+      alt: "arzhel cute emote",
+      title: "arzhel cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Stelia_cute_emote.webp",
-      alt: "Stelia_cute_emote",
-      title: "Stelia_cute_emote",
+      src: "assets/images/artgallary/stelia cute emote.webp",
+      alt: "stelia cute emote",
+      title: "stelia cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Shelain_cute_emote.webp",
-      alt: "Shelain_cute_emote",
-      title: "Shelain_cute_emote",
+      src: "assets/images/artgallary/shelain cute emote.webp",
+      alt: "shelain cute emote",
+      title: "shelain cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Flora_cute_emote.webp",
-      alt: "Flora_cute_emote",
-      title: "Flora_cute_emote",
+      src: "assets/images/artgallary/flora cute emote.webp",
+      alt: "flora cute emote",
+      title: "flora cute emote",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/H.R.E. (2021).webp",
-      alt: "H.R.E.",
-      title: "H.R.E.",
+      src: "assets/images/artgallary/H.R.E (2021).webp",
+      alt: "H.R.E",
+      title: "H.R.E",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Day_off (2021).webp",
-      alt: "Day_off",
-      title: "Day_off",
+      src: "assets/images/artgallary/day off (2021).webp",
+      alt: "day off",
+      title: "day off",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Christmas_theme (2020).webp",
-      alt: "Christmas_theme",
-      title: "Christmas_theme",
+      src: "assets/images/artgallary/christmas theme (2020).webp",
+      alt: "christmas theme",
+      title: "christmas theme",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/RB9_cover (2020).webp",
-      alt: "RB9_cover",
-      title: "RB9_cover",
+      src: "assets/images/artgallary/RB9 cover (2020).webp",
+      alt: "RB9 cover",
+      title: "RB9 cover",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Elishia_portrait (2020).webp",
-      alt: "Elishia_portrait",
-      title: "Elishia_portrait",
+      src: "assets/images/artgallary/elishia portrait (2020).webp",
+      alt: "elishia portrait",
+      title: "elishia portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Hexxana_portrait (2020).webp",
-      alt: "Hexxana_portrait",
-      title: "Hexxana_portrait",
+      src: "assets/images/artgallary/hexxana portrait (2020).webp",
+      alt: "hexxana portrait",
+      title: "hexxana portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Rayza_portrait (2020).webp",
-      alt: "Rayza_portrait",
-      title: "Rayza_portrait",
+      src: "assets/images/artgallary/rayza portrait (2020).webp",
+      alt: "rayza portrait",
+      title: "rayza portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Stellia_portrait (2020).webp",
-      alt: "Stellia_portrait",
-      title: "Stellia_portrait",
+      src: "assets/images/artgallary/stellia portrait (2020).webp",
+      alt: "stellia portrait",
+      title: "stellia portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Blessica_portrait (2020).webp",
-      alt: "Blessica_portrait",
-      title: "Blessica_portrait",
+      src: "assets/images/artgallary/blessica portrait (2020).webp",
+      alt: "blessica portrait",
+      title: "blessica portrait",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Journey (2020).webp",
-      alt: "Journey",
-      title: "Journey",
+      src: "assets/images/artgallary/journey (2020).webp",
+      alt: "journey",
+      title: "journey",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Ruins (2020).webp",
-      alt: "Ruins",
-      title: "Ruins",
+      src: "assets/images/artgallary/ruins (2020).webp",
+      alt: "ruins",
+      title: "ruins",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Elishia_Hexxana (2020).webp",
-      alt: "Elishia_Hexxana",
-      title: "Elishia_Hexxana",
+      src: "assets/images/artgallary/elishia hexxana (2020).webp",
+      alt: "elishia hexxana",
+      title: "elishia hexxana",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Tekushiki_portrait_fanart (2020).webp",
-      alt: "Tekushiki_portrait_fanart",
-      title: "Tekushiki_portrait_fanart",
+      src: "assets/images/artgallary/tekushiki portrait fanart (2020).webp",
+      alt: "tekushiki portrait fanart",
+      title: "tekushiki portrait fanart",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Duel (2020).webp",
-      alt: "Duel",
-      title: "Duel",
+      src: "assets/images/artgallary/duel (2020).webp",
+      alt: "duel",
+      title: "duel",
       category: "landscape"
     },
     {
-      src: "assets/images/artgallary/Hexxana_tekushiki (2020).webp",
-      alt: "Hexxana_tekushiki",
-      title: "Hexxana_tekushiki",
+      src: "assets/images/artgallary/hexxana tekushiki (2020).webp",
+      alt: "hexxana tekushiki",
+      title: "hexxana tekushiki",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Shelain (2020).webp",
-      alt: "Shelain",
-      title: "Shelain",
+      src: "assets/images/artgallary/shelain (2020).webp",
+      alt: "shelain",
+      title: "shelain",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Hexxana_full_body (2020).webp",
-      alt: "Hexxana_full_body",
-      title: "Hexxana_full_body",
+      src: "assets/images/artgallary/hexxana full body (2020).webp",
+      alt: "hexxana full body",
+      title: "hexxana full body",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Rayza_full_body (2020).webp",
-      alt: "Rayza_full_body",
-      title: "Rayza_full_body",
+      src: "assets/images/artgallary/rayza full body (2020).webp",
+      alt: "rayza full body",
+      title: "rayza full body",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Hexxana_star_dust_witch (2020).webp",
-      alt: "Hexxana_star_dust_witch",
-      title: "Hexxana_star_dust_witch",
+      src: "assets/images/artgallary/hexxana star dust witch (2020).webp",
+      alt: "hexxana star dust witch",
+      title: "hexxana star dust witch",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/First_characters (2020).webp",
-      alt: "First_characters",
-      title: "First_characters",
+      src: "assets/images/artgallary/first characters (2020).webp",
+      alt: "first characters",
+      title: "first characters",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Stelia_full_body (2020).webp",
-      alt: "Stelia_full_body",
-      title: "Stelia_full_body",
+      src: "assets/images/artgallary/stelia full body (2020).webp",
+      alt: "stelia full body",
+      title: "stelia full body",
       category: "semi-realism"
     },
     {
@@ -493,27 +499,27 @@ document.addEventListener("DOMContentLoaded", () => {
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Hexxana_star_dust_witch (2019).webp",
-      alt: "Hexxana_star_dust_witch",
-      title: "Hexxana_star_dust_witch",
+      src: "assets/images/artgallary/hexxana star dust witch (2019).webp",
+      alt: "hexxana star dust witch",
+      title: "hexxana star dust witch",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Hexxana_stardust_witch (2019).webp",
-      alt: "Hexxana_stardust_witch",
-      title: "Hexxana_stardust_witch",
+      src: "assets/images/artgallary/hexxana stardust witch (2019).webp",
+      alt: "hexxana stardust witch",
+      title: "hexxana stardust witch",
       category: "semi-realism"
     },
     {
-      src: "assets/images/artgallary/Fan_art_gate (2019).webp",
-      alt: "Fan_art_gate",
-      title: "Fan_art_gate",
+      src: "assets/images/artgallary/fan art gate (2019).webp",
+      alt: "fan art gate",
+      title: "fan art gate",
       category: "anime-style"
     },
     {
-      src: "assets/images/artgallary/Hexxana_first_digital_portrait.webp",
-      alt: "Hexxana_first_digital_portrait",
-      title: "Hexxana_first_digital_portrait",
+      src: "assets/images/artgallary/hexxana first digital portrait.webp",
+      alt: "hexxana first digital portrait",
+      title: "hexxana first digital portrait",
       category: "anime-style"
     },
   ];
