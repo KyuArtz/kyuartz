@@ -3,17 +3,18 @@
 // =====================
 const characterBackgrounds = {
     comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
-    elishia: { landscape: "url('assets/images/character-presets/cover/elishia-cover.webp')", portrait: "url('')" },
-    hexxana: { landscape: "url('assets/images/character-presets/cover/hexxana-cover.webp')", portrait: "url('')" },
-    ren: { landscape: "url('assets/images/character-presets/cover/ren-cover.webp')", portrait: "url('')" },
-    rayza: { landscape: "url('assets/images/character-presets/cover/rayza-cover.webp')", portrait: "url('')" },
-    liliana: { landscape: "url('assets/images/character-presets/cover/liliana-cover.webp')", portrait: "url('')" },
-    blessica: { landscape: "url('assets/images/character-presets/cover/blessica-cover.webp')", portrait: "url('')" },
-    lunara: { landscape: "url('assets/images/character-presets/cover/lunara-cover.webp')", portrait: "url('')" },
-    floribeth: { landscape: "url('assets/images/character-presets/cover/floribeth-cover.webp')", portrait: "url('')" },
-    shelain: { landscape: "url('assets/images/character-presets/cover/shelain-cover.webp')", portrait: "url('')" },
-    arzhel: { landscape: "url('assets/images/character-presets/cover/arzhel-cover.webp')", portrait: "url('')" },
-    feya: { landscape: "url('assets/images/character-presets/cover/feya-cover.webp')", portrait: "url('')" },
+    elishia: { landscape: "url('')", portrait: "url('')" },
+    hexxana: { landscape: "url('')", portrait: "url('')" },
+    ren: { landscape: "url('')", portrait: "url('')" },
+    rayza: { landscape: "url('')", portrait: "url('')" },
+    liliana: { landscape: "url('')", portrait: "url('')" },
+    blessica: { landscape: "url('')", portrait: "url('')" },
+    lunara: { landscape: "url('')", portrait: "url('')" },
+    floribeth: { landscape: "url('')", portrait: "url('')" },
+    shelain: { landscape: "url('')", portrait: "url('')" },
+    arzhel: { landscape: "url('')", portrait: "url('')" },
+    feya: { landscape: "url('')", portrait: "url('')" },
+    zenyx: { landscape: "url('')", portrait: "url('')" },
 };
 
 let currentCharacter = null;
@@ -500,6 +501,42 @@ function getCharacterDetails(character) {
                 "In a burst of radiant light, Blessica ascended—her soul returning to the heavens. Mortals, celestials, and warriors knelt before Liliana. In that moment, a child became a leader.<br><br>",
                 "From the ruins of war, Liliana rose to fulfill her aunt’s vow—founding the Magellion Empire upon the sacred grounds where it all began.<br><br>",
                 "The war ended in silence… but the cost would echo throughout Eldoria for generations to come."
+            ].join("")
+        };
+    } else if (character === 'zenyx') {
+        details = {
+            name: "Zenyx",
+            race: "<info>Elf</info>",
+            gender: "<info>Female</info>",
+            height: "<info>4'9\" ft / 144.8 cm</info>",
+            homeland: "<info>Quiet province outside Magellion</info>",
+            faction: "<info>Light Harbingers</info>",
+            role: "<info>Mage</info>",
+            occupation: "<info>Archivist of the Light Harbingers</info>",
+            affiliates: "<info><i class='fas fa-users'></i> Hexxana (Mentor)</info> <info><i class='fas fa-users'></i> Feya (Friend)</info> <info><i class='fas fa-users'></i> Ren (Friend)</info>",
+            elementalImages: [
+                "assets/images/character-presets/elements/fire.webp",
+                "assets/images/character-presets/elements/water.webp",
+                "assets/images/character-presets/elements/earth.webp",
+                "assets/images/character-presets/elements/air.webp"
+            ],
+            likes: "<info><i class='fas fa-check'></i> Stargazing</info> <info><i class='fas fa-check'></i> Riddles & Secrets</info> <info><i class='fas fa-check'></i> Magical Tomes</info> <info><i class='fas fa-check'></i> Pranks</info>",
+            dislikes: "<info><i class='fas fa-times'></i> Bloodshed</info> <info><i class='fas fa-times'></i> Boring Conversations</info> <info><i class='fas fa-times'></i> Arrogant People</info>",
+            weapon: "<info><i class='fas fa-heart'></i> Starflare Wand</info>",
+            ability1: "<label><i class='fas fa-bolt'></i> Elemental Attunement</label> <p>Zenyx channels her inner magic to attune herself to one of the four primal elements—Fire, Water, Air, or Earth. Each attunement changes the effects of her other abilities, offering versatile tactical choices.</p>",
+            ability2: "<label><i class='fas fa-compress-arrows-alt'></i> Flux Surge</label> <p>Releases a burst of elemental energy matching her current attunement. Fire scorches enemies, Water slows and heals allies, Air pushes back enemies, and Earth fortifies defenses. Gains enhanced effects if combined with another element.</p>",
+            ability3: "<label><i class='fas fa-wave-square'></i> Elemental Fusion</label> <p>Combines two active elements into a powerful hybrid spell. Examples include Steam Burst (Fire+Water), Sandstorm (Air+Earth), Lightning Storm (Fire+Air), or Crystalize (Water+Earth). Deals heavy damage or grants strategic buffs based on the fusion.</p>",
+            ability4: "<label><i class='fas fa-shield-alt'></i> Elemental Ward</label> <p>Creates a protective barrier imbued with her current element. Fire Ward burns attackers, Water Ward regenerates health, Air Ward increases evasion, and Earth Ward absorbs damage. Fusion barriers gain multiple effects.</p>",
+            ability5: "<label><i class='fas fa-radiation'></i> Elemental Overload</label> <p>Temporarily unlocks full elemental power, allowing Zenyx to rapidly switch attunements without cooldowns. Her spells hit harder and may trigger random combo effects during the duration.</p>",
+            ability6: "<label><i class='fas fa-sun'></i> Prismatic Tempest</label> <p>Zenyx unleashes all attuned elements in a massive area-of-effect storm. Fire, Water, Air, and Earth swirl together, dealing heavy damage, applying multiple debuffs, and empowering allies caught within the radiant surge.</p>",
+            background: [
+                "Zenyx was born in the aftermath of the **Great War of Eldoria**, in an age of rebuilding and lingering shadows. She never knew her true parents, growing up as an orphan under the care of the **Magellion Orphanage**. While running errands for the caretakers, she found herself mesmerized by the sights of mages casting spells in the streets, children learning minor magic tricks, and scholars debating arcane secrets. From that moment, a spark ignited in her heart—a longing to wield magic of her own.<br><br>",
+                "Years later, she was adopted by an elderly herbalist who lived alone in a modest cottage on the outskirts of the Magellion Empire’s capital. Those days were simple and filled with quiet joys: tending gardens, collecting rare herbs, and reading by candlelight. The old woman loved Zenyx like family, teaching her about healing plants and the delicate balance of life in nature. But time is cruel. When Zenyx was still young, her adoptive mother passed away, leaving her alone once more.<br><br>",
+                "Determined to survive and pursue her dream, Zenyx worked odd jobs in the city while secretly teaching herself the basics of magic from discarded scrolls and glimpses of mages at work. Her life changed forever one evening while gathering herbs near her cottage. She was ambushed by a pack of **corrupted beasts**, vicious and warped by dark magic. Despite fighting back with every ounce of courage, she was nearly overrun. Just as she thought her end had come, a towering woman in a black cloak and wide witch hat appeared from the shadows. With a single gesture, the stranger unleashed searing black-violet flames that didn’t explode outward, but instead collapsed inward—devouring the beasts entirely.<br><br>",
+                "Awed and desperate, Zenyx begged the woman to teach her magic. The mysterious figure hesitated, scrutinizing the determination in Zenyx’s eyes. Then she nodded silently. That woman was none other than **Hexxana**, the Lone Wanderer herself.<br><br>",
+                "Under Hexxana’s tutelage, Zenyx blossomed. She trained for years in the arts of arcane magic, learning not only spells but survival, discipline, and the secrets of the world. Eventually, Zenyx asked permission to venture out on her own. Hexxana agreed, proud of her pupil’s resolve.<br><br>",
+                "So Zenyx set out alone to chase the adventures she once only dreamed of. She traversed Eldoria from the vast halls of **Magellion** to the serene groves of **Luminwood**, the veiled mists of **Hidden Mist Valley**, the sunlit shores of the **Azure Coast**, and countless forgotten ruins and perilous dungeons. She fought corrupted creatures, aided villages beset by trouble, crossed paths with strangers both kind and cruel, and forged fleeting friendships with travelers and adventurers. Few dared to explore as relentlessly as she did—even Hexxana herself confessed to never setting foot in some of the places Zenyx visited.<br><br>",
+                "Eventually, Zenyx felt a new calling—to bring her talents to a higher purpose. She pledged herself to the **Light Harbingers**, determined to stand alongside Liliana and the others to protect Eldoria from the shadows that still linger.<br><br>",
             ].join("")
         };
     } else if (character === 'coming-soon') {
