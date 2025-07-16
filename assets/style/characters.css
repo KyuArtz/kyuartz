@@ -114,7 +114,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    filter: grayscale(100%);
 }
 .character-overlay {
     background: var(--accent, #0a0a0a);
@@ -203,7 +202,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: filter 0.3s ease-in-out;
     cursor: pointer;
 }
