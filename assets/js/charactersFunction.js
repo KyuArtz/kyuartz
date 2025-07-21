@@ -715,6 +715,9 @@ function attachFilterListeners() {
             this.classList.add('active-filter');
             // --- End active indicator logic ---
 
+            // Reset character selection when filtering
+            hideCharacterInfo();
+
             const category = this.dataset.category;
             document.querySelectorAll('.character-card').forEach(card => {
                 const cardCategories = (card.dataset.category || '').split(',').map(cat => cat.trim());
