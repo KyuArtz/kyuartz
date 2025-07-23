@@ -342,10 +342,10 @@ function getCharacterDetails(character) {
             background: [
                 "Feya Ashey was once a carefree child, raised in the mystical Frostfire Timberland among her fox spirit kin. Playful, mischievous, and endlessly curious, she roamed the northern mountains of the Magellion Empire, her heart unburdened and her magic growing stronger with each adventure.<br><br>",
                 "Her people lived in peaceful harmony—deeply attuned to nature and elemental magic, untouched by the chaos of the outside world. But peace, like snow under fire, never lasts.<br><br>",
-                "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and shadow. The Frostfire Timberland—once vibrant with spirit and song—was reduced to smoldering ash. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
+                "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and shadow led by a tyrant king skultain. The Frostfire Timberland—once vibrant with spirit and song—was reduced to smoldering ash. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
                 "One by one, her kin fell. Her home burned. And Feya—young and unprepared—was left alone.<br><br>",
                 "In a final act of desperation, she unleashed her latent power in a fiery, uncontrolled surge. The resulting explosion consumed the remaining enemy forces, but left Feya gravely wounded and drained.<br><br>",
-                "As she collapsed, the Nethersteel general, Drakeon, stood over her. She had no strength left to resist. But before the final blow could fall, salvation arrived—the royal army of the Magellion Empire, led by Empress Liliana herself. The enemy fled. The damage, however, was done.<br><br>",
+                "As she collapsed, the Nethersteel prince, Drakeon, stood over her. She had no strength left to resist. But before the final blow could fall, salvation arrived—the royal army of the Magellion Empire, led by Empress Liliana herself. The enemy fled. The damage, however, was done.<br><br>",
                 "The once-beautiful Frostfire Timberland was reduced to ashes, its magic corrupted, its people gone.<br><br>",
                 "Hours later, the scouts found Feya unconscious in the ruins. Empress Liliana, moved by the sight of the broken girl and the loss of her entire race, personally healed her. Seeing the fire still burning inside her, Liliana adopted Feya as her daughter, offering her sanctuary and a new path.<br><br>",
                 "Under the Empress’s care, Feya trained as a Light Harbinger—sworn to defend the Crystalight and preserve Eldoria’s fragile peace. Though her heart still carries the scars of her past, she now fights with renewed purpose.<br><br>",
@@ -366,8 +366,8 @@ function getCharacterDetails(character) {
             occupation: "<info>Sovereign of luminwood</info>",
             affiliates: "<info><i class='fas fa-users'></i> Liliana (Ally)</info> <info><i class='fas fa-users'></i> Arzhel (Companion)</info>",
             elementalImages: [
-                "assets/images/character-presets/elements/earth.webp",
-                "assets/images/character-presets/elements/nature.webp"
+                "assets/images/character-presets/elements/nature.webp",
+                "assets/images/character-presets/elements/earth.webp"
             ],
             likes: "<info><i class='fas fa-check'></i> Harmony</info> <info><i class='fas fa-check'></i> Ancient Lore</info> <info><i class='fas fa-check'></i> Elven Traditions</info> <info><i class='fas fa-check'></i> Wildflowers</info>",
             dislikes: "<info><i class='fas fa-times'></i> Corruption</info> <info><i class='fas fa-times'></i> Senseless War</info> <info><i class='fas fa-times'></i> Burned Forests</info> <info><i class='fas fa-times'></i> Arrogance</info>",
