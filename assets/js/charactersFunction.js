@@ -833,7 +833,7 @@ function closeFullscreen() {
         toggleBtn.innerHTML = isHidden
             ? '<i class="fa-solid fa-eye"></i>'
             : '<i class="fa-solid fa-eye-slash"></i>';
-        const label = isHidden ? 'Show CharacterContainer' : 'Hide CharacterContainer';
+        const label = isHidden ? 'Show Character Panel' : 'Hide Character Panel';
         toggleBtn.setAttribute('aria-label', label);
         toggleBtn.setAttribute('title', label);
     }
