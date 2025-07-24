@@ -40,7 +40,7 @@
     text-align: justify;
     padding: 20px;
     background: var(--theme-color);
-    border: 1px solid var(--color);
+    box-shadow: 0 0 3px var(--color);
 }
 
 .experience {
@@ -56,7 +56,7 @@
     border-radius: 18px;
     width: 175px;
     background: var(--theme-color);
-    border: 1px solid var(--color);
+    box-shadow: 0 0 3px var(--color);
 }
 
 .program-used-container {
@@ -71,7 +71,7 @@
     border-radius: 6px;
     background: var(--content-bg);
     transform: scale(1);
-    border: 1px solid var(--color);
+    box-shadow: 0 0 3px var(--color);
     transition: transform 0.2s;
 }
 
@@ -88,7 +88,7 @@
     padding: 10px;
     border-radius: 18px;
     background: var(--theme-color);
-    border: 1px solid var(--color);
+    box-shadow: 0 0 3px var(--color);
 }
 
 .pfp-container {
@@ -99,8 +99,9 @@
     width: 50%;
     height: 50%;
     aspect-ratio: 1/1;
+    background: var(--content-bg);
     border-radius: 50%;
-    border: 2px solid;
+    border: 2px solid var(--color);
     margin-bottom: -70px;
     pointer-events: none;
 }
@@ -147,7 +148,7 @@
     aspect-ratio: 1/1;
     margin: 3px;
     border: 2px solid var(--text-color);
-    background: var(--theme-overlay);
+    background: var(--overlay);
     object-fit: cover;
     border-radius: 50px;
     transition: background 0.2s, transform 0.2s;
