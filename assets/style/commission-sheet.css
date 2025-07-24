@@ -59,6 +59,15 @@
     overflow: hidden;
 }
 
+.price-wrapper a {
+    width: 100%;
+    padding: 14px 32px;
+    border-top: 1px solid var(--color);
+    color: var(--color);
+    display: block;
+    text-align: center;
+}
+
 .price-wrapper:hover,
 .sample-img:hover {
     transform: scale(0.99);
