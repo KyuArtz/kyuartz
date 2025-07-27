@@ -15,6 +15,8 @@ const availableKeywords = [
   { name: 'User Guide to KyuArtz', url: 'guide.html' },
   { name: 'Troubleshooting', url: 'troubleshoot.html' },
   { name: 'Preferences', url: 'preferences.html' },
+  { name: 'Settings', url: 'settings.html' },
+  { name: 'Kyuartz Virtual Assistant', url: 'virtual-assistant.html' },
   { name: 'Paypal (KyuArtz)', url: 'https://paypal.me/kyushiartz?country.x=PH&locale.x=en_US' },
   { name: 'Facebook (KyuArtz page)', url: 'https://www.facebook.com/KyuArtz' },
   { name: 'Youtube (KyuArtz page)', url: 'https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw' },

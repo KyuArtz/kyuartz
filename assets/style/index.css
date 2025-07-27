@@ -125,7 +125,7 @@ button.prev {
   background: var(--theme-overlay);
 }
 
-.home_slider_dot {
+.home-slider-dot {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -154,13 +154,16 @@ button.prev {
   opacity: 1;
 }
 
-.video_container {
+.video-container {
   display: grid;
   text-align: center;
   margin: 10px;
+  background: var(--content-bg);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.video_container h2 {
+.video-container h2 {
   color: var(--color);
 }
 
@@ -170,25 +173,26 @@ button.prev {
   overflow: hidden;
 }
 
-.carousel_inner {
+.carousel-inner {
   display: flex;
   transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 .video {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
+  flex: 0 0 25%;
+  max-width: 25%;
   padding: 10px;
 }
 
 .video video,
 iframe {
   width: 100%;
-  height: 230px;
+  height: 200px;
   border-radius: 15px;
   color: var(--color);
   background: var(--content-bg);
-  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 3px #000;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .video video:hover,
@@ -196,21 +200,21 @@ iframe:hover {
   box-shadow: 0 0 5px var(--color);
 }
 
-.carousel_nav {
+.carousel-nav {
   position: absolute;
   top: 50%;
   width: 100%;
 }
 
-.carousel_nav button {
-  background: var(--color);
+.carousel-nav button {
+  background: var(--theme-color);
   border: none;
   color: var(--text-color);
   padding: 15px;
   margin: auto 5px;
   border-radius: 50px;
   position: absolute;
-  box-shadow: 0 0 3px #000;
+  box-shadow: 0 0 3px var(--color);
   transform: translateY(-50%);
   transition: 0.3s ease-in-out;
 }
@@ -244,10 +248,10 @@ iframe:hover {
 }
 
 @media (max-width: 500px) {
-  .video {
+  /*.video {
     flex: 0 0 100%;
     max-width: 100%;
-  }
+  }*/
   .whats-new-btn {
     font-size: small;
   }

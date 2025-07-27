@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const carouselInner = document.querySelector('.carousel_inner');
+    const carouselInner = document.querySelector('.carousel-inner');
     const prevButton = document.querySelector('.carousel-prev');
     const nextButton = document.querySelector('.carousel-next');
     let currentIndex = 0;

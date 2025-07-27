@@ -73,6 +73,11 @@
     color: var(--color);
     border: thin solid;
     border-radius: 50px;
+    transition: background 0.3s ease-in-out;
+}
+
+#welcome-message button:hover {
+    background: var(--theme-overlay);
 }
 
 .notice-popup,
@@ -368,6 +373,11 @@ button.close {
     border: 1px solid;
     padding: 12px 30px;
     border-radius: 50px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cookie-popup button:hover {
+    background: var(--theme-overlay);
 }
 
 @media (max-width: 768px) {
