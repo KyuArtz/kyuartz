@@ -282,7 +282,7 @@ class DialogueManager {
         if (matched) break;
       }
       if (!matched) {
-        this.typeWriterEffect("Sorry, I don't have an answer for that yet! Make sure to check your spelling or try asking something else.");
+        this.typeWriterEffect("Sorry, I don't have an answer for that yet!");
       }
     };
     userInput.addEventListener("keydown", (e) => {
