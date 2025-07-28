@@ -301,15 +301,6 @@ form.search::after {
     border-radius: 0 0 10px 10px;
 }
 
-.help-btn {
-    background: var(--theme-color);
-    color: var(--color);
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 0 3px var(--color);
-    cursor: pointer;
-}
-
 #upBtn {
     display: none;
     position: fixed;
