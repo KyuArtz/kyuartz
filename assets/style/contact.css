@@ -36,10 +36,18 @@ form h1 {
 }
 
 .more-info {
-    padding: 5px;
+    padding: 10px;
     border-radius: 18px;
     color: var(--text-color);
     background: var(--content-bg);
+}
+
+.extra-info {
+    text-align: left;
+    padding: 10px;
+    background: var(--theme-color);
+    border-radius: 10px;
+    border-left: 5px solid var(--color);
 }
 
 input[type="email"],
@@ -132,8 +140,8 @@ button[type="Submit"]:hover {
 
 .logo-view img {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
 }
 
@@ -153,14 +161,14 @@ button[type="Submit"]:hover {
     box-shadow: var(--color) 0px 0px 50px 0.5px;
 }
 
-.gbm img {
+.eb img {
     width: 80%;
     filter: drop-shadow(0 0 3px rgb(0, 0, 0));
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
 
-.gbm img:hover {
+.eb img:hover {
     transform: scale(0.96);
     filter: drop-shadow(0 0 3px var(--color));
 }

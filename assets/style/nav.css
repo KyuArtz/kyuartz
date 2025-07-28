@@ -302,22 +302,12 @@ form.search::after {
 }
 
 .help-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    padding: 10px 15px;
     background: var(--theme-color);
     color: var(--color);
     border: none;
-    aspect-ratio: 1 / 1;
     border-radius: 50px;
     box-shadow: 0 0 3px var(--color);
-    opacity: 0.8;
     cursor: pointer;
-    z-index: 5;
 }
 
 #upBtn {
