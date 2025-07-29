@@ -9,7 +9,12 @@ const dialogueTree = {
     options: [
       { text: "How can I commission an artwork?", next: "aboutCommission" },
       { text: "What are the payment options?", next: "aboutPaymentOptions" },
-      { text: "Kyuartz Services", next: "aboutServices" }
+      { text: "Kyuartz Services", next: "aboutServices" },
+      { text: "Who is Kyu?", next: "aboutKyu" },
+      { text: "What is Kyuartz?", next: "aboutKyuartz" },
+      { text: "How can I get help?", next: "aboutHelp" },
+      { text: "I have a question", next: "askQuestion" },
+      { text: "Report an issue", next: "reportIssue" }
     ]
   },
   aboutCommission: {
@@ -80,6 +85,56 @@ const dialogueTree = {
     options: [
       { text: "Back to main menu", next: "start" }
     ]
+  },
+  aboutKyu: {
+    character: "EB (Beta)",
+    background: "url('')",
+    characters: [
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+    ],
+    text: `Kyu is responsible for creating unique and engaging artworks on the Kyuartz platform and made the site you are currently visiting. Kyu is passionate about art and enjoys connecting with the community through commissions and creative projects.`,
+    options: [
+      { text: "What is Kyuartz?", next: "aboutKyuartz" },
+      { text: "What can I do on Kyuartz?", next: "aboutKyuartz" },
+      { text: "Back to main menu", next: "start" }
+    ]
+  },
+  aboutKyuartz: {
+    character: "EB (Beta)",
+    background: "url('')",
+    characters: [
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+    ],
+    text: `Kyuartz is a creative platform where you can explore unique artworks, commission custom pieces, and connect with the artist. We focus on delivering high-quality art that brings your vision to life. Whether you're looking for a specific style, want to support the artist, or just enjoy browsing art, Kyuartz has something for everyone!`,
+    options: [
+      { text: "How can I get help?", next: "aboutHelp" },
+      { text: "What services are offered?", next: "aboutServices" },
+      { text: "Back to main menu", next: "start" }
+    ]
+  },
+  aboutHelp: {
+    character: "EB (Beta)",
+    background: "url('')",
+    characters: [
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+    ],
+    text: `Yes I'm here to help! How can I assist you today? You can ask me about commissions, payment options, Kyuartz services, or any other questions you might have. If you have a specific request or need assistance, just let me know!`,
+    options: [
+      { text: "I have a question", next: "askQuestion" },
+      { text: "Report an issue", next: "reportIssue" },
+      { text: "Back to main menu", next: "start" }
+    ]
+  },
+  askQuestion: {
+    character: "EB (Beta)",
+    background: "url('')",
+    characters: [
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+    ],
+    text: `What question do you have? I'm here to help!`,
+    options: [
+      { text: "Back to main menu", next: "start" }
+    ]
   }
 };
 
@@ -101,12 +156,12 @@ class DialogueManager {
 
     this.keywordMap = [
       { keywords: ["recommend"], custom: true, response: "I recommend exploring the various art styles and techniques to find what resonates with you!" },
-      { keywords: ["commission", "art commission", "request art"], custom: true, response: "To request a commission, please visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission' target='_blank'>Commission Page</a> for more information on the process and to submit your request." },
+      { keywords: ["commission", "art commission", "request art"], custom: true, response: "To request a commission, please visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a> for more information on the process and to submit your request." },
       { keywords: ["payment", "pay", "payment options"], custom: true, response: "We accept various payment methods for commissions, including PayPal, Maya, GCash, and credit/debit cards. For more details, visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/contact' target='_blank'>Contact Page</a>. If you have a specific preference, let us know!" },
       { keywords: ["report", "issue", "problem"], custom: true, response: "If you encounter any issues or have concerns, please report them through the <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Customer Support Page</a>. You can also reach out via email or social media. We take all reports seriously and will address them promptly." },
       { keywords: ["help", "assistance"], custom: true, response: "Yes I'm here to help! How can I assist you today?" },
       { keywords: ["service", "support"], custom: true, response: "Kyuartz offers custom artwork commissions, art prints, and digital downloads. Explore our <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/terms-of-service\" target=\"_blank\">Terms of Service</a>, <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/privacy-policy\" target=\"_blank\">Privacy Policy</a>, and <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/faq\" target=\"_blank\">FAQ</a> for more info. Have a specific request? Just ask!" },
-      { keywords: ["how to request a commission", "commission", "request art"], custom: true, response: "To request a commission, please visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission' target='_blank'>Commission Page</a> for more information on the process and to submit your request." },
+      { keywords: ["how to request a commission", "commission", "request art"], custom: true, response: "To request a commission, please visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a> for more information on the process and to submit your request." },
       { keywords: ["kyu", "about kyu", "who is kyu"], custom: true, response: "Kyu is responsible for creating unique and engaging artworks on the Kyuartz platform and made the site you are currently visiting." },
       { keywords: ["kyuartz", "about kyuartz", "what is kyuartz"], custom: true, response: "Kyuartz is a creative platform where you can explore unique artworks, commission custom pieces, and connect with the artist. We focus on delivering high-quality art that brings your vision to life." },
       { keywords: ["how are you", "how's it going", "how do you feel", "are you ok", "are you well"], custom: true, response: "I'm just a virtual assistant, but I'm always happy to help you!" },

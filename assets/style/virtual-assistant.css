@@ -16,6 +16,9 @@ body {
 
 .nav-buttons button,
 .nav-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--theme-color);
   color: var(--text-color);
   border: 2px solid var(--color);
@@ -236,7 +239,7 @@ body {
   }
   .dialogue-options button {
     font-size: xx-small;
-    flex: 1 0 100%;
+    flex: 1 0 50%;
   }
   .character-container {
     min-height: 60vh;
