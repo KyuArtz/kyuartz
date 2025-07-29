@@ -57,6 +57,12 @@
     <button type="button" onclick="window.history.back()">
       <i class="fa-solid fa-reply"></i>
     </button>
+    <button type="button" class="nav-link" onclick="openFullscreen()" title="Full Screen" aria-label="Full Screen">
+        <i class="fa-solid fa-expand"></i>
+      </button>
+    <button type="button" class="nav-link" onclick="closeFullscreen()" title="Minimize Screen" aria-label="Minimize Screen">
+      <i class="fa-solid fa-compress"></i>
+    </button>
     <a class="setting" href="preferences.html">
       <i class="fa-solid fa-gear"></i>
     </a>
@@ -67,6 +73,10 @@
       <div class="overlay">
         <div class="dialogue-text" id="dialogueText"></div>
         <div class="dialogue-options" id="dialogueOptions"></div>
+      </div>
+      <div class="input-container">
+        <input type="text" id="userInput" placeholder="Ask me anything..." aria-label="Ask me anything">
+        <button id="askBtn" aria-label="Ask">Ask</button>
       </div>
     </section>
     <aside class="character-container" id="characterContainer" aria-label="Character images"></aside>

@@ -6,12 +6,12 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  padding: 10px;
+  padding: 5px;
   z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .nav-buttons button,
@@ -125,12 +125,11 @@ body {
 }
 
 .dialogue-options {
-  margin-top: 10px;
+  padding: 10px 5px;
   display: flex;
   gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  overflow-y: auto;
 }
 
 .dialogue-options button {
@@ -138,38 +137,35 @@ body {
   color: #ffab4c;
   border: 1px solid;
   border-top: 3px solid;
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-radius: 50px;
   box-shadow: 0 0 5px rgba(255, 145, 0, 0.3);
-  font-family: myFont;
+  flex: 1 0 30%;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s, padding 0.3s;
+  transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .dialogue-options button:hover {
   background: #ffab4c;
   border-color: #ffab4c;
   color: #0a0a0a;
-  padding: 10px 20px;
-  box-shadow: 0 0 15px rgba(255, 145, 0, 0.5);
+  box-shadow: 0 0 10px rgba(255, 145, 0, 0.5);
 }
 
 .input-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95vw;
+  width: 100%;
   gap: 10px;
   background: var(--content-bg);
-  border-radius: 50px;
   overflow: hidden;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 #userInput {
-  flex: 1 1 0%;
-  min-width: 0;
-  padding: 8px;
+  width: 70%;
+  padding: 8px 10px;
   border-radius: 50px;
   border: 2px solid var(--color);
   color: var(--text-color);
@@ -182,7 +178,7 @@ body {
   flex-shrink: 0;
   color: var(--text-color);
   background: var(--color);
-  padding: 8px 15px;
+  padding: 8px 20px;
   border: 2px solid var(--color);
   border-radius: 50px;
   box-shadow: none;
@@ -240,7 +236,7 @@ body {
   }
   .dialogue-options button {
     font-size: xx-small;
-    padding: 10px 20px;
+    flex: 1 0 100%;
   }
   .character-container {
     min-height: 60vh;

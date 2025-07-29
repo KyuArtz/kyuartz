@@ -100,7 +100,7 @@ class DialogueManager {
     this.nav = document.getElementById("navButtons");
 
     this.keywordMap = [
-      { keywords: ["recommend"], response: "I recommend exploring the various art styles and techniques to find what resonates with you!" },
+      { keywords: ["recommend"], custom: true, response: "I recommend exploring the various art styles and techniques to find what resonates with you!" },
       { keywords: ["commission", "art commission", "request art"], custom: true, response: "To request a commission, please visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission' target='_blank'>Commission Page</a> for more information on the process and to submit your request." },
       { keywords: ["payment", "pay", "payment options"], custom: true, response: "We accept various payment methods for commissions, including PayPal, Maya, GCash, and credit/debit cards. For more details, visit the <a class='dL' href='https://kyuartz.github.io/kyuartz/contact' target='_blank'>Contact Page</a>. If you have a specific preference, let us know!" },
       { keywords: ["report", "issue", "problem"], custom: true, response: "If you encounter any issues or have concerns, please report them through the <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Customer Support Page</a>. You can also reach out via email or social media. We take all reports seriously and will address them promptly." },
@@ -260,12 +260,8 @@ class DialogueManager {
     }
 
     // Input box for user questions
-    const inputDiv = document.createElement("div");
-    inputDiv.innerHTML = 
-    `<div class="input-container">
-      <input type="text" id="userInput" placeholder="Ask me anything..." aria-label="Ask me anything">
-      <button id="askBtn" aria-label="Ask">Ask</button>
-    </div>`;
+    const inputDiv = document.createElement("input-container");
+    inputDiv.innerHTML = ``;
     this.optionsDiv.appendChild(inputDiv);
 
     // Event delegation for option buttons
@@ -353,6 +349,27 @@ class DialogueManager {
     });
   }
 }
+
+  function openFullscreen() {
+    const elem = document.documentElement;
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+    }
+  }
+
+  function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+    }
+  }
 
 // Initialize
 new DialogueManager(dialogueTree);

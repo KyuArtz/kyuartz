@@ -227,6 +227,7 @@
     padding: 5px;
     transition: box-shadow 0.5s ease-out, height 0.3s ease-in-out, opacity 0.9s ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 }
 .overlay p {
     margin: 0;
