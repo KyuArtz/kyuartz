@@ -238,7 +238,7 @@ function getCharacterDetails(character) {
             gender: "<info>Female</info>",
             height: "<info>5'7\" ft / 170.2 cm</info>",
             homeland: "<info>Magellion Empire</info>",
-            faction: "<info>Light Harbingers</info>",
+            faction: "<info>Magellion Empire / Light Harbingers</info>",
             role: "<info>Mage</info> <info>Healer</info>",
             occupation: "<info>Empress of the Magellion Empire</info>",
             affiliates: "<info><i class='fas fa-users'></i> Blessica (Mother Figure)</info> <info><i class='fas fa-users'></i> Feya (Adopted Daughter)</info> <info><i class='fas fa-users'></i> Ren & Rayza (Allies)</info> <info><i class='fas fa-users'></i> Floribeth (Ally)</info>",
