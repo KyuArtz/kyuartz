@@ -60,10 +60,14 @@
     align-items: center;
     justify-content: center;
     background: var(--theme-color);
-    color: var(--text-color);
+    color: #ffab4c;
     border-radius: 50px;
     border: 2px solid var(--color);
     overflow: hidden;
+}
+
+.screen-size-controls button {
+    color: inherit;
 }
 
 .character-wrapper {
