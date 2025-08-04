@@ -3,18 +3,18 @@
 // =====================
 const characterBackgrounds = {
     comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
-    elishia: { landscape: "url('')", portrait: "url('')" },
-    hexxana: { landscape: "url('')", portrait: "url('')" },
-    ren: { landscape: "url('')", portrait: "url('')" },
-    rayza: { landscape: "url('')", portrait: "url('')" },
-    liliana: { landscape: "url('')", portrait: "url('')" },
-    blessica: { landscape: "url('')", portrait: "url('')" },
-    lunara: { landscape: "url('')", portrait: "url('')" },
-    floribeth: { landscape: "url('')", portrait: "url('')" },
-    shelain: { landscape: "url('')", portrait: "url('')" },
-    arzhel: { landscape: "url('')", portrait: "url('')" },
-    feya: { landscape: "url('')", portrait: "url('')" },
-    zenyx: { landscape: "url('')", portrait: "url('')" },
+    elishia: { landscape: "url('assets/images/character-presets/faction-banner/falcon-company.webp')", portrait: "url('')" },
+    hexxana: { landscape: "url('assets/images/character-presets/faction-banner/balance.webp')", portrait: "url('')" },
+    ren: { landscape: "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')", portrait: "url('')" },
+    rayza: { landscape: "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')", portrait: "url('')" },
+    liliana: { landscape: "url('assets/images/character-presets/faction-banner/magellion-empire.webp')", portrait: "url('')" },
+    blessica: { landscape: "url('assets/images/character-presets/faction-banner/solaraenian.webp')", portrait: "url('')" },
+    lunara: { landscape: "url('assets/images/character-presets/faction-banner/solaraenian.webp')", portrait: "url('')" },
+    floribeth: { landscape: "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')", portrait: "url('')" },
+    shelain: { landscape: "url('assets/images/character-presets/faction-banner/order-of-the-tides.webp')", portrait: "url('')" },
+    arzhel: { landscape: "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')", portrait: "url('')" },
+    feya: { landscape: "url('assets/images/character-presets/faction-banner/Vulpine-clan.webp')", portrait: "url('')" },
+    zenyx: { landscape: "url('assets/images/character-presets/faction-banner/magellion-empire.webp')", portrait: "url('')" },
 };
 
 let currentCharacter = null;
@@ -142,19 +142,19 @@ function getCharacterDetails(character) {
             occupation: "<info>Occult Nomad</info>",
             affiliates: "<info><i class='fas fa-users'></i> None</info>",
             elementalImages: [
-                "assets/images/character-presets/elements/shadow.webp"
+                "assets/images/character-presets/elements/dark.webp"
             ],
             likes: "<info><i class='fas fa-check'></i> Solitude</info> <info><i class='fas fa-check'></i> Stargazing</info> <info><i class='fas fa-check'></i> Silence</info> <info><i class='fas fa-check'></i> Old Tomes & Relics</info>",
             dislikes: "<info><i class='fas fa-times'></i> Crowds</info> <info><i class='fas fa-times'></i> Obedience</info> <info><i class='fas fa-times'></i> Blind Loyalty</info> <info><i class='fas fa-times'></i> Corruption</info>",
             weapon: "<info><i class='fas fa-heart'></i> Oblivion’s Edge (Cursed Scythe)</info>",
-            ability1: "<label><i class='fas fa-mask'></i> Shadowcraft</label> <p>Hexxana bends shadows into blades, cloaks, or illusions—shifting reality at will. These constructs disorient enemies and cloak her movements.</p>",
+            ability1: "<label><i class='fas fa-mask'></i> darkcraft</label> <p>Hexxana bends darks into blades, cloaks, or illusions—shifting reality at will. These constructs disorient enemies and cloak her movements.</p>",
             ability2: "<label><i class='fas fa-circle'></i> Umbral Rift</label> <p>Opens a swirling rift that distorts space and pulls enemies inward. Hexxana can phase through the rift to reposition instantly. Deals continuous void damage over time.</p>",
             ability3: "<label><i class='fas fa-skull-crossbones'></i> Curse Weaving</label> <p>Hexxana enchants enemies or her weapon with potent hexes. Inflicts mental disarray, weakens armor, or causes delayed detonation. Some effects linger even after death.</p>",
-            ability4: "<label><i class='fas fa-hand-sparkles'></i> Void Tendrils</label> <p>Summons shadowy tendrils from the ground to lash and bind enemies, draining energy and immobilizing them. Effective for crowd control or disabling targets.</p>",
-            ability5: "<label><i class='fas fa-wind'></i> Shadow Reaping</label> <p>Channels void energy through Oblivion’s Edge, releasing spectral slashes in wide arcs. Each strike pierces defenses and leeches vitality from enemies.</p>",
+            ability4: "<label><i class='fas fa-hand-sparkles'></i> Void Tendrils</label> <p>Summons darky tendrils from the ground to lash and bind enemies, draining energy and immobilizing them. Effective for crowd control or disabling targets.</p>",
+            ability5: "<label><i class='fas fa-wind'></i> dark Reaping</label> <p>Channels void energy through Oblivion’s Edge, releasing spectral slashes in wide arcs. Each strike pierces defenses and leeches vitality from enemies.</p>",
             ability6: "<label><i class='fas fa-fire'></i> Oblivion Form: We are as One</label> <p>Hexxana ascends into her true cursed state, becoming a spectral demon. Her speed increases, attacks ignore resistances, and enemies nearby are afflicted with fear. Oblivion’s Edge becomes engulfed in anti-light, burning through both body and spirit.</p>",
             background: [
-                "Hexxana is an enigma—a wandering force of magic and steel, cloaked in shadows and silence. Her origins are lost to time, her presence marked only by fleeting glimpses under starry skies and whispered rumors of spectral sightings.<br><br>",
+                "Hexxana is an enigma—a wandering force of magic and steel, cloaked in darks and silence. Her origins are lost to time, her presence marked only by fleeting glimpses under starry skies and whispered rumors of spectral sightings.<br><br>",
                 "She wields **Oblivion’s Edge**, a cursed scythe said to consume the life force of any who dare touch it—save for her. With it, she cuts down enemies in a flurry of devastating magic and precise strikes, vanishing into the night as quickly as she appears.<br><br>",
                 "Hexxana walks a solitary path, guided by a purpose known only to her. She intervenes in the affairs of mortals only when it suits her will—helping the helpless in one moment, and disappearing without thanks in the next.<br><br>",
                 "Some call her a savior cloaked in dusk. Others, a reaper of judgment. She is neither light nor dark—**fiercely neutral**, bound to no kingdom, loyal only to herself.<br><br>",
@@ -283,7 +283,7 @@ function getCharacterDetails(character) {
             occupation: "<info>Sealed Entity</info>",
             affiliates: "<info><i class='fas fa-users'></i> Zion (Lover)</info> <info><i class='fas fa-users'></i> Blessica (Sister)</info> <info><i class='fas fa-users'></i> Liliana (Daughter)</info>",
             elementalImages: [
-                "assets/images/character-presets/elements/shadow.webp"
+                "assets/images/character-presets/elements/dark.webp"
             ],
             likes: "<info><i class='fas fa-check'></i> Zion</info> <info><i class='fas fa-check'></i> Moonlit Nights</info> <info><i class='fas fa-check'></i> Ancient Magic</info> <info><i class='fas fa-check'></i> Roses</info>",
             dislikes: "<info><i class='fas fa-times'></i> Celestial Betrayal</info> <info><i class='fas fa-times'></i> War</info> <info><i class='fas fa-times'></i> Her Own Reflection</info>",
@@ -296,7 +296,7 @@ function getCharacterDetails(character) {
             ability6: "<label><i class='fas fa-crown'></i> Blood Eclipse</label> <p>Unleashes her sealed form as the Scarlet Phantom. Her aura corrupts the battlefield, amplifying all abilities, draining enemies nearby, and marking them with the Reaper’s Sigil. During this form, Lunara regenerates from all damage dealt.</p>",
             background: [
                 "Lunara was once a celestial being—pure, radiant, and beloved. She was the selfless and compassionate princess of Solaraenia, destined to inherit the throne and bring eternal light to her people. She embodied everything a ruler should be—kind yet strong, wise yet humble. But love, the most beautiful and dangerous force, would become her ruin.<br><br>",        
-                "In secret, she fell for Zion, the prince of the Umbrakiths—the sworn enemies of the Solaraenians for eons. Their love was a forbidden flame, burning against the tides of history and war. They met not as enemies, but as two wandering souls lost in the vastness of the realms. In Zion, Lunara saw not a monster or rival, but a heart that beat in harmony with hers. And to him, she was not just a celestial heir—but a light he had never known in his shadowed world.<br><br>",         
+                "In secret, she fell for Zion, the prince of the Umbrakiths—the sworn enemies of the Solaraenians for eons. Their love was a forbidden flame, burning against the tides of history and war. They met not as enemies, but as two wandering souls lost in the vastness of the realms. In Zion, Lunara saw not a monster or rival, but a heart that beat in harmony with hers. And to him, she was not just a celestial heir—but a light he had never known in his darked world.<br><br>",         
                 "But love is not enough to break the chains of destiny. When their secret was unveiled, the Solarae God's fury shook the heavens. He accused Lunara of treason—of being corrupted by Umbrakith magic. Her people turned against her, branding her a traitor to their divine bloodline.<br><br>",       
                 "In the eyes of the Solaraenians, she was no longer their princess. She was tainted, lost, a disgrace. And so, she was cast down—banished from Solaraenia and exiled into the mortal land of Eldoria.<br><br>",        
                 "But her fall was only the beginning. The Umbrakiths, stunned by the revelation, had not plotted to claim the celestial princess—but now they were forced into war. The Solaraenians, blinded by rage, saw no redemption—only war.<br><br>",            
@@ -342,7 +342,7 @@ function getCharacterDetails(character) {
             background: [
                 "Feya Ashey was once a carefree child, raised in the mystical Frostfire Timberland among her fox spirit kin. Playful, mischievous, and endlessly curious, she roamed the northern mountains of the Magellion Empire, her heart unburdened and her magic growing stronger with each adventure.<br><br>",
                 "Her people lived in peaceful harmony—deeply attuned to nature and elemental magic, untouched by the chaos of the outside world. But peace, like snow under fire, never lasts.<br><br>",
-                "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and shadow led by a tyrant king skultain. The Frostfire Timberland—once vibrant with spirit and song—was reduced to smoldering ash. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
+                "The rise of the Nethersteel Pact shattered everything. Their armies swept across the land like a storm of steel and dark led by a tyrant king skultain. The Frostfire Timberland—once vibrant with spirit and song—was reduced to smoldering ash. Her clan fought bravely—her parents among them—but the Pact’s might was overwhelming.<br><br>",
                 "One by one, her kin fell. Her home burned. And Feya—young and unprepared—was left alone.<br><br>",
                 "In a final act of desperation, she unleashed her latent power in a fiery, uncontrolled surge. The resulting explosion consumed the remaining enemy forces, but left Feya gravely wounded and drained.<br><br>",
                 "As she collapsed, the Nethersteel prince, Drakeon, stood over her. She had no strength left to resist. But before the final blow could fall, salvation arrived—the royal army of the Magellion Empire, led by Empress Liliana herself. The enemy fled. The damage, however, was done.<br><br>",
@@ -350,7 +350,7 @@ function getCharacterDetails(character) {
                 "Hours later, the scouts found Feya unconscious in the ruins. Empress Liliana, moved by the sight of the broken girl and the loss of her entire race, personally healed her. Seeing the fire still burning inside her, Liliana adopted Feya as her daughter, offering her sanctuary and a new path.<br><br>",
                 "Under the Empress’s care, Feya trained as a Light Harbinger—sworn to defend the Crystalight and preserve Eldoria’s fragile peace. Though her heart still carries the scars of her past, she now fights with renewed purpose.<br><br>",
                 "As the Fiery Fox of the Light Harbingers, she burns bright with passion and fury, vowing that no one else will suffer as she did.<br><br>",
-                "But Drakeon still lives. The Nethersteel Pact still lurks in the shadows. And Feya knows... her story is far from over.<br><br>",
+                "But Drakeon still lives. The Nethersteel Pact still lurks in the darks. And Feya knows... her story is far from over.<br><br>",
                 "Her past was forged in flames—but her future blazes even brighter.",
             ].join("")
         };
@@ -389,7 +389,7 @@ function getCharacterDetails(character) {
                 "Not long after the war’s end, corruption crept through the Elderhaven Wilds…twisted magic poisoning the land, warping creatures, and draining life from the soil. The source was unknown. The threat, undeniable.<br><br>",
                 "Floribeth acted swiftly. She reinforced Luminwood’s borders, empowered her **Bloomforge Guardians**, and sent urgent warnings to the Light Harbingers.<br><br>",
                 "Her call was not in vain.<br><br>",
-                "One fateful night, under a moon veiled in mist, a shadowy faction launched a full-scale assault on the Luminwood Expanse. But Floribeth—ever the strategist—was ready. Alongside her trusted companion **Arzhel**, she activated an ancient Solaraenian portal beneath the Tree of Life.<br><br>",
+                "One fateful night, under a moon veiled in mist, a darky faction launched a full-scale assault on the Luminwood Expanse. But Floribeth—ever the strategist—was ready. Alongside her trusted companion **Arzhel**, she activated an ancient Solaraenian portal beneath the Tree of Life.<br><br>",
                 "**Liliana** and her forces arrived through the shimmering gate, answering the call. The battle raged for hours beneath a canopy of burning leaves and flickering starlight. Though the bloodshed was great, the defenders emerged victorious—with fewer casualties than feared.<br><br>",
                 "But Floribeth did not celebrate. She knew this was only the beginning.<br><br>",
                 "She returned to **Springvale**, capital of the Luminwood Expanse, and began its transformation into a fortified sanctuary. With the unwavering support of her allies, she now prepares not just to defend... but to reclaim what was once pure.<br><br>",
@@ -398,7 +398,7 @@ function getCharacterDetails(character) {
         };
     } else if (character === 'arzhel') {
         details = {
-            name: "Arzhel",
+            name: "Arzhel Vindel",
             race: "<info>Elf</info>",
             gender: "<info>Male</info>",
             height: "<info>5'10\" ft / 177.8 cm</info>",
@@ -425,7 +425,7 @@ function getCharacterDetails(character) {
                 "One day, while patrolling the forest outskirts, Floribeth—Warden of the Bloom—noticed the boy practicing with makeshift arrows. She recognized in him the rare harmony between nature and discipline.<br><br>",
                 "Moved by his determination, she took him under her wing. Under her mentorship, Arzhel was trained in the ancient art of nature-bound archery and Bloomforge discipline.<br><br>",
                 "Years passed. Through perseverance and growth, Arzhel rose through the ranks and earned the title of **Elite Guardian of the Bloom**. Now he stands as one of Luminwood’s finest marksmen—a silent sentinel watching over the sacred groves, vowing to protect what his parents once died defending.<br><br>",
-                "They say his arrows strike before the wind whispers. And when shadows fall upon the forest… Arzhel is already watching."
+                "They say his arrows strike before the wind whispers. And when darks fall upon the forest… Arzhel is already watching."
             ].join("")
         };
     } else if (character === 'shelain') {
@@ -530,13 +530,13 @@ function getCharacterDetails(character) {
             ability5: "<label><i class='fas fa-radiation'></i> Elemental Overload</label> <p>Temporarily unlocks full elemental power, allowing Zenyx to rapidly switch attunements without cooldowns. Her spells hit harder and may trigger random combo effects during the duration.</p>",
             ability6: "<label><i class='fas fa-sun'></i> Prismatic Tempest</label> <p>Zenyx unleashes all attuned elements in a massive area-of-effect storm. Fire, Water, Air, and Earth swirl together, dealing heavy damage, applying multiple debuffs, and empowering allies caught within the radiant surge.</p>",
             background: [
-                "Zenyx was born in the aftermath of the **Great War of Eldoria**, in an age of rebuilding and lingering shadows. She never knew her true parents, growing up as an orphan under the care of the **Magellion Orphanage**. While running errands for the caretakers, she found herself mesmerized by the sights of mages casting spells in the streets, children learning minor magic tricks, and scholars debating arcane secrets. From that moment, a spark ignited in her heart—a longing to wield magic of her own.<br><br>",
+                "Zenyx was born in the aftermath of the **Great War of Eldoria**, in an age of rebuilding and lingering darks. She never knew her true parents, growing up as an orphan under the care of the **Magellion Orphanage**. While running errands for the caretakers, she found herself mesmerized by the sights of mages casting spells in the streets, children learning minor magic tricks, and scholars debating arcane secrets. From that moment, a spark ignited in her heart—a longing to wield magic of her own.<br><br>",
                 "Years later, she was adopted by an elderly herbalist who lived alone in a modest cottage on the outskirts of the Magellion Empire’s capital. Those days were simple and filled with quiet joys: tending gardens, collecting rare herbs, and reading by candlelight. The old woman loved Zenyx like family, teaching her about healing plants and the delicate balance of life in nature. But time is cruel. When Zenyx was still young, her adoptive mother passed away, leaving her alone once more.<br><br>",
-                "Determined to survive and pursue her dream, Zenyx worked odd jobs in the city while secretly teaching herself the basics of magic from discarded scrolls and glimpses of mages at work. Her life changed forever one evening while gathering herbs near her cottage. She was ambushed by a pack of **corrupted beasts**, vicious and warped by dark magic. Despite fighting back with every ounce of courage, she was nearly overrun. Just as she thought her end had come, a towering woman in a black cloak and wide witch hat appeared from the shadows. With a single gesture, the stranger unleashed searing black-violet flames that didn’t explode outward, but instead collapsed inward—devouring the beasts entirely.<br><br>",
+                "Determined to survive and pursue her dream, Zenyx worked odd jobs in the city while secretly teaching herself the basics of magic from discarded scrolls and glimpses of mages at work. Her life changed forever one evening while gathering herbs near her cottage. She was ambushed by a pack of **corrupted beasts**, vicious and warped by dark magic. Despite fighting back with every ounce of courage, she was nearly overrun. Just as she thought her end had come, a towering woman in a black cloak and wide witch hat appeared from the darks. With a single gesture, the stranger unleashed searing black-violet flames that didn’t explode outward, but instead collapsed inward—devouring the beasts entirely.<br><br>",
                 "Awed and desperate, Zenyx begged the woman to teach her magic. The mysterious figure hesitated, scrutinizing the determination in Zenyx’s eyes. Then she nodded silently. That woman was none other than **Hexxana**, the Lone Wanderer herself.<br><br>",
                 "Under Hexxana’s tutelage, Zenyx blossomed. She trained for years in the arts of arcane magic, learning not only spells but survival, discipline, and the secrets of the world. Eventually, Zenyx asked permission to venture out on her own. Hexxana agreed, proud of her pupil’s resolve.<br><br>",
                 "So Zenyx set out alone to chase the adventures she once only dreamed of. She traversed Eldoria from the vast halls of **Magellion** to the serene groves of **Luminwood**, the veiled mists of **Hidden Mist Valley**, the sunlit shores of the **Azure Coast**, and countless forgotten ruins and perilous dungeons. She fought corrupted creatures, aided villages beset by trouble, crossed paths with strangers both kind and cruel, and forged fleeting friendships with travelers and adventurers. Few dared to explore as relentlessly as she did—even Hexxana herself confessed to never setting foot in some of the places Zenyx visited.<br><br>",
-                "Eventually, Zenyx felt a new calling—to bring her talents to a higher purpose. She pledged herself to the **Light Harbingers**, determined to stand alongside Liliana and the others to protect Eldoria from the shadows that still linger.<br><br>",
+                "Eventually, Zenyx felt a new calling—to bring her talents to a higher purpose. She pledged herself to the **Light Harbingers**, determined to stand alongside Liliana and the others to protect Eldoria from the darks that still linger.<br><br>",
             ].join("")
         };
     } else if (character === 'coming-soon') {
