@@ -367,12 +367,7 @@ p.title {
     border-bottom: 3px solid var(--accent, #ffab4c);
     text-align: center;
     box-shadow: inset 0 10px 30px -30px var(--accent, #ffab4c), inset 0 -30px 10px -30px var(--accent, #ffab4c);
-    transition: 0.3s ease-in-out, background-color 0.2s ease, color 0.3s ease-in-out, border 0.2s ease, transform 0.3s ease-in-out;
-}
-.character-info h2:hover {
-    background: var(--theme-color);
-    color: var(--text-color);
-    transform: scale(1.02);
+    transition: 0.3s ease-in-out, background-color 0.2s ease, color 0.3s ease-in-out, border 0.2s ease;
 }
 .character-info h3 {
     color: var(--accent, #ffab4c);
