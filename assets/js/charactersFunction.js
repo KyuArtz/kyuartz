@@ -13,7 +13,7 @@ const characterBackgrounds = {
     floribeth: { landscape: "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')", portrait: "url('')" },
     shelain: { landscape: "url('assets/images/character-presets/faction-banner/order-of-the-tides.webp')", portrait: "url('')" },
     arzhel: { landscape: "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')", portrait: "url('')" },
-    feya: { landscape: "url('assets/images/character-presets/faction-banner/Vulpine-clan.webp')", portrait: "url('')" },
+    feya: { landscape: "url('assets/images/character-presets/faction-banner/vulpine-clan.webp')", portrait: "url('')" },
     zenyx: { landscape: "url('assets/images/character-presets/faction-banner/magellion-empire.webp')", portrait: "url('')" },
 };
 
