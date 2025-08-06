@@ -21,7 +21,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `To commission an artwork, please visit the <a class="dL" href="https://kyuartz.github.io/kyuartz/commission-sheet" target="_blank">Commission Sheet Page</a> or check the commission information in the main menu. You'll find details about pricing, styles, and how to submit your request.`,
     options: [
@@ -34,7 +34,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `After you submit a commission request, the artist will review it and contact you with details about the process, including confirmation, payment, and estimated delivery time. You can also check your commission status on the <a class="dL" href="https://kyuartz.github.io/kyuartz/client-queue" target="_blank">Commission Status Page</a>.`,
     options: [
@@ -45,7 +45,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `You can contact the artist through the <a class="dL" href="https://kyuartz.github.io/kyuartz/contact" target="_blank">Contact Page</a>, where you'll find email and social media links. Feel free to reach out with any questions or requests!`,
     options: [
@@ -56,7 +56,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `We accept various payment methods for commissions, including PayPal, Maya, GCash, and credit/debit cards. For more details, visit the <a class="dL" href="https://kyuartz.github.io/kyuartz/contact" target="_blank">Contact Page</a>. If you have a specific preference, let us know!`,
     options: [
@@ -67,7 +67,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `Kyuartz offers custom artwork commissions, art prints, and digital downloads. Explore our <a class="dL" href="https://kyuartz.github.io/kyuartz/terms-of-service" target="_blank">Terms of Service</a>, <a class="dL" href="https://kyuartz.github.io/kyuartz/privacy-policy" target="_blank">Privacy Policy</a>, and <a class="dL" href="https://kyuartz.github.io/kyuartz/faq" target="_blank">FAQ</a> for more info. Have a specific request? Just ask!`,
     options: [
@@ -79,7 +79,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `If you encounter any issues or have concerns, please report them through the <a class="dL" href="https://kyuartz.github.io/kyuartz/customer-support" target="_blank">Customer Support Page</a>. You can also reach out via email or social media. We take all reports seriously and will address them promptly.`,
     options: [
@@ -90,7 +90,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `Kyu is responsible for creating unique and engaging artworks on the Kyuartz platform and made the site you are currently visiting. Kyu is passionate about art and enjoys connecting with the community through commissions and creative projects.`,
     options: [
@@ -103,7 +103,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `Kyuartz is a creative platform where you can explore unique artworks, commission custom pieces, and connect with the artist. We focus on delivering high-quality art that brings your vision to life. Whether you're looking for a specific style, want to support the artist, or just enjoy browsing art, Kyuartz has something for everyone!`,
     options: [
@@ -116,7 +116,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `Yes I'm here to help! How can I assist you today? You can ask me about commissions, payment options, Kyuartz services, or any other questions you might have. If you have a specific request or need assistance, just let me know!`,
     options: [
@@ -129,7 +129,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking-wink.webp", expression: "talking", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-talking.webp", expression: "talking", speaking: true },
     ],
     text: `What question do you have? I'm here to help!`,
     options: [
