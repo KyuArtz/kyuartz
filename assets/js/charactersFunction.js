@@ -4,7 +4,7 @@
 const characterBackgrounds = {
     comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('assets/images/character-presets/cover/default.gif')" },
     elishia: { landscape: "url('assets/images/character-presets/faction-banner/falcon-company.webp')", portrait: "url('')" },
-    hexxana: { landscape: "url('assets/images/character-presets/faction-banner/balance.webp')", portrait: "url('')" },
+    hexxana: { landscape: "url('assets/images/character-presets/faction-banner/watchers.webp')", portrait: "url('')" },
     ren: { landscape: "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')", portrait: "url('')" },
     rayza: { landscape: "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')", portrait: "url('')" },
     liliana: { landscape: "url('assets/images/character-presets/faction-banner/magellion-empire.webp')", portrait: "url('')" },
