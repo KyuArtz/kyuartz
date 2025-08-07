@@ -3,7 +3,7 @@ const dialogueTree = {
     character: "EB (Beta)",
     background: "url('')",
     characters: [
-      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-smirk.webp", expression: "smirk", speaking: true },
+      { name: "EB (Beta)", portrait: "assets/images/assistant-presets/eb-default.webp", expression: "default", speaking: true },
     ],
     text: `Hello and welcome to the Kyuartz Website! I’m EB, your friendly guide. What would you like to know or do today?`,
     options: [

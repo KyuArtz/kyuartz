@@ -99,8 +99,8 @@ body {
 
 .character-name {
   width: 30%;
-  color: #ffab4c;
-  text-shadow: 0 0 5px rgba(255, 145, 0, 0.5);
+  color: var(--text-color);
+  text-shadow: 0 0 3px var(--color);
   box-shadow: 0 0 3px var(--color);
   text-align: center;
   font-family: myFont;
@@ -137,22 +137,20 @@ body {
 
 .dialogue-options button {
   background: var(--overlay);
-  color: #ffab4c;
+  color: var(--color);
   border: 1px solid;
   border-top: 3px solid;
   padding: 5px 15px;
   border-radius: 50px;
-  box-shadow: 0 0 5px rgba(255, 145, 0, 0.3);
   flex: 1 0 30%;
   cursor: pointer;
   transition: background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
 
 .dialogue-options button:hover {
-  background: #ffab4c;
-  border-color: #ffab4c;
-  color: #0a0a0a;
-  box-shadow: 0 0 10px rgba(255, 145, 0, 0.5);
+  background: var(--theme-color);
+  border-color: var(--color);
+  color: var(--text-color);
 }
 
 .input-container {
