@@ -360,6 +360,7 @@ class DialogueManager {
       if (!matched) {
         this.typeWriterEffect("Sorry, I don't have an answer for that yet!");
       }
+      userInput.value = "";
     };
     userInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
