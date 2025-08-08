@@ -115,6 +115,8 @@ body {
 
 .dialogue-text {
   background: var(--theme-overlay);
+  color: var(--text-color);
+  box-shadow: 0 0 2px var(--color);
   padding: 10px 20px;
   border-radius: 18px;
   min-height: 70px;
@@ -136,10 +138,9 @@ body {
 }
 
 .dialogue-options button {
-  background: var(--overlay);
+  background: var(--theme-color);
   color: var(--color);
-  border: 1px solid;
-  border-top: 3px solid;
+  border: none;
   padding: 5px 15px;
   border-radius: 50px;
   flex: 1 0 30%;
