@@ -217,14 +217,19 @@ class DialogueManager {
     this.characterContainer = document.getElementById("characterContainer");
     this.container = document.querySelector('.character-container');
     this.nav = document.getElementById("navButtons");
+    this.micBtn = document.getElementById("micBtn");
+    this.ttsBtn = document.getElementById("ttsBtn");
+    this.lastSpokenText = ""; // Store last assistant reply for TTS
 
     this.initEvents();
     this.renderDialogue("start");
+    this.setupVoiceFeatures();
   }
 
-  typeWriterEffect(text, speed = 10) {
-    //if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
+  typeWriterEffect(text, speed = 7) {
+    if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
     this.textElement.innerHTML = '👉👉👉';
+    this.lastSpokenText = text; // Store for TTS
     let i = 0;
     const type = () => {
       if (i < text.length) {
@@ -237,15 +242,93 @@ class DialogueManager {
       }
     };
     // Debounce click to skip typewriter
-    //const skipTypewriter = () => {
-    //  if (this.typewriterTimeout) {
-    //    clearTimeout(this.typewriterTimeout);
-    //    this.textElement.innerHTML = text;
-    //    this.typewriterTimeout = null;
-    //  }
-    //};
-    //this.textElement.onclick = skipTypewriter;
+    const skipTypewriter = () => {
+      if (this.typewriterTimeout) {
+        clearTimeout(this.typewriterTimeout);
+        this.textElement.innerHTML = text;
+        this.typewriterTimeout = null;
+      }
+    };
+    this.textElement.onclick = skipTypewriter;
     type();
+  }
+
+  setupVoiceFeatures() {
+    // --- Speech Recognition (Speech-to-Text) ---
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+      const recognition = new SpeechRecognition();
+      recognition.lang = "en-US";
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      this.micBtn.onclick = () => {
+        if (this.micBtn.classList.contains("active")) {
+          recognition.stop();
+          this.micBtn.classList.remove("active");
+        } else {
+          recognition.start();
+          this.micBtn.classList.add("active");
+        }
+      };
+
+      recognition.onresult = (event) => {
+        const transcript = event.results[0][0].transcript;
+        this.textElement.innerHTML = `<i class="fa-solid fa-microphone"></i> ${transcript}`;
+        this.userInput.value = transcript;
+        this.micBtn.classList.remove("active");
+        this.userInput.focus();
+      };
+      recognition.onerror = () => {
+        this.micBtn.classList.remove("active");
+      };
+      recognition.onend = () => {
+        this.micBtn.classList.remove("active");
+      };
+    } else {
+      this.micBtn.style.display = "none";
+    }
+
+    // --- Text-to-Speech (TTS) ---
+    if ('speechSynthesis' in window) {
+      const setFemaleVoiceAndSpeak = (text) => {
+        const utter = new SpeechSynthesisUtterance(text.replace(/<[^>]+>/g, ''));
+        utter.lang = "en-US";
+        let voices = window.speechSynthesis.getVoices();
+        // Log voices for debugging
+        console.log("Available voices:", voices);
+
+        // Try to pick a likely female voice by name
+        const preferredNames = [
+          "zira", "samantha", "linda", "susan", "eva", "female", "woman", "google us english", "karen", "victoria"
+        ];
+        let femaleVoice = voices.find(v =>
+          v.lang.startsWith('en') && preferredNames.some(name => v.name.toLowerCase().includes(name))
+        );
+        // Fallback: any English voice
+        if (!femaleVoice) {
+          femaleVoice = voices.find(v => v.lang.startsWith('en'));
+        }
+        if (femaleVoice) utter.voice = femaleVoice;
+        window.speechSynthesis.speak(utter);
+      };
+
+      this.ttsBtn.onclick = () => {
+        window.speechSynthesis.cancel();
+        setFemaleVoiceAndSpeak(this.lastSpokenText);
+      };
+
+      // Ensure voices are loaded before use
+      if (window.speechSynthesis.onvoiceschanged !== undefined) {
+        window.speechSynthesis.onvoiceschanged = () => {};
+      }
+    } else {
+      this.ttsBtn.style.display = "none";
+    }
+  }
+
+  renderDialogue(nodeKey, addToHistory = true) {
+    this.lastSpokenText = node.text; // For TTS
   }
 
   renderCharacters(characters, speakingName) {

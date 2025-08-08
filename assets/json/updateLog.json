@@ -1,6 +1,18 @@
 {
   "updates": [
     {
+      "date": "2025-08-08",
+      "major": [
+        "Made some improvements to the virtual assistant's dialogue management.",
+        "Added voice recognition capabilities to the virtual assistant."
+      ],
+      "minor": [
+        "Made some changes to the UI/UX of the virtual assistant."
+      ],
+      "bugfixes": [],
+      "upcoming": []
+    },
+    {
       "date": "2025-07-28",
       "major": [
         "We're Introducing EB a virtual assistant to the site! EB is designed to assist and engage users with personalized conversations, providing a unique interactive experience."
