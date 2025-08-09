@@ -21,6 +21,7 @@
     color: var(--text-color);
     position: absolute;
     bottom: 35%;
+    font-family: 'myFont', sans-serif;
     transition: inherit;
     animation: flicker 1s infinite;
 }

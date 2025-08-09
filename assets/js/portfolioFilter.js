@@ -2,14 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const images = [
     {
       src: "assets/images/artgallary/blessica portrait (2025).webp",
-      alt: "Blessica Portrait",
-      title: "Blessica Portrait",
+      alt: "blessica portrait",
+      title: "blessica portrait",
       category: "semi-realism"
     },
     {
       src: "assets/images/artgallary/last moment (2024).webp",
-      alt: "Last Moment",
-      title: "Last Moment",
+      alt: "last moment",
+      title: "last moment",
       category: "semi-realism"
     },
     {

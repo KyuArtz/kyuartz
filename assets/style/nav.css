@@ -8,6 +8,10 @@ header {
     z-index: 100000;
 }
 
+.no-scroll-sideMenu {
+    overflow: hidden;
+}
+
 .navigation-menu {
     min-width: 150px;
     display: flex;
@@ -140,6 +144,10 @@ header {
     min-height: 50px;
 }
 
+.main-navigation span {
+    font-family: 'myFont', sans-serif;
+}
+
 .brand {
     color: var(--text-color);
     display: flex;
@@ -150,6 +158,7 @@ header {
 .brand a {
     font-weight: bold;
     font-size: 1.5rem;
+    font-family: 'myFont', sans-serif;
 }
 
 .sbt {
@@ -236,6 +245,7 @@ form.search input[type="search"] {
     float: right;
     width: 80%;
     background: var(--theme-color);
+    font-family: 'myFont', sans-serif;
     cursor: text;
 }
 
@@ -440,6 +450,7 @@ form.search::after {
     text-align: center;
     color: var(--color);
     margin: 0 auto;
+    font-family: 'myFont', sans-serif;
 }
 
 .category-btn {
@@ -452,6 +463,7 @@ form.search::after {
     border: 2px solid var(--color);
     border-radius: 50px;
     background: var(--theme-color);
+    cursor: pointer;
 }
 
 .category-dot {
@@ -461,6 +473,7 @@ form.search::after {
     margin: 1px;
     background: var(--color);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .category-menu {
@@ -488,6 +501,7 @@ form.search::after {
     color: var(--text-color);
     margin: 0;
     padding: 15px;
+    font-family: 'myFont', sans-serif;
 }
 
 .category-item {
@@ -500,6 +514,10 @@ form.search::after {
     border-radius: 50px;
     padding: 15px 15px;
     margin: 5px;
+}
+
+.category-item span {
+    font-family: 'myFont', sans-serif;
 }
 
 .category-item a:hover {
@@ -555,6 +573,10 @@ option {
     text-align: center;
     justify-content: center;
     color: var(--color);
+}
+
+.copyright p, .copyright a, .copyright span {
+    font-family: 'myFont', sans-serif;
 }
 
 .detail {

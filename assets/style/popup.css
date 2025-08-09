@@ -9,6 +9,10 @@
     }
 }
 
+.no-scroll-popup {
+    overflow: hidden;
+}
+
 #welcome-overlay,
 .whats-new-overlay,
 .notice-overlay,
@@ -60,7 +64,7 @@
 #welcome-message h2 {
     color: var(--color);
     margin: 30px 0 25px;
-    border-bottom: 2px solid var(--color);
+    font-family: 'myFont', sans-serif;
 }
 
 #welcome-message p {
@@ -126,8 +130,8 @@
 .whats-new-popup h2,
 .donate-popup h2 {
     color: var(--color);
-    border-bottom: 2px solid var(--color);
     font-size: 1.5em;
+    font-family: 'myFont', sans-serif;
 }
 
 .notice-popup p,
@@ -162,7 +166,10 @@
 }
 
 .whats-new-popup h3 { text-align: left; }
-.update h4 { text-align: right; }
+.update h4 { 
+    text-align: right; 
+    border-top: 1px solid var(--color); 
+}
 
 .notice-content {
     background: var(--theme-color);
@@ -189,7 +196,8 @@
     background: var(--content-bg);
     outline: none;
     aspect-ratio: 1/1;
-    border: 1px solid;
+    border: none;
+    box-shadow: 0 0 3px var(--color);
     animation: wiggleAnimation 1s infinite;
     z-index: 50;
 }
@@ -335,8 +343,8 @@ button.close {
 
 #comic-title {
     color: var(--color);
-    border-bottom: 2px solid var(--color);
     margin-top: 5px;
+    font-family: 'myFont', sans-serif;
 }
 
 #comic-description {

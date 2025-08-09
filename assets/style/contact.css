@@ -26,6 +26,7 @@ form.contact {
 
 form h1 {
     text-align: center;
+    font-family: 'myFont', sans-serif;
 }
 
 .contact-subContent {
@@ -43,12 +44,20 @@ form h1 {
     box-shadow: 0 0 3px var(--color);
 }
 
+.more-info h2 {
+    font-family: 'myFont', sans-serif;
+}
+
 .extra-info {
     text-align: left;
     padding: 10px;
     background: var(--theme-color);
     border-radius: 10px;
     border-left: 5px solid var(--color);
+}
+
+label {
+    font-family: 'myFont', sans-serif;
 }
 
 input[type="email"],
@@ -96,7 +105,7 @@ img#image-preview {
     border-radius: 50px;
     background: none;
     outline: none;
-    color: inherit;
+    color: var(--color);
 }
 
 input[type="checkbox"] {
@@ -181,8 +190,7 @@ button[type="Submit"]:hover {
 #file-error {
     position: relative;
     color: rgb(255, 123, 0);
-    padding-top: 2px;
-    padding-left: 5px;
+    margin-left: 5px;
     transition: 0.3s ease-in-out;
 }
 

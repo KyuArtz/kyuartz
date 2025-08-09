@@ -6,6 +6,7 @@
 form h1 {
     text-align: center;
     color: var(--color);
+    font-family: 'myFont', sans-serif;
 }
 
 form.customer {
@@ -16,6 +17,10 @@ form.customer {
     box-shadow: 0 0 3px var(--color);
     max-width: 600px;
     margin: 20px auto;
+}
+
+label {
+    font-family: 'myFont', sans-serif;
 }
 
 input[type="text"],
@@ -30,7 +35,6 @@ select {
     border: 2px solid var(--color);
     background: none;
     color: inherit;
-    cursor: text;
     transition: border-color 0.3s ease, background-color 0.3s ease-in-out;
 }
 

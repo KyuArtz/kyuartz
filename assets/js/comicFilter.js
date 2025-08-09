@@ -57,12 +57,14 @@ function showDescription(button) {
     titleElem.innerHTML = comicInfo.title;
     descElem.innerHTML = comicInfo.description;
     popup.style.display = "block";
+    document.body.classList.add("no-scroll");
   }
 }
 
 function closeDescription() {
   const popup = document.getElementById("comic-description-popup");
   if (popup) popup.style.display = "none";
+  document.body.classList.remove("no-scroll");
 }
 
 // Optional: Close popup when clicking outside of it
@@ -70,5 +72,6 @@ window.onclick = function(event) {
   const popup = document.getElementById("comic-description-popup");
   if (popup && event.target === popup) {
     popup.style.display = "none";
+    document.body.classList.remove("no-scroll");
   }
 };

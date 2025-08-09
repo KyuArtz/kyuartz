@@ -21,6 +21,7 @@
 
 .info-container H2 {
     color: var(--color);
+    font-family: 'myFont', sans-serif;
 }
 
 .summary-content p,
@@ -125,6 +126,7 @@
     border-bottom: 2px solid;
     margin-top: 70px;
     color: var(--color);
+    font-family: 'myFont', sans-serif;
 }
 
 .my-info p {

@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (sideMenuContent) {
         const isShown = sideMenuContent.classList.toggle("show-sideMenu");
         blurOverlay && (blurOverlay.style.display = isShown ? "block" : "none");
+        document.body.classList.toggle("no-scroll-sideMenu", isShown);
       }
     });
   });
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (![...sideMenuLinks, ...sideMenuContents].some(el => el.contains(event.target))) {
       sideMenuContents.forEach(content => content.classList.remove("show-sideMenu"));
       if (blurOverlay) blurOverlay.style.display = "none";
+      document.body.classList.remove("no-scroll-sideMenu");
     }
     // Nav menu
     if (!event.target.closest('.hamburger') && !event.target.closest('.navigation-menu')) {

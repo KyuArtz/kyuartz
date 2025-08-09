@@ -29,6 +29,7 @@
 .filter-character h3 {
     margin: 0;
     font-size: 0.9rem;
+    font-family: 'myFont', sans-serif;
 }
 .filter-character a {
     display: flex;
@@ -82,6 +83,7 @@
 }
 .character-wrapper h2 {
     text-shadow: 0 0 5px #0a0a0a;
+    font-family: 'myFont', sans-serif;
 }
 .character-wrapper h3,
 .character-wrapper.name-tag,
@@ -235,6 +237,9 @@
 .overlay p {
     margin: 0;
 }
+.name-tag {
+    font-family: 'myFont', sans-serif;
+}
 .overlay p,
 .name-tag {
     cursor: pointer;
@@ -371,7 +376,7 @@ p.title {
 .character-info h3 {
     color: var(--accent, #ffab4c);
 }
-.character-info label {
+.character-info strong {
     background: var(--overlay);
     color: var(--accent, #ffab4c);
     border: 1px solid var(--accent, #ffab4c);
@@ -514,7 +519,7 @@ p.title {
     .character-info h3 {
         font-size: 1rem;
     }
-    .character-info label,
+    .character-info strong,
     .character-info info {
         font-size: 0.8rem;
     }

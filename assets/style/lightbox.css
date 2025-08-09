@@ -165,6 +165,7 @@ body.lb-disable-scrolling {
 
 .lb-data .lb-caption {
     line-height: 1em;
+    font-family: 'myFont', sans-serif;
 }
 
 .lb-data .lb-caption a {

@@ -87,12 +87,14 @@ button.next {
 
 .title h3 {
     margin: 0;
+    font-family: 'myFont', sans-serif;
 }
 
 .coming-soon {
     color: var(--color);
     font-size: 15px;
     text-align: center;
+    font-family: 'myFont', sans-serif;
 }
 
 .author {

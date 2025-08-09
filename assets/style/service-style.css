@@ -73,7 +73,6 @@ li.pp-item li {
     margin: var(--container-margin);
     box-shadow: 0 0 2px var(--color);
     padding: 10px;
-    line-height: 1.7;
 }
 
 .tos-item p,
@@ -81,6 +80,11 @@ li.pp-item li {
 .faq-item p {
     text-align: justify;
     color: var(--text-color);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'myFont', sans-serif;
 }
 
 .pp-container h2,

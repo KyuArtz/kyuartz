@@ -23,12 +23,27 @@ const getCookie = (name) => {
 const togglePopup = (id, action, openClass) => {
   const popup = document.getElementById(id);
   if (popup) popup.classList[action === "open" ? "add" : "remove"](openClass);
+
+  // Toggle body scroll for popups
+  if (["open", "close"].includes(action)) {
+    const anyPopupOpen =
+      document.getElementById('welcome-message')?.style.display === 'block' ||
+      document.getElementById('whats-new-popup')?.classList.contains('open-whats-new-popup') ||
+      document.getElementById('notice-popup')?.classList.contains('open-notice') ||
+      document.getElementById('donate-popup')?.classList.contains('open-donate');
+    if (action === "open" || anyPopupOpen) {
+      document.body.classList.add("no-scroll-popup");
+    } else {
+      document.body.classList.remove("no-scroll-popup");
+    }
+  }
 };
 
 // Close Welcome Message
 const closeWelcomeMessage = () => {
   document.getElementById('welcome-overlay')?.style.setProperty('display', 'none');
   document.getElementById('welcome-message')?.style.setProperty('display', 'none');
+  document.body.classList.remove("no-scroll-popup");
 };
 
 // Toggle "What's New" popup
@@ -42,6 +57,7 @@ const toggleWn = () => {
   togglePopup("whats-new-popup", isOpen ? "close" : "open", "open-whats-new-popup");
   toggleBtn.textContent = isOpen ? "What's New?" : "Close";
   wnOverlay.style.display = isOpen ? "none" : "block";
+  document.body.classList.toggle("no-scroll-popup", !isOpen);
 };
 
 // Open/Close Notice and Donate popups
@@ -49,21 +65,25 @@ const openNotice = () => {
   togglePopup("notice-popup", "open", "open-notice");
   const overlay = document.getElementById("notice-overlay");
   if (overlay) overlay.style.display = "block";
+  document.body.classList.add("no-scroll-popup");
 };
 const closeNotice = () => {
   togglePopup("notice-popup", "close", "open-notice");
   const overlay = document.getElementById("notice-overlay");
   if (overlay) overlay.style.display = "none";
+  document.body.classList.remove("no-scroll-popup");
 };
 const openDonate = () => {
   togglePopup("donate-popup", "open", "open-donate");
   const overlay = document.getElementById("donate-overlay");
   if (overlay) overlay.style.display = "block";
+  document.body.classList.add("no-scroll-popup");
 };
 const closeDonate = () => {
   togglePopup("donate-popup", "close", "open-donate");
   const overlay = document.getElementById("donate-overlay");
   if (overlay) overlay.style.display = "none";
+  document.body.classList.remove("no-scroll-popup");
 };
 
 // DOMContentLoaded logic
@@ -73,6 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('welcome-overlay')?.style.setProperty('display', 'block');
     document.getElementById('welcome-message')?.style.setProperty('display', 'block');
     setCookie("welcome-messageShown", true, 365);
+    document.body.classList.add("no-scroll-popup");
   }
 
   // Cookie pop-up logic

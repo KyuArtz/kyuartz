@@ -80,7 +80,7 @@
     "promotionsEngagements": "PROMOTIONS & ENGAGEMENTS",
     "priceInfo": "PRICE INFO",
 
-    "orderNow": "Order Now",
+    "requestNow": "Request Now",
     "viewQueue": "View Queue",
 
     "clientInfoTitle": "Client - Public View",
@@ -155,7 +155,7 @@
 
     "serviceInfo": "SERVICE INFO",
     "termsOfService": "Terms of Service",
-    "ebAssistant": "EB Assistant",
+    "meoAssistant": "Meo Assistant",
     "help": "Help",
     "preferences": "Preferences",
     "kyuartzVirtualAssistant": "Kyuartz Virtual Assistant",
@@ -299,7 +299,7 @@
   "promotionsEngagements": "プロモーション & キャンペーン",
   "priceInfo": "料金情報",
 
-  "orderNow": "今すぐ注文",
+  "requestNow": "今すぐリクエスト",
   "viewQueue": "待機リストを見る",
 
   "clientInfoTitle": "クライアント - 公開情報",
@@ -375,7 +375,7 @@
 
   "serviceInfo": "サービス情報",
   "termsOfService": "利用規約",
-  "ebAssistant": "EBアシスタント",
+  "meoAssistant": "Meoアシスタント",
   "help": "ヘルプ",
   "preferences": "設定",
   "kyuartzVirtualAssistant": "Kyuartzバーチャルアシスタント",

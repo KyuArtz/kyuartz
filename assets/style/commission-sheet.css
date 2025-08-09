@@ -20,6 +20,7 @@
 .cs-container h2 {
     position: relative;
     color: var(--text-color);
+    font-family: 'myFont', sans-serif;
 }
 
 .cs-container p {
@@ -84,6 +85,7 @@
     color: var(--color);
     padding: 10px;
     border-bottom: 1px solid var(--color);
+    font-family: 'myFont', sans-serif;
 }
 
 span.price-amount,
@@ -120,6 +122,10 @@ span.percent {
     border: 1px solid;
     color: var(--color);
     transition: background 0.3s ease-in-out;
+}
+
+.inquire-button span {
+    font-family: 'myFont', sans-serif;
 }
 
 .inquire-button a:hover {
@@ -167,6 +173,7 @@ section h2 {
     border-bottom: 1px solid var(--color);
     padding: 10px;
     margin: 0;
+    font-family: 'myFont', sans-serif;
 }
 
 @media screen and (max-width: 500px) {

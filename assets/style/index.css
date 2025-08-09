@@ -99,6 +99,7 @@ button.prev {
 .caption-overlay p {
   margin: 15px 20px;
   text-shadow: 0 0 3px #000;
+  font-family: 'myFont', sans-serif;
 }
 
 .caption-btn {
@@ -119,6 +120,10 @@ button.prev {
   color: var(--color);
   background: var(--theme-color);
   transition: background 0.3s ease-in-out;
+}
+
+.caption-btn span {
+  font-family: 'myFont', sans-serif;
 }
 
 .caption-btn a:hover {
@@ -165,6 +170,7 @@ button.prev {
 
 .video-container h2 {
   color: var(--color);
+  font-family: 'myFont', sans-serif;
 }
 
 .carousel {

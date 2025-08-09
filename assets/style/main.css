@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'myFont', sans-serif;
+    font-family: 'roboto', sans-serif;
     cursor: default;
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
@@ -154,43 +154,20 @@ body {
     --theme-overlay: rgba(255, 168, 50, 0.3);
 }
 
-#abilities-scrollable p,
-#background p,
-.summary-content p,
-.experience-content p,
-.cs-content p,
-.cs-content2 p,
-.comic-popup p,
-.character-card p,
-.character-info p,
-.tos-container p,
-.pp-container p,
-.faq-container p,
-.help-card p,
-.main-help-card p,
-.user-guide p,
-.troubleshooting p,
-.pp-item li,
-.whats-new-popup li,
-.notice-content span,
-.user-guide li,
-.troubleshooting li {
-    font-family: 'Roboto', sans-serif;
-}
-
 a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 0.8rem;
 }
 
+button {
+    font-family: 'myFont', sans-serif;
+}
+
 button,
-a,
-a i,
-a p,
-a span,
-button i,
+a, a i, a p, a span,
 .caption-btn a,
+button i,
 .settings-btn i,
 input[type="Submit"] {
     cursor: pointer;

@@ -24,6 +24,12 @@
     color: var(--text-color);
 }
 
+h1 span, 
+h2 span, 
+h3 span {
+    font-family: 'myFont', sans-serif;
+}
+
 .slots-container h3 {
     border-bottom: 2px solid var(--color);
 }
