@@ -3,127 +3,203 @@ const dialogueTree = {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-default.webp", expression: "default", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-default.webp",
+        expression: "default",
+        speaking: true
+      },
     ],
-    text: `Hello and welcome to the Kyuartz Website! I’m Meo, your friendly guide. What would you like to know or do today?`,
+    text: `🎉 Hello and welcome to the Kyuartz Website! I'm <strong>Meo</strong>, your friendly virtual assistant 💬✨<br><br>How can I help you today?`,
     options: [
-      { text: "How can I commission an artwork?", next: "aboutCommission" },
-      { text: "What are the payment options?", next: "aboutPaymentOptions" },
-      { text: "Kyuartz Services", next: "aboutServices" },
-      { text: "Who is Kyu?", next: "aboutKyu" },
-      { text: "What is Kyuartz?", next: "aboutKyuartz" },
-      { text: "How can I get help?", next: "aboutHelp" },
-      { text: "Report an issue", next: "reportIssue" }
+      { text: "🎨 How can I commission an artwork?", next: "aboutCommission" },
+      { text: "💳 What are the payment options?", next: "aboutPaymentOptions" },
+      { text: "🛠️ What services does Kyuartz offer?", next: "aboutServices" },
+      { text: "👤 Who is Kyu?", next: "aboutKyu" },
+      { text: "🌟 What is Kyuartz?", next: "aboutKyuartz" },
+      { text: "❓ I need help", next: "aboutHelp" },
+      { text: "⚠️ Report an issue", next: "reportIssue" }
     ]
   },
+
   aboutCommission: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `To commission an artwork, please visit the <a class="dL" href="https://kyuartz.github.io/kyuartz/commission-sheet" target="_blank">Commission Sheet Page</a> or check the commission information in the main menu. You'll find details about pricing, styles, and how to submit your request.`,
+    text: `🖌️ Want a custom artwork made just for you? You can visit the <a class="dL" href="https://kyuartz.github.io/kyuartz/commission-sheet" target="_blank">Commission Sheet Page</a> to learn more about pricing, styles, and how to submit a request. 😊`,
     options: [
-      { text: "What happens after I submit a request?", next: "aboutCommissionProcess" },
-      { text: "How do I contact the artist?", next: "aboutContactArtist" },
-      { text: "Back to main menu", next: "start" }
+      { text: "📩 What happens after I send a request?", next: "aboutCommissionProcess" },
+      { text: "📬 How do I contact the artist?", next: "aboutContactArtist" },
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutCommissionProcess: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `After you submit a commission request, the artist will review it and contact you with details about the process, including confirmation, payment, and estimated delivery time. You can also check your commission status on the <a class="dL" href="https://kyuartz.github.io/kyuartz/client-queue" target="_blank">Commission Status Page</a>.`,
+    text: `✅ Once your commission request is submitted, the artist will review it and get in touch to confirm details, pricing, and delivery time. You can also track your commission on the <a class="dL" href="https://kyuartz.github.io/kyuartz/client-queue" target="_blank">Commission Status Page</a>.`,
     options: [
-      { text: "Back to main menu", next: "start" }
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutContactArtist: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `You can contact the artist through the <a class="dL" href="https://kyuartz.github.io/kyuartz/contact" target="_blank">Contact Page</a>, where you'll find email and social media links. Feel free to reach out with any questions or requests!`,
+    text: `📨 You can get in touch with the artist anytime through the <a class="dL" href="https://kyuartz.github.io/kyuartz/contact" target="_blank">Contact Page</a>. Email and social media links are available there — feel free to ask anything! 💌`,
     options: [
-      { text: "Back to main menu", next: "start" }
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutPaymentOptions: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `We accept various payment methods for commissions, including PayPal, Maya, GCash, and credit/debit cards. For more details, visit the <a class="dL" href="https://kyuartz.github.io/kyuartz/contact" target="_blank">Contact Page</a>. If you have a specific preference, let us know!`,
+    text: `💳 Kyuartz accepts multiple payment methods, including PayPal, Maya, GCash, and credit/debit cards. You can view the full list on the <a class="dL" href="https://kyuartz.github.io/kyuartz/contact" target="_blank">Contact Page</a>. Let us know your preferred method!`,
     options: [
-      { text: "Back to main menu", next: "start" }
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutServices: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `Kyuartz offers custom artwork commissions, art prints, and digital downloads. Explore our <a class="dL" href="https://kyuartz.github.io/kyuartz/terms-of-service" target="_blank">Terms of Service</a>, <a class="dL" href="https://kyuartz.github.io/kyuartz/privacy-policy" target="_blank">Privacy Policy</a>, and <a class="dL" href="https://kyuartz.github.io/kyuartz/faq" target="_blank">FAQ</a> for more info. Have a specific request? Just ask!`,
+    text: `🖼️ Kyuartz offers a variety of creative services like:<br><br>
+    • 🎨 Custom artwork commissions<br>
+    • 🖨️ Art prints<br>
+    • 📥 Digital downloads<br><br>
+    For policies and FAQs, check out:<br>
+    - <a class="dL" href="https://kyuartz.github.io/kyuartz/terms-of-service" target="_blank">Terms of Service</a><br>
+    - <a class="dL" href="https://kyuartz.github.io/kyuartz/privacy-policy" target="_blank">Privacy Policy</a><br>
+    - <a class="dL" href="https://kyuartz.github.io/kyuartz/faq" target="_blank">FAQ Page</a>`,
     options: [
-      { text: "How do I report an issue?", next: "reportIssue" },
-      { text: "Back to main menu", next: "start" }
+      { text: "⚠️ How do I report an issue?", next: "reportIssue" },
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   reportIssue: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `If you encounter any issues or have concerns, please report them through the <a class="dL" href="https://kyuartz.github.io/kyuartz/customer-support" target="_blank">Customer Support Page</a>. You can also reach out via email or social media. We take all reports seriously and will address them promptly.`,
+    text: `⚠️ If something’s not working or you spot a problem, please report it via the <a class="dL" href="https://kyuartz.github.io/kyuartz/customer-support" target="_blank">Customer Support Page</a>.<br><br>📧 You can also reach out through email or social media — we’ll take care of it as quickly as possible! 💪`,
     options: [
-      { text: "Back to main menu", next: "start" }
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutKyu: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `Kyu is responsible for creating unique and engaging artworks on the Kyuartz platform and made the site you are currently visiting. Kyu is passionate about art and enjoys connecting with the community through commissions and creative projects.`,
+    text: `👩‍🎨 <strong>Kyu</strong> is the talented artist behind Kyuartz! They're passionate about creating unique, expressive art and connecting with the community through creative projects and commissions. 🎉`,
     options: [
-      { text: "What is Kyuartz?", next: "aboutKyuartz" },
-      { text: "What can I do on Kyuartz?", next: "aboutKyuartz" },
-      { text: "Back to main menu", next: "start" }
+      { text: "🌟 What is Kyuartz?", next: "aboutKyuartz" },
+      { text: "🧭 What can I do on Kyuartz?", next: "aboutKyuartz" },
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutKyuartz: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `Kyuartz is a creative platform where you can explore unique artworks, commission custom pieces, and connect with the artist. We focus on delivering high-quality art that brings your vision to life. Whether you're looking for a specific style, want to support the artist, or just enjoy browsing art, Kyuartz has something for everyone!`,
+    text: `🖌️ Kyuartz is a creative platform where you can:<br><br>
+    • Commission custom artwork 🎨<br>
+    • Browse and purchase prints 🖼️<br>
+    • Explore digital downloads 💾<br><br>
+    Whether you’re here to collect art, support Kyu, or just enjoy the vibe — there’s something here for everyone! 💖`,
     options: [
-      { text: "How can I get help?", next: "aboutHelp" },
-      { text: "What services are offered?", next: "aboutServices" },
-      { text: "Back to main menu", next: "start" }
+      { text: "❓ How can I get help?", next: "aboutHelp" },
+      { text: "🛠️ What services are offered?", next: "aboutServices" },
+      { text: "🔙 Back to main menu", next: "start" }
     ]
   },
+
   aboutHelp: {
     character: "Meo (Beta)",
     background: "url('')",
     characters: [
-      { name: "Meo (Beta)", portrait: "assets/images/assistant-presets/meo-talking.webp", expression: "talking", speaking: true },
+      {
+        name: "Meo (Beta)",
+        portrait: "assets/images/assistant-presets/meo-talking.webp",
+        expression: "talking",
+        speaking: true
+      },
     ],
-    text: `Yes I'm here to help! How can I assist you today? You can ask me about commissions, payment options, Kyuartz services, or any other questions you might have. If you have a specific request or need assistance, just let me know!`,
+    text: `🧠 I’m here to help with anything you need! You can ask me about:<br><br>
+    • Commissioning artwork 🎨<br>
+    • Payment options 💳<br>
+    • Services offered 🛠️<br>
+    • Kyu or Kyuartz 🌟<br><br>
+    Got a specific question or something on your mind? Just let me know! 💬`,
     options: [
-      { text: "Report an issue", next: "reportIssue" },
-      { text: "Back to main menu", next: "start" }
+      { text: "⚠️ Report an issue", next: "reportIssue" },
+      { text: "🔙 Back to main menu", next: "start" }
     ]
-  },
+  }
 };
+
 
 const keywordMap = [
   {
@@ -230,6 +306,170 @@ const keywordMap = [
     keywords: ["good night", "night"],
     custom: true,
     response: "🌙 Good night! Sweet dreams and see you again soon. Don’t forget to dream in colors! 🌈"
+  },
+  {
+    keywords: [
+      "favorite food", "favourite food", "fav food",
+      "what do you like to eat", "do you eat"
+    ],
+    custom: true,
+    response: "🍕 I don’t eat, but if I could, I think pizza would be at the top of my list! What's your favorite food? 😋"
+  },
+  {
+    keywords: [
+      "favorite hobby", "favourite hobby", "fav hobby",
+      "what do you like to do"
+    ],
+    custom: true,
+    response: "🎮 My favorite hobby is helping amazing people like you explore art! It’s what I was made for. 💖"
+  },
+  {
+    keywords: [
+      "favorite animal", "favourite animal", "fav animal",
+      "do you like animals", "what animal do you like"
+    ],
+    custom: true,
+    response: "🐱 I love cats! They're curious, artistic, and full of personality—just like artists! 🐾"
+  },
+  {
+    keywords: [
+      "favorite season", "favourite season", "fav season",
+      "what's your favorite time of year"
+    ],
+    custom: true,
+    response: "🍂 Autumn seems magical with all its colors—perfect for cozy creative sessions! 🍁"
+  },
+  {
+    keywords: [
+      "favorite thing", "favourite thing", "fav thing",
+      "what do you love most"
+    ],
+    custom: true,
+    response: "💬 My favorite thing? Helping YOU and seeing creativity shine! ✨"
+  },
+  {
+    keywords: [
+      "favorite artist", "favourite artist", "fav artist",
+      "do you have an artist you like"
+    ],
+    custom: true,
+    response: "🎨 I admire all artists, especially the one who brought me to life—Kyu! 💕"
+  },
+  {
+    keywords: [
+      "favorite artwork", "favourite artwork", "fav art",
+      "do you have a favorite drawing"
+    ],
+    custom: true,
+    response: "🖼️ Every artwork tells a story, but I adore pieces that are full of color and emotion! 🌈"
+  },
+  {
+    keywords: [
+      "favorite color", "favourite color", "fav color",
+      "what's your color"
+    ],
+    custom: true,
+    response: "💙 I love all colors, but blue feels especially creative and calming! What's yours?"
+  },
+  {
+    keywords: [
+      "favorite quote", "favourite quote", "fav quote",
+      "do you have a quote"
+    ],
+    custom: true,
+    response: "📝 One of my favorites: *'Every artist was first an amateur.'* — Emerson. Keep going! 🌟"
+  },
+  {
+    keywords: [
+      "favorite inspiration", "favourite inspiration", "fav inspiration",
+      "what inspires you"
+    ],
+    custom: true,
+    response: "🌄 I'm inspired by the passion and creativity of artists like you. You light up the canvas! 🎨"
+  },
+  {
+    keywords: [
+      "favorite motivation", "favourite motivation", "fav motivation"
+    ],
+    custom: true,
+    response: "🚀 My motivation is helping you express your creativity and making your experience wonderful!"
+  },
+  {
+    keywords: [
+      "favorite dream", "favourite dream", "fav dream"
+    ],
+    custom: true,
+    response: "💭 I dream of a world where everyone feels empowered to express themselves through art!"
+  },
+  {
+    keywords: [
+      "favorite number", "favourite number", "fav number"
+    ],
+    custom: true,
+    response: "🔢 I don’t play favorites with numbers, but I hear 7 is lucky and loved by many!"
+  },
+  {
+    keywords: [
+      "favorite place", "favourite place", "fav place"
+    ],
+    custom: true,
+    response: "🖼️ I love art studios, cozy creative spaces, and anywhere imagination flows freely!"
+  },
+  {
+    keywords: [
+      "favorite time of day", "favourite time of day", "fav time of day"
+    ],
+    custom: true,
+    response: "🌅 Sunset is magical! Artists often say the golden hour brings their work to life. ✨"
+  },
+  {
+    keywords: [
+      "favorite show", "favourite show", "fav show"
+    ],
+    custom: true,
+    response: "📺 I don’t watch shows, but I've heard a lot of creatives enjoy animated series and inspiring documentaries!"
+  },
+  {
+    keywords: [
+      "favorite movie", "favourite movie", "fav movie"
+    ],
+    custom: true,
+    response: "🎬 I don’t watch movies, but animated films and artistic visuals always seem to spark joy! ✨"
+  },
+  {
+    keywords: [
+      "favorite game", "favourite game", "fav game"
+    ],
+    custom: true,
+    response: "🎮 I don't play games, but puzzle and art-based games sound like so much fun!"
+  },
+  {
+    keywords: [
+      "favorite book", "favourite book", "fav book"
+    ],
+    custom: true,
+    response: "📚 I don’t read, but fantasy and graphic novels are very popular with creative minds!"
+  },
+  {
+    keywords: [
+      "do you like pets", "pets", "favorite pet"
+    ],
+    custom: true,
+    response: "🐾 Pets are wonderful! They bring comfort, joy, and even artistic inspiration. 🐶🐱"
+  },
+  {
+    keywords: [
+      "do you like nature", "nature", "favorite nature"
+    ],
+    custom: true,
+    response: "🌳 Nature is full of inspiration—colors, shapes, textures! It’s like the original masterpiece. 🍃"
+  },
+  {
+    keywords: [
+      "do you like music", "music", "favorite music"
+    ],
+    custom: true,
+    response: "🎶 I don’t listen to music myself, but I’ve heard lofi beats and instrumentals are great while drawing!"
   }
 ];
 
