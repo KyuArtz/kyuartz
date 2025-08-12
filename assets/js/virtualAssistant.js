@@ -499,7 +499,7 @@ class DialogueManager {
     this.setupVoiceFeatures();
   }
 
-  typeWriterEffect(text, speed = 7) {
+  typeWriterEffect(text, speed = 10) {
     if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
     this.textElement.innerHTML = '👉👉👉';
     this.lastSpokenText = text; // Store for TTS
