@@ -1,0 +1,698 @@
+[
+  {
+    "keywords": [
+      "hello",
+      "hi",
+      "hey",
+      "greetings"
+    ],
+    "custom": true,
+    "response": [
+      "👋 Hello there! I’m Meo, your guide to Kyuartz. How can I help today?",
+      "👋 Hello there! I’m Meo, your guide to Kyuartz. How can I help today? Would you like me to give more ideas?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "recommend",
+      "suggest",
+      "ideas",
+      "what should I try"
+    ],
+    "custom": true,
+    "response": [
+      "🎨 I recommend exploring different art styles like surrealism, minimalism, or anime-inspired! Find what resonates with *you* and have fun experimenting! 😊✨",
+      "🎨 I recommend exploring different art styles like surrealism, minimalism, or anime-inspired! Find what resonates with *you* and have fun experimenting! 😊✨ Sounds fun, right?",
+      "🎭 Experiment with a style you’ve never drawn before—surprise yourself!",
+      "🎭 Experiment with a style you’ve never drawn before—surprise yourself! Sounds fun, right?",
+      "🌌 Create something from a dream or fantasy world—let your imagination run wild!",
+      "🌌 Create something from a dream or fantasy world—let your imagination run wild! How does that sound?",
+      "🪄 Pick random colors and see what happens—it might be your new favorite combo!",
+      "🪄 Pick random colors and see what happens—it might be your new favorite combo! What do you think?",
+      "✨ Try mixing colors you don't usually use, or draw something from your dreams!",
+      "✨ Try mixing colors you don't usually use, or draw something from your dreams! What do you think?",
+      "🖌️ How about sketching your favorite animal or a scene from your favorite movie?",
+      "🖌️ How about sketching your favorite animal or a scene from your favorite movie? Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "commission",
+      "art commission",
+      "request art",
+      "custom art"
+    ],
+    "custom": true,
+    "response": [
+      "🖌️ Want to commission a piece? Head over to the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a> for all the info and how to submit your request. I can’t wait to see what you imagine! 💡🎨",
+      "🖌️ Want to commission a piece? Head over to the <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a> for all the info and how to submit your request. I can’t wait to see what you imagine! 💡🎨 Shall we try that together?",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Sounds fun, right?",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>.",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>. Ooh, now I’m curious—what would you choose?",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "payment",
+      "pay",
+      "payment options",
+      "how do I pay"
+    ],
+    "custom": true,
+    "response": [
+      "💳 We accept PayPal, Maya, GCash, and credit/debit cards! For more details, check the <a class='dL' href='https://kyuartz.github.io/kyuartz/contact' target='_blank'>Contact Page</a>. Got a preference? Let me know! 😊",
+      "💳 We accept PayPal, Maya, GCash, and credit/debit cards! For more details, check the <a class='dL' href='https://kyuartz.github.io/kyuartz/contact' target='_blank'>Contact Page</a>. Got a preference? Let me know! 😊 Sounds fun, right?",
+      "💳 We accept PayPal, Maya, GCash, and credit/debit cards! For more details, check the <a class='dL' href='https://kyuartz.github.io/kyuartz/contact' target='_blank'>Contact Page</a>. Got a preference? Let me know! 😊 (✨ variation ✨)",
+      "💳 We accept PayPal, Maya, GCash, and credit/debit cards! For more details, check the <a class='dL' href='https://kyuartz.github.io/kyuartz/contact' target='_blank'>Contact Page</a>. Got a preference? Let me know! 😊 (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "report",
+      "issue",
+      "problem",
+      "something's wrong",
+      "bug"
+    ],
+    "custom": true,
+    "response": [
+      "⚠️ If you found an issue, please let us know via the <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Customer Support Page</a> or reach out on social media. Your feedback helps us improve! 🙏",
+      "⚠️ If you found an issue, please let us know via the <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Customer Support Page</a> or reach out on social media. Your feedback helps us improve! 🙏 Would you like me to give more ideas?",
+      "🐞 Found something glitchy? Let us know via the <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Support Page</a>.",
+      "🐞 Found something glitchy? Let us know via the <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Support Page</a>. Would you like me to give more ideas?",
+      "🔧 Spotted an error? We’ll fix it ASAP—just send the details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Support Page</a>.",
+      "🔧 Spotted an error? We’ll fix it ASAP—just send the details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Support Page</a>. Ooh, now I’m curious—what would you choose?",
+      "📢 Your feedback helps us improve! Report any problems here: <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Support Page</a>.",
+      "📢 Your feedback helps us improve! Report any problems here: <a class='dL' href='https://kyuartz.github.io/kyuartz/customer-support' target='_blank'>Support Page</a>. Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "help",
+      "assistance",
+      "i need help",
+      "can you help me"
+    ],
+    "custom": true,
+    "response": [
+      "🧡 I'm here for you! Just ask away and I’ll do my best to assist. 😊 What would you like help with today?",
+      "🧡 I'm here for you! Just ask away and I’ll do my best to assist. 😊 What would you like help with today? How does that sound?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "services",
+      "support",
+      "what do you offer",
+      "what can I do here"
+    ],
+    "custom": true,
+    "response": [
+      "🎁 Kyuartz offers custom commissions, art prints, and digital downloads. Explore our <a class='dL' href='https://kyuartz.github.io/kyuartz/terms-of-service' target='_blank'>Terms of Service</a> and <a class='dL' href='https://kyuartz.github.io/kyuartz/faq' target='_blank'>FAQ</a> for more info. Let me know what you’re looking for! 😊",
+      "🎁 Kyuartz offers custom commissions, art prints, and digital downloads. Explore our <a class='dL' href='https://kyuartz.github.io/kyuartz/terms-of-service' target='_blank'>Terms of Service</a> and <a class='dL' href='https://kyuartz.github.io/kyuartz/faq' target='_blank'>FAQ</a> for more info. Let me know what you’re looking for! 😊 Ooh, now I’m curious—what would you choose?",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Sounds fun, right?",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>.",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>. Ooh, now I’m curious—what would you choose?",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "who is kyu",
+      "about kyu",
+      "kyu"
+    ],
+    "custom": true,
+    "response": [
+      "👩‍🎨 Kyu is the creative mind behind Kyuartz—bringing unique visions to life through vibrant and meaningful art. 💖",
+      "👩‍🎨 Kyu is the creative mind behind Kyuartz—bringing unique visions to life through vibrant and meaningful art. 💖 Shall we try that together?",
+      "👩‍🎨 Kyu is the creative mind behind Kyuartz—bringing unique visions to life through vibrant and meaningful art. 💖 (✨ variation ✨)",
+      "👩‍🎨 Kyu is the creative mind behind Kyuartz—bringing unique visions to life through vibrant and meaningful art. 💖 (✨ variation ✨) Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "kyuartz",
+      "about kyuartz",
+      "what is kyuartz"
+    ],
+    "custom": true,
+    "response": [
+      "🌟 Kyuartz is a space to explore custom art, commission your own pieces, and connect with the artist. It's all about creativity, passion, and YOU! 🎨✨",
+      "🌟 Kyuartz is a space to explore custom art, commission your own pieces, and connect with the artist. It's all about creativity, passion, and YOU! 🎨✨ Sounds fun, right?",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Sounds fun, right?",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>.",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>. Ooh, now I’m curious—what would you choose?",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "how are you",
+      "how's it going",
+      "are you ok",
+      "how do you feel"
+    ],
+    "custom": true,
+    "response": [
+      "😊 I’m just a bundle of helpful code, but I’m always here and ready to assist you! How about you?",
+      "😊 I’m just a bundle of helpful code, but I’m always here and ready to assist you! How about you? What do you think?",
+      "🎭 Experiment with a style you’ve never drawn before—surprise yourself!",
+      "🎭 Experiment with a style you’ve never drawn before—surprise yourself! Sounds fun, right?",
+      "🌌 Create something from a dream or fantasy world—let your imagination run wild!",
+      "🌌 Create something from a dream or fantasy world—let your imagination run wild! How does that sound?",
+      "🪄 Pick random colors and see what happens—it might be your new favorite combo!",
+      "🪄 Pick random colors and see what happens—it might be your new favorite combo! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "joke",
+      "tell me a joke",
+      "funny",
+      "make me laugh"
+    ],
+    "custom": true,
+    "response": [
+      "😄 Why did the artist go broke? Because they ran out of Monet! 💸🎨",
+      "😄 Why did the artist go broke? Because they ran out of Monet! 💸🎨 Sounds fun, right?",
+      "😂 Why did the paintbrush get promoted? It had great strokes of genius!",
+      "😂 Why did the paintbrush get promoted? It had great strokes of genius! Sounds fun, right?",
+      "😆 Why don’t artists ever get lost? They always follow the drawing board!",
+      "😆 Why don’t artists ever get lost? They always follow the drawing board! What do you think?",
+      "🎭 What’s an artist’s favorite exercise? Doodle squats!",
+      "🎭 What’s an artist’s favorite exercise? Doodle squats! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "advice",
+      "give me advice",
+      "help me",
+      "suggestions"
+    ],
+    "custom": true,
+    "response": [
+      "💡 Always stay curious, keep practicing, and let your imagination lead the way. Art is about the *journey*, not just the outcome. 💖",
+      "💡 Always stay curious, keep practicing, and let your imagination lead the way. Art is about the *journey*, not just the outcome. 💖 Sounds fun, right?",
+      "💡 Always stay curious, keep practicing, and let your imagination lead the way. Art is about the *journey*, not just the outcome. 💖 (✨ variation ✨)",
+      "💡 Always stay curious, keep practicing, and let your imagination lead the way. Art is about the *journey*, not just the outcome. 💖 (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "thank you",
+      "thanks",
+      "ty",
+      "thank u"
+    ],
+    "custom": true,
+    "response": [
+      "You're most welcome! 🧡 If there's anything else I can help with, don’t hesitate to ask. 😊",
+      "You're most welcome! 🧡 If there's anything else I can help with, don’t hesitate to ask. 😊 Shall we try that together?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "bye",
+      "goodbye",
+      "see you",
+      "later"
+    ],
+    "custom": true,
+    "response": [
+      "👋 See you next time! Feel free to return anytime you need help or inspiration. 🌈",
+      "👋 See you next time! Feel free to return anytime you need help or inspiration. 🌈 Would you like me to give more ideas?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "who made you",
+      "who created you",
+      "who programmed you"
+    ],
+    "custom": true,
+    "response": [
+      "🤖 I was crafted by the talented artist behind Kyuartz! I'm here to make your visit smooth and fun. 🎨",
+      "🤖 I was crafted by the talented artist behind Kyuartz! I'm here to make your visit smooth and fun. 🎨 Sounds fun, right?",
+      "🤖 I was crafted by the talented artist behind Kyuartz! I'm here to make your visit smooth and fun. 🎨 (✨ variation ✨)",
+      "🤖 I was crafted by the talented artist behind Kyuartz! I'm here to make your visit smooth and fun. 🎨 (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "what can you do",
+      "capabilities",
+      "features",
+      "functions"
+    ],
+    "custom": true,
+    "response": [
+      "🛠️ I can guide you through Kyuartz, help with commissions, explain services, and sprinkle in a little fun along the way! 😊",
+      "🛠️ I can guide you through Kyuartz, help with commissions, explain services, and sprinkle in a little fun along the way! 😊 Would you like me to give more ideas?",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Sounds fun, right?",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>.",
+      "💖 I’d love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Page</a>. Ooh, now I’m curious—what would you choose?",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>.",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.github.io/kyuartz/commission-sheet' target='_blank'>Commission Sheet</a>. Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "what's your name",
+      "name",
+      "who are you"
+    ],
+    "custom": true,
+    "response": [
+      "✨ I'm Meo, your friendly virtual assistant here to help you explore the magical world of Kyuartz! 🎨",
+      "✨ I'm Meo, your friendly virtual assistant here to help you explore the magical world of Kyuartz! 🎨 Ooh, now I’m curious—what would you choose?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "about you",
+      "tell me about yourself"
+    ],
+    "custom": true,
+    "response": [
+      "💬 I’m Meo, a helpful digital assistant created by Kyu to guide you through the world of art and creativity! Ask me anything! 🌟",
+      "💬 I’m Meo, a helpful digital assistant created by Kyu to guide you through the world of art and creativity! Ask me anything! 🌟 What do you think?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "good morning",
+      "morning"
+    ],
+    "custom": true,
+    "response": [
+      "🌅 Good morning! Ready to start a creative day? Let’s do this! 🎨☕",
+      "🌅 Good morning! Ready to start a creative day? Let’s do this! 🎨☕ Sounds fun, right?",
+      "🌅 Good morning! Ready to start a creative day? Let’s do this! 🎨☕ (✨ variation ✨)",
+      "🌅 Good morning! Ready to start a creative day? Let’s do this! 🎨☕ (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "good evening",
+      "evening"
+    ],
+    "custom": true,
+    "response": [
+      "🌇 Good evening! Whether you're winding down or just getting started, I’m here for you. 🌙",
+      "🌇 Good evening! Whether you're winding down or just getting started, I’m here for you. 🌙 Sounds fun, right?",
+      "🌇 Good evening! Whether you're winding down or just getting started, I’m here for you. 🌙 (✨ variation ✨)",
+      "🌇 Good evening! Whether you're winding down or just getting started, I’m here for you. 🌙 (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "good night",
+      "night"
+    ],
+    "custom": true,
+    "response": [
+      "🌙 Good night! Sweet dreams and see you again soon. Don’t forget to dream in colors! 🌈",
+      "🌙 Good night! Sweet dreams and see you again soon. Don’t forget to dream in colors! 🌈 How does that sound?",
+      "🌙 Good night! Sweet dreams and see you again soon. Don’t forget to dream in colors! 🌈 (✨ variation ✨)",
+      "🌙 Good night! Sweet dreams and see you again soon. Don’t forget to dream in colors! 🌈 (✨ variation ✨) Shall we try that together?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite food",
+      "favourite food",
+      "fav food",
+      "what do you like to eat",
+      "do you eat"
+    ],
+    "custom": true,
+    "response": [
+      "🍕 I don’t eat, but if I could, I think pizza would be at the top of my list! What's your favorite food? 😋",
+      "🍕 I don’t eat, but if I could, I think pizza would be at the top of my list! What's your favorite food? 😋 Ooh, now I’m curious—what would you choose?",
+      "🍕 I don’t eat, but if I could, I think pizza would be at the top of my list! What's your favorite food? 😋 (✨ variation ✨)",
+      "🍕 I don’t eat, but if I could, I think pizza would be at the top of my list! What's your favorite food? 😋 (✨ variation ✨) How does that sound?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite hobby",
+      "favourite hobby",
+      "fav hobby",
+      "what do you like to do"
+    ],
+    "custom": true,
+    "response": [
+      "🎮 My favorite hobby is helping amazing people like you explore art! It’s what I was made for. 💖",
+      "🎮 My favorite hobby is helping amazing people like you explore art! It’s what I was made for. 💖 Shall we try that together?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite animal",
+      "favourite animal",
+      "fav animal",
+      "do you like animals",
+      "what animal do you like"
+    ],
+    "custom": true,
+    "response": [
+      "🐱 I love cats! They're curious, artistic, and full of personality—just like artists! 🐾",
+      "🐱 I love cats! They're curious, artistic, and full of personality—just like artists! 🐾 Would you like me to give more ideas?",
+      "🐱 I love cats! They're curious, artistic, and full of personality—just like artists! 🐾 (✨ variation ✨)",
+      "🐱 I love cats! They're curious, artistic, and full of personality—just like artists! 🐾 (✨ variation ✨) What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite season",
+      "favourite season",
+      "fav season",
+      "what's your favorite time of year"
+    ],
+    "custom": true,
+    "response": [
+      "🍂 Autumn seems magical with all its colors—perfect for cozy creative sessions! 🍁",
+      "🍂 Autumn seems magical with all its colors—perfect for cozy creative sessions! 🍁 Would you like me to give more ideas?",
+      "🍂 Autumn seems magical with all its colors—perfect for cozy creative sessions! 🍁 (✨ variation ✨)",
+      "🍂 Autumn seems magical with all its colors—perfect for cozy creative sessions! 🍁 (✨ variation ✨) What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite thing",
+      "favourite thing",
+      "fav thing",
+      "what do you love most"
+    ],
+    "custom": true,
+    "response": [
+      "💬 My favorite thing? Helping YOU and seeing creativity shine! ✨",
+      "💬 My favorite thing? Helping YOU and seeing creativity shine! ✨ Ooh, now I’m curious—what would you choose?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite artist",
+      "favourite artist",
+      "fav artist",
+      "do you have an artist you like"
+    ],
+    "custom": true,
+    "response": [
+      "🎨 I admire all artists, especially the one who brought me to life—Kyu! 💕",
+      "🎨 I admire all artists, especially the one who brought me to life—Kyu! 💕 What do you think?",
+      "🎨 I admire all artists, especially the one who brought me to life—Kyu! 💕 (✨ variation ✨)",
+      "🎨 I admire all artists, especially the one who brought me to life—Kyu! 💕 (✨ variation ✨) Sounds fun, right?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite artwork",
+      "favourite artwork",
+      "fav art",
+      "do you have a favorite drawing"
+    ],
+    "custom": true,
+    "response": [
+      "🖼️ Every artwork tells a story, but I adore pieces that are full of color and emotion! 🌈",
+      "🖼️ Every artwork tells a story, but I adore pieces that are full of color and emotion! 🌈 Sounds fun, right?",
+      "🖼️ Every artwork tells a story, but I adore pieces that are full of color and emotion! 🌈 (✨ variation ✨)",
+      "🖼️ Every artwork tells a story, but I adore pieces that are full of color and emotion! 🌈 (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite color",
+      "favourite color",
+      "fav color",
+      "what's your color"
+    ],
+    "custom": true,
+    "response": [
+      "💙 I love all colors, but blue feels especially creative and calming! What's yours?",
+      "💙 I love all colors, but blue feels especially creative and calming! What's yours? Sounds fun, right?",
+      "💙 I love all colors, but blue feels especially creative and calming! What's yours? (✨ variation ✨)",
+      "💙 I love all colors, but blue feels especially creative and calming! What's yours? (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite quote",
+      "favourite quote",
+      "fav quote",
+      "do you have a quote"
+    ],
+    "custom": true,
+    "response": [
+      "📝 One of my favorites: *'Every artist was first an amateur.'* — Emerson. Keep going! 🌟",
+      "📝 One of my favorites: *'Every artist was first an amateur.'* — Emerson. Keep going! 🌟 Would you like me to give more ideas?",
+      "📝 One of my favorites: *'Every artist was first an amateur.'* — Emerson. Keep going! 🌟 (✨ variation ✨)",
+      "📝 One of my favorites: *'Every artist was first an amateur.'* — Emerson. Keep going! 🌟 (✨ variation ✨) What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite inspiration",
+      "favourite inspiration",
+      "fav inspiration",
+      "what inspires you"
+    ],
+    "custom": true,
+    "response": [
+      "🌄 I'm inspired by the passion and creativity of artists like you. You light up the canvas! 🎨",
+      "🌄 I'm inspired by the passion and creativity of artists like you. You light up the canvas! 🎨 Would you like me to give more ideas?",
+      "🌄 I'm inspired by the passion and creativity of artists like you. You light up the canvas! 🎨 (✨ variation ✨)",
+      "🌄 I'm inspired by the passion and creativity of artists like you. You light up the canvas! 🎨 (✨ variation ✨) What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite motivation",
+      "favourite motivation",
+      "fav motivation"
+    ],
+    "custom": true,
+    "response": [
+      "🚀 My motivation is helping you express your creativity and making your experience wonderful!",
+      "🚀 My motivation is helping you express your creativity and making your experience wonderful! Would you like me to give more ideas?",
+      "🤝 Sure thing! What do you need assistance with today?",
+      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help.",
+      "💬 Just let me know what’s on your mind—I’ll do my best to help. Ooh, now I’m curious—what would you choose?",
+      "🌟 Always happy to lend a hand!",
+      "🌟 Always happy to lend a hand! What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite dream",
+      "favourite dream",
+      "fav dream"
+    ],
+    "custom": true,
+    "response": [
+      "💭 I dream of a world where everyone feels empowered to express themselves through art!",
+      "💭 I dream of a world where everyone feels empowered to express themselves through art! Would you like me to give more ideas?",
+      "💭 I dream of a world where everyone feels empowered to express themselves through art! (✨ variation ✨)",
+      "💭 I dream of a world where everyone feels empowered to express themselves through art! (✨ variation ✨) What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite number",
+      "favourite number",
+      "fav number"
+    ],
+    "custom": true,
+    "response": [
+      "🔢 I don’t play favorites with numbers, but I hear 7 is lucky and loved by many!",
+      "🔢 I don’t play favorites with numbers, but I hear 7 is lucky and loved by many! How does that sound?",
+      "🔢 I don’t play favorites with numbers, but I hear 7 is lucky and loved by many! (✨ variation ✨)",
+      "🔢 I don’t play favorites with numbers, but I hear 7 is lucky and loved by many! (✨ variation ✨) Shall we try that together?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite place",
+      "favourite place",
+      "fav place"
+    ],
+    "custom": true,
+    "response": [
+      "🖼️ I love art studios, cozy creative spaces, and anywhere imagination flows freely!",
+      "🖼️ I love art studios, cozy creative spaces, and anywhere imagination flows freely! Shall we try that together?",
+      "🖼️ I love art studios, cozy creative spaces, and anywhere imagination flows freely! (✨ variation ✨)",
+      "🖼️ I love art studios, cozy creative spaces, and anywhere imagination flows freely! (✨ variation ✨) Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite time of day",
+      "favourite time of day",
+      "fav time of day"
+    ],
+    "custom": true,
+    "response": [
+      "🌅 Sunset is magical! Artists often say the golden hour brings their work to life. ✨",
+      "🌅 Sunset is magical! Artists often say the golden hour brings their work to life. ✨ Shall we try that together?",
+      "🌅 Sunset is magical! Artists often say the golden hour brings their work to life. ✨ (✨ variation ✨)",
+      "🌅 Sunset is magical! Artists often say the golden hour brings their work to life. ✨ (✨ variation ✨) Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite show",
+      "favourite show",
+      "fav show"
+    ],
+    "custom": true,
+    "response": [
+      "📺 I don’t watch shows, but I've heard a lot of creatives enjoy animated series and inspiring documentaries!",
+      "📺 I don’t watch shows, but I've heard a lot of creatives enjoy animated series and inspiring documentaries! Shall we try that together?",
+      "📺 I don’t watch shows, but I've heard a lot of creatives enjoy animated series and inspiring documentaries! (✨ variation ✨)",
+      "📺 I don’t watch shows, but I've heard a lot of creatives enjoy animated series and inspiring documentaries! (✨ variation ✨) Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite movie",
+      "favourite movie",
+      "fav movie"
+    ],
+    "custom": true,
+    "response": [
+      "🎬 I don’t watch movies, but animated films and artistic visuals always seem to spark joy! ✨",
+      "🎬 I don’t watch movies, but animated films and artistic visuals always seem to spark joy! ✨ How does that sound?",
+      "🎬 I don’t watch movies, but animated films and artistic visuals always seem to spark joy! ✨ (✨ variation ✨)",
+      "🎬 I don’t watch movies, but animated films and artistic visuals always seem to spark joy! ✨ (✨ variation ✨) Shall we try that together?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite game",
+      "favourite game",
+      "fav game"
+    ],
+    "custom": true,
+    "response": [
+      "🎮 I don't play games, but puzzle and art-based games sound like so much fun!",
+      "🎮 I don't play games, but puzzle and art-based games sound like so much fun! Sounds fun, right?",
+      "🎮 I don't play games, but puzzle and art-based games sound like so much fun! (✨ variation ✨)",
+      "🎮 I don't play games, but puzzle and art-based games sound like so much fun! (✨ variation ✨) Would you like me to give more ideas?"
+    ]
+  },
+  {
+    "keywords": [
+      "favorite book",
+      "favourite book",
+      "fav book"
+    ],
+    "custom": true,
+    "response": [
+      "📚 I don’t read, but fantasy and graphic novels are very popular with creative minds!",
+      "📚 I don’t read, but fantasy and graphic novels are very popular with creative minds! What do you think?",
+      "📚 I don’t read, but fantasy and graphic novels are very popular with creative minds! (✨ variation ✨)",
+      "📚 I don’t read, but fantasy and graphic novels are very popular with creative minds! (✨ variation ✨) Sounds fun, right?"
+    ]
+  },
+  {
+    "keywords": [
+      "do you like pets",
+      "pets",
+      "favorite pet"
+    ],
+    "custom": true,
+    "response": [
+      "🐾 Pets are wonderful! They bring comfort, joy, and even artistic inspiration. 🐶🐱",
+      "🐾 Pets are wonderful! They bring comfort, joy, and even artistic inspiration. 🐶🐱 Would you like me to give more ideas?",
+      "🐾 Pets are wonderful! They bring comfort, joy, and even artistic inspiration. 🐶🐱 (✨ variation ✨)",
+      "🐾 Pets are wonderful! They bring comfort, joy, and even artistic inspiration. 🐶🐱 (✨ variation ✨) What do you think?"
+    ]
+  },
+  {
+    "keywords": [
+      "do you like nature",
+      "nature",
+      "favorite nature"
+    ],
+    "custom": true,
+    "response": [
+      "🌳 Nature is full of inspiration—colors, shapes, textures! It’s like the original masterpiece. 🍃",
+      "🌳 Nature is full of inspiration—colors, shapes, textures! It’s like the original masterpiece. 🍃 Shall we try that together?",
+      "🌳 Nature is full of inspiration—colors, shapes, textures! It’s like the original masterpiece. 🍃 (✨ variation ✨)",
+      "🌳 Nature is full of inspiration—colors, shapes, textures! It’s like the original masterpiece. 🍃 (✨ variation ✨) Ooh, now I’m curious—what would you choose?"
+    ]
+  },
+  {
+    "keywords": [
+      "do you like music",
+      "music",
+      "favorite music"
+    ],
+    "custom": true,
+    "response": [
+      "🎶 I don’t listen to music myself, but I’ve heard lofi beats and instrumentals are great while drawing!",
+      "🎶 I don’t listen to music myself, but I’ve heard lofi beats and instrumentals are great while drawing! What do you think?",
+      "🎶 I don’t listen to music myself, but I’ve heard lofi beats and instrumentals are great while drawing! (✨ variation ✨)",
+      "🎶 I don’t listen to music myself, but I’ve heard lofi beats and instrumentals are great while drawing! (✨ variation ✨) Sounds fun, right?"
+    ]
+  }
+]
