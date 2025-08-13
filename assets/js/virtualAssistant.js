@@ -200,7 +200,6 @@ const dialogueTree = {
   }
 };
 
-
 const keywordMap = [
   {
     keywords: ["recommend", "suggest", "ideas", "what should I try"],
@@ -472,7 +471,6 @@ const keywordMap = [
     response: "🎶 I don’t listen to music myself, but I’ve heard lofi beats and instrumentals are great while drawing!"
   }
 ];
-
 
 class DialogueManager {
   constructor(tree, keywordMap) {
