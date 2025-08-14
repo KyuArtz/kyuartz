@@ -155,25 +155,19 @@ header {
     gap: 5px;
 }
 
-.brand a {
-    font-weight: bold;
-    font-size: 1.5rem;
-    font-family: 'myFont', sans-serif;
-}
-
-.sbt {
-    margin-top: -1px;
-    color: var(--color);
-    font-size: 0.8rem;
-}
-
-.my-avatar {
+.brand img {
     width: 42px;
     height: 42px;
     border-radius: 50%;
     aspect-ratio: 1 / 1;
     border: 2px solid var(--color);
     background: var(--color);
+}
+
+.brand a {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'myFont', sans-serif;
 }
 
 .nav-link,
@@ -363,8 +357,6 @@ form.search::after {
     }
     .sideMenu-content {
         width: 100%;
-        padding: 0 !important;
-        top: 0 !important;
     }
 }
 
@@ -373,16 +365,38 @@ form.search::after {
     display: none;
 }
 
+.subBrand {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.subBrand img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--color);
+    background: var(--color);
+}
+
+.subBrand p {
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'myFont', sans-serif;
+    margin: 0;
+}
+
 .sideMenu-content {
     position: fixed;
-    top: 50px;
+    top: 0;
     left: 0;
     background: var(--theme-color);
     display: flex;
     flex-direction: column;
     min-width: 200px;
     height: 100vh;
-    padding-bottom: 50px;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     opacity: 0;
@@ -499,6 +513,7 @@ form.search::after {
 
 .category-menu h2 {
     color: var(--text-color);
+    background: var(--color);
     margin: 0;
     padding: 15px;
     font-family: 'myFont', sans-serif;

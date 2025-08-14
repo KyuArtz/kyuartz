@@ -88,8 +88,13 @@
       <div class="comic-wrapper">
         <ul class="comic-nav">
           <li class="nav-item">
+            <button onclick="window.history.back()" class="nav-link" title="Back" aria-label="Back">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </li>
+          <li class="nav-item">
             <div class="comic-dropdown-container">
-              <button class="nav-link-dropdown" onclick="showChapters()" title="Chapters" aria-haspopup="true" aria-expanded="false">Chapters</button>
+              <button class="nav-link-dropdown" onclick="showChapters()" title="Chapters" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-book-open"></i></button>
               <div id="comicChapter" class="comic-dropdown" role="menu">
                 <a href="chapter-1.html" role="menuitem">Chapter 1 - Coming Soon</a>
                 <a href="chapter-2.html" role="menuitem">Chapter 2 - Coming Soon</a>
@@ -98,10 +103,6 @@
                 <a href="chapter-5.html" role="menuitem">Chapter 5 - Coming Soon</a>
               </div>
             </div>
-          <li class="nav-item">
-            <button onclick="window.history.back()" class="nav-link" title="Back" aria-label="Back">
-              <i class="fa-solid fa-arrow-left"></i>
-            </button>
           </li>
           <li class="nav-item">
             <button type="button" class="nav-link" onclick="openFullscreen();" title="Full Screen" aria-label="Full Screen">

@@ -1,6 +1,24 @@
 {
   "updates": [
     {
+      "date": "2025-08-14",
+      "major": [],
+      "minor": [
+        "UI/UX adjustments to the side menu and category menu."
+      ],
+      "bugfixes": [],
+      "upcoming": []
+    },
+    {
+      "date": "2025-08-13",
+      "major": [],
+      "minor": [
+        "Adjustments and improvements to the virtual assistant, Meo's functionality."
+      ],
+      "bugfixes": [],
+      "upcoming": []
+    },
+    {
       "date": "2025-08-08",
       "major": [
         "Made some improvements to the virtual assistant's dialogue management.",
