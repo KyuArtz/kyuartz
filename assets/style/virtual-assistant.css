@@ -205,8 +205,8 @@ body {
 }
 
 #micBtn, #ttsBtn {
-  background: var(--theme-color);
-  color: var(--color);
+  background: var(--color);
+  color: var(--text-color);
   border: 2px solid var(--color);
   border-radius: 50%;
   width: 35px;
