@@ -420,6 +420,22 @@
   },
   {
     "keywords": [
+      "favorite person",
+      "favourite person",
+      "fav person",
+      "who is your favorite person",
+      "who do you like"
+    ],
+    "custom": true,
+    "response": [
+      "💖 I think all people are amazing in their own way! But if I had to choose, I'd say I admire creative individuals who express themselves through art. What about you?",
+      "🤔 It's hard to pick just one! I appreciate anyone who brings joy and inspiration to the world. How about you?",
+      "I love everyone, but I have a soft spot for artists and creators just like-kyu! 💖",
+      "✨ I think Kyu is pretty amazing! What about you?"
+    ]
+  },
+  {
+    "keywords": [
       "favorite food",
       "favourite food",
       "fav food",
