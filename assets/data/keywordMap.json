@@ -42,7 +42,9 @@
     "custom": true,
     "response": [
       "I like you too! 😊 How can I assist you today?",
-      "I'm glad to hear that! How can I help you today? 😊😊😊"
+      "I'm glad to hear that! How can I help you today? 😊😊😊",
+      "Thank you! I'm here to help you with anything you need. 😊",
+      "Your support means a lot! How can I assist you today? 😊"
     ]
   },
   {
@@ -317,6 +319,7 @@
   {
     "keywords": [
       "who made you",
+      "who built you",
       "who created you",
       "who programmed you"
     ],
