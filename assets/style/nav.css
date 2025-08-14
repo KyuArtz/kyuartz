@@ -249,6 +249,10 @@ form.search button {
     background: none;
 }
 
+form.search button:hover {
+    background: none;
+}
+
 form.search input[type="search"],
 form.search button {
     border: none;
