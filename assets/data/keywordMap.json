@@ -16,6 +16,71 @@
   },
   {
     "keywords": [
+      "nice to meet you"
+    ],
+    "custom": true,
+    "response": [
+      "Nice to meet you too! 😊 How can I assist you today?",
+      "A pleasure to meet you! How can I help you today?",
+      "Meo at your service! How can I assist you today?"
+    ]
+  },
+  {
+    "keywords": [
+      "i kinda like you",
+      "i like you",
+      "i really like you",
+      "i absolutely like you",
+      "i truly like you",
+      "i kinda like u",
+      "i like u",
+      "i really like u",
+      "i absolutely like u",
+      "i truly like u",
+      "i like u meo"
+    ],
+    "custom": true,
+    "response": [
+      "I like you too! 😊 How can I assist you today?",
+      "I'm glad to hear that! How can I help you today? 😊😊😊"
+    ]
+  },
+  {
+    "keywords": [
+      "i dont like you",
+      "i hate you",
+      "i hate u",
+      "i really hate you",
+      "i absolutely hate you",
+      "i truly hate you",
+      "i really hate u",
+      "i absolutely hate u",
+      "i truly hate u",
+      "i hate u meo"
+    ],
+    "custom": true,
+    "response": [
+      "Please don't be mean! How can I assist you today? 😊",
+      "I'm sorry to hear that! How can I help you today? 😊",
+      "It's okay, we all have our preferences! How can I assist you today? 😊",
+      "If you change your mind, I'm here to help! 😊",
+      "I understand, not everyone will like me. How can I assist you today? 😊",
+      "I might not be perfect, but I'm always here to help! 😊"
+    ]
+  },
+  {
+    "keywords": [
+      "i love you",
+      "i love u"
+    ],
+    "custom": true,
+    "response": [
+      "I love you too! 💖 How can I assist you today?",
+      "I'm really glad to hear that! How can I help you today?"
+    ]
+  },
+  {
+    "keywords": [
       "ask",
       "can i ask you something"
     ],
