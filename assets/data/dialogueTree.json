@@ -1,11 +1,11 @@
 {
   "start": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-default.webp",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-default-bubblegum.webp",
         "expression": "default",
         "speaking": true
       }
@@ -23,13 +23,13 @@
   },
 
   "aboutCommission": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-bubblegum.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -42,13 +42,13 @@
   },
 
   "aboutCommissionProcess": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-talking.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -59,13 +59,13 @@
   },
 
   "aboutContactArtist": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-talking.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -76,13 +76,13 @@
   },
 
   "aboutPaymentOptions": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-talking.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -93,13 +93,13 @@
   },
 
   "aboutServices": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-bubblegum.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -111,13 +111,13 @@
   },
 
   "reportIssue": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-talking.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -128,13 +128,13 @@
   },
 
   "aboutKyu": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-bubblegum.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -147,13 +147,13 @@
   },
 
   "aboutKyuartz": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-bubblegum.webp",
+        "expression": "default",
         "speaking": true
       }
     ],
@@ -166,13 +166,13 @@
   },
 
   "aboutHelp": {
-    "character": "Meo (Beta)",
-    "background": "url('')",
+    "character": "Meo ( Beta )",
+    "background": "url('assets/images/bg/default.webp')",
     "characters": [
       {
-        "name": "Meo (Beta)",
-        "portrait": "assets/images/assistant-presets/meo-talking.webp",
-        "expression": "talking",
+        "name": "Meo ( Beta )",
+        "portrait": "assets/images/assistant-presets/meo-wink-talking.webp",
+        "expression": "default",
         "speaking": true
       }
     ],

@@ -249,7 +249,7 @@ body {
 }
 
 .character-img.speaking.speaking-animate {
-  animation: talk-bounce 1s infinite;
+  animation: talk-bounce 3s infinite;
 }
 
 /* === HISTORY PANEL === */
