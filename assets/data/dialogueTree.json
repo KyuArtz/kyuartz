@@ -10,7 +10,7 @@
         "speaking": true
       }
     ],
-    "text": "🎉 Hello and welcome to the Kyuartz Website! I'm <strong>Meo</strong>, your friendly virtual assistant 💬✨<br><br>How can I help you today?",
+    "text": "Hello and welcome to the Kyuartz Website! I'm <strong>Meo</strong>, your friendly virtual assistant 💬✨<br><br>How can I help you today? 😘💕",
     "options": [
       { "text": "🎨 How can I commission an artwork?", "next": "aboutCommission" },
       { "text": "💳 What are the payment options?", "next": "aboutPaymentOptions" },
