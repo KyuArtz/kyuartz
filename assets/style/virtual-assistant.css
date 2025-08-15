@@ -100,8 +100,7 @@ body {
 .character-name {
   width: 20%;
   color: var(--text-color);
-  text-shadow: 0 0 3px var(--color);
-  box-shadow: 0 0 3px var(--color);
+  box-shadow: 0 0 2px var(--color);
   text-align: center;
   font-family: myFont;
   font-size: 20px;
