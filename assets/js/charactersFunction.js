@@ -196,7 +196,7 @@ function getCharacterDetails(character) {
     } else if (character === 'rayza') {
         details = {
             name: "Rayza Bakonawa",
-            race: "<info>Human</info>",
+            race: "<info>Human (Dragonkin)</info>",
             gender: "<info>Female</info>",
             height: "<info>5'6\" ft / 167.6 cm</info>",
             homeland: "<info>Hidden Mist Valley</info>",
