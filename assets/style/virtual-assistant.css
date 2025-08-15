@@ -129,7 +129,7 @@ body {
   max-height: 150px;
   font-family: 'Roboto', sans-serif;
   white-space: pre-wrap;
-  line-height: 1.5;
+  line-height: 1.7;
   overflow-y: auto;
   transition: opacity 0.5s ease-in-out;
 }
