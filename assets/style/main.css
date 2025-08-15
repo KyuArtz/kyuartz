@@ -162,6 +162,7 @@ a {
 
 button {
     font-family: 'myFont', sans-serif;
+    border: unset;
 }
 
 button,
@@ -171,7 +172,7 @@ button i,
 .settings-btn i,
 input[type="Submit"] {
     cursor: pointer;
-    background: none; 
+    background: none;
 }
 
 button.next,

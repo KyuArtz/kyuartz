@@ -1,7 +1,7 @@
 {
   "start": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -24,7 +24,7 @@
 
   "aboutCommission": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -43,7 +43,7 @@
 
   "aboutCommissionProcess": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -60,7 +60,7 @@
 
   "aboutContactArtist": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -77,7 +77,7 @@
 
   "aboutPaymentOptions": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -94,7 +94,7 @@
 
   "aboutServices": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -112,7 +112,7 @@
 
   "reportIssue": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -129,7 +129,7 @@
 
   "aboutKyu": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -148,7 +148,7 @@
 
   "aboutKyuartz": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
@@ -167,7 +167,7 @@
 
   "aboutHelp": {
     "character": "Meo ( Beta )",
-    "background": "url('assets/images/bg/default.webp')",
+    "background": "url('')",
     "characters": [
       {
         "name": "Meo ( Beta )",
