@@ -10,11 +10,25 @@
     ],
     "custom": true,
     "response": [
-      "👋 Hello there! I'm MEO, your guide to Kyuartz. How can I help today? Would you like me to give more ideas?",
-      "Hi! 👋 How can I help you today?",
+      "Hello there!👋 I'm MEO, your guide to Kyuartz. How can I help today? Would you like me to give more ideas? 😊",
+      "Hi! 😎👋 How can I help you today?",
       "Hey there! 👋 What can I do for you today?",
       "Greetings! 👋 What brings you here today?",
       "Howdy! 🤠 Ready to explore some art today?"
+    ]
+  },
+  {
+    "keywords": [
+      "im so sorry",
+      "sorry",
+      "sorry meo"
+    ],
+    "custom": true,
+    "response": [
+      "It's alright! How can I assist you today? 😊",
+      "No worries! I'm here to help. What can I do for you today? 😊",
+      "No problem at all! How can I assist you today? 😊",
+      "It's fine! How can I help you today? 😊"
     ]
   },
   {
@@ -329,6 +343,7 @@
   {
     "keywords": [
       "how are you",
+      "how are you today",
       "how's it going",
       "are you ok",
       "how do you feel",
@@ -468,7 +483,6 @@
     "custom": true,
     "response": [
       "💬 I'm MEO, a helpful digital assistant created by Kyu to guide you through the world of art and creativity! Ask me anything! 🌟 What do you think?",
-      "🤝 Sure thing! What do you need assistance with today? Shall we try that together?",
       "💬 Just let me know what's on your mind—I'll do my best to help. Ooh, now I'm curious—what would you choose?",
       "✨ I'm MEO, your friendly virtual assistant!"
     ]
