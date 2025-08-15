@@ -396,7 +396,7 @@ form.search::after {
     position: fixed;
     top: 0;
     left: 0;
-    background: var(--theme-color);
+    background: var(--content-bg);
     display: flex;
     flex-direction: column;
     min-width: 200px;
@@ -423,7 +423,7 @@ form.search::after {
 .span-btn {
     display: flex;
     flex-direction: column;
-    background: var(--content-bg);
+    background: var(--theme-color);
     border-radius: 18px;
     margin: 5px;
     padding: 5px;
