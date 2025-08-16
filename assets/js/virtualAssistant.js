@@ -54,6 +54,68 @@ function preloadImagesFromTree(tree) {
   });
 }
 
+// Simple stemmer (Porter or similar, here a naive version)
+function stem(word) {
+  return word.replace(/(ing|ed|s)$/i, '');
+}
+
+// Synonym map
+const SYNONYMS = {
+  price: ['cost', 'fee', 'charge', 'rate'],
+  commission: ['order', 'request', 'job'],
+  payment: ['pay', 'fee', 'charge', 'deposit'],
+  art: ['drawing', 'sketch', 'illustration'],
+};
+
+function expandSynonyms(word) {
+  for (const [key, syns] of Object.entries(SYNONYMS)) {
+    if (key === word || syns.includes(word)) {
+      return [key, ...syns];
+    }
+  }
+  return [word];
+}
+
+// N-gram similarity (returns a score 0-1)
+function ngramSimilarity(a, b, n = 2) {
+  const ngrams = str => {
+    const arr = [];
+    for (let i = 0; i < str.length - n + 1; i++) arr.push(str.slice(i, i + n));
+    return arr;
+  };
+  const aNgrams = ngrams(a);
+  const bNgrams = ngrams(b);
+  const match = aNgrams.filter(ng => bNgrams.includes(ng)).length;
+  return match / Math.max(aNgrams.length, bNgrams.length, 1);
+}
+
+// Improved matching: returns a score (higher is better)
+function matchScore(input, keyword) {
+  input = stem(input);
+  keyword = stem(keyword);
+
+  // Synonym expansion
+  const inputSyns = expandSynonyms(input);
+  const keywordSyns = expandSynonyms(keyword);
+
+  // Exact or synonym match
+  if (inputSyns.some(w => keywordSyns.includes(w))) return 1.0;
+
+  // Substring
+  if (input.includes(keyword) || keyword.includes(input)) return 0.9;
+
+  // N-gram similarity
+  const ngramScore = ngramSimilarity(input, keyword);
+  if (ngramScore > 0.6) return ngramScore;
+
+  // Levenshtein (normalized)
+  const lev = levenshtein(input, keyword);
+  const normLev = 1 - lev / Math.max(input.length, keyword.length, 1);
+  if (normLev > 0.7) return normLev;
+
+  return 0;
+}
+
 // -----------------------------------------------------------------------------
 // Dialogue Manager (cleaned and improved)
 // -----------------------------------------------------------------------------
@@ -97,12 +159,18 @@ class DialogueManager {
     this.setupVoiceFeatures();
     // Render last node from state if available
     this.renderDialogue(this.state.lastNode || 'start');
+    this.lastAIRequestTime = 0;
   }
 
   // --------------------- typewriter with keyboard skipping -----------------
-  typeWriterEffect(text, speed = 7) {
+  typeWriterEffect(text, speed = 9) {
     if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
     this.isTyping = true;
+
+    // Disable input and ask button while typing
+    if (this.userInput) this.userInput.disabled = true;
+    if (this.askBtn) this.askBtn.disabled = true;
+
     this.textElement.innerHTML = '';
     this.lastSpokenText = text;
     let i = 0;
@@ -116,28 +184,12 @@ class DialogueManager {
         this.textElement.innerHTML = text;
         this.typewriterTimeout = null;
         this.isTyping = false;
-      }
-    };
 
-    const skip = () => {
-      if (this.typewriterTimeout) {
-        clearTimeout(this.typewriterTimeout);
-        this.textElement.innerHTML = text;
-        this.typewriterTimeout = null;
-        this.isTyping = false;
+        // Re-enable input and ask button after typing
+        if (this.userInput) this.userInput.disabled = false;
+        if (this.askBtn) this.askBtn.disabled = false;
       }
     };
-
-    // keyboard skip: space or enter (only if not focused on input)
-    this._keySkipHandler = (e) => {
-      const active = document.activeElement;
-      const activeTag = active && (active.tagName || '').toLowerCase();
-      if (['input', 'textarea'].includes(activeTag)) return; // let input keep enter
-      if (e.key === ' ' || e.key === 'Enter') {
-        e.preventDefault();
-      }
-    };
-    document.addEventListener('keydown', this._keySkipHandler);
 
     type();
   }
@@ -375,8 +427,33 @@ class DialogueManager {
         }
       }
 
+      // If no match found, fallback to AI response
       if (!matched) {
-        this.typeWriterEffect("Sorry, I don't have an answer for that yet! Try asking about commissions, payments, or services.");
+        const now = Date.now();
+        const throttleMs = 5000; // 5 seconds
+        if (now - this.lastAIRequestTime < throttleMs) {
+          this.typeWriterEffect("Please wait a few seconds before asking another question.");
+          return;
+        }
+        this.lastAIRequestTime = now;
+
+        // Debounce: disable input and button
+        this.userInput.disabled = true;
+        this.askBtn.disabled = true;
+
+        this.typeWriterEffect("Please wait a moment while I process your request... 🤔🤔🤔");
+        import('./aiIntegration.js').then(({ fetchAIResponse }) => {
+          fetchAIResponse(this.userInput.value).then(aiText => {
+            this.typeWriterEffect(aiText);
+            // Re-enable input and button after response
+            this.userInput.disabled = false;
+            this.askBtn.disabled = false;
+          }).catch(() => {
+            this.typeWriterEffect("Sorry, something went wrong. Please try again later. 😫😓");
+            this.userInput.disabled = false;
+            this.askBtn.disabled = false;
+          });
+        });
       }
       this.userInput.value = '';
       toggleAskBtn();
@@ -384,9 +461,9 @@ class DialogueManager {
 
     this.userInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        if (this.userInput.value.trim().length === 0) {
+        if (this.userInput.value.trim().length === 0 || this.userInput.disabled) {
           e.preventDefault();
-          return; // Prevent Enter if input is empty
+          return; // Prevent Enter if input is empty or disabled
         }
         e.preventDefault();
         this.askBtn.click();
@@ -426,13 +503,6 @@ class DialogueManager {
   initEvents() {
     document.addEventListener('DOMContentLoaded', () => {
       if (this.nav) this.nav.style.display = '';
-    });
-
-    // Clean up on unload
-    window.addEventListener('beforeunload', () => {
-      // remove key listener from typewriter
-      if (this._keySkipHandler) document.removeEventListener('keydown', this._keySkipHandler);
-      this.saveState();
     });
   }
 
