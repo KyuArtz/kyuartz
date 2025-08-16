@@ -194,6 +194,7 @@ button.prev {
 
 .dL {
     color: #28adff;
+    font-size: inherit;
 }
 
 .footer a {
