@@ -20,9 +20,57 @@
   },
   {
     "keywords": [
+      "nothing",
+      "nope",
+      "nah",
+      "not really",
+      "never",
+      "no way"
+    ],
+    "custom": true,
+    "response": [
+      "Oh okay! Anything else on your mind?",
+      "No problem! If you change your mind or have questions later, I'm here to help! 😊",
+      "I understand, and I'm here to assist you whenever you need. 😊",
+      "Feel free to reach out if you have any questions or need assistance in the future! 😊"
+    ]
+  },
+  {
+    "keywords": [
+      "can i tell you something"
+    ],
+    "custom": true,
+    "response": [
+      "Sure what would you like to tell me?",
+      "I'm all ears! Feel free to share anything you'd like.",
+      "Your thoughts are important to me. What else is on your mind?",
+      "I'm here to listen if you want to share more."
+    ]
+  },
+  {
+    "keywords": [
+      "nigga",
+      "yow nigga",
+      "sup nigga",
+      "hi nigga",
+      "howdy nigga",
+      "f u",
+      "fuck",
+      "fuck you"
+    ],
+    "custom": true,
+    "response": [
+      "I'm sorry, but I cannot engage in or support the use of offensive language. Let's keep our conversation respectful. How can I assist you today? 😊",
+      "Please refrain from using offensive language. I'm here to help with any questions or topics you have in mind! 😊",
+      "Please remember to keep our conversation respectful. How can I assist you today? 😊"
+    ]
+  },
+  {
+    "keywords": [
       "im so sorry",
       "sorry",
-      "sorry meo"
+      "sorry meo",
+      "so sorry"
     ],
     "custom": true,
     "response": [
@@ -92,9 +140,8 @@
       "Please don't be mean! How can I assist you today? 😊",
       "I'm sorry to hear that! How can I help you today? 😊",
       "It's okay, we all have our preferences! How can I assist you today? 😊",
-      "If you change your mind, I'm here to help! 😊",
       "I understand, not everyone will like me. How can I assist you today? 😊",
-      "I might not be perfect, but I'm always here to help! 😊"
+      "I Understand, I might not be perfect, but I'm always here to help! 😊"
     ]
   },
   {
@@ -216,6 +263,8 @@
   },
   {
     "keywords": [
+      "how to commission",
+      "how to request an art",
       "commission",
       "art commission",
       "request art",
@@ -328,10 +377,10 @@
   },
   {
     "keywords": [
+      "tell me about kyu",
       "who is kyu",
       "about kyu",
       "kyu",
-      "artist",
       "creator"
     ],
     "custom": true,
