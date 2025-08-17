@@ -163,7 +163,7 @@ class DialogueManager {
   }
 
   // --------------------- typewriter with keyboard skipping -----------------
-  typeWriterEffect(text, speed = 9) {
+  typeWriterEffect(text, speed = 8) {
     if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
     this.isTyping = true;
 
@@ -441,7 +441,7 @@ class DialogueManager {
         this.userInput.disabled = true;
         this.askBtn.disabled = true;
 
-        this.typeWriterEffect("Please wait a moment while I process your request... 🤔🤔🤔");
+        this.typeWriterEffect("Thinking...");
         import('./aiIntegration.js').then(({ fetchAIResponse }) => {
           fetchAIResponse(this.userInput.value).then(aiText => {
             this.typeWriterEffect(aiText);
