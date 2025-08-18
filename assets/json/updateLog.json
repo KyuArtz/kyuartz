@@ -4,6 +4,28 @@
     "last_updated": "2025-08-17",
     "updates": [
       {
+        "date": "2025-08-18",
+        "timestamp": "2025-08-18T09:10:00Z",
+        "version": "1.8.1",
+        "major": [],
+        "minor": [],
+        "bugfixes": [],
+        "upcoming": [
+          {
+            "title": "UI/UX Refinement and Changes",
+            "description": "Enhancements to the user interface and user experience across the platform.",
+            "category": "User Interface",
+            "expected_release": "2025-08-25"
+          },
+          {
+            "title": "Improvements to the virtual assistant (MEO)",
+            "description": "Implementing features to enhance the overall functionality and user experience of the virtual assistant.",
+            "category": "Virtual Assistant",
+            "expected_release": "2025-09-30"
+          }
+        ]
+      },
+      {
         "date": "2025-08-17",
         "timestamp": "2025-08-17T05:30:00Z",
         "version": "1.8.0",
