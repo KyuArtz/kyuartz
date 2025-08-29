@@ -393,6 +393,11 @@
     height: 100vh;
     object-fit: cover;
   }
+
+  .slide-prev,
+  .slide-next {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 480px) {
