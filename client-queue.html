@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,157 +12,122 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
-  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
+  <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="48x48">
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="KyuArtz">
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
-  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/client-info">
-  <link rel="preload" href="assets/style/main.css" as="style">
-  <link rel="preload" href="assets/style/loader.css" as="style">
-  <link rel="preload" href="assets/style/nav.css" as="style">
+  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/client-queue">
   <link rel="preconnect" href="https://kit.fontawesome.com">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/client-queue.css">
-  <link rel="stylesheet" href="assets/style/loader.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/popup.js" defer></script>
   <script src="assets/js/clientQueue.js" defer></script>
-  <script src="assets/js/translations.js" defer></script>
-  <script src="assets/js/search.js" defer></script>
   <meta property="og:title" content="KyuArtz | Client Queue">
   <meta property="og:description" content="Explore the client queue at KyuArtz, showcasing details of commissions and their statuses.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/client-info">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/client-queue">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Client Queue">
   <meta name="twitter:description" content="Explore the client queue at KyuArtz, showcasing details of commissions and their statuses.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "KyuArtz",
-      "url": "https://kyuartz.github.io/kyuartz/client-queue",
-      "description": "Explore the client queue at KyuArtz, showcasing details of commissions and their statuses.",
-      "author": {
-        "@type": "Person",
-        "name": "Kyu"
-      }
-    }
-  </script>
 </head>
+
 <body>
-  <div class="loader" oncontextmenu="return false">
-    <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
-    <div class="spinner small-spinner"></div>
-    <div class="spinner medium-spinner"></div>
-    <div class="spinner large-spinner"></div>
-  </div>
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
-    <img src="assets/images/popup/popup-icon.webp" loading="lazy">
-    <h2 data-translate="welcomeTitle">Thanks for visiting!</h2>
-    <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+    <img src="assets/images/imgbtn/meo.webp" loading="lazy">
+    <h2>Thanks for visiting!</h2>
+    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closeWelcomeMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
+
   <div id="cookie-popup" class="cookie-popup">
-    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies" data-translate="gotIt">Got It</button>
+    <p>KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a class="dL" href="service-center.html">Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
   </div>
+
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
-        <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html" data-translate="brand">Kyu</a>
+        <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
+        <a href="index.html">Kyu</a>
       </div>
-      <div class="search-container">
-        <form class="search" aria-label="Search KyuArtz">
-          <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
-          <button type="submit" id="search-button" aria-label="Submit search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <div class="search-result" style="display: none;"></div>
-        </form>
-      </div>
+
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
-            <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
+            <i class="fa-solid fa-house"></i> HOME
           </a>
         </li>
         <li class="nav-item">
           <a href="portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
-            <i class="fa-regular fa-image"></i> <span data-translate="portfolio">PORTFOLIO</span>
+            <i class="fa-regular fa-image"></i> PORTFOLIO
           </a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
-            <i class="fa-regular fa-address-card"></i> <span data-translate="about">ABOUT</span>
+            <i class="fa-regular fa-address-card"></i> ABOUT
           </a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
-            <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
+            <i class="fa-solid fa-phone"></i> CONTACT
           </a>
         </li>
+        
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
-            <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-solid fa-bars"></i> MORE
           </a>
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="subBrand" aria-label="KyuArtz Home Page">
               <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-              <p data-translate="brand">Kyu</p>
+              <p>Kyu</p>
             </div>
             <div class="span-btn">
-              <h2><span data-translate="commissionArt">Commission Art</span></h2>
+              <h2>Commission</h2>
               <a href="commission-sheet.html" data-page="commission-sheet.html">
-                <i class="fa-regular fa-file"></i> <span data-translate="commissionSheet">Commission Sheet</span>
+                <i class="fa-regular fa-file"></i> Commission Sheet
               </a>
               <a href="client-queue.html" data-page="client-queue.html">
-                <i class="fa-solid fa-table"></i> <span data-translate="clientQueue">Client Queue</span>
+                <i class="fa-solid fa-table"></i> Client Queue
               </a>
             </div>
             <div class="span-btn">
-              <h2><span data-translate="explore">Explore</span></h2>
+              <h2>Explore</h2>
               <a href="comic.html" data-page="comic.html">
-                <i class="fa-solid fa-book"></i> <span data-translate="myComic">My Comic</span>
+                <i class="fa-solid fa-book"></i> Kyuartz Comic
               </a>
               <a href="characters.html" data-page="characters.html">
-                <i class="fa-solid fa-person-rifle"></i> <span data-translate="originalCharacter">Original Character</span>
+                <i class="fa-solid fa-person-rifle"></i> Original Characters
               </a>
             </div>
             <div class="span-btn">
-              <h2><span data-translate="serviceInfo">Service Info</span></h2>
-              <a href="terms-of-service.html" data-page="terms-of-service.html">
-                <i class="fa-solid fa-info"></i> <span data-translate="termsOfService">Terms of Service</span>
+              <h2>Support</h2>
+              <a href="service-center.html" data-page="service-center.html">
+                <i class="fa-solid fa-info"></i> Service Center
               </a>
-              <a href="privacy-policy.html" data-page="privacy-policy.html">
-                <i class="fa-solid fa-info"></i> <span data-translate="privacyPolicy">Privacy Policy</span>
+              <a href="contact.html" data-page="contact.html">
+                <i class="fa-solid fa-headset"></i> Customer Support
               </a>
-              <a href="faq.html" data-page="faq.html">
-                <i class="fa-solid fa-info"></i> <span data-translate="faqs">FAQs</span>
-              </a>
-              <a href="customer-support.html" data-page="customer-support.html">
-                <i class="fa-solid fa-headset"></i> <span data-translate="customerSupport">Customer Support</span>
-              </a>
-              <a href="help.html" data-page="help.html">
-                <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+              <a href="update-log.html" data-page="update-log.html">
+                <i class="fa-solid fa-download"></i> what's New
               </a>
             </div>
           </div>
         </li>
       </ul>
+      
       <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
@@ -170,91 +136,210 @@
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
               <div class="profile">
-                <img src="assets/images/about-presets/myprofile/me.webp" alt="Profile">
+                <img src="assets/images/artgallary/elishia avatar.webp" alt="Profile">
                 <div class="profile-info">
-                  <p class="username"><span data-translate="userName">Kyu</span></p>
-                  <p class="userrole"><span data-translate="userRole">Artist</span></p>
+                  <p class="username"> Kyu</p>
+                  <p class="userrole"> Artist</p>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
               </div>
             </a>
             <a class="setting" href="virtual-assistant.html">
-              <i class="fa-solid fa-cat fa-bounce"></i> <span data-translate="meoAssistant">Meo Assistant</span>
+              <i class="fa-solid fa-cat fa-bounce"></i> Meo Assistant
             </a>
             <a class="setting" href="preferences.html">
-              <i class="fa-solid fa-palette"></i> <span data-translate="preferences">Preferences</span>
+              <i class="fa-solid fa-palette"></i> Preferences
             </a>
-            <a class="setting" href="help.html">
-              <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+            <a class="setting" href="service-center.html">
+              <i class="fa-regular fa-circle-question"></i> Service Center
             </a>
           </div>
         </div>
+        
         <div class="hamburger" aria-label="Mobile menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
         </div>
       </div>
     </nav>
   </header>
   <div class="blur-overlay"></div>
-  <div class="commission-container">
-  <section class="commission-section">
-    <h1><i class="fa-solid fa-database"></i> <span data-translate="clientInfoTitle">client - Public View</span></h1>
-      <table id="client-table">
-        <thead>
-          <tr>
-            <th data-translate="th-1">Client Name</th>
-            <th data-translate="th-2">Commission Type</th>
-            <th data-translate="th-3">Contact</th>
-            <th data-translate="th-4">Status</th>
-            <th data-translate="th-5">Notes</th>
-          </tr>
-        </thead>
-        <tbody id="commission-list"></tbody>
-      </table>
-  </section>
-  <section class="waitlist-section">
-    <h2><i class="fa-solid fa-clock"></i> <span data-translate="waitlist">Waitlist</span></h2>
-    <table id="waitlist-table">
-      <thead>
-        <tr>
-          <th data-translate="th-1">Client Name</th>
-          <th data-translate="th-2">Commission Type</th>
-          <th data-translate="th-3">Contact</th>
-          <th data-translate="th-4">Status</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </section>
-</div>
-  <div class="slots-container">
-    <section class="slots" id="upcoming-slots">
-      <h3><i class="fa-solid fa-database"></i> <span data-translate="upcomingSlots">Upcoming Slots</span></h3>
-      <p><span data-translate="maxSlots">Maximum Slots Available -</span> <strong>4</strong></p>
-      <ul>
-        <li>
-          <i class="fa-solid fa-user-group"></i> <span data-translate="availableSlots">Available Slot -</span>
-          <strong>January 1, 2025</strong>
-          <span class="remaining-slots"></span>
-        </li>
-        <li>
-          <i class="fa-solid fa-user-group"></i> <span data-translate="availableSlots">Available Slot -</span>
-          <strong>February 1, 2025</strong>
-          <span class="remaining-slots"></span>
-        </li>
-      </ul>
-    </section>
-    <section class="status" id="status-definitions">
-      <h3><i class="fa-solid fa-circle-info"></i> <span data-translate="statusDefinitions">Status Definitions</span></h3>
-      <ul>
-        <li><strong><i class="fa-solid fa-clock"></i> <span data-translate="waiting">Waiting</span> -</strong> <span data-translate="status-1">Your request is on the waitlist. Thank you for your patience!</span></li>
-        <li><strong><i class="fa-solid fa-hourglass-start"></i> <span data-translate="pending">Pending</span> -</strong> <span data-translate="status-2">Commission is confirmed but work hasn't started.</span></li>
-        <li><strong><i class="fa-solid fa-bars-progress"></i> <span data-translate="inProgress">In Progress</span> -</strong> <span data-translate="status-3">Currently working on this commission.</span></li>
-        <li><strong><i class="fa-solid fa-check"></i> <span data-translate="completed">Completed</span> -</strong> <span data-translate="status-4">Commission has been finished and delivered.</span></li>
-      </ul>
-    </section>
+
+  <div class="container">
+    <div class="client-header">
+      <h1><i class="fas fa-palette"></i> KyuArtz Client Queue</h1>
+      <p>Track your commission status and see upcoming availability slots</p>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+        <div class="stat-number" id="waiting-count">3</div>
+        <div class="stat-label">Waiting</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-hourglass-half"></i></div>
+        <div class="stat-number" id="pending-count">2</div>
+        <div class="stat-label">Pending</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-paint-brush"></i></div>
+        <div class="stat-number" id="progress-count">1</div>
+        <div class="stat-label">In Progress</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+        <div class="stat-number" id="completed-count">8</div>
+        <div class="stat-label">Completed</div>
+      </div>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterTable('all')"><i class="fas fa-filter"></i> All Commissions</button>
+      <button class="filter-btn" onclick="filterTable('waiting')"><i class="fas fa-filter"></i> Waiting</button>
+      <button class="filter-btn" onclick="filterTable('pending')"><i class="fas fa-filter"></i> Pending</button>
+      <button class="filter-btn" onclick="filterTable('progress')"><i class="fas fa-filter"></i> In Progress</button>
+      <button class="filter-btn" onclick="filterTable('completed')"><i class="fas fa-filter"></i> Completed</button>
+      <input type="text" class="search-box" placeholder="Search clients..." id="searchBox" onkeyup="searchTable()">
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <i class="fas fa-list"></i>
+        Active Commissions
+      </div>
+      <div class="section-content">
+        <div class="table-container">
+          <table id="commission-table">
+            <thead>
+              <tr>
+                <th>Client Name</th>
+                <th>Commission Type</th>
+                <th>Contact</th>
+                <th>Status</th>
+                <th>Progress</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody id="commission-list">
+              <tr data-status="progress">
+                <td>Alex Chen</td>
+                <td>Character Design</td>
+                <td><a href="mailto:alex@email.com" class="contact-link">alex@email.com</a></td>
+                <td><span class="status-badge status-progress"><i class="fas fa-paint-brush"></i> In Progress</span></td>
+                <td>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                  <small style="color: var(--text-secondary);">75% Complete</small>
+                </td>
+                <td>Sketching phase complete, working on colors</td>
+              </tr>
+
+              <tr data-status="pending">
+                <td>Sarah Miller</td>
+                <td>Portrait</td>
+                <td><a href="mailto:sarah@email.com" class="contact-link">sarah@email.com</a></td>
+                <td><span class="status-badge status-pending"><i class="fas fa-hourglass-half"></i> Pending</span></td>
+                <td>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 10%;"></div></div>
+                  <small style="color: var(--text-secondary);">Waiting to start</small>
+                </td>
+                <td>Reference photos received, scheduled for next week</td>
+              </tr>
+
+              <tr data-status="waiting">
+                <td>Mike Johnson</td>
+                <td>Logo Design</td>
+                <td><a href="mailto:mike@email.com" class="contact-link">mike@email.com</a></td>
+                <td><span class="status-badge status-waiting"><i class="fas fa-clock"></i> Waiting</span></td>
+                <td>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 0%;"></div></div>
+                  <small style="color: var(--text-secondary);">In queue</small>
+                </td>
+                <td>On waitlist, estimated start: February 2025</td>
+              </tr>
+
+              <tr data-status="completed">
+                <td>Emma Wilson</td>
+                <td>Illustration</td>
+                <td><a href="mailto:emma@email.com" class="contact-link">emma@email.com</a></td>
+                <td><span class="status-badge status-completed"><i class="fas fa-check"></i> Completed</span></td>
+                <td>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+                  <small style="color: var(--text-secondary);">Delivered</small>
+                </td>
+                <td>Delivered on time, client very satisfied</td>
+              </tr>
+
+              <tr data-status="pending">
+                <td>David Brown</td>
+                <td>Book Cover</td>
+                <td><a href="mailto:david@email.com" class="contact-link">david@email.com</a></td>
+                <td><span class="status-badge status-pending"><i class="fas fa-hourglass-half"></i> Pending</span></td>
+                <td>
+                  <div class="progress-bar"><div class="progress-fill" style="width: 5%;"></div></div>
+                  <small style="color: var(--text-secondary);">Concept phase</small>
+                </td>
+                <td>Waiting for final manuscript details</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="slots-grid">
+      <div class="slot-card">
+        <h3><i class="fas fa-calendar-alt"></i> Upcoming Slots</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem;">Maximum slots available: <strong>4</strong></p>
+        <div class="slot-item">
+          <div>
+            <i class="fas fa-calendar"></i>
+            <strong>January 15, 2025</strong>
+          </div>
+          <span style="color: var(--success-color);">Available</span>
+        </div>
+
+        <div class="slot-item">
+          <div>
+            <i class="fas fa-calendar"></i>
+            <strong>February 1, 2025</strong>
+          </div>
+          <span style="color: var(--success-color);">Available</span>
+        </div>
+
+        <div class="slot-item">
+          <div>
+            <i class="fas fa-calendar"></i>
+            <strong>February 15, 2025</strong>
+          </div>
+          <span style="color: var(--warning-color);">Limited</span>
+        </div>
+      </div>
+
+      <div class="slot-card">
+        <h3><i class="fas fa-info-circle"></i> Status Definitions</h3>
+        <div class="slot-item">
+          <div><span class="status-badge status-waiting"><i class="fas fa-clock"></i> Waiting</span></div>
+          <small style="color: var(--text-secondary);">Request on waitlist</small>
+        </div>
+
+        <div class="slot-item">
+          <div><span class="status-badge status-pending"><i class="fas fa-hourglass-half"></i> Pending</span></div>
+          <small style="color: var(--text-secondary);">Confirmed, not started</small>
+        </div>
+
+        <div class="slot-item">
+          <div><span class="status-badge status-progress"><i class="fas fa-paint-brush"></i> In Progress</span></div>
+          <small style="color: var(--text-secondary);">Currently working</small>
+        </div>
+        
+        <div class="slot-item">
+          <div><span class="status-badge status-completed"><i class="fas fa-check"></i> Completed</span></div>
+          <small style="color: var(--text-secondary);">Finished & delivered</small>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

@@ -1,47 +1,68 @@
 .card-container {
     min-height: 100vh;
     margin-top: 50px;
-    background-image: url('../images/bg/lbg_main4.webp');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
-.overlay {
-    width: 100%;
+.card-wrapper {
+    max-width: 1200px;
     min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
     gap: 10px;
-    background: var(--overlay);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    animation: fadeInUp 0.6s ease forwards;
 }
 
-.info-container H2 {
-    color: var(--color);
-    font-family: 'myFont', sans-serif;
+.info-container h2 {
+    color: var(--accent-color);
+    font-family: var(--my-font);
 }
 
-.summary-content p,
+.about-content p,
 .experience-content p,
 .my-info p {
     color: var(--text-color);
-    line-height: 1.7;
 }
 
-.summary-container {
+.about-content p {
+    line-height: 1.5;
+}
+
+.skill-content {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+p.skill {
+    padding: 10px 20px;
+}
+
+p.email {
+    border-left: 4px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 20px;
+}
+
+.about-container {
     text-align: center;
 }
 
-.summary-content {
+.about-content {
     display: flex;
-    border-radius: 18px;
+    border-radius: var(--border-stylized);
     text-align: justify;
     padding: 20px;
-    background: var(--theme-color);
-    box-shadow: 0 0 3px var(--color);
+    background: var(--content-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.about-content:hover {
+    background: var(--colored-overlay);
+    transform: scale(1.02);
 }
 
 .experience {
@@ -51,33 +72,68 @@
     gap: 10px;
 }
 
-.experience-content p {
-    padding: 10px;
-    display: inline-block;
-    border-radius: 18px;
-    width: 175px;
-    background: var(--theme-color);
-    box-shadow: 0 0 3px var(--color);
+.experience-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
-.program-used-container {
+.experience-content p {
+    padding: 20px;
+    border-radius: var(--border-stylized);
+    width: 175px;
+    background: var(--content-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.experience-content p:hover {
+    background: var(--colored-overlay);
+    transform: scale(1.05);
+}
+
+.tools-used-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.program-logo img {
-    width: 55px;
-    height: 55px;
-    border-radius: 6px;
-    background: var(--content-bg);
-    transform: scale(1);
-    box-shadow: 0 0 3px var(--color);
-    transition: transform 0.2s;
+.tools-wrapper img {
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    padding: 5px;
+    border-radius: var(--border-stylized);
 }
 
-.program-logo img:hover {
-    transform: scale(0.90);
+.tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.tools-wrapper .tool {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--content-color);
+    border-radius: var(--border-stylized);
+    box-shadow: var(--shadow);
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.tools-wrapper .tool:hover {
+    background: var(--colored-overlay);
+    transform: translateY(-5px);
 }
 
 .card {
@@ -86,10 +142,10 @@
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 10px;
-    border-radius: 18px;
-    background: var(--theme-color);
-    box-shadow: 0 0 3px var(--color);
+    padding: 10px 20px;
+    border-radius: var(--border-stylized);
+    background: var(--secondary-color);
+    box-shadow: var(--shadow);
 }
 
 .pfp-container {
@@ -97,12 +153,15 @@
 }
 
 .card img.pfp {
-    width: 50%;
-    height: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
     aspect-ratio: 1/1;
-    background: var(--content-bg);
+    background: var(--secondary-color);
     border-radius: 50%;
-    border: 2px solid var(--color);
+    color: var(--accent-color);
+    border: 5px solid;
     margin-bottom: -70px;
     pointer-events: none;
 }
@@ -112,65 +171,65 @@
 }
 
 .info-container {
+    background: var(--secondary-color);
+    padding: 20px;
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: var(--border-stylized);
+    box-shadow: var(--shadow);
 }
 
 .my-info {
     padding: 10px 16px;
-    border-radius: 50px 50px 10px 10px;
-    box-shadow: 0 0 2px var(--color);
-    background: var(--content-bg);
+    border-radius: var(--border-stylized);
+    background: var(--secondary-color);
+    box-shadow: var(--shadow);
 }
 
 .my-info h1 {
     border-bottom: 2px solid;
     margin-top: 70px;
-    color: var(--color);
-    font-family: 'myFont', sans-serif;
+    color: var(--accent-color);
+    font-family: var(--my-font);
 }
 
 .my-info p {
-    padding: 5px;
     text-align: left;
     color: var(--text-color);
-    border-radius: 30px 50px 50px 30px;
-    background: var(--theme-overlay);
-    transition: background 0.2s, transform 0.2s;
+    border-radius: var(--border-stylized);
+    background: var(--content-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
 }
 
 .my-info p:hover,
 .mysocial img:hover {
-    background: var(--overlay);
-    transform: scale(1.03);
+    background: var(--colored-overlay);
+    transform: scale(1.05);
 }
 
 .mysocial img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     aspect-ratio: 1/1;
+    padding: 10px;
     margin: 3px;
-    border: 2px solid var(--text-color);
-    background: var(--overlay);
+    box-shadow: var(--shadow);
+    background: var(--content-color);
     object-fit: cover;
-    border-radius: 50px;
-    transition: background 0.2s, transform 0.2s;
+    border-radius: var(--border-stylized);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 @media screen and (max-width: 750px) {
-    .card-container {
-        background-image: none;
+    .experience-list {
+        flex-direction: column;
     }
 
-    .card img.pfp {
-        width: 100%;
-    }
-
-    .my-info p {
-        border-radius: 50px;
-    }
-
-    .summary-content p {
+    .about-content p {
         text-align: justify;
     }
 }

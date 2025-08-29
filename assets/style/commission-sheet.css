@@ -1,193 +1,372 @@
-.currency-conversion-btn {
-    position: absolute;
-    right: 0;
-    padding: 5px 20px;
-    margin: auto 5px;
-    border: 2px solid var(--color);
-    border-radius: 50px;
-    color: var(--color);
-    background: var(--theme-color);
-    outline: none;
+.currency-container {
+    display: flex;
+    justify-content: center;
+    background: var(--secondary-color);
+    border-radius: var(--border-stylized);
+}
+
+.currency-selector {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-stylized);
+    background: var(--content-color);
+    color: var(--accent-color);
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
 }
 
-.cs-container {
-    margin-top: 110px;
-    min-height: 100vh;
-    padding: 0 5px;
+/* Main Content */
+.main-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 1rem;
 }
 
-.cs-container h2 {
-    position: relative;
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: var(--gradient-bg);
+    border-radius: var(--border-stylized);
+    padding: 3rem 2rem;
+    margin-bottom: 3rem;
+    box-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: var(--my-font);
+    font-size: 3rem;
+    margin-bottom: 1rem;
     color: var(--text-color);
-    font-family: 'myFont', sans-serif;
 }
 
-.cs-container p {
-    padding: 5px;
-    text-align: left;
+.hero p {
+    font-size: 1.2rem;
     color: var(--text-color);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.cs-container img {
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem 0;
+}
+
+.filter-tab {
+    padding: 0.75rem 1.5rem;
+    background: var(--content-color);
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-stylized);
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-tab.active,
+.filter-tab:hover {
+    background: var(--accent-color);
+    color: var(--text-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+/* Commission Cards */
+.commission-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.commission-card {
+    background: var(--secondary-color);
+    border-radius: var(--border-stylized);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    min-height: 400px;
+}
+
+.commission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.card-image {
     position: relative;
-    width: 350px;
-    height: 350px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image img {
+    width: 300px;
+    height: 400px;
     object-fit: contain;
     object-position: center;
-    aspect-ratio: 1 / 1;
-    background: var(--theme-color);
-    box-shadow: 0 0 2px var(--color);
-    border-radius: 10px;
-    pointer-events: none;
+    background: var(--content-color);
+    border-radius: var(--border-stylized);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease
 }
 
-.cs-wrapper {
+.card-image:hover img {
+    transform: scale(1.02);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
     display: flex;
-    flex-direction: row;
-    padding: 10px;
-    background: var(--content-bg);
-    gap: 5px;
-}
-
-.price-wrapper {
-    width: 100%;
-    background: var(--theme-color);
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0 0 2px var(--color);
-    transition: 0.3s ease-in-out;
-    overflow: hidden;
-}
-
-.price-wrapper a {
-    width: 100%;
-    padding: 14px 32px;
-    border-top: 1px solid var(--color);
-    color: var(--color);
-    display: block;
-    text-align: center;
-}
-
-.price-wrapper:hover,
-.sample-img:hover {
-    transform: scale(0.99);
-}
-
-.price {
-    overflow: auto;
-    height: 405px;
-}
-
-.price h3 {
-    margin: 0;
-    text-align: center;
-    color: var(--color);
-    padding: 10px;
-    border-bottom: 1px solid var(--color);
-    font-family: 'myFont', sans-serif;
-}
-
-span.price-amount,
-span.percent {
-    color: #008600;
-}
-
-.sample-img {
-    border-radius: 10px;
-    background: var(--content-bg);
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-
-.sample-img.clicked {
-    filter: grayscale(100%);
-}
-
-.inquire-button {
-    background: var(--content-bg);
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: 0 0 2px var(--color);
-    padding: 5px;
-}
-
-.inquire-button a {
-    padding: 12px 30px;
-    margin: 5px;
-    background: var(--theme-color);
-    border-radius: 50px;
-    border: 1px solid;
-    color: var(--color);
-    transition: background 0.3s ease-in-out;
-}
-
-.inquire-button span {
-    font-family: 'myFont', sans-serif;
-}
-
-.inquire-button a:hover {
-    background: var(--theme-overlay);
-}
-
-.cs-content {
-    color: var(--text-color);
-    text-align: center;
-    box-shadow: 0 0 3px var(--color);
-    border-radius: 18px;
-    max-width: 1000px;
-    margin: 10px auto;
-    overflow: hidden;
-}
-
-.cs-content2 {
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
-    background: var(--content-bg);
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.image-overlay:hover {
+    opacity: 1;
+}
+
+.card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-family: var(--my-font);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.price-list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+.price-item:hover {
+    padding-left: 0.5rem;
+}
+
+.price-label {
     color: var(--text-color);
-    text-align: left;
-    padding: 10px;
-    box-shadow: 0 0 3px var(--color);
-    border-radius: 18px;
-    margin-bottom: 10px;
+    font-size: 0.95rem;
 }
 
-.cs-content2 section {
-    border-radius: 18px;
-    background: var(--theme-color);
-    padding: 10px;
-    overflow: hidden;
+.price-amount {
+    font-weight: bold;
+    color: #2ecc71;
+    font-size: 1.1rem;
+    position: relative;
 }
 
-.cs-content2 p {
-    background: none;
-    border-radius: 0;
+.price-label::before {
+    content: '✨';
+    margin-right: 0.3rem;
+    animation: sparkle 2s ease-in-out infinite;
 }
 
-section h2 {
+.card-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: var(--border-stylized);
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--my-font);
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: var(--gradient-bg);
     color: var(--text-color);
-    border-bottom: 1px solid var(--color);
-    padding: 10px;
-    margin: 0;
-    font-family: 'myFont', sans-serif;
 }
 
-@media screen and (max-width: 500px) {
-    .cs-wrapper {
+.btn-secondary {
+    background: var(--content-color);
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Promotions Section */
+.promotions {
+    background: var(--secondary-color);
+    border-radius: var(--border-stylized);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow);
+}
+
+.promotions h2 {
+    font-family: var(--my-font);
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--accent-color);
+    font-size: 2rem;
+}
+
+.promo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.promo-card {
+    flex: 1 1 500px;
+    background: var(--content-color);
+    padding: 1.5rem;
+    border-radius: var(--border-stylized);
+    border-left: 4px solid var(--accent-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateX(5px);
+}
+
+.promo-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.promo-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+}
+
+.promo-description {
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.discount {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Loading Animation */
+.loading-indicator {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--content-color);
+    padding: 1rem 2rem;
+    border-radius: var(--border-stylized);
+    box-shadow: var(--shadow);
+    display: none;
+    z-index: 2000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .commission-card {
+        grid-template-columns: 1fr;
+    }
+
+    .card-actions {
         flex-direction: column;
     }
-    .inquire-button {
-        text-align: center;
-        flex-direction: column;
+
+    .filter-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
     }
-    .cs-container img {
-        width: 100%;
+
+    .filter-tab {
+        white-space: nowrap;
     }
-    .cs-content2 {
-        flex-direction: column;
-    }
+}
+
+/* Hidden class for filtering */
+.hidden {
+    display: none !important;
+}
+
+/* Animation for cards appearing */
+.commission-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Stagger animation for multiple cards */
+.commission-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.commission-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.commission-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.commission-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.commission-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.commission-card:nth-child(6) {
+    animation-delay: 0.6s;
 }

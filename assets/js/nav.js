@@ -12,6 +12,33 @@ document.addEventListener("DOMContentLoaded", () => {
   const settingsMenu = document.querySelector(".settings-menu");
   const upBtn = document.getElementById("upBtn");
   const currentYearElement = document.getElementById('currentyear');
+  
+  handleHeaderScroll();
+
+  // Header scroll effect
+  function handleHeaderScroll() {
+    const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > 100) {
+        header.style.backdropFilter = 'blur(5%)';
+      } else {
+        header.style.backdropFilter = 'blur(5%)';
+      }
+
+      // Hide/show header on scroll
+      if (currentScrollY > lastScrollY && currentScrollY > 200) {
+        header.style.transform = 'translateY(-100%)';
+      } else {
+        header.style.transform = 'translateY(0)';
+      }
+
+      lastScrollY = currentScrollY;
+    });
+  }
 
   // Hamburger menu toggle
   hamburger?.addEventListener("click", () => {
@@ -35,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (sideMenuContent) {
         const isShown = sideMenuContent.classList.toggle("show-sideMenu");
         blurOverlay && (blurOverlay.style.display = isShown ? "block" : "none");
-        document.body.classList.toggle("no-scroll-sideMenu", isShown);
+        document.body.classList.toggle("no-scroll", isShown);
       }
     });
   });
@@ -64,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (![...sideMenuLinks, ...sideMenuContents].some(el => el.contains(event.target))) {
       sideMenuContents.forEach(content => content.classList.remove("show-sideMenu"));
       if (blurOverlay) blurOverlay.style.display = "none";
-      document.body.classList.remove("no-scroll-sideMenu");
+      document.body.classList.remove("no-scroll");
     }
     // Nav menu
     if (!event.target.closest('.hamburger') && !event.target.closest('.navigation-menu')) {

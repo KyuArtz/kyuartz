@@ -8,22 +8,23 @@
 }
 
 #preferences-container h1 {
-    color: var(--color);
+    color: var(--accent-color);
     text-align: center;
-    font-family: 'myFont', sans-serif;
+    font-family: var(--my-font);
 }
 
 label {
-    color: var(--text-color);
-    font-family: 'myFont', sans-serif;
+    color: var(--accent-color);
+    font-family: var(--my-font);
 }
 
 #theme-select,
 #languageSwitcher {
-    background: none;
-    border: 2px solid var(--color);
+    background: var(--content-color);
+    border: unset;
+    box-shadow: var(--shadow);
     border-radius: 50px;
-    color: var(--color);
+    color: var(--text-color);
     max-width: 200px;
     padding: 10px;
     cursor: pointer;
@@ -31,6 +32,6 @@ label {
 
 #theme-select:focus,
 #languageSwitcher:focus {
-    border-color: var(--theme-overlay);
-    outline: 2px solid var(--theme-overlay);
+    border-color: var(--colored-overlay);
+    outline: 2px solid var(--colored-overlay);
 }

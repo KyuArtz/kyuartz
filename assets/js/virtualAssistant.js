@@ -162,7 +162,7 @@ class DialogueManager {
     this.lastAIRequestTime = 0;
   }
 
-  // --------------------- typewriter with keyboard skipping -----------------
+  // --------------------- typewriter -----------------
   typeWriterEffect(text, speed = 8) {
     if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
     this.isTyping = true;

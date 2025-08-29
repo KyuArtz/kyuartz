@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,158 +12,128 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
-  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
+  <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="48x48">
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="KyuArtz">
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/commission-sheet">
-  <link rel="preload" href="assets/style/main.css" as="style">
-  <link rel="preload" href="assets/style/loader.css" as="style">
-  <link rel="preload" href="assets/style/nav.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/commission-sheet.css">
-  <link rel="stylesheet" href="assets/style/loader.css">
   <link rel="stylesheet" href="assets/style/nav.css">
   <link rel="stylesheet" href="assets/style/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/popup.js" defer></script>
-  <script src="assets/js/csFilter.js" defer></script>
-  <script src="assets/js/currencyConversion.js" defer></script>
-  <script src="assets/js/translations.js" defer></script>
-  <script src="assets/js/search.js" defer></script>
+  <script src="assets/js/commissionSheet.js" defer></script>
   <meta property="og:title" content="KyuArtz | Commission Sheet">
   <meta property="og:description" content="Check out KyuArtz's commission sheet for pricing and details on various art styles and projects.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/commission-sheet">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="KyuArtz | Commission Sheet">
   <meta name="twitter:description" content="Check out KyuArtz's commission sheet for pricing and details on various art styles and projects.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "KyuArtz",
-      "url": "https://kyuartz.github.io/kyuartz/commission-sheet",
-      "description": "Check out KyuArtz's commission sheet for pricing and details on various art styles and projects.",
-      "author": {
-        "@type": "Person",
-        "name": "Kyu"
-      }
-    }
-  </script>
 </head>
+
 <body>
   <div class="loader" oncontextmenu="return false">
-    <h2 class="loading-text" data-translate="loading">Loading Webpage...</h2>
     <div class="spinner small-spinner"></div>
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
+  
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
-    <img src="assets/images/popup/popup-icon.webp" loading="lazy">
-    <h2 data-translate="welcomeTitle">Thanks for visiting!</h2>
-    <p data-translate="welcomeText">I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()" data-translate="okay">Okay <i class="fa-solid fa-thumbs-up"></i></button>
+    <img src="assets/images/imgbtn/meo.webp" loading="lazy">
+    <h2>Thanks for visiting!</h2>
+    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
+    <button onclick="closeWelcomeMessage()">Okay <i class="fa-solid fa-thumbs-up"></i></button>
   </div>
+
   <div id="cookie-popup" class="cookie-popup">
-    <p><span data-translate="cookieText">KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy.</span> <a class="dL" href="privacy-policy.html">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies" data-translate="gotIt">Got It</button>
+    <p>KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a class="dL" href="service-center.html">Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+    <button id="accept-cookies">Got It</button>
   </div>
+
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
-        <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html" data-translate="brand">Kyu</a>
+        <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
+        <a href="index.html">Kyu</a>
       </div>
-      <div class="search-container">
-        <form class="search" aria-label="Search KyuArtz">
-          <input type="search" id="input-box" autocomplete="off" placeholder="SEARCH KYUARTZ..." name="search" aria-label="Search">
-          <button type="submit" id="search-button" aria-label="Submit search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <div class="search-result" style="display: none;"></div>
-        </form>
-      </div>
+
       <ul class="navigation-menu" role="menubar">
         <li class="nav-item">
           <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
-            <i class="fa-solid fa-house"></i> <span data-translate="home">HOME</span>
+            <i class="fa-solid fa-house"></i> HOME
           </a>
         </li>
         <li class="nav-item">
           <a href="portfolio.html" class="nav-link" data-page="portfolio.html" role="menuitem">
-            <i class="fa-regular fa-image"></i> <span data-translate="portfolio">PORTFOLIO</span>
+            <i class="fa-regular fa-image"></i> PORTFOLIO
           </a>
         </li>
         <li class="nav-item">
           <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
-            <i class="fa-regular fa-address-card"></i> <span data-translate="about">ABOUT</span>
+            <i class="fa-regular fa-address-card"></i> ABOUT
           </a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
-            <i class="fa-solid fa-phone"></i> <span data-translate="contact">CONTACT</span>
+            <i class="fa-solid fa-phone"></i> CONTACT
           </a>
         </li>
+        
         <li class="nav-item sideMenu">
           <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
-            <i class="fa-solid fa-bars"></i> <span data-translate="more">MORE</span> <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-solid fa-bars"></i> MORE
           </a>
           <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
             <div class="subBrand" aria-label="KyuArtz Home Page">
               <img src="assets/images/brand-logo/logo.ico" alt="KyuArtz Logo" loading="lazy" class="my-avatar">
-              <p data-translate="brand">Kyu</p>
+              <p>Kyu</p>
             </div>
             <div class="span-btn">
-              <h2><span data-translate="commissionArt">Commission Art</span></h2>
+              <h2>Commission</h2>
               <a href="commission-sheet.html" data-page="commission-sheet.html">
-                <i class="fa-regular fa-file"></i> <span data-translate="commissionSheet">Commission Sheet</span>
+                <i class="fa-regular fa-file"></i> Commission Sheet
               </a>
               <a href="client-queue.html" data-page="client-queue.html">
-                <i class="fa-solid fa-table"></i> <span data-translate="clientQueue">Client Queue</span>
+                <i class="fa-solid fa-table"></i> Client Queue
               </a>
             </div>
             <div class="span-btn">
-              <h2><span data-translate="explore">Explore</span></h2>
+              <h2>Explore</h2>
               <a href="comic.html" data-page="comic.html">
-                <i class="fa-solid fa-book"></i> <span data-translate="myComic">My Comic</span>
+                <i class="fa-solid fa-book"></i> Kyuartz Comic
               </a>
               <a href="characters.html" data-page="characters.html">
-                <i class="fa-solid fa-person-rifle"></i> <span data-translate="originalCharacter">Original Character</span>
+                <i class="fa-solid fa-person-rifle"></i> Original Characters
               </a>
             </div>
             <div class="span-btn">
-              <h2><span data-translate="serviceInfo">Service Info</span></h2>
-              <a href="terms-of-service.html" data-page="terms-of-service.html">
-                <i class="fa-solid fa-info"></i> <span data-translate="termsOfService">Terms of Service</span>
+              <h2>Support</h2>
+              <a href="service-center.html" data-page="service-center.html">
+                <i class="fa-solid fa-info"></i> Service Center
               </a>
-              <a href="privacy-policy.html" data-page="privacy-policy.html">
-                <i class="fa-solid fa-info"></i> <span data-translate="privacyPolicy">Privacy Policy</span>
+              <a href="contact.html" data-page="contact.html">
+                <i class="fa-solid fa-headset"></i> Customer Support
               </a>
-              <a href="faq.html" data-page="faq.html">
-                <i class="fa-solid fa-info"></i> <span data-translate="faqs">FAQs</span>
-              </a>
-              <a href="customer-support.html" data-page="customer-support.html">
-                <i class="fa-solid fa-headset"></i> <span data-translate="customerSupport">Customer Support</span>
-              </a>
-              <a href="help.html" data-page="help.html">
-                <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+              <a href="update-log.html" data-page="update-log.html">
+                <i class="fa-solid fa-download"></i> what's New
               </a>
             </div>
           </div>
         </li>
       </ul>
+      
       <div class="subMenu-container">
         <div class="settings-menu">
           <button class="settings-btn" aria-label="Settings">
@@ -171,316 +142,393 @@
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
               <div class="profile">
-                <img src="assets/images/about-presets/myprofile/me.webp" alt="Profile">
+                <img src="assets/images/artgallary/elishia avatar.webp" alt="Profile">
                 <div class="profile-info">
-                  <p class="username"><span data-translate="userName">Kyu</span></p>
-                  <p class="userrole"><span data-translate="userRole">Artist</span></p>
+                  <p class="username"> Kyu</p>
+                  <p class="userrole"> Artist</p>
                 </div>
                 <i class="fa-solid fa-angle-right"></i>
               </div>
             </a>
             <a class="setting" href="virtual-assistant.html">
-              <i class="fa-solid fa-cat fa-bounce"></i> <span data-translate="meoAssistant">Meo Assistant</span>
+              <i class="fa-solid fa-cat fa-bounce"></i> Meo Assistant
             </a>
             <a class="setting" href="preferences.html">
-              <i class="fa-solid fa-palette"></i> <span data-translate="preferences">Preferences</span>
+              <i class="fa-solid fa-palette"></i> Preferences
             </a>
-            <a class="setting" href="help.html">
-              <i class="fa-regular fa-circle-question"></i> <span data-translate="helpCenter">Help Center</span>
+            <a class="setting" href="service-center.html">
+              <i class="fa-regular fa-circle-question"></i> Service Center
             </a>
           </div>
         </div>
+        
         <div class="hamburger" aria-label="Mobile menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
+           <span class="bar"></span>
         </div>
       </div>
     </nav>
   </header>
   <div class="blur-overlay"></div>
-  <nav class="secondary-navigation">
-    <h1 data-translate="commissionTitle">Samples</h1>
-    <div class="category-btn" title="Category">
-      <span class="category-dot"></span>
-      <span class="category-dot"></span>
-      <span class="category-dot"></span>
+
+  <main class="main-container">
+    <section class="hero">
+      <h1>Commission Sheet</h1>
+      <p>Transform your ideas into stunning artwork! Choose from various styles and packages to bring your vision to life.</p>
+    </section>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all"><i class="fas fa-filter"></i> All Styles</button>
+      <button class="filter-tab" data-filter="semi-realism"><i class="fas fa-filter"></i> Semi Realism</button>
+      <button class="filter-tab" data-filter="anime"><i class="fas fa-filter"></i> Anime Style</button>
+      <button class="filter-tab" data-filter="chibi"><i class="fas fa-filter"></i> Chibi</button>
+      <button class="filter-tab" data-filter="emote"><i class="fas fa-filter"></i> Emotes</button>
+      <button class="filter-tab" data-filter="landscape"><i class="fas fa-filter"></i> Landscapes</button>
+
+      <div class="currency-container">
+      <select class="currency-selector" id="currency-selector">
+        <option value="USD">USD - United States Dollar</option>
+        <option value="EUR">EUR - Euro</option>
+        <option value="JPY">JPY - Japanese Yen</option>
+        <option value="GBP">GBP - British Pound</option>
+        <option value="AUD">AUD - Australian Dollar</option>
+        <option value="CAD">CAD - Canadian Dollar</option>
+        <option value="CHF">CHF - Swiss Franc</option>
+        <option value="CNY">CNY - Chinese Yuan</option>
+        <option value="HKD">HKD - Hong Kong Dollar</option>
+        <option value="SGD">SGD - Singapore Dollar</option>
+        <option value="KRW">KRW - South Korean Won</option>
+        <option value="INR">INR - Indian Rupee</option>
+        <option value="NZD">NZD - New Zealand Dollar</option>
+        <option value="MXN">MXN - Mexican Peso</option>
+        <option value="ZAR">ZAR - South African Rand</option>
+        <option value="BRL">BRL - Brazilian Real</option>
+        <option value="PHP">PHP - Philippine Peso</option>
+        <option value="THB">THB - Thai Baht</option>
+        <option value="MYR">MYR - Malaysian Ringgit</option>
+        <option value="VND">VND - Vietnamese Dong</option>
+        <option value="IDR">IDR - Indonesian Rupiah</option>
+        <option value="SEK">SEK - Swedish Krona</option>
+        <option value="NOK">NOK - Norwegian Krone</option>
+        <option value="DKK">DKK - Danish Krone</option>
+        <option value="RUB">RUB - Russian Ruble</option>
+        <option value="TRY">TRY - Turkish Lira</option>
+        <option value="PLN">PLN - Polish Zloty</option>
+      </select>
     </div>
-    <div class="category-container">
-      <ul class="category-menu">
-        <h2 data-translate="category">Category</h2>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="all">
-            <i class="fa-solid fa-filter"></i> <span data-translate="all">All</span>
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="semi-realism">
-            <i class="fa-solid fa-filter"></i> <span data-translate="semiRealism">Semi Realism</span>
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="anime">
-            <i class="fa-solid fa-filter"></i> <span data-translate="animeStyle">Anime Style</span>
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="chibi">
-            <i class="fa-solid fa-filter"></i> <span data-translate="chibi">Chibi</span>
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="emote">
-            <i class="fa-solid fa-filter"></i> <span data-translate="emote">Emote</span>
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="landscape">
-            <i class="fa-solid fa-filter"></i> <span data-translate="landscape">Landscape</span>
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="bundlePromotions">
-            <i class="fa-solid fa-filter"></i> <span data-translate="bundlePromo">Bundles & Promo</span>
-          </a>
-        </li>
-      </ul>
     </div>
-    <select class="currency-conversion-btn" id="currency-selector">
-      <option value="USD">USD - United States Dollar</option>
-      <option value="EUR">EUR - Euro</option>
-      <option value="JPY">JPY - Japanese Yen</option>
-      <option value="GBP">GBP - British Pound</option>
-      <option value="AUD">AUD - Australian Dollar</option>
-      <option value="CAD">CAD - Canadian Dollar</option>
-      <option value="CHF">CHF - Swiss Franc</option>
-      <option value="CNY">CNY - Chinese Yuan</option>
-      <option value="HKD">HKD - Hong Kong Dollar</option>
-      <option value="SGD">SGD - Singapore Dollar</option>
-      <option value="KRW">KRW - South Korean Won</option>
-      <option value="INR">INR - Indian Rupee</option>
-      <option value="NZD">NZD - New Zealand Dollar</option>
-      <option value="MXN">MXN - Mexican Peso</option>
-      <option value="ZAR">ZAR - South African Rand</option>
-      <option value="BRL">BRL - Brazilian Real</option>
-      <option value="PHP">PHP - Philippine Peso</option>
-      <option value="THB">THB - Thai Baht</option>
-      <option value="MYR">MYR - Malaysian Ringgit</option>
-      <option value="VND">VND - Vietnamese Dong</option>
-      <option value="IDR">IDR - Indonesian Rupiah</option>
-      <option value="SEK">SEK - Swedish Krona</option>
-      <option value="NOK">NOK - Norwegian Krone</option>
-      <option value="DKK">DKK - Danish Krone</option>
-      <option value="RUB">RUB - Russian Ruble</option>
-      <option value="TRY">TRY - Turkish Lira</option>
-      <option value="PLN">PLN - Polish Zloty</option>
-    </select>
-  </nav>
-  <div class="cs-container">
-    <div class="cs-content" data-category="semi-realism">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/phantom nightwalker (2022).webp" loading="lazy" alt="Portrait Sample">
-          <h2 data-translate="comms-1">PORTRAIT / Bust-UP (SEMI-REALISM)</h2>
+
+    <div class="commission-grid">
+      <div class="commission-card" data-category="semi-realism">
+        <div class="card-image">
+          <img src="assets/images/artgallary/phantom nightwalker (2022).webp" alt="Semi-Realism Portrait Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="50">50 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="30">30 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="25">25 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="15">15 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="5">5 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Portrait / Bust-Up (Semi-Realism)</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered + Background</span>
+              <span class="price-amount" data-usd="50"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="30"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="25"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="15"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
-      </div>
-    </div>
-    <div class="cs-content" data-category="semi-realism">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/restricted zone (2022).webp" loading="lazy" alt="Full Body Sample">
-          <h2 data-translate="comms-2">FULL BODY (SEMI-REALISM)</h2>
+
+      <div class="commission-card" data-category="semi-realism">
+        <div class="card-image">
+          <img src="assets/images/artgallary/restricted zone (2022).webp" alt="Semi-Realism Full Body Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="100">100 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="55">55 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="35">35 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="25">25 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="10">10 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Full Body (Semi-Realism)</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered + Background</span>
+              <span class="price-amount" data-usd="100"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="55"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="35"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="25"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
-      </div>
-    </div>
-    <div class="cs-content" data-category="anime">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/rebecca portrait fanart (2022).webp" loading="lazy" alt="Anime Portrait Sample">
-          <h2 data-translate="comms-3">PORTRAIT / Bust-UP (ANIME-STYLE)</h2>
+
+      <div class="commission-card" data-category="anime">
+        <div class="card-image">
+          <img src="assets/images/artgallary/rebecca portrait fanart (2022).webp" alt="Anime Portrait Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="30">30 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="20">20 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="15">15 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="10">10 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="5">5 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Portrait / Bust-Up (Anime Style)</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered + Background</span>
+              <span class="price-amount" data-usd="30"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="20"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="15"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="10"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
-      </div>
-    </div>
-    <div class="cs-content" data-category="anime">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/until we meet again (2022).webp" loading="lazy" alt="Anime Full Body Sample">
-          <h2 data-translate="comms-4">FULL BODY (ANIME-STYLE)</h2>
+
+      <div class="commission-card" data-category="anime">
+        <div class="card-image">
+          <img src="assets/images/artgallary/until we meet again (2022).webp" alt="Anime Full Body Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="75">75 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="45">45 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="25">25 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="19">19 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="10">10 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Full Body (Anime Style)</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered + Background</span>
+              <span class="price-amount" data-usd="75"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="45"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="25"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="19"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
-      </div>
-    </div>
-    <div class="cs-content" data-category="chibi">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/bday art (2024).webp" loading="lazy" alt="Chibi Sample">
-          <h2 data-translate="comms-5">CHIBI</h2>
+
+      <div class="commission-card" data-category="chibi">
+        <div class="card-image">
+          <img src="assets/images/artgallary/bday art (2024).webp" alt="Chibi Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="25">25 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="19">19 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="15">15 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="10">10 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="5">5 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Chibi Characters</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered + Background</span>
+              <span class="price-amount" data-usd="25"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="19"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="15"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="10"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
-      </div>
-    </div>
-    <div class="cs-content" data-category="emote">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/shelain cute emote.webp" loading="lazy" alt="Emote Sample">
-          <h2 data-translate="comms-6">EMOTE</h2>
+
+      <!-- Emotes -->
+      <div class="commission-card" data-category="emote">
+        <div class="card-image">
+          <img src="assets/images/artgallary/hexxana cute emote.webp" alt="Emote Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered with Simple Background: <span class="price-amount" data-usd="15">15 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered without Background: <span class="price-amount" data-usd="10">10 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="5">5 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="3">3 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="5">5 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Custom Emotes</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered + Background</span>
+              <span class="price-amount" data-usd="15"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="10"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="5"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="3"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
-      </div>
-    </div>
-    <div class="cs-content" data-category="landscape">
-      <div class="cs-wrapper">
-        <div class="sample-img">
-          <img src="assets/images/artgallary/legend of the crystalight (2024).webp" loading="lazy" alt="Landscape Sample">
-          <h2 data-translate="comms-7">LANDSCAPE</h2>
+
+      <div class="commission-card" data-category="landscape">
+        <div class="card-image">
+          <img src="assets/images/artgallary/legend of the crystalight (2024).webp" alt="Landscape Sample">
+          <div class="image-overlay">View Sample</div>
         </div>
-        <div class="price-wrapper">
-          <div class="price">
-            <h3 data-translate="priceInfo">PRICE INFO</h3>
-            <p><i class="fa-solid fa-tag"></i> Fully Rendered: <span class="price-amount" data-usd="150">150 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Semi Rendered: <span class="price-amount" data-usd="120">120 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Grayscale: <span class="price-amount" data-usd="65">65 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Lineart: <span class="price-amount" data-usd="45">45 USD</span></p>
-            <p><i class="fa-solid fa-tag"></i> Commercial Use: <span class="percent">+50%</span> of total cost</p>
-            <p><i class="fa-solid fa-tag"></i> Revisions: The first two requests are free; additional requests will incur a fee of <span class="price-amount" data-usd="10">10 USD</span> for each subsequent request.</p>
-            <a href="virtual-assistant.html"><span data-translate="">For more information ask MEO our virtual assistant</span> <i class="fa-solid fa-circle-question"></i></a>
+        <div class="card-content">
+          <h3 class="card-title">Landscapes & Backgrounds</h3>
+          <ul class="price-list">
+            <li class="price-item">
+              <span class="price-label">Fully Rendered</span>
+              <span class="price-amount" data-usd="150"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Semi Rendered</span>
+              <span class="price-amount" data-usd="120"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Grayscale</span>
+              <span class="price-amount" data-usd="65"></span>
+            </li>
+            <li class="price-item">
+              <span class="price-label">Lineart</span>
+              <span class="price-amount" data-usd="45"></span>
+            </li>
+          </ul>
+          <div class="card-actions">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Order Now</a>
+            <a href="client-queue.html" class="btn btn-secondary"><i class="fas fa-eye"></i> View Queue</a>
           </div>
         </div>
       </div>
-      <div class="inquire-button">
-        <a href="contact.html"><span data-translate="requestNow"> Request Now</span> <i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="client-queue.html"><span data-translate="viewQueue">View Queue</span> <i class="fa-solid fa-eye"></i></a>
+    </div>
+
+    <section class="promotions">
+      <h2>🎁 Special Offers & Promotions</h2>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <div class="promo-icon">🎨</div>
+          <div class="promo-title">Multi-Piece Bundle</div>
+          <div class="promo-description">
+            Order 2 or more illustrations and save <span class="discount">15%</span> on your total order!
+          </div>
+        </div>
+        
+        <div class="promo-card">
+          <div class="promo-icon">🔄</div>
+          <div class="promo-title">Returning Client Perks</div>
+          <div class="promo-description">
+            Loyal customers get priority booking and <span class="discount">5%</span> off future orders.
+          </div>
+        </div>
+        
+        <div class="promo-card">
+          <div class="promo-icon">🎂</div>
+          <div class="promo-title">Birthday Special</div>
+          <div class="promo-description">
+            Celebrate your special month with <span class="discount">10%</span> off any commission!
+          </div>
+        </div>
+        
+        <div class="promo-card">
+          <div class="promo-icon">⚡</div>
+          <div class="promo-title">Flash Sales</div>
+          <div class="promo-description">
+            Follow our social media for surprise 24-hour discount announcements!
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="cs-content2" data-category="bundlePromotions">
-      <section>
-        <h2 data-translate="newBundleDeals">NEW BUNDLE DEALS</h2>
-        <p><i class="fa-solid fa-gift"></i> **Multi-Piece Commission Bundle**: Order 2 or more illustrations in one request and receive a <span class="percent">15%</span> discount!</p>
-        <p><i class="fa-solid fa-brush"></i> **Background Upgrade Deal**: Add a complex background for a bundled price reduction.</p>
-        <p><i class="fa-solid fa-user-group"></i> **Returning Client Perks**: Repeat customers receive priority booking and a <span class="percent">5%</span> discount on future orders.</p>
-      </section>
-      <section>
-        <h2 data-translate="promotionsEngagements">PROMOTIONS & ENGAGEMENTS</h2>
-        <p><i class="fa-solid fa-tag"></i> **Limited-Time Discount**: Enjoy a <span class="percent">10%</span> discount during Holiday Seasons!</p>
-        <p><i class="fa-solid fa-cake-candles"></i> **Birthday Discount**: Celebrate your special month with a <span class="percent">10%</span> discount on any commission!</p>
-        <p><i class="fa-solid fa-calendar-day"></i> **Flash Sales**: Follow our social media for random 24-hour discount announcements!</p>
-        <p><i class="fa-solid fa-hourglass-half"></i> **Priority Slot Option**: Need your artwork sooner? Opt for our rush commission tier at an extra fee.</p>
-      </section>
-    </div>
+    </section>
+  </main>
+
+  <div class="loading-indicator" id="loading">
+    <div>💫 Updating prices...</div>
   </div>
+
   <button type="button" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
-  <div class="footer">
-    <div class="copyright">
-      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
-      <div class="footer-container">
-        <a class="detail" href="terms-of-service.html" data-translate="termsOfService"> Terms of Service</a>
-        <a class="detail" href="privacy-policy.html" data-translate="privacyPolicy"> Privacy Policy</a>
-        <a class="detail" href="faq.html" data-translate="faqs"> FAQs</a>
-        <a class="detail" href="customer-support.html" data-translate="customerSupport"> Customer Support</a>
-        <a class="detail" href="contact.html" data-translate="contact"> Contact Us</a>
-        <a class="detail" href="help.html" data-translate="helpCenter"> Help Center</a>
-        <div class="social">
-          <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/fb.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/yt.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" target="_blank" rel="noopener noreferrer"><img src="assets/images/imgbtn/X.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://kyuartz.artstation.com/" target="_blank" title="Artstation" rel="noopener noreferrer"><img src="assets/images/imgbtn/ast.webp" loading="lazy"></a>
-          <a class="logo-view" href="https://cara.app/kyuartz" target="_blank" title="Cara" rel="noopener noreferrer"><img src="assets/images/imgbtn/cara-logo.webp" loading="lazy"></a>
-        </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-section">
+        <h4>Explore</h4>
+        <a href="commission-sheet.html">Commission Sheet</a>
+        <a href="client-queue.html">Client Queue</a>
+        <a href="characters.html">Original Characters</a>
+        <a href="comic.html">Kyuartz Comic</a>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Support</h4>
+        <a href="service-center.html">FAQ</a>
+        <a href="service-center.html">Terms of Service</a>
+        <a href="service-center.html">Privacy Policy</a>
+        <a href="contact.html">Customer Support</a>
       </div>
     </div>
-  </div>
+    
+    <div class="social-links">
+      <a href="https://www.facebook.com/kyuArtz" title="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+      <a href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="YouTube"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"></a>
+      <a href="https://x.com/KyuArtz_992" title="Twitter"><img src="https://i.pinimg.com/originals/25/0f/fa/250ffa74bfcca5b2929bccda8df2e4f5.jpg" alt="Twitter"></a>
+      <a href="https://kyuartz.artstation.com/" title="ArtStation"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Artstation_logo_logos-512.png" alt="ArtStation"></a>
+      <a href="https://cara.app/kyuartz" title="Cara"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Cara-app-logo-square.svg" alt="Cara"></a>
+    </div>
+    
+    <div class="copyright">
+      <i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span>
+    </div>
+    <div id="version">Loading...</div>
+  </footer>
 </body>
 </html>

@@ -647,14 +647,16 @@ function getCharacterDetails(character) {
             <h3><i class="fa-regular fa-circle-question"></i> Elemental Mastery</h3>
                 ${details.elementalImages.map(imgSrc => `<img src="${imgSrc}" alt="">`).join('')}
             </div>
-            <div class="character-info-scrollable">
-                ${renderBasicInfo(details)}
-                ${renderAbilities(details)}
-                ${renderWeapon(details)}
-                ${renderAffiliates(details)}
-                ${renderLikes(details)}
-                ${renderDislikes(details)}
-                ${renderBackground(details)}
+            <div class="character-info-wrapper">
+                <div class="character-info-scrollable">
+                    ${renderBasicInfo(details)}
+                    ${renderAbilities(details)}
+                    ${renderWeapon(details)}
+                    ${renderAffiliates(details)}
+                    ${renderLikes(details)}
+                    ${renderDislikes(details)}
+                    ${renderBackground(details)}
+                </div>
             </div>
         `;
     }

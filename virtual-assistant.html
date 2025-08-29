@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,16 +12,14 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
-  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
+  <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="48x48">
+  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="KyuArtz">
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/virtual-assistant">
-  <link rel="preload" href="assets/style/virtual-assistant.css" as="style">
-  <link rel="preload" href="assets/style/main.css" as="style">
   <link rel="preconnect" href="https://kit.fontawesome.com">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/virtual-assistant.css">
@@ -28,44 +27,39 @@
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/virtualAssistant.js" defer></script>
   <script type="module" src="assets/js/aiIntegration.js" defer></script>
-  <script src="assets/js/translations.js" defer></script>
-  <meta property="og:title" content="KyuArtz | Home Page">
+  <meta property="og:title" content="KyuArtz | MEO Virtual Assisstant">
   <meta property="og:description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo and branding">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/virtual-assistant">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz | Home Page">
+  <meta name="twitter:title" content="KyuArtz | MEO Virtual Assisstant">
   <meta name="twitter:description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand-cover/cover.png">
+  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "KyuArtz",
-      "url": "https://kyuartz.github.io/kyuartz/",
-      "description": "KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">,
-      "author": {
-        "@type": "Person",
-        "name": "Kyu"
-      }
-    }
-  </script>
 </head>
+
 <body>
+  <div class="loader" oncontextmenu="return false">
+    <div class="spinner small-spinner"></div>
+    <div class="spinner medium-spinner"></div>
+    <div class="spinner large-spinner"></div>
+  </div>
   <nav class="nav-buttons" id="navButtons" aria-label="Dialogue navigation">
     <button type="button" onclick="window.history.back()">
       <i class="fa-solid fa-xmark"></i>
     </button>
+
     <button type="button" id="historyToggle" title="Conversation History" aria-label="Conversation History">
       <i class="fa-solid fa-clock-rotate-left"></i>
     </button>
+
     <button type="button" id="openPreferences" title="Preferences" aria-label="Preferences">
       <i class="fa-solid fa-gear"></i>
     </button>
   </nav>
+
   <main class="dialogue-container">
     <section id="dialogue-box" aria-live="polite">
       <header class="character-name" id="characterName"></header>
@@ -75,6 +69,7 @@
         </div>
         <div class="dialogue-options" id="dialogueOptions"></div>
       </div>
+
       <div class="input-container">
         <button id="micBtn" aria-label="Speak" title="Speak"><i class="fa-solid fa-microphone"></i></button>
         <button id="ttsBtn" aria-label="Read aloud" title="Read aloud"><i class="fa-solid fa-volume-up"></i></button>
@@ -84,6 +79,7 @@
     </section>
     <aside class="character-container" id="characterContainer" aria-label="Character images"></aside>
   </main>
+
   <aside id="historyPanel" class="history-panel" aria-label="Conversation History">
     <div class="history-header">
       <h2>Conversation History</h2>
@@ -91,6 +87,7 @@
     </div>
     <div id="historyList" class="history-list"></div>
   </aside>
+
   <div id="preferencesModal" class="modal" aria-hidden="true">
     <div class="modal-content">
       <span class="close-modal" id="closePreferences">&times;</span>
@@ -106,14 +103,17 @@
           <input type="color" id="colorContentBg" title="Content Background">
         </div>
       </div>
+
       <div class="pref-section">
         <label for="portraitSelect">Meo Portrait:</label>
         <select id="portraitSelect"></select>
       </div>
+      
       <div class="pref-section">
         <label for="voiceSelect">TTS Voice:</label>
         <select id="voiceSelect"></select>
       </div>
+
       <div class="pref-section">
         <label>
           <input type="checkbox" id="typewriterToggle"> Enable Typewriter Effect
