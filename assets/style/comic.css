@@ -133,7 +133,7 @@
 }
 
 .primary-btn {
-    background: var(--gradient-bg);
+    background: var(--accent-color);
     color: var(--text-color);
 }
 

@@ -61,7 +61,8 @@ body {
 :root {
     /* Base Design System */
     --border-rounded: 50%;
-    --border-stylized: 18px;
+    --border-stylized: 5px;
+    --border: 1px solid rgba(255, 255, 255, 0.1);
     --my-font: 'myFont', sans-serif;
     --default-font: "Roboto", "Arial", sans-serif;
     --scrollbar-track-color: rgba(0, 0, 0, 0);

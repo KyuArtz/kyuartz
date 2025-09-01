@@ -207,11 +207,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add hover effects to buttons
   document.querySelectorAll('.btn, .cta-button').forEach(btn => {
     btn.addEventListener('mouseenter', () => {
-      btn.style.transform = 'translateY(-3px) scale(1.05)';
+      btn.style.transform = 'translateY(-3px)';
     });
 
     btn.addEventListener('mouseleave', () => {
-      btn.style.transform = 'translateY(0) scale(1)';
+      btn.style.transform = 'translateY(0)';
     });
   });
 });

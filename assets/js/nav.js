@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
   const upBtn = document.getElementById("upBtn");
-  const currentYearElement = document.getElementById('currentyear');
   
   handleHeaderScroll();
 
@@ -116,11 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
     upBtn.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-  }
-
-  // Set current year
-  if (currentYearElement) {
-    currentYearElement.textContent = new Date().getFullYear();
   }
 
   // Highlight active nav link

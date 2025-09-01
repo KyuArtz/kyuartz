@@ -307,3 +307,9 @@ loadVersion();
 
 // Option 2: With retry logic (recommended for production)
 // loadVersionWithRetry();
+
+// Set current year
+const currentYearElement = document.getElementById('currentyear');
+if (currentYearElement) {
+  currentYearElement.textContent = new Date().getFullYear();
+}

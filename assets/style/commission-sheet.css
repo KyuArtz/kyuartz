@@ -1,10 +1,3 @@
-.currency-container {
-    display: flex;
-    justify-content: center;
-    background: var(--secondary-color);
-    border-radius: var(--border-stylized);
-}
-
 .currency-selector {
     padding: 0.5rem 1rem;
     border: 2px solid var(--accent-color);
@@ -17,14 +10,12 @@
     outline: none;
 }
 
-/* Main Content */
 .main-container {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 1rem;
 }
 
-/* Hero Section */
 .hero {
     text-align: center;
     background: var(--gradient-bg);
@@ -48,17 +39,21 @@
     margin: 0 auto;
 }
 
-/* Filter Tabs */
 .filter-tabs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin: 1rem;
-    padding: 1rem 0;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--secondary-color);
+    border-radius: var(--border-stylized);
+    box-shadow: var(--shadow);
 }
 
 .filter-tab {
     padding: 0.75rem 1.5rem;
+    flex: 1;
     background: var(--content-color);
     border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
@@ -76,7 +71,6 @@
     box-shadow: var(--shadow);
 }
 
-/* Commission Cards */
 .commission-grid {
     display: grid;
     gap: 2rem;
@@ -86,6 +80,7 @@
 .commission-card {
     background: var(--secondary-color);
     border-radius: var(--border-stylized);
+    padding: 1rem;
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
@@ -218,7 +213,7 @@
 }
 
 .btn-primary {
-    background: var(--gradient-bg);
+    background: var(--accent-color);
     color: var(--text-color);
 }
 
@@ -232,7 +227,6 @@
     transform: translateY(-2px);
 }
 
-/* Promotions Section */
 .promotions {
     background: var(--secondary-color);
     border-radius: var(--border-stylized);
@@ -290,7 +284,6 @@
     font-weight: bold;
 }
 
-/* Loading Animation */
 .loading-indicator {
     position: fixed;
     top: 50%;
@@ -303,8 +296,12 @@
     display: none;
     z-index: 2000;
 }
+@media (max-width: 500px) {
+    .currency-selector {
+        width: 100%;
+    }
+}
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
         flex-direction: column;
@@ -325,7 +322,6 @@
 
     .filter-tabs {
         justify-content: flex-start;
-        overflow-x: auto;
         padding-bottom: 0.5rem;
     }
 
@@ -334,19 +330,16 @@
     }
 }
 
-/* Hidden class for filtering */
 .hidden {
     display: none !important;
 }
 
-/* Animation for cards appearing */
 .commission-card {
     animation: fadeInUp 0.6s ease forwards;
     opacity: 0;
     transform: translateY(30px);
 }
 
-/* Stagger animation for multiple cards */
 .commission-card:nth-child(1) {
     animation-delay: 0.1s;
 }

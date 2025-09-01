@@ -791,7 +791,7 @@ textarea {
 }
 
 .submit-btn {
-    background: var(--gradient-bg);
+    background: var(--accent-color);
     color: var(--text-color);
     border: none;
     padding: 16px 40px;

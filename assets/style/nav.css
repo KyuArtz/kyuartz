@@ -3,6 +3,7 @@ header {
     width: 100%;
     background: var(--secondary-color);
     box-shadow: var(--shadow);
+    border-bottom: var(--border);
     color: var(--text-color);
     top: 0;
     transition: all 0.3s ease;
@@ -47,7 +48,7 @@ header {
 .dropdown-setting {
     display: none;
     position: absolute;
-    min-width: 180px;
+    min-width: 200px;
     background: var(--secondary-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-stylized);
@@ -80,7 +81,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: var(--border);
     padding: 10px;
     cursor: pointer;
 }
@@ -94,7 +95,6 @@ header {
     height: 45px;
     aspect-ratio: 1 / 1;
     border-radius: var(--border-rounded);
-    border: 2px solid var(--accent-color);
     object-fit: cover;
     object-position: center;
     background: var(--accent-color);
@@ -105,6 +105,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 1;
 }
 
 .profile p.username {
@@ -520,6 +521,7 @@ footer {
     background: var(--secondary-color);
     box-shadow: var(--shadow);
     text-align: center;
+    border-top: var(--border);
 }
 
 .footer-content {
@@ -590,7 +592,7 @@ footer {
 .copyright {
     color: var(--accent-color);
     padding-top: 2rem;
-    border-top: 1px solid var(--accent-color);
+    border-top: var(--border);
 }
 
 .copyright,
