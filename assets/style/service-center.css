@@ -79,13 +79,12 @@
 
 .tab-button:hover:not(.active) {
     border: 2px solid var(--accent-color);
-    color: var(--text-primary);
+    color: var(--text-color);
 }
 
 .tab-button.active {
     background: var(--accent-color);
     color: var(--text-color);
-    box-shadow: var(--shadow);
 }
 
 .content-card {
@@ -128,7 +127,7 @@
 .section-title {
     font-size: 1.8rem;
     font-weight: 800;
-    color: var(--text-primary);
+    color: var(--text-color);
     display: inline-flex;
     align-items: center;
     gap: .75rem;
@@ -184,7 +183,7 @@
     font-size: 1.15rem;
     font-weight: 800;
     margin: 0;
-    color: var(--text-primary);
+    color: var(--text-color);
 }
 
 .faq-item .qtext {
@@ -221,10 +220,10 @@
     width: 100%;
     margin: 0 0 1rem;
     padding: .85rem 1rem;
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
     outline: none;
-    background: var(--content-color);
+    background: var(--primary-color);
     font-weight: 600;
     color: var(--text-color);
 }
@@ -359,8 +358,7 @@
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    background: var(--content-color);
-    box-shadow: var(--shadow);
+    background: var(--accent-color);
     color: var(--text-color);
     padding: .75rem 1.25rem;
     border-radius: var(--border-stylized);
@@ -369,7 +367,6 @@
 }
 
 .contact-link:hover {
-    background: var(--colored-overlay);
     transform: translateY(-2px);
 }
 

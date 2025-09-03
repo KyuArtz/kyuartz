@@ -1,8 +1,39 @@
 const sampleData = {
     changelog: {
-    version: "1.0.0",
-    last_updated: "2025-08-30T12:30:00Z",
+    version: "1.1.1",
+    last_updated: "2025-09-03T3:40:00Z",
     updates: [
+        {
+            date: "2025-09-03",
+            timestamp: "2025-09-03T3:40:00Z",
+            version: "1.1.1",
+            major: [],
+            minor: [
+                {
+                    title: "Technical improvements",
+                    description: "Made various technical improvements to enhance performance and maintainability to the site.",
+                    category: "Performance"
+                },
+                {
+                    title: "Character panel improvements",
+                    description: "Made various improvements to the character panel for better usability and performance.",
+                    category: "Performance"
+                },
+                {
+                    title: "Improved Preferences Page",
+                    description: "Enhanced the layout and usability of the Preferences Page.",
+                    category: "UI/UX"
+                }
+            ],
+            bugfixes: [
+                {
+                    title: "Fixed character panel layout issues",
+                    description: "Resolved various layout issues in the character panel for improved usability and known bugs.",
+                    category: "UI/UX"
+                }
+            ],
+            upcoming: []
+        },
         {
             date: "2025-08-30",
             timestamp: "2025-08-30T12:30:00Z",
@@ -42,8 +73,8 @@ const sampleData = {
     ],
     summary: {
         total_major_updates: 1,
-        total_minor_updates: 4,
-        total_bugfixes: 0,
+        total_minor_updates: 6,
+        total_bugfixes: 1,
         total_upcoming_features: 0,
         primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]
     }

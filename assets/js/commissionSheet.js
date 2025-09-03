@@ -60,7 +60,33 @@ function updatePrices(currency) {
         } else if (exchangeRates[currency]) {
             const convertedPrice = (usdPrice * exchangeRates[currency]).toFixed(2);
             const currencySymbols = {
-
+                'USD': '$',       // United States Dollar
+                'EUR': '€',       // Euro
+                'JPY': '¥',       // Japanese Yen
+                'GBP': '£',       // British Pound
+                'AUD': 'A$',      // Australian Dollar
+                'CAD': 'C$',      // Canadian Dollar
+                'CHF': 'CHF',     // Swiss Franc
+                'CNY': '¥',       // Chinese Yuan
+                'HKD': 'HK$',     // Hong Kong Dollar
+                'SGD': 'S$',      // Singapore Dollar
+                'KRW': '₩',       // South Korean Won
+                'INR': '₹',       // Indian Rupee
+                'NZD': 'NZ$',     // New Zealand Dollar
+                'MXN': 'MX$',     // Mexican Peso
+                'ZAR': 'R',       // South African Rand
+                'BRL': 'R$',      // Brazilian Real
+                'PHP': '₱',       // Philippine Peso
+                'THB': '฿',       // Thai Baht
+                'MYR': 'RM',      // Malaysian Ringgit
+                'VND': '₫',       // Vietnamese Dong
+                'IDR': 'Rp',      // Indonesian Rupiah
+                'SEK': 'kr',      // Swedish Krona
+                'NOK': 'kr',      // Norwegian Krone
+                'DKK': 'kr',      // Danish Krone
+                'RUB': '₽',       // Russian Ruble
+                'TRY': '₺',       // Turkish Lira
+                'PLN': 'zł'       // Polish Zloty
             };
 
             const symbol = currencySymbols[currency] || currency + ' ';

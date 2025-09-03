@@ -75,7 +75,6 @@
     gap: 0.5rem;
     position: relative;
     overflow: hidden;
-    opacity: 0.8;
 }
 
 .btn-primary {
@@ -129,7 +128,7 @@
 
 .slide.active {
     display: block;
-    animation: slideShow 0.8s ease-out;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 .slide img {

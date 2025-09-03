@@ -158,7 +158,7 @@ p.email {
     object-fit: cover;
     object-position: center;
     aspect-ratio: 1/1;
-    background: var(--secondary-color);
+    background: var(--accent-color);
     border-radius: 50%;
     color: var(--accent-color);
     border: 5px solid;

@@ -306,10 +306,8 @@ class CommissionForm {
                     </button>
                 </div>
             `;
-            filePreview.style.display = 'flex';
-            filePreview.style.justifyContent = 'center';
-            filePreview.style.alignItems = 'center';
-            filePreview.style.flexDirection = 'column';
+            filePreview.style.display = 'block';
+            filePreview.style.textAlign = 'center';
         };
         reader.readAsDataURL(file);
     }
@@ -789,7 +787,7 @@ class CommissionForm {
         if (loading && submitBtn && btnText) {
             submitBtn.disabled = true;
             submitBtn.classList.add('loading');
-            btnText.textContent = 'Submitting...';
+            btnText.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
         } else if (submitBtn && btnText) {
             submitBtn.disabled = false;
             submitBtn.classList.remove('loading');

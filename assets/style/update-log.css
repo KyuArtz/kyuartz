@@ -110,7 +110,6 @@
 .view-btn.active {
     background: var(--accent-color);
     color: var(--text-color);
-    box-shadow: var(--shadow);
 }
 
 .filter-controls {
@@ -130,10 +129,12 @@
     overflow: hidden;
 }
 
-.filter-btn:hover,
 .filter-btn.active {
     background: var(--accent-color);
     color: var(--text-color);
+}
+
+.filter-btn:hover {
     transform: translateY(-2px);
 }
 
@@ -383,7 +384,7 @@
 
 .search-box {
     flex: 1;
-    background: var(--content-color);
+    background: var(--primary-color);
     color: var(--accent-color);
     min-width: 250px;
     padding: 12px 20px;

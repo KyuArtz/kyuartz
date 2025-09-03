@@ -94,6 +94,7 @@ header {
     width: 45px;
     height: 45px;
     aspect-ratio: 1 / 1;
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-rounded);
     object-fit: cover;
     object-position: center;
@@ -365,7 +366,7 @@ a.nav-link-sideMenu {
     color: var(--text-color);
     border-radius: var(--border-stylized);
     padding: 15px 15px;
-    margin: 3px;
+    margin: 5px 0;
     font-size: 0.9rem;
 }
 

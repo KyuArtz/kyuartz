@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="assets/style/virtual-assistant.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/preferences.js" defer></script>
   <script src="assets/js/virtualAssistant.js" defer></script>
   <script type="module" src="assets/js/aiIntegration.js" defer></script>
   <meta property="og:title" content="KyuArtz | MEO Virtual Assisstant">
@@ -79,48 +80,6 @@
     </section>
     <aside class="character-container" id="characterContainer" aria-label="Character images"></aside>
   </main>
-
-  <aside id="historyPanel" class="history-panel" aria-label="Conversation History">
-    <div class="history-header">
-      <h2>Conversation History</h2>
-      <button id="closeHistory" aria-label="Close History"><i class="fa-solid fa-xmark"></i></button>
-    </div>
-    <div id="historyList" class="history-list"></div>
-  </aside>
-
-  <div id="preferencesModal" class="modal" aria-hidden="true">
-    <div class="modal-content">
-      <span class="close-modal" id="closePreferences">&times;</span>
-      <h2>Preferences</h2>
-      <div class="pref-section">
-        <label>Theme Colors:</label>
-        <div class="color-pickers">
-          <input type="color" id="colorPrimary" title="Primary Color">
-          <input type="color" id="colorAccent" title="Accent Color">
-          <input type="color" id="colorOverlay" title="Overlay Color">
-          <input type="color" id="colorOverlayAlt" title="Alt Overlay Color">
-          <input type="color" id="colorText" title="Text Color">
-          <input type="color" id="colorContentBg" title="Content Background">
-        </div>
-      </div>
-
-      <div class="pref-section">
-        <label for="portraitSelect">Meo Portrait:</label>
-        <select id="portraitSelect"></select>
-      </div>
-      
-      <div class="pref-section">
-        <label for="voiceSelect">TTS Voice:</label>
-        <select id="voiceSelect"></select>
-      </div>
-
-      <div class="pref-section">
-        <label>
-          <input type="checkbox" id="typewriterToggle"> Enable Typewriter Effect
-        </label>
-      </div>
-      <button id="savePreferences" class="save-btn">Save Preferences</button>
-    </div>
-  </div>
+  
 </body>
 </html>

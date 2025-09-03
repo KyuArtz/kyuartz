@@ -294,15 +294,17 @@ tbody td {
     font-size: 0.9em;
 }
 
-.filter-btn:hover,
 .filter-btn.active {
     background: var(--accent-color);
     color: var(--text-color);
+}
+
+.filter-btn:hover {
     transform: translateY(-2px);
 }
 
 .search-box {
-    background: var(--content-color);
+    background: var(--primary-color);
     border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
     padding: 0.75rem 1.5rem;

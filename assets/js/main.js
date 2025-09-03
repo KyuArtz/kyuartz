@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Universal Theme logic
+/* Universal Theme logic
 const themeOptions = [
   { name: "Default", value: "default" },
   { name: "Dark-Blue", value: "dark-blue" },
@@ -128,7 +128,7 @@ if (themeSelect) {
     });
   }
   themeSelect.addEventListener('change', e => changeTheme(e.target.value));
-}
+}*/
 
 // Universal Tilt effect logic
 function applyTiltEffect(selector, { maxTilt = 10, perspective = 500 } = {}) {

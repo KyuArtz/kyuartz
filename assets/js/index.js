@@ -7,6 +7,7 @@ class ModernSlideshow {
     this.nextBtn = document.querySelector('.slide-next');
     this.currentSlide = 0;
     this.slideInterval = null;
+    this.isSliding = false; // to debounce manual clicks
 
     this.init();
   }
@@ -18,21 +19,11 @@ class ModernSlideshow {
   }
 
   addEventListeners() {
-    this.prevBtn.addEventListener('click', () => {
-      this.previousSlide();
-      this.resetAutoSlide();
-    });
-
-    this.nextBtn.addEventListener('click', () => {
-      this.nextSlide();
-      this.resetAutoSlide();
-    });
+    this.prevBtn.addEventListener('click', () => this.handleManualSlide(() => this.previousSlide()));
+    this.nextBtn.addEventListener('click', () => this.handleManualSlide(() => this.nextSlide()));
 
     this.dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => {
-        this.showSlide(index);
-        this.resetAutoSlide();
-      });
+      dot.addEventListener('click', () => this.handleManualSlide(() => this.showSlide(index)));
     });
 
     // Pause on hover
@@ -41,7 +32,22 @@ class ModernSlideshow {
     container.addEventListener('mouseleave', () => this.startAutoSlide());
   }
 
+  handleManualSlide(action) {
+    if (this.isSliding) return; // prevent spamming
+    this.isSliding = true;
+
+    action(); // perform the action
+    this.resetAutoSlide();
+
+    setTimeout(() => {
+      this.isSliding = false;
+    }, 500); // half-second cooldown
+  }
+
   showSlide(index) {
+    if (index < 0) index = this.slides.length - 1;
+    if (index >= this.slides.length) index = 0;
+
     this.slides.forEach(slide => slide.classList.remove('active'));
     this.dots.forEach(dot => dot.classList.remove('active'));
 
@@ -51,19 +57,16 @@ class ModernSlideshow {
   }
 
   nextSlide() {
-    const next = (this.currentSlide + 1) % this.slides.length;
-    this.showSlide(next);
+    this.showSlide((this.currentSlide + 1) % this.slides.length);
   }
 
   previousSlide() {
-    const prev = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
-    this.showSlide(prev);
+    this.showSlide((this.currentSlide - 1 + this.slides.length) % this.slides.length);
   }
 
   startAutoSlide() {
-    this.slideInterval = setInterval(() => {
-      this.nextSlide();
-    }, 8000);
+    if (this.slideInterval) return; // prevent stacking
+    this.slideInterval = setInterval(() => this.nextSlide(), 8000);
   }
 
   pauseAutoSlide() {
@@ -77,27 +80,6 @@ class ModernSlideshow {
     this.pauseAutoSlide();
     this.startAutoSlide();
   }
-}
-
-// Counter Animation
-function animateCounters() {
-  const counters = document.querySelectorAll('.stat-number');
-
-  counters.forEach(counter => {
-    const target = parseInt(counter.getAttribute('data-target'));
-    const duration = 2000; // 2 seconds
-    const increment = target / (duration / 16); // 60fps
-    let current = 0;
-
-    const timer = setInterval(() => {
-      current += increment;
-      if (current >= target) {
-        current = target;
-        clearInterval(timer);
-      }
-      counter.textContent = Math.floor(current);
-    }, 16);
-  });
 }
 
 // Intersection Observer for animations
