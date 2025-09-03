@@ -227,3 +227,32 @@ body {
 .character-img.speaking.speaking-animate {
   animation: talk-bounce 3s infinite;
 }
+
+@media (max-width: 600px) {
+    .nav-buttons button,
+    .nav-buttons a {
+    padding: 5px;
+    }
+
+    .overlay {
+    padding: 10px 10px;
+    }
+
+    .character-name {
+    width: 50%;
+    font-size: 16px;
+    }
+
+    .dialogue-text {
+    font-size: 15px;
+    }
+
+    .dialogue-options button {
+    font-size: x-small;
+    flex: 1 0 50%;
+    }
+
+    .character-container {
+    min-height: 60vh;
+    }
+}
