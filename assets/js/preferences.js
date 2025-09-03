@@ -103,7 +103,7 @@ function saveSetting(key, value) {
 function applySetting(key, value) {
     switch (key) {
         case 'reducedMotion':
-            document.body.style.setProperty('--transition', value ? 'none' : 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)');
+            document.body.style.setProperty('all 0.3s ease', value ? 'none' : 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)');
             break;
         case 'animations':
             if (!value) {

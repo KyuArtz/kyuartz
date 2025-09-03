@@ -262,14 +262,11 @@ input:checked+.slider:before {
     text-align: center;
 }
 
+.clear-button, 
 .save-button {
-    background: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    color: var(--text-color);
     padding: 1rem 2rem;
     border-radius: var(--border-stylized);
     font-size: 1rem;
-    font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-flex;
@@ -277,6 +274,26 @@ input:checked+.slider:before {
     gap: 0.5rem;
 }
 
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.clear-button {
+    background: var(--error-bg);
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+.save-button {
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+}
+
+.clear-button:hover,
 .save-button:hover {
     transform: translateY(-1px);
 }
