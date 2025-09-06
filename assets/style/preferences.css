@@ -2,7 +2,6 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
-    margin-top: 2rem;
 }
 
 .page-header {
@@ -320,7 +319,6 @@ input:checked+.slider:before {
 @media (max-width: 768px) {
     .preferences-container {
         padding: 1rem;
-        margin-top: 1rem;
     }
 
     .page-header h1 {
@@ -334,8 +332,4 @@ input:checked+.slider:before {
     .theme-preview-grid {
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     }
-}
-
-.loading {
-    animation: pulse 2s infinite;
 }

@@ -58,11 +58,6 @@
     color: var(--text-color);
 }
 
-.main-content {
-    padding-top: 2rem;
-    min-height: 100vh;
-}
-
 .comics-section {
     max-width: 1400px;
     margin: 0 auto;
