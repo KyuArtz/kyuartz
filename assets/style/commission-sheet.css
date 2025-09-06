@@ -2,7 +2,7 @@
     padding: 0.5rem 1rem;
     border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
-    background: var(--content-color);
+    background: var(--primary-color);
     color: var(--accent-color);
     font-weight: 500;
     cursor: pointer;
@@ -53,7 +53,6 @@
 
 .filter-tab {
     padding: 0.75rem 1.5rem;
-    flex: 1;
     background: var(--content-color);
     border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
@@ -297,6 +296,9 @@
     z-index: 2000;
 }
 @media (max-width: 500px) {
+    .filter-tab {
+        flex: 1 1 100%;
+    }
     .currency-selector {
         width: 100%;
     }

@@ -277,7 +277,7 @@ tbody td {
     gap: 1rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     background: var(--secondary-color);
     padding: 1rem;
     border-radius: var(--border-stylized);
@@ -360,11 +360,6 @@ tbody td {
         grid-template-columns: 1fr;
     }
 
-    .filter-bar {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
     .search-box {
         width: 100%;
     }
@@ -380,6 +375,10 @@ tbody td {
 }
 
 @media (max-width: 500px) {
+    .filter-btn {
+        flex: 1 1 100%;
+    }
+    
     .stats-bar {
         grid-template-columns: 1fr;
     }

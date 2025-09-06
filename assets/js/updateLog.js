@@ -1,11 +1,31 @@
 const sampleData = {
     changelog: {
-    version: "1.1.1",
-    last_updated: "2025-09-03T3:40:00Z",
+    version: "1.2.1",
+    last_updated: "2025-09-06T12:00:00Z",
     updates: [
         {
+            date: "2025-09-06",
+            timestamp: "2025-09-06T12:30:00Z",
+            version: "1.2.1",
+            major: [],
+            minor: [
+                {
+                    title: "Portfolio section improvements",
+                    description: "Made various improvements to the portfolio section for better usability and performance.",
+                    category: "Performance"
+                },
+                { 
+                    title: "Comics section improvements",
+                    description: "Made various improvements to the comics section for better usability and performance.",
+                    category: "Performance"
+                }
+            ],
+            bugfixes: [],
+            upcoming: []
+        },
+        {
             date: "2025-09-03",
-            timestamp: "2025-09-03T3:40:00Z",
+            timestamp: "2025-09-03T10:30:00Z",
             version: "1.1.1",
             major: [],
             minor: [
@@ -36,7 +56,7 @@ const sampleData = {
         },
         {
             date: "2025-08-30",
-            timestamp: "2025-08-30T12:30:00Z",
+            timestamp: "2025-08-30T10:30:00Z",
             version: "1.0.0",
             major: [
                 {
@@ -73,7 +93,7 @@ const sampleData = {
     ],
     summary: {
         total_major_updates: 1,
-        total_minor_updates: 6,
+        total_minor_updates: 8,
         total_bugfixes: 1,
         total_upcoming_features: 0,
         primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]

@@ -119,6 +119,7 @@
 }
 
 .filter-btn {
+    background: var(--content-color);
     padding: 10px 20px;
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
@@ -403,7 +404,7 @@
     padding: 12px 20px;
     border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
-    background: var(--content-color);
+    background: var(--primary-color);
     color: var(--accent-color);
     min-width: 150px;
 }

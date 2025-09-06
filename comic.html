@@ -12,11 +12,11 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="./assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon/favicon.svg">
-  <link rel="icon" href="./assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
+  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
+  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="KyuArtz">
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
   <link rel="canonical" href="https://kyuartz.github.io/kyuartz/comic">
@@ -41,6 +41,15 @@
   <meta name="twitter:description" content="Explore KyuArtz, a creative portfolio featuring comics, art, and projects.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "https://kyuartz.github.io/kyuartz/comic",
+      "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
+      "name": "KyuArtz"
+    }
+  </script>
 </head>
 
 <body>  
@@ -170,46 +179,27 @@
         </div>
       </div>
     </nav>
-
-    <nav class="secondary-navigation">
-      <h1>KYUARTZ COMIC</h1>
-      <div class="category-btn" title="Category">
-        <span class="category-dot"></span>
-        <span class="category-dot"></span>
-        <span class="category-dot"></span>
-      </div>
-      <ul id="category-links" class="category-menu">
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="all">
-            <i class="fa-solid fa-filter"></i> All
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="post-apocalyptic">
-            <i class="fa-solid fa-filter"></i> Post-Apocalyptic
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="sci-fi">
-            <i class="fa-solid fa-filter"></i> Sci-fi
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="fantasy">
-            <i class="fa-solid fa-filter"></i> Fantasy
-          </a>
-        </li>
-        <li class="category-item">
-          <a href="#" class="category-link" data-category="adventure">
-            <i class="fa-solid fa-filter"></i> Adventure
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <div class="blur-overlay"></div>
 
   <main class="main-content">
+    <section class="hero-section loading">
+      <h1 class="hero-title">COMIC UNIVERSE</h1>
+      <p class="hero-subtitle">Immerse yourself in epic tales of adventure, mystery, and wonder. Experience storytelling like never before.</p>
+
+      <div class="filter-section loading">
+      <div class="filter-container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-category="all"><i class="fas fa-filter"></i> All Genre</button>
+          <button class="filter-btn" data-category="post-apocalyptic"><i class="fas fa-filter"></i> Post-Apocalyptic</button>
+          <button class="filter-btn" data-category="sci-fi"><i class="fas fa-filter"></i> Sci-Fi</button>
+          <button class="filter-btn" data-category="fantasy"><i class="fas fa-filter"></i> Fantasy</button>
+          <button class="filter-btn" data-category="adventure"><i class="fas fa-filter"></i> Adventure</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
     <section class="comics-section">
       <div class="comics-grid" id="comics-grid">
         <div class="comic-card loading" data-category="sci-fi,post-apocalyptic">

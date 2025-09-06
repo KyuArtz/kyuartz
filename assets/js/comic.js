@@ -33,7 +33,7 @@ const comicData = {
 
 // Filter functionality
 document.addEventListener('DOMContentLoaded', function() {
-  const filterBtns = document.querySelectorAll('.category-link');
+  const filterBtns = document.querySelectorAll('.filter-btn');
   const comicCards = document.querySelectorAll('.comic-card');
   
   // Add loading animation delay
