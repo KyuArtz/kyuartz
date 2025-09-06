@@ -103,7 +103,7 @@
         "speaking": true
       }
     ],
-    "text": "🖼️ Kyuartz offers a variety of creative services like:<br><br>• 🎨 Custom artwork commissions<br>• 🖨️ Art prints<br>• 📥 Digital downloads<br><br>For policies and FAQs, check out:<br>- <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/terms-of-service\" target=\"_blank\">Terms of Service</a><br>- <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/privacy-policy\" target=\"_blank\">Privacy Policy</a><br>- <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/faq\" target=\"_blank\">FAQ Page</a>",
+    "text": "🖼️ Kyuartz offers a variety of creative services like:<br><br>• 🎨 Custom artwork commissions<br>• 🖨️ Art prints<br>• 📥 Digital downloads<br><br>For policies and FAQs, check out:<br>- <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/service-center\" target=\"_blank\">Terms of Service</a><br>- <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/service-center\" target=\"_blank\">Privacy Policy</a><br>- <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/service-center\" target=\"_blank\">FAQ Page</a>",
     "options": [
       { "text": "⚠️ How do I report an issue?", "next": "reportIssue" },
       { "text": "🔙 Back to main menu", "next": "start" }
@@ -121,7 +121,7 @@
         "speaking": true
       }
     ],
-    "text": "⚠️ If something’s not working or you spot a problem, please report it via the <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/customer-support\" target=\"_blank\">Customer Support Page</a>.<br><br>📧 You can also reach out through email or social media — we’ll take care of it as quickly as possible! 💪",
+    "text": "⚠️ If something’s not working or you spot a problem, please report it via the <a class=\"dL\" href=\"https://kyuartz.github.io/kyuartz/contact\" target=\"_blank\">Customer Support Page</a>.<br><br>📧 You can also reach out through email or social media — we’ll take care of it as quickly as possible! 💪",
     "options": [
       { "text": "🔙 Back to main menu", "next": "start" }
     ]

@@ -163,7 +163,7 @@ class DialogueManager {
   }
 
   // --------------------- typewriter -----------------
-  typeWriterEffect(text, speed = 8) {
+  typeWriterEffect(text, speed = 7) {
     if (this.typewriterTimeout) clearTimeout(this.typewriterTimeout);
     this.isTyping = true;
 
