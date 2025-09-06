@@ -19,19 +19,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
     border: 2px solid var(--accent-color);
     padding: 7px 10px;
     border-radius: var(--border-stylized);
     font-size: 16px;
     transition: background 0.2s, color 0.2s;
-}
-
-.nav-buttons button:hover,
-.nav-buttons a:hover {
-    background: var(--colored-overlay);
-    color: var(--text-color);
 }
 
 .character-container {
@@ -171,7 +165,7 @@ body {
     width: 70%;
     padding: 0.6rem;
     border-radius: var(--border-stylized);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     color: var(--text-color);
     background: var(--primary-color);
     outline: none;
@@ -180,17 +174,12 @@ body {
 
 #askBtn {
     color: var(--text-color);
-    background: var(--content-color);
+    background: var(--colored-overlay);
     padding: 0.6rem 1.2rem;
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
     margin-left: 0;
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-#askBtn:hover {
-    background: var(--colored-overlay);
-    color: var(--text-color);
 }
 
 .dialogue-options span {
@@ -200,9 +189,9 @@ body {
 
 #micBtn,
 #ttsBtn {
-    background: var(--content-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
-    border: 1px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
     width: 35px;
     height: 35px;
@@ -229,11 +218,6 @@ body {
 }
 
 @media (max-width: 600px) {
-    .nav-buttons button,
-    .nav-buttons a {
-    padding: 5px;
-    }
-
     .overlay {
     padding: 10px 10px;
     }

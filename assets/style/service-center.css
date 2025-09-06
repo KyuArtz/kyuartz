@@ -66,7 +66,6 @@
 .tab-button {
     padding: .9rem 1.25rem;
     border: 2px solid transparent;
-    background: transparent;
     color: var(--text-color);
     border-radius: var(--border-stylized);
     cursor: pointer;
@@ -77,13 +76,13 @@
     gap: .5rem;
 }
 
-.tab-button:hover:not(.active) {
+.tab-button:hover {
     border: 2px solid var(--accent-color);
     color: var(--text-color);
 }
 
 .tab-button.active {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
 }
 
@@ -358,11 +357,12 @@
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
     padding: .75rem 1.25rem;
+    font-family: var(--my-font);
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
-    font-weight: 800;
     transition: all 0.3s ease;
 }
 

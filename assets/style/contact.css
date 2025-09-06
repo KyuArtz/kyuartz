@@ -422,7 +422,6 @@
     padding: 12px;
     border: 2px solid transparent;
     border-radius: var(--border-stylized);
-    background: var(--content-color);
     color: var(--text-color);
     border: 2px solid var(--accent-color);
     transition: all 0.3s ease;
@@ -437,7 +436,7 @@
 }
 
 .qr-tab.active {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
 }
 
@@ -533,7 +532,6 @@
     flex: 1;
     padding: 12px 20px;
     border: 2px solid transparent;
-    background: transparent;
     color: var(--text-color);
     border-radius: var(--border-stylized);
     transition: all 0.3s ease;
@@ -545,7 +543,7 @@
 }
 
 .tab-button.active {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
 }
 
@@ -794,11 +792,10 @@ textarea {
 }
 
 .submit-btn {
-    background: var(--accent-color);
     color: var(--text-color);
-    border: none;
+    background: var(--colored-overlay);
+    border: 2px solid var(--accent-color);
     padding: 16px 40px;
-    box-shadow: var(--shadow);
     border-radius: var(--border-stylized);
     font-size: 1.1rem;
     transition: all 0.3s ease;
@@ -816,7 +813,7 @@ textarea {
     transform: translateY(-2px);
 }
 
-.submit-btn:disabled {
+.submit-btn:disabled{
     opacity: 0.3;
     cursor: not-allowed;
     transform: none;

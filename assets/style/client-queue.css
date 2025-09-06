@@ -287,7 +287,6 @@ tbody td {
 .filter-btn {
     padding: 8px 16px;
     border: 2px solid var(--accent-color);
-    background: var(--content-color);
     color: var(--accent-color);
     border-radius: var(--border-stylized);
     transition: all 0.3s ease;
@@ -295,7 +294,7 @@ tbody td {
 }
 
 .filter-btn.active {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
 }
 

@@ -102,13 +102,12 @@
     font-size: 0.9rem;
 }
 
-.view-btn:hover:not(.active) {
+.view-btn:hover {
   border: 2px solid var(--accent-color);
-  color: var(--text-primary);
 }
 
 .view-btn.active {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
 }
 
@@ -119,7 +118,6 @@
 }
 
 .filter-btn {
-    background: var(--content-color);
     padding: 10px 20px;
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
@@ -131,7 +129,7 @@
 }
 
 .filter-btn.active {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
 }
 
