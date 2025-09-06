@@ -340,19 +340,16 @@ a.nav-link-sideMenu {
 
 .sideMenu-content {
     position: fixed;
-    top: 0;
+    top: 51px;
     left: 0;
     background: var(--secondary-color);
     display: flex;
-    flex-direction: column;
-    min-width: 200px;
-    height: 100vh;
-    min-height: 100vh;
-    transform: translateX(-100%);
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
     transition: all 0.3s ease;
+    visibility: hidden;
     opacity: 0;
-    overflow-y: auto;
-    z-index: 100000;
 }
 
 .sideMenu-content h2 {
@@ -366,7 +363,7 @@ a.nav-link-sideMenu {
     color: var(--text-color);
     border-radius: var(--border-stylized);
     padding: 15px 15px;
-    margin: 5px 0;
+    margin: 0.2rem 0;
     font-size: 0.9rem;
 }
 
@@ -389,8 +386,9 @@ a.nav-link-sideMenu {
 }
 
 .show-sideMenu {
-    transform: translateX(0);
+    visibility: visible;
     opacity: 1;
+    animation: fadeIn 0.5s ease;
 }
 
 .blur-overlay {
@@ -603,7 +601,15 @@ footer {
     font-family: var(--my-font);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+    .sideMenu-content {
+        top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: auto;
+        height: 100vh;
+        min-height: 100vh;
+    }
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;

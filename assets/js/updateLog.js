@@ -5,7 +5,7 @@ const sampleData = {
     updates: [
         {
             date: "2025-09-06",
-            timestamp: "2025-09-06T12:30:00Z",
+            timestamp: "2025-09-06T02:30:00Z",
             version: "1.2.1",
             major: [],
             minor: [
@@ -423,7 +423,7 @@ function setupIntersectionObserver() {
 // Enhanced error handling
 function displayError(message) {
     updatesContainer.innerHTML = `
-    <div style="text-align: center; padding: 60px 20px; color: #e74c3c;">
+    <div style="text-align: center; padding: 60px 20px; color: var(--error);">
         <h3>⚠️ ${message}</h3>
         <p style="margin-top: 10px; opacity: 0.8;">Please try refreshing the page or check back later.</p>
         <button onclick="loadData()" style="
@@ -450,9 +450,7 @@ document.addEventListener('keydown', (e) => {
 // Add loading states for better UX
 function setLoadingState(isLoading) {
     const loadingHTML = `
-                <div class="loading">
-                    <div class="spinner"></div>
-                </div>
+                <i class="fa-solid fa-spinner fa-spin" style="font-size: 2rem; color: var(--accent-color);"></i>
             `;
 
     if (isLoading) {
