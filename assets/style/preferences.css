@@ -283,19 +283,19 @@ input:checked+.slider:before {
 
 .clear-button {
     background: var(--error-bg);
-    border: 1px solid var(--error);
+    border: 2px solid var(--error);
     color: var(--error);
 }
 
 .save-button {
-    background: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    background: var(--colored-overlay);
+    border: 2px solid var(--accent-color);
     color: var(--text-color);
 }
 
 .clear-button:hover,
 .save-button:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 .save-status {

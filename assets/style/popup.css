@@ -100,7 +100,7 @@
 
 .cookie-popup button:hover,
 #welcome-message button:hover {
-    background: var(--accent-color);
+    background: var(--colored-overlay);
     color: var(--text-color);
     transform: translateY(-2px);
 }
