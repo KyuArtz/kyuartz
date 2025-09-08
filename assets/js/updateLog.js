@@ -4,6 +4,22 @@ const sampleData = {
     last_updated: "2025-09-06T12:00:00Z",
     updates: [
         {
+            date: "2025-09-09",
+            timestamp: "2025-09-09T04:30:00Z",
+            version: "1.2.1",
+            major: [],
+            minor: [],
+            bugfixes: [],
+            upcoming: [
+                {
+                    title: "Improved Meo Assistant",
+                    description: "Upgrading Meo with new features, enhanced AI capabilities, and a more interactive experience.",
+                    category: "AI",
+                    expected_release: "2025-10-15"
+                }
+            ]
+        },
+        {
             date: "2025-09-06",
             timestamp: "2025-09-06T02:30:00Z",
             version: "1.2.1",
@@ -95,7 +111,7 @@ const sampleData = {
         total_major_updates: 1,
         total_minor_updates: 8,
         total_bugfixes: 1,
-        total_upcoming_features: 0,
+        total_upcoming_features: 1,
         primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]
     }
 }
