@@ -288,9 +288,9 @@ input:checked+.slider:before {
 }
 
 .save-button {
-    background: var(--colored-overlay);
-    border: 2px solid var(--accent-color);
-    color: var(--text-color);
+    background: var(--success-bg);
+    border: 2px solid var(--success);
+    color: var(--success);
 }
 
 .clear-button:hover,
