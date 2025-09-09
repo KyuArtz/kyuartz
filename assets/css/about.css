@@ -14,7 +14,6 @@
     flex-wrap: wrap;
     padding: 10px;
     gap: 10px;
-    animation: fadeInUp 0.6s ease forwards;
 }
 
 .info-container h2 {
@@ -146,6 +145,7 @@ p.email {
     border-radius: var(--border-stylized);
     background: var(--secondary-color);
     box-shadow: var(--shadow);
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .pfp-container {
@@ -179,6 +179,7 @@ p.email {
     gap: 10px;
     border-radius: var(--border-stylized);
     box-shadow: var(--shadow);
+    animation: fadeInUp 0.6s ease forwards;
 }
 
 .my-info {

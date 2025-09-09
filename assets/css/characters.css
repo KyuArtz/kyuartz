@@ -23,6 +23,7 @@
     width: 25px;
     height: 25px;
     aspect-ratio: 1/1;
+    background: var(--accent-color);
     border-radius: var(--border-rounded);
     border: 1px solid var(--primary-color);
     cursor: pointer;
