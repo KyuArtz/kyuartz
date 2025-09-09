@@ -26,13 +26,10 @@
 }
 
 .page-header {
-    background: var(--gradient-bg);
     text-align: center;
     margin-bottom: 2rem;
     padding: 2.5rem 1rem;
-    border-radius: var(--border-stylized);
     color: var(--text-color);
-    box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
 }

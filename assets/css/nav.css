@@ -242,11 +242,11 @@ a.nav-link-sideMenu {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    padding: 10px 15px;
+    padding: 20px;
     border-radius: var(--border-stylized);
     background: var(--content-color);
     border: none;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     box-shadow: var(--shadow);
     color: var(--text-color);
     animation: bounce 0.9s infinite;

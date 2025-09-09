@@ -18,11 +18,9 @@
 
 .hero {
     text-align: center;
-    background: var(--gradient-bg);
     border-radius: var(--border-stylized);
     padding: 3rem 2rem;
     margin-bottom: 3rem;
-    box-shadow: var(--shadow);
 }
 
 .hero h1 {
