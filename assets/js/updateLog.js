@@ -1,11 +1,11 @@
 const sampleData = {
     changelog: {
-    version: "1.2.1",
+    version: "1.3.1",
     last_updated: "2025-09-06T12:00:00Z",
     updates: [
         {
             date: "2025-09-09",
-            timestamp: "2025-09-09T04:30:00Z",
+            timestamp: "2025-09-09T05:30:00Z",
             version: "1.2.1",
             major: [],
             minor: [],
