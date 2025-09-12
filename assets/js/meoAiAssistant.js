@@ -1,4 +1,4 @@
-class VirtualAssistant {
+class MeoAssistant {
   constructor() {
     this.chatMessages = document.getElementById('chatMessages');
     this.userInput = document.getElementById('userInput');
@@ -568,7 +568,6 @@ class VirtualAssistant {
           background: var(--secondary-color); 
           padding: 30px; 
           border-radius: var(--border-stylized); 
-          border: var(--border); 
           max-width: 800px; 
           width: 95%; 
           max-height: 80vh; 
@@ -838,7 +837,7 @@ class VirtualAssistant {
 let assistant;
 
 document.addEventListener('DOMContentLoaded', () => {
-  assistant = new VirtualAssistant();
+  assistant = new MeoAssistant();
 });
 
 document.head.appendChild(style);
