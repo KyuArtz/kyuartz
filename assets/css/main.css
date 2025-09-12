@@ -475,6 +475,7 @@ body {
 
 @keyframes titleGlow {
     0% { filter: drop-shadow(0 0 10px rgba(199, 11, 11, 0.9)); }
+    50% { filter: drop-shadow(0 0 15px rgba(206, 9, 206, 0.9)); }
     100% { filter: drop-shadow(0 0 20px rgba(9, 137, 211, 0.9)); }
 }
 
