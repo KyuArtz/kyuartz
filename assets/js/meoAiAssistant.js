@@ -466,7 +466,7 @@ class VirtualAssistant {
     const notifications = this.getPreference('notifications', true);
 
     panel.innerHTML = `
-          <h3 style="margin-bottom: 20px; color: var(--accent-color); text-align: center;">
+          <h3 style="margin-bottom: 20px; color: var(--accent-color); text-align: center; font-family: var(--my-font)">
             <i class="fas fa-cog"></i> Assistant Settings
           </h3>
           
@@ -577,7 +577,7 @@ class VirtualAssistant {
         `;
 
     panel.innerHTML = `
-          <h3 style="color: var(--accent-color); margin-bottom: 20px; text-align: center;">
+          <h3 style="color: var(--accent-color); margin-bottom: 20px; text-align: center; font-family: var(--my-font);">
             <i class="fas fa-history"></i> Conversation History
           </h3>
         `;
