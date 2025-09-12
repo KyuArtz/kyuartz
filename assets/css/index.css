@@ -135,7 +135,7 @@
 
 .slide.active {
     display: block;
-    animation: fadeIn 0.8s ease-in-out;
+    animation: slideInRight 0.8s ease-in-out;
 }
 
 .slide img {
