@@ -1,6 +1,6 @@
 .card-container {
     min-height: 100vh;
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-content: flex-start;
@@ -159,7 +159,7 @@ p.email {
     object-position: center;
     aspect-ratio: 1/1;
     background: var(--accent-color);
-    border-radius: 50%;
+    border-radius: var(--border-rounded);
     color: var(--accent-color);
     border: 5px solid;
     margin-bottom: -70px;

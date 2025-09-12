@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: myFont;
-    src: url("../fonts/squarefont/Square.ttf");
+    src: url("../fonts/aquire-font/Aquire-BW0ox.otf");
 }
 
 * {
@@ -79,7 +79,7 @@ body {
     --shadow-heavy: 0 0 5px #000000;
     
     /* Default Theme Variables */
-    --gradient-bg: linear-gradient(135deg, #dadada, #838383, #464646);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #0a0a0a;
     --secondary-color: #141414;
     --content-color: #1f1f1f;
@@ -97,7 +97,7 @@ body {
    ============================================================================= */
 
 .theme-default {
-    --gradient-bg: linear-gradient(135deg, #dadada, #838383, #464646);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #0a0a0a;
     --secondary-color: #141414;
     --content-color: #1f1f1f;
@@ -110,7 +110,7 @@ body {
 }
 
 .theme-dark-blue {
-    --gradient-bg: linear-gradient(135deg, #0080ff, #00478f, #002e5c);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #1c1f27;
     --secondary-color: #1a2635;
     --content-color: #1b3044;
@@ -123,7 +123,7 @@ body {
 }
 
 .theme-dark-red {
-    --gradient-bg: linear-gradient(135deg, #ff0000, #8f0000, #550000);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #160f0f;
     --secondary-color: #2e1616;
     --content-color: #4b1d1d;
@@ -136,7 +136,7 @@ body {
 }
 
 .theme-dark-purple {
-    --gradient-bg: linear-gradient(135deg, #9000ff, #52008d, #310053);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #11051a;
     --secondary-color: #2c162e;
     --content-color: #2c173b;
@@ -149,7 +149,7 @@ body {
 }
 
 .theme-dark-green {
-    --gradient-bg: linear-gradient(135deg, #00ff95, #00864e, #00472a);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #051a08;
     --secondary-color: #162e17;
     --content-color: #123325;
@@ -162,7 +162,7 @@ body {
 }
 
 .theme-dark-yellow {
-    --gradient-bg: linear-gradient(135deg, #ff9100, #8f5300, #4b2c00);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #1a1a05;
     --secondary-color: #2e2e16;
     --content-color: #3f2d13;
@@ -179,7 +179,7 @@ body {
    ============================================================================= */
 
 .theme-modern-white {
-    --gradient-bg: linear-gradient(135deg, #f5f5f5, #d1d1d1, #adadad);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #ffffff;
     --secondary-color: #f0f0f0;
     --content-color: #e2e2e2;
@@ -192,7 +192,7 @@ body {
 }
 
 .theme-white-blue {
-    --gradient-bg: linear-gradient(135deg, #b8cfe6, #639ad1, #2b87e4);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #ffffff;
     --secondary-color: #e8f5ff;
     --content-color: #e2f0ff;
@@ -205,7 +205,7 @@ body {
 }
 
 .theme-white-red {
-    --gradient-bg: linear-gradient(135deg, #e6b8b8, #d16363, #e42b2b);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #ffffff;
     --secondary-color: #ffe8e8;
     --content-color: #ffe0e0;
@@ -218,7 +218,7 @@ body {
 }
 
 .theme-white-purple {
-    --gradient-bg: linear-gradient(135deg, #c7b2d6, #a05ad1, #8b22d6);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #ffffff;
     --secondary-color: #fbe6ff;
     --content-color: #f2deff;
@@ -231,7 +231,7 @@ body {
 }
 
 .theme-white-green {
-    --gradient-bg: linear-gradient(135deg, #c6e6d8, #6addad, #20da8c);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #ffffff;
     --secondary-color: #e9ffea;
     --content-color: #dcfff0;
@@ -244,7 +244,7 @@ body {
 }
 
 .theme-white-yellow {
-    --gradient-bg: linear-gradient(135deg, #e4d5c2, #e2b16c, #e69627);
+    --gradient-bg: linear-gradient(135deg, rgb(216, 32, 32, 0.9), rgb(178, 34, 207, 0.9), rgba(27, 69, 207, 0.9));
     --primary-color: #ffffff;
     --secondary-color: #ffffe8;
     --content-color: #fff2df;
@@ -290,7 +290,7 @@ body {
 
 .spinner {
     position: absolute;
-    border-radius: 50%;
+    border-radius: var(--border-rounded);
     animation-timing-function: ease;
 }
 
@@ -341,88 +341,42 @@ body {
 
 /* Fade & Slide Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideInRight {
-  from {
-    transform: translateX(40%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    from { transform: translateX(40%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes slideInLeft {
-  from {
-    transform: translateX(-40%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    from { transform: translateX(-40%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
 }
 
-
 @keyframes slideContentTxt {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideInFromTop {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -60%) scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
+    from { opacity: 0; transform: translate(-50%, -60%) scale(0.95); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
 @keyframes slideInFromBottom {
@@ -431,37 +385,19 @@ body {
 }
 
 @keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideContentIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Modal Animations */
 @keyframes modalFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 /* Movement Animations */
@@ -494,6 +430,27 @@ body {
     40%, 80% { transform: rotate(-2deg); }
 }
 
+@keyframes aiMoodWave {
+    0% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.45); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.6; }
+}
+
+@keyframes aiPulse {
+    0%, 100% { box-shadow: 0 0 5px var(--accent-color); }
+    50% { box-shadow: 0 0 20px var(--accent-color); }
+}
+
+@keyframes aiPulse-record {
+    0%, 100% { transform: translateY(-50%) scale(1); }
+    50% { transform: translateY(-50%) scale(1.1); }
+}
+
+@keyframes aiTyping {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.5; }
+    30% { transform: translateY(-10px); opacity: 1; }
+}
+
 /* Effect Animations */
 @keyframes shimmer {
     0% { transform: translateX(-100%) rotate(40deg); }
@@ -517,8 +474,8 @@ body {
 }
 
 @keyframes titleGlow {
-    0% { filter: drop-shadow(0 0 10px var(--accent-color)); }
-    100% { filter: drop-shadow(0 0 20px var(--colored-overlay)); }
+    0% { filter: drop-shadow(0 0 10px rgba(199, 11, 11, 0.9)); }
+    100% { filter: drop-shadow(0 0 20px rgba(9, 137, 211, 0.9)); }
 }
 
 /* =============================================================================

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz | Home</title>
+  <title>KyuArtz Studio | Home</title>
   <meta name="description" content="Explore KyuArtz for comics, art, and creative projects. Dive into our portfolio and discover unique, captivating stories and artistic pieces.">
-  <meta name="keywords" content="KyuArtz">
+  <meta name="keywords" content="KyuArtz Studio">
   <meta name="author" content="KyuArtz">
   <meta name="theme-color" content="var(--color)">
   <meta name="mobile-web-app-capable" content="yes">
@@ -64,7 +63,7 @@
   <div id="welcome-overlay"></div>
   <div id="welcome-message">
     <img src="assets/images/imgbtn/meo.webp" loading="lazy">
-    <h2>Thanks for visiting!</h2>
+    <h2>Welcome to Kyuartz!</h2>
     <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
     <button onclick="closeWelcomeMessage()">Okay</button>
   </div>
@@ -74,11 +73,12 @@
     <button id="accept-cookies">Got It</button>
   </div>
 
+  <div class="blur-overlay"></div>
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
         <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html">Kyu</a>
+        <a href="index.html">KAS</a>
       </div>
 
       <ul class="navigation-menu" role="menubar">
@@ -131,9 +131,6 @@
               <a href="service-center.html" data-page="service-center.html">
                 <i class="fa-solid fa-info"></i> Service Center
               </a>
-              <a href="virtual-assistant.html" data-page="virtual-assistant.html">
-                <i class="fa-solid fa-cat"></i> Meo Assistant
-              </a>
               <a href="update-log.html" data-page="update-log.html">
                 <i class="fa-solid fa-download"></i> What's New
               </a>
@@ -158,8 +155,8 @@
                 <i class="fa-solid fa-angle-right"></i>
               </div>
             </a>
-            <a class="setting" href="virtual-assistant.html">
-              <i class="fa-solid fa-cat fa-bounce"></i> Meo Assistant
+            <a class="setting" href="meo-ai-assistant.html">
+              <i class="fa-solid fa-cat fa-bounce"></i> Meo AI Assistant
             </a>
             <a class="setting" href="preferences.html">
               <i class="fa-solid fa-palette"></i> Preferences
@@ -178,7 +175,6 @@
       </div>
     </nav>
   </header>
-  <div class="blur-overlay"></div>
 
   <section class="hero" id="home">
       <div class="hero-content">
@@ -195,9 +191,10 @@
           </div>
       </div>
       <div class="hero-image">
-        <video autoplay muted loop>
+        <!--video autoplay muted loop>
           <source src="assets/videos/Wasteland-Intro.mp4" type="video/mp4">
-        </video>
+        </video-->
+        <img src="assets/images/gif/fall-into-despair.gif">
       </div>
   </section>
 
@@ -379,7 +376,7 @@
     </div>
     
     <div class="copyright">
-      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> <span data-translate="copyright">KyuArtz, All rights reserved</span></p>
+      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> KyuArtz Studio, All rights reserved</p>
     </div>
     <div id="version">Loading...</div>
   </footer>

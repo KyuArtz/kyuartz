@@ -1,8 +1,28 @@
 const sampleData = {
     changelog: {
     version: "1.3.1",
-    last_updated: "2025-09-06T12:00:00Z",
+    last_updated: "2025-09-12T02:00:00Z",
     updates: [
+         {
+            date: "2025-09-12",
+            timestamp: "2025-09-12T06:22:00Z",
+            version: "1.3.1",
+            major: [],
+            minor: [
+                {
+                    title: "technical imrovements",
+                    description: "Made various improvements to the site.",
+                    category: "UI/UX"
+                },
+                {
+                    title: "Meo Interface Upgrade",
+                    description: "Releasing a small update to our AI asistant interface and added new various functionalities like (AI mood, new chat functionality, functional settings & history modal).",
+                    category: "UI/UX, AI"
+                },
+            ],
+            bugfixes: [],
+            upcoming: []
+        },
         {
             date: "2025-09-09",
             timestamp: "2025-09-09T05:30:00Z",
@@ -109,7 +129,7 @@ const sampleData = {
     ],
     summary: {
         total_major_updates: 1,
-        total_minor_updates: 8,
+        total_minor_updates: 10,
         total_bugfixes: 1,
         total_upcoming_features: 1,
         primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]

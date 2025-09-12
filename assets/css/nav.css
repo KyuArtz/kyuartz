@@ -11,11 +11,9 @@ header {
 }
 
 .navigation-menu {
-    min-width: 150px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
     margin: 0;
     padding: 0;
 }
@@ -25,13 +23,12 @@ header {
 }
 
 .subMenu-container {
-    box-shadow: var(--shadow);
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 0 5px;
-    background: var(--content-color);
 }
 
 .settings-menu {
@@ -52,8 +49,8 @@ header {
     background: var(--secondary-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-stylized);
+    top: 55px;
     right: 0;
-    margin: 10px auto;
     padding: 10px 0;
     overflow: hidden;
     z-index: 1;
@@ -93,7 +90,7 @@ header {
 .profile img {
     width: 45px;
     height: 45px;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     border: 2px solid var(--accent-color);
     border-radius: var(--border-rounded);
     object-fit: cover;
@@ -137,8 +134,8 @@ p.username {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5px;
-    min-height: 50px;
+    padding: 0 1rem;
+    min-height: 60px;
 }
 
 .main-navigation span {
@@ -148,30 +145,29 @@ p.username {
 .brand {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.5rem;
 }
 
 .brand img {
-    width: 42px;
-    height: 42px;
-    padding: 2px;
+    width: 45px;
+    height: 45px;
+    border: 2px solid var(--accent-color);
     border-radius: var(--border-stylized);
-    aspect-ratio: 1 / 1;
-    box-shadow: var(--shadow);
+    aspect-ratio: 1/1;
     background: var(--accent-color);
 }
 
 .brand a {
     color: var(--accent-color);
     font-weight: bold;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-family: var(--my-font);
 }
 
 .nav-link,
 .nav-link-sideMenu {
     color: var(--text-color);
-    padding: 14px 25px 12px;
+    padding: 1rem;
     border-radius: var(--border-stylized);
     transition: all 0.3s ease;
 }
@@ -232,7 +228,7 @@ a.nav-link-sideMenu {
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px auto;
+    margin: 0.3rem auto;
     background: var(--accent-color);
     transition: all 0.3s ease;
 }
@@ -242,7 +238,7 @@ a.nav-link-sideMenu {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    padding: 20px;
+    padding: 1rem;
     border-radius: var(--border-stylized);
     background: var(--content-color);
     border: none;
@@ -256,7 +252,7 @@ a.nav-link-sideMenu {
 @media screen and (max-width: 978px) {
     .hamburger {
         display: block;
-        padding: 5px;
+        padding: 0.3rem;
         z-index: 1;
         cursor: pointer;
     }
@@ -309,38 +305,9 @@ a.nav-link-sideMenu {
     display: none;
 }
 
-.subBrand {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    padding: 5px 10px;
-}
-
-.subBrand img {
-    width: 42px;
-    height: 42px;
-    padding: 2px;
-    border-radius: var(--border-stylized);
-    aspect-ratio: 1 / 1;
-    box-shadow: var(--shadow);
-    background: var(--accent-color);
-}
-
-.subBrand p {
-    color: var(--text-color);
-    background: var(--accent-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-weight: bold;
-    font-size: 1.7rem;
-    font-family: var(--my-font);
-    margin: 0;
-}
-
 .sideMenu-content {
     position: fixed;
-    top: 51px;
+    top: 61px;
     left: 0;
     background: var(--secondary-color);
     display: flex;
@@ -540,7 +507,7 @@ footer {
 }
 
 .footer-section a {
-    color: var(--text-color);
+    color: var(--accent-color);
     display: block;
     margin-bottom: 0.5rem;
     font-family: var(--my-font);
@@ -568,7 +535,7 @@ footer {
     padding: 0.3rem;
     background: var(--content-color);
     border-radius: var(--border-stylized);
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1/1;
     color: var(--accent-color);
     transition: all 0.3s ease;
     box-shadow: var(--shadow);

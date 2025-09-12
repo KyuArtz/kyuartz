@@ -310,6 +310,7 @@
 .mascot-info h3 {
     margin: 0 0 10px 0;
     color: var(--accent-color);
+    font-family: var(--my-font);
     font-size: 1.3rem;
 }
 
@@ -329,6 +330,7 @@
     border: 2px solid;
     padding: 10px;
     border-radius: var(--border-stylized);
+    font-family: var(--my-font);
 }
 
 .mascot-link:hover .cta-text {
@@ -500,7 +502,7 @@
 .form-header {
     text-align: center;
     padding: 30px 20px;
-    background: var(--gradient-bg);
+    background: var(--content-color);
     color: var(--accent-color);
     position: relative;
 }

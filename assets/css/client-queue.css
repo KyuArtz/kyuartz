@@ -15,7 +15,7 @@
 }
 
 .client-header h1 {
-    font-size: clamp(2rem, 3vw + 1rem, 3.2rem);
+    font-size: 3rem;
     font-weight: 800;
     font-family: var(--my-font);
     margin: 0 0 .5rem;
@@ -23,7 +23,7 @@
 }
 
 .client-header p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-color);
     max-width: 600px;
     margin: 0 auto;
