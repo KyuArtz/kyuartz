@@ -431,6 +431,7 @@
         flex-direction: row;
         padding: 10px;
         border-right: none;
+        display: none;
     }
 
     .character-avatar {
