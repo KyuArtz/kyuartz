@@ -37,7 +37,7 @@ function updateBackground() {
         const bg = characterBackgrounds[currentCharacter]?.[backgroundType]
             ?? "url('assets/images/character-presets/cover/default.gif')";
         characterContainer.style.backgroundImage = bg;
-        characterContainer.style.transition = "opacity 0.5s ease-in";
+        characterContainer.style.transition = "opacity 0.5s ease";
         characterContainer.style.opacity = 1;
     }, 300);
 }
@@ -203,7 +203,7 @@ function attachCharacterCardListeners() {
     });
 }
 
-// Combined filter helper: role button + genre checkboxes
+// Combined filter helper: role button + faction checkboxes
 function applyCombinedFilters() {
     // hide details when filtering
     hideCharacterInfo();
@@ -212,19 +212,19 @@ function applyCombinedFilters() {
     const activeBtn = document.querySelector('.filter-character button.active-filter');
     const activeRole = (activeBtn && (activeBtn.dataset.category || 'all')) ? (activeBtn.dataset.category || 'all').toString().trim().toLowerCase() : 'all';
 
-    // get checked genres
-    const checkboxes = Array.from(document.querySelectorAll('.genre input[type="checkbox"]'));
-    const checkedGenres = checkboxes.filter(cb => cb.checked).map(cb => (cb.id || cb.value || '').toString().trim().toLowerCase()).filter(Boolean);
-    const anyGenreChecked = checkedGenres.length > 0;
+    // get checked factions
+    const checkboxes = Array.from(document.querySelectorAll('.faction input[type="checkbox"]'));
+    const checkedFactions = checkboxes.filter(cb => cb.checked).map(cb => (cb.id || cb.value || '').toString().trim().toLowerCase()).filter(Boolean);
+    const anyFactionChecked = checkedFactions.length > 0;
 
     document.querySelectorAll('.character-card').forEach(card => {
         const cardRoles = (card.dataset.category || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
-        const cardGenres = (card.dataset.genre || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
+        const cardFactions = (card.dataset.faction || '').split(',').map(s => s.trim().toLowerCase()).filter(Boolean);
 
         const roleMatch = (activeRole === 'all') || cardRoles.includes(activeRole);
-        const genreMatch = !anyGenreChecked || cardGenres.some(g => checkedGenres.includes(g));
+        const factionMatch = !anyFactionChecked || cardFactions.some(g => checkedFactions.includes(g));
 
-        const shouldShow = roleMatch && genreMatch;
+        const shouldShow = roleMatch && factionMatch;
 
         if (shouldShow) {
             card.style.display = '';
@@ -249,7 +249,7 @@ function attachFilterListeners() {
             this.classList.add('active-filter');
             // --- End active indicator logic ---
 
-            // Apply combined filters (role + genre)
+            // Apply combined filters (role + faction)
             applyCombinedFilters();
         });
     });
@@ -259,9 +259,9 @@ function attachFilterListeners() {
     if (firstFilter) firstFilter.classList.add('active-filter');
 }
 
-// Update genre checkbox listener to call combined logic
-function attachGenreCheckboxListeners() {
-    const checkboxes = Array.from(document.querySelectorAll('.genre input[type="checkbox"]'));
+// Update faction checkbox listener to call combined logic
+function attachFactionCheckboxListeners() {
+    const checkboxes = Array.from(document.querySelectorAll('.faction input[type="checkbox"]'));
     if (!checkboxes.length) return;
 
     function onChange() {
@@ -284,7 +284,7 @@ function attachGenreCheckboxListeners() {
 // Initial setup
 attachCharacterCardListeners();
 attachFilterListeners();
-attachGenreCheckboxListeners();
+attachFactionCheckboxListeners();
 
 // Event delegation for card clicks (for dynamically added cards)
 document.querySelector('.character-cards-wrapper').addEventListener('click', function (e) {
@@ -331,30 +331,6 @@ function hideCharacterInfo() {
     }
     resetCharacterCardStates();
     currentCharacter = null;
-}
-
-// =====================
-// Fullscreen Functions
-// =====================
-function openFullscreen() {
-    const elem = document.documentElement;
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) {
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) {
-        elem.msRequestFullscreen();
-    }
-}
-
-function closeFullscreen() {
-    if (document.exitFullscreen) {
-        document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) {
-        document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) {
-        document.msExitFullscreen();
-    }
 }
 
 // =====================
@@ -470,9 +446,9 @@ function closeFullscreen() {
                 updateCarousel();
             });
         });
-        // Also ensure genre changes reset carousel
-        const genreBoxes = Array.from(document.querySelectorAll('.genre input[type="checkbox"]'));
-        genreBoxes.forEach(cb => cb.addEventListener('change', () => {
+        // Also ensure faction changes reset carousel
+        const factionBoxes = Array.from(document.querySelectorAll('.faction input[type="checkbox"]'));
+        factionBoxes.forEach(cb => cb.addEventListener('change', () => {
             currentIndex = 0;
             updateCarousel();
         }));

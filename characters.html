@@ -71,335 +71,294 @@
     <button id="accept-cookies">Got It</button>
   </div>
 
-  <div class="blur-overlay"></div>
-  <header>
-    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
-      <div class="brand" aria-label="KyuArtz Home Page">
-        <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html">KAS</a>
-      </div>
+  <div class="character-nav">
+    <div class="faction"> 
+      <label>FOD</label>
+      <label class="switch" for="FOD">
+        <input type="checkbox" id="FOD" name="FOD">
+        <span class="slider round"></span> 
+      </label>
 
-      <ul class="navigation-menu" role="menubar">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link" data-page="index.html" role="menuitem">
-            <i class="fa-solid fa-house"></i> HOME
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="gallery.html" class="nav-link" data-page="gallery.html" role="menuitem">
-            <i class="fa-regular fa-image"></i> GALLERY
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link" data-page="about.html" role="menuitem">
-            <i class="fa-regular fa-address-card"></i> ABOUT
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link" data-page="contact.html" role="menuitem">
-            <i class="fa-solid fa-phone"></i> CONTACT
-          </a>
-        </li>
-        
-        <li class="nav-item sideMenu">
-          <a href="#" class="nav-link-sideMenu" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
-            <i class="fa-solid fa-bars"></i> MORE
-          </a>
-          <div id="moreMenu" class="sideMenu-content" aria-hidden="true">
-            <div class="span-btn">
-              <h2>Commission</h2>
-              <a href="commission-sheet.html" data-page="commission-sheet.html">
-                <i class="fa-regular fa-file"></i> Commission Sheet
-              </a>
-              <a href="client-queue.html" data-page="client-queue.html">
-                <i class="fa-solid fa-table"></i> Client Queue
-              </a>
-            </div>
-            <div class="span-btn">
-              <h2>Explore</h2>
-              <a href="comic.html" data-page="comic.html">
-                <i class="fa-solid fa-book"></i> Kyuartz Comic
-              </a>
-              <a href="characters.html" data-page="characters.html">
-                <i class="fa-solid fa-person-rifle"></i> Original Characters
-              </a>
-            </div>
-            <div class="span-btn">
-              <h2>Support</h2>
-              <a href="service-center.html" data-page="service-center.html">
-                <i class="fa-solid fa-info"></i> Service Center
-              </a>
-              <a href="update-log.html" data-page="update-log.html">
-                <i class="fa-solid fa-download"></i> What's New
-              </a>
-            </div>
-          </div>
-        </li>
-      </ul>
+      <label>LOC</label>
+      <label class="switch" for="LOC">
+        <input type="checkbox" id="LOC" name="LOC">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    
+    <div class="screen-size-controls">
+      <button type="button" onclick="window.history.back()" title="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       
-      <div class="subMenu-container">
-        <div class="settings-menu">
-          <button class="settings-btn" aria-label="Settings">
-            <i class="fa-solid fa-gear"></i>
-          </button>
-          <div class="dropdown-setting" aria-label="Settings dropdown">
-            <a href="about.html" data-page="about.html">
-              <div class="profile">
-                <img src="assets/images/artgallary/elishia avatar.webp" alt="Profile">
-                <div class="profile-info">
-                  <p class="username"> Kyu</p>
-                  <p class="userrole"> Artist</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-            </a>
-            <a class="setting" href="meo-ai-assistant.html">
-              <i class="fa-solid fa-cat fa-bounce"></i> Meo AI Assistant
-            </a>
-            <a class="setting" href="preferences.html">
-              <i class="fa-solid fa-palette"></i> Preferences
-            </a>
-            <a class="setting" href="service-center.html">
-              <i class="fa-regular fa-circle-question"></i> Service Center
-            </a>
-          </div>
-        </div>
-        
-        <div class="hamburger" aria-label="Mobile menu">
-           <span class="bar"></span>
-           <span class="bar"></span>
-           <span class="bar"></span>
-        </div>
-      </div>
-    </nav>
-  </header>
+      <button id="toggle-character-hide-btn" class="nav-link" title="Hide" aria-label="Hide">
+        <i class="fa-solid fa-eye-slash"></i>
+      </button>
+    </div>
+
+    <section class="filter-character" aria-label="Filter Roles">
+      <h3>Filter Roles</h3>
+      <button type="button" data-category="all">
+        <img src="assets/images/character-presets/roles/all.webp" alt="All"> All
+      </button>
+
+      <button type="button" data-category="versatile">
+        <img src="assets/images/character-presets/roles/versatile.webp" alt="Versatile"> Versatile
+      </button>
+
+      <button type="button" data-category="mage">
+        <img src="assets/images/character-presets/roles/mage.webp" alt="Mage"> Mage
+      </button>
+
+      <button type="button" data-category="warrior">
+        <img src="assets/images/character-presets/roles/warrior.webp" alt="Warrior"> Warrior
+      </button>
+
+      <button type="button" data-category="guardian">
+        <img src="assets/images/character-presets/roles/guardian.webp" alt="Guardian"> Guardian
+      </button>
+
+      <button type="button" data-category="assassin">
+        <img src="assets/images/character-presets/roles/assassin.webp" alt="Assassin"> Assassin
+      </button>
+
+      <button type="button" data-category="marksman">
+        <img src="assets/images/character-presets/roles/marksman.webp" alt="Marksman"> Marksman
+      </button>
+
+      <button type="button" data-category="healer">
+        <img src="assets/images/character-presets/roles/healer.webp" alt="Healer"> Healer
+      </button>
+    </section>
+  </div>
 
   <div class="character-wrapper">
+    
     <div class="character-container">
       <div class="character-slider">
-        <button type="button" class="carousel-btn left-btn" onclick="scrollCarousel(-1)"></button>
-
         <div class="carousel-view">
           <div class="character-cards-wrapper">
-            <div class="character-card" data-genre="LOC" data-category="warrior,assassin,versatile" data-character="ren" data-accent="#b22222">
+            <div class="character-card" data-faction="LOC" data-category="warrior,assassin,versatile" data-character="ren" data-accent="#b22222">
               <div class="role">
                 <img src="assets/images/character-presets/roles/warrior.webp" alt="" title="Warrior">
                 <img src="assets/images/character-presets/roles/assassin.webp" alt="" title="Assassin">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/ren.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Ren</div>
+                <div class="character-name">Ren</div>
                 <p class="title">Blazing Dragonfang</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="assassin" data-character="rayza" data-accent="#ff8bb4">
+            <div class="character-card" data-faction="LOC" data-category="assassin" data-character="rayza" data-accent="#ff8bb4">
               <div class="role">
                 <img src="assets/images/character-presets/roles/assassin.webp" alt="" title="Assassin">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/rayza.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Rayza</div>
+                <div class="character-name">Rayza</div>
                 <p class="title">Crimson Tempest</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="guardian,warrior" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="LOC" data-category="guardian,warrior" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/guardian.webp" alt="" title="Role">
                 <img src="assets/images/character-presets/roles/warrior.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/molag.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage" data-character="feya" data-accent="#ffae42">
+            <div class="character-card" data-faction="LOC" data-category="mage" data-character="feya" data-accent="#ffae42">
               <div class="role">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Mage">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/feya.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Feya</div>
+                <div class="character-name">Feya</div>
                 <p class="title">Fiery Fox</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage,warrior,versatile" data-character="hexxana" data-accent="#8f00ff">
+            <div class="character-card" data-faction="LOC" data-category="mage,warrior,versatile" data-character="hexxana" data-accent="#8f00ff">
               <div class="role">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Mage">
                 <img src="assets/images/character-presets/roles/warrior.webp" alt="" title="Warrior">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/hexxana.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Hexxana</div>
+                <div class="character-name">Hexxana</div>
                 <p class="title">Lone Wanderer</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage,assassin,warrior,versatile" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="LOC" data-category="mage,assassin,warrior,versatile" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/versatile.webp" alt="" title="Versatile">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/zion.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage" data-character="lunara" data-accent="#dc143c">
+            <div class="character-card" data-faction="LOC" data-category="mage" data-character="lunara" data-accent="#dc143c">
               <div class="role">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Mage">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/lunara.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Lunara</div>
+                <div class="character-name">Lunara</div>
                 <p class="title">Scarlet Phantom</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="LOC" data-category="mage" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/evany.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="guardian,warrior,versatile" data-character="blessica" data-accent="#f5bd02">
+            <div class="character-card" data-faction="LOC" data-category="guardian,warrior,versatile" data-character="blessica" data-accent="#f5bd02">
               <div class="role">
                 <img src="assets/images/character-presets/roles/guardian.webp" alt="" title="Guardian">
                 <img src="assets/images/character-presets/roles/warrior.webp" alt="" title="Warrior">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/blessica.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Blessica</div>
+                <div class="character-name">Blessica</div>
                 <p class="title">High Saint of Solarae</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="healer,mage" data-character="liliana" data-accent="#b9f2ff">
+            <div class="character-card" data-faction="LOC" data-category="healer,mage" data-character="liliana" data-accent="#b9f2ff">
               <div class="role">
                 <img src="assets/images/character-presets/roles/healer.webp" alt="" title="Healer">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Mage">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/liliana.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Liliana</div>
+                <div class="character-name">Liliana</div>
                 <p class="title">Beacon of Eldoria</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="marksman" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="LOC" data-category="marksman" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/marksman.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/arzhel.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="healer,guardian" data-character="floribeth" data-accent="#90ee90">
+            <div class="character-card" data-faction="LOC" data-category="healer,guardian" data-character="floribeth" data-accent="#90ee90">
               <div class="role">
                 <img src="assets/images/character-presets/roles/healer.webp" alt="" title="Healer">
                 <img src="assets/images/character-presets/roles/guardian.webp" alt="" title="Guardian">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/floribeth.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Floribeth</div>
+                <div class="character-name">Floribeth</div>
                 <p class="title">Heartroot Keeper</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="LOC" data-category="mage" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/shelain.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="LOC" data-category="mage,versatile" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="LOC" data-category="mage,versatile" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/mage.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/zenyx.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
             
-            <div class="character-card" data-genre="FOD" data-category="assassin,marksman,versatile" data-character="elishia" data-accent="#1e90ff">
+            <div class="character-card" data-faction="FOD" data-category="assassin,marksman,versatile" data-character="elishia" data-accent="#1e90ff">
               <div class="role">
                 <img src="assets/images/character-presets/roles/versatile.webp" alt="" title="Versatile">
               </div>
               <img class="ready" src="assets/images/character-presets/profile/elishia.gif" alt="">
               <div class="overlay">
-                <div class="name-tag">Elishia</div>
+                <div class="character-name">Elishia</div>
                 <p class="title">Phantom Nightwalker</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="FOD" data-category="healer" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="FOD" data-category="healer" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/healer.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/evalete.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="FOD" data-category="warrior,versatile" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="FOD" data-category="warrior,versatile" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/versatile.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/zackcry.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="FOD" data-category="guardian" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="FOD" data-category="guardian" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/guardian.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/jazen.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
 
-            <div class="character-card" data-genre="FOD" data-category="marksman,assassin" data-character="comingSoon" data-accent="#a1a1a1">
+            <div class="character-card" data-faction="FOD" data-category="marksman,assassin" data-character="comingSoon" data-accent="#a1a1a1">
               <div class="role">
                 <img src="assets/images/character-presets/roles/marksman.webp" alt="" title="Role">
                 <img src="assets/images/character-presets/roles/assassin.webp" alt="" title="Role">
               </div>
               <img class="not-ready" src="assets/images/character-presets/profile/zenki.webp" alt="">
               <div class="overlay">
-                <div class="name-tag">Coming Soon</div>
+                <div class="character-name">Coming Soon</div>
                 <p class="title">No Title</p>
               </div>
             </div>
           </div>
         </div>
-
-        <button type="button" class="carousel-btn right-btn" onclick="scrollCarousel(1)"></button>
+        <div class="character-action">
+          <button type="button" class="carousel-btn left-btn" onclick="scrollCarousel(-1)">❮</button>
+          <button type="button" class="carousel-btn right-btn" onclick="scrollCarousel(1)">❯</button>
+        </div>
       </div>
 
       <div class="character-info" id="character-info">
@@ -458,71 +417,6 @@
     </div>
     <div class="character-overlay"></div>
     <div class="character-background"></div>
-  </div>
-
-  <div class="bottom-navigation">
-    <section class="filter-character" aria-label="Filter Roles">
-      <h3>Filter Roles</h3>
-      <button type="button" data-category="all">
-        <img src="assets/images/character-presets/roles/all.webp" alt="All"> All
-      </button>
-
-      <button type="button" data-category="versatile">
-        <img src="assets/images/character-presets/roles/versatile.webp" alt="Versatile"> Versatile
-      </button>
-
-      <button type="button" data-category="mage">
-        <img src="assets/images/character-presets/roles/mage.webp" alt="Mage"> Mage
-      </button>
-
-      <button type="button" data-category="warrior">
-        <img src="assets/images/character-presets/roles/warrior.webp" alt="Warrior"> Warrior
-      </button>
-
-      <button type="button" data-category="guardian">
-        <img src="assets/images/character-presets/roles/guardian.webp" alt="Guardian"> Guardian
-      </button>
-
-      <button type="button" data-category="assassin">
-        <img src="assets/images/character-presets/roles/assassin.webp" alt="Assassin"> Assassin
-      </button>
-
-      <button type="button" data-category="marksman">
-        <img src="assets/images/character-presets/roles/marksman.webp" alt="Marksman"> Marksman
-      </button>
-
-      <button type="button" data-category="healer">
-        <img src="assets/images/character-presets/roles/healer.webp" alt="Healer"> Healer
-      </button>
-    </section>
-
-    <div class="genre"> 
-      <label>FOD</label>
-      <label class="switch" for="FOD">
-        <input type="checkbox" id="FOD" name="FOD">
-        <span class="slider round"></span> 
-      </label>
-
-      <label>LOC</label>
-      <label class="switch" for="LOC">
-        <input type="checkbox" id="LOC" name="LOC">
-        <span class="slider round"></span>
-      </label>
-    </div>
-    
-    <div class="screen-size-controls">
-      <button type="button" class="nav-link" onclick="openFullscreen()" title="Full Screen" aria-label="Full Screen">
-        <i class="fa-solid fa-expand"></i>
-      </button>
-
-      <button type="button" class="nav-link" onclick="closeFullscreen()" title="Minimize Screen" aria-label="Minimize Screen">
-        <i class="fa-solid fa-compress"></i>
-      </button>
-      
-      <button id="toggle-character-hide-btn" class="nav-link" title="Hide" aria-label="Hide">
-        <i class="fa-solid fa-eye-slash"></i>
-      </button>
-    </div>
   </div>
 </body>
 </html>
