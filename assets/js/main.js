@@ -153,7 +153,7 @@ function applyTiltEffect(selector, { maxTilt = 10, perspective = 500 } = {}) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  applyTiltEffect('.character-card', { maxTilt: 3, perspective: 500 });
+  applyTiltEffect('.character-card', { maxTilt: 1, perspective: 500 });
 });
 
 // Language selection logic
