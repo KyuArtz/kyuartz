@@ -37,7 +37,7 @@ header {
 
 .settings-btn {
     color: var(--accent-color);
-    padding: 0.9rem 1rem;
+    padding: 0.8rem;
     border: none;
     font-size: 1rem;
     background: transparent;
