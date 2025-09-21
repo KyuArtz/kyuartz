@@ -1,4 +1,4 @@
-class MeoAssistant {
+class MeoAiAssistant {
   constructor() {
     this.chatMessages = document.getElementById('chatMessages');
     this.userInput = document.getElementById('userInput');
@@ -225,6 +225,20 @@ class MeoAssistant {
     });
   }
 
+  // --- Regenerate Response ---
+  regenerateResponse(originalInput) {
+    this.showTypingIndicator();
+    this.updateCharacterStatus("Re-thinking...");
+    this.updateCharacterMood("thinking");
+
+    this.generateResponse(originalInput).then((newResponse) => {
+      this.hideTypingIndicator();
+      this.addMessage(newResponse, "ai");
+      this.updateCharacterMood("happy");
+      this.updateCharacterStatus("Ready to help");
+    });
+  }
+
   addMessage(text, type) {
     const messageEl = document.createElement('div');
     messageEl.className = `message ${type}`;
@@ -256,6 +270,9 @@ class MeoAssistant {
             </button>
             <button class="message-action" onclick="assistant.speakText('${text.replace(/'/g, "\\'")}')">
               <i class="fas fa-volume-up"></i>
+            </button>
+            <button class="message-action" onclick="assistant.regenerateResponse('${text.replace(/'/g, "\\'")}')">
+              <i class="fas fa-rotate"></i>
             </button>
           `;
     } else {
@@ -467,12 +484,12 @@ class MeoAssistant {
 
     panel.innerHTML = `
           <h3 style="margin-bottom: 20px; color: var(--accent-color); text-align: center; font-family: var(--my-font)">
-            <i class="fas fa-cog"></i> Assistant Settings
+            Assistant Settings
           </h3>
           
           <div style="margin-bottom: 20px;">
             <label style="display: block; margin-bottom: 8px; font-weight: bold;">
-              🔊 Voice Speed: <span id="speedValue">${currentRate}</span>
+              <i class="fas fa-volume-up"></i> Voice Speed: <span id="speedValue">${currentRate}</span>
             </label>
             <input type="range" min="0.5" max="2" step="0.1" value="${currentRate}" id="voiceSpeed" 
                    style="width: 100%; margin-bottom: 10px;">
@@ -485,18 +502,18 @@ class MeoAssistant {
             <label style="display: block; margin-bottom: 12px;">
               <input type="checkbox" id="autoSpeak" ${autoSpeak ? 'checked' : ''}
                      style="margin-right: 8px;"> 
-              🔊 Auto-speak AI responses
+              <i class="fas fa-volume-up"></i> Auto-speak AI responses
             </label>
             <label style="display: block; margin-bottom: 12px;">
               <input type="checkbox" id="notifications" ${notifications ? 'checked' : ''}
                      style="margin-right: 8px;"> 
-              🔔 Show notifications
+              <i class="fas fa-bell"></i> Show notifications
             </label>
           </div>
 
           <div style="margin-bottom: 20px;">
             <label style="display: block; margin-bottom: 8px; font-weight: bold;">
-              🖼️ Mood Display:
+              <i class="fas fa-image"></i> Mood Display:
             </label>
             <select id="moodDisplay" style="width:100%; padding:8px; margin-bottom:10px; border:2px solid var(--accent-color); border-radius: var(--border-stylized); background: var(--primary-color); color:var(--accent-color);">
               <option value="auto">Auto (image → emoji)</option>
@@ -591,7 +608,7 @@ class MeoAssistant {
               padding: 12px; 
               margin: 8px 0; 
               border-left: 3px solid ${item.type === 'user' ? 'var(--content-color)' : 'var(--accent-color)'}; 
-              background: var(--secondary-color); 
+              background: var(--content-color); 
               border-radius: var(--border-stylized);
               box-shadow: var(--shadow);
             `;
@@ -837,7 +854,5 @@ class MeoAssistant {
 let assistant;
 
 document.addEventListener('DOMContentLoaded', () => {
-  assistant = new MeoAssistant();
+  assistant = new MeoAiAssistant();
 });
-
-document.head.appendChild(style);

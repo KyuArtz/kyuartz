@@ -18,7 +18,6 @@
 
 .nav-buttons button:hover {
     background: var(--colored-overlay);
-    transform: scale(1.1);
 }
 
 .chat-container {
@@ -273,8 +272,7 @@
 }
 
 .send-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px var(--colored-overlay);
+    background: var(--colored-overlay);
 }
 
 .typing-indicator {
