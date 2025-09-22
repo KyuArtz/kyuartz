@@ -11,7 +11,7 @@ class MeoAiAssistant {
     this.suggestions = document.getElementById('suggestions');
 
     if (!this.chatMessages || !this.userInput) {
-      console.warn('Essential chat elements missing');
+      console.warn('Essential chat elements missing ❌');
       return;
     }
 
@@ -718,17 +718,41 @@ class MeoAiAssistant {
     const welcome = document.createElement('div');
     welcome.className = 'welcome-message';
     welcome.innerHTML = `
-          <h2>Meo at your service</h2>
+          <h1>Hello there!</h1>
           <p>How can I assist you today?</p>
         `;
 
     this.suggestions.innerHTML = `
-          <button class="suggestion">😸 Tell me about KyuArtz</button>
-          <button class="suggestion">😸 What services do you offer?</button>
-          <button class="suggestion">😸 Commission info</button>
-          <button class="suggestion">😸 Gallery</button>
-          <button class="suggestion">😸 Joke</button>
-          <button class="suggestion">😸 Fun Facts</button>
+          <div class="suggestion">
+            <div class="suggestion-icon">🎨</div>
+            <div class="suggestion-title">About KyuArtz</div>
+            <div class="suggestion-desc">Learn about our creative studio</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">💼</div> 
+            <div class="suggestion-title">Our Services</div>
+            <div class="suggestion-desc">Learn more about our services</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">🎯</div> 
+            <div class="suggestion-title">Commissions</div>
+            <div class="suggestion-desc">Get custom artwork created</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">🖼️</div> 
+            <div class="suggestion-title">Gallery</div>
+            <div class="suggestion-desc">Learn more about kyuartz gallery</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">😸</div> 
+            <div class="suggestion-title">Joke</div>
+            <div class="suggestion-desc">Lighten up your day</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">💡</div> 
+            <div class="suggestion-title">Fun Facts</div>
+            <div class="suggestion-desc">Learn something interesting</div>
+          </div>
         `;
 
     this.chatMessages.appendChild(welcome);
@@ -749,9 +773,9 @@ class MeoAiAssistant {
       const res = await fetch('assets/data/assistantResponses.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       this.responses = await res.json();
-      console.info('Assistant responses loaded');
+      console.info('Assistant responses loaded ✅');
     } catch (err) {
-      console.warn('Could not load assistant responses, using fallback.', err);
+      console.warn('Could not load assistant responses, using fallback ❌', err);
       // Minimal fallback so the assistant still works if JSON can't be fetched.
       this.responses = {
         "hello": ["Hello! I'm Meo, your assistant."],
@@ -764,7 +788,7 @@ class MeoAiAssistant {
     try {
       localStorage.setItem(`meo_${key}`, JSON.stringify(value));
     } catch (e) {
-      console.warn('Could not save preference', key, e);
+      console.warn('Could not save preference ❌', key, e);
     }
   }
 
@@ -772,7 +796,7 @@ class MeoAiAssistant {
     try {
       localStorage.setItem('meo_history', JSON.stringify(this.conversationHistory));
     } catch (e) {
-      console.warn('Could not save history', e);
+      console.warn('Could not save history ❌', e);
     }
   }
 
@@ -795,7 +819,7 @@ class MeoAiAssistant {
         this.chatMessages.scrollTop = this.chatMessages.scrollHeight;
       }
     } catch (e) {
-      console.warn('Could not load history', e);
+      console.warn('Could not load history ❌', e);
     }
   }
 

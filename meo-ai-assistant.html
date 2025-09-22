@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz Studio | Meo AI Assistant</title>
+  <title>Meo AI Assistant</title>
   <meta name="description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
   <meta name="keywords" content="KyuArtz Studio">
   <meta name="author" content="KyuArtz">
@@ -26,14 +26,14 @@
   <script src="assets/js/main.js" defer></script>
   <script src="assets/js/preferences.js" defer></script>
   <script src="assets/js/meoAiAssistant.js" defer></script>
-  <meta property="og:title" content="KyuArtz Studio | MEO AI Assistant">
+  <meta property="og:title" content="MEO AI Assistant">
   <meta property="og:description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo and branding">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/ai-assistant">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz Studio | MEO AI Assistant">
+  <meta name="twitter:title" content="MEO AI Assistant">
   <meta name="twitter:description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
@@ -54,7 +54,7 @@
     <div class="spinner medium-spinner"></div>
     <div class="spinner large-spinner"></div>
   </div>
-  
+
   <div class="chat-container">
     <div class="character-panel">
       <div class="character-avatar" id="characterAvatar"></div>
@@ -72,6 +72,13 @@
     <div class="chat-panel">
       <div class="chat-header">
         <nav class="nav-buttons" id="navButtons" aria-label="Dialogue navigation">
+          <select class="model-selector" id="modelSelector" onchange="changeModel(this.value)">
+            <option value="local">Local Model</option>
+            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+            <option value="gpt-4">GPT-4</option>
+            <option value="claude-2">Claude 2</option>
+          </select>
+
           <button type="button" onclick="window.history.back()" title="Close">
             <i class="fa-solid fa-xmark"></i>
           </button>
@@ -89,16 +96,40 @@
 
       <div class="chat-messages" id="chatMessages">
         <div class="welcome-message" id="welcomeMessage">
-          <h2>Meo at your service</h2>
+          <h1>Hello there!</h1>
           <p>How can I assist you today?</p>
         </div>
         <div class="suggestions" id="suggestions">
-          <button class="suggestion">😸 Tell me about KyuArtz</button>
-          <button class="suggestion">😸 What services do you offer?</button>
-          <button class="suggestion">😸 Commission info</button>
-          <button class="suggestion">😸 Gallery</button>
-          <button class="suggestion">😸 Joke</button>
-          <button class="suggestion">😸 Fun Facts</button>
+          <div class="suggestion">
+            <div class="suggestion-icon">🎨</div>
+            <div class="suggestion-title">About KyuArtz</div>
+            <div class="suggestion-desc">Learn about our creative studio</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">💼</div> 
+            <div class="suggestion-title">Our Services</div>
+            <div class="suggestion-desc">Learn more about our services</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">🎯</div> 
+            <div class="suggestion-title">Commissions</div>
+            <div class="suggestion-desc">Get custom artwork created</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">🖼️</div> 
+            <div class="suggestion-title">Gallery</div>
+            <div class="suggestion-desc">Learn more about kyuartz gallery</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">😸</div> 
+            <div class="suggestion-title">Joke</div>
+            <div class="suggestion-desc">Lighten up your day</div>
+          </div>
+          <div class="suggestion">
+            <div class="suggestion-icon">💡</div> 
+            <div class="suggestion-title">Fun Facts</div>
+            <div class="suggestion-desc">Learn something interesting</div>
+          </div>
         </div>
       </div>
 
