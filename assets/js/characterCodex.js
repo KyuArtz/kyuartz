@@ -1,24 +1,10 @@
+let currentCharacter = null;
+let charactersData = null;
+
 // =====================
 // Character Backgrounds
 // =====================
-const characterBackgrounds = {
-    comingSoon: { landscape: "url('assets/images/character-presets/cover/default.gif')", portrait: "url('')" },
-    elishia: { landscape: "url('')", portrait: "url('')" },
-    hexxana: { landscape: "url('')", portrait: "url('')" },
-    ren: { landscape: "url('')", portrait: "url('')" },
-    rayza: { landscape: "url('')", portrait: "url('')" },
-    liliana: { landscape: "url('')", portrait: "url('')" },
-    blessica: { landscape: "url('')", portrait: "url('')" },
-    lunara: { landscape: "url('')", portrait: "url('')" },
-    floribeth: { landscape: "url('')", portrait: "url('')" },
-    shelain: { landscape: "url('')", portrait: "url('')" },
-    arzhel: { landscape: "url('')", portrait: "url('')" },
-    feya: { landscape: "url('')", portrait: "url('')" },
-    zenyx: { landscape: "url('')", portrait: "url('')" }
-};
-
-let currentCharacter = null;
-let charactersData = null;
+const characterBackgrounds = {};
 
 // =====================
 // Background Handling
