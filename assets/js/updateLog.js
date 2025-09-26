@@ -45,7 +45,7 @@ const sampleData = {
             },
             {
                 date: "2025-09-09",
-                timestamp: "2025-09-09T05:30:00Z",
+                timestamp: "2025-09-09T09:30:00Z",
                 version: "1.2.1",
                 major: [],
                 minor: [],
@@ -61,7 +61,7 @@ const sampleData = {
             },
             {
                 date: "2025-09-06",
-                timestamp: "2025-09-06T02:30:00Z",
+                timestamp: "2025-09-06T06:30:00Z",
                 version: "1.2.1",
                 major: [],
                 minor: [
@@ -81,7 +81,7 @@ const sampleData = {
             },
             {
                 date: "2025-09-03",
-                timestamp: "2025-09-03T10:30:00Z",
+                timestamp: "2025-09-03T02:30:00Z",
                 version: "1.1.1",
                 major: [],
                 minor: [
@@ -112,7 +112,7 @@ const sampleData = {
             },
             {
                 date: "2025-08-30",
-                timestamp: "2025-08-30T10:30:00Z",
+                timestamp: "2025-08-30T02:30:00Z",
                 version: "1.0.0",
                 major: [
                     {
