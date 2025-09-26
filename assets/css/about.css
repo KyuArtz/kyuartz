@@ -36,10 +36,12 @@
 
 .profile-bg {
     height: 150px;
-    background: url('/assets/images/artgallary/wasteland.webp');
+    background: url('/assets/images/artgallery/wasteland.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    object-position: center;
     border-radius: var(--border-radius-custom);
     position: relative;
     overflow: hidden;
