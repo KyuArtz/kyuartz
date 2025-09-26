@@ -840,7 +840,7 @@ class CommissionForm {
         }
 
         const successHTML = `
-            <div style="text-align: center; padding: 40px; background: var(success-bg); border-radius: var(--border-stylized); border: 2px solid var(--success);">
+            <div style="text-align: center; padding: 40px; background: var(success-bg); border-radius: var(--border-radius-custom); border: 2px solid var(--success);">
                 <div style="font-size: 4rem; color: var(--success); margin-bottom: 20px;">
                     <i class="fas fa-check-circle"></i>
                 </div>
@@ -849,7 +849,7 @@ class CommissionForm {
                 <p style="font-size: 0.9rem; color: var(--accent-color);">
                     Your request has been successfully processed. Check your email for confirmation details.
                 </p>
-                <button onclick="location.reload()" style="margin-top: 20px; padding: 12px 24px; background: var(--success); color: white; border: none; border-radius: var(--border-stylized); cursor: pointer;">
+                <button onclick="location.reload()" style="margin-top: 20px; padding: 12px 24px; background: var(--success); color: var(--text-color-default); border: none; border-radius: var(--border-radius-custom); cursor: pointer;">
                     Submit Another Request
                 </button>
             </div>
@@ -864,7 +864,7 @@ class CommissionForm {
 
     handleError(message) {
         const errorHTML = `
-            <div style="text-align: center; padding: 40px; background: var(--error-bg); border-radius: var(--border-stylized); border: 2px solid var(--error);">
+            <div style="text-align: center; padding: 40px; background: var(--error-bg); border-radius: var(--border-radius-custom); border: 2px solid var(--error);">
                 <div style="font-size: 4rem; color: var(--error); margin-bottom: 20px;">
                     <i class="fas fa-exclamation-circle"></i>
                 </div>
@@ -874,7 +874,7 @@ class CommissionForm {
                     Please try again, or contact us directly at: 
                     <a href="mailto:kyuushi992@gmail.com" style="color: var(--accent-color);">kyuushi992@gmail.com</a>
                 </p>
-                <button onclick="location.reload()" style="margin-top: 20px; padding: 12px 24px; background: var(--error); color: white; border: none; border-radius: var(--border-stylized); cursor: pointer;">
+                <button onclick="location.reload()" style="margin-top: 20px; padding: 12px 24px; background: var(--error); color: var(--text-color-default); border: none; border-radius: var(--border-radius-custom); cursor: pointer;">
                     Try Again
                 </button>
             </div>
