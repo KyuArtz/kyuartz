@@ -10,8 +10,13 @@ const sampleData = {
                 major: [],
                 minor: [
                     {
-                        title: "Interface Imrovements",
+                        title: "Interface Enhancement",
                         description: "Made improvements and adjustments to the interface design, added translucent gradient.",
+                        category: "UI/UX"
+                    },
+                    {
+                        title: "Welcome Popup Enhancement",
+                        description: "Made improvements to the welcome popup.",
                         category: "UI/UX"
                     }
                 ],
@@ -144,7 +149,7 @@ const sampleData = {
         ],
         summary: {
             total_major_updates: 1,
-            total_minor_updates: 11,
+            total_minor_updates: 12,
             total_bugfixes: 1,
             total_upcoming_features: 1,
             primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]
