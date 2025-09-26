@@ -48,7 +48,7 @@ const togglePopup = (id, action, openClass) => {
   // Toggle body scroll for popups
   if (["open", "close"].includes(action)) {
     const anyPopupOpen =
-      document.getElementById('welcome-message')?.style.display === 'block'
+      document.getElementById('welcomeOverlay')?.style.display === 'flex'
     if (action === "open" || anyPopupOpen) {
       document.body.classList.add("no-scroll");
     } else {
@@ -59,8 +59,7 @@ const togglePopup = (id, action, openClass) => {
 
 // Close Welcome Message
 const closeWelcomeMessage = () => {
-  document.getElementById('welcome-overlay')?.style.setProperty('display', 'none');
-  document.getElementById('welcome-message')?.style.setProperty('display', 'none');
+  document.getElementById('welcomeOverlay')?.style.setProperty('display', 'none');
   document.body.classList.remove("no-scroll");
 };
 
@@ -68,8 +67,7 @@ const closeWelcomeMessage = () => {
 document.addEventListener("DOMContentLoaded", () => {
   // Welcome Message Popup Logic
   if (!getCookie("welcome-messageShown")) {
-    document.getElementById('welcome-overlay')?.style.setProperty('display', 'block');
-    document.getElementById('welcome-message')?.style.setProperty('display', 'block');
+    document.getElementById('welcomeOverlay')?.style.setProperty('display', 'flex');
     setCookie("welcome-messageShown", true, 365);
     document.body.classList.add("no-scroll");
   }
@@ -151,10 +149,10 @@ function applyTiltEffect(selector, { maxTilt = 10, perspective = 500 } = {}) {
     });
   });
 }
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
   applyTiltEffect('.character-card', { maxTilt: 1, perspective: 500 });
-});
+});*/
 
 // Language selection logic
 document.addEventListener("DOMContentLoaded", () => {
@@ -216,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadVersion() {
   const repo = "KyuArtz/kyuartz"; // Configure your repository here
   const versionElement = document.getElementById("version");
-  
+
   // Set loading state
   if (versionElement) {
     versionElement.innerText = "Version: Loading...";
@@ -244,7 +242,7 @@ async function loadVersion() {
     if (!releaseResponse.ok) {
       throw new Error(`Release API error: ${releaseResponse.status} ${releaseResponse.statusText}`);
     }
-    
+
     if (!commitResponse.ok) {
       throw new Error(`Commit API error: ${commitResponse.status} ${commitResponse.statusText}`);
     }
@@ -261,13 +259,13 @@ async function loadVersion() {
 
     // Update UI
     versionElement.innerText = `Version: ${tag} (${commitHash})`;
-    
+
   } catch (error) {
     console.error("Failed to load version information:", error);
-    
+
     // Provide more specific error messages
     let errorMessage = "Version: unavailable";
-    
+
     if (error.message.includes("Failed to fetch")) {
       errorMessage = "Version: network error";
     } else if (error.message.includes("404")) {
@@ -275,7 +273,7 @@ async function loadVersion() {
     } else if (error.message.includes("403")) {
       errorMessage = "Version: rate limited";
     }
-    
+
     versionElement.innerText = errorMessage;
   }
 }
@@ -291,7 +289,7 @@ async function loadVersionWithRetry(maxRetries = 2) {
         console.error(`Version loading failed after ${maxRetries} retries:`, error);
         break;
       }
-      
+
       // Wait before retrying (exponential backoff)
       const delay = Math.min(1000 * Math.pow(2, attempt - 1), 5000);
       console.warn(`Version loading attempt ${attempt} failed, retrying in ${delay}ms...`);

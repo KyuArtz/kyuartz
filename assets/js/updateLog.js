@@ -1,140 +1,155 @@
 const sampleData = {
     changelog: {
-    version: "1.4.1",
-    last_updated: "2025-09-12T02:00:00Z",
-    updates: [
-         {
-            date: "2025-09-12",
-            timestamp: "2025-09-12T06:22:00Z",
-            version: "1.4.1",
-            major: [],
-            minor: [
-                {
-                    title: "technical imrovements",
-                    description: "Made various improvements to the site.",
-                    category: "UI/UX"
-                },
-                {
-                    title: "Meo Interface Upgrade",
-                    description: "Releasing a small update to our AI asistant interface and added new various functionalities like (AI mood, new chat functionality, functional settings & history modal).",
-                    category: "UI/UX, AI"
-                },
-            ],
-            bugfixes: [],
-            upcoming: []
-        },
-        {
-            date: "2025-09-09",
-            timestamp: "2025-09-09T05:30:00Z",
-            version: "1.2.1",
-            major: [],
-            minor: [],
-            bugfixes: [],
-            upcoming: [
-                {
-                    title: "Improved Meo Assistant",
-                    description: "Upgrading Meo with new features, enhanced AI capabilities, and a more interactive experience.",
-                    category: "AI",
-                    expected_release: "2025-10-15"
-                }
-            ]
-        },
-        {
-            date: "2025-09-06",
-            timestamp: "2025-09-06T02:30:00Z",
-            version: "1.2.1",
-            major: [],
-            minor: [
-                {
-                    title: "Portfolio section improvements",
-                    description: "Made various improvements to the portfolio section for better usability and performance.",
-                    category: "Performance"
-                },
-                { 
-                    title: "Comics section improvements",
-                    description: "Made various improvements to the comics section for better usability and performance.",
-                    category: "Performance"
-                }
-            ],
-            bugfixes: [],
-            upcoming: []
-        },
-        {
-            date: "2025-09-03",
-            timestamp: "2025-09-03T10:30:00Z",
-            version: "1.1.1",
-            major: [],
-            minor: [
-                {
-                    title: "Technical improvements",
-                    description: "Made various technical improvements to enhance performance and maintainability to the site.",
-                    category: "Performance"
-                },
-                {
-                    title: "Character panel improvements",
-                    description: "Made various improvements to the character panel for better usability and performance.",
-                    category: "Performance"
-                },
-                {
-                    title: "Improved Preferences Page",
-                    description: "Enhanced the layout and usability of the Preferences Page.",
-                    category: "UI/UX"
-                }
-            ],
-            bugfixes: [
-                {
-                    title: "Fixed character panel layout issues",
-                    description: "Resolved various layout issues in the character panel for improved usability and known bugs.",
-                    category: "UI/UX"
-                }
-            ],
-            upcoming: []
-        },
-        {
-            date: "2025-08-30",
-            timestamp: "2025-08-30T10:30:00Z",
-            version: "1.0.0",
-            major: [
-                {
-                    title: "Complete Site Overhaul",
-                    description: "Redesigned the entire site with a fresh look, improved performance, and enhanced features.",
-                    category: "UI/UX"
-                }
-            ],
-            minor: [
-                {
-                    title: "Upgraded Contact Form",
-                    description: "The contact page now supports commission requests, general inquiries, and support messages on a single page, featuring a more streamlined and user-friendly UI/UX.",
-                    category: "Functionality"
-                },
-                {
-                    title: "Enhanced Client Queue",
-                    description: "Added search and filter functionality for client names, along with an upgraded interface for a smoother user experience.",
-                    category: "UI/UX"
-                },
-                {
-                    title: "What's New Page",
-                    description: "Replaced the old home-page popup with a dedicated 'What's New' page, offering a cleaner layout and improved UI/UX.",
-                    category: "Content"
-                },
-                {
-                    title: "New Service Center",
-                    description: "Replaced the old help center with a new Service Center that includes Terms of Service, FAQs, and Policies, all accessible through an integrated search function.",
-                    category: "Navigation"
-                }
-            ],
-            bugfixes: [],
-            upcoming: []
+        version: "1.5.1",
+        last_updated: "2025-09-26T04:00:00Z",
+        updates: [
+            {
+                date: "2025-09-26",
+                timestamp: "2025-09-26T04:00:00Z",
+                version: "1.5.1",
+                major: [],
+                minor: [
+                    {
+                        title: "Interface Imrovements",
+                        description: "Made improvements and adjustments to the interface design, added translucent gradient.",
+                        category: "UI/UX"
+                    }
+                ],
+                bugfixes: [],
+                upcoming: []
+            },
+            {
+                date: "2025-09-12",
+                timestamp: "2025-09-12T06:22:00Z",
+                version: "1.4.1",
+                major: [],
+                minor: [
+                    {
+                        title: "Technical Imrovements",
+                        description: "Made various improvements to the site.",
+                        category: "UI/UX"
+                    },
+                    {
+                        title: "Meo Interface Upgrade",
+                        description: "Releasing a small update to our AI asistant interface and added new various functionalities like (AI mood, new chat functionality, functional settings & history modal).",
+                        category: "UI/UX, AI"
+                    },
+                ],
+                bugfixes: [],
+                upcoming: []
+            },
+            {
+                date: "2025-09-09",
+                timestamp: "2025-09-09T05:30:00Z",
+                version: "1.2.1",
+                major: [],
+                minor: [],
+                bugfixes: [],
+                upcoming: [
+                    {
+                        title: "Improved Meo Assistant",
+                        description: "Upgrading Meo with new features, enhanced AI capabilities, and a more interactive experience.",
+                        category: "AI",
+                        expected_release: "2025-10-15"
+                    }
+                ]
+            },
+            {
+                date: "2025-09-06",
+                timestamp: "2025-09-06T02:30:00Z",
+                version: "1.2.1",
+                major: [],
+                minor: [
+                    {
+                        title: "Portfolio section improvements",
+                        description: "Made various improvements to the portfolio section for better usability and performance.",
+                        category: "Performance"
+                    },
+                    {
+                        title: "Comics section improvements",
+                        description: "Made various improvements to the comics section for better usability and performance.",
+                        category: "Performance"
+                    }
+                ],
+                bugfixes: [],
+                upcoming: []
+            },
+            {
+                date: "2025-09-03",
+                timestamp: "2025-09-03T10:30:00Z",
+                version: "1.1.1",
+                major: [],
+                minor: [
+                    {
+                        title: "Technical improvements",
+                        description: "Made various technical improvements to enhance performance and maintainability to the site.",
+                        category: "Performance"
+                    },
+                    {
+                        title: "Character panel improvements",
+                        description: "Made various improvements to the character panel for better usability and performance.",
+                        category: "Performance"
+                    },
+                    {
+                        title: "Improved Preferences Page",
+                        description: "Enhanced the layout and usability of the Preferences Page.",
+                        category: "UI/UX"
+                    }
+                ],
+                bugfixes: [
+                    {
+                        title: "Fixed character panel layout issues",
+                        description: "Resolved various layout issues in the character panel for improved usability and known bugs.",
+                        category: "UI/UX"
+                    }
+                ],
+                upcoming: []
+            },
+            {
+                date: "2025-08-30",
+                timestamp: "2025-08-30T10:30:00Z",
+                version: "1.0.0",
+                major: [
+                    {
+                        title: "Complete Site Overhaul",
+                        description: "Redesigned the entire site with a fresh look, improved performance, and enhanced features.",
+                        category: "UI/UX"
+                    }
+                ],
+                minor: [
+                    {
+                        title: "Upgraded Contact Form",
+                        description: "The contact page now supports commission requests, general inquiries, and support messages on a single page, featuring a more streamlined and user-friendly UI/UX.",
+                        category: "Functionality"
+                    },
+                    {
+                        title: "Enhanced Client Queue",
+                        description: "Added search and filter functionality for client names, along with an upgraded interface for a smoother user experience.",
+                        category: "UI/UX"
+                    },
+                    {
+                        title: "What's New Page",
+                        description: "Replaced the old home-page popup with a dedicated 'What's New' page, offering a cleaner layout and improved UI/UX.",
+                        category: "Content"
+                    },
+                    {
+                        title: "New Service Center",
+                        description: "Replaced the old help center with a new Service Center that includes Terms of Service, FAQs, and Policies, all accessible through an integrated search function.",
+                        category: "Navigation"
+                    }
+                ],
+                bugfixes: [],
+                upcoming: []
+            }
+        ],
+        summary: {
+            total_major_updates: 1,
+            total_minor_updates: 11,
+            total_bugfixes: 1,
+            total_upcoming_features: 1,
+            primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]
         }
-    ],
-    summary: {
-        total_major_updates: 1,
-        total_minor_updates: 10,
-        total_bugfixes: 1,
-        total_upcoming_features: 1,
-        primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]
     }
-}
 
 };
 
@@ -468,7 +483,7 @@ function displayError(message) {
             background: var(--accent-color); 
             color: white; 
             border: none; 
-            border-radius: var(--border-stylized); 
+            border-radius: var(--border-radius-custom); 
             cursor: pointer;
         ">Try Again</button>
     </div>
@@ -559,7 +574,7 @@ document.querySelector('.filter-header').insertAdjacentHTML('beforeend', `
     background: var(--accent-color);
     color: white;
     border: none;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     cursor: pointer;
     font-size: 0.9rem;
     ">Export</button>

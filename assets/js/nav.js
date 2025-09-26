@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
   const upBtn = document.getElementById("upBtn");
-  
+
   handleHeaderScroll();
 
   // Header scroll effect

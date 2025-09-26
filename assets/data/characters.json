@@ -1,18 +1,57 @@
 {
     "backgrounds": {
-        "comingSoon": { "landscape": "url('assets/images/character-presets/cover/default.gif')", "portrait": "url('')" },
-        "elishia": { "landscape": "url('assets/images/character-presets/faction-banner/falcon-company.webp')", "portrait": "url('')" },
-        "hexxana": { "landscape": "url('assets/images/character-presets/faction-banner/watchers.webp')", "portrait": "url('')" },
-        "ren": { "landscape": "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')", "portrait": "url('')" },
-        "rayza": { "landscape": "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')", "portrait": "url('')" },
-        "liliana": { "landscape": "url('assets/images/character-presets/faction-banner/magellion-empire.webp')", "portrait": "url('')" },
-        "blessica": { "landscape": "url('assets/images/character-presets/faction-banner/solaraenian.webp')", "portrait": "url('')" },
-        "lunara": { "landscape": "url('assets/images/character-presets/faction-banner/solaraenian.webp')", "portrait": "url('')" },
-        "floribeth": { "landscape": "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')", "portrait": "url('')" },
-        "shelain": { "landscape": "url('assets/images/character-presets/faction-banner/order-of-the-tides.webp')", "portrait": "url('')" },
-        "arzhel": { "landscape": "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')", "portrait": "url('')" },
-        "feya": { "landscape": "url('assets/images/character-presets/faction-banner/vulpine-clan.webp')", "portrait": "url('')" },
-        "zenyx": { "landscape": "url('assets/images/character-presets/faction-banner/magellion-empire.webp')", "portrait": "url('')" }
+        "comingSoon": {
+            "landscape": "url('assets/images/character-presets/cover/default.gif')",
+            "portrait": "url('')"
+        },
+        "elishia": {
+            "landscape": "url('assets/images/character-presets/faction-banner/falcon-company.webp')",
+            "portrait": "url('')"
+        },
+        "hexxana": {
+            "landscape": "url('assets/images/character-presets/faction-banner/watchers.webp')",
+            "portrait": "url('')"
+        },
+        "ren": {
+            "landscape": "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')",
+            "portrait": "url('')"
+        },
+        "rayza": {
+            "landscape": "url('assets/images/character-presets/faction-banner/dracona-sovereignty.webp')",
+            "portrait": "url('')"
+        },
+        "liliana": {
+            "landscape": "url('assets/images/character-presets/faction-banner/magellion-empire.webp')",
+            "portrait": "url('')"
+        },
+        "blessica": {
+            "landscape": "url('assets/images/character-presets/faction-banner/solaraenian.webp')",
+            "portrait": "url('')"
+        },
+        "lunara": {
+            "landscape": "url('assets/images/character-presets/faction-banner/solaraenian.webp')",
+            "portrait": "url('')"
+        },
+        "floribeth": {
+            "landscape": "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')",
+            "portrait": "url('')"
+        },
+        "shelain": {
+            "landscape": "url('assets/images/character-presets/faction-banner/order-of-the-tides.webp')",
+            "portrait": "url('')"
+        },
+        "arzhel": {
+            "landscape": "url('assets/images/character-presets/faction-banner/bloom-forge-order.webp')",
+            "portrait": "url('')"
+        },
+        "feya": {
+            "landscape": "url('assets/images/character-presets/faction-banner/vulpine-clan.webp')",
+            "portrait": "url('')"
+        },
+        "zenyx": {
+            "landscape": "url('assets/images/character-presets/faction-banner/magellion-empire.webp')",
+            "portrait": "url('')"
+        }
     },
     "characters": {
         "comingSoon": {
@@ -146,7 +185,7 @@
             "occupation": "<info>Empress of the Magellion Empire</info>",
             "affiliates": "<info><i class='fas fa-users'></i> Blessica (Mother Figure)</info> <info><i class='fas fa-users'></i> Feya (Adopted Daughter)</info> <info><i class='fas fa-users'></i> Ren & Rayza (Allies)</info> <info><i class='fas fa-users'></i> Floribeth (Ally)</info>",
             "elementalImages": [
-                "assets/images/character-presets/elements/light.webp", 
+                "assets/images/character-presets/elements/light.webp",
                 "assets/images/character-presets/elements/frost.webp"
             ],
             "likes": "<info><i class='fas fa-check'></i> Reading</info> <info><i class='fas fa-check'></i> Helping Others</info> <info><i class='fas fa-check'></i> Singing</info> <info><i class='fas fa-check'></i> Peaceful Nights</info>",
@@ -336,5 +375,4 @@
             "background": "Zenyx was born in the aftermath of the **Great War of Eldoria**, in an age of rebuilding and lingering darks. She never knew her true parents, growing up as an orphan under the care of the **Magellion Orphanage**. While running errands for the caretakers, she found herself mesmerized by the sights of mages casting spells in the streets, children learning minor magic tricks, and scholars debating arcane secrets. From that moment, a spark ignited in her heart—a longing to wield magic of her own.<br><br> Years later, she was adopted by an elderly herbalist who lived alone in a modest cottage on the outskirts of the Magellion Empire’s capital. Those days were simple and filled with quiet joys: tending gardens, collecting rare herbs, and reading by candlelight. The old woman loved Zenyx like family, teaching her about healing plants and the delicate balance of life in nature. But time is cruel. When Zenyx was still young, her adoptive mother passed away, leaving her alone once more.<br><br> Determined to survive and pursue her dream, Zenyx worked odd jobs in the city while secretly teaching herself the basics of magic from discarded scrolls and glimpses of mages at work. Her life changed forever one evening while gathering herbs near her cottage. She was ambushed by a pack of **corrupted beasts**, vicious and warped by dark magic. Despite fighting back with every ounce of courage, she was nearly overrun. Just as she thought her end had come, a towering woman in a black cloak and wide witch hat appeared from the darks. With a single gesture, the stranger unleashed searing black-violet flames that didn’t explode outward, but instead collapsed inward—devouring the beasts entirely.<br><br> Awed and desperate, Zenyx begged the woman to teach her magic. The mysterious figure hesitated, scrutinizing the determination in Zenyx’s eyes. Then she nodded silently. That woman was none other than **Hexxana**, the Lone Wanderer herself.<br><br> Under Hexxana’s tutelage, Zenyx blossomed. She trained for years in the arts of arcane magic, learning not only spells but survival, discipline, and the secrets of the world. Eventually, Zenyx asked permission to venture out on her own. Hexxana agreed, proud of her pupil’s resolve.<br><br> So Zenyx set out alone to chase the adventures she once only dreamed of. She traversed Eldoria from the vast halls of **Magellion** to the serene groves of **Luminwood**, the veiled mists of **Hidden Mist Valley**, the sunlit shores of the **Azure Coast**, and countless forgotten ruins and perilous dungeons. She fought corrupted creatures, aided villages beset by trouble, crossed paths with strangers both kind and cruel, and forged fleeting friendships with travelers and adventurers. Few dared to explore as relentlessly as she did—even Hexxana herself confessed to never setting foot in some of the places Zenyx visited.<br><br> Eventually, Zenyx felt a new calling—to bring her talents to a higher purpose. She pledged herself to the **Light Harbingers**, determined to stand alongside Liliana and the others to protect Eldoria from the darks that still linger.<br><br>"
         }
     }
-    
 }

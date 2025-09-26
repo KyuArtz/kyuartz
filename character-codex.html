@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz Studio | Original Characters</title>
+  <title>KyuArtz Studio | Character Codex</title>
   <meta name="description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
   <meta name="keywords" content="KyuArtz Studio">
   <meta name="author" content="KyuArtz">
@@ -18,25 +18,26 @@
   <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="KyuArtz">
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
-  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/characters">
+  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/character-codex">
   <link rel="preconnect" href="https://kit.fontawesome.com">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/characters.css">
+  <link rel="stylesheet" href="assets/css/character-codex.css">
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/welcome.js" defer></script>
   <script src="assets/js/preferences.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/charactersFunction.js" defer></script>
-  <meta property="og:title" content="KyuArtz Studio | Original Characters">
+  <script src="assets/js/characterCodex.js" defer></script>
+  <meta property="og:title" content="KyuArtz Studio | Character Codex">
   <meta property="og:description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo and branding">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/characters">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/character-codex">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz Studio | Original Characters">
+  <meta name="twitter:title" content="KyuArtz Studio | Character Codex">
   <meta name="twitter:description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
@@ -44,7 +45,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "url": "https://kyuartz.github.io/kyuartz/characters",
+      "url": "https://kyuartz.github.io/kyuartz/character-codex",
       "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
       "name": "KyuArtz Studio"
     }
@@ -58,12 +59,26 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="welcome-overlay"></div>
-  <div id="welcome-message">
-    <img src="assets/images/imgbtn/meo.webp" loading="lazy">
-    <h2>Welcome to Kyuartz!</h2>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()">Okay</button>
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-message" id="welcomeMessage">
+      <div class="particles" id="particles"></div>
+      
+      <button class="close-wm" onclick="closeWelcomeMessage()" aria-label="Close welcome message"><i class="fas fa-times"></i></button>
+
+      <div class="mascot-section">
+        <div class="mascot-img" id="mascotImg">
+          <img src="/assets/images/assistant/happy.webp">
+        </div>
+      </div>
+
+      <div class="dialogue-section" id="dialogueBox">
+        <div class="mascot-name" id="mascotName"></div>
+        <div class="dialogue-text" id="dialogueText">
+          <span class="typing-cursor" id="typingCursor"></span>
+        </div>
+        <div class="dialogue-options" id="dialogueOptions"></div>
+      </div>
+    </div>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
@@ -71,68 +86,54 @@
     <button id="accept-cookies">Got It</button>
   </div>
 
-  <div class="character-nav">
-    <div class="faction"> 
-      <label>FOD</label>
-      <label class="switch" for="FOD">
-        <input type="checkbox" id="FOD" name="FOD">
-        <span class="slider round"></span> 
-      </label>
-
-      <label>LOC</label>
-      <label class="switch" for="LOC">
-        <input type="checkbox" id="LOC" name="LOC">
-        <span class="slider round"></span>
-      </label>
-    </div>
-    
-    <div class="screen-size-controls">
-      <button type="button" onclick="window.history.back()" title="Close">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      
-      <button id="toggle-character-hide-btn" class="nav-link" title="Hide" aria-label="Hide">
-        <i class="fa-solid fa-eye-slash"></i>
-      </button>
-    </div>
-
-    <section class="filter-character" aria-label="Filter Roles">
-      <h3>Filter Roles</h3>
-      <button type="button" data-category="all">
-        <img src="assets/images/character-presets/roles/all.webp" alt="All"> All
-      </button>
-
-      <button type="button" data-category="versatile">
-        <img src="assets/images/character-presets/roles/versatile.webp" alt="Versatile"> Versatile
-      </button>
-
-      <button type="button" data-category="mage">
-        <img src="assets/images/character-presets/roles/mage.webp" alt="Mage"> Mage
-      </button>
-
-      <button type="button" data-category="warrior">
-        <img src="assets/images/character-presets/roles/warrior.webp" alt="Warrior"> Warrior
-      </button>
-
-      <button type="button" data-category="guardian">
-        <img src="assets/images/character-presets/roles/guardian.webp" alt="Guardian"> Guardian
-      </button>
-
-      <button type="button" data-category="assassin">
-        <img src="assets/images/character-presets/roles/assassin.webp" alt="Assassin"> Assassin
-      </button>
-
-      <button type="button" data-category="marksman">
-        <img src="assets/images/character-presets/roles/marksman.webp" alt="Marksman"> Marksman
-      </button>
-
-      <button type="button" data-category="healer">
-        <img src="assets/images/character-presets/roles/healer.webp" alt="Healer"> Healer
-      </button>
-    </section>
-  </div>
-
   <div class="character-wrapper">
+    <div class="character-control-panel">
+      <div class="faction">
+        <div class="title">Factions</div>
+        <label class="switch" for="FOD">
+          <input type="checkbox" id="FOD" name="FOD">
+          <span class="slider round"></span> 
+        </label>
+
+        <label class="switch" for="LOC">
+          <input type="checkbox" id="LOC" name="LOC">
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <section class="filter-character" aria-label="Filter Roles">
+        <button type="button" data-category="all">
+          <img src="assets/images/character-presets/roles/all.webp" alt="All"> All
+        </button>
+        <button type="button" data-category="versatile">
+          <img src="assets/images/character-presets/roles/versatile.webp" alt="Versatile"> Versatile
+        </button>
+        <button type="button" data-category="mage">
+          <img src="assets/images/character-presets/roles/mage.webp" alt="Mage"> Mage
+        </button>
+        <button type="button" data-category="warrior">
+          <img src="assets/images/character-presets/roles/warrior.webp" alt="Warrior"> Warrior
+        </button>
+        <button type="button" data-category="guardian">
+          <img src="assets/images/character-presets/roles/guardian.webp" alt="Guardian"> Guardian
+        </button>
+        <button type="button" data-category="assassin">
+          <img src="assets/images/character-presets/roles/assassin.webp" alt="Assassin"> Assassin
+        </button>
+        <button type="button" data-category="marksman">
+          <img src="assets/images/character-presets/roles/marksman.webp" alt="Marksman"> Marksman
+        </button>
+        <button type="button" data-category="healer">
+          <img src="assets/images/character-presets/roles/healer.webp" alt="Healer"> Healer
+        </button>
+      </section>
+
+      <div class="character-settings">
+        <button class="close-character" type="button" onclick="window.history.back()" title="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+  </div>
     
     <div class="character-container">
       <div class="character-slider">

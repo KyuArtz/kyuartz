@@ -5,7 +5,7 @@
     justify-content: center;
     text-align: center;
     position: relative;
-    color: var(--text-default);
+    color: var(--text-color-default);
     padding: 2rem;
     overflow: hidden;
 }
@@ -27,33 +27,31 @@
     height: 100vh;
     object-fit: cover;
     object-position: center;
-    filter: brightness(0.9);
 }
 
 .hero-content {
     max-width: 900px;
     z-index: 2;
-    animation: fadeInUp 1s ease-out;
+    animation: fadeInUp 1s ease-out, titleGlow 3s ease-in-out infinite alternate;
 }
 
 .hero h1 {
+    color: var(--static-color);
     font-size: 4rem;
     font-family: var(--my-font);
     margin-bottom: 1.5rem;
-    background: var(--gradient-bg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: titleGlow 3s ease-in-out infinite alternate;
+    opacity: 0.9;
 }
 
 .hero p {
+    color: var(--static-color);
     font-family: var(--my-font);
     font-size: 1.2rem;
     margin-bottom: 3rem;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.5;
 }
 
 .hero-buttons {
@@ -65,52 +63,49 @@
 
 .btn {
     padding: 1rem 2.5rem;
-    border: 2px solid var(--accent-color);
-    border-radius: var(--border-stylized);
+    border: var(--border-thick);
+    border-radius: var(--border-radius-custom);
     font-size: 1rem;
     font-family: var(--my-font);
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
     gap: 0.5rem;
     position: relative;
     overflow: hidden;
 }
 
 .btn-primary {
-    background: var(--gradient-bg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     color: var(--accent-color);
+    background: var(--primary-bgc);
 }
 
 .btn-secondary {
-    background: transparent;
     color: var(--accent-color);
+    border: 2px solid var(--accent-color);
 }
 
 .btn:hover {
+    background: var(--accent-overlay);
+    border: 2px solid var(--accent-color);
     transform: translateY(-2px);
 }
 
 .slideshow-section {
     padding: 5rem 2rem;
-    background: var(--secondary-color);
+    background: var(--secondary-bgc);
     margin: 2rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
 }
 
 .section-title {
     color: var(--accent-color);
-    background: var(--gradient-bg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     font-weight: 700;
     font-family: var(--my-font);
     margin-bottom: 3rem;
@@ -118,10 +113,10 @@
 
 .slideshow-container {
     position: relative;
-    background: var(--content-color);
+    background: var(--content-bgc);
     max-width: 1200px;
     margin: 0 auto;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     overflow: hidden;
     box-shadow: var(--shadow);
 }
@@ -155,12 +150,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+    background: var(--gradient-bgc);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2rem;
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .slide-content h3 {
@@ -175,7 +171,6 @@
 
 .slide-content p {
     font-size: 1.1rem;
-    color: var(--text-secondary);
     max-width: 600px;
     opacity: 0;
     transform: translateY(30px);
@@ -186,27 +181,26 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    border: 2px solid var(--accent-color);
+    border: var(--border-thick);
     color: var(--accent-color);
     font-size: 1.5rem;
     padding: 1rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .slide-content h3,
 .slide-content p {
-    color: var(--text-default);
+    color: var(--static-color);
     will-change: transform, opacity;
 }
 
 .slide-nav:hover {
-    background: var(--colored-overlay);
-    box-shadow: 0 0 20px var(--accent-color);
-}
-
-.slide-nav:hover {
+    background: var(--accent-overlay);
+    border: 2px solid var(--accent-color);
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -230,7 +224,7 @@
 .dot {
     width: 12px;
     height: 12px;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     background: var(--accent-color);
     box-shadow: var(--shadow);
     cursor: pointer;
@@ -244,9 +238,9 @@
 
 .video-gallery {
     padding: 5rem 2rem;
-    background: var(--secondary-color);
+    background: var(--secondary-bgc);
     margin: 2rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
 }
 
@@ -259,8 +253,8 @@
 }
 
 .video-card {
-    background: var(--content-color);
-    border-radius: var(--border-stylized);
+    background: var(--content-bgc);
+    border-radius: var(--border-radius-custom);
     overflow: hidden;
     transition: all 0.3s ease;
     box-shadow: var(--shadow);
@@ -284,7 +278,7 @@
 
 .video-info {
     padding: 1.5rem;
-    background: var(--content-color);
+    background: var(--content-bgc);
 }
 
 .video-info h4 {
@@ -295,7 +289,7 @@
 }
 
 .video-info p {
-    color: var(--text-color);
+    color: var(--text-color-default);
     font-size: 0.9rem;
 }
 
@@ -311,20 +305,22 @@
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .stat-card {
     flex: 1 1 200px;
-    background: var(--secondary-color);
+    background: var(--gradient-bgc);
     padding: 3rem 2rem;
-    border-radius: var(--border-stylized);
-    border: 1px solid var(--accent-color);
+    border-radius: var(--border-radius-custom);
+    border: var(--border-thin);
+    box-shadow: var(--shadow);
     transition: all 0.3s ease;
 }
 
 .stat-card:hover {
     transform: translateY(-5px);
-    background: var(--colored-overlay);
+    background: var(--accent-overlay);
 }
 
 .stat-card {
@@ -338,73 +334,65 @@
     display: block;
     margin-bottom: 0.5rem;
     color: var(--accent-color);
-    background: var(--gradient-bg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .stat-label {
     color: var(--accent-color);
-    background: var(--gradient-bg);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     font-weight: 500;
 }
 
 @media (max-width: 768px) {
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .slideshow-section,
-  .video-gallery {
-    margin: 1rem;
-    padding: 3rem 1rem;
-  }
+    .slideshow-section,
+    .video-gallery {
+        margin: 1rem;
+        padding: 3rem 1rem;
+    }
 
-  .slide {
-    height: 400px;
-  }
+    .slide {
+        height: 400px;
+    }
 
-  .video-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 
-  .stat-card {
-    padding: 2rem 1rem;
-  }
+    .stat-card {
+        padding: 2rem 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
-  .hero-image {
-    height: 100vh;
-    object-fit: cover;
-  }
+    .hero-image {
+        height: 100vh;
+        object-fit: cover;
+    }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
+    .hero h1 {
+        font-size: 3rem;
+    }
 
-  .hero p {
-    font-size: 0.9rem;
-  }
+    .hero p {
+        font-size: 0.9rem;
+    }
 
-  .slide-overlay h3,
-  .slide-overlay p {
-    font-size: 0.9rem;
-  }
+    .slide-overlay h3,
+    .slide-overlay p {
+        font-size: 0.9rem;
+    }
 
-  .slide-prev,
-  .slide-next {
-    opacity: 0;
-  }
+    .slide-prev,
+    .slide-next {
+        opacity: 0;
+    }
 }

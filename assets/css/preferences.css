@@ -8,17 +8,17 @@
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .page-header h1 {
     font-family: var(--my-font);
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
 }
 
 .page-header p {
-    color: var(--text-color);
+    color: var(--text-color-default);
     font-size: 1.1rem;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .preference-section {
-    background: var(--secondary-color);
-    border-radius: var(--border-stylized);
+    background: var(--secondary-bgc);
+    border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
     padding: 1.5rem;
     transition: all 0.3s ease;
@@ -48,8 +48,8 @@
 .section-icon {
     width: 40px;
     height: 40px;
-    border-radius: var(--border-stylized);
-    background: var(--content-color);
+    border-radius: var(--border-radius-custom);
+    background: var(--content-bgc);
     box-shadow: var(--shadow);
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@
 }
 
 .section-description {
-    color: var(--text-muted);
+    color: var(--text-color-default);
     font-size: 0.9rem;
     margin-bottom: 1.5rem;
 }
@@ -87,9 +87,9 @@
 .form-input {
     width: 100%;
     padding: 0.75rem 1rem;
-    background: var(--primary-color);
-    border: 2px solid var(--accent-color);
-    border-radius: var(--border-stylized);
+    background: var(--primary-bgc);
+    border: var(--border-thick);
+    border-radius: var(--border-radius-custom);
     color: var(--accent-color);
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -109,7 +109,7 @@
 
 .theme-option {
     position: relative;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     padding: 0.75rem;
     border: 2px solid transparent;
     transition: all 0.3s ease;
@@ -122,13 +122,13 @@
 }
 
 .theme-option.selected {
-    border: 2px solid var(--accent-color);
+    border: var(--border-thick);
 }
 
 .theme-preview {
     width: 100%;
     height: 60px;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
     margin-bottom: 0.5rem;
     position: relative;
@@ -138,7 +138,7 @@
 
 .theme-name {
     font-size: 0.8rem;
-    color: var(--text-color);
+    color: var(--text-color-default);
     font-weight: 500;
     cursor: pointer;
 }
@@ -211,10 +211,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--primary-color);
+    background: var(--primary-bgc);
     border: 1px solid var(--accent-color);
     transition: all 0.3s ease;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     overflow: hidden;
 }
 
@@ -227,11 +227,11 @@
     bottom: 3px;
     background: var(--accent-color);
     transition: all 0.3s ease;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
 }
 
 input:checked+.slider {
-    background: var(--colored-overlay);
+    background: var(--accent-overlay);
 }
 
 input:checked+.slider:before {
@@ -244,6 +244,7 @@ input:checked+.slider:before {
     justify-content: space-between;
     align-items: center;
     padding: 0.75rem 0;
+    border-top: var(--border-thin);
 }
 
 .setting-info h4 {
@@ -252,20 +253,20 @@ input:checked+.slider:before {
 }
 
 .setting-info p {
-    color: var(--text-muted);
+    color: var(--text-color-default);
     font-size: 0.9rem;
 }
 
 .save-section {
-    background: var(--secondary-color);
+    background: var(--secondary-bgc);
     margin-top: 2rem;
     text-align: center;
 }
 
-.clear-button, 
+.clear-button,
 .save-button {
     padding: 1rem 2rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -301,7 +302,7 @@ input:checked+.slider:before {
 .save-status {
     margin-top: 1rem;
     padding: 1rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     display: none;
 }
 

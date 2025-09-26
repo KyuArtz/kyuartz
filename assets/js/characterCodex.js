@@ -300,7 +300,7 @@ document.querySelector('.character-cards-wrapper').addEventListener('click', fun
 // Update background on window resize
 function debounce(fn, delay) {
     let timeout;
-    return function(...args) {
+    return function (...args) {
         clearTimeout(timeout);
         timeout = setTimeout(() => fn.apply(this, args), delay);
     };
@@ -332,37 +332,6 @@ function hideCharacterInfo() {
     resetCharacterCardStates();
     currentCharacter = null;
 }
-
-// =====================
-// Hide/Show Character Container
-// =====================
-(function () {
-    const toggleBtn = document.getElementById('toggle-character-hide-btn');
-    const bottomNav = document.querySelector('.bottom-navigation');
-    const charContainer = document.querySelector('.character-container');
-    let isHidden = false;
-
-    function updateVisibility() {
-        if (!toggleBtn || !bottomNav) return;
-        bottomNav.classList.toggle('nav-hidden', isHidden);
-        if (charContainer) {
-            charContainer.classList.toggle('hidden', isHidden); // Use class for transition
-        }
-        toggleBtn.innerHTML = isHidden
-            ? '<i class="fa-solid fa-eye"></i>'
-            : '<i class="fa-solid fa-eye-slash"></i>';
-        const label = isHidden ? 'Show Character Panel' : 'Hide Character Panel';
-        toggleBtn.setAttribute('aria-label', label);
-        toggleBtn.setAttribute('title', label);
-    }
-
-    if (toggleBtn && bottomNav) {
-        toggleBtn.addEventListener('click', () => {
-            isHidden = !isHidden;
-            updateVisibility();
-        });
-    }
-})();
 
 // =====================
 // Carousel Logic
@@ -478,7 +447,7 @@ function renderCharacterDetails(details = {}) {
         .map(src => `<img src="${src}" alt="" title="Element">`)
         .join('') || `<img src="assets/images/character-presets/roles/question.webp" alt="" title="Unknown">`;
 
-    const abilities = ['ability1','ability2','ability3','ability4','ability5','ability6']
+    const abilities = ['ability1', 'ability2', 'ability3', 'ability4', 'ability5', 'ability6']
         .map(k => d[k] ? `<div class="ability">${d[k]}</div>` : '')
         .join('');
 

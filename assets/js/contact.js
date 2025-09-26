@@ -18,7 +18,7 @@ class CommissionForm {
         this.errorList = document.getElementById('error-list');
 
         this.availableSlots = 0;
-        
+
         // Configuration for file upload support
         // Set this to true when you upgrade your API plan
         this.fileUploadEnabled = true;
@@ -335,14 +335,14 @@ class CommissionForm {
 
     updateCharacterCount(fieldId) {
         const field = document.getElementById(fieldId);
-        
+
         // Map field IDs to their corresponding count element IDs
         const countElementMap = {
             'commission-details': 'details-count',
             'inquiry-message': 'inquiry-message-count',
             'support-description': 'support-description-count'
         };
-        
+
         const countElementId = countElementMap[fieldId] || `${fieldId}-count`;
         const countElement = document.getElementById(countElementId);
 
@@ -379,7 +379,7 @@ class CommissionForm {
 
         // For other fields, check if they meet basic requirements
         const value = field.value.trim();
-        
+
         // Must have a value if required
         if (rule.required && !value) {
             return false;
@@ -451,7 +451,7 @@ class CommissionForm {
         // Update field appearance and show/hide messages
         const errorIdMap = {
             'client-name': 'name-error',
-            'client-email': 'email-error', 
+            'client-email': 'email-error',
             'commission-type': 'commission-error',
             'commission-details': 'details-error',
             'terms-agreement': 'terms-error'
@@ -460,7 +460,7 @@ class CommissionForm {
         const successIdMap = {
             'client-name': 'name-success',
             'client-email': 'email-success',
-            'commission-type': 'commission-success', 
+            'commission-type': 'commission-success',
             'commission-details': 'details-success',
             'terms-agreement': 'terms-success'
         };
@@ -553,7 +553,7 @@ class CommissionForm {
 
         // Calculate progress using weighted completion
         const progress = totalWeight > 0 ? Math.round((completedWeight / totalWeight) * 100) : 0;
-        
+
         // Update progress bar with smooth animation
         const progressFill = document.getElementById('progress-fill');
         const progressText = document.getElementById('progress-text');
@@ -564,7 +564,7 @@ class CommissionForm {
                 progressFill.style.transition = 'width 0.3s ease-in-out';
             }
             progressFill.style.width = `${progress}%`;
-            
+
             // Add visual feedback based on progress level
             progressFill.className = 'progress-fill';
             if (progress >= 100) {
@@ -588,13 +588,13 @@ class CommissionForm {
             } else if (progress > 0) {
                 progressMessage += ' - Good start!';
             }
-            
+
             progressText.textContent = progressMessage;
         }
 
         // Optional: Add subtle visual feedback to the entire progress container
-        const progressContainer = document.getElementById('progress-container') || 
-                                document.querySelector('.progress-container');
+        const progressContainer = document.getElementById('progress-container') ||
+            document.querySelector('.progress-container');
         if (progressContainer) {
             progressContainer.className = 'progress-container';
             if (progress >= 100) {
@@ -705,7 +705,7 @@ class CommissionForm {
                 // Manual FormData creation without files (for free plans)
                 formData = new FormData();
                 const formElements = form.elements;
-                
+
                 for (let element of formElements) {
                     if (element.name && element.type !== 'file') {
                         if (element.type === 'checkbox') {
@@ -761,14 +761,14 @@ class CommissionForm {
             } else {
                 const responseText = await response.text();
                 console.log('Error response text:', responseText);
-                
+
                 let errorData = {};
                 try {
                     errorData = JSON.parse(responseText);
                 } catch (e) {
                     console.log('Could not parse error response as JSON');
                 }
-                
+
                 throw new Error(errorData.message || `Server error: ${response.status} ${response.statusText}`);
             }
 

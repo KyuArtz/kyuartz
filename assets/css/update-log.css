@@ -1,9 +1,9 @@
 .hero-section {
-    background: var(--gradient-bg);
-    color: var(--text-color);
+    background: var(--gradient-bgc);
+    color: var(--text-color-default);
     padding: 80px 20px 60px;
     text-align: center;
-    position: relative;
+    animation: titleGlow 3s ease-in-out infinite alternate;
     overflow: hidden;
 }
 
@@ -16,9 +16,8 @@
 
 .hero-title {
     font-family: var(--my-font);
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -61,8 +60,8 @@
 }
 
 .filter-section {
-    background: var(--secondary-color);
-    border-radius: var(--border-stylized);
+    background: var(--secondary-bgc);
+    border-radius: var(--border-radius-custom);
     padding: 30px;
     margin-bottom: 30px;
     box-shadow: var(--shadow);
@@ -86,8 +85,8 @@
 
 .view-toggle {
     display: flex;
-    background: var(--content-color);
-    border-radius: var(--border-stylized);
+    background: var(--content-bgc);
+    border-radius: var(--border-radius-custom);
     padding: 0.4rem;
     box-shadow: var(--shadow);
     gap: 0.3rem;
@@ -96,19 +95,20 @@
 .view-btn {
     color: var(--accent-color);
     padding: 8px 16px;
-    border: 2px solid transparent;
-    border-radius: var(--border-stylized);
+    border: var(--border-thick);
+    border-radius: var(--border-radius-custom);
     transition: all 0.3s ease;
     font-size: 0.9rem;
 }
 
 .view-btn:hover {
-  border: 2px solid var(--accent-color);
+    border: 2px solid var(--accent-color);
+    background: var(--accent-overlay);
 }
 
 .view-btn.active {
-    background: var(--colored-overlay);
-    color: var(--text-color);
+    background: var(--accent-overlay);
+    color: var(--text-color-default);
 }
 
 .filter-controls {
@@ -119,9 +119,9 @@
 
 .filter-btn {
     padding: 10px 20px;
-    border: 2px solid var(--accent-color);
+    border: var(--border-thick);
     color: var(--accent-color);
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
@@ -129,18 +129,20 @@
 }
 
 .filter-btn.active {
-    background: var(--colored-overlay);
-    color: var(--text-color);
+    background: var(--accent-overlay);
+    color: var(--text-color-default);
 }
 
 .filter-btn:hover {
+    border: 2px solid var(--accent-color);
+    background: var(--accent-overlay);
     transform: translateY(-2px);
 }
 
 .no-results {
-    background: var(--secondary-color);
+    background: var(--secondary-bgc);
     padding: 1rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
     animation: fadeIn 0.3s ease;
 }
@@ -159,8 +161,8 @@
 }
 
 .update-card {
-    background: var(--secondary-color);
-    border-radius: var(--border-stylized);
+    background: var(--secondary-bgc);
+    border-radius: var(--border-radius-custom);
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
@@ -173,8 +175,8 @@
 }
 
 .update-card-header {
-    background: var(--content-color);
-    color: var(--text-color);
+    background: var(--content-bgc);
+    color: var(--text-color-default);
     padding: 25px;
     position: relative;
     overflow: hidden;
@@ -187,7 +189,7 @@
     right: -50%;
     width: 100%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, var(--colored-overlay), transparent);
+    background: linear-gradient(10deg, transparent, var(--accent-overlay), transparent);
     transform: rotate(45deg);
     animation: shimmer 3s infinite;
 }
@@ -237,7 +239,7 @@
 .section-icon {
     width: 40px;
     height: 40px;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,7 +252,7 @@
 
 .major-section .section-icon {
     background: #3498db;
-    color: var(--text-color);
+    color: var(--text-color-default);
 }
 
 .minor-section .section-header {
@@ -259,7 +261,7 @@
 
 .minor-section .section-icon {
     background: #2ecc71;
-    color: var(--text-color);
+    color: var(--text-color-default);
 }
 
 .bugfixes-section .section-header {
@@ -268,7 +270,7 @@
 
 .bugfixes-section .section-icon {
     background: #e67e22;
-    color: var(--text-color);
+    color: var(--text-color-default);
 }
 
 .upcoming-section .section-header {
@@ -277,7 +279,7 @@
 
 .upcoming-section .section-icon {
     background: #9b59b6;
-    color: var(--text-color);
+    color: var(--text-color-default);
 }
 
 .update-items {
@@ -287,7 +289,7 @@
 .update-item {
     padding: 15px;
     margin-bottom: 12px;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     background: var(--background-color);
     border-left: 4px solid transparent;
     box-shadow: var(--shadow);
@@ -326,7 +328,7 @@
 }
 
 .item-description {
-    color: var(--text-color);
+    color: var(--text-color-default);
     line-height: 1.5;
     opacity: 0.9;
 }
@@ -369,9 +371,9 @@
     top: 20px;
     width: 12px;
     height: 12px;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     background: var(--accent-color);
-    border: 3px solid var(--secondary-color);
+    border: 3px solid var(--secondary-bgc);
     box-shadow: 0 0 0 3px var(--accent-color);
 }
 
@@ -384,12 +386,12 @@
 
 .search-box {
     flex: 1;
-    background: var(--primary-color);
+    background: var(--primary-bgc);
     color: var(--accent-color);
     min-width: 250px;
     padding: 12px 20px;
-    border: 2px solid var(--accent-color);
-    border-radius: var(--border-stylized);
+    border: var(--border-thick);
+    border-radius: var(--border-radius-custom);
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
@@ -401,9 +403,9 @@
 
 .sort-dropdown {
     padding: 12px 20px;
-    border: 2px solid var(--accent-color);
-    border-radius: var(--border-stylized);
-    background: var(--primary-color);
+    border: var(--border-thick);
+    border-radius: var(--border-radius-custom);
+    background: var(--primary-bgc);
     color: var(--accent-color);
     min-width: 150px;
 }

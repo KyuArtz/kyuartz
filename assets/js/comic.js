@@ -32,26 +32,26 @@ const comicData = {
 };
 
 // Filter functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const comicCards = document.querySelectorAll('.comic-card');
-  
+
   // Add loading animation delay
   document.querySelectorAll('.loading').forEach((el, index) => {
     el.style.animationDelay = `${index * 0.2}s`;
   });
 
   filterBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
+    btn.addEventListener('click', function () {
       // Update active filter
       filterBtns.forEach(b => b.classList.remove('active'));
       this.classList.add('active');
-      
+
       const category = this.getAttribute('data-category');
-      
+
       comicCards.forEach(card => {
         const cardCategories = card.getAttribute('data-category').split(',');
-        
+
         if (category === 'all' || cardCategories.includes(category)) {
           card.style.display = 'block';
           card.style.animation = 'slideInUp 0.6s ease forwards';
@@ -68,7 +68,7 @@ function showDescription(comicId) {
   const modal = document.getElementById('comic-modal');
   const title = document.getElementById('modal-title');
   const description = document.getElementById('modal-description');
-  
+
   const comic = comicData[comicId];
   if (comic) {
     title.textContent = comic.title;
@@ -85,14 +85,14 @@ function closeModal() {
 }
 
 // Close modal when clicking outside
-document.getElementById('comic-modal').addEventListener('click', function(e) {
+document.getElementById('comic-modal').addEventListener('click', function (e) {
   if (e.target === this) {
     closeModal();
   }
 });
 
 // Keyboard navigation
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape') {
     closeModal();
   }

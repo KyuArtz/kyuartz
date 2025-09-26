@@ -6,19 +6,20 @@
     margin-top: 3rem;
     padding: 2rem;
     text-align: center;
+    background: var(--gradient-bgc);
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .hero-title {
     font-family: var(--my-font);
     font-size: 3rem;
     font-weight: 900;
-    color: var(--text-color);
-    margin-bottom: 1rem;
+    color: var(--text-color-default);
 }
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: var(--text-color);
+    color: var(--text-color-default);
     margin-bottom: 2rem;
 }
 
@@ -30,27 +31,28 @@
 .filter-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
 }
 
 .filter-btn {
-    border: 2px solid var(--accent-color);
+    border: var(--border-thick);
     color: var(--accent-color);
     padding: 0.75rem 1.5rem;
-    border-radius: 50px;
+    border-radius: var(--border-radius-custom);
     transition: all 0.3s ease;
 }
 
 .filter-btn:hover {
-    color: var(--text-primary);
-    background: var(--colored-overlay);
+    color: var(--text-color-default);
+    border: 2px solid var(--accent-color);
+    background: var(--accent-overlay);
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
-    background: var(--colored-overlay);
-    color: var(--text-color);
+    background: var(--accent-overlay);
+    color: var(--text-color-default);
 }
 
 .comics-section {
@@ -66,8 +68,8 @@
 }
 
 .comic-card {
-    background: var(--secondary-color);
-    border-radius: var(--border-stylized);
+    background: var(--secondary-bgc);
+    border-radius: var(--border-radius-custom);
     overflow: hidden;
     transition: all 0.4s ease;
     box-shadow: var(--shadow);
@@ -103,7 +105,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--default-overlay);
+    background: var(--gradient-bgc);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,6 +114,7 @@
     transition: all 0.3s ease;
     text-align: center;
     padding: 2rem;
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .comic-card:hover .comic-overlay {
@@ -120,61 +123,60 @@
 
 .comic-title-overlay {
     font-family: var(--my-font);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-default);
+    color: var(--static-color);
 }
 
 .coming-soon-badge {
-    background: var(--colored-overlay);
-    color: var(--text-default);
+    background: var(--accent-overlay);
+    color: var(--static-color);
     padding: 0.5rem 1rem;
-    border-radius: 20px;
+    border-radius: var(--border-radius-custom);
     font-size: 0.9rem;
     font-weight: 600;
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
 }
 
 .comic-content {
-    padding: 0 2rem;
+    padding: 2rem;
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
 }
 
 .comic-title {
-    font-family: var(--my-font);
+    margin: 0.3rem 0;
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
 }
 
 .comic-genres {
     color: var(--accent-color);
     font-size: 0.9rem;
-    margin-bottom: 1rem;
     font-weight: 500;
 }
 
 .comic-author {
     color: var(--accent-color);
     font-size: 0.9rem;
-    margin-bottom: 1.5rem;
 }
 
 .comic-actions {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: auto;
-    padding: 0 0 1rem 0;
+    margin-top: 0.5rem;
 }
 
 .action-btn {
     flex: 1;
-    border: 2px solid var(--accent-color);
+    border: var(--border-thick);
     padding: 0.75rem;
-    border-radius: var(--border-stylized);
+    border-radius: var(--border-radius-custom);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -183,8 +185,8 @@
 }
 
 .primary-btn {
-    background: var(--colored-overlay);
-    color: var(--text-color);
+    background: var(--accent-overlay);
+    color: var(--text-color-default);
 }
 
 .secondary-btn {
@@ -194,6 +196,8 @@
 
 .primary-btn:hover,
 .secondary-btn:hover {
+    background: var(--accent-overlay);
+    border: 2px solid var(--accent-color);
     transform: translateY(-2px);
 }
 
@@ -205,8 +209,8 @@
     width: 100%;
     height: 100%;
     background: var(--default-overlay);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
 }
 
 .modal.active {
@@ -218,8 +222,8 @@
 }
 
 .modal-content {
-    background: var(--secondary-color);
-    border-radius: var(--border-stylized);
+    background: var(--secondary-bgc);
+    border-radius: var(--border-radius-custom);
     max-width: 600px;
     width: 100%;
     height: auto;
@@ -233,9 +237,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 25px;
-    color: var(--text-color);
-    border-bottom: 1px solid var(--accent-color);
+    padding: 1rem 1.5rem;
+    color: var(--text-color-default);
+    border-bottom: var(--border-thin);
 }
 
 .modal-title {
@@ -245,9 +249,9 @@
 }
 
 .modal-body {
-    padding: 2rem;
-    line-height: 1.8;
-    color: var(--text-color);
+    padding: 1rem 2rem;
+    line-height: 1.5;
+    color: var(--text-color-default);
     overflow-y: auto;
     height: 400px;
 }
@@ -257,40 +261,44 @@
     border: none;
     color: var(--accent-color);
     font-size: 1.5rem;
-    padding: 5px;
-    border-radius: var(--border-stylized);
+    padding: 0.5rem;
+    border-radius: var(--border-radius-custom);
     transition: all 0.3s ease;
 }
 
 @media (max-width: 768px) {
     .comics-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .comic-card {
-    height: auto;
+        height: auto;
     }
 
     .comic-image-container {
-    height: 300px;
+        height: 300px;
     }
 
     .filter-buttons {
-    gap: 0.5rem;
+        gap: 0.5rem;
     }
 
     .filter-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
     }
 
     .hero-section {
-    padding: 2rem 1rem;
+        padding: 2rem 1rem;
     }
 
     .comics-section {
-    padding: 1rem;
+        padding: 1rem;
     }
 }
 

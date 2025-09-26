@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="assets/css/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/welcome.js" defer></script>
   <script src="assets/js/preferences.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/serviceCenter.js" defer></script>
@@ -58,12 +59,26 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="welcome-overlay"></div>
-  <div id="welcome-message">
-    <img src="assets/images/imgbtn/meo.webp" loading="lazy">
-    <h2>Welcome to Kyuartz!</h2>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()">Okay</button>
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-message" id="welcomeMessage">
+      <div class="particles" id="particles"></div>
+      
+      <button class="close-wm" onclick="closeWelcomeMessage()" aria-label="Close welcome message"><i class="fas fa-times"></i></button>
+
+      <div class="mascot-section">
+        <div class="mascot-img" id="mascotImg">
+          <img src="/assets/images/assistant/happy.webp">
+        </div>
+      </div>
+
+      <div class="dialogue-section" id="dialogueBox">
+        <div class="mascot-name" id="mascotName"></div>
+        <div class="dialogue-text" id="dialogueText">
+          <span class="typing-cursor" id="typingCursor"></span>
+        </div>
+        <div class="dialogue-options" id="dialogueOptions"></div>
+      </div>
+    </div>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
@@ -75,8 +90,9 @@
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
-        <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html">KAS</a>
+        <a href="index.html">
+          <img src="assets/images/brand/logo.webp" alt="KyuArtz Logo" loading="lazy">
+        </a>
       </div>
 
       <ul class="navigation-menu" role="menubar">
@@ -118,10 +134,10 @@
             <div class="span-btn">
               <h2>Explore</h2>
               <a href="comic.html" data-page="comic.html">
-                <i class="fa-solid fa-book"></i> Kyuartz Comic
+                <i class="fa-solid fa-film"></i> Kyuartz Comic
               </a>
-              <a href="characters.html" data-page="characters.html">
-                <i class="fa-solid fa-person-rifle"></i> Original Characters
+              <a href="character-codex.html" data-page="character-codex.html">
+                <i class="fa-solid fa-book"></i> Character Codex
               </a>
             </div>
             <div class="span-btn">
@@ -145,7 +161,7 @@
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
               <div class="profile">
-                <img src="assets/images/artgallary/elishia avatar.webp" alt="Profile">
+                <img src="assets/images/artgallary/former falcon squad (2023).webp" alt="Profile">
                 <div class="profile-info">
                   <p class="username"> Kyu</p>
                   <p class="userrole"> Artist</p>
@@ -176,24 +192,26 @@
 
 <div class="scroll-indicator"><div id="scrollProgress" class="scroll-progress"></div></div>
 
+
+  <section class="page-header">
+    <h1>KyuArtz Service Center</h1>
+    <p>Everything you need to know about working with us</p>
+
+    <div class="page-tabs" role="tablist">
+        <button class="tab-button active" role="tab" aria-selected="true" onclick="showTab(event, 'faq')">
+            <i class="fas fa-question-circle"></i> FAQ
+        </button>
+        <button class="tab-button" role="tab" aria-selected="false" onclick="showTab(event, 'terms')">
+            <i class="fas fa-file-contract"></i> Terms of Service
+        </button>
+        <button class="tab-button" role="tab" aria-selected="false" onclick="showTab(event, 'privacy')">
+            <i class="fas fa-shield-alt"></i> Privacy Policy
+        </button>
+    </div>
+  </section>
+
   <div class="page-container">
       <div class="content-wrapper">
-          <div class="page-header">
-              <h1>KyuArtz Service Center</h1>
-              <p>Everything you need to know about working with us</p>
-          </div>
-
-          <div class="page-tabs" role="tablist">
-              <button class="tab-button active" role="tab" aria-selected="true" onclick="showTab(event, 'faq')">
-                  <i class="fas fa-question-circle"></i> FAQ
-              </button>
-              <button class="tab-button" role="tab" aria-selected="false" onclick="showTab(event, 'terms')">
-                  <i class="fas fa-file-contract"></i> Terms of Service
-              </button>
-              <button class="tab-button" role="tab" aria-selected="false" onclick="showTab(event, 'privacy')">
-                  <i class="fas fa-shield-alt"></i> Privacy Policy
-              </button>
-          </div>
 
           <div id="faq" class="tab-content active">
               <div class="content-card">

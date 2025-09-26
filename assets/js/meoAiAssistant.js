@@ -137,7 +137,7 @@ class MeoAiAssistant {
   updateSendButton() {
     if (this.sendBtn) {
       const hasText = this.userInput.value.trim().length > 0;
-      this.sendBtn.style.background = hasText ? 'var(--accent-color)' : 'var(--content-color)';
+      this.sendBtn.style.background = hasText ? 'var(--accent-color)' : 'var(--content-bgc)';
       this.sendBtn.style.transform = hasText ? 'scale(1.05)' : 'scale(1)';
     }
   }
@@ -470,9 +470,9 @@ class MeoAiAssistant {
     const modal = this.createModal();
     const panel = document.createElement('div');
     panel.style.cssText = `
-          background: var(--secondary-color); 
+          background: var(--secondary-bgc); 
           padding: 30px; 
-          border-radius: var(--border-stylized); 
+          border-radius: var(--border-radius-custom); 
           max-width: 500px; 
           width: 95%;
           box-shadow: var(--shadow);
@@ -488,7 +488,7 @@ class MeoAiAssistant {
           </h3>
           
           <div style="margin-bottom: 20px;">
-            <label style="display: block; margin-bottom: 8px; font-weight: bold;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--accent-color);">
               <i class="fas fa-volume-up"></i> Voice Speed: <span id="speedValue">${currentRate}</span>
             </label>
             <input type="range" min="0.5" max="2" step="0.1" value="${currentRate}" id="voiceSpeed" 
@@ -512,10 +512,10 @@ class MeoAiAssistant {
           </div>
 
           <div style="margin-bottom: 20px;">
-            <label style="display: block; margin-bottom: 8px; font-weight: bold;">
+            <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--accent-color);">
               <i class="fas fa-image"></i> Mood Display:
             </label>
-            <select id="moodDisplay" style="width:100%; padding:8px; margin-bottom:10px; border:2px solid var(--accent-color); border-radius: var(--border-stylized); background: var(--primary-color); color:var(--accent-color);">
+            <select id="moodDisplay" style="width:100%; padding:8px; margin-bottom:10px; border: var(--border-thick); border-radius: var(--border-radius-custom); background: var(--primary-bgc); color:var(--accent-color);">
               <option value="auto">Auto (image → emoji)</option>
               <option value="img">Always image</option>
               <option value="text">Always emoji/text</option>
@@ -523,13 +523,13 @@ class MeoAiAssistant {
           </div>
 
           <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-            <button id="testVoice" style="flex: 1; min-width: 120px; padding: 10px; background: var(--secondary-color); color: var(--accent-color); border: 2px solid var(--accent-color); border-radius: var(--border-stylized); cursor: pointer;">
+            <button id="testVoice" style="flex: 1; min-width: 120px; padding: 10px; background: var(--secondary-bgc); color: var(--accent-color); border: 2px solid var(--accent-color); border-radius: var(--border-radius-custom); cursor: pointer;">
               <i class="fas fa-microphone"></i> Test Voice
             </button>
-            <button id="closeSettings" style="flex: 1; min-width: 120px; padding: 10px; background: var(--success-bg); color: var(--success); border: 2px solid var(--success); border-radius: var(--border-stylized); cursor: pointer;">
+            <button id="closeSettings" style="flex: 1; min-width: 120px; padding: 10px; background: var(--success-bg); color: var(--success); border: 2px solid var(--success); border-radius: var(--border-radius-custom); cursor: pointer;">
               <i class="fas fa-check"></i> Save & Close
             </button>
-            <button id="clearHistory" style="flex: 1; min-width: 120px; padding: 10px; background: var(--error-bg); color: var(--error); border: 2px solid var(--error); border-radius: var(--border-stylized); cursor: pointer;">
+            <button id="clearHistory" style="flex: 1; min-width: 120px; padding: 10px; background: var(--error-bg); color: var(--error); border: 2px solid var(--error); border-radius: var(--border-radius-custom); cursor: pointer;">
               <i class="fas fa-trash-can"></i> Clear History
             </button>
           </div>
@@ -582,9 +582,9 @@ class MeoAiAssistant {
     const modal = this.createModal();
     const panel = document.createElement('div');
     panel.style.cssText = `
-          background: var(--secondary-color); 
+          background: var(--secondary-bgc); 
           padding: 30px; 
-          border-radius: var(--border-stylized); 
+          border-radius: var(--border-radius-custom); 
           max-width: 800px; 
           width: 95%; 
           max-height: 80vh; 
@@ -607,9 +607,9 @@ class MeoAiAssistant {
         entry.style.cssText = `
               padding: 12px; 
               margin: 8px 0; 
-              border-left: 3px solid ${item.type === 'user' ? 'var(--content-color)' : 'var(--accent-color)'}; 
-              background: var(--content-color); 
-              border-radius: var(--border-stylized);
+              border-left: 3px solid ${item.type === 'user' ? 'var(--content-bgc)' : 'var(--accent-color)'}; 
+              background: var(--content-bgc); 
+              border-radius: var(--border-radius-custom);
               box-shadow: var(--shadow);
             `;
 
@@ -631,9 +631,9 @@ class MeoAiAssistant {
           margin-top: 20px; 
           padding: 10px 20px; 
           background: var(--accent-color); 
-          color: var(--primary-color); 
+          color: var(--primary-bgc); 
           border: none; 
-          border-radius: var(--border-stylized); 
+          border-radius: var(--border-radius-custom); 
           cursor: pointer;
           width: 100%;
         `;
@@ -680,8 +680,8 @@ class MeoAiAssistant {
           width: 100%;
           height: 100%;
           background: var(--default-overlay);
-          backdrop-filter: blur(15px);
-          -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: var(--blur-effect);
+          -webkit-backdrop-filter: var(--blur-effect);
           display: flex;
           align-items: center;
           justify-content: center;

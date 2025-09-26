@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="assets/css/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/welcome.js" defer></script>
   <script src="assets/js/preferences.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
   <script src="assets/js/contact.js" defer></script>
@@ -58,12 +59,26 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="welcome-overlay"></div>
-  <div id="welcome-message">
-    <img src="assets/images/imgbtn/meo.webp" loading="lazy">
-    <h2>Welcome to Kyuartz!</h2>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()">Okay</button>
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-message" id="welcomeMessage">
+      <div class="particles" id="particles"></div>
+      
+      <button class="close-wm" onclick="closeWelcomeMessage()" aria-label="Close welcome message"><i class="fas fa-times"></i></button>
+
+      <div class="mascot-section">
+        <div class="mascot-img" id="mascotImg">
+          <img src="/assets/images/assistant/happy.webp">
+        </div>
+      </div>
+
+      <div class="dialogue-section" id="dialogueBox">
+        <div class="mascot-name" id="mascotName"></div>
+        <div class="dialogue-text" id="dialogueText">
+          <span class="typing-cursor" id="typingCursor"></span>
+        </div>
+        <div class="dialogue-options" id="dialogueOptions"></div>
+      </div>
+    </div>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
@@ -75,8 +90,9 @@
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
-        <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html">KAS</a>
+        <a href="index.html">
+          <img src="assets/images/brand/logo.webp" alt="KyuArtz Logo" loading="lazy">
+        </a>
       </div>
 
       <ul class="navigation-menu" role="menubar">
@@ -118,10 +134,10 @@
             <div class="span-btn">
               <h2>Explore</h2>
               <a href="comic.html" data-page="comic.html">
-                <i class="fa-solid fa-book"></i> Kyuartz Comic
+                <i class="fa-solid fa-film"></i> Kyuartz Comic
               </a>
-              <a href="characters.html" data-page="characters.html">
-                <i class="fa-solid fa-person-rifle"></i> Original Characters
+              <a href="character-codex.html" data-page="character-codex.html">
+                <i class="fa-solid fa-book"></i> Character Codex
               </a>
             </div>
             <div class="span-btn">
@@ -145,7 +161,7 @@
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
               <div class="profile">
-                <img src="assets/images/artgallary/elishia avatar.webp" alt="Profile">
+                <img src="assets/images/artgallary/former falcon squad (2023).webp" alt="Profile">
                 <div class="profile-info">
                   <p class="username"> Kyu</p>
                   <p class="userrole"> Artist</p>
@@ -324,7 +340,7 @@
     
             <div class="submit-section">
               <button type="submit" class="submit-btn" id="submit-btn">
-                <span class="btn-text">Submit Commission Request</span>
+                <span class="btn-text">Submit Request</span>
               </button>
               <div class="form-footer">
                 <p>You'll receive a confirmation email after submission</p>
@@ -381,7 +397,7 @@
     
             <div class="submit-section">
               <button type="submit" class="submit-btn" id="inquiry-submit-btn">
-                <span class="btn-text">Send General Inquiry</span>
+                <span class="btn-text">Submit Inquiry</span>
               </button>
               <div class="form-footer">
                 <p>We'll respond within 24-48 hours</p>
@@ -459,7 +475,7 @@
     
             <div class="submit-section">
               <button type="submit" class="submit-btn" id="support-submit-btn">
-                <span class="btn-text">Submit Support Request</span>
+                <span class="btn-text">Submit Support</span>
               </button>
               <div class="form-footer">
                 <p>Our support team will respond as soon as possible</p>
@@ -473,7 +489,7 @@
     <div class="contact-subcontent">
       <div class="info-section">
         <div class="payment-info">
-          <h2><i class="fas fa-credit-card"></i> Payment Methods & Info</h2>
+          <h2>Payment Methods & Info</h2>
           <div class="payment-methods">
             <button class="payment-method" onclick="openQRModal('paypal')" title="Paypal">
               <img
@@ -656,7 +672,7 @@
         <h4>Explore</h4>
         <a href="commission-sheet.html">Commission Sheet</a>
         <a href="client-queue.html">Client Queue</a>
-        <a href="characters.html">Original Characters</a>
+        <a href="character-codex.html">Character Codex</a>
         <a href="comic.html">Kyuartz Comic</a>
       </div>
 

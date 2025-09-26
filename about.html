@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz Studio | About Artist</title>
+  <title>KyuArtz Studio | About</title>
   <meta name="description" content="Learn more about the Artist, KyuArtz creative journey, and the art projects the artist undertake.">
   <meta name="keywords" content="KyuArtz Studio">
   <meta name="author" content="KyuArtz">
@@ -27,16 +27,18 @@
   <link rel="stylesheet" href="assets/css/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
   <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/welcome.js" defer></script>
   <script src="assets/js/preferences.js" defer></script>
+  <script src="assets/js/about.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
-  <meta property="og:title" content="KyuArtz Studio | About Artist">
+  <meta property="og:title" content="KyuArtz Studio | About">
   <meta property="og:description" content="Learn more about the Artist, KyuArtz creative journey, and the art projects the artist undertake.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
   <meta property="og:url" content="https://kyuartz.github.io/kyuartz/about">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz Studio | About Artist">
+  <meta name="twitter:title" content="KyuArtz Studio | About">
   <meta name="twitter:description" content="Learn more about the Artist, KyuArtz creative journey, and the art projects the artist undertake.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
@@ -58,12 +60,26 @@
     <div class="spinner large-spinner"></div>
   </div>
 
-  <div id="welcome-overlay"></div>
-  <div id="welcome-message">
-    <img src="assets/images/imgbtn/meo.webp" loading="lazy">
-    <h2>Welcome to Kyuartz!</h2>
-    <p>I'm happy you're here! Feel free to check out my portfolio to see my artwork, and don't hesitate to reach out if you're interested in a commission.</p>
-    <button onclick="closeWelcomeMessage()">Okay</button>
+  <div class="welcome-overlay" id="welcomeOverlay">
+    <div class="welcome-message" id="welcomeMessage">
+      <div class="particles" id="particles"></div>
+      
+      <button class="close-wm" onclick="closeWelcomeMessage()" aria-label="Close welcome message"><i class="fas fa-times"></i></button>
+
+      <div class="mascot-section">
+        <div class="mascot-img" id="mascotImg">
+          <img src="/assets/images/assistant/happy.webp">
+        </div>
+      </div>
+
+      <div class="dialogue-section" id="dialogueBox">
+        <div class="mascot-name" id="mascotName"></div>
+        <div class="dialogue-text" id="dialogueText">
+          <span class="typing-cursor" id="typingCursor"></span>
+        </div>
+        <div class="dialogue-options" id="dialogueOptions"></div>
+      </div>
+    </div>
   </div>
 
   <div id="cookie-popup" class="cookie-popup">
@@ -75,8 +91,9 @@
   <header>
     <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
       <div class="brand" aria-label="KyuArtz Home Page">
-        <img src="assets/images/brand/logo.ico" alt="KyuArtz Logo" loading="lazy">
-        <a href="index.html">KAS</a>
+        <a href="index.html">
+          <img src="assets/images/brand/logo.webp" alt="KyuArtz Logo" loading="lazy">
+        </a>
       </div>
 
       <ul class="navigation-menu" role="menubar">
@@ -118,10 +135,10 @@
             <div class="span-btn">
               <h2>Explore</h2>
               <a href="comic.html" data-page="comic.html">
-                <i class="fa-solid fa-book"></i> Kyuartz Comic
+                <i class="fa-solid fa-film"></i> Kyuartz Comic
               </a>
-              <a href="characters.html" data-page="characters.html">
-                <i class="fa-solid fa-person-rifle"></i> Original Characters
+              <a href="character-codex.html" data-page="character-codex.html">
+                <i class="fa-solid fa-book"></i> Character Codex
               </a>
             </div>
             <div class="span-btn">
@@ -145,7 +162,7 @@
           <div class="dropdown-setting" aria-label="Settings dropdown">
             <a href="about.html" data-page="about.html">
               <div class="profile">
-                <img src="assets/images/artgallary/elishia avatar.webp" alt="Profile">
+                <img src="assets/images/artgallary/former falcon squad (2023).webp" alt="Profile">
                 <div class="profile-info">
                   <p class="username"> Kyu</p>
                   <p class="userrole"> Artist</p>
@@ -174,112 +191,125 @@
     </nav>
   </header>
 
-  <main class="card-container">
-    <div class="card-wrapper">
-      <div class="me">
-        <div class="card">
-          <div class="pfp-container">
-            <img class="pfp" src="assets/images/artgallary/elishia avatar.webp" alt="My Profile" loading="lazy" oncontextmenu="return false">
+  <div class="container">
+    <div class="hero-section">
+      <div class="profile-card slide-in-left">
+        <div class="profile-header">
+          <div class="profile-bg"></div>
+          <img src="assets/images/artgallary/former falcon squad (2023).webp" 
+               alt="Kyu Artz Profile" 
+               class="profile-image">
+        </div>
+        
+        <div class="profile-information">
+          <h1 class="profile-name">Kyu Artz</h1>
+          <p class="profile-title">Digital Artist & Creative Designer</p>
+          
+          <div class="contact-info">
+            <a href="mailto:kyuushi992@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+              kyuushi992@gmail.com
+            </a>
           </div>
-          <div class="my-info">
-            <h1>Kyu Artz</h1>
-            <div class="skill-content">
-              <p class="skill">
-                <i class="fa-solid fa-pencil"></i> Digital Illustrator
-              </p>
-
-              <p class="skill">
-                <i class="fa-solid fa-pencil"></i> Character Designer 
-              </p>
-
-              <p class="skill">
-                <i class="fa-solid fa-pencil"></i> Concept Artist
-              </p>
+          
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fa-solid fa-palette"></i> Digital Illustrator
             </div>
-
-            <p class="email">
-              <i class="fa-regular fa-envelope"></i> kyuushi992@gmail.com
-            </p>
-            
-            <div class="mysocial">
-              <a class="logo-view" href="https://www.facebook.com/kyuArtz" title="Facebook" target="_blank" rel="noopener noreferrer">
-                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" loading="lazy">
-              </a>
-
-              <a class="logo-view" href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="Youtube" target="_blank" rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" loading="lazy">
-              </a>
-
-              <a class="logo-view" href="https://x.com/KyuArtz_992" title="X" target="_blank" rel="noopener noreferrer">
-                <img src="https://i.pinimg.com/originals/25/0f/fa/250ffa74bfcca5b2929bccda8df2e4f5.jpg" loading="lazy">
-              </a>
-
-              <a class="logo-view" href="https://kyuartz.artstation.com/" target="_blank" title="Artstation" rel="noopener noreferrer">
-                <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Artstation_logo_logos-512.png" loading="lazy">
-              </a>
-
-              <a class="logo-view" href="https://cara.app/kyuartz" target="_blank" title="Cara" rel="noopener noreferrer">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Cara-app-logo-square.svg" loading="lazy">
-              </a>
+            <div class="skill-item">
+              <i class="fa-solid fa-user-tie"></i> Character Designer
             </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-magic-wand-sparkles"></i> Graphic Designer
+            </div>
+            <div class="skill-item">
+              <i class="fa-solid fa-code"></i> Frontend Developer
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://www.facebook.com/kyuArtz" class="social-link" title="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" class="social-link" title="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://x.com/KyuArtz_992" class="social-link" title="X (Twitter)">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a href="https://kyuartz.artstation.com/" class="social-link" title="ArtStation">
+              <i class="fas fa-palette"></i>
+            </a>
+            <a href="https://cara.app/kyuartz" class="social-link" title="Cara">
+              <i class="fas fa-image"></i>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="info-container">
-        <div class="about-container">
-          <h2>ABOUT Artist</h2>
-          <div class="about-content">
-            <p>
-              Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early childhood. 
-              Over the years, I've been dedicated to honing my skill and self-improvement in the art realm. 
-              Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities and gain more experience. 
-              Despite being a self-learner, I remain persistent and never give up. After four years of focusing on traditional drawing methods, I began to witness noticeable improvements in my work. 
-              Intrigued by the popularity of digital art on various social media platforms, I decided to explore this medium. 
-              I ventured into digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. 
-              While adapting to the challenges presented by digital art techniques, I eventually became comfortable with the process.
-            </p>
-          </div>
-        </div>
+      <div class="main-content">
+        <section class="content-section fade-in-up">
+          <h2 class="section-title">About the Artist</h2>
+          <p class="about-text">
+            Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early childhood. 
+            Over the years, I've dedicated myself to honing my skills and continuously improving in the art realm. 
+            Drawing has been a constant companion in my life, and during my free time, I continue creating art to enhance my abilities and gain valuable experience.
+          </p>
+          <br>
+          <p class="about-text">
+            Despite being self-taught, I remain persistent and never give up on my artistic journey. After four years of focusing on traditional drawing methods, I began witnessing noticeable improvements in my work. 
+            Intrigued by the popularity of digital art across various social media platforms, I decided to explore this exciting medium. 
+            I ventured into digital art using programs like Microsoft Paint and Adobe Illustrator for my initial creations, eventually adapting to the unique challenges and opportunities that digital techniques present.
+          </p>
+        </section>
 
-        <div class="experience-container">
-          <div class="experience-content" style="text-align:center">
-            <h2>EXPERIENCE</h2>
-            <div class="experience-list">
-              <p>Self-Taught Artist</p>
-              <p>Freelance Artist</p>
+        <section class="content-section fade-in-up">
+          <h2 class="section-title">Experience</h2>
+          <div class="experience-grid">
+            <div class="experience-item">
+              <i class="fas fa-graduation-cap fa-2x"></i>
+              <h3>Self-Taught Artist</h3>
+              <p>Continuous learning and skill development through practice and experimentation</p>
+            </div>
+            <div class="experience-item">
+              <i class="fas fa-briefcase fa-2x"></i>
+              <h3>Freelance Artist</h3>
+              <p>Creating custom artwork and designs for clients worldwide</p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div class="tools-used-container">
-          <div class="tools-content" style="text-align:center">
-            <h2>TOOLS I USE</h2>
-            <div class="tools-wrapper">
-              <div class="tool">
-                <img src="https://cdn.ibispaint.com/movie/851/141/851141201/image851141201l.png" loading="lazy">
-                <p class="tool-name">Ibis Paint X</p>
+        <section class="content-section fade-in-up">
+          <h2 class="section-title">Tools & Software</h2>
+          <div class="tools-grid">
+            <div class="tool-item">
+              <div class="tool-icon">
+                <i class="fas fa-mobile-alt"></i>
               </div>
-
-              <div class="tool">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Clip_Studio_Paint_app_logo.png/250px-Clip_Studio_Paint_app_logo.png" loading="lazy">
-                <p class="tool-name">Clip Studio Paint</p>
+              <div class="tool-name">Ibis Paint X</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <i class="fas fa-pen-nib"></i>
               </div>
-
-              <div class="tool">
-                <img src="https://1000logos.net/wp-content/uploads/2020/06/Illustrator-Logo-500x312.png" loading="lazy">
-                <p class="tool-name">Adobe Photoshop</p>
+              <div class="tool-name">Clip Studio Paint</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <i class="fas fa-layer-group"></i>
               </div>
-
-              <div class="tool">
-                <img src="https://images.seeklogo.com/logo-png/51/2/krita-logo-png_seeklogo-510258.png" loading="lazy">
-                <p class="tool-name">Krita</p>
+              <div class="tool-name">Adobe Photoshop</div>
+            </div>
+            <div class="tool-item">
+              <div class="tool-icon">
+                <i class="fas fa-paint-brush"></i>
               </div>
+              <div class="tool-name">Krita</div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
-  </main>
+  </div>
 </body>
 </html>
