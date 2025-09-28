@@ -296,68 +296,6 @@ body {
 }
 
 /* =============================================================================
-   LOADER & UTILITY CLASSES
-   ============================================================================= */
-
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--primary-bgc);
-    opacity: 1;
-    transition: opacity 0.75s, visibility 0.75s;
-    z-index: 300000;
-}
-
-.no-scroll {
-    overflow: hidden;
-}
-
-.loader-hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-/* =============================================================================
-   SPINNER COMPONENTS
-   ============================================================================= */
-
-.spinner {
-    position: absolute;
-    border-radius: var(--border-radius-rounded);
-    animation-timing-function: ease;
-}
-
-.small-spinner {
-    width: 50px;
-    height: 50px;
-    border: 15px double var(--accent-color);
-    border-top-color: rgba(30, 143, 255, 0);
-    border-bottom-color: rgba(30, 143, 255, 0);
-    animation: rotateCounterclockwise 0.75s infinite;
-}
-
-.medium-spinner {
-    width: 75px;
-    height: 75px;
-    border: 2px solid var(--accent-color);
-    animation: pulse 0.75s infinite;
-}
-
-.large-spinner {
-    width: 85px;
-    height: 85px;
-    border: 5px solid var(--accent-color);
-    border-top-color: rgba(0, 0, 0, 0);
-    animation: rotateClockwise 0.75s infinite;
-}
-
-/* =============================================================================
    ANIMATION KEYFRAMES
    ============================================================================= */
 

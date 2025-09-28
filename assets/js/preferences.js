@@ -16,7 +16,10 @@ const themeOptions = [
 // Generate theme previews
 function generateThemePreviews() {
     const container = document.getElementById('theme-previews');
-    container.innerHTML = '';
+    if (!container) {
+        // Not on the preferences page — nothing to do.
+        return;
+    }
 
     themeOptions.forEach(theme => {
         const option = document.createElement('div');
@@ -161,15 +164,4 @@ document.addEventListener('DOMContentLoaded', () => {
             selectTheme(e.target.value);
         });
     }
-});
-
-// Add some nice visual feedback
-document.querySelectorAll('.preference-section').forEach(section => {
-    section.addEventListener('mouseenter', () => {
-        section.style.transform = 'translateY(-2px)';
-    });
-
-    section.addEventListener('mouseleave', () => {
-        section.style.transform = 'translateY(0)';
-    });
 });

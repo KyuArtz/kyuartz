@@ -1,8 +1,23 @@
 const sampleData = {
     changelog: {
-        version: "1.5.1",
-        last_updated: "2025-09-26T04:00:00Z",
+        version: "1.6.1",
+        last_updated: "2025-09-28T10:00:00Z",
         updates: [
+            {
+                date: "2025-09-28",
+                timestamp: "2025-09-28T10:00:00Z",
+                version: "1.6.1",
+                major: [],
+                minor: [
+                    {
+                        title: "Performance Enhancement",
+                        description: "To improve loading time, the old loader was removed, and minor adjustments were made.",
+                        category: "Performance"
+                    }
+                ],
+                bugfixes: [],
+                upcoming: []
+            },
             {
                 date: "2025-09-26",
                 timestamp: "2025-09-26T04:00:00Z",
@@ -11,7 +26,7 @@ const sampleData = {
                 minor: [
                     {
                         title: "Interface Enhancement",
-                        description: "Made improvements and adjustments to the interface design, added translucent gradient.",
+                        description: "The interface design has been enhanced and modified, and a translucent gradient effect has been added.",
                         category: "UI/UX"
                     },
                     {
@@ -149,7 +164,7 @@ const sampleData = {
         ],
         summary: {
             total_major_updates: 1,
-            total_minor_updates: 12,
+            total_minor_updates: 13,
             total_bugfixes: 1,
             total_upcoming_features: 1,
             primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]

@@ -163,7 +163,7 @@ p.username {
 }
 
 .nav-link,
-.nav-link-sideMenu {
+.nav-link-moreMenu {
     color: var(--text-color-default);
     padding: 1rem;
     border-radius: var(--border-radius-custom);
@@ -177,13 +177,13 @@ p.username {
 }
 
 a.nav-link,
-a.nav-link-sideMenu {
+a.nav-link-moreMenu {
     font-family: var(--my-font);
     font-size: 0.9rem;
 }
 
 .nav-link:hover,
-.nav-link-sideMenu:hover {
+.nav-link-moreMenu:hover {
     background: var(--accent-overlay);
 }
 
@@ -201,19 +201,19 @@ a.nav-link-sideMenu {
     box-shadow: var(--shadow);
 }
 
-.nav-link-sideMenu.activeLink {
+.nav-link-moreMenu.activeLink {
     color: var(--accent-color);
     background: var(--content-bgc);
     border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
 }
 
-.sideMenu-content a.activeLink {
+.moreMenu-content a.activeLink {
     background: var(--accent-overlay);
 }
 
-.nav-link-sideMenu.activeLink:hover,
-.sideMenu-content a.activeLink:hover {
+.nav-link-moreMenu.activeLink:hover,
+.moreMenu-content a.activeLink:hover {
     color: var(--accent-color);
 }
 
@@ -291,16 +291,16 @@ a.nav-link-sideMenu {
         right: 0;
     }
 
-    .sideMenu-content {
+    .moreMenu-content {
         width: 100%;
     }
 }
 
-.sideMenu-content::-webkit-scrollbar {
+.moreMenu-content::-webkit-scrollbar {
     display: none;
 }
 
-.sideMenu-content {
+.moreMenu-content {
     position: fixed;
     top: 61px;
     left: 0;
@@ -314,14 +314,14 @@ a.nav-link-sideMenu {
     opacity: 0;
 }
 
-.sideMenu-content h2 {
+.moreMenu-content h2 {
     color: var(--accent-color);
     margin: 0;
     padding: 1rem;
     font-size: 1.2rem;
 }
 
-.sideMenu-content a {
+.moreMenu-content a {
     color: var(--text-color-default);
     border-radius: var(--border-radius-custom);
     padding: 0.9rem;
@@ -344,11 +344,11 @@ a.nav-link-sideMenu {
     font-family: var(--my-font)
 }
 
-.sideMenu-content a:hover {
+.moreMenu-content a:hover {
     background: var(--accent-overlay);
 }
 
-.show-sideMenu {
+.show-moreMenu {
     visibility: visible;
     opacity: 1;
     animation: fadeIn 0.5s ease;
@@ -460,7 +460,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .sideMenu-content {
+    .moreMenu-content {
         flex-direction: column;
         justify-content: flex-start;
         height: 100vh;
