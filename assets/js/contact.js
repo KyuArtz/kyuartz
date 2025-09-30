@@ -840,7 +840,7 @@ class CommissionForm {
         }
 
         const successHTML = `
-            <div style="text-align: center; padding: 40px; background: var(success-bg); border-radius: var(--border-radius-custom); border: 2px solid var(--success);">
+            <div style="text-align: center; padding: 40px; background: var(--success-bg); border-radius: var(--border-radius-custom); border: 2px solid var(--success);">
                 <div style="font-size: 4rem; color: var(--success); margin-bottom: 20px;">
                     <i class="fas fa-check-circle"></i>
                 </div>
