@@ -40,7 +40,7 @@ header {
     color: var(--accent-color);
     padding: 0.8rem;
     border: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background: transparent;
 }
 
@@ -149,8 +149,8 @@ p.username {
 }
 
 .brand img {
-    width: 60px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: var(--border-radius-custom);
     aspect-ratio: 1/1;
     background: var(--gradient-bgc);
@@ -163,9 +163,9 @@ p.username {
 }
 
 .nav-link,
-.nav-link-moreMenu {
+.more-menu-links {
     color: var(--text-color-default);
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius-custom);
 }
 
@@ -176,14 +176,18 @@ p.username {
     list-style: none;
 }
 
+.nav-link i,
+.more-menu-links i {
+    font-size: 1.2rem;
+}
+
 a.nav-link,
-a.nav-link-moreMenu {
-    font-family: var(--my-font);
+a.more-menu-links {
     font-size: 0.9rem;
 }
 
 .nav-link:hover,
-.nav-link-moreMenu:hover {
+.more-menu-links:hover {
     background: var(--accent-overlay);
 }
 
@@ -201,19 +205,19 @@ a.nav-link-moreMenu {
     box-shadow: var(--shadow);
 }
 
-.nav-link-moreMenu.activeLink {
+.more-menu-links.activeLink {
     color: var(--accent-color);
     background: var(--content-bgc);
     border-radius: var(--border-radius-custom);
     box-shadow: var(--shadow);
 }
 
-.moreMenu-content a.activeLink {
+.dropdown-more a.activeLink {
     background: var(--accent-overlay);
 }
 
-.nav-link-moreMenu.activeLink:hover,
-.moreMenu-content a.activeLink:hover {
+.more-menu-links.activeLink:hover,
+.dropdown-more a.activeLink:hover {
     color: var(--accent-color);
 }
 
@@ -277,7 +281,7 @@ a.nav-link-moreMenu {
         align-items: center;
         right: -100%;
         top: 61px;
-        width: 100%;
+        width: 30%;
         height: 100vh;
         background: var(--secondary-bgc);
         gap: 3rem;
@@ -291,16 +295,16 @@ a.nav-link-moreMenu {
         right: 0;
     }
 
-    .moreMenu-content {
+    .dropdown-more {
         width: 100%;
     }
 }
 
-.moreMenu-content::-webkit-scrollbar {
+.dropdown-more::-webkit-scrollbar {
     display: none;
 }
 
-.moreMenu-content {
+.dropdown-more {
     position: fixed;
     top: 61px;
     left: 0;
@@ -314,14 +318,14 @@ a.nav-link-moreMenu {
     opacity: 0;
 }
 
-.moreMenu-content h2 {
+.dropdown-more h2 {
     color: var(--accent-color);
     margin: 0;
     padding: 1rem;
     font-size: 1.2rem;
 }
 
-.moreMenu-content a {
+.dropdown-more a {
     color: var(--text-color-default);
     border-radius: var(--border-radius-custom);
     padding: 0.9rem;
@@ -344,11 +348,11 @@ a.nav-link-moreMenu {
     font-family: var(--my-font)
 }
 
-.moreMenu-content a:hover {
+.dropdown-more a:hover {
     background: var(--accent-overlay);
 }
 
-.show-moreMenu {
+.show-dropdownMore {
     visibility: visible;
     opacity: 1;
     animation: fadeIn 0.5s ease;
@@ -460,7 +464,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .moreMenu-content {
+    .dropdown-more {
         flex-direction: column;
         justify-content: flex-start;
         height: 100vh;

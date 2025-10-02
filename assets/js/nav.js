@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".navigation-menu");
   const navLinks = document.querySelectorAll(".nav-link");
-  const moreMenuLinks = document.querySelectorAll(".nav-link-moreMenu");
-  const moreMenuContents = document.querySelectorAll(".moreMenu-content");
+  const moreMenuLinks = document.querySelectorAll(".more-menu-links");
+  const dropdownMore = document.querySelectorAll(".dropdown-more");
   const blurOverlay = document.querySelector(".blur-overlay");
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
@@ -55,9 +55,9 @@ document.addEventListener("DOMContentLoaded", () => {
   moreMenuLinks.forEach(moreMenuLink => {
     moreMenuLink.addEventListener("click", (event) => {
       event.stopPropagation();
-      const moreMenuContent = moreMenuLink.nextElementSibling;
-      if (moreMenuContent) {
-        const isShown = moreMenuContent.classList.toggle("show-moreMenu");
+      const dropdownMore = moreMenuLink.nextElementSibling;
+      if (dropdownMore) {
+        const isShown = dropdownMore.classList.toggle("show-dropdownMore");
         blurOverlay && (blurOverlay.style.display = isShown ? "block" : "none");
         document.body.classList.toggle("no-scroll", isShown);
       }
@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Global click handler for closing menus
   window.addEventListener("click", (event) => {
     // Side menu
-    if (![...moreMenuLinks, ...moreMenuContents].some(el => el.contains(event.target))) {
-      moreMenuContents.forEach(content => content.classList.remove("show-moreMenu"));
+    if (![...moreMenuLinks, ...dropdownMore].some(el => el.contains(event.target))) {
+      dropdownMore.forEach(content => content.classList.remove("show-dropdownMore"));
       if (blurOverlay) blurOverlay.style.display = "none";
       document.body.classList.remove("no-scroll");
     }
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Highlight active nav link
   const currentPage = window.location.pathname.split('/').pop();
-  document.querySelectorAll('.nav-link, .nav-link-moreMenu, .moreMenu-content a').forEach(link => {
+  document.querySelectorAll('.nav-link, .more-menu-links, .moreMenu-content a').forEach(link => {
     if (link.getAttribute('data-page') === currentPage) {
       link.classList.add('activeLink');
     }
