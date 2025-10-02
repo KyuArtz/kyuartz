@@ -478,7 +478,7 @@ p.title {
 
 .character-info info {
     background: var(--default-overlay);
-    border: 1px solid var(--accent, var(--accent-color));
+    border: var(--border-thin);
     border-radius: var(--border-radius-custom);
     padding: 0.4rem 0.6rem;
 }
