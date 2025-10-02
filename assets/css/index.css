@@ -27,6 +27,7 @@
     height: 100vh;
     object-fit: cover;
     object-position: center;
+    pointer-events: none;
 }
 
 .hero-content {

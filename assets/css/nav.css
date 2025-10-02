@@ -193,23 +193,20 @@ a.more-menu-links {
 
 .activeLink a {
     color: var(--accent-color);
-    background: var(--content-bgc);
     border-radius: var(--border-radius-custom);
-    box-shadow: var(--shadow);
+    border: var(--border-thick);
 }
 
 .nav-link.activeLink {
     color: var(--accent-color);
-    background: var(--content-bgc);
     border-radius: var(--border-radius-custom);
-    box-shadow: var(--shadow);
+    border: var(--border-thick);
 }
 
 .more-menu-links.activeLink {
     color: var(--accent-color);
-    background: var(--content-bgc);
     border-radius: var(--border-radius-custom);
-    box-shadow: var(--shadow);
+    border: var(--border-thick);
 }
 
 .dropdown-more a.activeLink {
