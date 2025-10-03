@@ -214,7 +214,7 @@
     background: var(--primary-bgc);
     border: 1px solid var(--accent-color);
     transition: all 0.3s ease;
-    border-radius: var(--border-radius-custom);
+    border-radius: var(--border-radius-rounded);
     overflow: hidden;
 }
 
@@ -227,7 +227,7 @@
     bottom: 3px;
     background: var(--accent-color);
     transition: all 0.3s ease;
-    border-radius: var(--border-radius-custom);
+    border-radius: var(--border-radius-rounded);
 }
 
 input:checked+.slider {

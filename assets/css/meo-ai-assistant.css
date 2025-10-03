@@ -57,7 +57,7 @@
 .character-avatar {
     width: 200px;
     height: 200px;
-    border-radius: var(--border-radius-rounded);
+    border-radius: var(--border-radius-circle);
     background: var(--accent-overlay);
     display: flex;
     align-items: center;

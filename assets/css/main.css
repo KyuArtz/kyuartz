@@ -60,7 +60,8 @@ body {
 
 :root {
     /* Base Design System */
-    --border-radius-rounded: 50%;
+    --border-radius-circle: 50%;
+    --border-radius-rounded: 50px;
     --border-radius-custom: 10px;
     --border-thin: 1px solid var(--border-color);
     --border-thick: 2px solid var(--border-color);
