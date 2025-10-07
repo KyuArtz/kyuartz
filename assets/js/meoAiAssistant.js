@@ -21,7 +21,7 @@ class MeoAiAssistant {
     this.conversationHistory = [];
     this.lastActivity = Date.now();
 
-    this.responses = {};
+    this.responseRules = [];
     this.loadResponses(); // async loader
 
     this.initializeAssistant();
@@ -450,11 +450,33 @@ class MeoAiAssistant {
 
   addSuggestionListeners() {
     this.suggestions?.addEventListener('click', (e) => {
-      if (e.target.classList.contains('suggestion')) {
-        this.userInput.value = e.target.textContent;
-        this.updateSendButton();
-        this.handleUserInput();
+      // Find the closest suggestion element (works when inner elements are clicked)
+      const sugg = e.target.closest('.suggestion');
+      if (!sugg) return;
+
+      // Priority: use an explicit data-key (if you want to encode a specific query), then title, then desc, then fallback to trimmed text
+      let chosen = sugg.dataset.key || sugg.dataset.keyword || '';
+
+      if (!chosen) {
+        const titleEl = sugg.querySelector('.suggestion-title');
+        if (titleEl && titleEl.textContent.trim()) {
+          chosen = titleEl.textContent.trim();
+        } else {
+          const descEl = sugg.querySelector('.suggestion-desc');
+          chosen = (descEl && descEl.textContent.trim()) ? descEl.textContent.trim() : sugg.textContent.trim();
+        }
       }
+
+      // Remove any leading/trailing whitespace and stray emojis/icons
+      chosen = chosen.replace(/^[\s\p{Emoji_Presentation}\p{Emoji}\p{So}]+/u, '').trim();
+
+      // Fill input, update UI and submit
+      this.userInput.value = chosen;
+      this.updateSendButton();
+      this.userInput.focus();
+
+      // Small delay so focus/DOM updates settle before sending
+      setTimeout(() => this.handleUserInput(), 50);
     });
   }
 
@@ -725,12 +747,12 @@ class MeoAiAssistant {
     this.suggestions.innerHTML = `
           <div class="suggestion">
             <div class="suggestion-icon">🎨</div>
-            <div class="suggestion-title">About KyuArtz</div>
+            <div class="suggestion-title">KyuArtz</div>
             <div class="suggestion-desc">Learn about our creative studio</div>
           </div>
           <div class="suggestion">
             <div class="suggestion-icon">💼</div> 
-            <div class="suggestion-title">Our Services</div>
+            <div class="suggestion-title">Services</div>
             <div class="suggestion-desc">Learn more about our services</div>
           </div>
           <div class="suggestion">
@@ -772,16 +794,105 @@ class MeoAiAssistant {
     try {
       const res = await fetch('assets/data/assistantResponses.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      this.responses = await res.json();
+      const data = await res.json();
+
+      this.responseRules = [];
+
+      // New format: array of { keywords: [...], response: [...] }
+      if (Array.isArray(data)) {
+        data.forEach(item => {
+          const kws = (item.keywords || []).map(k => String(k).toLowerCase().trim()).filter(Boolean);
+          const responses = item.response || item.responses || [];
+          if (kws.length && Array.isArray(responses)) {
+            this.responseRules.push({ keywords: kws, responses });
+          }
+        });
+      } else if (data && typeof data === 'object') {
+        // Backwards compat: object mapping keyword -> [responses]
+        for (const [kw, responses] of Object.entries(data)) {
+          const k = String(kw).toLowerCase().trim();
+          if (k && Array.isArray(responses)) {
+            this.responseRules.push({ keywords: [k], responses });
+          }
+        }
+      }
+
+      // If nothing loaded, populate minimal fallback
+      if (this.responseRules.length === 0) {
+        this.responseRules = [
+          { keywords: ['hello'], responses: ["Hello! I'm Meo, your assistant."] },
+          { keywords: ['help'], responses: ["I can tell you about KyuArtz, services, pricing and commissions."] }
+        ];
+      }
+
       console.info('Assistant responses loaded ✅');
     } catch (err) {
       console.warn('Could not load assistant responses, using fallback ❌', err);
-      // Minimal fallback so the assistant still works if JSON can't be fetched.
-      this.responses = {
-        "hello": ["Hello! I'm Meo, your assistant."],
-        "help": ["I can tell you about KyuArtz, services, pricing and commissions."]
-      };
+      this.responseRules = [
+        { keywords: ['hello'], responses: ["Hello! I'm Meo, your assistant."] },
+        { keywords: ['help'], responses: ["I can tell you about KyuArtz, services, pricing and commissions."] }
+      ];
     }
+  }
+
+  generateResponse(input) {
+    return new Promise((resolve) => {
+      const delay = 800 + Math.random() * 1500;
+
+      setTimeout(() => {
+        const cleanInput = String(input).toLowerCase().trim();
+
+        // Helper: escape regex
+        const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+        let bestRule = null;
+        let bestScore = 0;
+
+        // Sort rules to prefer more specific (longer keywords) first for deterministic tie-break
+        const rules = this.responseRules.slice().sort((a, b) => {
+          const aMax = Math.max(...(a.keywords.map(k => k.length)), 0);
+          const bMax = Math.max(...(b.keywords.map(k => k.length)), 0);
+          return bMax - aMax;
+        });
+
+        for (const rule of rules) {
+          let ruleScore = 0;
+          for (const kw of rule.keywords) {
+            if (!kw) continue;
+            // Try exact word-boundary match first, fallback to includes
+            const pattern = new RegExp(`\\b${esc(kw)}\\b`, 'i');
+            if (pattern.test(cleanInput)) {
+              // score by keyword length (longer = more specific)
+              ruleScore = Math.max(ruleScore, kw.length);
+            } else if (cleanInput.includes(kw)) {
+              ruleScore = Math.max(ruleScore, Math.floor(kw.length / 2));
+            }
+          }
+          if (ruleScore > bestScore) {
+            bestScore = ruleScore;
+            bestRule = rule;
+          }
+        }
+
+        let response = null;
+
+        if (bestRule && Array.isArray(bestRule.responses) && bestRule.responses.length > 0) {
+          response = bestRule.responses[Math.floor(Math.random() * bestRule.responses.length)];
+        }
+
+        // Enhanced fallbacks with more personality
+        if (!response) {
+          const fallbacks = [
+            "I'm sorry I dont have an answer for that yet, rest assured next time we interact, I will have a proper answer of that inquery!",
+            "Sorry my knowledge is limited for now, rest assured I'm willing to learn everyday while we interact!",
+            "Oops! sorry something went wrong on my part please try again later!"
+          ];
+          response = fallbacks[Math.floor(Math.random() * fallbacks.length)];
+        }
+
+        resolve(response);
+      }, delay);
+    });
   }
 
   setPreference(key, value) {
