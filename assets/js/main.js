@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Language selection logic
 document.addEventListener("DOMContentLoaded", () => {
-  const TRANSLATIONS_URL = 'assets/json/translations.json';
+  const TRANSLATIONS_URL = 'assets/data/translations.json';
   const LANGUAGE_KEY = 'selectedLanguage';
   const DEFAULT_LANGUAGE = 'en';
 
