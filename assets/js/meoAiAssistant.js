@@ -137,7 +137,8 @@ class MeoAiAssistant {
   updateSendButton() {
     if (this.sendBtn) {
       const hasText = this.userInput.value.trim().length > 0;
-      this.sendBtn.style.background = hasText ? 'var(--accent-color)' : 'var(--content-bgc)';
+      this.sendBtn.style.background = hasText ? 'var(--btn-bgc)' : 'var(--content-bgc)';
+      this.sendBtn.style.color = hasText ? 'var(--btn-color)' : 'var(--color-accent)';
       this.sendBtn.style.transform = hasText ? 'scale(1.05)' : 'scale(1)';
     }
   }

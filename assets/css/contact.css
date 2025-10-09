@@ -325,12 +325,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--accent-color);
-    font-weight: bold;
+    background: var(--btn-bgc);
+    color: var(--btn-color);
     transition: all 0.3s ease;
     border: var(--border-thick);
     padding: 10px;
-    border-radius: var(--border-radius-custom);
+    border-radius: var(--border-radius-rounded);
     font-family: var(--my-font);
     backdrop-filter: var(--blur-effect);
     -webkit-backdrop-filter: var(--blur-effect);
@@ -339,7 +339,6 @@
 
 .mascot-link:hover .cta-text {
     gap: 1rem;
-    background: var(--accent-overlay);
 }
 
 .modal {
@@ -439,13 +438,12 @@
 }
 
 .qr-tab:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
 }
 
 .qr-tab.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .qr-content {
@@ -547,13 +545,12 @@
 }
 
 .tab-button:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
 }
 
 .tab-button.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .tab-content {
@@ -806,8 +803,8 @@ textarea {
 }
 
 .submit-btn {
-    color: var(--text-color-default);
-    background: var(--accent-overlay);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
     border: var(--border-thick);
     padding: 1rem 2rem;
     border-radius: var(--border-radius-custom);

@@ -56,12 +56,11 @@
 }
 
 .filter-tab.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .filter-tab:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
     transform: translateY(-2px);
 }
@@ -144,7 +143,6 @@
     margin-bottom: 1rem;
     color: var(--accent-color);
     font-weight: bold;
-    border-bottom: var(--border-thick);
 }
 
 .price-list {
@@ -207,8 +205,8 @@
 }
 
 .btn-primary {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .btn-secondary {

@@ -70,14 +70,14 @@
 }
 
 .tab-button:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
     color: var(--text-color-default);
+    transform: translateY(-2px);
 }
 
 .tab-button.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .content-card {
@@ -354,8 +354,8 @@
     display: inline-flex;
     align-items: center;
     gap: .5rem;
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
     padding: .75rem 1.25rem;
     font-family: var(--my-font);
     border: var(--border-thick);

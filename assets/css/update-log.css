@@ -94,7 +94,7 @@
 
 .view-btn {
     color: var(--accent-color);
-    padding: 8px 16px;
+    padding: 0.7rem 1rem;
     border: var(--border-thick);
     border-radius: var(--border-radius-custom);
     transition: all 0.3s ease;
@@ -103,12 +103,11 @@
 
 .view-btn:hover {
     border: 2px solid var(--accent-color);
-    background: var(--accent-overlay);
 }
 
 .view-btn.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .filter-controls {
@@ -129,13 +128,12 @@
 }
 
 .filter-btn.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .filter-btn:hover {
     border: 2px solid var(--accent-color);
-    background: var(--accent-overlay);
     transform: translateY(-2px);
 }
 

@@ -80,8 +80,8 @@
 }
 
 .btn-primary {
-    color: var(--accent-color);
-    background: var(--primary-bgc);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .btn-secondary {
@@ -90,7 +90,6 @@
 }
 
 .btn:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
     transform: translateY(-2px);
 }

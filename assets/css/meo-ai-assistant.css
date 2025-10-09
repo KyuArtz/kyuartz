@@ -184,7 +184,7 @@
 .message.ai .message-avatar {
     background: var(--accent-overlay);
     border: var(--border-thin);
-    animation: aiPulse 2s ease-in-out infinite;
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .message-content {
@@ -199,6 +199,7 @@
 
 .message.ai .message-content {
     background: var(--accent-overlay);
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .message-time {
@@ -327,6 +328,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .welcome-message h1 {
@@ -381,7 +383,7 @@
 
 .suggestion-desc {
     font-size: 0.75rem;
-    color: var(--text-secondary);
+    color: var(--text-color-default);
 }
 
 .suggestion-icon,

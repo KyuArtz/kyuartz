@@ -39,13 +39,12 @@
 
 .filter-btn:hover {
     border: 2px solid var(--accent-color);
-    background: var(--accent-overlay);
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
-    color: var(--text-color-default);
-    background: var(--accent-overlay);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .gallery-container {
@@ -83,8 +82,8 @@
 }
 
 .view-btn.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .view-btn:hover {

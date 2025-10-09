@@ -46,13 +46,12 @@
 .filter-btn:hover {
     color: var(--text-color-default);
     border: 2px solid var(--accent-color);
-    background: var(--accent-overlay);
     transform: translateY(-2px);
 }
 
 .filter-btn.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .comics-section {
@@ -169,7 +168,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .action-btn {
@@ -185,8 +184,8 @@
 }
 
 .primary-btn {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .secondary-btn {
@@ -196,7 +195,6 @@
 
 .primary-btn:hover,
 .secondary-btn:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
     transform: translateY(-2px);
 }

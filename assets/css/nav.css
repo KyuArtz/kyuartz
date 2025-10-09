@@ -238,11 +238,11 @@ a.more-menu-links {
     right: 10px;
     padding: 1rem;
     border-radius: var(--border-radius-custom);
-    background: var(--content-bgc);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
     border: none;
     aspect-ratio: 1/1;
     box-shadow: var(--shadow);
-    color: var(--text-color-default);
     animation: bounce 0.9s infinite;
     z-index: 1;
 }
@@ -402,7 +402,6 @@ footer {
     color: var(--accent-color);
     display: block;
     margin-bottom: 0.5rem;
-    font-family: var(--my-font);
     transition: all 0.3s ease;
 }
 

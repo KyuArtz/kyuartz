@@ -291,12 +291,11 @@ tbody td {
 }
 
 .filter-btn.active {
-    background: var(--accent-overlay);
-    color: var(--text-color-default);
+    background: var(--btn-bgc);
+    color: var(--btn-color);
 }
 
 .filter-btn:hover {
-    background: var(--accent-overlay);
     border: 2px solid var(--accent-color);
     transform: translateY(-2px);
 }

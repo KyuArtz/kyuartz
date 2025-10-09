@@ -91,6 +91,8 @@ body {
     --accent-overlay: rgba(64, 64, 64, 0.5);
     --default-overlay: rgba(10, 10, 10, 0.5);
     --accent-color: #9e9e9e;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --static-color: #f0f0f0;
     --shadow: var(--shadow-medium);
@@ -108,8 +110,10 @@ body {
     --secondary-bgc: #141414;
     --content-bgc: #1f1f1f;
     --accent-overlay: rgba(64, 64, 64, 0.5);
-    --border-color: rgba(158, 158, 158, 0.1);
+    --border-color: rgba(158, 158, 158, 0.2);
     --accent-color: #9e9e9e;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --shadow: var(--shadow-medium);
     --border-thin: 1px solid var(--border-color);
@@ -124,8 +128,10 @@ body {
     --secondary-bgc: #1a2635;
     --content-bgc: #1b3044;
     --accent-overlay: rgba(30, 143, 255, 0.5);
-    --border-color: rgba(30, 144, 255, 0.1);
+    --border-color: rgba(30, 144, 255, 0.2);
     --accent-color: #1e90ff;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --shadow: var(--shadow-medium);
     --border-thin: 1px solid var(--border-color);
@@ -140,8 +146,10 @@ body {
     --secondary-bgc: #2e1616;
     --content-bgc: #4b1d1d;
     --accent-overlay: rgba(255, 30, 30, 0.5);
-    --border-color: rgba(255, 30, 30, 0.1);
+    --border-color: rgba(255, 30, 30, 0.2);
     --accent-color: #ff1e1e;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --shadow: var(--shadow-medium);
     --border-thin: 1px solid var(--border-color);
@@ -156,8 +164,10 @@ body {
     --secondary-bgc: #2c162e;
     --content-bgc: #2c173b;
     --accent-overlay: rgba(168, 50, 255, 0.5);
-    --border-color: rgb(168, 50, 255, 0.1);
+    --border-color: rgb(168, 50, 255, 0.2);
     --accent-color: #a832ff;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --shadow: var(--shadow-medium);
     --border-thin: 1px solid var(--border-color);
@@ -172,8 +182,10 @@ body {
     --secondary-bgc: #162e17;
     --content-bgc: #123325;
     --accent-overlay: rgba(50, 255, 168, 0.5);
-    --border-color: rgba(50, 255, 168, 0.1);
+    --border-color: rgba(50, 255, 168, 0.2);
     --accent-color: #32ffa8;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --shadow: var(--shadow-medium);
     --border-thin: 1px solid var(--border-color);
@@ -188,8 +200,10 @@ body {
     --secondary-bgc: #2e2e16;
     --content-bgc: #3f2d13;
     --accent-overlay: rgba(255, 168, 50, 0.5);
-    --border-color: rgba(255, 168, 50, 0.1);
+    --border-color: rgba(255, 168, 50, 0.2);
     --accent-color: #ffa832;
+    --btn-bgc: #f0f0f0;
+    --btn-color: #0a0a0a;
     --text-color-default: #f0f0f0;
     --shadow: var(--shadow-medium);
     --border-thin: 1px solid var(--border-color);
@@ -208,12 +222,14 @@ body {
     --secondary-bgc: #f0f0f0;
     --content-bgc: #e2e2e2;
     --accent-overlay: rgba(172, 172, 172, 0.5);
-    --border-color: rgba(77, 77, 77, 0.1);
+    --border-color: rgba(0, 0, 0, 0.2);
     --accent-color: #4d4d4d;
+    --btn-bgc: #0a0a0a;
+    --btn-color: #f0f0f0;
     --text-color-default: #2e2e2e;
     --shadow: var(--shadow-medium);
-    --border-thin: 1px solid rgba(0, 0, 0, 0.1);
-    --border-thick: 2px solid rgba(0, 0, 0, 0.1);
+    --border-thin: 1px solid var(--border-color);
+    --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -224,12 +240,14 @@ body {
     --secondary-bgc: #e8f5ff;
     --content-bgc: #e2f0ff;
     --accent-overlay: rgba(30, 143, 255, 0.5);
-    --border-color: rgba(30, 144, 255, 0.1);
+    --border-color: rgba(30, 144, 255, 0.2);
     --accent-color: #1e90ff;
+    --btn-bgc: #0a0a0a;
+    --btn-color: #f0f0f0;
     --text-color-default: #333333;
     --shadow: var(--shadow-medium);
-    --border-thin: 1px solid rgba(0, 0, 0, 0.1);
-    --border-thick: 2px solid rgba(0, 0, 0, 0.1);
+    --border-thin: 1px solid var(--border-color);
+    --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -240,12 +258,14 @@ body {
     --secondary-bgc: #ffe8e8;
     --content-bgc: #ffe0e0;
     --accent-overlay: rgba(255, 30, 30, 0.5);
-    --border-color: rgba(255, 30, 30, 0.1);
+    --border-color: rgba(255, 30, 30, 0.2);
     --accent-color: #ff1e1e;
+    --btn-bgc: #0a0a0a;
+    --btn-color: #f0f0f0;
     --text-color-default: #333333;
     --shadow: var(--shadow-medium);
-    --border-thin: 1px solid rgba(0, 0, 0, 0.1);
-    --border-thick: 2px solid rgba(0, 0, 0, 0.1);
+    --border-thin: 1px solid var(--border-color);
+    --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -256,12 +276,14 @@ body {
     --secondary-bgc: #fbe6ff;
     --content-bgc: #f2deff;
     --accent-overlay: rgba(168, 50, 255, 0.5);
-    --border-color: rgba(168, 50, 255, 0.1);
+    --border-color: rgba(168, 50, 255, 0.2);
     --accent-color: #a832ff;
+    --btn-bgc: #0a0a0a;
+    --btn-color: #f0f0f0;
     --text-color-default: #333333;
     --shadow: var(--shadow-medium);
-    --border-thin: 1px solid rgba(0, 0, 0, 0.1);
-    --border-thick: 2px solid rgba(0, 0, 0, 0.1);
+    --border-thin: 1px solid var(--border-color);
+    --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -272,12 +294,14 @@ body {
     --secondary-bgc: #e9ffea;
     --content-bgc: #dcfff0;
     --accent-overlay: rgba(50, 255, 168, 0.5);
-    --border-color: rgba(29, 216, 138, 0.1);
+    --border-color: rgba(29, 216, 138, 0.2);
     --accent-color: #1dd88a;
+    --btn-bgc: #0a0a0a;
+    --btn-color: #f0f0f0;
     --text-color-default: #333333;
     --shadow: var(--shadow-medium);
-    --border-thin: 1px solid rgba(0, 0, 0, 0.1);
-    --border-thick: 2px solid rgba(0, 0, 0, 0.1);
+    --border-thin: 1px solid var(--border-color);
+    --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -288,12 +312,14 @@ body {
     --secondary-bgc: #ffffe8;
     --content-bgc: #fff2df;
     --accent-overlay: rgba(255, 168, 50, 0.5);
-    --border-color: rgba(243, 158, 39, 0.1);
+    --border-color: rgba(243, 158, 39, 0.2);
     --accent-color: #f39e27;
+    --btn-bgc: #0a0a0a;
+    --btn-color: #f0f0f0;
     --text-color-default: #333333;
     --shadow: var(--shadow-medium);
-    --border-thin: 1px solid rgba(0, 0, 0, 0.1);
-    --border-thick: 2px solid rgba(0, 0, 0, 0.1);
+    --border-thin: 1px solid var(--border-color);
+    --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid rgba(0, 0, 0, 0.1);
 }
 
