@@ -333,13 +333,22 @@
   },
   {
     "keywords": [
+      "fun fact",
+      "fact"
+    ],
+    "response": [
+      "🧠 Art fact: The human eye can distinguish about 10 million different colors! That's why digital art offers infinite creative possibilities. KyuArtz harnesses this spectrum in every piece!",
+      "💡 Did you know? The oldest known cave paintings are over 40,000 years old! Art has always been fundamental to human expression - just like what we create at KyuArtz today!",
+      "🎨 Creative fact: Leonardo da Vinci wrote backwards (mirror writing) in most of his notebooks! Artists have always found unique ways to express themselves.",
+      "🖥️ Digital art fact: The first computer-generated art was created in 1957! We've come so far - now we can create entire worlds with just pixels and imagination!",
+      "🌈 Color psychology: Blue is the world's most popular color, associated with trust and creativity - perfect for art studios like ours!"
+    ]
+  },
+  {
+    "keywords": [
       "price",
       "pricing",
-      "cost",
-      "how much",
-      "expensive",
-      "cheap",
-      "affordable"
+      "cost"
     ],
     "response": [
       "💰 You can find all pricing information on the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Sheet</a>! Prices vary based on complexity and style. What type of artwork are you thinking about? 🎨",
@@ -352,7 +361,7 @@
       "portrait"
     ],
     "response": [
-      "If you're interested in ordering a portait art from kyuartz, this are the current prices: <br><br> PORTRAIT(Semi Realism): <ul><li>Fully Rendered + Background $50.00,</li><br><br> <li>Fully Rendered $30.00,</li><br><br> <li>Grayscale $25.00,</li><br><br> <li>Lineart $15.00.</li></ul> <br><br> PORTRAIT(Anime Style): <ul><li>Fully Rendered + Background $30.00,</li><br><br> <li>Fully Rendered $20.00,</li><br><br> <li>Grayscale $15.00,</li><br><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a portait art from kyuartz, this are the latest prices: <br><br> PORTRAIT(Semi Realism): <ul><li>Fully Rendered + Background $50.00.</li><br> <li>Fully Rendered $30.00.</li><br> <li>Grayscale $25.00.</li><br> <li>Lineart $15.00.</li></ul> <br><br> PORTRAIT(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
@@ -361,7 +370,7 @@
       "full body"
     ],
     "response": [
-      "If you're interested in ordering a full body art from kyuartz, this are the current prices: <br><br> FULL BODY(Semi Realism): <ul><li>Fully Rendered + Background $100.00,</li><br><br> <li>Fully Rendered $55.00,</li><br><br> <li>Grayscale $35.00,</li><br><br> <li>Lineart $25.00.</li></ul> <br><br> FULL BODY(Anime Style): <ul><li>Fully Rendered + Background $75.00,</li><br><br> <li>Fully Rendered $45.00,</li><br><br> <li>Grayscale $25.00,</li><br><br> <li>Lineart $19.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a full body art from kyuartz, this are the latest prices: <br><br> FULL BODY(Semi Realism): <ul><li>Fully Rendered + Background $100.00.</li><br> <li>Fully Rendered $55.00.</li><br> <li>Grayscale $35.00.</li><br> <li>Lineart $25.00.</li></ul> <br><br> FULL BODY(Anime Style): <ul><li>Fully Rendered + Background $75.00.</li><br> <li>Fully Rendered $45.00.</li><br> <li>Grayscale $25.00.</li><br> <li>Lineart $19.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
@@ -370,7 +379,7 @@
       "chibi"
     ],
     "response": [
-      "If you're interested in ordering a chibi art from kyuartz, this are the current prices: <br><br> CHIBI: <ul><li>Fully Rendered + Background $25.00,</li><br><br> <li>Fully Rendered $19.00,</li><br><br> <li>Grayscale $15.00,</li><br><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a chibi art from kyuartz, this are the latest prices: <br><br> CHIBI: <ul><li>Fully Rendered + Background $25.00.</li><br> <li>Fully Rendered $19.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
@@ -379,7 +388,7 @@
       "emote"
     ],
     "response": [
-      "If you're interested in ordering a custom emote art from kyuartz, this are the current prices: <br><br> CUSTOM EMOTE: <ul><li>Fully Rendered + Background $15.00,</li><br><br> <li>Fully Rendered $10.00,</li><br><br> <li>Grayscale $5.00,</li><br><br> <li>Lineart $3.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a custom emote art from kyuartz, this are the latest prices: <br><br> CUSTOM EMOTE: <ul><li>Fully Rendered + Background $15.00.</li><br> <li>Fully Rendered $10.00.</li><br> <li>Grayscale $5.00.</li><br> <li>Lineart $3.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
@@ -390,7 +399,7 @@
       "background"
     ],
     "response": [
-      "If you're interested in ordering a landscape & background art from kyuartz, this are the current prices: <br><br> LANDSCAPE & BACKGROUND: <ul><li>Fully Rendered + Background $150.00,</li><br><br> <li>Fully Rendered $120.00,</li><br><br> <li>Grayscale $65.00,</li><br><br> <li>Lineart $45.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a landscape & background art from kyuartz, this are the latest prices: <br><br> LANDSCAPE & BACKGROUND: <ul><li>Fully Rendered + Background $150.00.</li><br> <li>Fully Rendered $120.00.</li><br> <li>Grayscale $65.00.</li><br> <li>Lineart $45.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
