@@ -49,9 +49,8 @@
       "price"
     ],
     "response": [
-      "💰 Pricing guide: Sketches ($25-50), Line art ($50-100), Colored illustrations ($75-250), Full rendered pieces ($150-500+). Final cost depends on complexity, style, and timeline. Free consultations available!",
-      "Transparent pricing: We work within your budget while maintaining quality. Factors include: artwork complexity, style preference, size, commercial usage, and deadline. Let's discuss your project!",
-      "Investment in creativity: 💎 Premium quality at fair prices, 🎁 Package deals for multiple pieces, 🏃‍♂️ Rush order options available, 📈 Commercial licensing rates discussed separately!"
+      "💰 You can find all pricing information on the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Sheet</a>! Prices vary based on complexity and style. What type of artwork are you thinking about? 🎨",
+      "💵 Pricing depends on the type and complexity of the artwork! Check the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a> for detailed rates. 📊"
     ]
   },
   {
@@ -127,7 +126,9 @@
       "howdy nigga",
       "f u",
       "fuck",
-      "fuck you"
+      "fuck you",
+      "kill",
+      "die"
     ],
     "custom": true,
     "response": [
@@ -263,9 +264,11 @@
       "definitely",
       "of course",
       "yep",
+      "yup",
       "yeah",
       "okay",
-      "ok"
+      "ok",
+      "k"
     ],
     "response": [
       "I'm glad to hear that! If you have any questions or need assistance, feel free to ask!",
@@ -280,7 +283,9 @@
       "awesome",
       "nice",
       "fantastic",
-      "incredible"
+      "incredible",
+      "wonderful",
+      "great"
     ],
     "response": [
       "That's great to hear! 😊 If you have any questions or need assistance, feel free to ask!",
@@ -346,22 +351,21 @@
   },
   {
     "keywords": [
-      "price",
-      "pricing",
-      "cost"
+      "how much for the headshot",
+      "headshot",
+      "portrait"
     ],
     "response": [
-      "💰 You can find all pricing information on the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Sheet</a>! Prices vary based on complexity and style. What type of artwork are you thinking about? 🎨",
-      "💵 Pricing depends on the type and complexity of the artwork! Check the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a> for detailed rates. 📊"
+      "If you're interested in ordering a headshot art from kyuartz, this are the latest prices: <br><br> HEADSHOT(Semi Realism): <ul><li>Fully Rendered + Background $50.00.</li><br> <li>Fully Rendered $25.00.</li><br> <li>Grayscale $20.00.</li><br> <li>Lineart $15.00.</li></ul> <br><br> HEADSHOT(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
     "keywords": [
-      "how much for the portrait",
-      "portrait"
+      "how much for the bust up",
+      "bust up"
     ],
     "response": [
-      "If you're interested in ordering a portait art from kyuartz, this are the latest prices: <br><br> PORTRAIT(Semi Realism): <ul><li>Fully Rendered + Background $50.00.</li><br> <li>Fully Rendered $30.00.</li><br> <li>Grayscale $25.00.</li><br> <li>Lineart $15.00.</li></ul> <br><br> PORTRAIT(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a bust up art from kyuartz, this are the latest prices: <br><br> BUST UP(Semi Realism): <ul><li>Fully Rendered + Background $60.00.</li><br> <li>Fully Rendered $35.00.</li><br> <li>Grayscale $30.00.</li><br> <li>Lineart $25.00.</li></ul> <br><br> BUST UP(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
     ]
   },
   {
