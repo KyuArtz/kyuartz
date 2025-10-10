@@ -1,7 +1,13 @@
 .nav-buttons {
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+
+.action-btn {
+    display: flex;
     gap: 0.5rem;
 }
 

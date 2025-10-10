@@ -66,25 +66,29 @@
     <div class="chat-panel">
       <div class="chat-header">
         <nav class="nav-buttons" id="navButtons" aria-label="Dialogue navigation">
-          <select class="model-selector" id="modelSelector" onchange="changeModel(this.value)">
-            <option value="local">Local Model</option>
-            <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
-            <option value="gpt-4">GPT-4</option>
-            <option value="claude-2">Claude 2</option>
-          </select>
+          <div class="action-btn">
+            <select class="model-selector" id="modelSelector" onchange="changeModel(this.value)">
+              <option value="local">Local Model</option>
+              <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+              <option value="gpt-4">GPT-4</option>
+              <option value="claude-2">Claude 2</option>
+            </select>
+          </div>
 
-          <button type="button" onclick="window.history.back()" title="Close">
+          <div class="action-btn">
+            <button type="button" onclick="window.history.back()" title="Close">
             <i class="fa-solid fa-xmark"></i>
-          </button>
-          <button type="button" id="historyToggle" title="Conversation History">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-          </button>
-          <button type="button" id="exportChat" title="Export Chat">
-            <i class="fa-solid fa-download"></i>
-          </button>
-          <button type="button" id="openPreferences" title="Preferences">
-            <i class="fa-solid fa-gear"></i>
-          </button>
+            </button>
+            <button type="button" id="historyToggle" title="Conversation History">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </button>
+            <button type="button" id="exportChat" title="Export Chat">
+              <i class="fa-solid fa-download"></i>
+            </button>
+            <button type="button" id="openPreferences" title="Preferences">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+          </div>
         </nav>
       </div>
 
