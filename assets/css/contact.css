@@ -46,7 +46,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     flex-wrap: wrap;
 }
 
@@ -61,18 +61,18 @@
     border: var(--border-thick);
     border-radius: var(--border-radius-custom);
     color: var(--text-color-default);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
     min-width: 80px;
 }
 
 .payment-method img {
-    border-radius: var(--border-radius-rounded);
+    border-radius: var(--border-radius-circle);
 }
 
 .payment-method:hover {
     background: var(--accent-overlay);
     border-color: var(--accent-color);
-    transform: translateY(-3px);
+    transform: var(--translateY-up);
 }
 
 .payment-method img {
@@ -82,8 +82,7 @@
 }
 
 .payment-method span {
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-size: var(--font-size-xxs);
 }
 
 .payment-method {
@@ -142,15 +141,15 @@
     align-items: center;
     gap: 0.9rem;
     padding: 15px;
-    background: var(--gradient-bgc);
+    background: var(--content-bgc);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius-custom);
     border-left: var(--border-extra-thick);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .detail-item i {
-    font-size: 1.2rem;
+    font-size: var(--font-size-sm);
     color: var(--accent-color);
     min-width: 20px;
 }
@@ -165,7 +164,7 @@
 }
 
 .detail-content .label {
-    font-weight: bold;
+
     color: var(--accent-color);
     display: block;
     margin-bottom: 0.2rem;
@@ -173,7 +172,7 @@
 
 .contact-link {
     color: var(--text-color-default);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .contact-link:hover {
@@ -187,11 +186,10 @@
 }
 
 .info-card {
-    background: var(--gradient-bgc);
     border-radius: var(--border-radius-custom);
     padding: 1.5rem;
     border: var(--border-thin);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .info-card-header {
@@ -203,7 +201,7 @@
 
 .info-card-header i {
     color: var(--accent-color);
-    font-size: 1.1rem;
+    font-size: var(--font-size-sm);
 }
 
 .info-card-header h3 {
@@ -242,8 +240,8 @@
     align-items: center;
     gap: 0.5rem;
     color: var(--accent-color);
-    font-weight: bold;
-    transition: all 0.3s ease;
+
+    transition: var(--transition-ease);
 }
 
 .info-link:hover {
@@ -267,7 +265,7 @@
     padding: 2.5rem;
     color: inherit;
     height: 100%;
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .mascot-image {
@@ -280,7 +278,7 @@
     height: 120px;
     border-radius: var(--border-radius-rounded);
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-    animation: float 3s ease-in-out infinite;
+    animation: floatY 3s ease-in-out infinite;
 }
 
 .mascot-link {
@@ -297,7 +295,7 @@
     bottom: 0;
     background: radial-gradient(circle at center, var(--accent-overlay) 0%, transparent 70%);
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: var(--transition-ease);
 }
 
 .mascot-link:hover::before {
@@ -312,7 +310,7 @@
     margin: 0 0 1rem 0;
     color: var(--accent-color);
     font-family: var(--my-font);
-    font-size: 1.3rem;
+    font-size: var(--font-size-sm);
 }
 
 .mascot-info p {
@@ -327,7 +325,7 @@
     gap: 0.5rem;
     background: var(--btn-bgc);
     color: var(--btn-color);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
     border: var(--border-thick);
     padding: 10px;
     border-radius: var(--border-radius-rounded);
@@ -405,10 +403,10 @@
     background: none;
     border: none;
     color: var(--accent-color);
-    font-size: 1.5rem;
+    font-size: var(--close-btn-size);
     padding: 0.5rem;
     border-radius: var(--border-radius-custom);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .modal-body {
@@ -425,16 +423,14 @@
 
 .qr-tab {
     flex: 1;
-    padding: 0.9rem;
+    padding: 0.75rem 1.5rem;
     border: var(--border-thick);
     border-radius: var(--border-radius-custom);
-    color: var(--text-color-default);
-    border: var(--border-thick);
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
+    color: var(--accent-color);
+    font-size: var(--btn-font-size);
+    transition: var(--transition-ease);
+    position: relative;
+    overflow: hidden;
 }
 
 .qr-tab:hover {
@@ -489,15 +485,9 @@
     border-radius: var(--border-radius-custom);
 }
 
-.placeholder-qr i {
-    font-size: 3rem;
-    color: var(--accent-color);
-}
-
 .placeholder-qr p {
     margin: 0;
-    font-weight: bold;
-    font-size: 1.1rem;
+    font-size: var(--font-size-xs);
 }
 
 .placeholder-qr small {
@@ -513,7 +503,7 @@
 }
 
 .form-header h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-md);
     margin-bottom: 10px;
     color: var(--text-color-default);
     font-family: var(--my-font);
@@ -534,21 +524,43 @@
     gap: 0.3rem;
 }
 
-.tab-button {
+.tab-btn {
     flex: 1;
-    padding: 0.9rem 1rem;
+    padding: 0.75rem 1.5rem;
     border: var(--border-thick);
-    color: var(--text-color-default);
     border-radius: var(--border-radius-custom);
-    transition: all 0.3s ease;
-    font-weight: 500;
+    color: var(--accent-color);
+    font-size: var(--btn-font-size);
+    transition: var(--transition-ease);
+    position: relative;
+    overflow: hidden;
 }
 
-.tab-button:hover {
+.tab-btn::after,
+.qr-tab::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--default-overlay);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition-ease);
+    pointer-events: none;
+}
+
+.tab-btn:hover::after,
+.qr-tab:hover::after {
+    transform: scaleX(1);
+}
+
+.tab-btn:hover {
     border: 2px solid var(--accent-color);
 }
 
-.tab-button.active {
+.tab-btn.active {
     background: var(--btn-bgc);
     color: var(--btn-color);
 }
@@ -568,8 +580,7 @@
     gap: 0.5rem;
     padding: 0.5rem 0.9rem;
     border-radius: 20px;
-    font-weight: bold;
-    font-size: 0.9rem;
+    font-size: var(--font-size-xxs);
     text-transform: uppercase;
 }
 
@@ -608,9 +619,8 @@
 label {
     display: block;
     margin-bottom: 0.7rem;
-    font-weight: bold;
     color: var(--accent-color);
-    font-size: 0.95rem;
+    font-size: var(--font-size-xs);
 }
 
 .required::after {
@@ -628,8 +638,8 @@ textarea {
     border-radius: var(--border-radius-custom);
     background: var(--primary-bgc);
     color: var(--text-color-default);
-    font-size: 1rem;
-    transition: all 0.3s ease;
+    font-size: var(--font-size-xs);
+    transition: var(--transition-ease);
     outline: none;
 }
 
@@ -638,7 +648,7 @@ input[type="email"]:focus,
 select:focus,
 textarea:focus {
     border-color: var(--accent-color);
-    transform: translateY(-2px);
+    transform: var(--translateY-up);
 }
 
 input.valid {
@@ -662,7 +672,7 @@ textarea {
     padding: 2rem;
     text-align: center;
     background: var(--content-bgc);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
     position: relative;
 }
 
@@ -682,7 +692,7 @@ textarea {
 }
 
 .file-upload-icon {
-    font-size: 3rem;
+    font-size: var(--font-size-xl);
     color: var(--accent-color);
     margin-bottom: 1rem;
 }
@@ -724,14 +734,14 @@ textarea {
     margin: 0.5rem 0;
     border-radius: var(--border-radius-custom);
     border: var(--border-thick);
-    font-size: 0.8rem;
+    font-size: var(--font-size-xxs);
     background: var(--error-bg);
     width: 70%;
 }
 
 .error-message {
     color: var(--error);
-    font-size: 0.85rem;
+    font-size: var(--font-size-xxs);
     margin-top: 0.5rem;
     display: none;
     animation: fadeIn 0.3s ease;
@@ -739,7 +749,7 @@ textarea {
 
 .success-message {
     color: var(--success);
-    font-size: 0.85rem;
+    font-size: var(--font-size-xxs);
     margin-top: 0.5rem;
     display: none;
     animation: fadeIn 0.3s ease;
@@ -747,7 +757,7 @@ textarea {
 
 .character-count {
     text-align: right;
-    font-size: 0.8rem;
+    font-size: var(--font-size-xxs);
     color: var(--accent-color);
     margin-top: 0.5rem;
 }
@@ -777,18 +787,13 @@ textarea {
     accent-color: var(--accent-color);
 }
 
-.checkbox-group label {
-    margin: 0;
-    line-height: 1.4;
-}
-
 .info-button {
     color: var(--accent-color);
     border: none;
     width: 20px;
     height: 20px;
     border-radius: var(--border-radius-custom);
-    font-size: 1.1rem;
+    font-size: var(--font-size-xs);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -806,10 +811,10 @@ textarea {
     background: var(--btn-bgc);
     color: var(--btn-color);
     border: var(--border-thick);
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     border-radius: var(--border-radius-custom);
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
+    font-size: var(--btn-font-size);
+    transition: var(--transition-ease);
     position: relative;
     overflow: hidden;
     min-width: 200px;
@@ -821,18 +826,18 @@ textarea {
 }
 
 .submit-btn:hover:not(:disabled) {
-    transform: translateY(-2px);
+    transform: var(--translateY-up);
 }
 
 .submit-btn:disabled {
     opacity: 0.3;
-    cursor: not-allowed;
     transform: none;
+    pointer-events: none;
 }
 
 .form-footer {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: var(--font-size-xxs);
     color: var(--accent-color);
 }
 
@@ -844,7 +849,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: var(--font-size-xxs);
     color: var(--accent-color);
 }
 
@@ -860,7 +865,7 @@ textarea {
 
 .progress-fill {
     height: 100%;
-    background: var(--default-overlay);
+    background: var(--accent-color);
     width: 0%;
     transition: all 0.5s ease;
     border-radius: var(--border-radius-custom);

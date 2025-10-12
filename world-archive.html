@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz Studio | Gallery</title>
-  <meta name="description" content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
+  <title>KyuArtz Studio | World Archives</title>
+  <meta name="description" content="Explore Terra and Eldoria — the imaginative worlds of KyuArtz Studio filled with rich lore, diverse characters, and evolving landscapes shaped by art and storytelling.">
   <meta name="keywords" content="KyuArtz Studio">
   <meta name="author" content="KyuArtz">
   <meta name="theme-color" content="var(--color)">
@@ -18,10 +18,10 @@
   <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-title" content="KyuArtz">
   <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
-  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/gallery">
+  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/world-archive">
   <link rel="preconnect" href="https://kit.fontawesome.com">
   <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/world-archive.css">
   <link rel="stylesheet" href="assets/css/nav.css">
   <link rel="stylesheet" href="assets/css/popup.css">
   <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
@@ -29,23 +29,23 @@
   <script src="assets/js/welcome.js" defer></script>
   <script src="assets/js/preferences.js" defer></script>
   <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/gallery.js" defer></script>
-  <meta property="og:title" content="KyuArtz Studio | gallery">
-  <meta property="og:description" content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
+  <script src="assets/js/worldArchive.js" defer></script>
+  <meta property="og:title" content="KyuArtz Studio | World Archives">
+  <meta property="og:description" content="Explore Terra and Eldoria — the imaginative worlds of KyuArtz Studio filled with rich lore, diverse characters, and evolving landscapes shaped by art and storytelling.">
   <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta property="og:image:alt" content="KyuArtz logo">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/gallery">
+  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/world-archive">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz Studio | gallery">
-  <meta name="twitter:description" content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
+  <meta name="twitter:title" content="KyuArtz Studio | World Archives">
+  <meta name="twitter:description" content="Explore Terra and Eldoria — the imaginative worlds of KyuArtz Studio filled with rich lore, diverse characters, and evolving landscapes shaped by art and storytelling.">
   <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
   <meta name="twitter:image:alt" content="KyuArtz logo and branding">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "url": "https://kyuartz.github.io/kyuartz/gallery",
+      "url": "https://kyuartz.github.io/kyuartz/world-archive",
       "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
       "name": "KyuArtz Studio"
     }
@@ -184,56 +184,44 @@
   </header>
 
   <section class="hero">
-    <h1>Discover Art</h1>
-    <p>Explore my artistic journey through various styles and mediums</p>
-    
-    <div class="category-filters">
-      <button class="filter-btn active" data-category="all">
-        <i class="fa-solid fa-filter"></i> All Artworks
-      </button>
-      <button class="filter-btn" data-category="semi-realism">
-        <i class="fa-solid fa-filter"></i> Semi Realism
-      </button>
-      <button class="filter-btn" data-category="grayscale">
-        <i class="fa-solid fa-filter"></i> Grayscale
-      </button>
-      <button class="filter-btn" data-category="anime-style">
-        <i class="fa-solid fa-filter"></i> Anime Style
-      </button>
-      <button class="filter-btn" data-category="landscape">
-        <i class="fa-solid fa-filter"></i> Landscape
-      </button>
+    <h1>Kyuartz World Archives</h1>
+    <p>Discover the evolving worlds of Terra and Eldoria — where stories, people, and legends come alive.</p>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all"><i class="fas fa-filter"></i> All Worlds</button>
+      <button class="filter-btn" data-filter="terra"><i class="fas fa-filter"></i> World of Terra</button>
+      <button class="filter-btn" data-filter="eldoria"><i class="fas fa-filter"></i> World of Eldoria</button>
     </div>
   </section>
 
-  <main class="gallery-container">
-    <div class="gallery-stats">
-      <div class="stats-info">
-        <span id="showing-count">12</span> of <span id="total-count">12</span> artworks
-      </div>
-      <div class="view-toggle">
-        <button class="view-btn active" data-view="grid" title="Grid View">⊞</button>
-        <button class="view-btn" data-view="masonry" title="Masonry View">⊡</button>
-      </div>
-    </div>
-
-    <div class="gallery grid-view" id="gallery"></div>
-  </main>
-
-  <div class="lightbox-overlay" id="lightbox">
-    <div class="lightbox-container">
-      <img class="lightbox-image" id="lightbox-image" src="" alt="">
-      
-      <div class="lightbox-controls">
-        <button class="lightbox-btn" id="close-lightbox" title="Close"><i class="fas fa-times"></i></button>
+  <div class="world-section">
+    <div class="world-grid">
+      <div class="world-card" data-category="terra">
+        <div class="card-content">
+          <h3 class="card-title">World of Terra</h3>
+          <div class="card-description">Once a beacon of progress and innovation, Terra now stands as a scarred world of forgotten cities and shattered technologies. What remains are echoes of its golden age—buried beneath ruins left by endless wars and the plagues that followed. Yet, among the desolation, remnants of brilliance still flicker, waiting to be rediscovered.</div>
+          <div class="card-actions">
+            <a href="character-codex.html" class="btn btn-primary"><i class="fas fa-user"></i> View Characters</a>
+            <a href="maintenance.html" class="btn btn-secondary"><i class="fas fa-map"></i> View Map</a>
+          </div>
+        </div>
+        <div class="card-image">
+          <img src="https://imgs.search.brave.com/XajMOu1JHvPP_FNanz7ju4E29XXcv-HiaUq_B5cOyV4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzExLzU1LzE5LzYw/LzM2MF9GXzExNTUx/OTYwOTFfa1RoaExi/dXgzdXM1NFo4V2Fi/UFhLYk1UZU82SElD/eUEuanBn" alt="">
+        </div>
       </div>
 
-      <button class="lightbox-nav lightbox-prev" id="prev-btn" title="Previous"><i class="fas fa-chevron-left"></i></button>
-      <button class="lightbox-nav lightbox-next" id="next-btn" title="Next"><i class="fas fa-chevron-right"></i></button>
-
-      <div class="lightbox-info">
-        <div class="info-title" id="lightbox-title">Artwork Title</div>
-        <div class="info-category" id="lightbox-category">Category</div>
+      <div class="world-card" data-category="eldoria">
+        <div class="card-content">
+          <h3 class="card-title">World of Eldoria</h3>
+          <div class="card-description">A realm once united by magic, nature, and diverse races living in harmony—Eldoria now teeters on the edge of discord. Ancient grudges and fractured alliances have sundered its lands, turning beauty into battlegrounds. Still, whispers of the old harmony linger, calling forth those who would restore its balance.</div>
+          <div class="card-actions">
+            <a href="character-codex1.html" class="btn btn-primary"><i class="fas fa-user"></i> View Characters</a>
+            <a href="maintenance.html" class="btn btn-secondary"><i class="fas fa-map"></i> View Map</a>
+          </div>
+        </div>
+        <div class="card-image">
+          <img src="https://imgs.search.brave.com/SOEUFrtie3ROp5y0l1s2aguyRDO8esGIY5d0MKbiElE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMx/MjIyMjkzOS92ZWN0/b3IvZmFudGFzeS1z/dHlsZS1tZWRpZXZh/bC1jYXN0bGUtZGln/aXRhbC1pbGx1c3Ry/YXRpb24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPVdIZUhv/Ym9uUHpQUUgxZ0hJ/RGhmZTkwR1UtVVlw/V1piSU1WQ3l2TWhM/YkU9" alt="">
+        </div>
       </div>
     </div>
   </div>

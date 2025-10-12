@@ -1,7 +1,7 @@
 {
     "backgrounds": {
         "comingSoon": {
-            "landscape": "url('assets/images/character-presets/cover/default.gif')",
+            "landscape": "url('assets/images/bg/default.webp')",
             "portrait": "url('')"
         },
         "elishia": {

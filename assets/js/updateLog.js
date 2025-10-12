@@ -1,8 +1,28 @@
 const sampleData = {
     changelog: {
-        version: "1.6.1",
-        last_updated: "2025-09-28T10:00:00Z",
+        version: "1.7.1",
+        last_updated: "2025-10-13T05:34:00Z",
         updates: [
+            {
+                date: "2025-10-13",
+                timestamp: "2025-10-13T05:34:00Z",
+                version: "1.7.1",
+                major: [],
+                minor: [
+                    {
+                        title: "Technical improvements",
+                        description: "Made some overall adjustments and fixes.",
+                        category: "Performance, UI/UX"
+                    },
+                    {
+                        title: "New Content added World Archives",
+                        description: "We've created a new dedicated page for world development, where you can view characters, world maps, and lore. Some portions are still a work in progress.",
+                        category: "Content"
+                    }
+                ],
+                bugfixes: [],
+                upcoming: []
+            },
             {
                 date: "2025-09-28",
                 timestamp: "2025-09-28T10:00:00Z",
@@ -164,7 +184,7 @@ const sampleData = {
         ],
         summary: {
             total_major_updates: 1,
-            total_minor_updates: 13,
+            total_minor_updates: 15,
             total_bugfixes: 1,
             total_upcoming_features: 1,
             primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"]
@@ -375,9 +395,9 @@ function createUpdateCard(update) {
     return `
     <div class="update-card">
         <div class="update-card-header">
+            ${update.timestamp ? `<div class="relative-time">${getRelativeTime(update.timestamp)}</div>` : ''}
             <div class="update-date">${formatDate(update.date)}</div>
             ${update.version ? `<span class="update-version">v${update.version}</span>` : ''}
-            ${update.timestamp ? `<div class="relative-time">${getRelativeTime(update.timestamp)}</div>` : ''}
         </div>
         <div class="update-card-body">
             ${sections.join('')}

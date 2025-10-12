@@ -25,54 +25,82 @@
     margin: 0 auto;
 }
 
-.page-header {
-    background: var(--gradient-bgc);
-    text-align: center;
-    padding: 2rem;
+.hero {
     margin-top: 3.8rem;
+    padding: 2rem;
     text-align: center;
+    background: var(--gradient-bgc);
+    position: relative;
+    overflow: hidden;
     animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
-.page-header h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: var(--my-font);
-    position: relative;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: var(--gradient-bgc);
+    animation: rotate 20s linear infinite;
+    pointer-events: none;
 }
 
-.page-header p {
-    font-size: 1.1rem;
-    margin: 0;
-    position: relative;
+.hero h1 {
+    font-family: var(--my-font);
+    font-size: var(--font-size-xl);
+    color: var(--text-color-default);
+}
+
+.hero p {
+    font-size: var(--font-size-xs);
+    color: var(--text-color-default);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .page-tabs {
     display: flex;
-    gap: .5rem;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    margin: 1.5rem auto 2rem;
+    gap: 0.5rem;
+    margin: 1rem 0;
 }
 
 .tab-button {
-    padding: .9rem 1.25rem;
-    border: 2px solid transparent;
-    color: var(--text-color-default);
+    padding: 0.75rem 1.5rem;
     border: var(--border-thick);
     border-radius: var(--border-radius-custom);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    color: var(--accent-color);
+    font-size: var(--btn-font-size);
+    transition: var(--transition-ease);
     position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: .5rem;
+    overflow: hidden;
+}
+
+.tab-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--default-overlay);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: var(--transition-ease);
+    pointer-events: none;
+}
+
+.tab-button:hover::after {
+    transform: scaleX(1);
 }
 
 .tab-button:hover {
     border: 2px solid var(--accent-color);
     color: var(--text-color-default);
-    transform: translateY(-2px);
+    transform: var(--translateY-up);
 }
 
 .tab-button.active {
@@ -119,8 +147,7 @@
 
 .section-title {
     font-family: var(--my-font);
-    font-size: 1.8rem;
-    font-weight: 800;
+    font-size: var(--font-size-sm);
     color: var(--text-color-default);
     display: inline-flex;
     align-items: center;
@@ -141,8 +168,7 @@
     color: var(--success);
     padding: .5rem 1rem;
     border-radius: var(--border-radius-custom);
-    font-size: .9rem;
-    font-weight: 700;
+    font-size: var(--font-size-xxs);
     box-shadow: var(--shadow);
 }
 
@@ -174,8 +200,7 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     gap: .75rem;
-    font-size: 1.15rem;
-    font-weight: 800;
+    font-size: var(--font-size-sm);
     margin: 0;
     color: var(--text-color-default);
 }
@@ -218,9 +243,8 @@
     border-radius: var(--border-radius-custom);
     outline: none;
     background: var(--primary-bgc);
-    font-weight: 600;
     color: var(--text-color-default);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .faq-search:focus {
@@ -232,7 +256,6 @@
     padding: 0 .35rem;
     margin: 0 0.35rem;
     border-radius: var(--border-radius-custom);
-    font-weight: 700;
 }
 
 .highlight-box {
@@ -245,7 +268,6 @@
 
 .highlight-box p {
     color: var(--error);
-    font-weight: 700;
     margin: 0;
 }
 
@@ -277,15 +299,13 @@
     border: 2px solid var(--accent-color);
     color: var(--accent-color);
     border-radius: var(--border-radius-custom);
-    font-weight: 800;
-    font-size: .9rem;
+    font-size: var(--font-size-sm);
     margin-bottom: .75rem;
 }
 
 .term-title {
     color: var(--accent-color);
-    font-size: 1.05rem;
-    font-weight: 800;
+    font-size: var(--font-size-xs);
     margin-bottom: .4rem;
 }
 
@@ -304,8 +324,7 @@
 
 .policy-section h4 {
     color: var(--accent-color);
-    font-size: 1.05rem;
-    font-weight: 800;
+    font-size: var(--font-size-xs);
     margin: 0 0 .5rem;
     display: inline-flex;
     gap: .5rem;
@@ -343,7 +362,7 @@
 
 .contact-card h3 {
     margin: 0 0 .75rem;
-    font-size: 1.4rem;
+    font-size: var(--font-size-sm);
 }
 
 .contact-card p {
@@ -360,15 +379,15 @@
     font-family: var(--my-font);
     border: var(--border-thick);
     border-radius: var(--border-radius-custom);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .contact-link:hover {
-    transform: translateY(-2px);
+    transform: var(--translateY-up);
 }
 
 @media (max-width: 768px) {
-    .page-header h1 {
+    .hero h1 {
         font-size: 2rem;
     }
 

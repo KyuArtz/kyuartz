@@ -6,7 +6,7 @@ header {
     border-bottom: var(--border-thin);
     color: var(--text-color-default);
     top: 0;
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
     z-index: 100000;
 }
 
@@ -228,7 +228,7 @@ a.more-menu-links {
     height: 3px;
     margin: 0.3rem auto;
     background: var(--accent-color);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 #upBtn {
@@ -245,6 +245,10 @@ a.more-menu-links {
     box-shadow: var(--shadow);
     animation: bounce 0.9s infinite;
     z-index: 1;
+}
+
+#upBtn:hover {
+    animation: bounce 0.3s infinite;
 }
 
 @media screen and (max-width: 978px) {
@@ -284,7 +288,7 @@ a.more-menu-links {
         gap: 3rem;
         padding: 0;
         margin: 0;
-        transition: all 0.3s ease;
+        transition: var(--transition-ease);
         z-index: 1;
     }
 
@@ -305,12 +309,13 @@ a.more-menu-links {
     position: fixed;
     top: 61px;
     left: 0;
+    padding: 1rem;
     background: var(--secondary-bgc);
     display: flex;
     flex-direction: row;
     justify-content: center;
     min-width: 100%;
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
     visibility: hidden;
     opacity: 0;
 }
@@ -399,10 +404,10 @@ footer {
 }
 
 .footer-section a {
-    color: var(--accent-color);
+    color: var(--text-color-default);
     display: block;
     margin-bottom: 0.5rem;
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
 }
 
 .footer-section a:hover {
@@ -428,7 +433,7 @@ footer {
     border-radius: var(--border-radius-custom);
     aspect-ratio: 1/1;
     color: var(--accent-color);
-    transition: all 0.3s ease;
+    transition: var(--transition-ease);
     box-shadow: var(--shadow);
     overflow: hidden;
 }
@@ -465,7 +470,6 @@ footer {
         justify-content: flex-start;
         height: 100vh;
         min-height: 100vh;
-        padding: 0 0 4rem 0;
         overflow-y: auto;
     }
 

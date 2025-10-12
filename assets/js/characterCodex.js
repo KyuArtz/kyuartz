@@ -21,7 +21,7 @@ function updateBackground() {
 
     setTimeout(() => {
         const bg = characterBackgrounds[currentCharacter]?.[backgroundType]
-            ?? "url('assets/images/character-presets/cover/default.gif')";
+            ?? "url('assets/images/bg/default.webp')";
         characterContainer.style.backgroundImage = bg;
         characterContainer.style.transition = "opacity 0.5s ease";
         characterContainer.style.opacity = 1;
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Always use the default background until a character is selected
     if (characterContainer) {
-        characterContainer.style.backgroundImage = characterBackgrounds.comingSoon.landscape || "url('assets/images/character-presets/cover/default.gif')";
+        characterContainer.style.backgroundImage = characterBackgrounds.comingSoon.landscape || "url('assets/images/bg/default.webp')";
     }
 
     // Load JSON so data is ready for clicks later, but DO NOT auto-select the first card
@@ -313,7 +313,7 @@ function hideCharacterInfo() {
     }
     const characterContainer = document.querySelector('.character-background');
     if (characterContainer) {
-        characterContainer.style.backgroundImage = "url('assets/images/character-presets/cover/default.gif')";
+        characterContainer.style.backgroundImage = "url('assets/images/bg/default.webp')";
     }
     resetCharacterCardStates();
     currentCharacter = null;

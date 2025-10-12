@@ -440,7 +440,6 @@ p.title {
 }
 
 .character-info strong {
-    background: var(--default-overlay);
     color: var(--accent);
     border: 1px solid var(--accent);
     border-left: 5px solid var(--accent);
@@ -460,7 +459,6 @@ p.title {
 }
 
 .character-info info {
-    background: var(--default-overlay);
     border: var(--border-thin);
     border-radius: var(--border-radius-custom);
     padding: 0.4rem 0.6rem;
@@ -472,7 +470,7 @@ p.title {
     gap: 0.3rem;
     border-radius: var(--border-radius-custom);
     text-align: justify;
-    line-height: 1.7;
+    line-height: var(--line-height);
 }
 
 .character-info-wrapper {
@@ -492,7 +490,7 @@ p.title {
 }
 
 #background.info-section {
-    line-height: 1.7;
+    line-height: var(--line-height);
     text-align: justify;
 }
 

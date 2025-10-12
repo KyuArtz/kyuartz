@@ -137,23 +137,6 @@ function parallaxEffect() {
   });
 }
 
-// Enhanced video card interactions
-function enhanceVideoCards() {
-  const videoCards = document.querySelectorAll('.video-card');
-
-  videoCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-      card.style.transform = 'translateY(-15px) rotateX(5deg)';
-      card.style.boxShadow = '0 40px 80px rgba(0, 0, 0, 0.5)';
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = 'translateY(0) rotateX(0deg)';
-      card.style.boxShadow = 'var(--shadow)';
-    });
-  });
-}
-
 // Keyboard navigation
 function addKeyboardNavigation() {
   document.addEventListener('keydown', (e) => {
@@ -170,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
   new ModernSlideshow();
   smoothScroll();
   parallaxEffect();
-  enhanceVideoCards();
   addKeyboardNavigation();
 
   // Observe elements for animations

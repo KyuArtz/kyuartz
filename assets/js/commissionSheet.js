@@ -1,11 +1,11 @@
 // Filter functionality
-const filterTabs = document.querySelectorAll('.filter-tab');
+const categoryFilters = document.querySelectorAll('.filter-btn');
 const commissionCards = document.querySelectorAll('.commission-card');
 
-filterTabs.forEach(tab => {
+categoryFilters.forEach(tab => {
     tab.addEventListener('click', () => {
         // Remove active class from all tabs
-        filterTabs.forEach(t => t.classList.remove('active'));
+        categoryFilters.forEach(t => t.classList.remove('active'));
         // Add active class to clicked tab
         tab.classList.add('active');
 

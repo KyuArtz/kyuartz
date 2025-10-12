@@ -63,7 +63,7 @@ body {
     --border-radius-circle: 50%;
     --border-radius-rounded: 50px;
     --border-radius-min-rounded: 18px;
-    --border-radius-custom: 10px;
+    --border-radius-custom: 18px;
     --border-thin: 1px solid var(--border-color);
     --border-thick: 2px solid var(--border-color);
     --border-extra-thick: 3px solid var(--border-color);
@@ -81,6 +81,43 @@ body {
     --shadow-light: 0 0 2px rgba(0, 0, 0, 0.9);
     --shadow-medium: 0 0 3px rgba(0, 0, 0, 0.9);
     --shadow-heavy: 0 0 5px rgba(0, 0, 0, 0.9);
+    --text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+
+    /* Hover Effects */
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.3);
+    --shadow-hover-light: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --highlight-hover: 0 0 10px rgba(255, 255, 255, 0.6);
+
+    /* Font Sizes */
+    --font-size-xxl: 3.5rem;
+    --font-size-xl: 3rem;
+    --font-size-lg: 2.5rem;
+    --font-size-md: 2rem;
+    --font-size-sm: 1.3rem;
+    --font-size-xs: 1rem;
+    --font-size-xxs: 0.9rem;
+
+    /*Button sizes*/
+    --btn-font-size: 0.9rem;
+    --close-btn-size: 1.5rem;
+
+    /* Font Weights */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Spacing Scale */
+    --line-height: 1.7;
+    --letter-spacing: 0.5px;
+
+    /* Transformations */
+    --transition-ease: all 0.3s ease;
+    --translateY-up: translateY(-3px);
+    --translateY-down: translateY(3px);
+    --scale-up: scale(1.1);
+    --scale-slight-up: scale(1.02);
+    --scale-down: scale(0.9);
 
     /* Default Theme Variables */
     --gradient-bgc: radial-gradient(circle at 30% 70%, rgba(255, 0, 0, 0.2) 0%, transparent 50%),
@@ -89,7 +126,7 @@ body {
     --secondary-bgc: #141414;
     --content-bgc: #1f1f1f;
     --accent-overlay: rgba(64, 64, 64, 0.5);
-    --default-overlay: rgba(10, 10, 10, 0.5);
+    --default-overlay: linear-gradient(135deg, rgb(0, 0, 0, 0.5) 0%, rgb(255, 255, 255, 0.2) 100%);
     --accent-color: #9e9e9e;
     --btn-bgc: #f0f0f0;
     --btn-color: #0a0a0a;
@@ -328,23 +365,13 @@ body {
    ============================================================================= */
 
 /* Rotation Animations */
-@keyframes rotateCounterclockwise {
+@keyframes rotate {
     from {
-        transform: rotate(0turn);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(-1turn);
-    }
-}
-
-@keyframes rotateClockwise {
-    from {
-        transform: rotate(0turn);
-    }
-
-    to {
-        transform: rotate(1turn);
+        transform: rotate(360deg);
     }
 }
 
@@ -532,7 +559,17 @@ body {
     }
 }
 
-@keyframes float {
+@keyframes floatX {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes floatY {
 
     0%,
     100% {
@@ -642,6 +679,16 @@ body {
 
     100% {
         transform: translateX(100%) rotate(40deg);
+    }
+}
+
+@keyframes shimmer-load {
+    0% {
+        background-position: -200% 0;
+    }
+
+    100% {
+        background-position: 200% 0;
     }
 }
 

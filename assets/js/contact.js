@@ -121,7 +121,7 @@ class CommissionForm {
 
     initTabSwitching() {
         // Set up tab switching functionality
-        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabButtons = document.querySelectorAll('.tab-btn');
         tabButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 const tabName = button.getAttribute('data-tab');
@@ -135,7 +135,7 @@ class CommissionForm {
         this.currentTab = tabName;
 
         // Update tab buttons
-        document.querySelectorAll('.tab-button').forEach(btn => {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
             btn.classList.remove('active');
         });
         document.querySelector(`[data-tab="${tabName}"]`).classList.add('active');
