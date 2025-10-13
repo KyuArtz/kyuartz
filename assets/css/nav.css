@@ -277,23 +277,36 @@ a.more-menu-links {
 
     .navigation-menu {
         position: fixed;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        right: -100%;
+        right: 0;
         top: 61px;
-        width: 30%;
-        height: 100vh;
+        width: 100%;
+        height: 70px;
         background: var(--secondary-bgc);
-        gap: 3rem;
         padding: 0;
         margin: 0;
         transition: var(--transition-ease);
         z-index: 1;
+        overflow-y: auto;
+        visibility: hidden;
+        display: none;
+        animation: fadeIn 0.3s ease;
     }
 
     .navigation-menu.navMenu-active {
-        right: 0;
+        display: flex;
+        visibility: visible;
+    }
+
+    .navigation-menu {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .navigation-menu::-webkit-scrollbar {
+        display: none;
     }
 
     .dropdown-more {
