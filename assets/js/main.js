@@ -11,7 +11,7 @@ const setCookie = (name, value, days) => {
 
 const getCookie = (name) => {
   const nameEQ = name + "=";
-  const ca = document.cookie.split(';');
+  const ca = document.cookie.split(";");
   for (let c of ca) {
     c = c.trim();
     if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length);
@@ -27,7 +27,7 @@ const togglePopup = (id, action, openClass) => {
   // Toggle body scroll for popups
   if (["open", "close"].includes(action)) {
     const anyPopupOpen =
-      document.getElementById('welcomeOverlay')?.style.display === 'flex'
+      document.getElementById("welcomeOverlay")?.style.display === "flex";
     if (action === "open" || anyPopupOpen) {
       document.body.classList.add("no-scroll");
     } else {
@@ -38,7 +38,9 @@ const togglePopup = (id, action, openClass) => {
 
 // Close Welcome Message
 const closeWelcomeMessage = () => {
-  document.getElementById('welcomeOverlay')?.style.setProperty('display', 'none');
+  document
+    .getElementById("welcomeOverlay")
+    ?.style.setProperty("display", "none");
   document.body.classList.remove("no-scroll");
 };
 
@@ -46,7 +48,9 @@ const closeWelcomeMessage = () => {
 document.addEventListener("DOMContentLoaded", () => {
   // Welcome Message Popup Logic
   if (!getCookie("welcome-messageShown")) {
-    document.getElementById('welcomeOverlay')?.style.setProperty('display', 'flex');
+    document
+      .getElementById("welcomeOverlay")
+      ?.style.setProperty("display", "flex");
     setCookie("welcome-messageShown", true, 365);
     document.body.classList.add("no-scroll");
   }
@@ -65,27 +69,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Language selection logic
 document.addEventListener("DOMContentLoaded", () => {
-  const TRANSLATIONS_URL = 'assets/data/translations.json';
-  const LANGUAGE_KEY = 'selectedLanguage';
-  const DEFAULT_LANGUAGE = 'en';
+  const TRANSLATIONS_URL = "assets/data/translations.json";
+  const LANGUAGE_KEY = "selectedLanguage";
+  const DEFAULT_LANGUAGE = "en";
 
-  const languageSwitcher = document.getElementById('languageSwitcher');
+  const languageSwitcher = document.getElementById("languageSwitcher");
   const elementsToTranslate = document.querySelectorAll("[data-translate]");
 
   // Utility: Safely get translation
   function getTranslation(data, language, key) {
-    return data[language]?.[key] || data[DEFAULT_LANGUAGE]?.[key] || '';
+    return data[language]?.[key] || data[DEFAULT_LANGUAGE]?.[key] || "";
   }
 
   // Apply translations to all elements
   function applyTranslations(data, language) {
-    elementsToTranslate.forEach(element => {
+    elementsToTranslate.forEach((element) => {
       const key = element.getAttribute("data-translate");
       const translation = getTranslation(data, language, key);
       if (translation) {
         element.textContent = translation;
       } else {
-        console.warn(`No translation found for key: ${key} in language: ${language}`);
+        console.warn(
+          `No translation found for key: ${key} in language: ${language}`
+        );
       }
     });
   }
@@ -93,7 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Change language and persist selection
   function changeLanguage(data, language) {
     if (!data[language]) {
-      console.warn(`Language data for ${language} not found. Falling back to '${DEFAULT_LANGUAGE}'.`);
+      console.warn(
+        `Language data for ${language} not found. Falling back to '${DEFAULT_LANGUAGE}'.`
+      );
       language = DEFAULT_LANGUAGE;
     }
     applyTranslations(data, language);
@@ -103,21 +111,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch and initialize translations
   fetch(TRANSLATIONS_URL)
-    .then(response => {
-      if (!response.ok) throw new Error('Network response was not ok');
+    .then((response) => {
+      if (!response.ok) throw new Error("Network response was not ok");
       return response.json();
     })
-    .then(data => {
-      const savedLanguage = localStorage.getItem(LANGUAGE_KEY) || DEFAULT_LANGUAGE;
+    .then((data) => {
+      const savedLanguage =
+        localStorage.getItem(LANGUAGE_KEY) || DEFAULT_LANGUAGE;
       changeLanguage(data, savedLanguage);
 
       if (languageSwitcher) {
-        languageSwitcher.addEventListener('change', () => {
+        languageSwitcher.addEventListener("change", () => {
           changeLanguage(data, languageSwitcher.value);
         });
       }
     })
-    .catch(error => console.error('Error fetching translations:', error));
+    .catch((error) => console.error("Error fetching translations:", error));
 });
 
 async function loadVersion() {
@@ -137,29 +146,33 @@ async function loadVersion() {
     const [releaseResponse, commitResponse] = await Promise.all([
       fetch(`https://api.github.com/repos/${repo}/releases/latest`, {
         headers: {
-          'Accept': 'application/vnd.github.v3+json'
-        }
+          Accept: "application/vnd.github.v3+json",
+        },
       }),
       fetch(`https://api.github.com/repos/${repo}/commits?per_page=1`, {
         headers: {
-          'Accept': 'application/vnd.github.v3+json'
-        }
-      })
+          Accept: "application/vnd.github.v3+json",
+        },
+      }),
     ]);
 
     // Check for API errors
     if (!releaseResponse.ok) {
-      throw new Error(`Release API error: ${releaseResponse.status} ${releaseResponse.statusText}`);
+      throw new Error(
+        `Release API error: ${releaseResponse.status} ${releaseResponse.statusText}`
+      );
     }
 
     if (!commitResponse.ok) {
-      throw new Error(`Commit API error: ${commitResponse.status} ${commitResponse.statusText}`);
+      throw new Error(
+        `Commit API error: ${commitResponse.status} ${commitResponse.statusText}`
+      );
     }
 
     // Parse responses
     const [releaseData, commitData] = await Promise.all([
       releaseResponse.json(),
-      commitResponse.json()
+      commitResponse.json(),
     ]);
 
     // Extract version info with validation
@@ -168,7 +181,6 @@ async function loadVersion() {
 
     // Update UI
     versionElement.innerText = `Version: ${tag} (${commitHash})`;
-
   } catch (error) {
     console.error("Failed to load version information:", error);
 
@@ -195,14 +207,19 @@ async function loadVersionWithRetry(maxRetries = 2) {
       break; // Success, exit retry loop
     } catch (error) {
       if (attempt === maxRetries + 1) {
-        console.error(`Version loading failed after ${maxRetries} retries:`, error);
+        console.error(
+          `Version loading failed after ${maxRetries} retries:`,
+          error
+        );
         break;
       }
 
       // Wait before retrying (exponential backoff)
       const delay = Math.min(1000 * Math.pow(2, attempt - 1), 5000);
-      console.warn(`Version loading attempt ${attempt} failed, retrying in ${delay}ms...`);
-      await new Promise(resolve => setTimeout(resolve, delay));
+      console.warn(
+        `Version loading attempt ${attempt} failed, retrying in ${delay}ms...`
+      );
+      await new Promise((resolve) => setTimeout(resolve, delay));
     }
   }
 }
@@ -216,7 +233,7 @@ loadVersion();
 // loadVersionWithRetry();
 
 // Set current year
-const currentYearElement = document.getElementById('currentyear');
+const currentYearElement = document.getElementById("currentyear");
 if (currentYearElement) {
   currentYearElement.textContent = new Date().getFullYear();
 }

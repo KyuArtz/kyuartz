@@ -1,348 +1,348 @@
 .comic-section {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .hero {
-    margin-top: 3.8rem;
-    padding: 2rem;
-    text-align: center;
-    background: var(--gradient-bgc);
-    position: relative;
-    overflow: hidden;
-    animation: titleGlow 3s ease-in-out infinite alternate;
+  margin-top: 3.8rem;
+  padding: 2rem;
+  text-align: center;
+  background: var(--gradient-bgc);
+  position: relative;
+  overflow: hidden;
+  animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: var(--gradient-bgc);
-    animation: rotate 20s linear infinite;
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: var(--gradient-bgc);
+  animation: rotate 20s linear infinite;
+  pointer-events: none;
 }
 
 .hero h1 {
-    font-family: var(--my-font);
-    font-size: var(--font-size-xl);
-    color: var(--text-color-default);
+  font-family: var(--my-font);
+  font-size: var(--font-size-xl);
+  color: var(--text-color-default);
 }
 
 .hero p {
-    font-size: var(--font-size-xs);
-    color: var(--text-color-default);
-    max-width: 600px;
-    margin: 0 auto;
+  font-size: var(--font-size-xs);
+  color: var(--text-color-default);
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .filter-section {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .filter-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
 }
 
 .filter-btn {
-    padding: 0.75rem 1.5rem;
-    border: var(--border-thick);
-    border-radius: var(--border-radius-custom);
-    color: var(--accent-color);
-    font-size: var(--btn-font-size);
-    transition: var(--transition-ease);
-    position: relative;
-    overflow: hidden;
+  padding: 0.75rem 1.5rem;
+  border: var(--border-thick);
+  border-radius: var(--border-radius-custom);
+  color: var(--accent-color);
+  font-size: var(--btn-font-size);
+  transition: var(--transition-ease);
+  position: relative;
+  overflow: hidden;
 }
 
 .filter-btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--default-overlay);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: var(--transition-ease);
-    pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--default-overlay);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: var(--transition-ease);
+  pointer-events: none;
 }
 
 .filter-btn:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .filter-btn:hover {
-    color: var(--text-color-default);
-    border: 2px solid var(--accent-color);
-    transform: var(--translateY-up);
+  color: var(--text-color-default);
+  border: 2px solid var(--accent-color);
+  transform: var(--translateY-up);
 }
 
 .filter-btn.active {
-    background: var(--btn-bgc);
-    color: var(--btn-color);
+  background: var(--btn-bgc);
+  color: var(--btn-color);
 }
 
 .comics-section {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .comics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
 }
 
 .comic-card {
-    background: var(--secondary-bgc);
-    border-radius: var(--border-radius-custom);
-    overflow: hidden;
-    transition: all 0.4s ease;
-    box-shadow: var(--shadow);
-    position: relative;
-    height: auto;
+  background: var(--secondary-bgc);
+  border-radius: var(--border-radius-custom);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: var(--shadow);
+  position: relative;
+  height: auto;
 }
 
 .comic-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--accent-color);
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
 }
 
 .comic-image-container {
-    position: relative;
-    height: 400px;
-    overflow: hidden;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
 }
 
 .comic-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
 }
 
 .comic-card:hover .comic-image {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .comic-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--default-overlay);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: var(--transition-ease);
-    text-align: center;
-    padding: 2rem;
-    animation: titleGlow 3s ease-in-out infinite alternate;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--default-overlay);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: var(--transition-ease);
+  text-align: center;
+  padding: 2rem;
+  animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
 .comic-card:hover .comic-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .comic-title-overlay {
-    font-family: var(--my-font);
-    font-size: var(--font-size-sm);
-    margin-bottom: 1rem;
-    color: var(--static-color);
+  font-family: var(--my-font);
+  font-size: var(--font-size-sm);
+  margin-bottom: 1rem;
+  color: var(--static-color);
 }
 
 .coming-soon-badge {
-    background: var(--accent-overlay);
-    color: var(--static-color);
-    padding: 0.5rem 1rem;
-    border-radius: var(--border-radius-custom);
-    font-size: var(--font-size-xxs);
-    backdrop-filter: var(--blur-effect);
-    -webkit-backdrop-filter: var(--blur-effect);
+  background: var(--accent-overlay);
+  color: var(--static-color);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-custom);
+  font-size: var(--font-size-xxs);
+  backdrop-filter: var(--blur-effect);
+  -webkit-backdrop-filter: var(--blur-effect);
 }
 
 .comic-content {
-    padding: 2rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .comic-title {
-    margin: 0.3rem 0;
-    font-size: var(--font-size-sm);
+  margin: 0.3rem 0;
+  font-size: var(--font-size-sm);
 }
 
 .comic-genres {
-    color: var(--accent-color);
-    font-size: var(--font-size-xxs);
+  color: var(--accent-color);
+  font-size: var(--font-size-xxs);
 }
 
 .comic-author {
-    color: var(--accent-color);
-    font-size: var(--font-size-xxs);
+  color: var(--accent-color);
+  font-size: var(--font-size-xxs);
 }
 
 .comic-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .action-btn {
-    flex: 1;
-    border: var(--border-thick);
-    padding: 0.75rem;
-    border-radius: var(--border-radius-custom);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    transition: var(--transition-ease);
+  flex: 1;
+  border: var(--border-thick);
+  padding: 0.75rem;
+  border-radius: var(--border-radius-custom);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition-ease);
 }
 
 .primary-btn {
-    background: var(--btn-bgc);
-    color: var(--btn-color);
+  background: var(--btn-bgc);
+  color: var(--btn-color);
 }
 
 .secondary-btn {
-    background: transparent;
-    color: var(--accent-color);
+  background: transparent;
+  color: var(--accent-color);
 }
 
 .primary-btn:hover,
 .secondary-btn:hover {
-    border: 2px solid var(--accent-color);
-    transform: var(--translateY-up);
+  border: 2px solid var(--accent-color);
+  transform: var(--translateY-up);
 }
 
 .action-btn i {
-    transition: var(--transition-ease);
+  transition: var(--transition-ease);
 }
 
 .action-btn:hover i {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--default-overlay);
-    backdrop-filter: var(--blur-effect);
-    -webkit-backdrop-filter: var(--blur-effect);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--default-overlay);
+  backdrop-filter: var(--blur-effect);
+  -webkit-backdrop-filter: var(--blur-effect);
 }
 
 .modal.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    z-index: 100000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 100000;
 }
 
 .modal-content {
-    background: var(--secondary-bgc);
-    border-radius: var(--border-radius-custom);
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    box-shadow: var(--shadow);
-    animation: fadeIn 0.3s ease;
+  background: var(--secondary-bgc);
+  border-radius: var(--border-radius-custom);
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.3s ease;
 }
 
 .modal-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    color: var(--text-color-default);
-    border-bottom: var(--border-thin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: var(--text-color-default);
+  border-bottom: var(--border-thin);
 }
 
 .modal-title {
-    margin: 0;
-    color: var(--accent-color);
-    font-family: var(--my-font);
+  margin: 0;
+  color: var(--accent-color);
+  font-family: var(--my-font);
 }
 
 .modal-body {
-    padding: 1rem 2rem;
-    line-height: var(--line-height);
-    text-align: justify;
-    color: var(--text-color-default);
-    overflow-y: auto;
-    height: 400px;
+  padding: 1rem 2rem;
+  line-height: var(--line-height);
+  text-align: justify;
+  color: var(--text-color-default);
+  overflow-y: auto;
+  height: 400px;
 }
 
 .close-btn {
-    background: none;
-    border: none;
-    color: var(--accent-color);
-    font-size: var(--close-btn-size);
-    padding: 0.5rem;
-    border-radius: var(--border-radius-custom);
-    transition: var(--transition-ease);
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  font-size: var(--close-btn-size);
+  padding: 0.5rem;
+  border-radius: var(--border-radius-custom);
+  transition: var(--transition-ease);
 }
 
 @media (max-width: 768px) {
-    .comics-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+  .comics-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 
-    .comic-card {
-        height: auto;
-    }
+  .comic-card {
+    height: auto;
+  }
 
-    .comic-image-container {
-        height: 300px;
-    }
+  .comic-image-container {
+    height: 300px;
+  }
 
-    .filter-buttons {
-        gap: 0.5rem;
-    }
+  .filter-buttons {
+    gap: 0.5rem;
+  }
 
-    .filter-btn {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 
-    .hero h1 {
-        font-size: 2rem;
-    }
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-    .hero {
-        padding: 2rem 1rem;
-    }
+  .hero {
+    padding: 2rem 1rem;
+  }
 
-    .comics-section {
-        padding: 1rem;
-    }
+  .comics-section {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
-    .filter-btn {
-        flex: 1 1 100%;
-    }
+  .filter-btn {
+    flex: 1 1 100%;
+  }
 }

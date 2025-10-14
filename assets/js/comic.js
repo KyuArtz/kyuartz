@@ -11,7 +11,7 @@ const comicData = {
       <p>Yet, in rare cases, the infection changes rather than consumes. These survivors—those who adapt instead of fall—become the <strong>Hollowborn</strong>. Marked by unnatural abilities and fractured minds, they walk the line between savior and monster.</p>
       
       <p>As the dust thickens and Terra teeters on the edge of extinction, the fate of humanity rests on a bitter truth: <em>To defeat the contagion, they may have to become part of it.</em></p>
-    `
+    `,
   },
   comic2: {
     title: "LEGEND OF THE CRYSTALIGHT",
@@ -27,36 +27,36 @@ const comicData = {
       <p>From beyond the veil of shadows, a new enemy stirs—one whose presence threatens not only the empire, but also the fate of the legendary artifact known as the <strong>Crystalight</strong>. Forged by Liliana and the ancient rulers of Eldoria, the Crystalight holds power beyond comprehension: capable of creating and destroying worlds... and even granting eternal life.</p>
       
       <p><em>And so the legend begins anew...</em></p>
-    `
-  }
+    `,
+  },
 };
 
 // Filter functionality
-document.addEventListener('DOMContentLoaded', function () {
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const comicCards = document.querySelectorAll('.comic-card');
+document.addEventListener("DOMContentLoaded", function () {
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const comicCards = document.querySelectorAll(".comic-card");
 
   // Add loading animation delay
-  document.querySelectorAll('.loading').forEach((el, index) => {
+  document.querySelectorAll(".loading").forEach((el, index) => {
     el.style.animationDelay = `${index * 0.2}s`;
   });
 
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
       // Update active filter
-      filterBtns.forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      this.classList.add("active");
 
-      const category = this.getAttribute('data-category');
+      const category = this.getAttribute("data-category");
 
-      comicCards.forEach(card => {
-        const cardCategories = card.getAttribute('data-category').split(',');
+      comicCards.forEach((card) => {
+        const cardCategories = card.getAttribute("data-category").split(",");
 
-        if (category === 'all' || cardCategories.includes(category)) {
-          card.style.display = 'block';
-          card.style.animation = 'slideInUp 0.6s ease forwards';
+        if (category === "all" || cardCategories.includes(category)) {
+          card.style.display = "block";
+          card.style.animation = "slideInUp 0.6s ease forwards";
         } else {
-          card.style.display = 'none';
+          card.style.display = "none";
         }
       });
     });
@@ -65,46 +65,46 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Modal functionality
 function showDescription(comicId) {
-  const modal = document.getElementById('comic-modal');
-  const title = document.getElementById('modal-title');
-  const description = document.getElementById('modal-description');
+  const modal = document.getElementById("comic-modal");
+  const title = document.getElementById("modal-title");
+  const description = document.getElementById("modal-description");
 
   const comic = comicData[comicId];
   if (comic) {
     title.textContent = comic.title;
     description.innerHTML = comic.description;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden';
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
   }
 }
 
 function closeModal() {
-  const modal = document.getElementById('comic-modal');
-  modal.classList.remove('active');
-  document.body.style.overflow = 'auto';
+  const modal = document.getElementById("comic-modal");
+  modal.classList.remove("active");
+  document.body.style.overflow = "auto";
 }
 
 // Close modal when clicking outside
-document.getElementById('comic-modal').addEventListener('click', function (e) {
+document.getElementById("comic-modal").addEventListener("click", function (e) {
   if (e.target === this) {
     closeModal();
   }
 });
 
 // Keyboard navigation
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape') {
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
     closeModal();
   }
 });
 
 // Smooth scroll for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(this.getAttribute("href"));
     if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+      target.scrollIntoView({ behavior: "smooth" });
     }
   });
 });
