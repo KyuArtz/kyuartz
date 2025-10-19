@@ -3,8 +3,7 @@
 }
 
 .hero {
-  margin-top: 3.8rem;
-  padding: 2rem;
+  padding: 3.8rem 2rem;
   text-align: center;
   background: var(--gradient-bgc);
   position: relative;
@@ -55,6 +54,7 @@
   border: var(--border-thick);
   border-radius: var(--border-radius-custom);
   color: var(--accent-color);
+  text-align: left;
   font-size: var(--btn-font-size);
   transition: var(--transition-ease);
   position: relative;
@@ -330,10 +330,6 @@
 
   .hero h1 {
     font-size: 2rem;
-  }
-
-  .hero {
-    padding: 2rem 1rem;
   }
 
   .comics-section {

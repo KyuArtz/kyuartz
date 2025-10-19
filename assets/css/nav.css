@@ -1,11 +1,13 @@
 header {
   position: fixed;
   width: 100%;
-  background: var(--secondary-bgc);
+  background: transparent;
   box-shadow: var(--shadow);
   border-bottom: var(--border-thin);
   color: var(--text-color-default);
   top: 0;
+  backdrop-filter: var(--blur-effect);
+  -webkit-backdrop-filter: var(--blur-effect);
   transition: var(--transition-ease);
   z-index: 100000;
 }
@@ -323,11 +325,12 @@ a.more-menu-links {
   top: 61px;
   left: 0;
   padding: 1rem;
-  background: var(--secondary-bgc);
+  background: transparent;
   display: flex;
   flex-direction: row;
   justify-content: center;
   min-width: 100%;
+  height: auto;
   transition: var(--transition-ease);
   visibility: hidden;
   opacity: 0;
@@ -483,6 +486,7 @@ footer {
     justify-content: flex-start;
     height: 100vh;
     min-height: 100vh;
+    background: var(--secondary-bgc);
     overflow-y: auto;
   }
 

@@ -5,8 +5,7 @@
 }
 
 .hero {
-  margin-top: 3.8rem;
-  padding: 2rem;
+  padding: 3.8rem 2rem;
   text-align: center;
   background: var(--gradient-bgc);
   position: relative;
@@ -54,6 +53,7 @@
   border: var(--border-thick);
   border-radius: var(--border-radius-custom);
   color: var(--accent-color);
+  text-align: left;
   cursor: pointer;
   transition: var(--transition-ease);
   font-weight: 500;

@@ -9,7 +9,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
-  margin-bottom: 4rem;
   align-items: start;
 }
 

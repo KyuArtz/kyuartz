@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > 100) {
-        header.style.backdropFilter = "blur(5%)";
+        header.style.background = "var(--secondary-bgc)";
+        header.style.backdropFilter = "var(--blur-effect)";
       } else {
-        header.style.backdropFilter = "blur(5%)";
+        header.style.background = "var(--secondary-bgc)";
+        header.style.backdropFilter = "var(--blur-effect)";
       }
 
       // Hide/show header on scroll
