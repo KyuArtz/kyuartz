@@ -56,7 +56,6 @@
   text-align: left;
   cursor: pointer;
   transition: var(--transition-ease);
-  font-weight: 500;
   position: relative;
   overflow: hidden;
 }
@@ -192,7 +191,6 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--static-color);
-  font-weight: bold;
   position: relative;
   padding-bottom: 0.5rem;
   text-shadow: var(--text-shadow);

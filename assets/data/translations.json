@@ -11,7 +11,6 @@
     "remove": "Remove",
     "hideInfo": "Hide Info",
     "comingSoon": "Coming Soon",
-
     "brand": "KYU",
     "whatsNew": "WHAT'S NEW?",
     "home": "HOME",
@@ -19,7 +18,6 @@
     "about": "ABOUT",
     "contact": "CONTACT US",
     "more": "MORE",
-
     "portfolioTitle": "MY WORK",
     "commissionTitle": "SAMPLES",
     "comicTitle": "COMIC",
@@ -27,7 +25,6 @@
     "legendOfTheCrystalight": "Legend Of The Crystalight",
     "chapter": "Chapter",
     "prologue": "Prologue",
-
     "aboutMe": "ABOUT ME",
     "summaryText": "Hello, I'm Kyu, a self-taught freelance artist who has been passionate about drawing since my early childhood. Over the years, I've been dedicated to honing my skills and self-improvement in the art realm. Drawing has been a constant in my life, and in my free time, I continue to create art to enhance my abilities and gain more experience. Despite being a self-learner, I remain persistent and never give up. After four years of focusing on traditional drawing methods, I began to witness noticeable improvements in my work. Intrigued by the popularity of digital art on various social media platforms, I decided to explore this medium. I ventured into digital art using programs such as Microsoft Paint and Adobe Illustrator for my initial creations. While adapting to the challenges presented by digital art techniques, I eventually became comfortable with the process.",
     "experienceTitle": "EXPERIENCE",
@@ -37,7 +34,6 @@
     "myInfo-1": "Digital Illustrator",
     "myInfo-2": "Character Designer",
     "myInfo-3": "Concept Artist",
-
     "formClosed": "COMMISSION FORM - CLOSED",
     "formOpen": "COMMISSION FORM - OPEN",
     "name": "Name",
@@ -47,28 +43,22 @@
     "uploadSample": "Upload Sample (Optional)",
     "tosCheckbox": "Agree to terms of service",
     "submit": "Submit",
-
     "orderCommissionRef": "Order/Commission Reference (if applicable)",
     "issueType": "Issue Type",
     "descriptionOfIssue": "Description of Issue",
-
     "notice": "NOTICE",
     "noticeText": "By reading the terms of service, you agreed to adhere to the outlined rules. For a more detailed explanation, please review the.",
-
     "qrCode": "CHOOSE QR CODE",
     "paypal": "Paypal",
     "maya": "Maya",
     "gcash": "Gcash",
-
     "modePayment": "MODE OF PAYMENT & INFO:",
     "queue": "After submitting your inquiry, you can check your:",
     "anyIssues": "If you have any issues go to our:",
     "directEmail": "Direct Email:",
-
     "commissionArt": "COMMISSION ART",
     "commissionSheet": "Commission Sheet",
     "clientQueue": "Client Queue",
-
     "comms-1": "PORTRAIT / Bust-UP (SEMI-REALISM)",
     "comms-2": "FULL BODY (SEMI-REALISM)",
     "comms-3": "PORTRAIT / Bust-UP (ANIME-STYLE)",
@@ -79,10 +69,8 @@
     "newBundleDeals": "NEW BUNDLE DEALS",
     "promotionsEngagements": "PROMOTIONS & ENGAGEMENTS",
     "priceInfo": "PRICE INFO",
-
     "requestNow": "Request Now",
     "viewQueue": "View Queue",
-
     "clientInfoTitle": "Client - Public View",
     "th-1": "Client Name",
     "th-2": "Commission Type",
@@ -102,7 +90,6 @@
     "status-2": "Commission is confirmed but work hasn't started.",
     "status-3": "Currently working on this commission.",
     "status-4": "Commission has been finished and delivered.",
-
     "explore": "EXPLORE",
     "myComic": "My Comic",
     "originalCharacter": "Original Character",
@@ -124,7 +111,6 @@
     "drakeon": "Drakeon",
     "zion": "Zion",
     "kan": "Kan",
-
     "elishia": "Elishia",
     "evalete": "Evalete",
     "zackcry": "Zackcry",
@@ -132,7 +118,6 @@
     "zenki": "Zenki",
     "mirazhel": "Mirazhel",
     "roman": "Roman",
-
     "blazingDragonfang": "Blazing Dragonfang",
     "crimsonTempest": "Crimson Tempest",
     "loneWanderer": "Lone Wanderer",
@@ -143,7 +128,6 @@
     "TheWatchfulEye": "The Watchful Eye",
     "heartRootKeeper": "Heart Root Keeper",
     "phantomNightwalker": "Phantom Nightwalker",
-
     "filterRoles": "FILTER ROLES",
     "versatile": "Versatile",
     "mage": "Mage",
@@ -152,7 +136,6 @@
     "assassin": "Assassin",
     "marksman": "Marksman",
     "healer": "Healer",
-
     "serviceInfo": "SERVICE INFO",
     "termsOfService": "Terms of Service",
     "meoAssistant": "Meo Assistant",
@@ -163,11 +146,9 @@
     "faqs": "FAQS",
     "customerSupport": "Customer Support",
     "helpCenter": "Help Center",
-
     "contactSupport": "Contact Support",
     "userGuide": "User Guide",
     "troubleshooting": "Troubleshooting",
-
     "help0": "Meet MEO, your personal virtual assistant! Ask questions, get recommendations, and explore the site with ease.",
     "help1": "Find answers to frequently asked questions about commissions, projects, and more.",
     "help2": "Discover the rules and regulations that govern your experience. Click here to learn more!",
@@ -175,12 +156,10 @@
     "help4": "Need help? Contact us through the customer support form for assistance.",
     "help5": "Learn how to navigate the site, request commissions, or explore our features.",
     "help6": "Having technical issues? Find solutions to common problems.",
-
     "userName": "Kyu",
     "yourPreferences": "Your Preferences",
     "selectTheme": "Select Theme :",
     "selectLanguage": "Select Language : ( BETA )",
-
     "category": "CATEGORY",
     "all": "All",
     "semiRealism": "Semi Realism",
@@ -190,13 +169,11 @@
     "animeStyle": "Anime Style",
     "landscape": "Landscape",
     "bundlePromo": "Bundles & Promo",
-
     "genre": "TYPE OF GENRE",
     "postApocalyptic": "Post-Apocalyptic",
     "sciFi": "Sci-Fi",
     "fantasy": "Fantasy",
     "adventure": "Adventure",
-
     "welcome": "WELCOME TO KYU ARTZ!",
     "quote-1": "\"Explore the amazing world of Kyu—featuring art, characters, comics, and imaginative creations for everyone to enjoy!\"",
     "quote-2": "\"Happiness is a journey, not a destination. Allow yourself the freedom to experience life as it comes, and happiness often follows when we least expect it. — Kyu\"",
@@ -205,18 +182,14 @@
     "quote-5": "\"A broken mirror can be pieced back together, but it remains shattered—just like love and trust. — Kyu\"",
     "quote-6": "\"Each of us carries a story yet to be told. — Kyu\"",
     "quote-7": "\"Solitude is my choice, not by chance, but with purpose. — Kyu\"",
-
     "seeMore": "See More",
     "seeMoreArt": "See More Art",
     "viewCharacters": "View Characters",
     "inquireNow": "Inquire Now",
     "commissionMe": "Commission Me",
-
     "featuredVideos": "FEATURED VIDEOS",
-
     "copyright": "KyuArtz, All rights reserved"
   },
-
   "ja": {
     "loading": "ウェブページを読み込み中...",
     "welcomeTitle": "ご訪問ありがとうございます！",
@@ -229,7 +202,6 @@
     "remove": "削除",
     "hideInfo": "情報を隠す",
     "comingSoon": "近日公開",
-
     "brand": "KYU",
     "whatsNew": "最新情報",
     "home": "ホーム",
@@ -237,7 +209,6 @@
     "about": "概要",
     "contact": "お問い合わせ",
     "more": "もっと見る",
-
     "portfolioTitle": "私の作品",
     "commissionTitle": "サンプル",
     "comicTitle": "コミック",
@@ -245,10 +216,8 @@
     "legendOfTheCrystalight": "クリスタライトの伝説",
     "chapter": "章",
     "prologue": "プロローグ",
-
     "aboutMe": "私について",
     "summaryText": "こんにちは、Kyuです。幼少期から絵を描くことに情熱を持ってきた独学のフリーランスアーティストです。何年にもわたり、スキルを磨き、アートの世界で自己向上に努めてきました。絵を描くことは私の人生の中で常に大切なものであり、自由な時間があれば、スキルを高め、経験を積むためにアートを創作し続けています。独学であるにもかかわらず、私は粘り強く、決してあきらめません。4年間の伝統的な描画方法に集中した後、自分の作品に顕著な進歩を感じ始めました。デジタルアートの人気に興味を持ち、Microsoft PaintやAdobe Illustratorなどのプログラムを使ってデジタルアートに挑戦しました。デジタル技術の課題に適応しながら、最終的にはプロセスに慣れることができました。",
-
     "experienceTitle": "経験",
     "experience-1": "独学のアーティスト",
     "experience-2": "フリーランスアーティスト",
@@ -256,7 +225,6 @@
     "myInfo-1": "デジタルイラストレーター",
     "myInfo-2": "キャラクターデザイナー",
     "myInfo-3": "コンセプトアーティスト",
-
     "formClosed": "コミッションフォーム - 閉じています",
     "formOpen": "コミッションフォーム - 開いています",
     "name": "名前",
@@ -266,28 +234,22 @@
     "uploadSample": "サンプルをアップロード（任意）",
     "tosCheckbox": "利用規約に同意する",
     "submit": "送信",
-
     "orderCommissionRef": "注文/コミッション参照（該当する場合）",
     "issueType": "問題の種類",
     "descriptionOfIssue": "問題の説明",
-
     "notice": "注意事項",
     "noticeText": "利用規約を読むことで、記載されたルールを順守することに同意したものとみなされます。詳細については、こちらをご確認ください。",
-
     "qrCode": "QRコードを選択",
     "paypal": "Paypal",
     "maya": "Maya",
     "gcash": "Gcash",
-
     "modePayment": "お支払い方法と情報:",
     "queue": "お問い合わせを送信した後、順番待ちリストに追加されます。",
     "anyIssues": "問題がある場合は、以下のリンクからお問い合わせください:",
     "directEmail": "直接メール:",
-
     "commissionArt": "コミッションアート",
     "commissionSheet": "コミッションシート",
     "clientQueue": "クライアント待機リスト",
-
     "comms-1": "肖像画 / バストアップ (セミリアリズム)",
     "comms-2": "全身画 (セミリアリズム)",
     "comms-3": "肖像画 / バストアップ (アニメスタイル)",
@@ -298,10 +260,8 @@
     "newBundleDeals": "新しいバンドル & お得なプラン",
     "promotionsEngagements": "プロモーション & キャンペーン",
     "priceInfo": "料金情報",
-
     "requestNow": "今すぐリクエスト",
     "viewQueue": "待機リストを見る",
-
     "clientInfoTitle": "クライアント - 公開情報",
     "th-1": "クライアント名",
     "th-2": "コミッションの種類",
@@ -321,13 +281,11 @@
     "status-2": "コミッションは確認済みですが、作業はまだ開始されていません。",
     "status-3": "現在このコミッションに取り組んでいます。",
     "status-4": "コミッションが完了し、納品されました。",
-
     "explore": "探索する",
     "myComic": "私のコミック",
     "originalCharacter": "オリジナルキャラクター",
     "title": "タイトルなし",
     "selectCharacter": "キャラクターを選択",
-
     "hexxana": "ヘクサナ",
     "ren": "レン",
     "rayza": "レイザ",
@@ -344,7 +302,6 @@
     "drakeon": "ドレイクオン",
     "zion": "ザイオン",
     "kan": "カン",
-
     "elishia": "エリシア",
     "evalete": "エヴァレテ",
     "zackcry": "ザッククリ",
@@ -352,7 +309,6 @@
     "zenki": "ゼンキ",
     "mirazhel": "ミラゼル",
     "roman": "ロマン",
-
     "blazingDragonfang": "燃えるドラゴンの牙",
     "crimsonTempest": "紅蓮の嵐",
     "loneWanderer": "孤独な放浪者",
@@ -363,7 +319,6 @@
     "TheWatchfulEye": "見守る目",
     "heartRootKeeper": "ハートルートの守護者",
     "phantomNightwalker": "幻の夜歩き",
-
     "filterRoles": "ロールをフィルター",
     "versatile": "多才",
     "mage": "魔法使い",
@@ -372,7 +327,6 @@
     "assassin": "暗殺者",
     "marksman": "狙撃手",
     "healer": "ヒーラー",
-
     "serviceInfo": "サービス情報",
     "termsOfService": "利用規約",
     "meoAssistant": "Meoアシスタント",
@@ -383,11 +337,9 @@
     "faqs": "よくある質問",
     "customerSupport": "カスタマーサポート",
     "helpCenter": "ヘルプセンター",
-
     "contactSupport": "サポートへ連絡",
     "userGuide": "ユーザーガイド",
     "troubleshooting": "トラブルシューティング",
-
     "help0": "MEO、あなたの個人バーチャルアシスタントに会いましょう！質問をしたり、推奨を受けたり、サイトを簡単に探索できます。",
     "help1": "コミッション、プロジェクトなどに関するよくある質問の回答を見つけてください。",
     "help2": "あなたの体験を管理する規則や規制を確認してください。詳しくはこちら！",
@@ -395,12 +347,10 @@
     "help4": "お困りですか？カスタマーサポートフォームからお問い合わせください。",
     "help5": "サイトの操作方法、コミッションのリクエスト、機能の探索方法を学んでください。",
     "help6": "技術的な問題が発生していますか？よくある問題の解決策を見つけてください。",
-
     "userName": "Kyu",
     "yourPreferences": "あなたの設定",
     "selectTheme": "テーマを選択 :",
     "selectLanguage": "言語を選択 : (ベータ版)",
-
     "category": "カテゴリー",
     "all": "すべて",
     "semiRealism": "セミリアリズム",
@@ -410,13 +360,11 @@
     "animeStyle": "アニメスタイル",
     "landscape": "風景",
     "bundlePromo": "バンドル & プロモーション",
-
     "genre": "ジャンル",
     "postApocalyptic": "ポストアポカリプス",
     "sciFi": "SF",
     "fantasy": "ファンタジー",
     "adventure": "冒険",
-
     "welcome": "KYU ARTZへようこそ！",
     "quote-1": "\"Kyuの素晴らしい世界を探検しよう—アート、キャラクター、コミック、そして想像力あふれる作品を楽しんでください！\"",
     "quote-2": "\"幸せは旅であり、目的地ではありません。人生を自由に楽しむことで、思いがけない瞬間に幸せが訪れることがあります。 — Kyu\"",
@@ -425,15 +373,12 @@
     "quote-5": "\"割れた鏡は修復できても、ひび割れたままです。それは愛や信頼と同じです。 — Kyu\"",
     "quote-6": "\"誰もがまだ語られていない物語を持っています。 — Kyu\"",
     "quote-7": "\"孤独は偶然ではなく、選択です。私は目的を持って一人を選びました。 — Kyu\"",
-
     "seeMore": "もっと見る",
     "seeMoreArt": "もっとアートを見る",
     "viewCharacters": "キャラクターを見る",
     "inquireNow": "今すぐ問い合わせ",
     "commissionMe": "コミッションを依頼",
-
     "featuredVideos": "注目の動画",
-
     "copyright": "KyuArtz、全著作権所有"
   }
 }

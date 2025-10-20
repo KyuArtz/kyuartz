@@ -1,158 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Meo AI Assistant</title>
-  <meta name="description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
-  <meta name="keywords" content="KyuArtz Studio">
-  <meta name="author" content="KyuArtz">
-  <meta name="theme-color" content="var(--color)">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
-  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content="KyuArtz">
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
-  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/ai-assistant">
-  <link rel="preconnect" href="https://kit.fontawesome.com">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/meo-ai-assistant.css">
-  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/preferences.js" defer></script>
-  <script src="assets/js/meoAiAssistant.js" defer></script>
-  <meta property="og:title" content="MEO AI Assistant">
-  <meta property="og:description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
-  <meta property="og:image:alt" content="KyuArtz logo and branding">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/ai-assistant">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MEO AI Assistant">
-  <meta name="twitter:description" content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
-  <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://kyuartz.github.io/kyuartz/ai-assistant",
-      "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
-      "name": "KyuArtz Studio"
-    }
-  </script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Meo AI Assistant</title>
+    <meta
+      name="description"
+      content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations."
+    />
+    <meta name="keywords" content="KyuArtz Studio" />
+    <meta name="author" content="KyuArtz" />
+    <meta name="theme-color" content="var(--color)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-TileColor" content="var(--color)" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg"
+    />
+    <link
+      rel="icon"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico"
+      sizes="48x48"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="KyuArtz" />
+    <link
+      rel="manifest"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest"
+    />
+    <link
+      rel="canonical"
+      href="https://kyuartz.github.io/kyuartz/ai-assistant"
+    />
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/meo-ai-assistant.css" />
+    <script
+      src="https://kit.fontawesome.com/27458a63ca.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/preferences.js" defer></script>
+    <script src="assets/js/meoAiAssistant.js" defer></script>
+    <meta property="og:title" content="MEO AI Assistant" />
+    <meta
+      property="og:description"
+      content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations."
+    />
+    <meta
+      property="og:image"
+      content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png"
+    />
+    <meta property="og:image:alt" content="KyuArtz logo and branding" />
+    <meta
+      property="og:url"
+      content="https://kyuartz.github.io/kyuartz/ai-assistant"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MEO AI Assistant" />
+    <meta
+      name="twitter:description"
+      content="KyuArtz has an interactive dialogue system featuring Meo character designed to assist and engage users with personalized conversations."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png"
+    />
+    <meta name="twitter:image:alt" content="KyuArtz logo and branding" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://kyuartz.github.io/kyuartz/ai-assistant",
+        "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
+        "name": "KyuArtz Studio"
+      }
+    </script>
+  </head>
 
-<body>
-  <div class="chat-container">
-    <div class="character-panel">
-      <div class="character-avatar" id="characterAvatar"></div>
-      <div class="character-info">
-        <div class="character-name">Meo 1.0</div>
-        <div class="character-status" id="characterStatus">Ready to help</div>
-        <div class="mood-indicator">
-          <div class="mood-dot active"></div>
-          <div class="mood-dot"></div>
-          <div class="mood-dot"></div>
+  <body>
+    <div class="chat-container">
+      <div class="character-panel">
+        <div class="character-avatar" id="characterAvatar"></div>
+        <div class="character-info">
+          <div class="character-name">Meo 1.0</div>
+          <div class="character-status" id="characterStatus">Ready to help</div>
+          <div class="mood-indicator">
+            <div class="mood-dot active"></div>
+            <div class="mood-dot"></div>
+            <div class="mood-dot"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-panel">
+        <div class="chat-header">
+          <nav
+            class="nav-buttons"
+            id="navButtons"
+            aria-label="Dialogue navigation"
+          >
+            <div class="action-btn">
+              <select
+                class="model-selector"
+                id="modelSelector"
+                onchange="changeModel(this.value)"
+              >
+                <option value="local">Local Model</option>
+                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                <option value="gpt-4">GPT-4</option>
+                <option value="claude-2">Claude 2</option>
+              </select>
+            </div>
+
+            <div class="action-btn">
+              <button
+                class="character-btn"
+                onclick="window.location.href='/'"
+                aria-label="World Archive"
+              >
+                <i class="fa-solid fa-times"></i>
+              </button>
+
+              <button
+                type="button"
+                id="historyToggle"
+                title="Conversation History"
+              >
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </button>
+
+              <button type="button" id="exportChat" title="Export Chat">
+                <i class="fa-solid fa-download"></i>
+              </button>
+
+              <button type="button" id="openPreferences" title="Preferences">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+            </div>
+          </nav>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="welcome-message" id="welcomeMessage">
+            <h1>Hello there!</h1>
+            <p>How can I assist you today?</p>
+          </div>
+
+          <div class="suggestions" id="suggestions">
+            <div class="suggestion">
+              <div class="suggestion-icon">🎨</div>
+              <div class="suggestion-title">KyuArtz</div>
+              <div class="suggestion-desc">Learn about our creative studio</div>
+            </div>
+
+            <div class="suggestion">
+              <div class="suggestion-icon">💼</div>
+              <div class="suggestion-title">Services</div>
+              <div class="suggestion-desc">Learn more about our services</div>
+            </div>
+
+            <div class="suggestion">
+              <div class="suggestion-icon">🎯</div>
+              <div class="suggestion-title">Commissions</div>
+              <div class="suggestion-desc">Get custom artwork created</div>
+            </div>
+
+            <div class="suggestion">
+              <div class="suggestion-icon">🖼️</div>
+              <div class="suggestion-title">Gallery</div>
+              <div class="suggestion-desc">
+                Learn more about kyuartz gallery
+              </div>
+            </div>
+
+            <div class="suggestion">
+              <div class="suggestion-icon">😸</div>
+              <div class="suggestion-title">Joke</div>
+              <div class="suggestion-desc">Lighten up your day</div>
+            </div>
+
+            <div class="suggestion">
+              <div class="suggestion-icon">💡</div>
+              <div class="suggestion-title">Fun Facts</div>
+              <div class="suggestion-desc">Learn something interesting</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Ask me anything..."
+              maxlength="1000"
+            />
+            <button class="voice-btn" id="voiceBtn" title="Voice input">
+              <i class="fas fa-microphone"></i>
+            </button>
+
+            <button class="emoji-btn" id="emojiBtn" title="Add emoji">
+              <i class="fas fa-smile"></i>
+            </button>
+
+            <div class="emoji-picker" id="emojiPicker">
+              <span>😊</span><span>😂</span><span>❤️</span><span>👍</span>
+              <span>🎉</span><span>🤔</span><span>😍</span><span>👏</span>
+              <span>🔥</span><span>💯</span><span>✨</span><span>🚀</span>
+              <span>💡</span><span>🎨</span><span>🖼️</span><span>✍️</span>
+            </div>
+          </div>
+
+          <button class="send-btn" id="sendBtn" title="Send message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
         </div>
       </div>
     </div>
-
-    <div class="chat-panel">
-      <div class="chat-header">
-        <nav class="nav-buttons" id="navButtons" aria-label="Dialogue navigation">
-          <div class="action-btn">
-            <select class="model-selector" id="modelSelector" onchange="changeModel(this.value)">
-              <option value="local">Local Model</option>
-              <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
-              <option value="gpt-4">GPT-4</option>
-              <option value="claude-2">Claude 2</option>
-            </select>
-          </div>
-
-          <div class="action-btn">
-            <button type="button" onclick="window.history.back()" title="Close">
-            <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button type="button" id="historyToggle" title="Conversation History">
-              <i class="fa-solid fa-clock-rotate-left"></i>
-            </button>
-            <button type="button" id="exportChat" title="Export Chat">
-              <i class="fa-solid fa-download"></i>
-            </button>
-            <button type="button" id="openPreferences" title="Preferences">
-              <i class="fa-solid fa-gear"></i>
-            </button>
-          </div>
-        </nav>
-      </div>
-
-      <div class="chat-messages" id="chatMessages">
-        <div class="welcome-message" id="welcomeMessage">
-          <h1>Hello there!</h1>
-          <p>How can I assist you today?</p>
-        </div>
-        <div class="suggestions" id="suggestions">
-          <div class="suggestion">
-            <div class="suggestion-icon">🎨</div>
-            <div class="suggestion-title">KyuArtz</div>
-            <div class="suggestion-desc">Learn about our creative studio</div>
-          </div>
-          <div class="suggestion">
-            <div class="suggestion-icon">💼</div> 
-            <div class="suggestion-title">Services</div>
-            <div class="suggestion-desc">Learn more about our services</div>
-          </div>
-          <div class="suggestion">
-            <div class="suggestion-icon">🎯</div> 
-            <div class="suggestion-title">Commissions</div>
-            <div class="suggestion-desc">Get custom artwork created</div>
-          </div>
-          <div class="suggestion">
-            <div class="suggestion-icon">🖼️</div> 
-            <div class="suggestion-title">Gallery</div>
-            <div class="suggestion-desc">Learn more about kyuartz gallery</div>
-          </div>
-          <div class="suggestion">
-            <div class="suggestion-icon">😸</div> 
-            <div class="suggestion-title">Joke</div>
-            <div class="suggestion-desc">Lighten up your day</div>
-          </div>
-          <div class="suggestion">
-            <div class="suggestion-icon">💡</div> 
-            <div class="suggestion-title">Fun Facts</div>
-            <div class="suggestion-desc">Learn something interesting</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="input-container">
-        <div class="input-wrapper">
-          <input type="text" id="userInput" placeholder="Ask me anything..." maxlength="1000">
-          <button class="voice-btn" id="voiceBtn" title="Voice input">
-            <i class="fas fa-microphone"></i>
-          </button>
-          <button class="emoji-btn" id="emojiBtn" title="Add emoji">
-            <i class="fas fa-smile"></i>
-          </button>
-          <div class="emoji-picker" id="emojiPicker">
-            <span>😊</span><span>😂</span><span>❤️</span><span>👍</span>
-            <span>🎉</span><span>🤔</span><span>😍</span><span>👏</span>
-            <span>🔥</span><span>💯</span><span>✨</span><span>🚀</span>
-            <span>💡</span><span>🎨</span><span>🖼️</span><span>✍️</span>
-          </div>
-        </div>
-        <button class="send-btn" id="sendBtn" title="Send message">
-          <i class="fas fa-paper-plane"></i>
-        </button>
-      </div>
-    </div>
-  </div>
-  
-</body>
+  </body>
 </html>

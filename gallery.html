@@ -1,284 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz Studio | Gallery</title>
-  <meta name="description" content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
-  <meta name="keywords" content="KyuArtz Studio">
-  <meta name="author" content="KyuArtz">
-  <meta name="theme-color" content="var(--color)">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
-  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content="KyuArtz">
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
-  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/gallery">
-  <link rel="preconnect" href="https://kit.fontawesome.com">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/gallery.css">
-  <link rel="stylesheet" href="assets/css/nav.css">
-  <link rel="stylesheet" href="assets/css/popup.css">
-  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/welcome.js" defer></script>
-  <script src="assets/js/preferences.js" defer></script>
-  <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/gallery.js" defer></script>
-  <meta property="og:title" content="KyuArtz Studio | gallery">
-  <meta property="og:description" content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
-  <meta property="og:image:alt" content="KyuArtz logo">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/gallery">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz Studio | gallery">
-  <meta name="twitter:description" content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
-  <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://kyuartz.github.io/kyuartz/gallery",
-      "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
-      "name": "KyuArtz Studio"
-    }
-  </script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>KyuArtz Studio | Gallery</title>
+    <meta
+      name="description"
+      content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey."
+    />
+    <meta name="keywords" content="KyuArtz Studio" />
+    <meta name="author" content="KyuArtz" />
+    <meta name="theme-color" content="var(--color)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-TileColor" content="var(--color)" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg"
+    />
+    <link
+      rel="icon"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico"
+      sizes="48x48"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="KyuArtz" />
+    <link
+      rel="manifest"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest"
+    />
+    <link rel="canonical" href="https://kyuartz.github.io/kyuartz/gallery" />
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/gallery.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <script
+      src="https://kit.fontawesome.com/27458a63ca.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/welcome.js" defer></script>
+    <script src="assets/js/preferences.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/gallery.js" defer></script>
+    <meta property="og:title" content="KyuArtz Studio | gallery" />
+    <meta
+      property="og:description"
+      content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey."
+    />
+    <meta
+      property="og:image"
+      content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png"
+    />
+    <meta property="og:image:alt" content="KyuArtz logo" />
+    <meta
+      property="og:url"
+      content="https://kyuartz.github.io/kyuartz/gallery"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KyuArtz Studio | gallery" />
+    <meta
+      name="twitter:description"
+      content="Explore the gallery of KyuArtz, featuring a vast collection of unique artworks, creative projects, and personal endeavors that showcase our artistic journey."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png"
+    />
+    <meta name="twitter:image:alt" content="KyuArtz logo and branding" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://kyuartz.github.io/kyuartz/gallery",
+        "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
+        "name": "KyuArtz Studio"
+      }
+    </script>
+  </head>
 
-<body>
-  <div class="welcome-overlay" id="welcomeOverlay">
-    <div class="welcome-message" id="welcomeMessage">
-      <div class="particles" id="particles"></div>
-      
-      <button class="close-wm" onclick="closeWelcomeMessage()" aria-label="Close welcome message"><i class="fas fa-times"></i></button>
+  <body>
+    <div class="welcome-overlay" id="welcomeOverlay">
+      <div class="welcome-message" id="welcomeMessage">
+        <div class="particles" id="particles"></div>
 
-      <div class="mascot-section">
-        <div class="mascot-img" id="mascotImg">
-          <img src="assets/images/assistant/happy.webp" alt="Meo" loading="lazy">
+        <button
+          class="close-wm"
+          onclick="closeWelcomeMessage()"
+          aria-label="Close welcome message"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="mascot-section">
+          <div class="mascot-img" id="mascotImg">
+            <img
+              src="assets/images/assistant/happy.webp"
+              alt="Meo"
+              loading="lazy"
+            />
+          </div>
         </div>
-      </div>
 
-      <div class="dialogue-section" id="dialogueBox">
-        <div class="mascot-name" id="mascotName"></div>
-        <div class="dialogue-text" id="dialogueText">
-          <span class="typing-cursor" id="typingCursor"></span>
+        <div class="dialogue-section" id="dialogueBox">
+          <div class="mascot-name" id="mascotName"></div>
+          <div class="dialogue-text" id="dialogueText">
+            <span class="typing-cursor" id="typingCursor"></span>
+          </div>
+          <div class="dialogue-options" id="dialogueOptions"></div>
         </div>
-        <div class="dialogue-options" id="dialogueOptions"></div>
       </div>
     </div>
-  </div>
 
-  <div id="cookie-popup" class="cookie-popup">
-    <p>KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a class="dL" href="service-center.html">Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies">Got It</button>
-  </div>
+    <div id="cookie-popup" class="cookie-popup">
+      <p>
+        KyuArtz uses cookies to enhance your experience. By continuing to use
+        our site, you accept our cookie policy.
+        <a class="dL" href="service-center.html"
+          >Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </p>
+      <button id="accept-cookies">Got It</button>
+    </div>
 
-  <div class="blur-overlay"></div>
-  <header>
-    <nav class="main-navigation" role="navigation" aria-label="Main Navigation">
-      <a class="brand" aria-label="KyuArtz Home Page" href="index.html">
-        <img src="assets/images/brand/logo.webp" alt="KyuArtz Logo" loading="lazy">
-      </a>
+    <div class="blur-overlay"></div>
+    <header>
+      <nav
+        class="main-navigation"
+        role="navigation"
+        aria-label="Main Navigation"
+      >
+        <a class="brand" aria-label="KyuArtz Home Page" href="index.html">
+          <img
+            src="assets/images/brand/logo.webp"
+            alt="KyuArtz Logo"
+            loading="lazy"
+          />
+        </a>
 
-      <ul class="navigation-menu" role="menubar">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link" data-page="/" role="menuitem">
-            <i class="fa-solid fa-house"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="gallery.html" class="nav-link" data-page="/gallery" role="menuitem">
-            <i class="fa-solid fa-images"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link" data-page="/about" role="menuitem">
-            <i class="fa-solid fa-id-card"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link" data-page="/contact" role="menuitem">
-            <i class="fa-solid fa-phone-volume"></i>
-          </a>
-        </li>
-        
-        <li class="nav-item moreMenu">
-          <a href="#" class="more-menu-links" aria-expanded="false" role="menuitem" aria-haspopup="true" aria-controls="moreMenu">
-            <i class="fa-solid fa-list"></i>
-          </a>
+        <ul class="navigation-menu" role="menubar">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link" data-page="/" role="menuitem">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </li>
 
-          <div class="dropdown-more" aria-hidden="true">
-            <div class="span-btn">
-              <h2>Commission</h2>
-              <a href="commission-sheet.html" data-page="/commission-sheet">
-                <i class="fa-solid fa-file"></i> Commission Sheet
-              </a>
-              <a href="client-queue.html" data-page="/client-queue">
-                <i class="fa-solid fa-table"></i> Client Queue
-              </a>
+          <li class="nav-item">
+            <a
+              href="gallery.html"
+              class="nav-link"
+              data-page="/gallery"
+              role="menuitem"
+            >
+              <i class="fa-solid fa-images"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="about.html"
+              class="nav-link"
+              data-page="/about"
+              role="menuitem"
+            >
+              <i class="fa-solid fa-id-card"></i>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              href="contact.html"
+              class="nav-link"
+              data-page="/contact"
+              role="menuitem"
+            >
+              <i class="fa-solid fa-phone-volume"></i>
+            </a>
+          </li>
+
+          <li class="nav-item moreMenu">
+            <a
+              href="#"
+              class="more-menu-links"
+              aria-expanded="false"
+              role="menuitem"
+              aria-haspopup="true"
+              aria-controls="moreMenu"
+            >
+              <i class="fa-solid fa-list"></i>
+            </a>
+
+            <div class="dropdown-more" aria-hidden="true">
+              <div class="span-btn">
+                <h2>Commission</h2>
+                <a href="commission-sheet.html" data-page="/commission-sheet">
+                  <i class="fa-solid fa-file"></i> Commission Sheet
+                </a>
+                <a href="client-queue.html" data-page="/client-queue">
+                  <i class="fa-solid fa-table"></i> Client Queue
+                </a>
+              </div>
+
+              <div class="span-btn">
+                <h2>Explore</h2>
+                <a href="comic.html" data-page="/comic">
+                  <i class="fa-solid fa-film"></i> Kyuartz Comic
+                </a>
+                <a href="world-archive.html" data-page="/world-archive">
+                  <i class="fa-solid fa-globe"></i> World Archive
+                </a>
+              </div>
+
+              <div class="span-btn">
+                <h2>Support</h2>
+                <a href="service-center.html" data-page="/service-center">
+                  <i class="fa-solid fa-headset"></i> Service Center
+                </a>
+                <a href="update-log.html" data-page="/update-log">
+                  <i class="fa-solid fa-download"></i> What's New
+                </a>
+              </div>
             </div>
-            <div class="span-btn">
-              <h2>Explore</h2>
-              <a href="comic.html" data-page="/comic">
-                <i class="fa-solid fa-film"></i> Kyuartz Comic
+          </li>
+        </ul>
+
+        <div class="subMenu-container">
+          <div class="settings-menu">
+            <button class="settings-btn" aria-label="Settings">
+              <i class="fa-solid fa-gear"></i>
+            </button>
+
+            <div class="dropdown-setting" aria-label="Settings dropdown">
+              <a href="about.html" data-page="/about.html">
+                <div class="profile">
+                  <img
+                    src="assets/images/artgallery/former falcon squad (2023).webp"
+                    alt="Profile"
+                  />
+                  <div class="profile-info">
+                    <p class="username">Kyu</p>
+                    <p class="userrole">Artist</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
               </a>
-              <a href="world-archive.html" data-page="/world-archive">
-                <i class="fa-solid fa-globe"></i> World Archive
+
+              <a class="setting" href="meo-ai-assistant.html">
+                <i class="fa-solid fa-cat fa-bounce"></i> Meo AI Assistant
               </a>
-            </div>
-            <div class="span-btn">
-              <h2>Support</h2>
-              <a href="service-center.html" data-page="/service-center">
+
+              <a class="setting" href="preferences.html">
+                <i class="fa-solid fa-palette"></i> Preferences
+              </a>
+
+              <a class="setting" href="service-center.html">
                 <i class="fa-solid fa-headset"></i> Service Center
               </a>
-              <a href="update-log.html" data-page="/update-log">
-                <i class="fa-solid fa-download"></i> What's New
-              </a>
             </div>
           </div>
-        </li>
-      </ul>
-      
-      <div class="subMenu-container">
-        <div class="settings-menu">
-          <button class="settings-btn" aria-label="Settings">
-            <i class="fa-solid fa-gear"></i>
-          </button>
-          <div class="dropdown-setting" aria-label="Settings dropdown">
-            <a href="about.html" data-page="/about.html">
-              <div class="profile">
-                <img src="assets/images/artgallery/former falcon squad (2023).webp" alt="Profile">
-                <div class="profile-info">
-                  <p class="username"> Kyu</p>
-                  <p class="userrole"> Artist</p>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
-              </div>
-            </a>
-            <a class="setting" href="meo-ai-assistant.html">
-              <i class="fa-solid fa-cat fa-bounce"></i> Meo AI Assistant
-            </a>
-            <a class="setting" href="preferences.html">
-              <i class="fa-solid fa-palette"></i> Preferences
-            </a>
-            <a class="setting" href="service-center.html">
-              <i class="fa-solid fa-headset"></i> Service Center
-            </a>
+
+          <div class="hamburger" aria-label="Mobile menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
         </div>
-        
-        <div class="hamburger" aria-label="Mobile menu">
-           <span class="bar"></span>
-           <span class="bar"></span>
-           <span class="bar"></span>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Discover Art</h1>
+      <p>Explore my artistic journey through various styles and mediums</p>
+
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">
+          <i class="fa-solid fa-filter"></i> All Artworks
+        </button>
+        <button class="filter-btn" data-category="semi-realism">
+          <i class="fa-solid fa-filter"></i> Semi Realism
+        </button>
+        <button class="filter-btn" data-category="grayscale">
+          <i class="fa-solid fa-filter"></i> Grayscale
+        </button>
+        <button class="filter-btn" data-category="anime-style">
+          <i class="fa-solid fa-filter"></i> Anime Style
+        </button>
+        <button class="filter-btn" data-category="landscape">
+          <i class="fa-solid fa-filter"></i> Landscape
+        </button>
+      </div>
+    </section>
+
+    <main class="gallery-container">
+      <div class="gallery-stats">
+        <div class="stats-info">
+          <span id="showing-count">12</span> of
+          <span id="total-count">12</span> artworks
+        </div>
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid" title="Grid View">
+            ⊞
+          </button>
+          <button class="view-btn" data-view="masonry" title="Masonry View">
+            ⊡
+          </button>
         </div>
       </div>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Discover Art</h1>
-    <p>Explore my artistic journey through various styles and mediums</p>
-    
-    <div class="category-filters">
-      <button class="filter-btn active" data-category="all">
-        <i class="fa-solid fa-filter"></i> All Artworks
-      </button>
-      <button class="filter-btn" data-category="semi-realism">
-        <i class="fa-solid fa-filter"></i> Semi Realism
-      </button>
-      <button class="filter-btn" data-category="grayscale">
-        <i class="fa-solid fa-filter"></i> Grayscale
-      </button>
-      <button class="filter-btn" data-category="anime-style">
-        <i class="fa-solid fa-filter"></i> Anime Style
-      </button>
-      <button class="filter-btn" data-category="landscape">
-        <i class="fa-solid fa-filter"></i> Landscape
-      </button>
-    </div>
-  </section>
+      <div class="gallery grid-view" id="gallery"></div>
+    </main>
 
-  <main class="gallery-container">
-    <div class="gallery-stats">
-      <div class="stats-info">
-        <span id="showing-count">12</span> of <span id="total-count">12</span> artworks
-      </div>
-      <div class="view-toggle">
-        <button class="view-btn active" data-view="grid" title="Grid View">⊞</button>
-        <button class="view-btn" data-view="masonry" title="Masonry View">⊡</button>
+    <div class="lightbox-overlay" id="lightbox">
+      <div class="lightbox-container">
+        <img class="lightbox-image" id="lightbox-image" src="" alt="" />
+
+        <div class="lightbox-controls">
+          <button class="lightbox-btn" id="close-lightbox" title="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <button
+          class="lightbox-nav lightbox-prev"
+          id="prev-btn"
+          title="Previous"
+        >
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" id="next-btn" title="Next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="lightbox-info">
+          <div class="info-title" id="lightbox-title">Artwork Title</div>
+          <div class="info-category" id="lightbox-category">Category</div>
+        </div>
       </div>
     </div>
 
-    <div class="gallery grid-view" id="gallery"></div>
-  </main>
+    <button type="button" id="upBtn" title="Go to top">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
 
-  <div class="lightbox-overlay" id="lightbox">
-    <div class="lightbox-container">
-      <img class="lightbox-image" id="lightbox-image" src="" alt="">
-      
-      <div class="lightbox-controls">
-        <button class="lightbox-btn" id="close-lightbox" title="Close"><i class="fas fa-times"></i></button>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Explore</h4>
+          <a href="commission-sheet.html">Commission Sheet</a>
+          <a href="client-queue.html">Client Queue</a>
+          <a href="world-archive.html">World Archive</a>
+          <a href="comic.html">Kyuartz Comic</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Support</h4>
+          <a href="service-center.html">FAQ</a>
+          <a href="service-center.html">Terms of Service</a>
+          <a href="service-center.html">Privacy Policy</a>
+          <a href="contact.html">Customer Support</a>
+        </div>
       </div>
 
-      <button class="lightbox-nav lightbox-prev" id="prev-btn" title="Previous"><i class="fas fa-chevron-left"></i></button>
-      <button class="lightbox-nav lightbox-next" id="next-btn" title="Next"><i class="fas fa-chevron-right"></i></button>
-
-      <div class="lightbox-info">
-        <div class="info-title" id="lightbox-title">Artwork Title</div>
-        <div class="info-category" id="lightbox-category">Category</div>
+      <div class="social-links">
+        <a href="https://www.facebook.com/kyuArtz" title="Facebook"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/124/124010.png"
+            alt="Facebook"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw"
+          title="YouTube"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"
+            alt="YouTube"
+        /></a>
+        <a href="https://x.com/KyuArtz_992" title="Twitter"
+          ><img
+            src="https://i.pinimg.com/originals/25/0f/fa/250ffa74bfcca5b2929bccda8df2e4f5.jpg"
+            alt="Twitter"
+        /></a>
+        <a href="https://kyuartz.artstation.com/" title="ArtStation"
+          ><img
+            src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Artstation_logo_logos-512.png"
+            alt="ArtStation"
+        /></a>
+        <a href="https://cara.app/kyuartz" title="Cara"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Cara-app-logo-square.svg"
+            alt="Cara"
+        /></a>
       </div>
-    </div>
-  </div>
 
-  <button type="button" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
-
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+      <div class="copyright">
+        <p>
+          <i class="fa-regular fa-copyright"></i> 2022 &mdash;
+          <span id="currentyear"></span> KyuArtz Studio, All rights reserved
+        </p>
       </div>
-
-      <div class="footer-section">
-        <h4>Explore</h4>
-        <a href="commission-sheet.html">Commission Sheet</a>
-        <a href="client-queue.html">Client Queue</a>
-        <a href="world-archive.html">World Archive</a>
-        <a href="comic.html">Kyuartz Comic</a>
-      </div>
-      
-      <div class="footer-section">
-        <h4>Support</h4>
-        <a href="service-center.html">FAQ</a>
-        <a href="service-center.html">Terms of Service</a>
-        <a href="service-center.html">Privacy Policy</a>
-        <a href="contact.html">Customer Support</a>
-      </div>
-    </div>
-    
-    <div class="social-links">
-      <a href="https://www.facebook.com/kyuArtz" title="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
-      <a href="https://www.youtube.com/channel/UCfrtqAzAoFq0IzE_nlvi4Tw" title="YouTube"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="YouTube"></a>
-      <a href="https://x.com/KyuArtz_992" title="Twitter"><img src="https://i.pinimg.com/originals/25/0f/fa/250ffa74bfcca5b2929bccda8df2e4f5.jpg" alt="Twitter"></a>
-      <a href="https://kyuartz.artstation.com/" title="ArtStation"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/27_Artstation_logo_logos-512.png" alt="ArtStation"></a>
-      <a href="https://cara.app/kyuartz" title="Cara"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Cara-app-logo-square.svg" alt="Cara"></a>
-    </div>
-    
-    <div class="copyright">
-      <p><i class="fa-regular fa-copyright"></i> 2022 &mdash; <span id="currentyear"></span> KyuArtz Studio, All rights reserved</p>
-    </div>
-    <div id="version">Loading...</div>
-  </footer>
-</body>
+      <div id="version">Loading...</div>
+    </footer>
+  </body>
 </html>

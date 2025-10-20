@@ -1,257 +1,569 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>KyuArtz Studio | Character Codex</title>
-  <meta name="description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
-  <meta name="keywords" content="KyuArtz Studio">
-  <meta name="author" content="KyuArtz">
-  <meta name="theme-color" content="var(--color)">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-TileColor" content="var(--color)">
-  <link rel="icon" type="image/png" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png" sizes="48x48">
-  <link rel="icon" type="image/svg+xml" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg">
-  <link rel="icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico" sizes="48x48">
-  <link rel="shortcut icon" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png">
-  <meta name="apple-mobile-web-app-title" content="KyuArtz">
-  <link rel="manifest" href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest">
-  <link rel="canonical" href="https://kyuartz.github.io/kyuartz/character-codex">
-  <link rel="preconnect" href="https://kit.fontawesome.com">
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/character-codex.css">
-  <link rel="stylesheet" href="assets/css/nav.css">
-  <link rel="stylesheet" href="assets/css/popup.css">
-  <script src="https://kit.fontawesome.com/27458a63ca.js" crossorigin="anonymous" defer></script>
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/welcome.js" defer></script>
-  <script src="assets/js/preferences.js" defer></script>
-  <script src="assets/js/nav.js" defer></script>
-  <script src="assets/js/characterCodex.js" defer></script>
-  <meta property="og:title" content="KyuArtz Studio | Character Codex">
-  <meta property="og:description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
-  <meta property="og:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
-  <meta property="og:image:alt" content="KyuArtz logo and branding">
-  <meta property="og:url" content="https://kyuartz.github.io/kyuartz/character-codex">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="KyuArtz Studio | Character Codex">
-  <meta name="twitter:description" content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu.">
-  <meta name="twitter:image" content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png">
-  <meta name="twitter:image:alt" content="KyuArtz logo and branding">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://kyuartz.github.io/kyuartz/character-codex",
-      "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
-      "name": "KyuArtz Studio"
-    }
-  </script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>KyuArtz Studio | Character Codex</title>
+    <meta
+      name="description"
+      content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu."
+    />
+    <meta name="keywords" content="KyuArtz Studio" />
+    <meta name="author" content="KyuArtz" />
+    <meta name="theme-color" content="var(--color)" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-TileColor" content="var(--color)" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.svg"
+    />
+    <link
+      rel="icon"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico"
+      sizes="48x48"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="KyuArtz" />
+    <link
+      rel="manifest"
+      href="https://kyuartz.github.io/kyuartz/assets/images/favicon/site.webmanifest"
+    />
+    <link
+      rel="canonical"
+      href="https://kyuartz.github.io/kyuartz/character-codex"
+    />
+    <link rel="preconnect" href="https://kit.fontawesome.com" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/character-codex.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/popup.css" />
+    <script
+      src="https://kit.fontawesome.com/27458a63ca.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/welcome.js" defer></script>
+    <script src="assets/js/preferences.js" defer></script>
+    <script src="assets/js/nav.js" defer></script>
+    <script src="assets/js/characterCodex.js" defer></script>
+    <meta property="og:title" content="KyuArtz Studio | Character Codex" />
+    <meta
+      property="og:description"
+      content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu."
+    />
+    <meta
+      property="og:image"
+      content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png"
+    />
+    <meta property="og:image:alt" content="KyuArtz logo and branding" />
+    <meta
+      property="og:url"
+      content="https://kyuartz.github.io/kyuartz/character-codex"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KyuArtz Studio | Character Codex" />
+    <meta
+      name="twitter:description"
+      content="Explore the unique characters from KyuArtz, each with detailed backgrounds, distinct abilities, and compelling stories. Delve into their journeys, powers, and roles in the world crafted by Kyu."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kyuartz.github.io/kyuartz/assets/images/brand/cover.png"
+    />
+    <meta name="twitter:image:alt" content="KyuArtz logo and branding" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://kyuartz.github.io/kyuartz/character-codex",
+        "logo": "https://kyuartz.github.io/kyuartz/assets/images/brand/logo.png",
+        "name": "KyuArtz Studio"
+      }
+    </script>
+  </head>
 
-<body>
-  <div class="welcome-overlay" id="welcomeOverlay">
-    <div class="welcome-message" id="welcomeMessage">
-      <div class="particles" id="particles"></div>
-      
-      <button class="close-wm" onclick="closeWelcomeMessage()" aria-label="Close welcome message"><i class="fas fa-times"></i></button>
+  <body>
+    <div class="welcome-overlay" id="welcomeOverlay">
+      <div class="welcome-message" id="welcomeMessage">
+        <div class="particles" id="particles"></div>
 
-      <div class="mascot-section">
-        <div class="mascot-img" id="mascotImg">
-          <img src="assets/images/assistant/happy.webp" alt="Meo" loading="lazy">
+        <button
+          class="close-wm"
+          onclick="closeWelcomeMessage()"
+          aria-label="Close welcome message"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="mascot-section">
+          <div class="mascot-img" id="mascotImg">
+            <img
+              src="assets/images/assistant/happy.webp"
+              alt="Meo"
+              loading="lazy"
+            />
+          </div>
         </div>
-      </div>
 
-      <div class="dialogue-section" id="dialogueBox">
-        <div class="mascot-name" id="mascotName"></div>
-        <div class="dialogue-text" id="dialogueText">
-          <span class="typing-cursor" id="typingCursor"></span>
+        <div class="dialogue-section" id="dialogueBox">
+          <div class="mascot-name" id="mascotName"></div>
+          <div class="dialogue-text" id="dialogueText">
+            <span class="typing-cursor" id="typingCursor"></span>
+          </div>
+          <div class="dialogue-options" id="dialogueOptions"></div>
         </div>
-        <div class="dialogue-options" id="dialogueOptions"></div>
       </div>
     </div>
-  </div>
 
-  <div id="cookie-popup" class="cookie-popup">
-    <p>KyuArtz uses cookies to enhance your experience. By continuing to use our site, you accept our cookie policy. <a class="dL" href="service-center.html">Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
-    <button id="accept-cookies">Got It</button>
-  </div>
-
-  <div class="character-wrapper">
-    <div class="character-control-panel">
-      <div class="faction">
-        <div class="title">Factions</div>
-        <label class="toggle-switch" for="FOD">
-          <input type="checkbox" id="FOD" name="FOD"">
-          <span class="slider"></span>
-        </label>
-
-        <label class="toggle-switch" for="LOC">
-          <input type="checkbox" id="LOC" name="LOC">
-          <span class="slider"></span>
-        </label>
-      </div>
-
-      <section class="filter-character" aria-label="Filter Roles">
-        <button type="button" data-category="all">
-          <img src="assets/images/character-presets/roles/all.webp" alt="All"> All
-        </button>
-        <button type="button" data-category="versatile">
-          <img src="assets/images/character-presets/roles/versatile1.webp" alt="Versatile"> Versatile
-        </button>
-        <button type="button" data-category="commandant">
-          <img src="assets/images/character-presets/roles/commandant.webp" alt="Commandant"> Commandant
-        </button>
-        <button type="button" data-category="assault">
-          <img src="assets/images/character-presets/roles/assault.webp" alt="Assault"> Assault
-        </button>
-        <button type="button" data-category="sniper">
-          <img src="assets/images/character-presets/roles/sniper.webp" alt="Sniper"> Sniper
-        </button>
-        <button type="button" data-category="explosive">
-          <img src="assets/images/character-presets/roles/explosive.webp" alt="Explosive"> Explosive
-        </button>
-        <button type="button" data-category="juggernaut">
-          <img src="assets/images/character-presets/roles/juggernaut.webp" alt="Jaggernaut"> Jaggernaut
-        </button>
-        <button type="button" data-category="combat-medic">
-          <img src="assets/images/character-presets/roles/combat-medic.webp" alt="Combat Medic"> Medic
-        </button>
-      </section>
-
-      <div class="character-settings">
-        <button class="close-character" type="button" onclick="window.history.back()" title="Close">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-  </div>
-    
-    <div class="character-container">
-      <div class="character-slider">
-        <div class="carousel-view">
-          <div class="character-cards-wrapper">
-            <div class="character-card" data-faction="FOD" data-category="assault,versatile" data-character="elishia" data-accent="#1e90ff">
-              <div class="role">
-                <img src="assets/images/character-presets/roles/versatile1.webp" alt="" title="Versatile">
-              </div>
-              <img class="ready" src="assets/images/character-presets/profile/elishia.webp" alt="">
-              <div class="overlay">
-                <div class="character-name">Elishia</div>
-                <p class="title">Phantom Nightwalker</p>
-              </div>
-            </div>
-
-            <div class="character-card" data-faction="FOD" data-category="combat-medic" data-character="comingSoon" data-accent="#a1a1a1">
-              <div class="role">
-                <img src="assets/images/character-presets/roles/combat-medic.webp" alt="" title="Role">
-              </div>
-              <img class="not-ready" src="assets/images/character-presets/profile/evalete.webp" alt="">
-              <div class="overlay">
-                <div class="character-name">Coming Soon</div>
-                <p class="title">No Title</p>
-              </div>
-            </div>
-
-            <div class="character-card" data-faction="FOD" data-category="commandant" data-character="comingSoon" data-accent="#a1a1a1">
-              <div class="role">
-                <img src="assets/images/character-presets/roles/commandant.webp" alt="" title="Role">
-              </div>
-              <img class="not-ready" src="assets/images/character-presets/profile/zackcry.webp" alt="">
-              <div class="overlay">
-                <div class="character-name">Coming Soon</div>
-                <p class="title">No Title</p>
-              </div>
-            </div>
-
-            <div class="character-card" data-faction="FOD" data-category="juggernaut,explosive" data-character="comingSoon" data-accent="#a1a1a1">
-              <div class="role">
-                <img src="assets/images/character-presets/roles/juggernaut.webp" alt="" title="Role">
-                <img src="assets/images/character-presets/roles/explosive.webp" alt="" title="Role">
-              </div>
-              <img class="not-ready" src="assets/images/character-presets/profile/jazen.webp" alt="">
-              <div class="overlay">
-                <div class="character-name">Coming Soon</div>
-                <p class="title">No Title</p>
-              </div>
-            </div>
-
-            <div class="character-card" data-faction="FOD" data-category="sniper" data-character="comingSoon" data-accent="#a1a1a1">
-              <div class="role">
-                <img src="assets/images/character-presets/roles/sniper.webp" alt="" title="Role">
-              </div>
-              <img class="not-ready" src="assets/images/character-presets/profile/zenki.webp" alt="">
-              <div class="overlay">
-                <div class="character-name">Coming Soon</div>
-                <p class="title">No Title</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="character-action">
-          <button type="button" class="carousel-btn left-btn" onclick="scrollCarousel(-1)">❮</button>
-          <button type="button" class="carousel-btn right-btn" onclick="scrollCarousel(1)">❯</button>
-        </div>
-      </div>
-
-      <div class="character-info" id="character-info">
-        <div class="close-btn-container">
-          <button class="close-btn" onclick="hideCharacterInfo()" data-translate=""><i class="fas fa-times"></i></button>
-        </div>
-
-        <div id="character-details" aria-live="polite">
-          <h2>No character have been selected</h2>
-          <div class="elemental-section" id="elemental">
-            <h3><i class="fa-regular fa-circle-question"></i> Elemental Mastery</h3>
-            <img src="assets/images/character-presets/roles/question.webp" alt="" title="Role">
-          </div>
-
-          <div class="character-info-wrapper">
-            <div class="character-info-scrollable">
-              <div class="info-section" id="basic-info-scrollable">
-                <h3><i class="fa-regular fa-circle-question"></i> Basic Information</h3>
-                <content><strong><i class="fas fa-user"></i> Race:</strong> </content>
-                <content><strong><i class="fas fa-venus-mars"></i> Gender:</strong> </content>
-                <content><strong><i class="fas fa-ruler-vertical"></i> Height:</strong> </content>
-                <content><strong><i class="fas fa-globe"></i> Homeland:</strong> </content>
-                <content><strong><i class="fas fa-shield-alt"></i> Faction:</strong> </content>
-                <content><strong><i class="fas fa-crown"></i> Role:</strong> </content>
-                <content><strong><i class="fas fa-briefcase"></i> Occupation:</strong> </content>
-              </div>
-
-              <div class="info-section" id="abilities">
-                <h3><i class="fa-regular fa-circle-question"></i> Abilities</h3>
-              </div>
-
-              <div class="info-section" id="weapon">
-                <h3><i class="fa-regular fa-circle-question"></i> Main Weapon</h3>
-              </div>
-
-              <div class="info-section" id="affiliates">
-                <h3><i class="fa-regular fa-circle-question"></i> Affiliates</h3>
-              </div>
-
-              <div class="info-section" id="likes">
-                <h3><i class="fa-regular fa-circle-question"></i> Likes</h3>
-              </div>
-
-              <div class="info-section" id="dislikes">
-                <h3><i class="fa-regular fa-circle-question"></i> Dislikes</h3>
-              </div>
-
-              <div class="info-section" id="background">
-                <h3><i class="fa-regular fa-circle-question"></i> Background</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="info-bg"></div>
-      </div>
+    <div id="cookie-popup" class="cookie-popup">
+      <p>
+        KyuArtz uses cookies to enhance your experience. By continuing to use
+        our site, you accept our cookie policy.
+        <a class="dL" href="service-center.html"
+          >Privacy Policy <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
+      </p>
+      <button id="accept-cookies">Got It</button>
     </div>
-    <div class="character-overlay"></div>
-    <div class="character-background"></div>
-  </div>
-</body>
+
+    <div class="character-wrapper">
+      <div class="character-control-panel">
+        <h2 class="panel-title">Character Codex</h2>
+        <div class="character-settings">
+          <button class="character-btn" aria-label="Settings">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button
+            class="character-btn"
+            onclick="window.location.href='/world-archive.html'"
+            aria-label="World Archive"
+          >
+            <i class="fa-solid fa-times"></i>
+          </button>
+
+          <div class="dropdown-character-settings">
+            <button class="close-settings-btn" aria-label="Close Settings">
+              <i class="fas fa-times"></i>
+            </button>
+
+            <h3 class="setting-title">Factions</h3>
+            <section class="faction-section" aria-label="Filter Factions">
+              <div class="faction">
+                <p>Falcon Company</p>
+                <label class="toggle-switch" for="falcon">
+                  <input type="checkbox" id="falcon" name="falcon" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>Phantom Rebellion</p>
+                <label class="toggle-switch" for="phantom">
+                  <input type="checkbox" id="phantom" name="phantom" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>Global Administration of Terra</p>
+                <label class="toggle-switch" for="globalAdmin">
+                  <input type="checkbox" id="globalAdmin" name="globalAdmin" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>Iron Clad Division</p>
+                <label class="toggle-switch" for="ironClad">
+                  <input type="checkbox" id="ironClad" name="ironClad" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>NanoFuture Division</p>
+                <label class="toggle-switch" for="nanoFuture">
+                  <input type="checkbox" id="nanoFuture" name="nanoFuture" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>Desert Serpent</p>
+                <label class="toggle-switch" for="desertSerpent">
+                  <input
+                    type="checkbox"
+                    id="desertSerpent"
+                    name="desertSerpent"
+                  />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>Black Halo Union</p>
+                <label class="toggle-switch" for="blackHalo">
+                  <input type="checkbox" id="blackHalo" name="blackHalo" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+
+              <div class="faction">
+                <p>Redshifts</p>
+                <label class="toggle-switch" for="redshifts">
+                  <input type="checkbox" id="redshifts" name="redshifts" />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </section>
+
+            <h3 class="setting-title">Roles</h3>
+            <section class="role-section" aria-label="Filter Roles">
+              <button type="button" data-category="all">
+                <img
+                  src="assets/images/character-presets/roles/all.webp"
+                  alt="All"
+                />
+                All
+              </button>
+
+              <button type="button" data-category="versatile">
+                <img
+                  src="assets/images/character-presets/roles/versatile1.webp"
+                  alt="Versatile"
+                />
+                Versatile
+              </button>
+
+              <button type="button" data-category="commandant">
+                <img
+                  src="assets/images/character-presets/roles/commandant.webp"
+                  alt="Commandant"
+                />
+                Commandant
+              </button>
+
+              <button type="button" data-category="assault">
+                <img
+                  src="assets/images/character-presets/roles/assault.webp"
+                  alt="Assault"
+                />
+                Assault
+              </button>
+
+              <button type="button" data-category="sniper">
+                <img
+                  src="assets/images/character-presets/roles/sniper.webp"
+                  alt="Sniper"
+                />
+                Sniper
+              </button>
+
+              <button type="button" data-category="explosive">
+                <img
+                  src="assets/images/character-presets/roles/explosive.webp"
+                  alt="Explosive"
+                />
+                Explosive
+              </button>
+
+              <button type="button" data-category="juggernaut">
+                <img
+                  src="assets/images/character-presets/roles/juggernaut.webp"
+                  alt="Jaggernaut"
+                />
+                Jaggernaut
+              </button>
+
+              <button type="button" data-category="combat-medic">
+                <img
+                  src="assets/images/character-presets/roles/combat-medic.webp"
+                  alt="Combat Medic"
+                />
+                Medic
+              </button>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="character-container">
+        <div class="character-slider">
+          <div class="carousel-view">
+            <div class="character-cards-wrapper">
+              <div
+                class="character-card"
+                data-faction="falcon"
+                data-category="assault,versatile"
+                data-character="elishia"
+                data-accent="#1e90ff"
+              >
+                <div class="role">
+                  <img
+                    src="assets/images/character-presets/roles/versatile1.webp"
+                    alt=""
+                    title="Versatile"
+                  />
+                </div>
+                <img
+                  class="ready"
+                  src="assets/images/character-presets/profile/elishia.webp"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="character-name">Elishia</div>
+                  <p class="title">Phantom Nightwalker</p>
+                </div>
+              </div>
+
+              <div
+                class="character-card"
+                data-faction="falcon"
+                data-category="combat-medic"
+                data-character="comingSoon"
+                data-accent="#a1a1a1"
+              >
+                <div class="role">
+                  <img
+                    src="assets/images/character-presets/roles/combat-medic.webp"
+                    alt=""
+                    title="Role"
+                  />
+                </div>
+                <img
+                  class="not-ready"
+                  src="assets/images/character-presets/profile/evalete.webp"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="character-name">Coming Soon</div>
+                  <p class="title">No Title</p>
+                </div>
+              </div>
+
+              <div
+                class="character-card"
+                data-faction="falcon"
+                data-category="commandant"
+                data-character="comingSoon"
+                data-accent="#a1a1a1"
+              >
+                <div class="role">
+                  <img
+                    src="assets/images/character-presets/roles/commandant.webp"
+                    alt=""
+                    title="Role"
+                  />
+                </div>
+                <img
+                  class="not-ready"
+                  src="assets/images/character-presets/profile/zackcry.webp"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="character-name">Coming Soon</div>
+                  <p class="title">No Title</p>
+                </div>
+              </div>
+
+              <div
+                class="character-card"
+                data-faction="falcon"
+                data-category="juggernaut,explosive"
+                data-character="comingSoon"
+                data-accent="#a1a1a1"
+              >
+                <div class="role">
+                  <img
+                    src="assets/images/character-presets/roles/juggernaut.webp"
+                    alt=""
+                    title="Role"
+                  />
+                  <img
+                    src="assets/images/character-presets/roles/explosive.webp"
+                    alt=""
+                    title="Role"
+                  />
+                </div>
+                <img
+                  class="not-ready"
+                  src="assets/images/character-presets/profile/jazen.webp"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="character-name">Coming Soon</div>
+                  <p class="title">No Title</p>
+                </div>
+              </div>
+
+              <div
+                class="character-card"
+                data-faction="falcon"
+                data-category="sniper"
+                data-character="comingSoon"
+                data-accent="#a1a1a1"
+              >
+                <div class="role">
+                  <img
+                    src="assets/images/character-presets/roles/sniper.webp"
+                    alt=""
+                    title="Role"
+                  />
+                </div>
+                <img
+                  class="not-ready"
+                  src="assets/images/character-presets/profile/zenki.webp"
+                  alt=""
+                />
+                <div class="overlay">
+                  <div class="character-name">Coming Soon</div>
+                  <p class="title">No Title</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="character-action">
+            <button
+              type="button"
+              class="carousel-btn left-btn"
+              onclick="scrollCarousel(-1)"
+            >
+              ❮
+            </button>
+            <button
+              type="button"
+              class="carousel-btn right-btn"
+              onclick="scrollCarousel(1)"
+            >
+              ❯
+            </button>
+          </div>
+        </div>
+
+        <div class="character-info" id="character-info">
+          <div class="close-btn-container">
+            <button
+              class="close-btn"
+              onclick="hideCharacterInfo()"
+              data-translate=""
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <div id="character-details" aria-live="polite">
+            <h2>No character have been selected</h2>
+            <div class="elemental-section" id="elemental">
+              <h3 class="info-title">
+                <i class="fa-regular fa-info-circle"></i> Elemental Mastery
+              </h3>
+              <img
+                src="assets/images/character-presets/roles/question.webp"
+                alt=""
+                title="Role"
+              />
+            </div>
+
+            <div class="character-info-wrapper">
+              <div class="character-info-scrollable">
+                <div class="info-section" id="basic-info-scrollable">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Basic Information
+                  </h3>
+                  <content
+                    ><strong><i class="fas fa-user"></i> Race:</strong>
+                  </content>
+                  <content
+                    ><strong><i class="fas fa-venus-mars"></i> Gender:</strong>
+                  </content>
+                  <content
+                    ><strong
+                      ><i class="fas fa-ruler-vertical"></i> Height:</strong
+                    >
+                  </content>
+                  <content
+                    ><strong><i class="fas fa-globe"></i> Homeland:</strong>
+                  </content>
+                  <content
+                    ><strong><i class="fas fa-shield-alt"></i> Faction:</strong>
+                  </content>
+                  <content
+                    ><strong><i class="fas fa-crown"></i> Role:</strong>
+                  </content>
+                  <content
+                    ><strong
+                      ><i class="fas fa-briefcase"></i> Occupation:</strong
+                    >
+                  </content>
+                </div>
+
+                <div class="info-section" id="abilities">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Abilities
+                  </h3>
+                </div>
+
+                <div class="info-section" id="weapon">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Main Weapon
+                  </h3>
+                </div>
+
+                <div class="info-section" id="affiliates">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Affiliates
+                  </h3>
+                </div>
+
+                <div class="info-section" id="likes">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Likes
+                  </h3>
+                </div>
+
+                <div class="info-section" id="dislikes">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Dislikes
+                  </h3>
+                </div>
+
+                <div class="info-section" id="background">
+                  <h3 class="info-title">
+                    <i class="fa-regular fa-info-circle"></i> Background
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-bg"></div>
+        </div>
+      </div>
+      <div class="character-overlay"></div>
+      <div class="character-background"></div>
+    </div>
+  </body>
 </html>

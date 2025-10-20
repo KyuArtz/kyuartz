@@ -1,10 +1,10 @@
-let currentCharacter = null;
-let charactersData = null;
-
 // =====================
 // Character Backgrounds
 // =====================
 const characterBackgrounds = {};
+
+let currentCharacter = null;
+let charactersData = null;
 
 // =====================
 // Background Handling
@@ -94,18 +94,28 @@ function getCharacterDetails(character) {
   // default fallback object (same shape as JSON entries)
   const defaultDetails = {
     name: "Info Not Available Yet",
-    race: "<info>Unknown</info>",
-    gender: "<info>Unknown</info>",
-    height: "<info>Unknown</info>",
-    homeland: "<info>Unknown</info>",
-    faction: "<info>Unknown</info>",
-    role: "<info>Unknown</info>",
-    occupation: "<info>Unknown</info>",
-    affiliates: "<info><i class='fas fa-users'></i> Unknown</info>",
-    elementalImages: ["assets/images/character-presets/roles/question.webp"],
-    likes: "<info><i class='fas fa-check'></i> Unknown</info>",
-    dislikes: "<info><i class='fas fa-times'></i> Unknown</info>",
-    weapon: "<info><i class='fas fa-heart'></i> Unknown</info>",
+    race: "Unknown",
+    gender: "Unknown",
+    height: "Unknown",
+    homeland: "Unknown",
+    faction: "Unknown",
+    role: "Unknown",
+    occupation: "Unknown",
+    affiliates: [
+      "<i class='fas fa-users'></i> Unknown"
+    ],
+    elementalImages: [
+      "assets/images/character-presets/roles/question.webp"
+    ],
+    likes: [
+      "<i class='fas fa-check'></i> Unknown"
+    ],
+    dislikes: [
+      "<i class='fas fa-times'></i> Unknown"
+    ],
+    weapon: [
+      "<i class='fas fa-heart'></i> Unknown"
+    ],
     ability1:
       "<strong><i class='fas fa-star'></i> Ability 1</strong> <p>Description coming soon.</p>",
     ability2:
@@ -132,7 +142,7 @@ function getCharacterDetails(character) {
   updateBackground();
 }
 
-// --- replaced startup logic: ensure default info & background remain blank/default until user selects a character ---
+// ensure default info & background remain blank/default until user selects a character ---
 document.addEventListener("DOMContentLoaded", () => {
   // apply per-card accent CSS vars (does not change the info panel)
   applyAccentColors();
@@ -212,7 +222,7 @@ function applyCombinedFilters() {
 
   // get active role/category filter
   const activeBtn = document.querySelector(
-    ".filter-character button.active-filter"
+    ".role-section button.active-filter"
   );
   const activeRole =
     activeBtn && (activeBtn.dataset.category || "all")
@@ -221,7 +231,7 @@ function applyCombinedFilters() {
 
   // get checked factions
   const checkboxes = Array.from(
-    document.querySelectorAll('.faction input[type="checkbox"]')
+    document.querySelectorAll('.faction-section input[type="checkbox"]')
   );
   const checkedFactions = checkboxes
     .filter((cb) => cb.checked)
@@ -263,12 +273,12 @@ function applyCombinedFilters() {
 
 // Replace attachFilterListeners to use combined logic
 function attachFilterListeners() {
-  document.querySelectorAll(".filter-character button").forEach((filterBtn) => {
+  document.querySelectorAll(".role-section button").forEach((filterBtn) => {
     filterBtn.addEventListener("click", function (e) {
       e.preventDefault();
       // --- Active indicator logic ---
       document
-        .querySelectorAll(".filter-character button")
+        .querySelectorAll(".role-section button")
         .forEach((btn) => btn.classList.remove("active-filter"));
       this.classList.add("active-filter");
       // --- End active indicator logic ---
@@ -280,7 +290,7 @@ function attachFilterListeners() {
 
   // Optionally, set the first filter as active on load
   const firstFilter = document.querySelector(
-    '.filter-character button[data-category="all"]'
+    '.role-section button[data-category="all"]'
   );
   if (firstFilter) firstFilter.classList.add("active-filter");
 }
@@ -288,7 +298,7 @@ function attachFilterListeners() {
 // Update faction checkbox listener to call combined logic
 function attachFactionCheckboxListeners() {
   const checkboxes = Array.from(
-    document.querySelectorAll('.faction input[type="checkbox"]')
+    document.querySelectorAll('.faction-section input[type="checkbox"]')
   );
   if (!checkboxes.length) return;
 
@@ -309,7 +319,6 @@ function attachFactionCheckboxListeners() {
   });
 }
 
-// Initial setup
 attachCharacterCardListeners();
 attachFilterListeners();
 attachFactionCheckboxListeners();
@@ -440,7 +449,7 @@ function hideCharacterInfo() {
   // When filtering, reset carousel to first visible card
   function patchFilterButtons() {
     document
-      .querySelectorAll(".filter-character button")
+      .querySelectorAll(".role-section button")
       .forEach((filterBtn) => {
         filterBtn.addEventListener("click", function (e) {
           e.preventDefault();
@@ -452,7 +461,7 @@ function hideCharacterInfo() {
       });
     // Also ensure faction changes reset carousel
     const factionBoxes = Array.from(
-      document.querySelectorAll('.faction input[type="checkbox"]')
+      document.querySelectorAll('.faction-section input[type="checkbox"]')
     );
     factionBoxes.forEach((cb) =>
       cb.addEventListener("change", () => {
@@ -496,71 +505,102 @@ function renderCharacterDetails(details = {}) {
     "ability5",
     "ability6",
   ]
-    .map((k) => (d[k] ? `<div class="ability">${d[k]}</div>` : ""))
+    .map((k) => (d[k] ? `<div class="ability-item">${d[k]}</div>` : ""))
+    .join("");
+
+  const weapon = [
+    ...(Array.isArray(d.weapon) ? d.weapon : [d.weapon]),
+  ]
+    .map((w) => `<div class="weapon-item">${w}</div>`)
+    .join("");
+
+  const affiliates = [
+    ...(Array.isArray(d.affiliates) ? d.affiliates : [d.affiliates]),
+  ]
+    .map((a) => `<div class="affiliate-item">${a}</div>`)
+    .join("");
+
+  const likes = [
+    ...(Array.isArray(d.likes) ? d.likes : [d.likes]),
+  ]
+    .map((l) => `<div class="like-item">${l}</div>`)
+    .join("");
+
+  const dislikes = [
+    ...(Array.isArray(d.dislikes) ? d.dislikes : [d.dislikes]),
+  ]
+    .map((l) => `<div class="dislike-item">${l}</div>`)
     .join("");
 
   return `
         <h2>${d.name || "Info Not Available Yet"}</h2>
 
         <div class="elemental-section" id="elemental">
-            <h3>Elemental Mastery</h3>
+            <h3 class="info-title"><i class="fas fa-info-circle"></i> Elemental Core</h3>
             ${elementalImgs}
         </div>
 
         <div class="character-info-wrapper">
             <div class="character-info-scrollable">
                 <div class="info-section" id="basic-info-scrollable">
-                    <h3>Basic Information</h3>
-                    <content><strong><i class="fas fa-user"></i> Race:</strong> ${
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Basic Information</h3>
+                    <content>
+                    <strong><i class="fas fa-user"></i> Race:</strong> ${
                       d.race || ""
                     }</content>
-                    <content><strong><i class="fas fa-venus-mars"></i> Gender:</strong> ${
+                    <content>
+                    <strong><i class="fas fa-venus-mars"></i> Gender:</strong> ${
                       d.gender || ""
                     }</content>
-                    <content><strong><i class="fas fa-ruler-vertical"></i> Height:</strong> ${
+                    <content>
+                    <strong><i class="fas fa-ruler-vertical"></i> Height:</strong> ${
                       d.height || ""
                     }</content>
-                    <content><strong><i class="fas fa-globe"></i> Homeland:</strong> ${
+                    <content>
+                    <strong><i class="fas fa-globe"></i> Homeland:</strong> ${
                       d.homeland || ""
                     }</content>
-                    <content><strong><i class="fas fa-shield-alt"></i> Faction:</strong> ${
+                    <content>
+                    <strong><i class="fas fa-shield-alt"></i> Faction:</strong> ${
                       d.faction || ""
                     }</content>
-                    <content><strong><i class="fas fa-crown"></i> Role:</strong> ${
+                    <content>
+                    <strong><i class="fas fa-crown"></i> Role:</strong> ${
                       d.role || ""
                     }</content>
-                    <content><strong><i class="fas fa-briefcase"></i> Occupation:</strong> ${
+                    <content>
+                    <strong><i class="fas fa-briefcase"></i> Occupation:</strong> ${
                       d.occupation || ""
                     }</content>
                 </div>
 
                 <div class="info-section" id="abilities">
-                    <h3>Abilities</h3>
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Abilities</h3>
                     <content>${abilities}</content>
                 </div>
 
                 <div class="info-section" id="weapon">
-                    <h3>Main Weapon</h3>
-                    <content>${d.weapon || ""}</content>
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Main Weapon</h3>
+                    <content>${weapon || ""}</content>
                 </div>
 
                 <div class="info-section" id="affiliates">
-                    <h3>Affiliates</h3>
-                    <content>${d.affiliates || ""}</content>
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Affiliates</h3>
+                    <content>${affiliates || ""}</content>
                 </div>
 
                 <div class="info-section" id="likes">
-                    <h3>Likes</h3>
-                    <content>${d.likes || ""}</content>
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Likes</h3>
+                    <content>${likes || ""}</content>
                 </div>
 
                 <div class="info-section" id="dislikes">
-                    <h3>Dislikes</h3>
-                    <content>${d.dislikes || ""}</content>
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Dislikes</h3>
+                    <content>${dislikes || ""}</content>
                 </div>
 
                 <div class="info-section" id="background">
-                    <h3>Background</h3>
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Background</h3>
                     ${d.background || ""}
                 </div>
             </div>

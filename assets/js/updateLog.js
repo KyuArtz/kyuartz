@@ -1,8 +1,29 @@
 const sampleData = {
   changelog: {
-    version: "1.7.1",
-    last_updated: "2025-10-13T05:34:00Z",
+    version: "1.8.1",
+    last_updated: "2025-10-13T04:00:00Z",
     updates: [
+      {
+        date: "2025-10-23",
+        timestamp: "2025-10-23T04:00:00Z",
+        version: "1.8.1",
+        major: [],
+        minor: [
+          {
+            title: "Enhanced Navigation to Character Codex",
+            description:
+              "Enhanced the navigation system within the Character Codex for better user experience.",
+            category: "Navigation, UI/UX",
+          },
+          {
+            title: "Technical improvements",
+            description: "Overall performance and stability enhancements.",
+            category: "Performance, UI/UX",
+          }
+        ],
+        bugfixes: [],
+        upcoming: [],
+      },
       {
         date: "2025-10-13",
         timestamp: "2025-10-13T05:34:00Z",
@@ -200,7 +221,7 @@ const sampleData = {
     ],
     summary: {
       total_major_updates: 1,
-      total_minor_updates: 15,
+      total_minor_updates: 17,
       total_bugfixes: 1,
       total_upcoming_features: 1,
       primary_focus_areas: ["UI/UX", "Performance", "Mobile Experience"],
@@ -383,15 +404,15 @@ function renderTimelineView(updates) {
     <div class="timeline-container">
         <div class="timeline-line"></div>
         ${updates
-          .map(
-            (update) => `
+      .map(
+        (update) => `
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 ${createUpdateCard(update)}
             </div>
         `
-          )
-          .join("")}
+      )
+      .join("")}
     </div>
     `;
 
@@ -429,19 +450,17 @@ function createUpdateCard(update) {
   return `
     <div class="update-card">
         <div class="update-card-header">
-            ${
-              update.timestamp
-                ? `<div class="relative-time">${getRelativeTime(
-                    update.timestamp
-                  )}</div>`
-                : ""
-            }
+            ${update.timestamp
+      ? `<div class="relative-time">${getRelativeTime(
+        update.timestamp
+      )}</div>`
+      : ""
+    }
             <div class="update-date">${formatDate(update.date)}</div>
-            ${
-              update.version
-                ? `<span class="update-version">v${update.version}</span>`
-                : ""
-            }
+            ${update.version
+      ? `<span class="update-version">v${update.version}</span>`
+      : ""
+    }
         </div>
         <div class="update-card-body">
             ${sections.join("")}
@@ -467,8 +486,8 @@ function createUpdateSection(title, items, type, icon) {
                     </div>
                     <ul class="update-items">
                         ${items
-                          .map((item) => createUpdateItem(item, type))
-                          .join("")}
+      .map((item) => createUpdateItem(item, type))
+      .join("")}
                     </ul>
                 </div>
             `;
@@ -480,16 +499,14 @@ function createUpdateItem(item, type) {
                 <li class="update-item">
                     <div class="item-title">${item.title}</div>
                     <div class="item-description">${item.description}</div>
-                    ${
-                      item.category
-                        ? `<span class="category-badge">${item.category}</span>`
-                        : ""
-                    }
-                    ${
-                      item.expected_release
-                        ? `<div style="font-size: 0.8rem; margin-top: 5px; opacity: 0.7;">Expected: ${item.expected_release}</div>`
-                        : ""
-                    }
+                    ${item.category
+      ? `<span class="category-badge">${item.category}</span>`
+      : ""
+    }
+                    ${item.expected_release
+      ? `<div style="font-size: 0.8rem; margin-top: 5px; opacity: 0.7;">Expected: ${item.expected_release}</div>`
+      : ""
+    }
                 </li>
             `;
 }

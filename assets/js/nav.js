@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const blurOverlay = document.querySelector(".blur-overlay");
   const settingsBtn = document.querySelector(".settings-btn");
   const settingsMenu = document.querySelector(".settings-menu");
+  const characterSettingsBtn = document.querySelector(".character-btn");
+  const characterSettingsMenu = document.querySelector(".dropdown-character-settings");
   const upBtn = document.getElementById("upBtn");
 
   handleHeaderScroll();
@@ -72,6 +74,18 @@ document.addEventListener("DOMContentLoaded", () => {
     settingsMenu?.classList.toggle("show-settings");
   });
 
+  // Character settings menu toggle
+  characterSettingsBtn?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    characterSettingsMenu?.classList.toggle("show-character-settings");
+  });
+
+  // Close character settings menu on close button click
+  characterSettingsMenu?.querySelector(".close-settings-btn")?.addEventListener("click", (event) => {
+    event.stopPropagation();
+    characterSettingsMenu?.classList.remove("show-character-settings");
+  });
+
   // Global click handler for closing menus
   window.addEventListener("click", (event) => {
     // Side menu
@@ -100,6 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
       !event.target.closest(".settings-menu")
     ) {
       settingsMenu?.classList.remove("show-settings");
+    }
+    // Character settings menu
+    if (
+      !event.target.closest(".character-btn") &&
+      !event.target.closest(".dropdown-character-settings")
+    ) {
+      characterSettingsMenu?.classList.remove("show-character-settings");
     }
   });
 

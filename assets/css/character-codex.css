@@ -1,44 +1,80 @@
 .character-control-panel {
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 0.3rem;
-  backdrop-filter: var(--blur-effect);
-  -webkit-backdrop-filter: var(--blur-effect);
-  background: var(--gradient-bgc);
-  box-shadow: var(--shadow);
+  background: var(--secondary-bgc);
+  border-bottom: var(--border-thin);
   padding: 0.5rem;
   z-index: 5;
 }
 
-.close-character {
+.character-btn {
   border: 2px solid;
   border-radius: var(--border-radius-custom);
   color: var(--text-color-default);
   background: var(--primary-bgc);
+  padding: 0.9rem 1.5rem;
+}
+
+.close-settings-btn {
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+}
+
+.dropdown-character-settings {
+  display: none;
+  position: absolute;
+  min-width: 300px;
+  height: 100vh;
+  background: var(--secondary-bgc);
+  box-shadow: var(--shadow);
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  overflow-y: auto;
+  z-index: 1;
+  animation: 0.3s slideInLeft ease;
+}
+
+.dropdown-character-settings.show-character-settings {
+  display: block;
+}
+
+.dropdown-character-settings section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: var(--border-thin);
   padding: 0.9rem;
-  transition: all 0.3s ease;
+  border-radius: var(--border-radius-custom);
+  margin: 1rem 0;
+  gap: 0.5rem;
 }
 
-.close-character:hover {
-  background: var(--btn-bgc);
-  color: var(--btn-color);
+.dropdown-character-settings .setting-title {
+  font-family: var(--my-font);
 }
 
-.filter-character {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.3rem;
+.faction {
   padding: 0.5rem;
-  overflow-x: auto;
+  border: var(--border-thin);
+  border-radius: var(--border-radius-custom);
 }
 
-.filter-character img {
+.role-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+
+.role-section img {
   width: 30px;
   height: 30px;
   aspect-ratio: 1/1;
@@ -47,13 +83,7 @@
   cursor: pointer;
 }
 
-.filter-character h3 {
-  margin: 0;
-  font-size: 0.9rem;
-  font-family: var(--my-font);
-}
-
-.filter-character button {
+.role-section button {
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -62,21 +92,20 @@
   border-radius: var(--border-radius-custom);
   border: 2px solid;
   padding: 0.3rem 0.5rem;
-  font-family: var(--my-font);
   font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
-.filter-character button:hover {
+.role-section button:hover {
   transform: translateY(-2px);
 }
 
-.filter-character button.active-filter {
+.role-section button.active-filter {
   background: var(--btn-bgc);
   color: var(--btn-color);
 }
 
-.filter-character button {
+.role-section button {
   padding: 0.3rem 0.5rem;
 }
 
@@ -89,17 +118,6 @@
   border-radius: var(--border-radius-custom);
   border: 1px solid thin var(--accent-color);
   overflow: hidden;
-}
-
-.faction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  border: var(--border-thin);
-  padding: 0.9rem;
-  border-radius: var(--border-radius-custom);
-  color: var(--text-color-default);
 }
 
 .toggle-switch {
@@ -137,7 +155,7 @@
   width: 26px;
   left: 4px;
   bottom: 3px;
-  background: var(--text-color-default);
+  background: #e2850c;
   transition: all 0.3s ease;
   border-radius: var(--border-radius-rounded);
 }
@@ -435,7 +453,7 @@ p.title {
   margin: 0.5rem 0;
   padding: 0.5rem;
   color: var(--accent);
-  border-bottom: 3px solid var(--accent);
+  border-bottom: var(--border-extra-thick);
   text-align: center;
   transition: 0.3s ease, background-color 0.2s ease, color 0.3s ease,
     border 0.2s ease;
@@ -447,10 +465,7 @@ p.title {
 
 .character-info strong {
   color: var(--accent);
-  border: 1px solid var(--accent);
-  border-left: 5px solid var(--accent);
-  border-right: 3px solid var(--accent);
-  border-radius: var(--border-radius-custom);
+  border-left: 3px solid var(--accent);
   padding: 0.4rem 0.6rem;
 }
 
@@ -459,21 +474,21 @@ p.title {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.3rem 0;
   border-radius: var(--border-radius-custom);
   color: var(--accent);
 }
 
-.character-info info {
+.ability-item,
+.weapon-item,
+.affiliate-item,
+.like-item,
+.dislike-item {
   border: var(--border-thin);
   border-radius: var(--border-radius-custom);
-  padding: 0.4rem 0.6rem;
+  padding: 1rem;
 }
 
 .character-info p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem;
   border-radius: var(--border-radius-custom);
   text-align: justify;
   line-height: var(--line-height);
@@ -543,7 +558,11 @@ p.title {
 #affiliates,
 #likes,
 #dislikes {
-  border-bottom: 1px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: var(--border-thin);
 }
 
 #elemental img {
@@ -591,11 +610,6 @@ p.title {
 
   .character-info h3 {
     font-size: 1rem;
-  }
-
-  .character-info strong,
-  .character-info info {
-    font-size: 0.8rem;
   }
 
   #elemental img {

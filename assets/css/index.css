@@ -344,7 +344,6 @@
 
 .stat-number {
   font-size: 3rem;
-  font-weight: 900;
   display: block;
   margin-bottom: 0.5rem;
   color: var(--accent-color);
