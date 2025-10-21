@@ -152,7 +152,7 @@
         "<i class='fas fa-times'></i> Crowds",
         "<i class='fas fa-times'></i> Obedience",
         "<i class='fas fa-times'></i> Blind Loyalty",
-        "<i class='fas fa-times'></i> Corruption"
+        "<i class='fas fa-times'></i> Noise"
       ],
       "weapon": [
         "<i class='fas fa-heart'></i> Oblivion’s Edge (Cursed Scythe)"
@@ -316,11 +316,11 @@
         "<i class='fas fa-times'></i> Her Own Reflection"
       ],
       "weapon": [
-        "<i class='fas fa-heart'></i> Bloodwoven Staff"
+        "<i class='fas fa-heart'></i> Bloodwoven Scythe"
       ],
       "ability1": "<ability-name><i class='fas fa-moon'></i> Moonveil Curse</ability-name> <p>Calls upon tainted celestial energy to cast a weakening veil on enemies, lowering their magic resistance and stamina. Under the moon’s gaze, the effect intensifies.</p>",
       "ability2": "<ability-name><i class='fas fa-burn'></i> Bloodbinding</ability-name> <p>Manipulates the blood of enemies within range, restricting their movement or forcing them to act against their will. Overuse risks backlash to Lunara's own vitality.</p>",
-      "ability3": "<ability-name><i class='fas fa-skull'></i> Lament of the Exiled</ability-name> <p>Unleashes a wave of cursed memories that damage enemies and sap their morale. Those affected may hallucinate visions from Lunara’s broken past.</p>",
+      "ability3": "<ability-name><i class='fas fa-skull'></i> Bloody Thorns</ability-name> <p>Summons a mass of thorns made of blood that ensnare and pierce enemies, dealing damage over time and causing bleeding effects.</p>",
       "ability4": "<ability-name><i class='fas fa-fire'></i> Crimson Howl</ability-name> <p>Releases a piercing scream that erupts into a shockwave of corrupted light and blood magic. Deals high AoE damage and instills fear in those who survive.</p>",
       "ability5": "<ability-name><i class='fas fa-heart-broken'></i> Heartsplit</ability-name> <p>Fires a concentrated bolt of celestial and void magic that detonates on impact. Targets struck are cursed to suffer bonus damage from future spells.</p>",
       "ability6": "<ability-name><i class='fas fa-crown'></i> Blood Eclipse</ability-name> <p>Unleashes her sealed form as the Scarlet Phantom. Her aura corrupts the battlefield, amplifying all abilities, draining enemies nearby, and marking them with the Reaper’s Sigil. During this form, Lunara regenerates from all damage dealt.</p>",
@@ -496,7 +496,7 @@
       "homeland": "Former Solaraenian Kingdom",
       "faction": "Light Harbingers",
       "role": "Guardian | Warrior | Healer",
-      "occupation": "High Cleric",
+      "occupation": "Sentinel of Light",
       "affiliates": [
         "<i class='fas fa-users'></i> Lunara (Sister)",
         "<i class='fas fa-users'></i> Liliana (Niece)"
