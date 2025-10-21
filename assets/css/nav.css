@@ -233,9 +233,22 @@ a.more-menu-links {
   transition: var(--transition-ease);
 }
 
+.utilities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  gap: 0.5rem;
+  animation: bounce 0.9s infinite;
+  z-index: 1;
+}
+
 #upBtn {
   display: none;
-  position: fixed;
+  position: relative;
   bottom: 10px;
   right: 10px;
   padding: 1rem;
@@ -246,11 +259,23 @@ a.more-menu-links {
   aspect-ratio: 1/1;
   box-shadow: var(--shadow);
   animation: bounce 0.9s infinite;
-  z-index: 1;
 }
 
 #upBtn:hover {
   animation: bounce 0.3s infinite;
+}
+
+.meo-btn {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  padding: 1rem;
+  border-radius: var(--border-radius-custom);
+  background: var(--btn-bgc);
+  color: var(--btn-color);
+  border: none;
+  aspect-ratio: 1/1;
+  box-shadow: var(--shadow);
 }
 
 @media screen and (max-width: 978px) {
