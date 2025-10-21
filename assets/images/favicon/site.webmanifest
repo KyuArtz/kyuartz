@@ -3,13 +3,13 @@
   "short_name": "KyuArtz",
   "icons": [
     {
-      "src": "https://kyuartz.github.io/kyuartz/assets/images/favicon/web-app-manifest-192x192.png",
+      "src": "https://kyuartz.netlify.app/assets/images/favicon/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
     },
     {
-      "src": "https://kyuartz.github.io/kyuartz/assets/images/favicon/web-app-manifest-512x512.png",
+      "src": "https://kyuartz.netlify.app/assets/images/favicon/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
