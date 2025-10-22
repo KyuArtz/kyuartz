@@ -298,7 +298,7 @@
   justify-content: center;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
-  border-radius: var(--border-radius-custom);
+  border-radius: var(--border-radius-circle);
   font-size: var(--font-size-sm);
   margin-bottom: 0.75rem;
 }

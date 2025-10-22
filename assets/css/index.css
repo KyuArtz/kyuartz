@@ -240,7 +240,7 @@
 .dot {
   width: 12px;
   height: 12px;
-  border-radius: var(--border-radius-custom);
+  border-radius: var(--border-radius-circle);
   background: var(--accent-color);
   box-shadow: var(--shadow);
   cursor: pointer;

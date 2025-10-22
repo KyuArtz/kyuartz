@@ -109,7 +109,7 @@
 .mood-dot {
   width: 12px;
   height: 12px;
-  border-radius: var(--border-radius-custom);
+  border-radius: var(--border-radius-circle);
   background: var(--accent-color);
   opacity: 0.5;
   transition: var(--transition-ease);

@@ -67,7 +67,7 @@ body {
   --border-radius-circle: 50%;
   --border-radius-rounded: 50px;
   --border-radius-min-rounded: 18px;
-  --border-radius-custom: 18px;
+  --border-radius-custom: 5px 18px 5px 18px;
   --border-thin: 1px solid var(--border-color);
   --border-thick: 2px solid var(--border-color);
   --border-extra-thick: 3px solid var(--border-color);
