@@ -813,6 +813,17 @@ body {
   }
 }
 
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px var(--accent);
+  }
+
+  50% {
+    box-shadow: 0 0 5px var(--accent);
+  }
+}
+
 @keyframes aiPulse {
   0%,
   100% {
