@@ -356,6 +356,10 @@ p.title {
   opacity: 1;
 }
 
+.character-card.clicked {
+  animation: bounce 3s ease infinite, pulse 3s ease infinite;
+}
+
 .character-card.clicked .overlay .character-name {
   color: var(--accent);
 }
