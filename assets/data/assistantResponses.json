@@ -181,7 +181,18 @@
       "i really like u",
       "i absolutely like u",
       "i truly like u",
-      "i like u meo",
+      "i like u meo"
+    ],
+    "response": [
+      "I like you too! 😊 How can I assist you today?",
+      "I'm glad to hear that! How can I help you today? 😘",
+      "Thank you for that compliment! it means a lot! How can I assist you today? 💕😘",
+      "Your support means a lot! How can I assist you today? 😊",
+      "Aww, you're pretty awesome too! What can I help you with? 💖"
+    ]
+  },
+  {
+    "keywords": [
       "look wonderful",
       "look beautiful",
       "look amazing",
@@ -192,9 +203,8 @@
       "your cute"
     ],
     "response": [
-      "I like you too! 😊 How can I assist you today?",
-      "I'm glad to hear that! How can I help you today? 😊😊😊",
-      "Thank you! I'm here to help you with anything you need. 😊",
+      "I'm glad to hear that! How can I help you today? 😘",
+      "Thank you for that compliment! it means a lot! How can I assist you today? 💕😘",
       "Your support means a lot! How can I assist you today? 😊",
       "Aww, you're pretty awesome too! What can I help you with? 💖"
     ]
@@ -215,8 +225,6 @@
       "you suck"
     ],
     "response": [
-      "Please don't be mean! How can I assist you today? 😊",
-      "I'm sorry to hear that! How can I help you today? 😊",
       "It's okay, we all have our preferences! How can I assist you today? 😊",
       "I understand, not everyone will like me. How can I assist you today? 😊",
       "I Understand, I might not be perfect, but I'm always here to help! 😊"
