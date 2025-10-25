@@ -18,20 +18,21 @@
       "what can I do here"
     ],
     "response": [
-      "Our comprehensive services include: 🎨 Custom digital illustrations, 👤 Character design & development, 🖼️ Portrait artwork, 🏢 Logo & brand design, 💼 Commercial commissions, and 🎮 Game asset creation. For more how we operate: <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank'>Service Center</a>",
-      "We offer premium digital art services: custom illustrations, character design, portraits, branding, and commercial work. Each piece is crafted with precision and creativity! What interests you most? For more how we operate: <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank'>Service Center</a>",
-      "From concept to creation: 🎭 Character sheets & references, 🌍 Environment & background art, 📖 Comic & manga illustrations, 🎪 Event & promotional artwork, 🎁 Custom gift art! For more how we operate: <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank'>Service Center</a>"
+      "Our comprehensive services include: 🎨 Custom digital illustrations, 👤 Character design & development, 🖼️ Portrait artwork, 🏢 Logo & brand design, 💼 Commercial commissions, and 🎮 Game asset creation. For more how we operate: <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank' rel='noopener noreferrer'>Service Center</a>",
+      "We offer premium digital art services: custom illustrations, character design, portraits, branding, and commercial work. Each piece is crafted with precision and creativity! What interests you most? For more how we operate: <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank' rel='noopener noreferrer'>Service Center</a>",
+      "From concept to creation: 🎭 Character sheets & references, 🌍 Environment & background art, 📖 Comic & manga illustrations, 🎪 Event & promotional artwork, 🎁 Custom gift art! For more how we operate: <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank' rel='noopener noreferrer'>Service Center</a>"
     ]
   },
   {
     "keywords": [
-      "commission"
+      "commission",
+      "order"
     ],
     "response": [
-      "🖌️ Want to commission a piece? Head over to the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a> for all the info and how to submit your request. I can't wait to see what you imagine! 💡🎨 Shall we try that together?",
-      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>. Sounds fun, right?",
-      "💖 I'd love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>.",
-      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>."
+      "🖌️ Want to commission a piece? Head over to the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a> for all the info and how to submit your request. I can't wait to see what you imagine! 💡🎨 Shall we try that together?",
+      "🎨 Ready to make your idea a reality? Details here: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>. Sounds fun, right?",
+      "💖 I'd love to bring your vision to life! Check out our process here: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>.",
+      "🖌️ Fanart, portraits, fantasy worlds—you name it! Start here: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>."
     ]
   },
   {
@@ -49,8 +50,8 @@
       "price"
     ],
     "response": [
-      "💰 You can find all pricing information on the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Sheet</a>! Prices vary based on complexity and style. What type of artwork are you thinking about? 🎨",
-      "💵 Pricing depends on the type and complexity of the artwork! Check the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a> for detailed rates. 📊"
+      "💰 You can find all pricing information on the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Sheet</a>! Prices vary based on complexity and style. What type of artwork are you thinking about? 🎨",
+      "💵 Pricing depends on the type and complexity of the artwork! Check the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a> for detailed rates. 📊"
     ]
   },
   {
@@ -86,13 +87,17 @@
       "nah",
       "not really",
       "never",
-      "no way"
+      "no way",
+      "not interested"
     ],
     "response": [
       "Oh okay! Anything else on your mind?",
       "No problem! If you change your mind or have questions later, I'm here to help! 😊",
       "I understand, and I'm here to assist you whenever you need. 😊",
-      "Feel free to reach out if you have any questions or need assistance in the future! 😊"
+      "Feel free to reach out if you have any questions or need assistance in the future! 😊",
+      "No worries! Is there something else I can help you with today? 😊",
+      "That's perfectly fine! What would you like to know about instead?",
+      "Understood! Let me know if there's anything else you'd like to explore! ✨"
     ]
   },
   {
@@ -177,9 +182,14 @@
       "i absolutely like u",
       "i truly like u",
       "i like u meo",
-      "you're cool",
-      "you're awesome",
-      "you're great"
+      "look wonderful",
+      "look beautiful",
+      "look amazing",
+      "look cute",
+      "your wonderful",
+      "your beautiful",
+      "your amazing",
+      "your cute"
     ],
     "response": [
       "I like you too! 😊 How can I assist you today?",
@@ -216,7 +226,8 @@
     "keywords": [
       "i love you",
       "i love u",
-      "love you meo"
+      "love you meo",
+      "luv u"
     ],
     "response": [
       "I love you too! 💖😊 How can I assist you today?",
@@ -289,21 +300,8 @@
     ],
     "response": [
       "That's great to hear! 😊 If you have any questions or need assistance, feel free to ask!",
-      "I know right!? 😄 Anything I can help you with?"
-    ]
-  },
-  {
-    "keywords": [
-      "no",
-      "nope",
-      "not really",
-      "nah",
-      "not interested"
-    ],
-    "response": [
-      "No worries! Is there something else I can help you with today? 😊",
-      "That's perfectly fine! What would you like to know about instead?",
-      "Understood! Let me know if there's anything else you'd like to explore! ✨"
+      "I know right!? 😄 Anything I can help you with?",
+      "Awsome! what would you like to explore next? 💕"
     ]
   },
   {
@@ -346,7 +344,8 @@
       "💡 Did you know? The oldest known cave paintings are over 40,000 years old! Art has always been fundamental to human expression - just like what we create at KyuArtz today!",
       "🎨 Creative fact: Leonardo da Vinci wrote backwards (mirror writing) in most of his notebooks! Artists have always found unique ways to express themselves.",
       "🖥️ Digital art fact: The first computer-generated art was created in 1957! We've come so far - now we can create entire worlds with just pixels and imagination!",
-      "🌈 Color psychology: Blue is the world's most popular color, associated with trust and creativity - perfect for art studios like ours!"
+      "🌈 Color psychology: Blue is the world's most popular color, associated with trust and creativity - perfect for art studios like ours!",
+      "🎭 Fun art fact: Vincent van Gogh only sold one painting during his lifetime, yet today his works are among the most valuable in the world!"
     ]
   },
   {
@@ -356,7 +355,7 @@
       "portrait"
     ],
     "response": [
-      "If you're interested in ordering a headshot art from kyuartz, this are the latest prices: <br><br> HEADSHOT(Semi Realism): <ul><li>Fully Rendered + Background $50.00.</li><br> <li>Fully Rendered $25.00.</li><br> <li>Grayscale $20.00.</li><br> <li>Lineart $15.00.</li></ul> <br><br> HEADSHOT(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a headshot art from kyuartz, this are the latest prices: <br><br> HEADSHOT(Semi Realism): <ul><li>Fully Rendered + Background $50.00.</li><br> <li>Fully Rendered $25.00.</li><br> <li>Grayscale $20.00.</li><br> <li>Lineart $15.00.</li></ul> <br><br> HEADSHOT(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>"
     ]
   },
   {
@@ -365,7 +364,7 @@
       "bust up"
     ],
     "response": [
-      "If you're interested in ordering a bust up art from kyuartz, this are the latest prices: <br><br> BUST UP(Semi Realism): <ul><li>Fully Rendered + Background $60.00.</li><br> <li>Fully Rendered $35.00.</li><br> <li>Grayscale $30.00.</li><br> <li>Lineart $25.00.</li></ul> <br><br> BUST UP(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a bust up art from kyuartz, this are the latest prices: <br><br> BUST UP(Semi Realism): <ul><li>Fully Rendered + Background $60.00.</li><br> <li>Fully Rendered $35.00.</li><br> <li>Grayscale $30.00.</li><br> <li>Lineart $25.00.</li></ul> <br><br> BUST UP(Anime Style): <ul><li>Fully Rendered + Background $30.00.</li><br> <li>Fully Rendered $20.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>"
     ]
   },
   {
@@ -374,7 +373,7 @@
       "full body"
     ],
     "response": [
-      "If you're interested in ordering a full body art from kyuartz, this are the latest prices: <br><br> FULL BODY(Semi Realism): <ul><li>Fully Rendered + Background $100.00.</li><br> <li>Fully Rendered $55.00.</li><br> <li>Grayscale $35.00.</li><br> <li>Lineart $25.00.</li></ul> <br><br> FULL BODY(Anime Style): <ul><li>Fully Rendered + Background $75.00.</li><br> <li>Fully Rendered $45.00.</li><br> <li>Grayscale $25.00.</li><br> <li>Lineart $19.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a full body art from kyuartz, this are the latest prices: <br><br> FULL BODY(Semi Realism): <ul><li>Fully Rendered + Background $100.00.</li><br> <li>Fully Rendered $55.00.</li><br> <li>Grayscale $35.00.</li><br> <li>Lineart $25.00.</li></ul> <br><br> FULL BODY(Anime Style): <ul><li>Fully Rendered + Background $75.00.</li><br> <li>Fully Rendered $45.00.</li><br> <li>Grayscale $25.00.</li><br> <li>Lineart $19.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>"
     ]
   },
   {
@@ -383,7 +382,7 @@
       "chibi"
     ],
     "response": [
-      "If you're interested in ordering a chibi art from kyuartz, this are the latest prices: <br><br> CHIBI: <ul><li>Fully Rendered + Background $25.00.</li><br> <li>Fully Rendered $19.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a chibi art from kyuartz, this are the latest prices: <br><br> CHIBI: <ul><li>Fully Rendered + Background $25.00.</li><br> <li>Fully Rendered $19.00.</li><br> <li>Grayscale $15.00.</li><br> <li>Lineart $10.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>"
     ]
   },
   {
@@ -392,7 +391,7 @@
       "emote"
     ],
     "response": [
-      "If you're interested in ordering a custom emote art from kyuartz, this are the latest prices: <br><br> CUSTOM EMOTE: <ul><li>Fully Rendered + Background $15.00.</li><br> <li>Fully Rendered $10.00.</li><br> <li>Grayscale $5.00.</li><br> <li>Lineart $3.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a custom emote art from kyuartz, this are the latest prices: <br><br> CUSTOM EMOTE: <ul><li>Fully Rendered + Background $15.00.</li><br> <li>Fully Rendered $10.00.</li><br> <li>Grayscale $5.00.</li><br> <li>Lineart $3.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>"
     ]
   },
   {
@@ -403,7 +402,7 @@
       "background"
     ],
     "response": [
-      "If you're interested in ordering a landscape & background art from kyuartz, this are the latest prices: <br><br> LANDSCAPE & BACKGROUND: <ul><li>Fully Rendered + Background $150.00.</li><br> <li>Fully Rendered $120.00.</li><br> <li>Grayscale $65.00.</li><br> <li>Lineart $45.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Page</a>"
+      "If you're interested in ordering a landscape & background art from kyuartz, this are the latest prices: <br><br> LANDSCAPE & BACKGROUND: <ul><li>Fully Rendered + Background $150.00.</li><br> <li>Fully Rendered $120.00.</li><br> <li>Grayscale $65.00.</li><br> <li>Lineart $45.00.</li></ul> <br><br> Prices may vary from different country based on their currency, and for additional information it can be negotiable based on the clients total budget. <br><br> You can visit the: <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Page</a>"
     ]
   },
   {
@@ -415,7 +414,7 @@
       "payment methods"
     ],
     "response": [
-      "💳 We accept PayPal, Maya, GCash, and credit/debit cards! For more details, check the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank'>Contact Page</a>. Got a preference? Let me know! 😊"
+      "💳 We accept PayPal, Maya, GCash, and credit/debit cards! For more details, check the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank' rel='noopener noreferrer'>Contact Page</a>. Got a preference? Let me know! 😊"
     ]
   },
   {
@@ -428,7 +427,7 @@
       "deadline"
     ],
     "response": [
-      "⏰ Delivery times vary depending on the complexity and current queue! You can check your commission status on the <a class='dL' href='https://kyuartz.netlify.app/client-queue' target='_blank'>Commission Status Page</a>. The artist will give you an estimated timeline when you place your order! 📅",
+      "⏰ Delivery times vary depending on the complexity and current queue! You can check your commission status on the <a class='dL' href='https://kyuartz.netlify.app/client-queue' target='_blank' rel='noopener noreferrer'>Commission Status Page</a>. The artist will give you an estimated timeline when you place your order! 📅",
       "🕐 Turnaround time depends on the artwork complexity and current workload. The artist will provide an estimated completion date when confirming your commission! ✨"
     ]
   },
@@ -444,10 +443,10 @@
       "not working"
     ],
     "response": [
-      "⚠️ If you found an issue, please let us know via the <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank'>Customer Support Page</a> or reach out on social media. Your feedback helps us improve! 🙏",
-      "🐞 Found something glitchy? Let us know via the <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank'>Support Page</a>.",
-      "🔧 Spotted an error? We'll fix it ASAP—just send the details here: <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank'>Support Page</a>.",
-      "📢 Your feedback helps us improve! Report any problems here: <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank'>Support Page</a>."
+      "⚠️ If you found an issue, please let us know via the <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank' rel='noopener noreferrer'>Customer Support Page</a> or reach out on social media. Your feedback helps us improve! 🙏",
+      "🐞 Found something glitchy? Let us know via the <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank' rel='noopener noreferrer'>Support Page</a>.",
+      "🔧 Spotted an error? We'll fix it ASAP—just send the details here: <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank' rel='noopener noreferrer'>Support Page</a>.",
+      "📢 Your feedback helps us improve! Report any problems here: <a class='dL' href='https://kyuartz.netlify.app/customer-support' target='_blank' rel='noopener noreferrer'>Support Page</a>."
     ]
   },
   {
@@ -475,7 +474,7 @@
     ],
     "response": [
       "👩‍🎨 Kyu is the creative mind behind Kyuartz—bringing unique visions to life through vibrant and meaningful art. 💖",
-      "✨ Kyu is a passionate artist dedicated to creating beautiful, expressive artwork that connects with people! 🎨"
+      "✨ Kyu is a passionate artist dedicated to creating beautiful, expressive artwork that connects with people! and did you know Kyu loves to experiment with different styles and techniques? 🎨"
     ]
   },
   {
@@ -626,25 +625,27 @@
   {
     "keywords": [
       "about you",
-      "tell me about yourself",
-      "you're meo",
-      "you are meo"
+      "tell me about yourself"
     ],
     "response": [
       "💬 I'm MEO, a helpful digital assistant created by Kyu to guide you through the world of art and creativity! Ask me anything! 🌟",
       "💬 Just let me know what's on your mind—I'll do my best to help.",
-      "✨ I'm MEO, your friendly ai assistant!"
+      "✨ I'm MEO, your friendly ai assistant! Here to make your Kyuartz experience smooth and fun! 🎨"
+      
     ]
   },
   {
     "keywords": [
+      "you're meo",
+      "you are meo",
       "so you're meo",
       "so you are meo",
       "meo"
     ],
     "response": [
       "💬 YES! I'm MEO, a helpful digital assistant created by Kyu to guide you through the world of art and creativity! Ask me anything! 🌟",
-      "✨ Yeah I'm MEO, your friendly ai assistant!"
+      "✨ Yeah I'm MEO, your friendly ai assistant! Anything i can be of assistance? 🎨",
+      "That's me! your friendly ai assistant MEO! Here to make your Kyuartz experience smooth and fun! 🎨"
     ]
   },
   {
@@ -701,8 +702,8 @@
       "get in touch"
     ],
     "response": [
-      "📧 You can reach out through the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank'>Contact Page</a> where you'll find email and social media links! 💌",
-      "📞 All contact information is available on the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank'>Contact Page</a> - feel free to reach out anytime! 😊"
+      "📧 You can reach out through the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank' rel='noopener noreferrer'>Contact Page</a> where you'll find email and social media links! 💌",
+      "📞 All contact information is available on the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank' rel='noopener noreferrer'>Contact Page</a> - feel free to reach out anytime! 😊"
     ]
   },
   {
@@ -726,8 +727,8 @@
       "modify commission"
     ],
     "response": [
-      "📝 For refunds, cancellations, or order changes, please check the <a class='dL' href='https://kyuartz.netlify.app/terms-of-service' target='_blank'>Terms of Service</a> or contact support directly. They'll help you sort everything out! 💙",
-      "🔄 Need to make changes to your commission? Reach out via the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank'>Contact Page</a> as soon as possible!"
+      "📝 For refunds, cancellations, or order changes, please check the <a class='dL' href='https://kyuartz.netlify.app/service-center' target='_blank' rel='noopener noreferrer'>Terms of Service</a> or contact support directly. They'll help you sort everything out! 💙",
+      "🔄 Need to make changes to your commission? Reach out via the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank' rel='noopener noreferrer'>Contact Page</a> as soon as possible!"
     ]
   },
   {
@@ -739,7 +740,7 @@
       "express"
     ],
     "response": [
-      "⚡ Need something done quickly? Rush orders may be available for an additional fee! Contact the artist directly through the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank'>Contact Page</a> to discuss your timeline! 🏃‍♀️",
+      "⚡ Need something done quickly? Rush orders may be available for an additional fee! Contact the artist directly through the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank' rel='noopener noreferrer'>Contact Page</a> to discuss your timeline! 🏃‍♀️",
       "🚀 For urgent requests, reach out directly to discuss availability and rush fees. The artist will do their best to accommodate! ✨"
     ]
   },
@@ -751,7 +752,7 @@
       "what styles"
     ],
     "response": [
-      "🎭 Kyu works in various styles! Check out the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank'>Commission Sheet</a> to see different style options and examples. From anime to realistic, there's something for everyone! 🌈",
+      "🎭 Kyu works in various styles! Check out the <a class='dL' href='https://kyuartz.netlify.app/commission-sheet' target='_blank' rel='noopener noreferrer'>Commission Sheet</a> to see different style options and examples. From anime to realistic, there's something for everyone! 🌈",
       "✨ You can explore different art styles available on the commission page! What kind of style speaks to you? 🎨"
     ]
   },
@@ -791,7 +792,7 @@
       "follow"
     ],
     "response": [
-      "📱 You can find all of Kyu's social media links on the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank'>Contact Page</a>! Follow for updates, art posts, and behind-the-scenes content! 🌟",
+      "📱 You can find all of Kyu's social media links on the <a class='dL' href='https://kyuartz.netlify.app/contact' target='_blank' rel='noopener noreferrer'>Contact Page</a>! Follow for updates, art posts, and behind-the-scenes content! 🌟",
       "👥 Stay connected! Check out the contact page for all social media links and never miss an update! 📲"
     ]
   },
